@@ -1,0 +1,135 @@
+@layer reset;
+
+@layer reset {
+	html,
+	body {
+		height: 100%;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		font-family: 'Helvetica Neue', arial, sans-serif;
+		color: #444;
+	}
+	
+	ul, ol, dl, li, dd, dt {
+		list-style: none;
+	}
+	
+	* {
+		box-sizing: border-box;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+html {
+	background-color: #673ab8;
+}
+
+#app {
+	height: 100%;
+	color: #fff;
+}
+
+header {
+	padding: 10px;
+	background: black;
+}
+
+h1 {
+	display: inline-block;
+	padding: 0 20px;
+	font-size: 16px;
+}
+
+input[type="number"] {
+	display: inline-block;
+	width: 60px;
+	height: 30px;
+	padding: 4px 10px;
+	border: none;
+	border-radius: 10px 0 0 10px;
+	margin-right: 1px;
+	font-size: 16px;
+	text-align: right;
+	vertical-align: middle;
+	
+	&::-webkit-inner-spin-button {
+		display: none;
+	}
+}
+
+select {
+	display: inline-block;
+	height: 30px;
+	padding: 4px 10px;
+	border: none;
+	border-radius: 0 10px 10px 0;
+	font-size: 16px;
+	vertical-align: middle;
+}
+
+pre {
+	background: hsl(0deg 0% 0% / 10%);
+	tab-size: 3ch;
+}
+
+
+main {}
+
+.chain {
+	margin-top: 10px;
+	color: hsl(0deg 0% 100% / 50%);
+	color: hsl(261.43deg 55.58% 68.98% / 55%);
+	font-size: 20px;
+	
+	.link {
+		display: grid;
+		grid-template-columns: 4fr 2fr;
+		padding: 0px 20px;
+/* 		border-bottom: 10px solid hsla(0deg 0% 0% / 10%); */
+		background-color: hsl(0deg 0% 0% / calc(10% * var(--depth, 0)));
+/* 		&:nth-child(odd) { background-color: hsl(0deg 0% 100% / 2%); } */
+/* 		&:nth-child(even) { background-color: hsl(0deg 0% 0% / 2%); } */
+		&:hover {
+			background-image: linear-gradient(
+				90deg,
+				hsla(261.43deg 95% 60% / calc(25% * var(--depth, 0))),
+				hsla(261.43deg 75% 40% / calc(25% * var(--depth, 0)))
+			);
+			background-blend-mode: color;
+		}
+	}
+}
+
+.meta {
+	padding: 3px 0;
+	margin-left: calc(30px * var(--depth, 0));
+}
+
+.output {
+	align-self: center;
+	padding: 3px 0px;
+	font-size: 14px;
+	line-height: 1.2;
+}
+
+.item {
+	color: white;
+}
+
+.perMinute {
+	display: inline-block;
+	min-width: 5ch;
+	text-align: right;
+	color: hsl(0deg 69.91% 77.84%);
+}
+
+.factor {
+	color: hsl(0deg 69.91% 77.84%);
+}
+
+.process {
+	display: none;
+	color: hsl(338.6deg 81.13% 68.82% / 37%);
+}

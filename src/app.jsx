@@ -5,13 +5,14 @@ import {
 	Recipes,
 	findRecipeByOutput,
 } from './recipes.js';
-import { Produce, Chain } from './prod.js';
+import { Production, Chain } from './prod.js';
 
 window.Items = Items;
 window.Buildings = Buildings;
 window.Recipes = Recipes;
 window.findRecipeByOutput = findRecipeByOutput;
-window.Produce = Produce;
+window.Production = Production;
+window.Chain = Chain;
 
 // let Names = new Set(Recipes.flatMap(recipe => Object.keys(recipe.output)));
 let Processes = new Set(Items.map(item => item.process));
@@ -47,11 +48,83 @@ export function App(props) {
 		'Factionation Facility',
 		'Ray Receiver',
 	];
+	
+	// const production = useMemo(() => {
+	// 	if(!selected) return null;
+	// 	else return Chain(selected, factor)
+	// 		.filter(recipe => !processesSkipped.includes(recipe.process))
+	// }, [selected, factor]);
+	
 	const production = useMemo(() => {
 		if(!selected) return null;
-		else return Chain(selected, factor)
-			.filter(recipe => !processesSkipped.includes(recipe.process))
+		let prod = Production(selected, factor);
+		
+		let filterSkippedProcesses = recipe => {
+			if(recipe.input) recipe.input = recipe.input.filter(filterSkippedProcesses);
+			return !processesSkipped.includes(recipe.process);
+		};
+		
+		prod.input = prod.input.filter(filterSkippedProcesses);
+		return prod;
 	}, [selected, factor]);
+	
+	function renderProduction(recipe) {
+		if(recipe.process === 'Mining Facility') return (
+			<div key={Object.keys(recipe.output).join('-')} class="node" style={{ '--depth': recipe.depth }}>
+				<div class="node-header">
+					<div class="meta">
+						<span class="factor">{renderNumber(recipe.factor)}</span>&times; <span class="process">{recipe.process}</span> <span class="item">{recipe.name || Object.keys(recipe.output).pop()}</span>
+					</div>
+					<ul class="output">
+						{Object.entries(recipe.output).map(([product]) =>
+							<li><span class="item">{product}</span>/min</li>
+						)}
+					</ul>
+				</div>
+			</div>
+		);
+		
+		let input = recipe.input && Object.entries(recipe.input);
+		if(input && input.length) return (
+			<details
+				key={Object.keys(recipe.output).join('-')}
+				class="node"
+				style={{ '--depth': recipe.depth }}
+				open={recipe.depth === 0}
+				title={`${+recipe.factor.toFixed(6)}× ${recipe.process} producing: ${recipe.name || Object.keys(recipe.output).pop()}`}
+			>
+				<summary>
+					<div className="node-header">
+						<div class="meta">
+							<span class="factor">{renderNumber(recipe.factor)}</span>&times; <span class="process">{recipe.process}</span> <span class="item">{recipe.name || Object.keys(recipe.output).pop()}</span>
+						</div>
+						<ul class="output">
+							{Object.entries(recipe.output).map(([product, [amount, perMinute]]) =>
+								<li><span class="perMinute">{renderNumber(perMinute * recipe.factor)}</span>&times; <span class="item">{product}</span> per minute</li>
+							)}
+						</ul>
+					</div>
+				</summary>
+				{Object.entries(recipe.input).map(([name, input]) => renderProduction(input))}
+			</details>
+		);
+		
+		else return (
+			<div key={Object.keys(recipe.output).join('-')} class="node" style={{ '--depth': recipe.depth }}>
+				<div className="node-header">
+					<div class="meta">
+						<span class="factor">{renderNumber(recipe.factor)}</span>&times; <span class="process">{recipe.process}</span> <span class="item">{recipe.name || Object.keys(recipe.output).pop()}</span>
+					</div>
+					<ul class="output">
+						{Object.entries(recipe.output).map(([product, [amount, perMinute]]) =>
+							<li><span class="perMinute">{renderNumber(perMinute * recipe.factor)}</span>&times; <span class="item">{product}</span> per minute</li>
+						)}
+					</ul>
+				</div>
+			</div>
+		);
+	}
+	
 	
 	return (
 		<>
@@ -90,10 +163,12 @@ export function App(props) {
 				</select>
 			</header>
 			<main>
-				{production && (
-					<ul class="chain">
+				{production && renderProduction(production)}
+				
+				{/* {production && (
+					<ul class="list">
 						{production.map(recipe => recipe.process === 'Mining Facility'? (
-							<li class="link" style={{ '--depth': recipe.depth }}>
+							<li class="list-item" style={{ '--depth': recipe.depth }}>
 								<div class="meta">
 									<span class="factor">{renderNumber(recipe.factor)}</span>&times; <span class="process">{recipe.process}</span> <span class="item">{recipe.name || Object.keys(recipe.output).pop()}</span>
 								</div>
@@ -104,7 +179,7 @@ export function App(props) {
 								</ul>
 							</li>
 						) : (
-							<li class="link" style={{ '--depth': recipe.depth }}>
+							<li class="list-item" style={{ '--depth': recipe.depth }}>
 								<div class="meta">
 									<span class="factor">{renderNumber(recipe.factor)}</span>&times; <span class="process">{recipe.process}</span> <span class="item">{recipe.name || Object.keys(recipe.output).pop()}</span>
 								</div>
@@ -116,7 +191,7 @@ export function App(props) {
 							</li>
 						))}
 					</ul>
-				)}
+				)} */}
 				
 				{/* {production && (
 					<pre>

@@ -1,6 +1,101 @@
 import { Items, Buildings, Recipes, findRecipeByOutput } from './recipes.js';
 
 
+
+
+
+export function Production(root, factor = 1, depth = 0) {
+	let recipe;
+	if(typeof root === 'string')
+	{
+		recipe = findRecipeByOutput(root);
+		if(!recipe) return console.error('Could not find recipe for', root);
+	}
+	else recipe = root;
+	
+	const node = { factor, depth, ...recipe };
+	if(recipe.process === 'Mining Facility') return node;
+	
+	node.input = [];
+	
+	for(let [name, [amount, perMinute]] of Object.entries(recipe.input))
+	{
+		let ingredient = findRecipeByOutput(name);
+		if(!ingredient) continue;
+		else if(ingredient.process === 'Mining Facility' || ingredient.output[name] === true)
+		{
+			node.input.push({
+				factor: factor * (perMinute / 60),
+				depth: depth + 1,
+				...ingredient
+			});
+			
+			// nodes.push({
+			// 	factor: factor * (perMinute / 60),
+			// 	depth: depth + 1,
+			// 	...ingredient
+			// });
+		}
+		
+		else
+		{
+			let [outAmount, outPerMinute] = ingredient.output[name];
+			let subNode = Production(ingredient, factor * (perMinute / outPerMinute), depth + 1);
+			node.input.push(subNode);
+		}
+	}
+	
+	return node;
+}
+
+
+
+export function Chain(root, factor = 1, depth = 0) {
+	let recipe;
+	if(typeof root === 'string')
+	{
+		recipe = findRecipeByOutput(root);
+		if(!recipe) return console.error('Could not find recipe for', root);
+	}
+	else recipe = root;
+	
+	const node = { factor, depth, ...recipe };
+	let nodes = [node];
+	
+	if(recipe.process === 'Mining Facility') return nodes;
+	
+	for(let [name, [amount, perMinute]] of Object.entries(recipe.input))
+	{
+		let ingredient = findRecipeByOutput(name);
+		if(!ingredient) continue;
+		else if(ingredient.process === 'Mining Facility' || ingredient.output[name] === true)
+		{
+			nodes.push({
+				factor: factor * (perMinute / 60),
+				depth: depth + 1,
+				...ingredient
+			});
+		}
+		
+		else
+		{
+			let [outAmount, outPerMinute] = ingredient.output[name];
+			let subNode = Chain(ingredient, factor * (perMinute / outPerMinute), depth + 1);
+			nodes.push(...subNode);
+		}
+	}
+	
+	return nodes;
+}
+
+
+
+
+
+
+
+
+/*
 export function Produce(root, factor = 1, depth = 0) {
 	let recipe;
 	if(typeof root === 'string')
@@ -72,57 +167,7 @@ export function Produce(root, factor = 1, depth = 0) {
 	
 	return node;
 }
-
-
-
-
-
-
-export function Chain(root, factor = 1, depth = 0) {
-	let recipe;
-	if(typeof root === 'string')
-	{
-		recipe = findRecipeByOutput(root);
-		if(!recipe) return console.error('Could not find recipe for', root);
-	}
-	else recipe = root;
-	
-	const node = { factor, depth, ...recipe };
-	let nodes = [node];
-	
-	if(recipe.process === 'Mining Facility') return nodes;
-	
-	// node.input = [];
-	
-	for(let [name, [amount, perMinute]] of Object.entries(recipe.input))
-	{
-		let ingredient = findRecipeByOutput(name);
-		if(!ingredient) continue;
-		else if(ingredient.process === 'Mining Facility' || ingredient.output[name] === true)
-		{
-			// let subNode = Chain(ingredient, factor * (perMinute / 60), depth + 1);
-			// node.input.push(subNode);
-			// nodes.push(...subNode);
-			nodes.push({
-				factor: factor * (perMinute / 60),
-				depth: depth + 1,
-				...ingredient
-			});
-		}
-		
-		else
-		{
-			let [outAmount, outPerMinute] = ingredient.output[name];
-			let subNode = Chain(ingredient, factor * (perMinute / outPerMinute), depth + 1);
-			// node.input.push(subNode);
-			nodes.push(...subNode);
-		}
-	}
-	
-	return nodes;
-}
-
-
+*/
 
 
 

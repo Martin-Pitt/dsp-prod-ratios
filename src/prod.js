@@ -25,7 +25,7 @@ export function Production(root, factor = 1, depth = 0) {
 		else if(ingredient.process === 'Mining Facility' || ingredient.output[name] === true)
 		{
 			node.input.push({
-				factor: factor * (perMinute / 60),
+				factor: perMinute,
 				depth: depth + 1,
 				...ingredient
 			});
@@ -41,6 +41,22 @@ export function Production(root, factor = 1, depth = 0) {
 		{
 			let [outAmount, outPerMinute] = ingredient.output[name];
 			let subNode = Production(ingredient, factor * (perMinute / outPerMinute), depth + 1);
+			
+			let { output } = subNode;
+			let products = Object.entries(subNode.output);
+			subNode.output = {};
+			for(let [product, throughput] of products) {
+				if(product !== name)
+				{
+					if(!subNode.byproduct) subNode.byproduct = {};
+					subNode.byproduct[product] = throughput;
+				}
+				
+				else
+				{
+					subNode.output[product] = throughput;
+				}
+			}
 			node.input.push(subNode);
 		}
 	}

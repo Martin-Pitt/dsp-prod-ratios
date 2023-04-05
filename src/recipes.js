@@ -115,7 +115,7 @@ export const Items = [
 	},
 	{
 		process: 'Chemical Facility',
-		input: { 'Graphene': [3, 45], 'Titanium ingot': [1, 15] },
+		input: { 'Graphene': [3, 45], 'Titanium Ingot': [1, 15] },
 		output: { 'Carbon Nanotube': [2, 30] }
 	},
 	{
@@ -323,7 +323,7 @@ export const Items = [
 	},
 	{
 		process: 'Assembler',
-		input: { 'High-purity Silicon': [2, 45], 'Copper ingot': [1, 22.5] },
+		input: { 'High-purity Silicon': [2, 45], 'Copper Ingot': [1, 22.5] },
 		output: { 'Microcrystalline Component': [1, 22.5] }
 	},
 	{
@@ -405,7 +405,7 @@ export const Items = [
 	
 	{
 		process: 'Assembler',
-		input: { 'Graphene': [1, 11.25], 'Photon combiner': [1, 11.25] },
+		input: { 'Graphene': [1, 11.25], 'Photon Combiner': [1, 11.25] },
 		output: { 'Solar Sail': [2, 22.5] }
 	},
 	{
@@ -677,7 +677,7 @@ export const Buildings = [
 	{
 		name: 'Planetary Logistics Station',
 		type: 'Logistics',
-		input: { 'Processor': [40, 90], 'Steel': [40, 90], 'Titanium ingot': [40, 90], 'Particle container': [20, 45] },
+		input: { 'Processor': [40, 90], 'Steel': [40, 90], 'Titanium Ingot': [40, 90], 'Particle container': [20, 45] },
 		output: { 'Planetary Logistics Station': [1, 2.25] }
 	},
 	{
@@ -733,3 +733,16 @@ export const Recipes = Items.concat(Buildings);
 export function findRecipeByOutput(item) {
 	return Recipes.find(recipe => item in recipe.output);
 }
+
+
+/*
+
+Check for case sensitivity issues:
+
+	Array.from(
+		new Set(Items.flatMap(item => (item.input? Object.keys(item.input) : []).concat(Object.keys(item.output))).sort())
+	).filter((item, index, array) => 
+		array.map(d => d.toLowerCase()).filter(d => d === item.toLowerCase()).length > 1
+	);
+
+*/

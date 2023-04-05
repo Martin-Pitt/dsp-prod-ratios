@@ -81,6 +81,17 @@ main {
 
 
 
+.production-header {
+	display: inline-grid;
+	grid-template-columns: 4fr 2fr;
+	align-items: end;
+	width: 100%;
+	padding: 0 20px 6px 40px;
+	border-bottom: 10px solid hsla(0, 0%, 100%, 0.05);
+	margin-bottom: 6px;
+	font-size: 14px;
+}
+
 
 .node {
 	position: relative;
@@ -194,11 +205,20 @@ main {
 	margin-left: calc(30px * var(--depth, 0));
 }
 
-.output {
+.products {
 	align-self: center;
 	padding: 3px 0px;
 	font-size: 14px;
 	line-height: 1.2;
+}
+
+.output {}
+
+.byproduct:not(:hover) {
+	.perMinute, .item {
+		filter: contrast(0.5);
+		opacity: 0.5;
+	}
 }
 
 .item {

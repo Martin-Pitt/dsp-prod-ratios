@@ -38,13 +38,12 @@ export function App(props) {
 	});
 	const [factor, setFactor] = useState(1);
 	const onFactor = useCallback(event => {
-		console.log(+event.target.value);
 		setFactor(+event.target.value);
 	});
 	
 	
 	const processesSkipped = [
-		'Mining Facility',
+		// 'Mining Facility',
 		'Factionation Facility',
 		'Ray Receiver',
 	];
@@ -73,11 +72,15 @@ export function App(props) {
 			<div key={Object.keys(recipe.output).join('-')} class="node" style={{ '--depth': recipe.depth }}>
 				<div class="node-header">
 					<div class="meta">
-						<span class="factor">{renderNumber(recipe.factor)}</span>&times; <span class="process">{recipe.process}</span> <span class="item">{recipe.name || Object.keys(recipe.output).pop()}</span>
+						&nbsp;&nbsp; <span class="process">{recipe.process}</span> <span class="item">{recipe.name || Object.keys(recipe.output).pop()}</span>
 					</div>
-					<ul class="output">
+					<ul class="products">
 						{Object.entries(recipe.output).map(([product]) =>
-							<li><span class="item">{product}</span>/min</li>
+							<li class="output"><span class="perMinute">{renderNumber(recipe.factor)}</span>&times; <span class="item">{product}</span> per minute</li>
+						)}
+						
+						{recipe.byproduct && Object.entries(recipe.byproduct).map(([product]) =>
+							<li class="byproduct"><span class="perMinute">{renderNumber(recipe.factor)}</span>&times; <span class="item">{product}</span> per minute</li>
 						)}
 					</ul>
 				</div>
@@ -98,9 +101,13 @@ export function App(props) {
 						<div class="meta">
 							<span class="factor">{renderNumber(recipe.factor)}</span>&times; <span class="process">{recipe.process}</span> <span class="item">{recipe.name || Object.keys(recipe.output).pop()}</span>
 						</div>
-						<ul class="output">
+						<ul class="products">
 							{Object.entries(recipe.output).map(([product, [amount, perMinute]]) =>
-								<li><span class="perMinute">{renderNumber(perMinute * recipe.factor)}</span>&times; <span class="item">{product}</span> per minute</li>
+								<li class="output"><span class="perMinute">{renderNumber(perMinute * recipe.factor)}</span>&times; <span class="item">{product}</span> per minute</li>
+							)}
+							
+							{recipe.byproduct && Object.entries(recipe.byproduct).map(([product, [amount, perMinute]]) =>
+								<li class="byproduct"><span class="perMinute">{renderNumber(perMinute * recipe.factor)}</span>&times; <span class="item">{product}</span> per minute</li>
 							)}
 						</ul>
 					</div>
@@ -115,9 +122,13 @@ export function App(props) {
 					<div class="meta">
 						<span class="factor">{renderNumber(recipe.factor)}</span>&times; <span class="process">{recipe.process}</span> <span class="item">{recipe.name || Object.keys(recipe.output).pop()}</span>
 					</div>
-					<ul class="output">
+					<ul class="products">
 						{Object.entries(recipe.output).map(([product, [amount, perMinute]]) =>
-							<li><span class="perMinute">{renderNumber(perMinute * recipe.factor)}</span>&times; <span class="item">{product}</span> per minute</li>
+							<li class="output"><span class="perMinute">{renderNumber(perMinute * recipe.factor)}</span>&times; <span class="item">{product}</span> per minute</li>
+						)}
+						
+						{recipe.byproduct && Object.entries(recipe.byproduct).map(([product, [amount, perMinute]]) =>
+							<li class="byproduct"><span class="perMinute">{renderNumber(perMinute * recipe.factor)}</span>&times; <span class="item">{product}</span> per minute</li>
 						)}
 					</ul>
 				</div>
@@ -163,7 +174,18 @@ export function App(props) {
 				</select>
 			</header>
 			<main>
-				{production && renderProduction(production)}
+				{production && (
+					<>
+						<div class="production-header">
+							<div><span class="factor">Facility</span>&times; <span class="process">Process</span> <span class="item">Recipe</span></div>
+							<div>
+								<div class="output"><span class="perMinute">Throughput</span>&times; <span class="item">Product</span></div>
+								<div class="byproduct"><span class="perMinute">Throughput</span>&times; <span class="item">Byproduct</span></div>
+							</div>
+						</div>
+						{renderProduction(production)}
+					</>
+				)}
 				
 				{/* {production && (
 					<ul class="list">

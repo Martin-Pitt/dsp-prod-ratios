@@ -43,7 +43,7 @@ export function App(props) {
 	
 	
 	const processesSkipped = [
-		// 'Mining Facility',
+		'Mining Facility',
 		'Factionation Facility',
 		'Ray Receiver',
 	];
@@ -59,15 +59,49 @@ export function App(props) {
 		let prod = Production(selected, factor);
 		
 		let filterSkippedProcesses = recipe => {
-			if(recipe.input) recipe.input = recipe.input.filter(filterSkippedProcesses);
+			// if(recipe.input) recipe.input = recipe.input.filter(filterSkippedProcesses);
 			return !processesSkipped.includes(recipe.process);
 		};
 		
-		prod.input = prod.input.filter(filterSkippedProcesses);
+		// if(prod.input) prod.input = prod.input.filter(filterSkippedProcesses);
+		
 		return prod;
 	}, [selected, factor]);
 	
 	function renderProduction(recipe) {
+		function renderOutput(recipe, ) {
+			let { process, output, factor } = recipe;
+			if(!output) return null;
+			
+			return Object.entries(output).map(([product, throughput]) => {
+				if(!throughput || process === 'Mining Facility' || throughput === true)
+				{
+					<li class="output"><span class="perMinute">{renderNumber(factor)}</span>&times; <span class="item">{product}</span> per minute</li>;
+				}
+				else
+				{
+					let [amount, perMinute] = throughput;
+					return <li class="output"><span class="perMinute">{renderNumber(perMinute * factor)}</span>&times; <span class="item">{product}</span> per minute</li>;
+				}
+			});
+		}
+		function renderByproduct(recipe) {
+			let { process, byproduct, factor } = recipe;
+			if(!byproduct) return null;
+			
+			return Object.entries(byproduct).map(([product, throughput]) => {
+				if(!throughput || process === 'Mining Facility' || throughput === true)
+				{
+					<li class="byproduct"><span class="perMinute">{renderNumber(factor)}</span>&times; <span class="item">{product}</span> per minute</li>;
+				}
+				else
+				{
+					let [amount, perMinute] = throughput;
+					return <li class="byproduct"><span class="perMinute">{renderNumber(perMinute * factor)}</span>&times; <span class="item">{product}</span> per minute</li>;
+				}
+			});
+		}
+		
 		if(recipe.process === 'Mining Facility') return (
 			<div key={Object.keys(recipe.output).join('-')} class="node" style={{ '--depth': recipe.depth }}>
 				<div class="node-header">
@@ -75,13 +109,8 @@ export function App(props) {
 						&nbsp;&nbsp; <span class="process">{recipe.process}</span> <span class="item">{recipe.name || Object.keys(recipe.output).pop()}</span>
 					</div>
 					<ul class="products">
-						{Object.entries(recipe.output).map(([product]) =>
-							<li class="output"><span class="perMinute">{renderNumber(recipe.factor)}</span>&times; <span class="item">{product}</span> per minute</li>
-						)}
-						
-						{recipe.byproduct && Object.entries(recipe.byproduct).map(([product]) =>
-							<li class="byproduct"><span class="perMinute">{renderNumber(recipe.factor)}</span>&times; <span class="item">{product}</span> per minute</li>
-						)}
+						{renderOutput(recipe)}
+						{renderByproduct(recipe)}
 					</ul>
 				</div>
 			</div>
@@ -102,17 +131,12 @@ export function App(props) {
 							<span class="factor">{renderNumber(recipe.factor)}</span>&times; <span class="process">{recipe.process}</span> <span class="item">{recipe.name || Object.keys(recipe.output).pop()}</span>
 						</div>
 						<ul class="products">
-							{Object.entries(recipe.output).map(([product, [amount, perMinute]]) =>
-								<li class="output"><span class="perMinute">{renderNumber(perMinute * recipe.factor)}</span>&times; <span class="item">{product}</span> per minute</li>
-							)}
-							
-							{recipe.byproduct && Object.entries(recipe.byproduct).map(([product, [amount, perMinute]]) =>
-								<li class="byproduct"><span class="perMinute">{renderNumber(perMinute * recipe.factor)}</span>&times; <span class="item">{product}</span> per minute</li>
-							)}
+							{renderOutput(recipe)}
+							{renderByproduct(recipe)}
 						</ul>
 					</div>
 				</summary>
-				{Object.entries(recipe.input).map(([name, input]) => renderProduction(input))}
+				{Object.entries(recipe.input).map(([name, input]) => input !== true && renderProduction(input))}
 			</details>
 		);
 		
@@ -123,13 +147,8 @@ export function App(props) {
 						<span class="factor">{renderNumber(recipe.factor)}</span>&times; <span class="process">{recipe.process}</span> <span class="item">{recipe.name || Object.keys(recipe.output).pop()}</span>
 					</div>
 					<ul class="products">
-						{Object.entries(recipe.output).map(([product, [amount, perMinute]]) =>
-							<li class="output"><span class="perMinute">{renderNumber(perMinute * recipe.factor)}</span>&times; <span class="item">{product}</span> per minute</li>
-						)}
-						
-						{recipe.byproduct && Object.entries(recipe.byproduct).map(([product, [amount, perMinute]]) =>
-							<li class="byproduct"><span class="perMinute">{renderNumber(perMinute * recipe.factor)}</span>&times; <span class="item">{product}</span> per minute</li>
-						)}
+						{renderOutput(recipe)}
+						{renderByproduct(recipe)}
 					</ul>
 				</div>
 			</div>
@@ -152,7 +171,7 @@ export function App(props) {
 								new Set(
 									Items
 										.filter(item => item.process === process)
-										.flatMap(recipe => Object.keys(recipe.output))
+										.flatMap(recipe => recipe.name || Object.keys(recipe.output))
 								)
 							).map(name => <option value={name}>{name}</option>)}
 						</optgroup>

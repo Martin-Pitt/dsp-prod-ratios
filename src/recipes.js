@@ -14,6 +14,12 @@ export const Items = [
 	{ process: 'Mining Facility', output: { 'Stone': true } },
 	{ process: 'Mining Facility', output: { 'Coal': true } },
 	{ process: 'Mining Facility', output: { 'Crude Oil': true } },
+	{ process: 'Mining Facility', output: { 'Kimberlite Ore': true } },
+	{ process: 'Mining Facility', output: { 'Fire Ice': true } },
+	{ process: 'Mining Facility', output: { 'Spiniform Stalagmite Crystal': true } },
+	{ process: 'Mining Facility', output: { 'Unipolar Magnet': true } },
+	{ process: 'Mining Facility', output: { 'Fractal Silicon': true } },
+	{ process: 'Mining Facility', output: { 'Optical Grating Crystal': true } },
 	
 	
 	{
@@ -159,7 +165,7 @@ export const Items = [
 		output: { 'Strange Matter': [1, 7.5] }
 	},
 	{
-		process: 'Particle Collider', name: 'Mass-energy Storage',
+		process: 'Particle Collider', // name: 'Mass-energy Storage',
 		input: { 'Critical Photon': [2, 60] },
 		output: { 'Antimatter': [2, 60], 'Hydrogen': [2, 60] }
 	},
@@ -732,6 +738,10 @@ export const Recipes = Items.concat(Buildings);
 
 export function findRecipeByOutput(item) {
 	return Recipes.find(recipe => item in recipe.output);
+}
+
+export function findRecipe(item) {
+	return Recipes.find(recipe => recipe.name === item || item in recipe.output);
 }
 
 

@@ -1,4 +1,4 @@
-import { Items, Buildings, Recipes, findRecipeByOutput } from './recipes.js';
+import { Items, Buildings, Recipes, findRecipeByOutput, findRecipe } from './recipes.js';
 
 
 
@@ -8,7 +8,8 @@ export function Production(root, factor = 1, depth = 0) {
 	let recipe;
 	if(typeof root === 'string')
 	{
-		recipe = findRecipeByOutput(root);
+		// recipe = findRecipeByOutput(root);
+		recipe = findRecipe(root);
 		if(!recipe) return console.error('Could not find recipe for', root);
 	}
 	else recipe = root;
@@ -20,7 +21,8 @@ export function Production(root, factor = 1, depth = 0) {
 	
 	for(let [name, [amount, perMinute]] of Object.entries(recipe.input))
 	{
-		let ingredient = findRecipeByOutput(name);
+		// let ingredient = findRecipeByOutput(name);
+		let ingredient = findRecipe(name);
 		if(!ingredient) continue;
 		else if(ingredient.process === 'Mining Facility' || ingredient.output[name] === true)
 		{
@@ -57,6 +59,7 @@ export function Production(root, factor = 1, depth = 0) {
 					subNode.output[product] = throughput;
 				}
 			}
+			
 			node.input.push(subNode);
 		}
 	}

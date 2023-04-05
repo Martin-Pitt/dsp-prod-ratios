@@ -21,7 +21,7 @@ let Types = new Set(Buildings.map(recipe => recipe.type));
 
 function renderNumber(factor) {
 	let string = factor.toString();
-	// let repeats = string.match(/[0-9]\.([0-9]*?)\1[0-9]$/);
+	if(!/\d\.\d/.test(string)) return string;
 	let repeats = string.toString().match(/(\d+?)\1+\d$/);
 	if(!repeats || !repeats[1]) return +factor;//.toFixed(6);
 	

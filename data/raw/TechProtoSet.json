@@ -1,0 +1,12461 @@
+{
+	"table_name": "Tech",
+	"signature": "0F6635882D96BFC9F2CED65C26A955F4",
+	"data_array": [
+		{
+			"name": "T戴森球计划",
+			"id": 1,
+			"sid": "",
+			"description": "戴森球计划描述",
+			"conclusion": "",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1",
+			"is_lab_tech": 0,
+			"pre_techs": [],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [],
+			"item_points": [],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 1,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				5,
+				1
+			]
+		},
+		{
+			"name": "T电磁学",
+			"id": 1001,
+			"sid": "",
+			"description": "电磁学描述",
+			"conclusion": "电磁学结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1001",
+			"is_lab_tech": 0,
+			"pre_techs": [
+				1
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				1202
+			],
+			"item_points": [
+				30
+			],
+			"property_override_items": [
+				6001
+			],
+			"property_item_counts": [
+				10
+			],
+			"hash_needed": 1200,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				7,
+				8,
+				48
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [
+				2203,
+				2201,
+				2301
+			],
+			"add_item_counts": [
+				1,
+				1,
+				1
+			],
+			"position": [
+				9,
+				1
+			]
+		},
+		{
+			"name": "T电磁矩阵",
+			"id": 1002,
+			"sid": "",
+			"description": "电磁矩阵描述",
+			"conclusion": "电磁矩阵结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1002",
+			"is_lab_tech": 0,
+			"pre_techs": [
+				1001
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				1202,
+				1301
+			],
+			"item_points": [
+				20,
+				20
+			],
+			"property_override_items": [
+				6001
+			],
+			"property_item_counts": [
+				40
+			],
+			"hash_needed": 1800,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				9,
+				10
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [
+				2901
+			],
+			"add_item_counts": [
+				1
+			],
+			"position": [
+				13,
+				1
+			]
+		},
+		{
+			"name": "T高效电浆控制",
+			"id": 1101,
+			"sid": "",
+			"description": "高效电浆控制描述",
+			"conclusion": "高效电浆控制结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1101",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1001
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001
+			],
+			"item_points": [
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 9000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				11,
+				12,
+				13
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [
+				1401
+			],
+			"add_item_counts": [
+				10
+			],
+			"position": [
+				13,
+				-27
+			]
+		},
+		{
+			"name": "T等离子萃取精炼",
+			"id": 1102,
+			"sid": "",
+			"description": "等离子萃取精炼描述",
+			"conclusion": "等离子萃取精炼结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1102",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1120,
+				1101
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001
+			],
+			"item_points": [
+				10
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 36000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				14,
+				15,
+				16
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				17,
+				-27
+			]
+		},
+		{
+			"name": "TX射线裂解",
+			"id": 1103,
+			"sid": "",
+			"description": "X射线裂解描述",
+			"conclusion": "X射线裂解结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1103",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1121,
+				1102
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002
+			],
+			"item_points": [
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 72000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				58
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				25,
+				-27
+			]
+		},
+		{
+			"name": "T重整精炼",
+			"id": 1104,
+			"sid": "",
+			"description": "重整精炼描述",
+			"conclusion": "重整精炼结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1104",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1103
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002
+			],
+			"item_points": [
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 90000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				121
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				29,
+				-27
+			]
+		},
+		{
+			"name": "T能量矩阵",
+			"id": 1111,
+			"sid": "",
+			"description": "能量矩阵描述",
+			"conclusion": "能量矩阵结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1111",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1102
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001
+			],
+			"item_points": [
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 36000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				18
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				21,
+				-31
+			]
+		},
+		{
+			"name": "T氢燃料棒",
+			"id": 1112,
+			"sid": "",
+			"description": "氢燃料棒描述",
+			"conclusion": "氢燃料棒结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1112",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1111
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6002
+			],
+			"item_points": [
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 72000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				19
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				25,
+				-31
+			]
+		},
+		{
+			"name": "T推进器",
+			"id": 1113,
+			"sid": "",
+			"description": "推进器描述",
+			"conclusion": "推进器结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1113",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1112
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6002
+			],
+			"item_points": [
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 180000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				20
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				29,
+				-31
+			]
+		},
+		{
+			"name": "T加力推进器",
+			"id": 1114,
+			"sid": "",
+			"description": "加力推进器描述",
+			"conclusion": "加力推进器结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1114",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1113
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6002
+			],
+			"item_points": [
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 288000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				21
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				33,
+				-31
+			]
+		},
+		{
+			"name": "T流体储存封装",
+			"id": 1120,
+			"sid": "",
+			"description": "流体储存封装描述",
+			"conclusion": "流体储存封装结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1120",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1001
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001
+			],
+			"item_points": [
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 9000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				114,
+				49
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [
+				2106
+			],
+			"add_item_counts": [
+				1
+			],
+			"position": [
+				13,
+				-23
+			]
+		},
+		{
+			"name": "T基础化工",
+			"id": 1121,
+			"sid": "",
+			"description": "基础化工描述",
+			"conclusion": "基础化工结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1121",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1120,
+				1102
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001
+			],
+			"item_points": [
+				10
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 72000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				22,
+				23,
+				24
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				21,
+				-23
+			]
+		},
+		{
+			"name": "T高分子化工",
+			"id": 1122,
+			"sid": "",
+			"description": "高分子化工描述",
+			"conclusion": "高分子化工结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1122",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1121
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002
+			],
+			"item_points": [
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 72000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				25,
+				54
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				25,
+				-23
+			]
+		},
+		{
+			"name": "T高强度晶体",
+			"id": 1123,
+			"sid": "",
+			"description": "高强度晶体描述",
+			"conclusion": "高强度晶体结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1123",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1122
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002
+			],
+			"item_points": [
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 108000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				26
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				29,
+				-23
+			]
+		},
+		{
+			"name": "T结构矩阵",
+			"id": 1124,
+			"sid": "",
+			"description": "结构矩阵描述",
+			"conclusion": "结构矩阵结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1124",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1123
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002
+			],
+			"item_points": [
+				12,
+				12
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 240000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				27
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				33,
+				-23
+			]
+		},
+		{
+			"name": "T卡西米尔晶体",
+			"id": 1125,
+			"sid": "",
+			"description": "卡西米尔晶体描述",
+			"conclusion": "卡西米尔晶体结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1125",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1124
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				12,
+				12,
+				12
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 240000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				28,
+				29
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				37,
+				-23
+			]
+		},
+		{
+			"name": "T高强度玻璃",
+			"id": 1126,
+			"sid": "",
+			"description": "高强度玻璃描述",
+			"conclusion": "高强度玻璃结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1126",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1132
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6002,
+				6003
+			],
+			"item_points": [
+				12,
+				6
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 240000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				30
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				37,
+				-19
+			]
+		},
+		{
+			"name": "T应用型超导体",
+			"id": 1131,
+			"sid": "",
+			"description": "应用型超导体描述",
+			"conclusion": "应用型超导体结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1131",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1121
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001
+			],
+			"item_points": [
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 72000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				31,
+				32
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				25,
+				-19
+			]
+		},
+		{
+			"name": "T高强度材料",
+			"id": 1132,
+			"sid": "",
+			"description": "高强度材料描述",
+			"conclusion": "高强度材料结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1132",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1131
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6002,
+				6003
+			],
+			"item_points": [
+				16,
+				4
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 135000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				33,
+				35
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				33,
+				-19
+			]
+		},
+		{
+			"name": "T粒子可控技术",
+			"id": 1133,
+			"sid": "",
+			"description": "粒子可控技术描述",
+			"conclusion": "粒子可控技术结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1133",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1132
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				16,
+				16,
+				4
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 180000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				36,
+				62
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				37,
+				-15
+			]
+		},
+		{
+			"name": "T重氢分馏",
+			"id": 1134,
+			"sid": "",
+			"description": "重氢分馏描述",
+			"conclusion": "重氢分馏结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1134",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1412,
+				1102
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002
+			],
+			"item_points": [
+				20,
+				30
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 36000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				110,
+				115
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				21,
+				-15
+			]
+		},
+		{
+			"name": "T波函数干扰",
+			"id": 1141,
+			"sid": "",
+			"description": "波函数干扰描述",
+			"conclusion": "波函数干扰结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1141",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1126,
+				1125
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6004
+			],
+			"item_points": [
+				12,
+				12,
+				2
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 360000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				38
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				41,
+				-23
+			]
+		},
+		{
+			"name": "T微型粒子对撞机",
+			"id": 1142,
+			"sid": "",
+			"description": "微型粒子对撞机描述",
+			"conclusion": "微型粒子对撞机结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1142",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1124
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				12,
+				12,
+				12
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 240000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				39,
+				40
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				37,
+				-27
+			]
+		},
+		{
+			"name": "T奇异物质",
+			"id": 1143,
+			"sid": "",
+			"description": "奇异物质描述",
+			"conclusion": "奇异物质结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1143",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1142
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				12,
+				12,
+				12
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 300000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				104
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				41,
+				-27
+			]
+		},
+		{
+			"name": "T人造恒星",
+			"id": 1144,
+			"sid": "",
+			"description": "人造恒星描述",
+			"conclusion": "人造恒星结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1144",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1145
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004,
+				6005
+			],
+			"item_points": [
+				10,
+				10,
+				10,
+				10,
+				10
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 432000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				43
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				61,
+				-3
+			]
+		},
+		{
+			"name": "T可控湮灭反应",
+			"id": 1145,
+			"sid": "",
+			"description": "可控湮灭反应描述",
+			"conclusion": "可控湮灭反应结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1145",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1506
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6002,
+				6005
+			],
+			"item_points": [
+				24,
+				12
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 600000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				42,
+				44
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				57,
+				-3
+			]
+		},
+		{
+			"name": "T增产剂 Mk.I",
+			"id": 1151,
+			"sid": "",
+			"description": "增产剂 Mk.I描述",
+			"conclusion": "增产剂 Mk.I结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1151",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1311,
+				1101
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001
+			],
+			"item_points": [
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 36000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				106,
+				109
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				21,
+				-11
+			]
+		},
+		{
+			"name": "T增产剂 Mk.II",
+			"id": 1152,
+			"sid": "",
+			"description": "增产剂 Mk.II描述",
+			"conclusion": "增产剂 Mk.II结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1152",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1302,
+				1151
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002
+			],
+			"item_points": [
+				16,
+				12
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 180000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				107
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				29,
+				-11
+			]
+		},
+		{
+			"name": "T增产剂 Mk.III",
+			"id": 1153,
+			"sid": "",
+			"description": "增产剂 Mk.III描述",
+			"conclusion": "增产剂 Mk.III结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1153",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1152,
+				1132
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				8,
+				6,
+				4
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 360000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				108
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				37,
+				-11
+			]
+		},
+		{
+			"name": "T基础制造工艺",
+			"id": 1201,
+			"sid": "",
+			"description": "基础制造工艺描述",
+			"conclusion": "基础制造工艺结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1201",
+			"is_lab_tech": 0,
+			"pre_techs": [
+				1001
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				1301,
+				1201
+			],
+			"item_points": [
+				20,
+				20
+			],
+			"property_override_items": [
+				6001
+			],
+			"property_item_counts": [
+				40
+			],
+			"hash_needed": 1800,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				45
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [
+				2303
+			],
+			"add_item_counts": [
+				1
+			],
+			"position": [
+				13,
+				-3
+			]
+		},
+		{
+			"name": "T高速制造工艺",
+			"id": 1202,
+			"sid": "",
+			"description": "高速制造工艺描述",
+			"conclusion": "高速制造工艺结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1202",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1201,
+				1302
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002
+			],
+			"item_points": [
+				20,
+				10
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 108000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				46
+			],
+			"unlock_functions": [
+				7
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						224,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				29,
+				-3
+			]
+		},
+		{
+			"name": "T量子打印技术",
+			"id": 1203,
+			"sid": "",
+			"description": "量子打印技术描述",
+			"conclusion": "量子打印技术结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1203",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1202,
+				1303
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004
+			],
+			"item_points": [
+				10,
+				10,
+				10,
+				10
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 288000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				47
+			],
+			"unlock_functions": [
+				7
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						224,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				49,
+				-3
+			]
+		},
+		{
+			"name": "T处理器",
+			"id": 1302,
+			"sid": "",
+			"description": "处理器描述",
+			"conclusion": "处理器结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1302",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1311
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001
+			],
+			"item_points": [
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 144000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				51
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				25,
+				-7
+			]
+		},
+		{
+			"name": "T量子芯片",
+			"id": 1303,
+			"sid": "",
+			"description": "量子芯片描述",
+			"conclusion": "量子芯片结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1303",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1312,
+				1141
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6004
+			],
+			"item_points": [
+				10,
+				10,
+				10
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 288000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				52
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				45,
+				-19
+			]
+		},
+		{
+			"name": "T大型采矿机",
+			"id": 1304,
+			"sid": "",
+			"description": "大型采矿机描述",
+			"conclusion": "大型采矿机结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1304",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1303
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004,
+				6005
+			],
+			"item_points": [
+				10,
+				10,
+				10,
+				10,
+				6
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 360000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				119
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				49,
+				-19
+			]
+		},
+		{
+			"name": "T高级化工",
+			"id": 1305,
+			"sid": "",
+			"description": "高级化工描述",
+			"conclusion": "高级化工结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1305",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1303,
+				1143
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004
+			],
+			"item_points": [
+				10,
+				10,
+				10,
+				10
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 360000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				124
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				49,
+				-27
+			]
+		},
+		{
+			"name": "T半导体材料",
+			"id": 1311,
+			"sid": "",
+			"description": "半导体材料描述",
+			"conclusion": "半导体材料结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1311",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1201
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001
+			],
+			"item_points": [
+				40
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 18000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				53
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				17,
+				-7
+			]
+		},
+		{
+			"name": "T信息矩阵",
+			"id": 1312,
+			"sid": "",
+			"description": "信息矩阵描述",
+			"conclusion": "信息矩阵结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1312",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1302,
+				1133
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002
+			],
+			"item_points": [
+				10,
+				10
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 288000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				55
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				41,
+				-7
+			]
+		},
+		{
+			"name": "T自动化冶金",
+			"id": 1401,
+			"sid": "",
+			"description": "自动化冶金描述",
+			"conclusion": "自动化冶金结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1401",
+			"is_lab_tech": 0,
+			"pre_techs": [
+				1001
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				1202,
+				1301
+			],
+			"item_points": [
+				20,
+				20
+			],
+			"property_override_items": [
+				6001
+			],
+			"property_item_counts": [
+				40
+			],
+			"hash_needed": 1800,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				56,
+				57
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [
+				2302
+			],
+			"add_item_counts": [
+				3
+			],
+			"position": [
+				13,
+				5
+			]
+		},
+		{
+			"name": "T冶炼提纯",
+			"id": 1402,
+			"sid": "",
+			"description": "冶炼提纯描述",
+			"conclusion": "冶炼提纯结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1402",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1401
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001
+			],
+			"item_points": [
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 18000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				34,
+				17,
+				59
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				17,
+				5
+			]
+		},
+		{
+			"name": "T晶体冶炼",
+			"id": 1403,
+			"sid": "",
+			"description": "晶体冶炼描述",
+			"conclusion": "晶体冶炼结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1403",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1402
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002
+			],
+			"item_points": [
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 90000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				60,
+				61,
+				37
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				21,
+				5
+			]
+		},
+		{
+			"name": "T钢材冶炼",
+			"id": 1411,
+			"sid": "",
+			"description": "钢材冶炼描述",
+			"conclusion": "钢材冶炼结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1411",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1401
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001
+			],
+			"item_points": [
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 21600,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				63
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				17,
+				13
+			]
+		},
+		{
+			"name": "T火力发电",
+			"id": 1412,
+			"sid": "",
+			"description": "火力发电描述",
+			"conclusion": "火力发电结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1412",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1201
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001
+			],
+			"item_points": [
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 5400,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				64
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [
+				2204
+			],
+			"add_item_counts": [
+				1
+			],
+			"position": [
+				17,
+				-15
+			]
+		},
+		{
+			"name": "T钛矿冶炼",
+			"id": 1413,
+			"sid": "",
+			"description": "钛矿冶炼描述",
+			"conclusion": "钛矿冶炼结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1413",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1411
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002
+			],
+			"item_points": [
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 36000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				65
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				25,
+				13
+			]
+		},
+		{
+			"name": "T高强度钛合金",
+			"id": 1414,
+			"sid": "",
+			"description": "高强度钛合金描述",
+			"conclusion": "高强度钛合金结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1414",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1413
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				20,
+				20,
+				2
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 144000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				66
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				33,
+				13
+			]
+		},
+		{
+			"name": "T移山填海工程",
+			"id": 1415,
+			"sid": "",
+			"description": "移山填海工程描述",
+			"conclusion": "移山填海工程结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1415",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1411
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001
+			],
+			"item_points": [
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 72000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				112
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				21,
+				9
+			]
+		},
+		{
+			"name": "T微型核聚变发电",
+			"id": 1416,
+			"sid": "",
+			"description": "微型核聚变发电描述",
+			"conclusion": "微型核聚变发电结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1416",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1134
+			],
+			"pre_techs_implicit": [
+				1414
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				20,
+				10,
+				5
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 180000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				113,
+				41
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				33,
+				-15
+			]
+		},
+		{
+			"name": "T位面冶金",
+			"id": 1417,
+			"sid": "",
+			"description": "位面冶金描述",
+			"conclusion": "位面冶金结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1417",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1141
+			],
+			"pre_techs_implicit": [
+				1403
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004
+			],
+			"item_points": [
+				10,
+				10,
+				10,
+				10
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 360000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				116
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				45,
+				-23
+			]
+		},
+		{
+			"name": "T太阳能收集",
+			"id": 1501,
+			"sid": "",
+			"description": "太阳能收集描述",
+			"conclusion": "太阳能收集结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1501",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1402,
+				1002,
+				1201
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001
+			],
+			"item_points": [
+				40
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 18000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				67
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [
+				2205
+			],
+			"add_item_counts": [
+				1
+			],
+			"position": [
+				21,
+				1
+			]
+		},
+		{
+			"name": "T光子变频",
+			"id": 1502,
+			"sid": "",
+			"description": "光子变频描述",
+			"conclusion": "光子变频结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1502",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1501
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002
+			],
+			"item_points": [
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 36000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				68,
+				69
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				25,
+				1
+			]
+		},
+		{
+			"name": "T太阳帆轨道系统",
+			"id": 1503,
+			"sid": "",
+			"description": "太阳帆轨道系统描述",
+			"conclusion": "太阳帆轨道系统结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1503",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1502
+			],
+			"pre_techs_implicit": [
+				1711
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002
+			],
+			"item_points": [
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 54000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				70,
+				71
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				29,
+				1
+			]
+		},
+		{
+			"name": "T射线接收站",
+			"id": 1504,
+			"sid": "",
+			"description": "射线接收站描述",
+			"conclusion": "射线接收站结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1504",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1503
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002
+			],
+			"item_points": [
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 108000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				72
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				33,
+				1
+			]
+		},
+		{
+			"name": "T行星电离层利用",
+			"id": 1505,
+			"sid": "",
+			"description": "行星电离层利用描述",
+			"conclusion": "行星电离层利用结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1505",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1504
+			],
+			"pre_techs_implicit": [
+				1704
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6005
+			],
+			"item_points": [
+				20,
+				20,
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 360000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				8
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						240,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				49,
+				1
+			]
+		},
+		{
+			"name": "T狄拉克逆变机制",
+			"id": 1506,
+			"sid": "",
+			"description": "狄拉克逆变机制描述",
+			"conclusion": "狄拉克逆变机制结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1506",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1505
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004,
+				6005
+			],
+			"item_points": [
+				20,
+				20,
+				5,
+				5,
+				10
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 540000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				74
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				53,
+				1
+			]
+		},
+		{
+			"name": "T宇宙矩阵",
+			"id": 1507,
+			"sid": "",
+			"description": "宇宙矩阵描述",
+			"conclusion": "宇宙矩阵结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1507",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1506
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004,
+				6005
+			],
+			"item_points": [
+				10,
+				10,
+				10,
+				10,
+				10
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 720000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				75
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				65,
+				1
+			]
+		},
+		{
+			"name": "T任务完成",
+			"id": 1508,
+			"sid": "",
+			"description": "任务完成描述",
+			"conclusion": "任务完成结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1508",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1507
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6006
+			],
+			"item_points": [
+				4
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 3600000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				99
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						240,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				69,
+				1
+			]
+		},
+		{
+			"name": "T能量储存",
+			"id": 1511,
+			"sid": "",
+			"description": "能量储存描述",
+			"conclusion": "能量储存结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1511",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1403,
+				1501
+			],
+			"pre_techs_implicit": [
+				1711
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002
+			],
+			"item_points": [
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 108000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				76
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				25,
+				9
+			]
+		},
+		{
+			"name": "T星际电力运输",
+			"id": 1512,
+			"sid": "",
+			"description": "星际电力运输描述",
+			"conclusion": "星际电力运输结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1512",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1414,
+				1511
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				20,
+				20,
+				2
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 216000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				77
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				37,
+				9
+			]
+		},
+		{
+			"name": "T地热开采",
+			"id": 1513,
+			"sid": "",
+			"description": "地热开采描述",
+			"conclusion": "地热开采结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1513",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1502
+			],
+			"pre_techs_implicit": [
+				1711
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002
+			],
+			"item_points": [
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 144000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				118
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				29,
+				5
+			]
+		},
+		{
+			"name": "T高强度轻质结构",
+			"id": 1521,
+			"sid": "",
+			"description": "高强度轻质结构描述",
+			"conclusion": "高强度轻质结构结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1521",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1503
+			],
+			"pre_techs_implicit": [
+				1132
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6003
+			],
+			"item_points": [
+				12,
+				2
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 360000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				80,
+				81
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				33,
+				5
+			]
+		},
+		{
+			"name": "T垂直发射井",
+			"id": 1522,
+			"sid": "",
+			"description": "垂直发射井描述",
+			"conclusion": "垂直发射井结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1522",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1521
+			],
+			"pre_techs_implicit": [
+				1303
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004
+			],
+			"item_points": [
+				10,
+				10,
+				10,
+				10
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 576000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				82,
+				83
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				45,
+				5
+			]
+		},
+		{
+			"name": "T戴森球应力系统",
+			"id": 1523,
+			"sid": "",
+			"description": "戴森球应力系统描述",
+			"conclusion": "戴森球应力系统结果",
+			"published": 1,
+			"level": 1,
+			"max_level": 6,
+			"level_coef1": 180000,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1523",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1522
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004,
+				6005
+			],
+			"item_points": [
+				20,
+				20,
+				20,
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 180000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				26
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						46,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				49,
+				5
+			]
+		},
+		{
+			"name": "T基础物流系统",
+			"id": 1601,
+			"sid": "",
+			"description": "基础物流系统描述",
+			"conclusion": "基础物流系统结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1601",
+			"is_lab_tech": 0,
+			"pre_techs": [
+				1001
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				1301,
+				1201
+			],
+			"item_points": [
+				20,
+				20
+			],
+			"property_override_items": [
+				6001
+			],
+			"property_item_counts": [
+				40
+			],
+			"hash_needed": 1800,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				84,
+				85,
+				86
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [
+				2001,
+				2011
+			],
+			"add_item_counts": [
+				20,
+				5
+			],
+			"position": [
+				13,
+				21
+			]
+		},
+		{
+			"name": "T改良物流系统",
+			"id": 1602,
+			"sid": "",
+			"description": "改良物流系统描述",
+			"conclusion": "改良物流系统结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1602",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1601
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001
+			],
+			"item_points": [
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 18000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				87,
+				88,
+				117
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [
+				2020,
+				2012,
+				2030
+			],
+			"add_item_counts": [
+				1,
+				5,
+				5
+			],
+			"position": [
+				21,
+				21
+			]
+		},
+		{
+			"name": "T高效物流系统",
+			"id": 1603,
+			"sid": "",
+			"description": "高效物流系统描述",
+			"conclusion": "高效物流系统结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1603",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1602
+			],
+			"pre_techs_implicit": [
+				1702
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002
+			],
+			"item_points": [
+				20,
+				5
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 72000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				89,
+				90,
+				91
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				25,
+				21
+			]
+		},
+		{
+			"name": "T行星物流系统",
+			"id": 1604,
+			"sid": "",
+			"description": "行星物流系统描述",
+			"conclusion": "行星物流系统结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1604",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1603
+			],
+			"pre_techs_implicit": [
+				1113,
+				3701
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002
+			],
+			"item_points": [
+				20,
+				10
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 144000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				92,
+				93,
+				94
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				29,
+				21
+			]
+		},
+		{
+			"name": "T星际物流系统",
+			"id": 1605,
+			"sid": "",
+			"description": "星际物流系统描述",
+			"conclusion": "星际物流系统结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1605",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1604,
+				1414
+			],
+			"pre_techs_implicit": [
+				1114
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				20,
+				20,
+				2
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 216000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				95,
+				96
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				37,
+				21
+			]
+		},
+		{
+			"name": "T气态行星开采",
+			"id": 1606,
+			"sid": "",
+			"description": "气态行星开采描述",
+			"conclusion": "气态行星开采结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1606",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1605,
+				1512
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				10,
+				10,
+				10
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 432000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				111
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				41,
+				13
+			]
+		},
+		{
+			"name": "T集装物流系统",
+			"id": 1607,
+			"sid": "",
+			"description": "集装物流系统描述",
+			"conclusion": "集装物流系统结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1607",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1603
+			],
+			"pre_techs_implicit": [
+				1711
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				20,
+				10,
+				1
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 180000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				120
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				33,
+				17
+			]
+		},
+		{
+			"name": "T配送物流系统",
+			"id": 1608,
+			"sid": "",
+			"description": "配送物流系统描述",
+			"conclusion": "配送物流系统结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1608",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1602
+			],
+			"pre_techs_implicit": [
+				1702
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002
+			],
+			"item_points": [
+				20,
+				10
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 108000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				122,
+				123
+			],
+			"unlock_functions": [
+				32
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						240,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				25,
+				17
+			]
+		},
+		{
+			"name": "T电磁驱动",
+			"id": 1701,
+			"sid": "",
+			"description": "电磁驱动描述",
+			"conclusion": "电磁驱动结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1701",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1001
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001
+			],
+			"item_points": [
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 9000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				97
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				13,
+				-35
+			]
+		},
+		{
+			"name": "T磁悬浮技术",
+			"id": 1702,
+			"sid": "",
+			"description": "磁悬浮技术描述",
+			"conclusion": "磁悬浮技术结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1702",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1701
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002
+			],
+			"item_points": [
+				20,
+				5
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 72000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				98
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				21,
+				-35
+			]
+		},
+		{
+			"name": "T粒子磁力阱",
+			"id": 1703,
+			"sid": "",
+			"description": "粒子磁力阱描述",
+			"conclusion": "粒子磁力阱结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1703",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1702
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002
+			],
+			"item_points": [
+				20,
+				10
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 288000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				99,
+				100
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				29,
+				-35
+			]
+		},
+		{
+			"name": "T引力波折射",
+			"id": 1704,
+			"sid": "",
+			"description": "引力波折射描述",
+			"conclusion": "引力波折射结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1704",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1143,
+				1703
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				12,
+				12,
+				12
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 360000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				101,
+				78
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				45,
+				-35
+			]
+		},
+		{
+			"name": "T引力矩阵",
+			"id": 1705,
+			"sid": "",
+			"description": "引力矩阵描述",
+			"conclusion": "引力矩阵结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1705",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1303,
+				1704
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				10,
+				10,
+				10
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 576000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				102,
+				79
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				49,
+				-31
+			]
+		},
+		{
+			"name": "T超级磁场发生器",
+			"id": 1711,
+			"sid": "",
+			"description": "超级磁场发生器描述",
+			"conclusion": "超级磁场发生器结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1711",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1702
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002
+			],
+			"item_points": [
+				20,
+				5
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 180000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				103
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				25,
+				-39
+			]
+		},
+		{
+			"name": "T卫星配电系统",
+			"id": 1712,
+			"sid": "",
+			"description": "卫星配电系统描述",
+			"conclusion": "卫星配电系统结果",
+			"published": 1,
+			"level": 0,
+			"max_level": 0,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/1712",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				1711
+			],
+			"pre_techs_implicit": [
+				1521
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				12,
+				12,
+				12
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 240000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [
+				73
+			],
+			"unlock_functions": [],
+			"unlock_values": [],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				37,
+				-39
+			]
+		},
+		{
+			"name": "T机甲核心",
+			"id": 2101,
+			"sid": "",
+			"description": "机甲核心描述",
+			"conclusion": "机甲核心结果",
+			"published": 1,
+			"level": 1,
+			"max_level": 1,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2101",
+			"is_lab_tech": 0,
+			"pre_techs": [],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				1101,
+				1104
+			],
+			"item_points": [
+				20,
+				20
+			],
+			"property_override_items": [
+				6001
+			],
+			"property_item_counts": [
+				20
+			],
+			"hash_needed": 3600,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				6
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						208,
+						18,
+						131,
+						65
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				9,
+				25
+			]
+		},
+		{
+			"name": "T机甲核心",
+			"id": 2102,
+			"sid": "",
+			"description": "机甲核心描述2",
+			"conclusion": "机甲核心结果",
+			"published": 1,
+			"level": 2,
+			"max_level": 2,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2102",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2101
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002
+			],
+			"item_points": [
+				10,
+				10
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 36000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				6
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						56,
+						156,
+						172,
+						65
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				13,
+				25
+			]
+		},
+		{
+			"name": "T机甲核心",
+			"id": 2103,
+			"sid": "",
+			"description": "机甲核心描述2",
+			"conclusion": "机甲核心结果",
+			"published": 1,
+			"level": 3,
+			"max_level": 3,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2103",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2102
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				10,
+				10,
+				10
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 108000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				6
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						132,
+						215,
+						183,
+						65
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				17,
+				25
+			]
+		},
+		{
+			"name": "T机甲核心",
+			"id": 2104,
+			"sid": "",
+			"description": "机甲核心描述2",
+			"conclusion": "机甲核心结果",
+			"published": 1,
+			"level": 4,
+			"max_level": 4,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2104",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2103
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004
+			],
+			"item_points": [
+				6,
+				6,
+				6,
+				6
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 300000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				6
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						132,
+						215,
+						199,
+						65
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				21,
+				25
+			]
+		},
+		{
+			"name": "T机甲核心",
+			"id": 2105,
+			"sid": "",
+			"description": "机甲核心描述2",
+			"conclusion": "机甲核心结果",
+			"published": 1,
+			"level": 5,
+			"max_level": 5,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2105",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2104
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004,
+				6005
+			],
+			"item_points": [
+				2,
+				2,
+				2,
+				2,
+				2
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 1440000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				6
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						132,
+						215,
+						215,
+						65
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				25,
+				25
+			]
+		},
+		{
+			"name": "T机甲核心",
+			"id": 2106,
+			"sid": "",
+			"description": "机甲核心描述2",
+			"conclusion": "机甲核心结果",
+			"published": 1,
+			"level": 6,
+			"max_level": 10000,
+			"level_coef1": -8100000,
+			"level_coef2": 900000,
+			"icon_path": "Icons/Tech/2106",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2105
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6006
+			],
+			"item_points": [
+				2
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 18000000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				6
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						163,
+						225,
+						225,
+						65
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				29,
+				25
+			]
+		},
+		{
+			"name": "T机械骨骼",
+			"id": 2201,
+			"sid": "",
+			"description": "机械骨骼描述",
+			"conclusion": "机械骨骼结果",
+			"published": 1,
+			"level": 1,
+			"max_level": 1,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2201",
+			"is_lab_tech": 0,
+			"pre_techs": [],
+			"pre_techs_implicit": [
+				2101
+			],
+			"pre_techs_max": 0,
+			"items": [
+				1203
+			],
+			"item_points": [
+				30
+			],
+			"property_override_items": [
+				6001
+			],
+			"property_item_counts": [
+				100
+			],
+			"hash_needed": 7200,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				3
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						240,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				9,
+				21
+			]
+		},
+		{
+			"name": "T机械骨骼",
+			"id": 2202,
+			"sid": "",
+			"description": "机械骨骼描述2",
+			"conclusion": "机械骨骼结果",
+			"published": 1,
+			"level": 2,
+			"max_level": 2,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2202",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2201
+			],
+			"pre_techs_implicit": [
+				2101
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002
+			],
+			"item_points": [
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 36000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				3
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						240,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				13,
+				21
+			]
+		},
+		{
+			"name": "T机械骨骼",
+			"id": 2203,
+			"sid": "",
+			"description": "机械骨骼描述2",
+			"conclusion": "机械骨骼结果",
+			"published": 1,
+			"level": 3,
+			"max_level": 3,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2203",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2202
+			],
+			"pre_techs_implicit": [
+				2102
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002
+			],
+			"item_points": [
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 72000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				3
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						240,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				17,
+				21
+			]
+		},
+		{
+			"name": "T机械骨骼",
+			"id": 2204,
+			"sid": "",
+			"description": "机械骨骼描述2",
+			"conclusion": "机械骨骼结果",
+			"published": 1,
+			"level": 4,
+			"max_level": 4,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2204",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2203
+			],
+			"pre_techs_implicit": [
+				2102
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				12,
+				12,
+				12
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 180000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				3
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						240,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				21,
+				21
+			]
+		},
+		{
+			"name": "T机械骨骼",
+			"id": 2205,
+			"sid": "",
+			"description": "机械骨骼描述2",
+			"conclusion": "机械骨骼结果",
+			"published": 1,
+			"level": 5,
+			"max_level": 5,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2205",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2204
+			],
+			"pre_techs_implicit": [
+				2103
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				12,
+				12,
+				12
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 240000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				3
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						240,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				25,
+				21
+			]
+		},
+		{
+			"name": "T机械骨骼",
+			"id": 2206,
+			"sid": "",
+			"description": "机械骨骼描述2",
+			"conclusion": "机械骨骼结果",
+			"published": 1,
+			"level": 6,
+			"max_level": 6,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2206",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2205
+			],
+			"pre_techs_implicit": [
+				2104
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004
+			],
+			"item_points": [
+				12,
+				12,
+				12,
+				12
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 300000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				3
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						240,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				29,
+				21
+			]
+		},
+		{
+			"name": "T机械骨骼",
+			"id": 2207,
+			"sid": "",
+			"description": "机械骨骼描述2",
+			"conclusion": "机械骨骼结果",
+			"published": 1,
+			"level": 7,
+			"max_level": 7,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2207",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2206
+			],
+			"pre_techs_implicit": [
+				2104
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004
+			],
+			"item_points": [
+				12,
+				12,
+				12,
+				12
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 360000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				3
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				33,
+				21
+			]
+		},
+		{
+			"name": "T机械骨骼",
+			"id": 2208,
+			"sid": "",
+			"description": "机械骨骼描述2",
+			"conclusion": "机械骨骼结果",
+			"published": 1,
+			"level": 8,
+			"max_level": 8,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2208",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2207
+			],
+			"pre_techs_implicit": [
+				2105
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004,
+				6005
+			],
+			"item_points": [
+				6,
+				6,
+				6,
+				6,
+				6
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 1200000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				3
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				37,
+				21
+			]
+		},
+		{
+			"name": "T机舱容量",
+			"id": 2301,
+			"sid": "",
+			"description": "机舱容量描述",
+			"conclusion": "机舱容量结果",
+			"published": 1,
+			"level": 1,
+			"max_level": 1,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2301",
+			"is_lab_tech": 0,
+			"pre_techs": [],
+			"pre_techs_implicit": [
+				2101
+			],
+			"pre_techs_max": 0,
+			"items": [
+				1103,
+				1301
+			],
+			"item_points": [
+				60,
+				60
+			],
+			"property_override_items": [
+				6001
+			],
+			"property_item_counts": [
+				100
+			],
+			"hash_needed": 7200,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				5
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						240,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				9,
+				17
+			]
+		},
+		{
+			"name": "T机舱容量",
+			"id": 2302,
+			"sid": "",
+			"description": "机舱容量描述",
+			"conclusion": "机舱容量结果",
+			"published": 1,
+			"level": 2,
+			"max_level": 2,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2302",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2301
+			],
+			"pre_techs_implicit": [
+				2101
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002
+			],
+			"item_points": [
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 36000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				5
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						240,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				13,
+				17
+			]
+		},
+		{
+			"name": "T机舱容量",
+			"id": 2303,
+			"sid": "",
+			"description": "机舱容量描述",
+			"conclusion": "机舱容量结果",
+			"published": 1,
+			"level": 3,
+			"max_level": 3,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2303",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2302
+			],
+			"pre_techs_implicit": [
+				2102
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				20,
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 72000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				5,
+				33
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						240,
+						63
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				17,
+				17
+			]
+		},
+		{
+			"name": "T机舱容量",
+			"id": 2304,
+			"sid": "",
+			"description": "机舱容量描述2",
+			"conclusion": "机舱容量结果",
+			"published": 1,
+			"level": 4,
+			"max_level": 4,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2304",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2303
+			],
+			"pre_techs_implicit": [
+				2102
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				12,
+				12,
+				12
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 180000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				5,
+				32,
+				33
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						240,
+						63
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						240,
+						63
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				21,
+				17
+			]
+		},
+		{
+			"name": "T机舱容量",
+			"id": 2305,
+			"sid": "",
+			"description": "机舱容量描述2",
+			"conclusion": "机舱容量结果",
+			"published": 1,
+			"level": 5,
+			"max_level": 5,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2305",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2304
+			],
+			"pre_techs_implicit": [
+				2103
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				12,
+				12,
+				12
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 240000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				5,
+				33
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						64
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				25,
+				17
+			]
+		},
+		{
+			"name": "T机舱容量",
+			"id": 2306,
+			"sid": "",
+			"description": "机舱容量描述2",
+			"conclusion": "机舱容量结果",
+			"published": 1,
+			"level": 6,
+			"max_level": 6,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2306",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2305
+			],
+			"pre_techs_implicit": [
+				2105
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004,
+				6005
+			],
+			"item_points": [
+				6,
+				6,
+				6,
+				6,
+				6
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 600000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				5,
+				33
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						64
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				29,
+				17
+			]
+		},
+		{
+			"name": "T通讯控制",
+			"id": 2401,
+			"sid": "",
+			"description": "通讯控制描述",
+			"conclusion": "通讯控制结果1",
+			"published": 1,
+			"level": 1,
+			"max_level": 1,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2401",
+			"is_lab_tech": 1,
+			"pre_techs": [],
+			"pre_techs_implicit": [
+				2101
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001
+			],
+			"item_points": [
+				40
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 9000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				1
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						240,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				9,
+				13
+			]
+		},
+		{
+			"name": "T通讯控制",
+			"id": 2402,
+			"sid": "",
+			"description": "通讯控制描述2",
+			"conclusion": "通讯控制结果2",
+			"published": 1,
+			"level": 2,
+			"max_level": 2,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2402",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2401
+			],
+			"pre_techs_implicit": [
+				2101
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002
+			],
+			"item_points": [
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 36000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				1
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				13,
+				13
+			]
+		},
+		{
+			"name": "T通讯控制",
+			"id": 2403,
+			"sid": "",
+			"description": "通讯控制描述3",
+			"conclusion": "通讯控制结果3",
+			"published": 1,
+			"level": 3,
+			"max_level": 3,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2403",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2402
+			],
+			"pre_techs_implicit": [
+				2102
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002
+			],
+			"item_points": [
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 72000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				9
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						240,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				17,
+				13
+			]
+		},
+		{
+			"name": "T通讯控制",
+			"id": 2404,
+			"sid": "",
+			"description": "通讯控制描述2",
+			"conclusion": "通讯控制结果4",
+			"published": 1,
+			"level": 4,
+			"max_level": 4,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2404",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2403
+			],
+			"pre_techs_implicit": [
+				2103
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				12,
+				12,
+				12
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 180000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				1
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						8,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				21,
+				13
+			]
+		},
+		{
+			"name": "T通讯控制",
+			"id": 2405,
+			"sid": "",
+			"description": "通讯控制描述2",
+			"conclusion": "通讯控制结果5",
+			"published": 1,
+			"level": 5,
+			"max_level": 5,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2405",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2404
+			],
+			"pre_techs_implicit": [
+				2104
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004
+			],
+			"item_points": [
+				12,
+				12,
+				12,
+				12
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 300000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				1
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						8,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				25,
+				13
+			]
+		},
+		{
+			"name": "T通讯控制",
+			"id": 2406,
+			"sid": "",
+			"description": "通讯控制描述3",
+			"conclusion": "通讯控制结果6",
+			"published": 1,
+			"level": 6,
+			"max_level": 6,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2406",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2405
+			],
+			"pre_techs_implicit": [
+				2105
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004,
+				6005
+			],
+			"item_points": [
+				4,
+				4,
+				4,
+				4,
+				4
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 1440000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				9
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				29,
+				13
+			]
+		},
+		{
+			"name": "T通讯控制",
+			"id": 2407,
+			"sid": "",
+			"description": "通讯控制描述2",
+			"conclusion": "通讯控制结果7",
+			"published": 1,
+			"level": 7,
+			"max_level": 10000,
+			"level_coef1": -21600000,
+			"level_coef2": 1800000,
+			"icon_path": "Icons/Tech/2407",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2406
+			],
+			"pre_techs_implicit": [
+				2105
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6006
+			],
+			"item_points": [
+				4
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 64800000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				1
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						8,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				33,
+				13
+			]
+		},
+		{
+			"name": "T能量回路",
+			"id": 2501,
+			"sid": "",
+			"description": "能量回路描述",
+			"conclusion": "能量回路结果",
+			"published": 1,
+			"level": 1,
+			"max_level": 1,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2501",
+			"is_lab_tech": 0,
+			"pre_techs": [],
+			"pre_techs_implicit": [
+				2101
+			],
+			"pre_techs_max": 0,
+			"items": [
+				1030,
+				1006,
+				1109
+			],
+			"item_points": [
+				30,
+				30,
+				30
+			],
+			"property_override_items": [
+				6001
+			],
+			"property_item_counts": [
+				200
+			],
+			"hash_needed": 7200,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				2
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						106,
+						8,
+						65
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				9,
+				5
+			]
+		},
+		{
+			"name": "T能量回路",
+			"id": 2502,
+			"sid": "",
+			"description": "能量回路描述",
+			"conclusion": "能量回路结果",
+			"published": 1,
+			"level": 2,
+			"max_level": 2,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2502",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2501
+			],
+			"pre_techs_implicit": [
+				2102
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002
+			],
+			"item_points": [
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 72000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				2
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						106,
+						8,
+						65
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				13,
+				5
+			]
+		},
+		{
+			"name": "T能量回路",
+			"id": 2503,
+			"sid": "",
+			"description": "能量回路描述",
+			"conclusion": "能量回路结果",
+			"published": 1,
+			"level": 3,
+			"max_level": 3,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2503",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2502
+			],
+			"pre_techs_implicit": [
+				2103
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				20,
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 216000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				2
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						106,
+						8,
+						65
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				17,
+				5
+			]
+		},
+		{
+			"name": "T能量回路",
+			"id": 2504,
+			"sid": "",
+			"description": "能量回路描述",
+			"conclusion": "能量回路结果",
+			"published": 1,
+			"level": 4,
+			"max_level": 4,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2504",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2503
+			],
+			"pre_techs_implicit": [
+				2104
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				12,
+				12,
+				12
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 600000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				2
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						106,
+						8,
+						65
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				21,
+				5
+			]
+		},
+		{
+			"name": "T能量回路",
+			"id": 2505,
+			"sid": "",
+			"description": "能量回路描述",
+			"conclusion": "能量回路结果",
+			"published": 1,
+			"level": 5,
+			"max_level": 5,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2505",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2504
+			],
+			"pre_techs_implicit": [
+				2105
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004,
+				6005
+			],
+			"item_points": [
+				4,
+				4,
+				4,
+				4,
+				4
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 2700000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				2
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						106,
+						40,
+						65
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				25,
+				5
+			]
+		},
+		{
+			"name": "T能量回路",
+			"id": 2506,
+			"sid": "",
+			"description": "能量回路描述",
+			"conclusion": "能量回路结果",
+			"published": 1,
+			"level": 6,
+			"max_level": 10000,
+			"level_coef1": -16200000,
+			"level_coef2": 1800000,
+			"icon_path": "Icons/Tech/2506",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2505
+			],
+			"pre_techs_implicit": [
+				2105
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6006
+			],
+			"item_points": [
+				4
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 36000000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				2
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						128,
+						132,
+						46,
+						65
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				29,
+				5
+			]
+		},
+		{
+			"name": "T无人机引擎",
+			"id": 2601,
+			"sid": "",
+			"description": "无人机引擎描述",
+			"conclusion": "无人机引擎结果",
+			"published": 1,
+			"level": 1,
+			"max_level": 1,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2601",
+			"is_lab_tech": 1,
+			"pre_techs": [],
+			"pre_techs_implicit": [
+				2101
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001
+			],
+			"item_points": [
+				40
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 18000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				10
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				9,
+				1
+			]
+		},
+		{
+			"name": "T无人机引擎",
+			"id": 2602,
+			"sid": "",
+			"description": "无人机引擎描述2",
+			"conclusion": "无人机引擎结果",
+			"published": 1,
+			"level": 2,
+			"max_level": 2,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2602",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2601
+			],
+			"pre_techs_implicit": [
+				2102
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002
+			],
+			"item_points": [
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 72000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				10
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				13,
+				1
+			]
+		},
+		{
+			"name": "T无人机引擎",
+			"id": 2603,
+			"sid": "",
+			"description": "无人机引擎描述2",
+			"conclusion": "无人机引擎结果",
+			"published": 1,
+			"level": 3,
+			"max_level": 3,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2603",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2602
+			],
+			"pre_techs_implicit": [
+				2103
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				20,
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 144000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				10
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				17,
+				1
+			]
+		},
+		{
+			"name": "T无人机引擎",
+			"id": 2604,
+			"sid": "",
+			"description": "无人机引擎描述2",
+			"conclusion": "无人机引擎结果",
+			"published": 1,
+			"level": 4,
+			"max_level": 4,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2604",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2603
+			],
+			"pre_techs_implicit": [
+				2104
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004
+			],
+			"item_points": [
+				12,
+				12,
+				12,
+				12
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 360000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				10
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						8,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				21,
+				1
+			]
+		},
+		{
+			"name": "T无人机引擎",
+			"id": 2605,
+			"sid": "",
+			"description": "无人机引擎描述2",
+			"conclusion": "无人机引擎结果",
+			"published": 1,
+			"level": 5,
+			"max_level": 5,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2605",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2604
+			],
+			"pre_techs_implicit": [
+				2105
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004,
+				6005
+			],
+			"item_points": [
+				4,
+				4,
+				4,
+				4,
+				4
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 1440000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				10
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						8,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				25,
+				1
+			]
+		},
+		{
+			"name": "T无人机引擎",
+			"id": 2606,
+			"sid": "",
+			"description": "无人机引擎描述2",
+			"conclusion": "无人机引擎结果",
+			"published": 1,
+			"level": 6,
+			"max_level": 24,
+			"level_coef1": -18000000,
+			"level_coef2": 1800000,
+			"icon_path": "Icons/Tech/2606",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2605
+			],
+			"pre_techs_implicit": [
+				2105
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6006
+			],
+			"item_points": [
+				4
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 45000000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				10
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						8,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				29,
+				1
+			]
+		},
+		{
+			"name": "T批量建造",
+			"id": 2701,
+			"sid": "",
+			"description": "批量建造描述",
+			"conclusion": "批量建造结果",
+			"published": 1,
+			"level": 1,
+			"max_level": 1,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2701",
+			"is_lab_tech": 0,
+			"pre_techs": [],
+			"pre_techs_implicit": [
+				2101
+			],
+			"pre_techs_max": 0,
+			"items": [
+				1301
+			],
+			"item_points": [
+				30
+			],
+			"property_override_items": [
+				6001
+			],
+			"property_item_counts": [
+				100
+			],
+			"hash_needed": 12000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				28
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						192,
+						98,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				9,
+				9
+			]
+		},
+		{
+			"name": "T批量建造",
+			"id": 2702,
+			"sid": "",
+			"description": "批量建造描述2",
+			"conclusion": "批量建造结果2",
+			"published": 1,
+			"level": 2,
+			"max_level": 2,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2702",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2701
+			],
+			"pre_techs_implicit": [
+				2101
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001
+			],
+			"item_points": [
+				30
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 36000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				28
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						192,
+						114,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				13,
+				9
+			]
+		},
+		{
+			"name": "T批量建造",
+			"id": 2703,
+			"sid": "",
+			"description": "批量建造描述2",
+			"conclusion": "批量建造结果2",
+			"published": 1,
+			"level": 3,
+			"max_level": 3,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2703",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2702
+			],
+			"pre_techs_implicit": [
+				2102
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002
+			],
+			"item_points": [
+				30,
+				30
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 60000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				28
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						32,
+						140,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				17,
+				9
+			]
+		},
+		{
+			"name": "T批量建造",
+			"id": 2704,
+			"sid": "",
+			"description": "批量建造描述2",
+			"conclusion": "批量建造结果2",
+			"published": 1,
+			"level": 4,
+			"max_level": 4,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2704",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2703
+			],
+			"pre_techs_implicit": [
+				2103
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				15,
+				15,
+				15
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 192000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				28
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						32,
+						172,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				21,
+				9
+			]
+		},
+		{
+			"name": "T批量建造",
+			"id": 2705,
+			"sid": "",
+			"description": "批量建造描述5",
+			"conclusion": "批量建造结果5",
+			"published": 1,
+			"level": 5,
+			"max_level": 5,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2705",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2704
+			],
+			"pre_techs_implicit": [
+				2104
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004
+			],
+			"item_points": [
+				15,
+				15,
+				15,
+				15
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 240000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				28
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						48,
+						65
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				25,
+				9
+			]
+		},
+		{
+			"name": "T驱动引擎",
+			"id": 2901,
+			"sid": "",
+			"description": "驱动引擎描述",
+			"conclusion": "驱动引擎结果1",
+			"published": 1,
+			"level": 1,
+			"max_level": 1,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2901",
+			"is_lab_tech": 0,
+			"pre_techs": [],
+			"pre_techs_implicit": [
+				2101
+			],
+			"pre_techs_max": 0,
+			"items": [
+				1006,
+				1202
+			],
+			"item_points": [
+				50,
+				20
+			],
+			"property_override_items": [
+				6001
+			],
+			"property_item_counts": [
+				200
+			],
+			"hash_needed": 10800,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				4
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						240,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				9,
+				-3
+			]
+		},
+		{
+			"name": "T驱动引擎",
+			"id": 2902,
+			"sid": "",
+			"description": "驱动引擎描述2",
+			"conclusion": "驱动引擎结果2",
+			"published": 1,
+			"level": 2,
+			"max_level": 2,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2902",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2901
+			],
+			"pre_techs_implicit": [
+				2102
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002
+			],
+			"item_points": [
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 36000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				4
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				13,
+				-3
+			]
+		},
+		{
+			"name": "T驱动引擎",
+			"id": 2903,
+			"sid": "",
+			"description": "驱动引擎描述3",
+			"conclusion": "驱动引擎结果3",
+			"published": 1,
+			"level": 3,
+			"max_level": 3,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2903",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2902
+			],
+			"pre_techs_implicit": [
+				2103
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				20,
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 180000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				11
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						64,
+						143,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				17,
+				-3
+			]
+		},
+		{
+			"name": "T驱动引擎",
+			"id": 2904,
+			"sid": "",
+			"description": "驱动引擎描述4",
+			"conclusion": "驱动引擎结果4",
+			"published": 1,
+			"level": 4,
+			"max_level": 4,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2904",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2903
+			],
+			"pre_techs_implicit": [
+				2104,
+				1704
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				10,
+				10,
+				10
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 720000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				4
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						8,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				21,
+				-3
+			]
+		},
+		{
+			"name": "T驱动引擎",
+			"id": 2905,
+			"sid": "",
+			"description": "驱动引擎描述5",
+			"conclusion": "驱动引擎结果5",
+			"published": 1,
+			"level": 5,
+			"max_level": 5,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/2904",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2904
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6005
+			],
+			"item_points": [
+				10,
+				10,
+				10,
+				10
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 1080000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				27
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						8,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				25,
+				-3
+			]
+		},
+		{
+			"name": "T驱动引擎",
+			"id": 2906,
+			"sid": "",
+			"description": "驱动引擎描述5",
+			"conclusion": "驱动引擎结果5",
+			"published": 1,
+			"level": 6,
+			"max_level": 100,
+			"level_coef1": -1800000,
+			"level_coef2": 360000,
+			"icon_path": "Icons/Tech/2904",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				2905
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6006
+			],
+			"item_points": [
+				10
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 0,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				27
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						8,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				29,
+				-3
+			]
+		},
+		{
+			"name": "T太阳帆寿命",
+			"id": 3101,
+			"sid": "",
+			"description": "太阳帆寿命描述",
+			"conclusion": "太阳帆寿命结果",
+			"published": 1,
+			"level": 1,
+			"max_level": 1,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3101",
+			"is_lab_tech": 1,
+			"pre_techs": [],
+			"pre_techs_implicit": [
+				1503
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				40,
+				40,
+				40
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 36000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				12
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						192,
+						114,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				9,
+				-11
+			]
+		},
+		{
+			"name": "T太阳帆寿命",
+			"id": 3102,
+			"sid": "",
+			"description": "太阳帆寿命描述",
+			"conclusion": "太阳帆寿命结果",
+			"published": 1,
+			"level": 2,
+			"max_level": 2,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3102",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3101
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				20,
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 108000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				12
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						192,
+						114,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				13,
+				-11
+			]
+		},
+		{
+			"name": "T太阳帆寿命",
+			"id": 3103,
+			"sid": "",
+			"description": "太阳帆寿命描述",
+			"conclusion": "太阳帆寿命结果",
+			"published": 1,
+			"level": 3,
+			"max_level": 3,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3103",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3102
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				20,
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 144000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				12
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						192,
+						130,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				17,
+				-11
+			]
+		},
+		{
+			"name": "T太阳帆寿命",
+			"id": 3104,
+			"sid": "",
+			"description": "太阳帆寿命描述",
+			"conclusion": "太阳帆寿命结果",
+			"published": 1,
+			"level": 4,
+			"max_level": 4,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3104",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3103
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004
+			],
+			"item_points": [
+				12,
+				12,
+				12,
+				12
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 300000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				12
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						192,
+						130,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				21,
+				-11
+			]
+		},
+		{
+			"name": "T太阳帆寿命",
+			"id": 3105,
+			"sid": "",
+			"description": "太阳帆寿命描述",
+			"conclusion": "太阳帆寿命结果",
+			"published": 1,
+			"level": 5,
+			"max_level": 5,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3105",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3104
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004
+			],
+			"item_points": [
+				12,
+				12,
+				12,
+				12
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 480000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				12
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						32,
+						140,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				25,
+				-11
+			]
+		},
+		{
+			"name": "T太阳帆寿命",
+			"id": 3106,
+			"sid": "",
+			"description": "太阳帆寿命描述",
+			"conclusion": "太阳帆寿命结果",
+			"published": 1,
+			"level": 6,
+			"max_level": 6,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3106",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3105
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004
+			],
+			"item_points": [
+				6,
+				6,
+				6,
+				6
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 1200000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				12
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						32,
+						140,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				29,
+				-11
+			]
+		},
+		{
+			"name": "T射线传输效率",
+			"id": 3201,
+			"sid": "",
+			"description": "射线传输效率描述",
+			"conclusion": "射线传输效率结果",
+			"published": 1,
+			"level": 1,
+			"max_level": 1,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3201",
+			"is_lab_tech": 1,
+			"pre_techs": [],
+			"pre_techs_implicit": [
+				1504
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				40,
+				40,
+				40
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 54000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				13
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						205,
+						204,
+						204,
+						204,
+						204,
+						204,
+						236,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				9,
+				-15
+			]
+		},
+		{
+			"name": "T射线传输效率",
+			"id": 3202,
+			"sid": "",
+			"description": "射线传输效率描述",
+			"conclusion": "射线传输效率结果",
+			"published": 1,
+			"level": 2,
+			"max_level": 2,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3202",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3201
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				20,
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 144000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				13
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						205,
+						204,
+						204,
+						204,
+						204,
+						204,
+						236,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				13,
+				-15
+			]
+		},
+		{
+			"name": "T射线传输效率",
+			"id": 3203,
+			"sid": "",
+			"description": "射线传输效率描述",
+			"conclusion": "射线传输效率结果",
+			"published": 1,
+			"level": 3,
+			"max_level": 3,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3203",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3202
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				20,
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 180000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				13
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						205,
+						204,
+						204,
+						204,
+						204,
+						204,
+						236,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				17,
+				-15
+			]
+		},
+		{
+			"name": "T射线传输效率",
+			"id": 3204,
+			"sid": "",
+			"description": "射线传输效率描述",
+			"conclusion": "射线传输效率结果",
+			"published": 1,
+			"level": 4,
+			"max_level": 4,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3204",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3203
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004
+			],
+			"item_points": [
+				12,
+				12,
+				12,
+				12
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 360000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				13
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						205,
+						204,
+						204,
+						204,
+						204,
+						204,
+						236,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				21,
+				-15
+			]
+		},
+		{
+			"name": "T射线传输效率",
+			"id": 3205,
+			"sid": "",
+			"description": "射线传输效率描述",
+			"conclusion": "射线传输效率结果",
+			"published": 1,
+			"level": 5,
+			"max_level": 5,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3205",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3204
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004
+			],
+			"item_points": [
+				12,
+				12,
+				12,
+				12
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 420000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				13
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						205,
+						204,
+						204,
+						204,
+						204,
+						204,
+						236,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				25,
+				-15
+			]
+		},
+		{
+			"name": "T射线传输效率",
+			"id": 3206,
+			"sid": "",
+			"description": "射线传输效率描述",
+			"conclusion": "射线传输效率结果",
+			"published": 1,
+			"level": 6,
+			"max_level": 6,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3206",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3205
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004,
+				6005
+			],
+			"item_points": [
+				12,
+				12,
+				12,
+				12,
+				12
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 480000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				13
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						205,
+						204,
+						204,
+						204,
+						204,
+						204,
+						236,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				29,
+				-15
+			]
+		},
+		{
+			"name": "T射线传输效率",
+			"id": 3207,
+			"sid": "",
+			"description": "射线传输效率描述",
+			"conclusion": "射线传输效率结果",
+			"published": 1,
+			"level": 7,
+			"max_level": 7,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3207",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3206
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004,
+				6005
+			],
+			"item_points": [
+				4,
+				4,
+				4,
+				4,
+				4
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 1620000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				13
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						51,
+						51,
+						51,
+						51,
+						51,
+						51,
+						235,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				33,
+				-15
+			]
+		},
+		{
+			"name": "T射线传输效率",
+			"id": 3208,
+			"sid": "",
+			"description": "射线传输效率描述",
+			"conclusion": "射线传输效率结果",
+			"published": 1,
+			"level": 8,
+			"max_level": 10000,
+			"level_coef1": 1800000,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3208",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3207
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6006
+			],
+			"item_points": [
+				4
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": -12600000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					255,
+					255,
+					255,
+					255
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				13
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						51,
+						51,
+						51,
+						51,
+						51,
+						51,
+						235,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				37,
+				-15
+			]
+		},
+		{
+			"name": "T分拣器货物叠加",
+			"id": 3301,
+			"sid": "",
+			"description": "分拣器货物叠加描述",
+			"conclusion": "分拣器货物叠加结果",
+			"published": 1,
+			"level": 1,
+			"max_level": 1,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3301",
+			"is_lab_tech": 1,
+			"pre_techs": [],
+			"pre_techs_implicit": [
+				1603
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				40,
+				40,
+				40
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 36000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				14
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				9,
+				-23
+			]
+		},
+		{
+			"name": "T分拣器货物叠加",
+			"id": 3302,
+			"sid": "",
+			"description": "分拣器货物叠加描述",
+			"conclusion": "分拣器货物叠加结果",
+			"published": 1,
+			"level": 2,
+			"max_level": 2,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3302",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3301
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				20,
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 108000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				14
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						8,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				13,
+				-23
+			]
+		},
+		{
+			"name": "T分拣器货物叠加",
+			"id": 3303,
+			"sid": "",
+			"description": "分拣器货物叠加描述",
+			"conclusion": "分拣器货物叠加结果",
+			"published": 1,
+			"level": 3,
+			"max_level": 3,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3303",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3302
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				20,
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 144000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				14
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						16,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				17,
+				-23
+			]
+		},
+		{
+			"name": "T分拣器货物叠加",
+			"id": 3304,
+			"sid": "",
+			"description": "分拣器货物叠加描述",
+			"conclusion": "分拣器货物叠加结果",
+			"published": 1,
+			"level": 4,
+			"max_level": 4,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3304",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3303
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				12,
+				12,
+				12
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 300000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				14
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						20,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				21,
+				-23
+			]
+		},
+		{
+			"name": "T分拣器货物叠加",
+			"id": 3305,
+			"sid": "",
+			"description": "分拣器货物叠加描述",
+			"conclusion": "分拣器货物叠加结果",
+			"published": 1,
+			"level": 5,
+			"max_level": 5,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3305",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3304
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				6,
+				6,
+				6
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 900000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				14
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						24,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				25,
+				-23
+			]
+		},
+		{
+			"name": "T配送范围",
+			"id": 4001,
+			"sid": "",
+			"description": "配送范围描述",
+			"conclusion": "配送范围结果",
+			"published": 1,
+			"level": 1,
+			"max_level": 1,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/4001",
+			"is_lab_tech": 1,
+			"pre_techs": [],
+			"pre_techs_implicit": [
+				1608
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002
+			],
+			"item_points": [
+				40,
+				40
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 36000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				36
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						52,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				9,
+				-27
+			]
+		},
+		{
+			"name": "T配送范围",
+			"id": 4002,
+			"sid": "",
+			"description": "配送范围描述",
+			"conclusion": "配送范围结果",
+			"published": 1,
+			"level": 2,
+			"max_level": 2,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/4002",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				4001
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				20,
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 108000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				36
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						52,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				13,
+				-27
+			]
+		},
+		{
+			"name": "T配送范围",
+			"id": 4003,
+			"sid": "",
+			"description": "配送范围描述",
+			"conclusion": "配送范围结果",
+			"published": 1,
+			"level": 3,
+			"max_level": 3,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/4003",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				4002
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				20,
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 144000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				36
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						62,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				17,
+				-27
+			]
+		},
+		{
+			"name": "T配送范围",
+			"id": 4004,
+			"sid": "",
+			"description": "配送范围描述",
+			"conclusion": "配送范围结果",
+			"published": 1,
+			"level": 4,
+			"max_level": 4,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/4004",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				4003
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004
+			],
+			"item_points": [
+				20,
+				20,
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 180000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				36
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						62,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				21,
+				-27
+			]
+		},
+		{
+			"name": "T配送范围",
+			"id": 4005,
+			"sid": "",
+			"description": "配送范围描述",
+			"conclusion": "配送范围结果",
+			"published": 1,
+			"level": 5,
+			"max_level": 5,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/4005",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				4004
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004,
+				6005
+			],
+			"item_points": [
+				12,
+				12,
+				12,
+				12,
+				12
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 360000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				36
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						68,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				25,
+				-27
+			]
+		},
+		{
+			"name": "T运输船引擎",
+			"id": 3401,
+			"sid": "",
+			"description": "运输船引擎描述",
+			"conclusion": "运输船引擎结果1",
+			"published": 1,
+			"level": 1,
+			"max_level": 1,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3401",
+			"is_lab_tech": 1,
+			"pre_techs": [],
+			"pre_techs_implicit": [
+				1604
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				40,
+				40,
+				40
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 36000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				15,
+				34
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						154,
+						153,
+						153,
+						153,
+						153,
+						153,
+						201,
+						63
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						154,
+						153,
+						153,
+						153,
+						153,
+						153,
+						185,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				9,
+				-31
+			]
+		},
+		{
+			"name": "T运输船引擎",
+			"id": 3402,
+			"sid": "",
+			"description": "运输船引擎描述",
+			"conclusion": "运输船引擎结果2",
+			"published": 1,
+			"level": 2,
+			"max_level": 2,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3402",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3401
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				20,
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 108000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				15,
+				34
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						154,
+						153,
+						153,
+						153,
+						153,
+						153,
+						201,
+						63
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						154,
+						153,
+						153,
+						153,
+						153,
+						153,
+						185,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				13,
+				-31
+			]
+		},
+		{
+			"name": "T运输船引擎",
+			"id": 3403,
+			"sid": "",
+			"description": "运输船引擎描述2",
+			"conclusion": "运输船引擎结果3",
+			"published": 1,
+			"level": 3,
+			"max_level": 3,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3403",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3402
+			],
+			"pre_techs_implicit": [
+				1605
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				20,
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 144000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				15,
+				34,
+				16
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						51,
+						51,
+						51,
+						51,
+						51,
+						51,
+						211,
+						63
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						51,
+						51,
+						51,
+						51,
+						51,
+						51,
+						195,
+						63
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						224,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				17,
+				-31
+			]
+		},
+		{
+			"name": "T运输船引擎",
+			"id": 3404,
+			"sid": "",
+			"description": "运输船引擎描述3",
+			"conclusion": "运输船引擎结果4",
+			"published": 1,
+			"level": 4,
+			"max_level": 4,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3404",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3403
+			],
+			"pre_techs_implicit": [
+				2904
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004
+			],
+			"item_points": [
+				12,
+				12,
+				12,
+				12
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 300000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				15,
+				34,
+				16,
+				17
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						51,
+						51,
+						51,
+						51,
+						51,
+						51,
+						211,
+						63
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						51,
+						51,
+						51,
+						51,
+						51,
+						51,
+						195,
+						63
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						224,
+						63
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						240,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				21,
+				-31
+			]
+		},
+		{
+			"name": "T运输船引擎",
+			"id": 3405,
+			"sid": "",
+			"description": "运输船引擎描述2",
+			"conclusion": "运输船引擎结果5",
+			"published": 1,
+			"level": 5,
+			"max_level": 5,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3405",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3404
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004,
+				6005
+			],
+			"item_points": [
+				12,
+				12,
+				12,
+				12,
+				12
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 360000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				15,
+				34,
+				16
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						154,
+						153,
+						153,
+						153,
+						153,
+						153,
+						217,
+						63
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						51,
+						51,
+						51,
+						51,
+						51,
+						51,
+						195,
+						63
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						224,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				25,
+				-31
+			]
+		},
+		{
+			"name": "T运输船引擎",
+			"id": 3406,
+			"sid": "",
+			"description": "运输船引擎描述2",
+			"conclusion": "运输船引擎结果6",
+			"published": 1,
+			"level": 6,
+			"max_level": 6,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3406",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3405
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004,
+				6005
+			],
+			"item_points": [
+				4,
+				4,
+				4,
+				4,
+				4
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 1440000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				15,
+				34,
+				16
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						154,
+						153,
+						153,
+						153,
+						153,
+						153,
+						217,
+						63
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						51,
+						51,
+						51,
+						51,
+						51,
+						51,
+						195,
+						63
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						224,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				29,
+				-31
+			]
+		},
+		{
+			"name": "T运输船引擎",
+			"id": 3407,
+			"sid": "",
+			"description": "运输船引擎描述2",
+			"conclusion": "运输船引擎结果7",
+			"published": 1,
+			"level": 7,
+			"max_level": 10000,
+			"level_coef1": -21600000,
+			"level_coef2": 1800000,
+			"icon_path": "Icons/Tech/3407",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3406
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6006
+			],
+			"item_points": [
+				4
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 64800000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				15,
+				34,
+				16
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						224,
+						63
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						154,
+						153,
+						153,
+						153,
+						153,
+						153,
+						201,
+						63
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						224,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				33,
+				-31
+			]
+		},
+		{
+			"name": "T运输机舱扩容",
+			"id": 3501,
+			"sid": "",
+			"description": "运输机舱扩容描述",
+			"conclusion": "运输机舱扩容结果1",
+			"published": 1,
+			"level": 1,
+			"max_level": 1,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3501",
+			"is_lab_tech": 1,
+			"pre_techs": [],
+			"pre_techs_implicit": [
+				1604
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				40,
+				40,
+				40
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 36000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				35,
+				18
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						240,
+						63
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						20,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				9,
+				-35
+			]
+		},
+		{
+			"name": "T运输机舱扩容",
+			"id": 3502,
+			"sid": "",
+			"description": "运输机舱扩容描述2",
+			"conclusion": "运输机舱扩容结果2",
+			"published": 1,
+			"level": 2,
+			"max_level": 2,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3502",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3501
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				20,
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 108000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				35,
+				18
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						240,
+						63
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						20,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				13,
+				-35
+			]
+		},
+		{
+			"name": "T运输机舱扩容",
+			"id": 3503,
+			"sid": "",
+			"description": "运输机舱扩容描述3",
+			"conclusion": "运输机舱扩容结果3",
+			"published": 1,
+			"level": 3,
+			"max_level": 3,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3503",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3502
+			],
+			"pre_techs_implicit": [
+				1605
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				20,
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 144000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				35,
+				18,
+				19
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						64
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						20,
+						64
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						89,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				17,
+				-35
+			]
+		},
+		{
+			"name": "T运输机舱扩容",
+			"id": 3504,
+			"sid": "",
+			"description": "运输机舱扩容描述4",
+			"conclusion": "运输机舱扩容结果4",
+			"published": 1,
+			"level": 4,
+			"max_level": 4,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3504",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3503
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				12,
+				12,
+				12
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 300000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				35,
+				18,
+				19
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						64
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						36,
+						64
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						89,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				21,
+				-35
+			]
+		},
+		{
+			"name": "T运输机舱扩容",
+			"id": 3505,
+			"sid": "",
+			"description": "运输机舱扩容描述4",
+			"conclusion": "运输机舱扩容结果5",
+			"published": 1,
+			"level": 5,
+			"max_level": 5,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3505",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3504
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004
+			],
+			"item_points": [
+				6,
+				6,
+				6,
+				6
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 720000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				35,
+				18,
+				19
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						64
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						36,
+						64
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						89,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				25,
+				-35
+			]
+		},
+		{
+			"name": "T运输机舱扩容",
+			"id": 3506,
+			"sid": "",
+			"description": "运输机舱扩容描述4",
+			"conclusion": "运输机舱扩容结果5",
+			"published": 1,
+			"level": 6,
+			"max_level": 6,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3506",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3505
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004
+			],
+			"item_points": [
+				6,
+				6,
+				6,
+				6
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 960000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				35,
+				18,
+				19
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						64
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						36,
+						64
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						89,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				29,
+				-35
+			]
+		},
+		{
+			"name": "T运输机舱扩容",
+			"id": 3507,
+			"sid": "",
+			"description": "运输机舱扩容描述4",
+			"conclusion": "运输机舱扩容结果5",
+			"published": 1,
+			"level": 7,
+			"max_level": 7,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3507",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3506
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004,
+				6005
+			],
+			"item_points": [
+				3,
+				3,
+				3,
+				3,
+				3
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 2400000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				35,
+				18,
+				19
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						64
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						36,
+						64
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						105,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				33,
+				-35
+			]
+		},
+		{
+			"name": "T运输机舱扩容",
+			"id": 3508,
+			"sid": "",
+			"description": "运输机舱扩容描述4",
+			"conclusion": "运输机舱扩容结果5",
+			"published": 1,
+			"level": 8,
+			"max_level": 8,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3508",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3507
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004,
+				6005
+			],
+			"item_points": [
+				3,
+				3,
+				3,
+				3,
+				3
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 4800000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				18,
+				19
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						52,
+						64
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						105,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				37,
+				-35
+			]
+		},
+		{
+			"name": "T运输机舱扩容",
+			"id": 3509,
+			"sid": "",
+			"description": "运输机舱扩容描述5",
+			"conclusion": "运输机舱扩容结果6",
+			"published": 1,
+			"level": 9,
+			"max_level": 11,
+			"level_coef1": 2400000,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3509",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3508
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6006
+			],
+			"item_points": [
+				3
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": -14400000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					255,
+					255,
+					255,
+					255
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				18,
+				19,
+				30,
+				31
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						52,
+						64
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						105,
+						64
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						64,
+						143,
+						64
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						64,
+						159,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				41,
+				-35
+			]
+		},
+		{
+			"name": "T运输机舱扩容",
+			"id": 3510,
+			"sid": "",
+			"description": "运输机舱扩容描述5",
+			"conclusion": "运输机舱扩容结果6",
+			"published": 1,
+			"level": 12,
+			"max_level": 13,
+			"level_coef1": 4800000,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3510",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3509
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6006
+			],
+			"item_points": [
+				3
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": -43200000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					255,
+					255,
+					255,
+					255
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				18,
+				19,
+				30,
+				31
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						52,
+						64
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						105,
+						64
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						64,
+						143,
+						64
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						64,
+						159,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				45,
+				-35
+			]
+		},
+		{
+			"name": "T运输站集装物流",
+			"id": 3801,
+			"sid": "",
+			"description": "运输站集装物流描述1",
+			"conclusion": "运输站集装物流结果1",
+			"published": 1,
+			"level": 1,
+			"max_level": 1,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3801",
+			"is_lab_tech": 1,
+			"pre_techs": [],
+			"pre_techs_implicit": [
+				3508
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6006
+			],
+			"item_points": [
+				3
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 9600000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				29
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						240,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				37,
+				-31
+			]
+		},
+		{
+			"name": "T运输站集装物流",
+			"id": 3802,
+			"sid": "",
+			"description": "运输站集装物流描述2",
+			"conclusion": "运输站集装物流结果2",
+			"published": 1,
+			"level": 2,
+			"max_level": 2,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3802",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3801
+			],
+			"pre_techs_implicit": [
+				3509
+			],
+			"pre_techs_max": 1,
+			"items": [
+				6006
+			],
+			"item_points": [
+				2
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 28800000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				29
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						240,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				41,
+				-31
+			]
+		},
+		{
+			"name": "T运输站集装物流",
+			"id": 3803,
+			"sid": "",
+			"description": "运输站集装物流描述2",
+			"conclusion": "运输站集装物流结果2",
+			"published": 1,
+			"level": 3,
+			"max_level": 3,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3803",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3802
+			],
+			"pre_techs_implicit": [
+				3510
+			],
+			"pre_techs_max": 1,
+			"items": [
+				6006
+			],
+			"item_points": [
+				2
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 43200000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				29
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						240,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				45,
+				-31
+			]
+		},
+		{
+			"name": "T矿物利用",
+			"id": 3601,
+			"sid": "",
+			"description": "矿物利用描述",
+			"conclusion": "矿物利用结果",
+			"published": 1,
+			"level": 1,
+			"max_level": 1,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3601",
+			"is_lab_tech": 1,
+			"pre_techs": [],
+			"pre_techs_implicit": [
+				1001
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002
+			],
+			"item_points": [
+				40,
+				40
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 36000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				20,
+				21
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						20,
+						174,
+						71,
+						225,
+						122,
+						20,
+						238,
+						63
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						154,
+						153,
+						153,
+						153,
+						153,
+						153,
+						185,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				9,
+				-39
+			]
+		},
+		{
+			"name": "T矿物利用",
+			"id": 3602,
+			"sid": "",
+			"description": "矿物利用描述2",
+			"conclusion": "矿物利用结果",
+			"published": 1,
+			"level": 2,
+			"max_level": 2,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3602",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3601
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				20,
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 180000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				20,
+				21
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						20,
+						174,
+						71,
+						225,
+						122,
+						20,
+						238,
+						63
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						154,
+						153,
+						153,
+						153,
+						153,
+						153,
+						185,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				13,
+				-39
+			]
+		},
+		{
+			"name": "T矿物利用",
+			"id": 3603,
+			"sid": "",
+			"description": "矿物利用描述2",
+			"conclusion": "矿物利用结果",
+			"published": 1,
+			"level": 3,
+			"max_level": 3,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3603",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3602
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004
+			],
+			"item_points": [
+				20,
+				20,
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 180000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				20,
+				21
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						20,
+						174,
+						71,
+						225,
+						122,
+						20,
+						238,
+						63
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						154,
+						153,
+						153,
+						153,
+						153,
+						153,
+						185,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				17,
+				-39
+			]
+		},
+		{
+			"name": "T矿物利用",
+			"id": 3604,
+			"sid": "",
+			"description": "矿物利用描述2",
+			"conclusion": "矿物利用结果",
+			"published": 1,
+			"level": 4,
+			"max_level": 4,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3604",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3603
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004
+			],
+			"item_points": [
+				12,
+				12,
+				12,
+				12
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 480000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				20,
+				21
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						20,
+						174,
+						71,
+						225,
+						122,
+						20,
+						238,
+						63
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						154,
+						153,
+						153,
+						153,
+						153,
+						153,
+						185,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				21,
+				-39
+			]
+		},
+		{
+			"name": "T矿物利用",
+			"id": 3605,
+			"sid": "",
+			"description": "矿物利用描述2",
+			"conclusion": "矿物利用结果",
+			"published": 1,
+			"level": 5,
+			"max_level": 5,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3605",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3604
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6004,
+				6005
+			],
+			"item_points": [
+				4,
+				4,
+				4,
+				4,
+				4
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 1800000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				20,
+				21
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						20,
+						174,
+						71,
+						225,
+						122,
+						20,
+						238,
+						63
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						154,
+						153,
+						153,
+						153,
+						153,
+						153,
+						185,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				25,
+				-39
+			]
+		},
+		{
+			"name": "T矿物利用",
+			"id": 3606,
+			"sid": "",
+			"description": "矿物利用描述2",
+			"conclusion": "矿物利用结果",
+			"published": 1,
+			"level": 6,
+			"max_level": 10000,
+			"level_coef1": 3600000,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3606",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3605
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6006
+			],
+			"item_points": [
+				4
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": -18000000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					255,
+					255,
+					255,
+					255
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				20,
+				21
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						20,
+						174,
+						71,
+						225,
+						122,
+						20,
+						238,
+						63
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						154,
+						153,
+						153,
+						153,
+						153,
+						153,
+						185,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				29,
+				-39
+			]
+		},
+		{
+			"name": "T垂直建造",
+			"id": 3701,
+			"sid": "",
+			"description": "垂直建造描述",
+			"conclusion": "垂直建造结果",
+			"published": 1,
+			"level": 1,
+			"max_level": 1,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3701",
+			"is_lab_tech": 1,
+			"pre_techs": [],
+			"pre_techs_implicit": [
+				1601
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6002
+			],
+			"item_points": [
+				40
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 36000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				24,
+				25
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						240,
+						63
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				9,
+				-19
+			]
+		},
+		{
+			"name": "T垂直建造",
+			"id": 3702,
+			"sid": "",
+			"description": "垂直建造描述",
+			"conclusion": "垂直建造结果",
+			"published": 1,
+			"level": 2,
+			"max_level": 2,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3702",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3701
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6002
+			],
+			"item_points": [
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 108000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				24,
+				25
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						240,
+						63
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				13,
+				-19
+			]
+		},
+		{
+			"name": "T垂直建造",
+			"id": 3703,
+			"sid": "",
+			"description": "垂直建造描述",
+			"conclusion": "垂直建造结果",
+			"published": 1,
+			"level": 3,
+			"max_level": 3,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3703",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3702
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6002,
+				6003
+			],
+			"item_points": [
+				20,
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 144000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				24,
+				25
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						240,
+						63
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				17,
+				-19
+			]
+		},
+		{
+			"name": "T垂直建造",
+			"id": 3704,
+			"sid": "",
+			"description": "垂直建造描述",
+			"conclusion": "垂直建造结果",
+			"published": 1,
+			"level": 4,
+			"max_level": 4,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3704",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3703
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				12,
+				12,
+				12
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 300000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				24,
+				25
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						240,
+						63
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				21,
+				-19
+			]
+		},
+		{
+			"name": "T垂直建造",
+			"id": 3705,
+			"sid": "",
+			"description": "垂直建造描述",
+			"conclusion": "垂直建造结果",
+			"published": 1,
+			"level": 5,
+			"max_level": 5,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3705",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3704
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003
+			],
+			"item_points": [
+				12,
+				12,
+				12
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 480000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				24,
+				25
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						240,
+						63
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				25,
+				-19
+			]
+		},
+		{
+			"name": "T垂直建造",
+			"id": 3706,
+			"sid": "",
+			"description": "垂直建造描述",
+			"conclusion": "垂直建造结果",
+			"published": 1,
+			"level": 6,
+			"max_level": 6,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3706",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3705
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6003,
+				6005
+			],
+			"item_points": [
+				6,
+				6,
+				6,
+				6
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 1200000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				24,
+				25
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						240,
+						63
+					]
+				},
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				29,
+				-19
+			]
+		},
+		{
+			"name": "T研究速度",
+			"id": 3901,
+			"sid": "",
+			"description": "研究速度描述",
+			"conclusion": "研究速度结果",
+			"published": 1,
+			"level": 1,
+			"max_level": 1,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3901",
+			"is_lab_tech": 1,
+			"pre_techs": [],
+			"pre_techs_implicit": [
+				1312
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6004
+			],
+			"item_points": [
+				6
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 600000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				22
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						240,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				9,
+				-43
+			]
+		},
+		{
+			"name": "T研究速度",
+			"id": 3902,
+			"sid": "",
+			"description": "研究速度描述",
+			"conclusion": "研究速度结果",
+			"published": 1,
+			"level": 2,
+			"max_level": 2,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3902",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3901
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6004
+			],
+			"item_points": [
+				6
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 1200000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				22
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						240,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				13,
+				-43
+			]
+		},
+		{
+			"name": "T研究速度",
+			"id": 3903,
+			"sid": "",
+			"description": "研究速度描述",
+			"conclusion": "研究速度结果",
+			"published": 1,
+			"level": 3,
+			"max_level": 3,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3903",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3902
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6004
+			],
+			"item_points": [
+				6
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 2400000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				22
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						240,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				17,
+				-43
+			]
+		},
+		{
+			"name": "T研究速度",
+			"id": 3904,
+			"sid": "",
+			"description": "研究速度描述",
+			"conclusion": "研究速度结果",
+			"published": 1,
+			"level": 4,
+			"max_level": 10000,
+			"level_coef1": 14400000,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/3904",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				3903
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6006
+			],
+			"item_points": [
+				2
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": -43200000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					255,
+					255,
+					255,
+					255
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				22
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						240,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				21,
+				-43
+			]
+		},
+		{
+			"name": "T宇宙探索",
+			"id": 4101,
+			"sid": "",
+			"description": "宇宙探索描述1",
+			"conclusion": "宇宙探索结果1",
+			"published": 1,
+			"level": 1,
+			"max_level": 1,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/4101",
+			"is_lab_tech": 1,
+			"pre_techs": [],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001
+			],
+			"item_points": [
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 1800,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				23
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						240,
+						63
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				9,
+				33
+			]
+		},
+		{
+			"name": "T宇宙探索",
+			"id": 4102,
+			"sid": "",
+			"description": "宇宙探索描述2",
+			"conclusion": "宇宙探索结果2",
+			"published": 1,
+			"level": 2,
+			"max_level": 2,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/4102",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				4101
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001
+			],
+			"item_points": [
+				20
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 36000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				23
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				13,
+				33
+			]
+		},
+		{
+			"name": "T宇宙探索",
+			"id": 4103,
+			"sid": "",
+			"description": "宇宙探索描述3",
+			"conclusion": "宇宙探索结果3",
+			"published": 1,
+			"level": 3,
+			"max_level": 3,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/4103",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				4102
+			],
+			"pre_techs_implicit": [
+				2902
+			],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6004
+			],
+			"item_points": [
+				12,
+				12,
+				12
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 300000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				23
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						8,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				17,
+				33
+			]
+		},
+		{
+			"name": "T宇宙探索",
+			"id": 4104,
+			"sid": "",
+			"description": "宇宙探索描述4",
+			"conclusion": "宇宙探索结果4",
+			"published": 1,
+			"level": 4,
+			"max_level": 4,
+			"level_coef1": 0,
+			"level_coef2": 0,
+			"icon_path": "Icons/Tech/4104",
+			"is_lab_tech": 1,
+			"pre_techs": [
+				4103
+			],
+			"pre_techs_implicit": [],
+			"pre_techs_max": 0,
+			"items": [
+				6001,
+				6002,
+				6004,
+				6005
+			],
+			"item_points": [
+				6,
+				6,
+				6,
+				6
+			],
+			"property_override_items": [],
+			"property_item_counts": [],
+			"hash_needed": 1200000,
+			"_unknown": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"unlock_recipes": [],
+			"unlock_functions": [
+				23
+			],
+			"unlock_values": [
+				{
+					"type": "Buffer",
+					"data": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						16,
+						64
+					]
+				}
+			],
+			"add_items": [],
+			"add_item_counts": [],
+			"position": [
+				21,
+				33
+			]
+		}
+	]
+}

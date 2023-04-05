@@ -1,0 +1,3101 @@
+[
+	{
+		"id": 1,
+		"name": "Iron Ingot",
+		"description": null,
+		"sid": "1101",
+		"type": "SMELT",
+		"handcraft": 1,
+		"time_spend": 60,
+		"items": [
+			1001
+		],
+		"item_counts": [
+			1
+		],
+		"results": [
+			1101
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1101
+	},
+	{
+		"id": 2,
+		"name": "Magnet",
+		"description": null,
+		"sid": "1201",
+		"type": "SMELT",
+		"handcraft": 1,
+		"time_spend": 90,
+		"items": [
+			1001
+		],
+		"item_counts": [
+			1
+		],
+		"results": [
+			1102
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1201
+	},
+	{
+		"id": 3,
+		"name": "Copper Ingot",
+		"description": null,
+		"sid": "1102",
+		"type": "SMELT",
+		"handcraft": 1,
+		"time_spend": 60,
+		"items": [
+			1002
+		],
+		"item_counts": [
+			1
+		],
+		"results": [
+			1104
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1102
+	},
+	{
+		"id": 4,
+		"name": "Stone Brick",
+		"description": null,
+		"sid": "1105",
+		"type": "SMELT",
+		"handcraft": 1,
+		"time_spend": 60,
+		"items": [
+			1005
+		],
+		"item_counts": [
+			1
+		],
+		"results": [
+			1108
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1105
+	},
+	{
+		"id": 5,
+		"name": "Gear",
+		"description": null,
+		"sid": "1401",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 60,
+		"items": [
+			1101
+		],
+		"item_counts": [
+			1
+		],
+		"results": [
+			1201
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1401
+	},
+	{
+		"id": 6,
+		"name": "Magnetic Coil",
+		"description": null,
+		"sid": "1202",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 60,
+		"items": [
+			1102,
+			1104
+		],
+		"item_counts": [
+			2,
+			1
+		],
+		"results": [
+			1202
+		],
+		"result_counts": [
+			2
+		],
+		"grid_index": 1202
+	},
+	{
+		"id": 7,
+		"name": "Wind Turbine",
+		"description": null,
+		"sid": "2104",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 240,
+		"items": [
+			1101,
+			1201,
+			1202
+		],
+		"item_counts": [
+			6,
+			1,
+			3
+		],
+		"results": [
+			2203
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2104
+	},
+	{
+		"id": 8,
+		"name": "Tesla Tower",
+		"description": null,
+		"sid": "2101",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 60,
+		"items": [
+			1101,
+			1202
+		],
+		"item_counts": [
+			2,
+			1
+		],
+		"results": [
+			2201
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2101
+	},
+	{
+		"id": 9,
+		"name": "Electromagnetic Matrix",
+		"description": null,
+		"sid": "1701",
+		"type": "RESEARCH",
+		"handcraft": 1,
+		"time_spend": 180,
+		"items": [
+			1202,
+			1301
+		],
+		"item_counts": [
+			1,
+			1
+		],
+		"results": [
+			6001
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1701
+	},
+	{
+		"id": 10,
+		"name": "Matrix Lab",
+		"description": null,
+		"sid": "2406",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 180,
+		"items": [
+			1101,
+			1110,
+			1301,
+			1202
+		],
+		"item_counts": [
+			8,
+			4,
+			4,
+			4
+		],
+		"results": [
+			2901
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2406
+	},
+	{
+		"id": 11,
+		"name": "Prism",
+		"description": null,
+		"sid": "1305",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 120,
+		"items": [
+			1110
+		],
+		"item_counts": [
+			3
+		],
+		"results": [
+			1111
+		],
+		"result_counts": [
+			2
+		],
+		"grid_index": 1305
+	},
+	{
+		"id": 12,
+		"name": "Plasma Exciter",
+		"description": null,
+		"sid": "1501",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 120,
+		"items": [
+			1202,
+			1111
+		],
+		"item_counts": [
+			4,
+			2
+		],
+		"results": [
+			1401
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1501
+	},
+	{
+		"id": 13,
+		"name": "Wireless Power Tower",
+		"description": null,
+		"sid": "2102",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 180,
+		"items": [
+			2201,
+			1401
+		],
+		"item_counts": [
+			1,
+			3
+		],
+		"results": [
+			2202
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2102
+	},
+	{
+		"id": 14,
+		"name": "Oil Extractor",
+		"description": null,
+		"sid": "2308",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 480,
+		"items": [
+			1103,
+			1108,
+			1301,
+			1401
+		],
+		"item_counts": [
+			12,
+			12,
+			6,
+			4
+		],
+		"results": [
+			2307
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2308
+	},
+	{
+		"id": 15,
+		"name": "Oil Refinery",
+		"description": null,
+		"sid": "2309",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 360,
+		"items": [
+			1103,
+			1108,
+			1301,
+			1401
+		],
+		"item_counts": [
+			10,
+			10,
+			6,
+			6
+		],
+		"results": [
+			2308
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2309
+	},
+	{
+		"id": 16,
+		"name": "Plasma Refining",
+		"description": "Hydrogen and refined oil can be obtained by refining crude oil with plasma.",
+		"sid": "1107",
+		"type": "REFINE",
+		"explicit": 1,
+		"time_spend": 240,
+		"items": [
+			1007
+		],
+		"item_counts": [
+			2
+		],
+		"results": [
+			1120,
+			1114
+		],
+		"result_counts": [
+			1,
+			2
+		],
+		"grid_index": 1107,
+		"icon_path": "Icons/ItemRecipe/plasma-refining"
+	},
+	{
+		"id": 17,
+		"name": "Energetic Graphite",
+		"description": null,
+		"sid": "1106",
+		"type": "SMELT",
+		"handcraft": 1,
+		"time_spend": 120,
+		"items": [
+			1006
+		],
+		"item_counts": [
+			2
+		],
+		"results": [
+			1109
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1106
+	},
+	{
+		"id": 18,
+		"name": "Energy Matrix",
+		"description": null,
+		"sid": "1702",
+		"type": "RESEARCH",
+		"handcraft": 1,
+		"time_spend": 360,
+		"items": [
+			1109,
+			1120
+		],
+		"item_counts": [
+			2,
+			2
+		],
+		"results": [
+			6002
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1702
+	},
+	{
+		"id": 19,
+		"name": "Hydrogen Fuel Rod",
+		"description": null,
+		"sid": "1210",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 360,
+		"items": [
+			1106,
+			1120
+		],
+		"item_counts": [
+			1,
+			10
+		],
+		"results": [
+			1801
+		],
+		"result_counts": [
+			2
+		],
+		"grid_index": 1210
+	},
+	{
+		"id": 20,
+		"name": " - Thruster",
+		"description": null,
+		"sid": "1310",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 240,
+		"items": [
+			1103,
+			1104
+		],
+		"item_counts": [
+			2,
+			3
+		],
+		"results": [
+			1405
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1310
+	},
+	{
+		"id": 21,
+		"name": "Reinforced Thruster",
+		"description": null,
+		"sid": "1311",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 360,
+		"items": [
+			1107,
+			1204
+		],
+		"item_counts": [
+			5,
+			5
+		],
+		"results": [
+			1406
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1311
+	},
+	{
+		"id": 22,
+		"name": "Chemical Plant",
+		"description": null,
+		"sid": "2409",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 300,
+		"items": [
+			1103,
+			1108,
+			1110,
+			1301
+		],
+		"item_counts": [
+			8,
+			8,
+			8,
+			2
+		],
+		"results": [
+			2309
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2409
+	},
+	{
+		"id": 23,
+		"name": "Plastic",
+		"description": null,
+		"sid": "1109",
+		"type": "CHEMICAL",
+		"time_spend": 180,
+		"items": [
+			1114,
+			1109
+		],
+		"item_counts": [
+			2,
+			1
+		],
+		"results": [
+			1115
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1109
+	},
+	{
+		"id": 24,
+		"name": "Sulfuric Acid",
+		"description": null,
+		"sid": "1406",
+		"type": "CHEMICAL",
+		"time_spend": 360,
+		"items": [
+			1114,
+			1005,
+			1000
+		],
+		"item_counts": [
+			6,
+			8,
+			4
+		],
+		"results": [
+			1116
+		],
+		"result_counts": [
+			4
+		],
+		"grid_index": 1406
+	},
+	{
+		"id": 25,
+		"name": "Organic Crystal",
+		"description": null,
+		"sid": "1209",
+		"type": "CHEMICAL",
+		"time_spend": 360,
+		"items": [
+			1115,
+			1114,
+			1000
+		],
+		"item_counts": [
+			2,
+			1,
+			1
+		],
+		"results": [
+			1117
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1209
+	},
+	{
+		"id": 26,
+		"name": "Titanium Crystal",
+		"description": null,
+		"sid": "1308",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 240,
+		"items": [
+			1117,
+			1106
+		],
+		"item_counts": [
+			1,
+			3
+		],
+		"results": [
+			1118
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1308
+	},
+	{
+		"id": 27,
+		"name": "Structure Matrix",
+		"description": null,
+		"sid": "1703",
+		"type": "RESEARCH",
+		"handcraft": 1,
+		"time_spend": 480,
+		"items": [
+			1112,
+			1118
+		],
+		"item_counts": [
+			1,
+			1
+		],
+		"results": [
+			6003
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1703
+	},
+	{
+		"id": 28,
+		"name": "Casimir Crystal",
+		"description": null,
+		"sid": "1505",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 240,
+		"items": [
+			1118,
+			1123,
+			1120
+		],
+		"item_counts": [
+			1,
+			2,
+			12
+		],
+		"results": [
+			1126
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1505
+	},
+	{
+		"id": 29,
+		"name": "Casimir Crystal (advanced)",
+		"description": "The use of rare ore optical grating crystal to make Casimir crystal is more efficient.",
+		"sid": "1605",
+		"type": "ASSEMBLE",
+		"explicit": 1,
+		"time_spend": 240,
+		"items": [
+			1014,
+			1123,
+			1120
+		],
+		"item_counts": [
+			8,
+			2,
+			12
+		],
+		"results": [
+			1126
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1605,
+		"icon_path": "Icons/ItemRecipe/casimir-crystal-lv2"
+	},
+	{
+		"id": 30,
+		"name": "Titanium Glass",
+		"description": null,
+		"sid": "1304",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 300,
+		"items": [
+			1110,
+			1106,
+			1000
+		],
+		"item_counts": [
+			2,
+			2,
+			2
+		],
+		"results": [
+			1119
+		],
+		"result_counts": [
+			2
+		],
+		"grid_index": 1304
+	},
+	{
+		"id": 31,
+		"name": "Graphene",
+		"description": null,
+		"sid": "1108",
+		"type": "CHEMICAL",
+		"time_spend": 180,
+		"items": [
+			1109,
+			1116
+		],
+		"item_counts": [
+			3,
+			1
+		],
+		"results": [
+			1123
+		],
+		"result_counts": [
+			2
+		],
+		"grid_index": 1108
+	},
+	{
+		"id": 32,
+		"name": "Graphene (advanced)",
+		"description": "It will be a lot easier to produce graphene if you can find combustible ice minerals.",
+		"sid": "1208",
+		"type": "CHEMICAL",
+		"explicit": 1,
+		"time_spend": 120,
+		"items": [
+			1011
+		],
+		"item_counts": [
+			2
+		],
+		"results": [
+			1123,
+			1120
+		],
+		"result_counts": [
+			2,
+			1
+		],
+		"grid_index": 1208,
+		"icon_path": "Icons/ItemRecipe/graphene-lv2"
+	},
+	{
+		"id": 33,
+		"name": "Carbon Nanotube",
+		"description": null,
+		"sid": "1408",
+		"type": "CHEMICAL",
+		"time_spend": 240,
+		"items": [
+			1123,
+			1106
+		],
+		"item_counts": [
+			3,
+			1
+		],
+		"results": [
+			1124
+		],
+		"result_counts": [
+			2
+		],
+		"grid_index": 1408
+	},
+	{
+		"id": 34,
+		"name": "Silicon Ore",
+		"description": null,
+		"sid": "1403",
+		"type": "SMELT",
+		"time_spend": 600,
+		"items": [
+			1005
+		],
+		"item_counts": [
+			10
+		],
+		"results": [
+			1003
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1403
+	},
+	{
+		"id": 35,
+		"name": "Carbon Nanotube (advanced)",
+		"description": "Carbon nanotube can be made directly from spiniform stalagmite crystal, but this ore is extremely rare and difficult to find.",
+		"sid": "1508",
+		"type": "CHEMICAL",
+		"explicit": 1,
+		"time_spend": 240,
+		"items": [
+			1015
+		],
+		"item_counts": [
+			6
+		],
+		"results": [
+			1124
+		],
+		"result_counts": [
+			2
+		],
+		"grid_index": 1508,
+		"icon_path": "Icons/ItemRecipe/nanotube-lv2"
+	},
+	{
+		"id": 36,
+		"name": "Particle Broadband",
+		"description": null,
+		"sid": "1503",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 480,
+		"items": [
+			1124,
+			1113,
+			1115
+		],
+		"item_counts": [
+			2,
+			2,
+			1
+		],
+		"results": [
+			1402
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1503
+	},
+	{
+		"id": 37,
+		"name": "Crystal Silicon",
+		"description": null,
+		"sid": "1203",
+		"type": "SMELT",
+		"time_spend": 120,
+		"items": [
+			1105
+		],
+		"item_counts": [
+			1
+		],
+		"results": [
+			1113
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1203
+	},
+	{
+		"id": 38,
+		"name": "Plane Filter",
+		"description": null,
+		"sid": "1509",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 720,
+		"items": [
+			1126,
+			1119
+		],
+		"item_counts": [
+			1,
+			2
+		],
+		"results": [
+			1304
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1509
+	},
+	{
+		"id": 39,
+		"name": "Miniature Particle Collider",
+		"description": null,
+		"sid": "2310",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 900,
+		"items": [
+			1107,
+			1125,
+			1205,
+			1123,
+			1303
+		],
+		"item_counts": [
+			20,
+			20,
+			25,
+			10,
+			8
+		],
+		"results": [
+			2310
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2310
+	},
+	{
+		"id": 40,
+		"name": "Deuterium",
+		"description": null,
+		"sid": "1507",
+		"type": "PARTICLE",
+		"time_spend": 150,
+		"items": [
+			1120
+		],
+		"item_counts": [
+			10
+		],
+		"results": [
+			1121
+		],
+		"result_counts": [
+			5
+		],
+		"grid_index": 1507,
+		"non_productive": 1
+	},
+	{
+		"id": 41,
+		"name": "Deuteron Fuel Rod",
+		"description": null,
+		"sid": "1211",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 720,
+		"items": [
+			1107,
+			1121,
+			1205
+		],
+		"item_counts": [
+			1,
+			20,
+			1
+		],
+		"results": [
+			1802
+		],
+		"result_counts": [
+			2
+		],
+		"grid_index": 1211
+	},
+	{
+		"id": 42,
+		"name": "Annihilation Constraint Sphere",
+		"description": null,
+		"sid": "1610",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 1200,
+		"items": [
+			1206,
+			1303
+		],
+		"item_counts": [
+			1,
+			1
+		],
+		"results": [
+			1403
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1610
+	},
+	{
+		"id": 43,
+		"name": "Artificial Star",
+		"description": null,
+		"sid": "2112",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 1800,
+		"items": [
+			1107,
+			1125,
+			1403,
+			1305
+		],
+		"item_counts": [
+			20,
+			20,
+			10,
+			10
+		],
+		"results": [
+			2210
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2112
+	},
+	{
+		"id": 44,
+		"name": "Antimatter Fuel Rod",
+		"description": null,
+		"sid": "1212",
+		"type": "ASSEMBLE",
+		"time_spend": 1440,
+		"items": [
+			1122,
+			1120,
+			1403,
+			1107
+		],
+		"item_counts": [
+			12,
+			12,
+			1,
+			1
+		],
+		"results": [
+			1803
+		],
+		"result_counts": [
+			2
+		],
+		"grid_index": 1212,
+		"non_productive": 1
+	},
+	{
+		"id": 45,
+		"name": "Assembling Machine Mk.I",
+		"description": null,
+		"sid": "2401",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 120,
+		"items": [
+			1101,
+			1201,
+			1301
+		],
+		"item_counts": [
+			4,
+			8,
+			4
+		],
+		"results": [
+			2303
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2401
+	},
+	{
+		"id": 46,
+		"name": "Assembling Machine Mk.II",
+		"description": null,
+		"sid": "2402",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 180,
+		"items": [
+			2303,
+			1123,
+			1303
+		],
+		"item_counts": [
+			1,
+			8,
+			4
+		],
+		"results": [
+			2304
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2402
+	},
+	{
+		"id": 47,
+		"name": "Assembling Machine Mk.III",
+		"description": null,
+		"sid": "2403",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 240,
+		"items": [
+			2304,
+			1402,
+			1305
+		],
+		"item_counts": [
+			1,
+			8,
+			2
+		],
+		"results": [
+			2305
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2403
+	},
+	{
+		"id": 48,
+		"name": "Mining Machine",
+		"description": null,
+		"sid": "2305",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 180,
+		"items": [
+			1101,
+			1301,
+			1202,
+			1201
+		],
+		"item_counts": [
+			4,
+			2,
+			2,
+			2
+		],
+		"results": [
+			2301
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2305
+	},
+	{
+		"id": 49,
+		"name": "Water Pump",
+		"description": null,
+		"sid": "2307",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 240,
+		"items": [
+			1101,
+			1108,
+			1203,
+			1301
+		],
+		"item_counts": [
+			8,
+			4,
+			4,
+			2
+		],
+		"results": [
+			2306
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2307
+	},
+	{
+		"id": 50,
+		"name": "Circuit Board",
+		"description": null,
+		"sid": "1404",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 60,
+		"items": [
+			1101,
+			1104
+		],
+		"item_counts": [
+			2,
+			1
+		],
+		"results": [
+			1301
+		],
+		"result_counts": [
+			2
+		],
+		"grid_index": 1404
+	},
+	{
+		"id": 51,
+		"name": "Processor",
+		"description": null,
+		"sid": "1504",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 180,
+		"items": [
+			1301,
+			1302
+		],
+		"item_counts": [
+			2,
+			2
+		],
+		"results": [
+			1303
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1504
+	},
+	{
+		"id": 52,
+		"name": "Quantum Chip",
+		"description": null,
+		"sid": "1604",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 360,
+		"items": [
+			1303,
+			1304
+		],
+		"item_counts": [
+			2,
+			2
+		],
+		"results": [
+			1305
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1604
+	},
+	{
+		"id": 53,
+		"name": "Microcrystalline Component",
+		"description": null,
+		"sid": "1603",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 120,
+		"items": [
+			1105,
+			1104
+		],
+		"item_counts": [
+			2,
+			1
+		],
+		"results": [
+			1302
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1603
+	},
+	{
+		"id": 54,
+		"name": "Organic Crystal (original)",
+		"description": "Organic crystal can be obtained by processing the three resources of wood, plant fuel and water.",
+		"sid": "1309",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"explicit": 1,
+		"time_spend": 360,
+		"items": [
+			1030,
+			1031,
+			1000
+		],
+		"item_counts": [
+			20,
+			30,
+			10
+		],
+		"results": [
+			1117
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1309,
+		"icon_path": "Icons/ItemRecipe/crystal-rubber-lv0"
+	},
+	{
+		"id": 55,
+		"name": "Information Matrix",
+		"description": null,
+		"sid": "1704",
+		"type": "RESEARCH",
+		"handcraft": 1,
+		"time_spend": 600,
+		"items": [
+			1303,
+			1402
+		],
+		"item_counts": [
+			2,
+			1
+		],
+		"results": [
+			6004
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1704
+	},
+	{
+		"id": 56,
+		"name": "Arc Smelter",
+		"description": null,
+		"sid": "2404",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 180,
+		"items": [
+			1101,
+			1108,
+			1301,
+			1202
+		],
+		"item_counts": [
+			4,
+			2,
+			4,
+			2
+		],
+		"results": [
+			2302
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2404
+	},
+	{
+		"id": 57,
+		"name": "Glass",
+		"description": null,
+		"sid": "1205",
+		"type": "SMELT",
+		"handcraft": 1,
+		"time_spend": 120,
+		"items": [
+			1005
+		],
+		"item_counts": [
+			2
+		],
+		"results": [
+			1110
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1205
+	},
+	{
+		"id": 58,
+		"name": "X-ray Cracking",
+		"description": "Under the catalysis of hydrogen, X-rays can crack the refined oil into more hydrogen and a by-product, energetic graphite.",
+		"sid": "1207",
+		"type": "REFINE",
+		"explicit": 1,
+		"time_spend": 240,
+		"items": [
+			1114,
+			1120
+		],
+		"item_counts": [
+			1,
+			2
+		],
+		"results": [
+			1120,
+			1109
+		],
+		"result_counts": [
+			3,
+			1
+		],
+		"grid_index": 1207,
+		"icon_path": "Icons/ItemRecipe/X-ray",
+		"non_productive": 1
+	},
+	{
+		"id": 59,
+		"name": "High-purity Silicon",
+		"description": null,
+		"sid": "1103",
+		"type": "SMELT",
+		"handcraft": 1,
+		"time_spend": 120,
+		"items": [
+			1003
+		],
+		"item_counts": [
+			2
+		],
+		"results": [
+			1105
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1103
+	},
+	{
+		"id": 60,
+		"name": "Diamond",
+		"description": null,
+		"sid": "1206",
+		"type": "SMELT",
+		"time_spend": 120,
+		"items": [
+			1109
+		],
+		"item_counts": [
+			1
+		],
+		"results": [
+			1112
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1206
+	},
+	{
+		"id": 61,
+		"name": "Diamond (advanced)",
+		"description": "Find Kimberlite ore and smelt directly to obtain diamond.",
+		"sid": "1306",
+		"type": "SMELT",
+		"explicit": 1,
+		"time_spend": 90,
+		"items": [
+			1012
+		],
+		"item_counts": [
+			1
+		],
+		"results": [
+			1112
+		],
+		"result_counts": [
+			2
+		],
+		"grid_index": 1306,
+		"icon_path": "Icons/ItemRecipe/diamond-lv2"
+	},
+	{
+		"id": 62,
+		"name": "Crystal Silicon (advanced)",
+		"description": "The unique fractal structure of Fractal silicon is the material of choice for the efficient production of Crystal silicon.",
+		"sid": "1303",
+		"type": "ASSEMBLE",
+		"explicit": 1,
+		"time_spend": 90,
+		"items": [
+			1013
+		],
+		"item_counts": [
+			1
+		],
+		"results": [
+			1113
+		],
+		"result_counts": [
+			2
+		],
+		"grid_index": 1303,
+		"icon_path": "Icons/ItemRecipe/silicium-high-purity-lv2"
+	},
+	{
+		"id": 63,
+		"name": "Steel",
+		"description": null,
+		"sid": "1301",
+		"type": "SMELT",
+		"time_spend": 180,
+		"items": [
+			1101
+		],
+		"item_counts": [
+			3
+		],
+		"results": [
+			1103
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1301
+	},
+	{
+		"id": 64,
+		"name": "Thermal Power Plant",
+		"description": null,
+		"sid": "2105",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 300,
+		"items": [
+			1101,
+			1108,
+			1201,
+			1202
+		],
+		"item_counts": [
+			10,
+			4,
+			4,
+			4
+		],
+		"results": [
+			2204
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2105
+	},
+	{
+		"id": 65,
+		"name": "Titanium Ingot",
+		"description": null,
+		"sid": "1104",
+		"type": "SMELT",
+		"handcraft": 1,
+		"time_spend": 120,
+		"items": [
+			1004
+		],
+		"item_counts": [
+			2
+		],
+		"results": [
+			1106
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1104
+	},
+	{
+		"id": 66,
+		"name": "Titanium Alloy",
+		"description": null,
+		"sid": "1204",
+		"type": "SMELT",
+		"time_spend": 720,
+		"items": [
+			1106,
+			1103,
+			1116
+		],
+		"item_counts": [
+			4,
+			4,
+			8
+		],
+		"results": [
+			1107
+		],
+		"result_counts": [
+			4
+		],
+		"grid_index": 1204
+	},
+	{
+		"id": 67,
+		"name": "Solar Panel",
+		"description": null,
+		"sid": "2106",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 360,
+		"items": [
+			1104,
+			1105,
+			1301
+		],
+		"item_counts": [
+			10,
+			10,
+			5
+		],
+		"results": [
+			2205
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2106
+	},
+	{
+		"id": 68,
+		"name": "Photon Combiner",
+		"description": null,
+		"sid": "1601",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 180,
+		"items": [
+			1111,
+			1301
+		],
+		"item_counts": [
+			2,
+			1
+		],
+		"results": [
+			1404
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1601
+	},
+	{
+		"id": 69,
+		"name": "Photon Combiner (advanced)",
+		"description": "The discovery of optical grating crystal has diversified the production of Photon combiner.",
+		"sid": "1602",
+		"type": "ASSEMBLE",
+		"explicit": 1,
+		"time_spend": 180,
+		"items": [
+			1014,
+			1301
+		],
+		"item_counts": [
+			1,
+			1
+		],
+		"results": [
+			1404
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1602,
+		"icon_path": "Icons/ItemRecipe/photo-shifter-lv2"
+	},
+	{
+		"id": 70,
+		"name": "Solar Sail",
+		"description": null,
+		"sid": "1510",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 240,
+		"items": [
+			1123,
+			1404
+		],
+		"item_counts": [
+			1,
+			1
+		],
+		"results": [
+			1501
+		],
+		"result_counts": [
+			2
+		],
+		"grid_index": 1510
+	},
+	{
+		"id": 71,
+		"name": "EM-Rail Ejector",
+		"description": null,
+		"sid": "2311",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 360,
+		"items": [
+			1103,
+			1201,
+			1303,
+			1205
+		],
+		"item_counts": [
+			20,
+			20,
+			5,
+			10
+		],
+		"results": [
+			2311
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2311
+	},
+	{
+		"id": 72,
+		"name": "Ray Receiver",
+		"description": null,
+		"sid": "2111",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 480,
+		"items": [
+			1103,
+			1105,
+			1404,
+			1303,
+			1205
+		],
+		"item_counts": [
+			20,
+			20,
+			10,
+			5,
+			20
+		],
+		"results": [
+			2208
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2111
+	},
+	{
+		"id": 73,
+		"name": "Satellite Substation",
+		"description": null,
+		"sid": "2103",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 300,
+		"items": [
+			2202,
+			1205,
+			1125
+		],
+		"item_counts": [
+			1,
+			10,
+			2
+		],
+		"results": [
+			2212
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2103
+	},
+	{
+		"id": 74,
+		"name": "Mass-energy Storage",
+		"description": "Photons can be inverted into antimatter and hydrogen under the effect of super magnetic field.",
+		"sid": "1609",
+		"type": "PARTICLE",
+		"explicit": 1,
+		"time_spend": 120,
+		"items": [
+			1208
+		],
+		"item_counts": [
+			2
+		],
+		"results": [
+			1122,
+			1120
+		],
+		"result_counts": [
+			2,
+			2
+		],
+		"grid_index": 1609,
+		"icon_path": "Icons/ItemRecipe/photon-formula",
+		"non_productive": 1
+	},
+	{
+		"id": 75,
+		"name": "Universe Matrix",
+		"description": null,
+		"sid": "1706",
+		"type": "RESEARCH",
+		"time_spend": 900,
+		"items": [
+			6001,
+			6002,
+			6003,
+			6004,
+			6005,
+			1122
+		],
+		"item_counts": [
+			1,
+			1,
+			1,
+			1,
+			1,
+			1
+		],
+		"results": [
+			6006
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1706
+	},
+	{
+		"id": 76,
+		"name": "Accumulator",
+		"description": null,
+		"sid": "2107",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 300,
+		"items": [
+			1101,
+			1205,
+			1113
+		],
+		"item_counts": [
+			6,
+			1,
+			6
+		],
+		"results": [
+			2206
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2107
+	},
+	{
+		"id": 77,
+		"name": "Energy Exchanger",
+		"description": null,
+		"sid": "2110",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 900,
+		"items": [
+			1107,
+			1103,
+			1303,
+			1206
+		],
+		"item_counts": [
+			40,
+			40,
+			40,
+			8
+		],
+		"results": [
+			2209
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2110
+	},
+	{
+		"id": 78,
+		"name": "Space Warper",
+		"description": null,
+		"sid": "1607",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 600,
+		"items": [
+			1209
+		],
+		"item_counts": [
+			1
+		],
+		"results": [
+			1210
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1607
+	},
+	{
+		"id": 79,
+		"name": "Space Warper (advanced)",
+		"description": "With the Gravity matrix, the production of the space warper becomes easier.",
+		"sid": "1608",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"explicit": 1,
+		"time_spend": 600,
+		"items": [
+			6005
+		],
+		"item_counts": [
+			1
+		],
+		"results": [
+			1210
+		],
+		"result_counts": [
+			8
+		],
+		"grid_index": 1608,
+		"icon_path": "Icons/ItemRecipe/space-warper-lv2"
+	},
+	{
+		"id": 80,
+		"name": "Frame Material",
+		"description": null,
+		"sid": "1511",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 360,
+		"items": [
+			1124,
+			1107,
+			1105
+		],
+		"item_counts": [
+			4,
+			1,
+			1
+		],
+		"results": [
+			1125
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1511
+	},
+	{
+		"id": 81,
+		"name": "Dyson Sphere Component",
+		"description": null,
+		"sid": "1512",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 480,
+		"items": [
+			1125,
+			1501,
+			1303
+		],
+		"item_counts": [
+			3,
+			3,
+			3
+		],
+		"results": [
+			1502
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1512
+	},
+	{
+		"id": 82,
+		"name": "Vertical Launching Silo",
+		"description": null,
+		"sid": "2312",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 1800,
+		"items": [
+			1107,
+			1125,
+			1209,
+			1305
+		],
+		"item_counts": [
+			80,
+			30,
+			20,
+			10
+		],
+		"results": [
+			2312
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2312
+	},
+	{
+		"id": 83,
+		"name": "Small Carrier Rocket",
+		"description": null,
+		"sid": "1412",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 360,
+		"items": [
+			1502,
+			1802,
+			1305
+		],
+		"item_counts": [
+			2,
+			4,
+			2
+		],
+		"results": [
+			1503
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1412
+	},
+	{
+		"id": 84,
+		"name": "Conveyor Belt MK.I",
+		"description": null,
+		"sid": "2201",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 60,
+		"items": [
+			1101,
+			1201
+		],
+		"item_counts": [
+			2,
+			1
+		],
+		"results": [
+			2001
+		],
+		"result_counts": [
+			3
+		],
+		"grid_index": 2201
+	},
+	{
+		"id": 85,
+		"name": "Sorter MK.I",
+		"description": null,
+		"sid": "2301",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 60,
+		"items": [
+			1101,
+			1301
+		],
+		"item_counts": [
+			1,
+			1
+		],
+		"results": [
+			2011
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2301
+	},
+	{
+		"id": 86,
+		"name": "Storage MK.I",
+		"description": null,
+		"sid": "2206",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 120,
+		"items": [
+			1101,
+			1108
+		],
+		"item_counts": [
+			4,
+			4
+		],
+		"results": [
+			2101
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2206
+	},
+	{
+		"id": 87,
+		"name": "Splitter",
+		"description": null,
+		"sid": "2204",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 120,
+		"items": [
+			1101,
+			1201,
+			1301
+		],
+		"item_counts": [
+			3,
+			2,
+			1
+		],
+		"results": [
+			2020
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2204
+	},
+	{
+		"id": 88,
+		"name": "Sorter MK.II",
+		"description": null,
+		"sid": "2302",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 60,
+		"items": [
+			2011,
+			1203
+		],
+		"item_counts": [
+			2,
+			1
+		],
+		"results": [
+			2012
+		],
+		"result_counts": [
+			2
+		],
+		"grid_index": 2302
+	},
+	{
+		"id": 89,
+		"name": "Conveyor Belt MK.II",
+		"description": null,
+		"sid": "2202",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 60,
+		"items": [
+			2001,
+			1204
+		],
+		"item_counts": [
+			3,
+			1
+		],
+		"results": [
+			2002
+		],
+		"result_counts": [
+			3
+		],
+		"grid_index": 2202
+	},
+	{
+		"id": 90,
+		"name": "Sorter MK.III",
+		"description": null,
+		"sid": "2303",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 60,
+		"items": [
+			2012,
+			1204
+		],
+		"item_counts": [
+			2,
+			1
+		],
+		"results": [
+			2013
+		],
+		"result_counts": [
+			2
+		],
+		"grid_index": 2303
+	},
+	{
+		"id": 91,
+		"name": "Storage MK.II",
+		"description": null,
+		"sid": "2207",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 240,
+		"items": [
+			1103,
+			1108
+		],
+		"item_counts": [
+			8,
+			8
+		],
+		"results": [
+			2102
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2207
+	},
+	{
+		"id": 92,
+		"name": "Conveyor Belt MK.III",
+		"description": null,
+		"sid": "2203",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 60,
+		"items": [
+			2002,
+			1205,
+			1123
+		],
+		"item_counts": [
+			3,
+			1,
+			1
+		],
+		"results": [
+			2003
+		],
+		"result_counts": [
+			3
+		],
+		"grid_index": 2203
+	},
+	{
+		"id": 93,
+		"name": "Planetary Logistics Station",
+		"description": null,
+		"sid": "2210",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 1200,
+		"items": [
+			1103,
+			1106,
+			1303,
+			1206
+		],
+		"item_counts": [
+			40,
+			40,
+			40,
+			20
+		],
+		"results": [
+			2103
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2210
+	},
+	{
+		"id": 94,
+		"name": "Logistics Drone",
+		"description": null,
+		"sid": "1410",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 240,
+		"items": [
+			1101,
+			1303,
+			1405
+		],
+		"item_counts": [
+			5,
+			2,
+			2
+		],
+		"results": [
+			5001
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1410
+	},
+	{
+		"id": 95,
+		"name": "Interstellar Logistics Station",
+		"description": null,
+		"sid": "2211",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 1800,
+		"items": [
+			2103,
+			1107,
+			1206
+		],
+		"item_counts": [
+			1,
+			40,
+			20
+		],
+		"results": [
+			2104
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2211
+	},
+	{
+		"id": 96,
+		"name": "Logistics Vessel",
+		"description": null,
+		"sid": "1411",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 360,
+		"items": [
+			1107,
+			1303,
+			1406
+		],
+		"item_counts": [
+			10,
+			10,
+			2
+		],
+		"results": [
+			5002
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1411
+	},
+	{
+		"id": 97,
+		"name": "Electric Motor",
+		"description": null,
+		"sid": "1302",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 120,
+		"items": [
+			1101,
+			1201,
+			1202
+		],
+		"item_counts": [
+			2,
+			1,
+			1
+		],
+		"results": [
+			1203
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1302
+	},
+	{
+		"id": 98,
+		"name": "Electromagnetic Turbine",
+		"description": null,
+		"sid": "1402",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 120,
+		"items": [
+			1203,
+			1202
+		],
+		"item_counts": [
+			2,
+			2
+		],
+		"results": [
+			1204
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1402
+	},
+	{
+		"id": 99,
+		"name": "Particle Container",
+		"description": null,
+		"sid": "1506",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 240,
+		"items": [
+			1204,
+			1104,
+			1123
+		],
+		"item_counts": [
+			2,
+			2,
+			2
+		],
+		"results": [
+			1206
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1506
+	},
+	{
+		"id": 100,
+		"name": "Particle Container (advanced)",
+		"description": "Although the Unipolar magnet is extremely rare, as long as you find it, you can make Particle container more efficiently.",
+		"sid": "1606",
+		"type": "ASSEMBLE",
+		"explicit": 1,
+		"time_spend": 240,
+		"items": [
+			1016,
+			1104
+		],
+		"item_counts": [
+			10,
+			2
+		],
+		"results": [
+			1206
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1606,
+		"icon_path": "Icons/ItemRecipe/partical-capacitor-lv2"
+	},
+	{
+		"id": 101,
+		"name": "Graviton Lens",
+		"description": null,
+		"sid": "1405",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 360,
+		"items": [
+			1112,
+			1127
+		],
+		"item_counts": [
+			4,
+			1
+		],
+		"results": [
+			1209
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1405
+	},
+	{
+		"id": 102,
+		"name": "Gravity Matrix",
+		"description": null,
+		"sid": "1705",
+		"type": "RESEARCH",
+		"handcraft": 1,
+		"time_spend": 1440,
+		"items": [
+			1209,
+			1305
+		],
+		"item_counts": [
+			1,
+			1
+		],
+		"results": [
+			6005
+		],
+		"result_counts": [
+			2
+		],
+		"grid_index": 1705
+	},
+	{
+		"id": 103,
+		"name": "Super-magnetic Ring",
+		"description": null,
+		"sid": "1502",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 180,
+		"items": [
+			1204,
+			1102,
+			1109
+		],
+		"item_counts": [
+			2,
+			3,
+			1
+		],
+		"results": [
+			1205
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1502
+	},
+	{
+		"id": 104,
+		"name": "Strange Matter",
+		"description": null,
+		"sid": "1312",
+		"type": "PARTICLE",
+		"time_spend": 480,
+		"items": [
+			1206,
+			1101,
+			1121
+		],
+		"item_counts": [
+			2,
+			2,
+			10
+		],
+		"results": [
+			1127
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1312
+	},
+	{
+		"id": 106,
+		"name": "Proliferator Mk.I",
+		"description": null,
+		"sid": "1110",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 30,
+		"items": [
+			1006
+		],
+		"item_counts": [
+			1
+		],
+		"results": [
+			1141
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1110
+	},
+	{
+		"id": 107,
+		"name": "Proliferator Mk.II",
+		"description": null,
+		"sid": "1111",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 60,
+		"items": [
+			1141,
+			1112
+		],
+		"item_counts": [
+			2,
+			1
+		],
+		"results": [
+			1142
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1111
+	},
+	{
+		"id": 108,
+		"name": "Proliferator Mk.III",
+		"description": null,
+		"sid": "1112",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 120,
+		"items": [
+			1142,
+			1124
+		],
+		"item_counts": [
+			2,
+			1
+		],
+		"results": [
+			1143
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1112
+	},
+	{
+		"id": 109,
+		"name": "Spray Coater",
+		"description": null,
+		"sid": "2407",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 180,
+		"items": [
+			1103,
+			1401,
+			1301,
+			1302
+		],
+		"item_counts": [
+			4,
+			2,
+			2,
+			2
+		],
+		"results": [
+			2313
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2407
+	},
+	{
+		"id": 110,
+		"name": "Fractionator",
+		"description": null,
+		"sid": "2408",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 180,
+		"items": [
+			1103,
+			1108,
+			1110,
+			1303
+		],
+		"item_counts": [
+			8,
+			4,
+			4,
+			1
+		],
+		"results": [
+			2314
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2408
+	},
+	{
+		"id": 111,
+		"name": "Orbital Collector",
+		"description": null,
+		"sid": "2212",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 1800,
+		"items": [
+			2104,
+			1205,
+			1406,
+			2207
+		],
+		"item_counts": [
+			1,
+			50,
+			20,
+			20
+		],
+		"results": [
+			2105
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2212
+	},
+	{
+		"id": 112,
+		"name": "Foundation",
+		"description": null,
+		"sid": "1712",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 60,
+		"items": [
+			1108,
+			1103
+		],
+		"item_counts": [
+			3,
+			1
+		],
+		"results": [
+			1131
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1712
+	},
+	{
+		"id": 113,
+		"name": "Mini Fusion Power Plant",
+		"description": null,
+		"sid": "2109",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 600,
+		"items": [
+			1107,
+			1205,
+			1124,
+			1303
+		],
+		"item_counts": [
+			12,
+			10,
+			8,
+			4
+		],
+		"results": [
+			2211
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2109
+	},
+	{
+		"id": 114,
+		"name": "Storage Tank",
+		"description": null,
+		"sid": "2208",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 120,
+		"items": [
+			1101,
+			1108,
+			1110
+		],
+		"item_counts": [
+			8,
+			4,
+			4
+		],
+		"results": [
+			2106
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2208
+	},
+	{
+		"id": 115,
+		"name": "Deuterium Fractionation",
+		"description": "The successful fractionation of deuterium from liquid hydrogen has greatly promoted the use of nuclear fuel.",
+		"sid": "1407",
+		"type": "FRACTIONATE",
+		"explicit": 1,
+		"time_spend": 1,
+		"items": [
+			1120
+		],
+		"item_counts": [
+			100
+		],
+		"results": [
+			1121
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1407,
+		"icon_path": "Icons/ItemRecipe/deuterium-formula"
+	},
+	{
+		"id": 116,
+		"name": "Plane Smelter",
+		"description": null,
+		"sid": "2405",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 300,
+		"items": [
+			2302,
+			1125,
+			1304,
+			1016
+		],
+		"item_counts": [
+			1,
+			5,
+			4,
+			15
+		],
+		"results": [
+			2315
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2405
+	},
+	{
+		"id": 117,
+		"name": "Traffic Monitor",
+		"description": null,
+		"sid": "2304",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 120,
+		"items": [
+			1101,
+			1201,
+			1110,
+			1301
+		],
+		"item_counts": [
+			3,
+			2,
+			1,
+			2
+		],
+		"results": [
+			2030
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2304
+	},
+	{
+		"id": 118,
+		"name": "Geothermal Power Station",
+		"description": null,
+		"sid": "2108",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 360,
+		"items": [
+			1103,
+			1104,
+			1404,
+			1205
+		],
+		"item_counts": [
+			15,
+			20,
+			4,
+			1
+		],
+		"results": [
+			2213
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2108
+	},
+	{
+		"id": 119,
+		"name": "Advanced Mining Machine",
+		"description": null,
+		"sid": "2306",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 1200,
+		"items": [
+			1107,
+			1125,
+			1205,
+			1305,
+			1014
+		],
+		"item_counts": [
+			20,
+			10,
+			10,
+			4,
+			40
+		],
+		"results": [
+			2316
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2306
+	},
+	{
+		"id": 120,
+		"name": "Automatic Piler",
+		"description": null,
+		"sid": "2205",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 240,
+		"items": [
+			1103,
+			1201,
+			1205,
+			1303
+		],
+		"item_counts": [
+			3,
+			4,
+			1,
+			2
+		],
+		"results": [
+			2040
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2205
+	},
+	{
+		"id": 121,
+		"name": "Reforming Refine",
+		"description": "Add hydrogen and coal to Crude Oil, and process more Crude Oil through reforming reaction.",
+		"sid": "1307",
+		"type": "REFINE",
+		"explicit": 1,
+		"time_spend": 240,
+		"items": [
+			1114,
+			1120,
+			1006
+		],
+		"item_counts": [
+			2,
+			1,
+			1
+		],
+		"results": [
+			1114
+		],
+		"result_counts": [
+			3
+		],
+		"grid_index": 1307,
+		"icon_path": "Icons/ItemRecipe/reforming-refine",
+		"non_productive": 1
+	},
+	{
+		"id": 122,
+		"name": "Logistics Distributor",
+		"description": null,
+		"sid": "2209",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 480,
+		"items": [
+			1101,
+			1401,
+			1303
+		],
+		"item_counts": [
+			8,
+			4,
+			4
+		],
+		"results": [
+			2107
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2209
+	},
+	{
+		"id": 123,
+		"name": "Logistics Bot",
+		"description": null,
+		"sid": "1409",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 120,
+		"items": [
+			1101,
+			1204,
+			1303
+		],
+		"item_counts": [
+			2,
+			1,
+			1
+		],
+		"results": [
+			5003
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 1409
+	},
+	{
+		"id": 124,
+		"name": "Quantum Chemical Plant",
+		"description": null,
+		"sid": "2410",
+		"type": "ASSEMBLE",
+		"handcraft": 1,
+		"time_spend": 600,
+		"items": [
+			2309,
+			1119,
+			1127,
+			1305
+		],
+		"item_counts": [
+			1,
+			10,
+			3,
+			3
+		],
+		"results": [
+			2317
+		],
+		"result_counts": [
+			1
+		],
+		"grid_index": 2410
+	}
+]

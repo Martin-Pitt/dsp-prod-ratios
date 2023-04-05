@@ -1,0 +1,1341 @@
+[
+	{
+		"id": 1003,
+		"name": "Silicon Ore",
+		"description": "Obtained by gathering from silicon veins. It is usually used to make high-purity silicon crystals.",
+		"type": "RESOURCE",
+		"mining_from": "Silicon Veins",
+		"stack_size": 100,
+		"icon_path": "Icons/ItemRecipe/silicium-ore",
+		"pre_tech_override": 1105
+	},
+	{
+		"id": 1101,
+		"name": "Iron Ingot",
+		"description": "Basic raw material. Used to produce various iron components.",
+		"type": "MATERIAL",
+		"stack_size": 100,
+		"icon_path": "Icons/ItemRecipe/iron-plate",
+		"pre_tech_override": 1201
+	},
+	{
+		"id": 1104,
+		"name": "Copper Ingot",
+		"description": "Basic raw material. Used to produce various copper components.",
+		"type": "MATERIAL",
+		"stack_size": 100,
+		"icon_path": "Icons/ItemRecipe/copper-plate",
+		"pre_tech_override": 1202
+	},
+	{
+		"id": 1105,
+		"name": "High-purity Silicon",
+		"description": "After the crude silicon is melted and recrystallized, it can obtain analytically pure silicon crystals. The photovoltaic materials and semiconductor components made can fit a variety of needs.",
+		"type": "MATERIAL",
+		"stack_size": 100,
+		"icon_path": "Icons/ItemRecipe/silicium-single-crystal",
+		"pre_tech_override": 1205
+	},
+	{
+		"id": 1106,
+		"name": "Titanium Ingot",
+		"description": "Obtained from smelting titanium ores, it is light in weight and high in strength. It is an indispensable raw material for producing high-strength materials.",
+		"type": "MATERIAL",
+		"stack_size": 100,
+		"icon_path": "Icons/ItemRecipe/titanium-plate",
+		"pre_tech_override": 1206
+	},
+	{
+		"id": 1108,
+		"name": "Stone Brick",
+		"description": "A common material. Obtained from smelting stone ores, is usually used as a foundation for facilities.",
+		"type": "MATERIAL",
+		"stack_size": 100,
+		"icon_path": "Icons/ItemRecipe/stone-brick",
+		"pre_tech_override": 1203
+	},
+	{
+		"id": 1109,
+		"name": "Energetic Graphite",
+		"description": "Purify raw coal to obtain graphite, a more usable form of carbon. You can further compact graphite to create crystal diamonds that have more advanced applications.",
+		"type": "MATERIAL",
+		"stack_size": 100,
+		"icon_path": "Icons/ItemRecipe/graphite",
+		"heat_value": 6750000,
+		"pre_tech_override": 1204
+	},
+	{
+		"id": 1103,
+		"name": "Steel",
+		"description": "Under strict and controllable temperature conditions, using iron ingots as raw material for further smelting, the crystal form of the material is improved so that it has better mechanical properties.",
+		"type": "MATERIAL",
+		"stack_size": 100,
+		"icon_path": "Icons/ItemRecipe/steel-plate",
+		"pre_tech_override": 1401
+	},
+	{
+		"id": 1107,
+		"name": "Titanium Alloy",
+		"description": "Under different temperatures, utilizing the characteristics of the titanium's lattice structure and adding precise proportions of alloying elements will produce a new type of alloy material that achieves a perfect balance of phase transition temperature and phase content. It has superior strength and toughness.",
+		"type": "MATERIAL",
+		"stack_size": 100,
+		"icon_path": "Icons/ItemRecipe/titanium-alloy",
+		"pre_tech_override": 1306
+	},
+	{
+		"id": 1110,
+		"name": "Glass",
+		"description": "An amorphous optical medium material with an irregular structure, can be used to make various optical components such as prisms and lenses. And can also be used to make facilities and buildings.",
+		"type": "MATERIAL",
+		"stack_size": 100,
+		"icon_path": "Icons/ItemRecipe/glass",
+		"pre_tech_override": 1303
+	},
+	{
+		"id": 1119,
+		"name": "Titanium Glass",
+		"description": "When the glass is in a molten state, adding a certain proportion of titanium can greatly strengthen the glass and adapt to more intense environments.",
+		"type": "MATERIAL",
+		"stack_size": 100,
+		"icon_path": "Icons/ItemRecipe/titan-glass",
+		"pre_tech_override": 1609
+	},
+	{
+		"id": 1111,
+		"name": "Prism",
+		"description": "A polyhedron surrounded by two intersecting glass planes, can split light or disperse light beams. It is a key component for producing more precise optical instruments.",
+		"type": "MATERIAL",
+		"stack_size": 100,
+		"icon_path": "Icons/ItemRecipe/prism",
+		"pre_tech_override": 1403
+	},
+	{
+		"id": 1112,
+		"name": "Diamond",
+		"description": "Diamond is obtained by using strong pressure and heat to change the structure of graphite. It is a very hard crystal that not only retains the parallel hexagonal lattice of graphite but also forms a cubic hexagonal lattice. ",
+		"type": "MATERIAL",
+		"stack_size": 100,
+		"icon_path": "Icons/ItemRecipe/diamond",
+		"heat_value": 900000,
+		"pre_tech_override": 1304
+	},
+	{
+		"id": 1113,
+		"name": "Crystal Silicon",
+		"description": "Obtain a spectrally pure silicon crystal after the High-purity silicon is melted and passed through a strong electric field at a certain speed, which can further remove the ionic impurities dissolved therein. Crystal silicon has almost no crystal defects and is mainly used to make some ultra-high-precision optical instruments.",
+		"type": "MATERIAL",
+		"stack_size": 100,
+		"icon_path": "Icons/ItemRecipe/silicium-high-purity",
+		"pre_tech_override": 1305
+	},
+	{
+		"id": 1201,
+		"name": "Gear",
+		"description": "Standard component is used for transmission and other functions and is also widely used in various mechanical structures.",
+		"type": "COMPONENT",
+		"stack_size": 200,
+		"icon_path": "Icons/ItemRecipe/gear-wheel",
+		"pre_tech_override": 1501
+	},
+	{
+		"id": 1102,
+		"name": "Magnet",
+		"description": "Basic magnetic material. Obtained by smelting iron ore directly.",
+		"type": "MATERIAL",
+		"stack_size": 200,
+		"icon_path": "Icons/ItemRecipe/magnet",
+		"pre_tech_override": 1301
+	},
+	{
+		"id": 1202,
+		"name": "Magnetic Coil",
+		"description": "The most basic electromagnetic component. It is very functional.",
+		"type": "COMPONENT",
+		"stack_size": 200,
+		"icon_path": "Icons/ItemRecipe/magnetism-wire",
+		"pre_tech_override": 1302
+	},
+	{
+		"id": 1203,
+		"name": "Electric Motor",
+		"description": "The fundamental power system component. It can accelerate mechanical operation.",
+		"type": "COMPONENT",
+		"stack_size": 100,
+		"icon_path": "Icons/ItemRecipe/electric-motor",
+		"pre_tech_override": 1404
+	},
+	{
+		"id": 1204,
+		"name": "Electromagnetic Turbine",
+		"description": "Make objects levitate against gravity, usually used to make more advanced magnetic field generators.",
+		"type": "COMPONENT",
+		"stack_size": 100,
+		"icon_path": "Icons/ItemRecipe/mag-turbine",
+		"pre_tech_override": 1504
+	},
+	{
+		"id": 1205,
+		"name": "Super-magnetic Ring",
+		"description": "Super magnetic field generating device. Generated super-strong magnetic field can directly act on the atomic scale, causing the distortion of the material lattice, thereby preparing high-performance materials and devices.",
+		"type": "COMPONENT",
+		"stack_size": 100,
+		"icon_path": "Icons/ItemRecipe/hyper-magnetism-ring",
+		"pre_tech_override": 1604
+	},
+	{
+		"id": 1206,
+		"name": "Particle Container",
+		"description": "While firmly binding the particles, it can guide particles to show some specific properties.",
+		"type": "COMPONENT",
+		"stack_size": 100,
+		"icon_path": "Icons/ItemRecipe/partical-capacitor",
+		"pre_tech_override": 1603
+	},
+	{
+		"id": 1127,
+		"name": "Strange Matter",
+		"description": "Strange matter has a great gravitational negative pressure, which exceeds its energy density, so that the space around the strange matter is warped and meets the negative energy demand of the warp engine.",
+		"type": "MATERIAL",
+		"stack_size": 100,
+		"icon_path": "Icons/ItemRecipe/strange-matter-generator",
+		"pre_tech_override": 1408
+	},
+	{
+		"id": 1301,
+		"name": "Circuit Board",
+		"description": "The most basic electrical component. It is very versatile.",
+		"type": "COMPONENT",
+		"stack_size": 200,
+		"icon_path": "Icons/ItemRecipe/circuit-board",
+		"pre_tech_override": 1402
+	},
+	{
+		"id": 1303,
+		"name": "Processor",
+		"description": "Large-scale integrated circuit device. The application of semiconductor materials make it better in processing data and controlling the processing process.",
+		"type": "COMPONENT",
+		"stack_size": 200,
+		"icon_path": "Icons/ItemRecipe/processor",
+		"pre_tech_override": 1505
+	},
+	{
+		"id": 1305,
+		"name": "Quantum Chip",
+		"description": "With powerful computing power and ultra-fast computing speed, it can warn whether the quantum transition will cause errors. And timely prevent its transition by reversing the transition process that may cause errors.",
+		"type": "COMPONENT",
+		"stack_size": 200,
+		"icon_path": "Icons/ItemRecipe/quantum-processor",
+		"pre_tech_override": 1611
+	},
+	{
+		"id": 1302,
+		"name": "Microcrystalline Component",
+		"description": "Microcrystalline component is the basis for processors to achieve high-speed computing functions. It requires carving and processing city-like three-dimensional nanostructures on high-purity silicon wafers to make.",
+		"type": "COMPONENT",
+		"stack_size": 200,
+		"icon_path": "Icons/ItemRecipe/micro-component",
+		"pre_tech_override": 1405
+	},
+	{
+		"id": 1304,
+		"name": "Plane Filter",
+		"description": "Studying the Rabi oscillation to obtain the law of the probability change with time during the evolution of the particle wave function over time, it can be artificially interfered with during the quantum transition so that the quantum jumps in the expected direction.",
+		"type": "COMPONENT",
+		"stack_size": 200,
+		"icon_path": "Icons/ItemRecipe/plane-filter",
+		"pre_tech_override": 1610
+	},
+	{
+		"id": 1402,
+		"name": "Particle Broadband",
+		"description": "Control the particles to maintain a certain regularity, which greatly improves the printing speed of the particles.",
+		"type": "COMPONENT",
+		"stack_size": 200,
+		"icon_path": "Icons/ItemRecipe/particle-wide-band",
+		"pre_tech_override": 1411
+	},
+	{
+		"id": 1401,
+		"name": "Plasma Exciter",
+		"description": "The plasma generated by the high-power exciter can be used to extract and refine crude oil, and can also be used to make wireless power tower for remote power transmission and charge mecha.",
+		"type": "COMPONENT",
+		"stack_size": 200,
+		"icon_path": "Icons/ItemRecipe/plasma-generator",
+		"pre_tech_override": 1502
+	},
+	{
+		"id": 1404,
+		"name": "Photon Combiner",
+		"description": "The surface of the prism is cut into nano-gratings and then reassembled. After continuously absorbing multiple low-energy photons will emit a high-energy photon under a combination of specific structures. The magic is that the natural Optical grating crystal in the cluster can directly do this.",
+		"type": "COMPONENT",
+		"stack_size": 200,
+		"icon_path": "Icons/ItemRecipe/photo-shifter",
+		"pre_tech_override": 1503
+	},
+	{
+		"id": 1501,
+		"name": "Solar Sail",
+		"description": "Use the EM-Rail Ejector to launch a large number of solar sails to form Dyson swarm, which can more effectively obtain the radiant energy of stars.",
+		"type": "PRODUCT",
+		"stack_size": 200,
+		"icon_path": "Icons/ItemRecipe/solar-collector",
+		"pre_tech_override": 1708
+	},
+	{
+		"id": 1114,
+		"name": "Refined Oil",
+		"description": "The primary product of crude oil refining. A chemical fuel, can be used to produce various chemical products.",
+		"type": "MATERIAL",
+		"stack_size": 20,
+		"is_fluid": true,
+		"icon_path": "Icons/ItemRecipe/refined-oil",
+		"heat_value": 4500000,
+		"pre_tech_override": 1208
+	},
+	{
+		"id": 1116,
+		"name": "Sulfuric Acid",
+		"description": "Primary chemical product. Produced from crude oil, can also be directly gathered from the sea of sulfuric acid with a water pump.",
+		"type": "MATERIAL",
+		"mining_from": "Sulfuric acid ocean",
+		"stack_size": 20,
+		"is_fluid": true,
+		"icon_path": "Icons/ItemRecipe/sulphuric-acid",
+		"pre_tech_override": 1207
+	},
+	{
+		"id": 1120,
+		"name": "Hydrogen",
+		"description": "The most abundant element in the universe is the lightest gas.",
+		"type": "MATERIAL",
+		"mining_from": "Gas Giant Orbit",
+		"stack_size": 20,
+		"is_fluid": true,
+		"icon_path": "Icons/ItemRecipe/hydrogen",
+		"heat_value": 9000000,
+		"pre_tech_override": 1109
+	},
+	{
+		"id": 1121,
+		"name": "Deuterium",
+		"description": "A stable isotope of hydrogen. Rarely exists under natural conditions. Most of them come from the reprocessing of hydrogen and the collection from the Gas giant.",
+		"type": "MATERIAL",
+		"mining_from": "Gas Giant Orbit",
+		"produce_from": "Fractionator",
+		"stack_size": 20,
+		"is_fluid": true,
+		"icon_path": "Icons/ItemRecipe/deuterium",
+		"heat_value": 9000000,
+		"pre_tech_override": 1110,
+		"mecha_material_id": 1134
+	},
+	{
+		"id": 1122,
+		"name": "Antimatter",
+		"description": "It is obtained by inverting photons in a critical state. When the positive and antimatter meet, they will annihilate each other and generate huge energy.",
+		"type": "MATERIAL",
+		"stack_size": 20,
+		"icon_path": "Icons/ItemRecipe/anti-matter",
+		"potential": "2576980377600000000",
+		"reactor_inc": 2.1171588516621237e-17,
+		"pre_tech_override": 1111
+	},
+	{
+		"id": 1801,
+		"name": "Hydrogen Fuel Rod",
+		"description": "With further development of cryo-technology hydrogen can be liquefied to make fuel rods for higher combustion efficiency. These higher energy Fuel Rods can greatly increase the mecha's fuel power generation.",
+		"type": "PRODUCT",
+		"stack_size": 30,
+		"icon_path": "Icons/ItemRecipe/hydrogen-energy-fuel",
+		"heat_value": 54000000,
+		"pre_tech_override": 1209
+	},
+	{
+		"id": 1802,
+		"name": "Deuteron Fuel Rod",
+		"description": "Under a magnetic field, it is possible to make deuterium into deuteron fuel rods as a better source of energy. These fuel rods are often used in small fusion systems.",
+		"type": "PRODUCT",
+		"stack_size": 30,
+		"icon_path": "Icons/ItemRecipe/deuterium-energy-fuel",
+		"heat_value": 600000000,
+		"pre_tech_override": 1210
+	},
+	{
+		"id": 1803,
+		"name": "Antimatter Fuel Rod",
+		"description": "Antimatter can be made into a more stable fuel rod by using the strong restraint of annihilation constraint sphere. It will be safer in this way.",
+		"type": "PRODUCT",
+		"stack_size": 30,
+		"icon_path": "Icons/ItemRecipe/antimatter-energy-fuel",
+		"heat_value": 7200000000,
+		"potential": 1,
+		"pre_tech_override": 1211
+	},
+	{
+		"id": 1115,
+		"name": "Plastic",
+		"description": "Primary chemical product. Has a wide range of uses and is usually used to make more advanced chemical products.",
+		"type": "MATERIAL",
+		"stack_size": 100,
+		"icon_path": "Icons/ItemRecipe/plastic",
+		"pre_tech_override": 1308
+	},
+	{
+		"id": 1123,
+		"name": "Graphene",
+		"description": "The double-layer graphenes will form a complex repeating structure, a superlattice by rotating when stacking one layer of graphene on top of another. After rotating to a certain Magic Angle, double-layered graphene will gain superconductive properties. Graphene has become a new type of nano-superconducting material.",
+		"type": "MATERIAL",
+		"stack_size": 100,
+		"icon_path": "Icons/ItemRecipe/graphene",
+		"heat_value": 96000,
+		"pre_tech_override": 1310
+	},
+	{
+		"id": 1124,
+		"name": "Carbon Nanotube",
+		"description": "The weight is very light with a perfectly connected hexagonal structure, has extremely high strength and strong resistance to deformation, and is usually used to manufacture high-efficiency devices.",
+		"type": "MATERIAL",
+		"stack_size": 100,
+		"icon_path": "Icons/ItemRecipe/nanotube",
+		"heat_value": 84000,
+		"pre_tech_override": 1410
+	},
+	{
+		"id": 1117,
+		"name": "Organic Crystal",
+		"description": "A high-grade chemical product. Used to produce higher strength crystals with a crystal structure. It can also be directly gathered from rare organic crystal vein.",
+		"type": "MATERIAL",
+		"mining_from": "Organic crystal vein <color=\"#F5FF4FC1\">(rare)</color>",
+		"stack_size": 100,
+		"icon_path": "Icons/ItemRecipe/crystal-rubber",
+		"heat_value": 1800000,
+		"pre_tech_override": 1309
+	},
+	{
+		"id": 1118,
+		"name": "Titanium Crystal",
+		"description": "Further, strengthen the lattice structure of titanium to form particular titanium atom crystal with higher strength by adding a precise proportion of organic crystals to titanium. ",
+		"type": "MATERIAL",
+		"stack_size": 100,
+		"icon_path": "Icons/ItemRecipe/titan-crystal",
+		"pre_tech_override": 1409
+	},
+	{
+		"id": 1126,
+		"name": "Casimir Crystal",
+		"description": "Use a strong electric field to fix the charged particles, and the Coulomb repulsion between the particles will spontaneously form a spatial ring-shaped ion crystal. After applying a weak static magnetic field, the zero-point energy of the particles inside the crystal is excited, producing an obvious Casimir effect.",
+		"type": "MATERIAL",
+		"stack_size": 100,
+		"icon_path": "Icons/ItemRecipe/casimir-crystal",
+		"pre_tech_override": 1407
+	},
+	{
+		"id": 1209,
+		"name": "Graviton Lens",
+		"description": "A piece of neutron star material that has been encapsulated after processing, its twisted and powerful gravitational field is shielded in a container. Usually, we will use it to process and change the spatial structure, but we can expect some one use it to refract the sunlight and ignite fire.",
+		"type": "COMPONENT",
+		"stack_size": 100,
+		"icon_path": "Icons/ItemRecipe/gravity-lens",
+		"pre_tech_override": 1605
+	},
+	{
+		"id": 1210,
+		"name": "Space Warper",
+		"description": "Consumables. Used to activate warp of mecha and logistics vessels.\nUse the <color=\"#FD965ECC\">CapsLock</color> key to start the warp engine.",
+		"type": "COMPONENT",
+		"stack_size": 100,
+		"icon_path": "Icons/ItemRecipe/space-warper",
+		"pre_tech_override": 1608
+	},
+	{
+		"id": 1403,
+		"name": "Annihilation Constraint Sphere",
+		"description": "It is a crucial component of artificial stars to confine the annihilation reaction within the sphere to obtain stable and controllable energy output.",
+		"type": "COMPONENT",
+		"stack_size": 20,
+		"icon_path": "Icons/ItemRecipe/fusion-capacitor",
+		"pre_tech_override": 1311
+	},
+	{
+		"id": 1405,
+		"name": "Thruster",
+		"description": "Can provide power for logistics drone.",
+		"type": "COMPONENT",
+		"stack_size": 200,
+		"icon_path": "Icons/ItemRecipe/fuel-thruster",
+		"pre_tech_override": 1507
+	},
+	{
+		"id": 1406,
+		"name": "Reinforced Thruster",
+		"description": "It is an upgraded version of the thruster that can power the logistics vessel.",
+		"type": "COMPONENT",
+		"stack_size": 100,
+		"icon_path": "Icons/ItemRecipe/ion-thruster",
+		"pre_tech_override": 1508
+	},
+	{
+		"id": 5003,
+		"name": "Logistics Bot",
+		"description": "It can dynamically balance the supply and demand in the distribution logistics system, but it will not transport items to destinations outside of the distribution range.",
+		"type": "LOGISTICS",
+		"stack_size": 200,
+		"is_entity": true,
+		"icon_path": "Icons/ItemRecipe/delivery-drone",
+		"pre_tech_override": 1509
+	},
+	{
+		"id": 5001,
+		"name": "Logistics Drone",
+		"description": "It can dynamically balance the supply and demand in the planetary logistics system, but it will only work for the logistics station it belongs to.",
+		"type": "LOGISTICS",
+		"stack_size": 200,
+		"is_entity": true,
+		"icon_path": "Icons/ItemRecipe/logistic-drone",
+		"pre_tech_override": 1510
+	},
+	{
+		"id": 5002,
+		"name": "Logistics Vessel",
+		"description": "It can dynamically balance the supply and demand of cargo between planets, and consumes space warper can activate warp.",
+		"type": "LOGISTICS",
+		"stack_size": 50,
+		"is_entity": true,
+		"icon_path": "Icons/ItemRecipe/logistic-vessel",
+		"pre_tech_override": 1511
+	},
+	{
+		"id": 1125,
+		"name": "Frame Material",
+		"description": "A new type of high-strength lightweight structure. Can withstand the strong gravitational force of stars compared with traditional structural materials, and is very suitable for manufacturing Dyson sphere components.",
+		"type": "MATERIAL",
+		"stack_size": 100,
+		"icon_path": "Icons/ItemRecipe/frame-material",
+		"pre_tech_override": 1709
+	},
+	{
+		"id": 1502,
+		"name": "Dyson Sphere Component",
+		"description": "Use a small carrier rocket to transport them to the planned Dyson sphere to form the nodes and frames of the Dyson sphere.",
+		"type": "COMPONENT",
+		"stack_size": 100,
+		"icon_path": "Icons/ItemRecipe/dyson-sphere-component",
+		"pre_tech_override": 1710
+	},
+	{
+		"id": 1503,
+		"name": "Small Carrier Rocket",
+		"description": "The delivery vehicle of Dyson sphere components. If you want to speed up the construction, you need to send more rockets.",
+		"type": "PRODUCT",
+		"stack_size": 20,
+		"is_entity": true,
+		"icon_path": "Icons/ItemRecipe/rocket",
+		"pre_tech_override": 1711
+	},
+	{
+		"id": 1131,
+		"name": "Foundation",
+		"description": "A surface leveling tool. Cannot use it to change the planetary landforms at will, can only level the surface to zero altitude. If you use the foundation for high ground, you will get soil pile; on the contrary, if you use the foundation for the ocean or low-lying areas, you must consume soil pile. When laying the foundation, you can choose a kind of decoration, or without decoration, only level the surface.",
+		"type": "COMPONENT",
+		"stack_size": 1000,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/terrain-tool",
+		"grid_index": 901,
+		"pre_tech_override": 1601
+	},
+	{
+		"id": 1141,
+		"name": "Proliferator Mk.I",
+		"description": "Input the Proliferator into the Spray Coater from the conveyor belt port above the Spray Coater and it will be sprayed on the cargos. When the sprayed cargos are used as raw materials to produce the next-level products, it can obtain Extra Products or Production Speedup, it will also increase the power consumption.",
+		"type": "MATERIAL",
+		"stack_size": 200,
+		"icon_path": "Icons/ItemRecipe/accelerator-1",
+		"ability": 1,
+		"pre_tech_override": 1406
+	},
+	{
+		"id": 1142,
+		"name": "Proliferator Mk.II",
+		"description": "Comparing with Proliferator MK.I, Proliferator MK.II upgraded the raw material formula. If you spray it on the cargos, when the sprayed cargos are used as raw materials to produce the next-level products, the effect of Extra Products or Production Speedup will be improved.",
+		"type": "MATERIAL",
+		"stack_size": 200,
+		"icon_path": "Icons/ItemRecipe/accelerator-2",
+		"ability": 2,
+		"pre_tech_override": 1506
+	},
+	{
+		"id": 1143,
+		"name": "Proliferator Mk.III",
+		"description": "The raw material formula of the Proliferator has been furtherly upgraded. When the sprayed cargos are used as raw materials to produce the next-level products, it can maximize the effect of Extra Products or Production Speedup. The power consumption will also be greatly increased, and the requirements for the entire production line will be higher. ",
+		"type": "MATERIAL",
+		"stack_size": 200,
+		"icon_path": "Icons/ItemRecipe/accelerator-3",
+		"ability": 4,
+		"pre_tech_override": 1606
+	},
+	{
+		"id": 2001,
+		"name": "Conveyor Belt MK.I",
+		"description": "We need automation! Conveyor belts are the most basic part of production automation. They can transport cargo from one place to another.",
+		"type": "LOGISTICS",
+		"stack_size": 300,
+		"grade": 1,
+		"upgrades": [
+			2001,
+			2002,
+			2003
+		],
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/belt-1",
+		"grid_index": 301,
+		"pre_tech_override": 2201
+	},
+	{
+		"id": 2002,
+		"name": "Conveyor Belt MK.II",
+		"description": "An upgraded conveyor belt, with higher speed and consequently higher throughput.",
+		"type": "LOGISTICS",
+		"stack_size": 300,
+		"grade": 2,
+		"upgrades": [
+			2001,
+			2002,
+			2003
+		],
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/belt-2",
+		"grid_index": 302,
+		"pre_tech_override": 2202
+	},
+	{
+		"id": 2003,
+		"name": "Conveyor Belt MK.III",
+		"description": "Maximize the speed and throughput of transporting cargo.",
+		"type": "LOGISTICS",
+		"stack_size": 300,
+		"grade": 3,
+		"upgrades": [
+			2001,
+			2002,
+			2003
+		],
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/belt-3",
+		"grid_index": 303,
+		"pre_tech_override": 2203
+	},
+	{
+		"id": 2011,
+		"name": "Sorter MK.I",
+		"description": "Transport cargo from conveyor belts into facilities or between facilities, can install filter to filter the cargo.",
+		"type": "LOGISTICS",
+		"stack_size": 200,
+		"grade": 1,
+		"upgrades": [
+			2011,
+			2012,
+			2013
+		],
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/inserter-1",
+		"grid_index": 304,
+		"pre_tech_override": 2301
+	},
+	{
+		"id": 2012,
+		"name": "Sorter MK.II",
+		"description": "Can sort cargo more quickly.",
+		"type": "LOGISTICS",
+		"stack_size": 200,
+		"grade": 2,
+		"upgrades": [
+			2011,
+			2012,
+			2013
+		],
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/inserter-2",
+		"grid_index": 305,
+		"pre_tech_override": 2302
+	},
+	{
+		"id": 2013,
+		"name": "Sorter MK.III",
+		"description": "In order to maximize the speed of sorting cargo, we can upgrade technology to increase the number of cargo that can be transported by the sorter MK.III each time.",
+		"type": "LOGISTICS",
+		"stack_size": 200,
+		"grade": 3,
+		"upgrades": [
+			2011,
+			2012,
+			2013
+		],
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/inserter-3",
+		"grid_index": 306,
+		"pre_tech_override": 2303
+	},
+	{
+		"id": 2020,
+		"name": "Splitter",
+		"description": "Used to distribute cargo to different conveyor belts, or to balance multiple conveyor belts. Can set the filter and priority on any one port.",
+		"type": "LOGISTICS",
+		"stack_size": 50,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/splitter-4dir",
+		"grid_index": 307,
+		"pre_tech_override": 2204
+	},
+	{
+		"id": 2040,
+		"name": "Automatic Piler",
+		"description": "After setting up the Automatic Piler on the conveyor belt, it can automatically integrate two consecutive cargos into one, which greatly improves the carrying capacity of the conveyor belt.",
+		"type": "LOGISTICS",
+		"stack_size": 50,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/piler",
+		"grid_index": 308,
+		"pre_tech_override": 2205
+	},
+	{
+		"id": 2030,
+		"name": "Traffic Monitor",
+		"description": "The Traffic Monitor is built on the conveyor belt to monitor the real-time cargo flow rate at the corresponding location. Conditions can be set to trigger an alarm.",
+		"type": "LOGISTICS",
+		"stack_size": 100,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/monitor",
+		"grid_index": 309,
+		"pre_tech_override": 2304
+	},
+	{
+		"id": 2313,
+		"name": "Spray Coater",
+		"description": "After setting up the Spray Coater on the conveyor belt and inputting the Proliferator into the sprayer from the upper port, the cargos carried on the conveyor belt can be sprayed with the Proliferator. When the cargos are used as raw materials for the next level of production, it can obtain the effect of Extra Products or Production Speedup.",
+		"type": "PRODUCTION",
+		"stack_size": 50,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/spray-coater",
+		"grid_index": 310,
+		"pre_tech_override": 2407
+	},
+	{
+		"id": 2107,
+		"name": "Logistics Distributor",
+		"description": "The Logistics Distributor can be built on top of the storage, and Logistics Bots will automatically transport the storage's contents to Icarus' Inventory or other Logistics Distributor based on demand. Being able to satisfy Icarus' needs for specific items and greatly increased efficiency in short range.",
+		"type": "LOGISTICS",
+		"stack_size": 50,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/delivery-machine",
+		"grid_index": 601,
+		"pre_tech_override": 2209
+	},
+	{
+		"id": 2101,
+		"name": "Storage MK.I",
+		"description": "Used to store products, but the capacity is limited.",
+		"type": "LOGISTICS",
+		"stack_size": 50,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/storage-1",
+		"grid_index": 401,
+		"pre_tech_override": 2206
+	},
+	{
+		"id": 2102,
+		"name": "Storage MK.II",
+		"description": "Has twice the capacity of a Storage Mk.I and requires steel to produce.",
+		"type": "LOGISTICS",
+		"stack_size": 50,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/storage-2",
+		"grid_index": 402,
+		"pre_tech_override": 2207
+	},
+	{
+		"id": 2106,
+		"name": "Storage Tank",
+		"description": "The Storage Tank has a larger capacity than the Storage for storing fluid. When dismantling a non-empty Storage Tank any remaining fluid will be lost.",
+		"type": "LOGISTICS",
+		"stack_size": 50,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/storage-tank",
+		"grid_index": 403,
+		"pre_tech_override": 2208
+	},
+	{
+		"id": 2303,
+		"name": "Assembling Machine Mk.I",
+		"description": "The basic assembler. Can process iron and copper ingots into more advanced products.",
+		"type": "PRODUCTION",
+		"stack_size": 50,
+		"grade": 1,
+		"upgrades": [
+			2303,
+			2304,
+			2305
+		],
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/assembler-1",
+		"grid_index": 503,
+		"pre_tech_override": 2401
+	},
+	{
+		"id": 2304,
+		"name": "Assembling Machine Mk.II",
+		"description": "The production speed has been greatly improved, and items can be processed more quickly.",
+		"type": "PRODUCTION",
+		"stack_size": 50,
+		"grade": 2,
+		"upgrades": [
+			2303,
+			2304,
+			2305
+		],
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/assembler-2",
+		"grid_index": 504,
+		"pre_tech_override": 2402
+	},
+	{
+		"id": 2305,
+		"name": "Assembling Machine Mk.III",
+		"description": "The production speed is maximized, and a reasonable combination of conveyor belts and sorters of different speeds can effectively avoid the empty assembler or product blockage.",
+		"type": "PRODUCTION",
+		"stack_size": 50,
+		"grade": 3,
+		"upgrades": [
+			2303,
+			2304,
+			2305
+		],
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/assembler-3",
+		"grid_index": 505,
+		"pre_tech_override": 2403
+	},
+	{
+		"id": 2201,
+		"name": "Tesla Tower",
+		"description": "The power transmission facility. Can extend the power supply range of the power grid with a certain connection length and supply area.",
+		"type": "LOGISTICS",
+		"stack_size": 100,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/tesla-coil",
+		"grid_index": 101,
+		"pre_tech_override": 2101
+	},
+	{
+		"id": 2202,
+		"name": "Wireless Power Tower",
+		"description": "Remote transmission facility. Can consume electricity from the power grid to charge the mecha.",
+		"type": "LOGISTICS",
+		"stack_size": 100,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/charging-pole",
+		"grid_index": 102,
+		"pre_tech_override": 2102
+	},
+	{
+		"id": 2212,
+		"name": "Satellite Substation",
+		"description": "Wide-area power distribution facility. Provides longer range power transmission and a larger power supply area.",
+		"type": "LOGISTICS",
+		"stack_size": 30,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/orbital-substation",
+		"grid_index": 103,
+		"pre_tech_override": 2103
+	},
+	{
+		"id": 2203,
+		"name": "Wind Turbine",
+		"description": "The primary power facility. Can convert wind energy into electrical energy. The actual generation capacity is related to the planet's wind energy ratio.",
+		"type": "PRODUCTION",
+		"stack_size": 50,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/wind-turbine",
+		"grid_index": 104,
+		"pre_tech_override": 2104
+	},
+	{
+		"id": 2204,
+		"name": "Thermal Power Plant",
+		"description": "Facility that uses combustible materials (such as coal) as fuel to generate electrical energy. Energy loss between the energy value of the provided fuel and the produced electricity is expected.",
+		"type": "PRODUCTION",
+		"stack_size": 50,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/fuel-plant",
+		"grid_index": 105,
+		"pre_tech_override": 2105
+	},
+	{
+		"id": 2211,
+		"name": "Mini Fusion Power Plant",
+		"description": "Under the action of a high-strength, high-density magnetic field, this facility converts the huge energy released by the controlled fusion reaction of Deuteron fuel rods into electrical energy.",
+		"type": "PRODUCTION",
+		"stack_size": 50,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/fusion-power-station",
+		"grid_index": 108,
+		"pre_tech_override": 2108
+	},
+	{
+		"id": 2213,
+		"name": "Geothermal Power Station",
+		"description": "A power generation facility using magma as an energy source. Combine multiple consecutive low-energy photons into one high-energy photon, and input energy to the grid stably. The power generation is directly related to the concentration of magma.",
+		"type": "PRODUCTION",
+		"stack_size": 50,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/geothermal-power-station",
+		"grid_index": 107,
+		"pre_tech_override": 2107
+	},
+	{
+		"id": 2301,
+		"name": "Mining Machine",
+		"description": "The more veins covered by the mining machine, the faster the mining speed, and the same vein can be covered by multiple mining rings, but the more mining rings covered, the faster the consumption.",
+		"type": "PRODUCTION",
+		"stack_size": 50,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/mining-drill",
+		"grid_index": 201,
+		"pre_tech_override": 2305
+	},
+	{
+		"id": 2316,
+		"name": "Advanced Mining Machine",
+		"description": "Using the quantum chip to positively intervene the photon group generated by the exciter in the transition process, it can lead a obvious bunching effect of the laser beam. Under the action of the special gravitational field, the focused laser beam rapidly heats the ore veins along the predetermined path, transports in the form of particles and encapsulated into cargos. it can be built more convenient and have a higher gathering speed. The collected ores can be transported out by conveyor belts or logistics drones.",
+		"type": "PRODUCTION",
+		"stack_size": 30,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/mining-drill-mk2",
+		"grid_index": 202,
+		"pre_tech_override": 2306
+	},
+	{
+		"id": 2306,
+		"name": "Water Pump",
+		"description": "Facility used to collect liquid resources from an ocean, including water and sulfuric acid.",
+		"type": "PRODUCTION",
+		"stack_size": 30,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/water-pump",
+		"grid_index": 203,
+		"pre_tech_override": 2307
+	},
+	{
+		"id": 2302,
+		"name": "Arc Smelter",
+		"description": "High temperature arc smelting can smelt ores and metals, and also be used for purification and crystal smelting.",
+		"type": "PRODUCTION",
+		"stack_size": 50,
+		"grade": 1,
+		"upgrades": [
+			2302,
+			2315
+		],
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/smelter",
+		"grid_index": 501,
+		"pre_tech_override": 2404
+	},
+	{
+		"id": 2315,
+		"name": "Plane Smelter",
+		"description": "When monopoles pass through the Plane Filter, they produce a quantum effect of self-organizing and can generate a thermodynamic negative temperature flow. Using this technology, the process of ores smelting or purification can be greatly accelerated.",
+		"type": "PRODUCTION",
+		"stack_size": 50,
+		"grade": 2,
+		"upgrades": [
+			2302,
+			2315
+		],
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/smelter-2",
+		"grid_index": 502,
+		"pre_tech_override": 2405
+	},
+	{
+		"id": 2307,
+		"name": "Oil Extractor",
+		"description": "When plasma is used to extract oil from the Crude oil seep, the extraction speed will be different for different Crude oil seep.",
+		"type": "PRODUCTION",
+		"stack_size": 20,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/oil-extractor",
+		"grid_index": 204,
+		"pre_tech_override": 2308
+	},
+	{
+		"id": 2308,
+		"name": "Oil Refinery",
+		"description": "The extracted crude oil is further refined to obtain refined oil and hydrogen.",
+		"type": "PRODUCTION",
+		"stack_size": 30,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/oil-refinery",
+		"grid_index": 506,
+		"pre_tech_override": 2309
+	},
+	{
+		"id": 2309,
+		"name": "Chemical Plant",
+		"description": "Chemical facility. Can process the primary products of Crude oil into more advanced chemical products.",
+		"type": "PRODUCTION",
+		"stack_size": 30,
+		"grade": 1,
+		"upgrades": [
+			2309,
+			2317
+		],
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/chemical-plant",
+		"grid_index": 508,
+		"pre_tech_override": 2409
+	},
+	{
+		"id": 2317,
+		"name": "Quantum Chemical Plant",
+		"description": "By using quantum entanglement formed by strange matter at specific points, the most complex part of chaos phenomenon in chemical reactions could be decoupled to some extent. It could lead the reaction to proceed in a predetermined direction. If these magical points could be evolved, they could catalyze the corresponding chemical reaction.",
+		"type": "PRODUCTION",
+		"stack_size": 30,
+		"grade": 2,
+		"upgrades": [
+			2309,
+			2317
+		],
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/chemical-plant-2",
+		"grid_index": 509,
+		"pre_tech_override": 2410
+	},
+	{
+		"id": 2314,
+		"name": "Fractionator",
+		"description": "Taking advantage of the high vapor pressure ratio of liquid hydrogen and liquid deuterium at a certain temperature, deuterium is fractionated from liquid hydrogen with a certain separation efficiency. Use a conveyor belt to introduce hydrogen from one side, after fractional distillation, export from the other side, and export the deuterium from the front port.",
+		"type": "PRODUCTION",
+		"stack_size": 30,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/fractionator",
+		"grid_index": 507,
+		"pre_tech_override": 2408
+	},
+	{
+		"id": 2205,
+		"name": "Solar Panel",
+		"description": "Directly generate electricity using sunlight, and the actual generation capacity is related to the planet's solar energy ratio. Not working at night, use accumulators can store excess energy during the day.",
+		"type": "PRODUCTION",
+		"stack_size": 50,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/solar-panel",
+		"grid_index": 106,
+		"pre_tech_override": 2106
+	},
+	{
+		"id": 2206,
+		"name": "Accumulator",
+		"description": "Power storage facility. When the electricity of the power grid is surplus, it will automatically store the excess power. When the power supply is insufficient, it will automatically discharge to maintain the operation of the facilities.",
+		"type": "LOGISTICS",
+		"stack_size": 50,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/accumulator",
+		"grid_index": 109,
+		"pre_tech_override": 2411
+	},
+	{
+		"id": 2207,
+		"name": "Accumulator (full)",
+		"description": "The accumulator in the fully charged state. When the power is insufficient, can be constructed as a facility to automatically discharge, or it can be placed in an energy exchanger to release electrical energy.",
+		"type": "LOGISTICS",
+		"produce_from": "Energy Exchanger",
+		"stack_size": 50,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/accumulator-full",
+		"heat_value": 270000000,
+		"pre_tech_override": 2412,
+		"mecha_material_id": 1511
+	},
+	{
+		"id": 2311,
+		"name": "EM-Rail Ejector",
+		"description": "Launch a large amount of solar sails into the orbit of the system's star to form a Dyson Swarm.",
+		"type": "PRODUCTION",
+		"stack_size": 30,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/em-rail-ejector",
+		"grid_index": 801,
+		"pre_tech_override": 2311
+	},
+	{
+		"id": 2208,
+		"name": "Ray Receiver",
+		"description": "Receives high-energy rays transmitted from the Dyson swarm or Dyson sphere. The received energy can be directly outputted to the power grid, or stored as photons in a critical state.",
+		"type": "PRODUCTION",
+		"stack_size": 20,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/ray-receiver",
+		"grid_index": 802,
+		"pre_tech_override": 2110
+	},
+	{
+		"id": 2312,
+		"name": "Vertical Launching Silo",
+		"description": "Launch a small carrier rocket loaded with Dyson sphere components onto the Dyson sphere orbit to form nodes and frames.",
+		"type": "PRODUCTION",
+		"stack_size": 10,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/vertical-launching-silo",
+		"grid_index": 803,
+		"pre_tech_override": 2312
+	},
+	{
+		"id": 2209,
+		"name": "Energy Exchanger",
+		"description": "The power conversion facility. Can not only store the surplus electric energy in the power grid into an empty accumulator to make a full accumulator; it can also release the electric energy stored in the full accumulator.",
+		"type": "LOGISTICS",
+		"stack_size": 20,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/energy-exchanger",
+		"grid_index": 605,
+		"pre_tech_override": 2109
+	},
+	{
+		"id": 2310,
+		"name": "Miniature Particle Collider",
+		"description": "When the two beams of particles are continuously accelerated to a certain intensity and energy, they will collide, and new particles can be obtained. It is usually used to stably produce deuterium and antimatter, but will consume a lot of energy.",
+		"type": "PRODUCTION",
+		"stack_size": 20,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/hadron-collider",
+		"grid_index": 510,
+		"pre_tech_override": 2310
+	},
+	{
+		"id": 2210,
+		"name": "Artificial Star",
+		"description": "\"All you have to do is let the positive and negative proton beams quietly cross the magnetic field from both ends into the constraint sphere, nice'n easy!\" This scaled-down version of the system is known as the Mini-sun.\n",
+		"type": "PRODUCTION",
+		"stack_size": 20,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/fusion-reactor",
+		"grid_index": 804,
+		"pre_tech_override": 2111
+	},
+	{
+		"id": 2103,
+		"name": "Planetary Logistics Station",
+		"description": "The hub of the planetary logistics system. Logistics drones will automatically transport cargo between stations when you set the corresponding items for supply and demand. \n(Only enables delivery around its own planet.)",
+		"type": "LOGISTICS",
+		"stack_size": 10,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/logistic-station",
+		"grid_index": 602,
+		"pre_tech_override": 2210
+	},
+	{
+		"id": 2104,
+		"name": "Interstellar Logistics Station",
+		"description": "The magnificent space elevator realizes more convenient transportation of materials between planets. It can connect factories on different planets to form a gigantic industrial empire.",
+		"type": "LOGISTICS",
+		"stack_size": 10,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/interstellar-logistic-station",
+		"grid_index": 603,
+		"pre_tech_override": 2211
+	},
+	{
+		"id": 2105,
+		"name": "Orbital Collector",
+		"description": "Used to collect the resources of the gas giants, it needs to consume the collected fuel materials to maintain the energy required to work in orbit.",
+		"type": "LOGISTICS",
+		"stack_size": 10,
+		"is_entity": true,
+		"can_build": true,
+		"build_in_gas": true,
+		"icon_path": "Icons/ItemRecipe/orbital-collector",
+		"grid_index": 604,
+		"pre_tech_override": 2212
+	},
+	{
+		"id": 2901,
+		"name": "Matrix Lab",
+		"description": "Connector to the CenterBrain. Used to both produce matrices and research technologies. The more matrix labs, the faster production or research speed can progress.",
+		"type": "PRODUCTION",
+		"stack_size": 50,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/lab",
+		"grid_index": 701,
+		"pre_tech_override": 2406
+	},
+	{
+		"id": 3001,
+		"name": "-",
+		"description": "-",
+		"type": "PRODUCTION",
+		"stack_size": 20,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/turret-laser"
+	},
+	{
+		"id": 3002,
+		"name": "|",
+		"description": "|",
+		"type": "PRODUCTION",
+		"stack_size": 20,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/turret-gauss"
+	},
+	{
+		"id": 3003,
+		"name": "--",
+		"description": "--",
+		"type": "PRODUCTION",
+		"stack_size": 20,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/turret-cannon"
+	},
+	{
+		"id": 3004,
+		"name": "-|",
+		"description": "-|",
+		"type": "PRODUCTION",
+		"stack_size": 20,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/turret-shield"
+	},
+	{
+		"id": 3005,
+		"name": "|-",
+		"description": "|-",
+		"type": "PRODUCTION",
+		"stack_size": 20,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/turret-signal"
+	},
+	{
+		"id": 3006,
+		"name": "---",
+		"description": "---",
+		"type": "PRODUCTION",
+		"stack_size": 20,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/turret-missile"
+	},
+	{
+		"id": 3007,
+		"name": "--|",
+		"description": "--|",
+		"type": "PRODUCTION",
+		"stack_size": 20,
+		"is_entity": true,
+		"can_build": true,
+		"icon_path": "Icons/ItemRecipe/turret-plasma"
+	},
+	{
+		"id": 6001,
+		"name": "Electromagnetic Matrix",
+		"description": "One of the five basic source codes that keep the CentreBrain simulating, is the foundation of all scientific and technological research.",
+		"type": "MATRIX",
+		"stack_size": 200,
+		"icon_path": "Icons/ItemRecipe/t-matrix",
+		"pre_tech_override": 1701
+	},
+	{
+		"id": 6002,
+		"name": "Energy Matrix",
+		"description": "One of the five basic source codes that keep the CentreBrain simulating, the emergence of the energy matrix has largely promoted the further development of technology.",
+		"type": "MATRIX",
+		"stack_size": 200,
+		"icon_path": "Icons/ItemRecipe/e-matrix",
+		"pre_tech_override": 1702
+	},
+	{
+		"id": 6003,
+		"name": "Structure Matrix",
+		"description": "One of the five basic source codes that keep the CentreBrain simulating, can be used to unlock more advanced new structural materials.",
+		"type": "MATRIX",
+		"stack_size": 200,
+		"icon_path": "Icons/ItemRecipe/c-matrix",
+		"pre_tech_override": 1703
+	},
+	{
+		"id": 6004,
+		"name": "Information Matrix",
+		"description": "One of the five basic source codes that keep the CentreBrain simulating, the level of informatization will largely affect the production efficiency of the base.",
+		"type": "MATRIX",
+		"stack_size": 200,
+		"icon_path": "Icons/ItemRecipe/i-matrix",
+		"pre_tech_override": 1704
+	},
+	{
+		"id": 6005,
+		"name": "Gravity Matrix",
+		"description": "One of the five basic source codes that keep the CentreBrain simulating, to some extent, unifies quantum field theory and general relativity.",
+		"type": "MATRIX",
+		"stack_size": 200,
+		"icon_path": "Icons/ItemRecipe/g-matrix",
+		"pre_tech_override": 1705
+	},
+	{
+		"id": 6006,
+		"name": "Universe Matrix",
+		"description": "Includes everything, the final answer to the theory of everything, solving the ultimate mystery of the universe!",
+		"type": "MATRIX",
+		"stack_size": 200,
+		"icon_path": "Icons/ItemRecipe/u-matrix",
+		"pre_tech_override": 1706
+	}
+]

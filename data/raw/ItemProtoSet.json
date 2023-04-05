@@ -1,0 +1,7890 @@
+{
+	"table_name": "Item",
+	"signature": "F5D03512C0DD2EB820F001E7B19BF5B5",
+	"data_array": [
+		{
+			"name": "铁矿",
+			"id": 1001,
+			"sid": "",
+			"type": "RESOURCE",
+			"sub_id": 0,
+			"mining_from": "铁矿脉",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/iron-ore",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1101,
+			"productive": true,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				0,
+				40
+			],
+			"description": "I铁矿"
+		},
+		{
+			"name": "铜矿",
+			"id": 1002,
+			"sid": "",
+			"type": "RESOURCE",
+			"sub_id": 0,
+			"mining_from": "铜矿脉",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/copper-ore",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1102,
+			"productive": true,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				0,
+				40
+			],
+			"description": "I铜矿"
+		},
+		{
+			"name": "硅石",
+			"id": 1003,
+			"sid": "",
+			"type": "RESOURCE",
+			"sub_id": 0,
+			"mining_from": "硅矿脉",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/silicium-ore",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1105,
+			"productive": true,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				0,
+				1,
+				40
+			],
+			"description": "I硅石"
+		},
+		{
+			"name": "钛石",
+			"id": 1004,
+			"sid": "",
+			"type": "RESOURCE",
+			"sub_id": 0,
+			"mining_from": "钛矿脉",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/titanium-ore",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1106,
+			"productive": true,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				0,
+				40
+			],
+			"description": "I钛石"
+		},
+		{
+			"name": "石矿",
+			"id": 1005,
+			"sid": "",
+			"type": "RESOURCE",
+			"sub_id": 0,
+			"mining_from": "石矿脉",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/stone-ore",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1103,
+			"productive": true,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				0,
+				40
+			],
+			"description": "I石矿"
+		},
+		{
+			"name": "煤矿",
+			"id": 1006,
+			"sid": "",
+			"type": "RESOURCE",
+			"sub_id": 0,
+			"mining_from": "煤矿脉",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/coal-ore",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 2700000,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 1,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1104,
+			"productive": true,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				2,
+				3,
+				31,
+				0,
+				40
+			],
+			"description": "I煤矿"
+		},
+		{
+			"name": "木材",
+			"id": 1030,
+			"sid": "",
+			"type": "RESOURCE",
+			"sub_id": 0,
+			"mining_from": "树木",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/wood",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 1500000,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": -1110651699,
+			"build_mode": 1,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1612,
+			"productive": true,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					7,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				2,
+				3,
+				31,
+				0,
+				40
+			],
+			"description": "I木材"
+		},
+		{
+			"name": "植物燃料",
+			"id": 1031,
+			"sid": "",
+			"type": "RESOURCE",
+			"sub_id": 0,
+			"mining_from": "植物",
+			"produce_from": "",
+			"stack_size": 500,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/plant-fuel",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 500000,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": -1097229926,
+			"build_mode": 1,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1712,
+			"productive": true,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				2,
+				3,
+				31,
+				0,
+				40
+			],
+			"description": "I植物燃料"
+		},
+		{
+			"name": "可燃冰",
+			"id": 1011,
+			"sid": "",
+			"type": "RESOURCE",
+			"sub_id": 0,
+			"mining_from": "可燃冰矿（珍奇）",
+			"produce_from": "",
+			"stack_size": 50,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/gas-hydrate",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 4800000,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 1053609165,
+			"build_mode": 1,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1307,
+			"productive": true,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				2,
+				3,
+				31,
+				0,
+				40
+			],
+			"description": "I可燃冰"
+		},
+		{
+			"name": "金伯利矿石",
+			"id": 1012,
+			"sid": "",
+			"type": "RESOURCE",
+			"sub_id": 0,
+			"mining_from": "金伯利矿（珍奇）",
+			"produce_from": "",
+			"stack_size": 50,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/diamond-ore",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1112,
+			"productive": true,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				0,
+				40
+			],
+			"description": "I金伯利矿石"
+		},
+		{
+			"name": "分形硅石",
+			"id": 1013,
+			"sid": "",
+			"type": "RESOURCE",
+			"sub_id": 0,
+			"mining_from": "分形硅矿（珍奇）",
+			"produce_from": "",
+			"stack_size": 50,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/fractal-silica",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1212,
+			"productive": true,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				0,
+				40
+			],
+			"description": "I分形硅石"
+		},
+		{
+			"name": "光栅石",
+			"id": 1014,
+			"sid": "",
+			"type": "RESOURCE",
+			"sub_id": 0,
+			"mining_from": "光栅石矿（珍奇）",
+			"produce_from": "",
+			"stack_size": 50,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/grating-ore",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1312,
+			"productive": true,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				0,
+				40
+			],
+			"description": "I光栅石"
+		},
+		{
+			"name": "刺笋结晶",
+			"id": 1015,
+			"sid": "",
+			"type": "RESOURCE",
+			"sub_id": 0,
+			"mining_from": "刺笋矿脉（珍奇）",
+			"produce_from": "",
+			"stack_size": 50,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/bamboo-crystal",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1412,
+			"productive": true,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				0,
+				40
+			],
+			"description": "I刺笋结晶"
+		},
+		{
+			"name": "单极磁石",
+			"id": 1016,
+			"sid": "",
+			"type": "RESOURCE",
+			"sub_id": 0,
+			"mining_from": "单极磁矿（珍奇）",
+			"produce_from": "",
+			"stack_size": 50,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/mono-mag-ore",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1512,
+			"productive": true,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					23,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				0,
+				40
+			],
+			"description": "I单极磁石"
+		},
+		{
+			"name": "铁块",
+			"id": 1101,
+			"sid": "",
+			"type": "MATERIAL",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/iron-plate",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1201,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					1,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I铁块"
+		},
+		{
+			"name": "铜块",
+			"id": 1104,
+			"sid": "",
+			"type": "MATERIAL",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/copper-plate",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1202,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					2,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I铜块"
+		},
+		{
+			"name": "高纯硅块",
+			"id": 1105,
+			"sid": "",
+			"type": "MATERIAL",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/silicium-single-crystal",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1205,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					3,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I高纯硅块"
+		},
+		{
+			"name": "钛块",
+			"id": 1106,
+			"sid": "",
+			"type": "MATERIAL",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/titanium-plate",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1206,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					4,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I钛块"
+		},
+		{
+			"name": "石材",
+			"id": 1108,
+			"sid": "",
+			"type": "MATERIAL",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/stone-brick",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1203,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					8,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I石材"
+		},
+		{
+			"name": "高能石墨",
+			"id": 1109,
+			"sid": "",
+			"type": "MATERIAL",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/graphite",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 6750000,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 1056964608,
+			"build_mode": 1,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1204,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					10,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				2,
+				3,
+				31,
+				1,
+				40
+			],
+			"description": "I高能石墨"
+		},
+		{
+			"name": "钢材",
+			"id": 1103,
+			"sid": "",
+			"type": "MATERIAL",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/steel-plate",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1401,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					5,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I钢材"
+		},
+		{
+			"name": "钛合金",
+			"id": 1107,
+			"sid": "",
+			"type": "MATERIAL",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/titanium-alloy",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1306,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					6,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I钛合金"
+		},
+		{
+			"name": "玻璃",
+			"id": 1110,
+			"sid": "",
+			"type": "MATERIAL",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/glass",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1303,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					13,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I玻璃"
+		},
+		{
+			"name": "钛化玻璃",
+			"id": 1119,
+			"sid": "",
+			"type": "MATERIAL",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/titan-glass",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1609,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					14,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I钛化玻璃"
+		},
+		{
+			"name": "棱镜",
+			"id": 1111,
+			"sid": "",
+			"type": "MATERIAL",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/prism",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1403,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					19,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I棱镜"
+		},
+		{
+			"name": "金刚石",
+			"id": 1112,
+			"sid": "",
+			"type": "MATERIAL",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/diamond",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 900000,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": -1090519040,
+			"build_mode": 1,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1304,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					15,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				2,
+				3,
+				31,
+				1,
+				40
+			],
+			"description": "I金刚石"
+		},
+		{
+			"name": "晶格硅",
+			"id": 1113,
+			"sid": "",
+			"type": "MATERIAL",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/silicium-high-purity",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1305,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					16,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I晶格硅"
+		},
+		{
+			"name": "齿轮",
+			"id": 1201,
+			"sid": "",
+			"type": "COMPONENT",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 200,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/gear-wheel",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1501,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I齿轮"
+		},
+		{
+			"name": "磁铁",
+			"id": 1102,
+			"sid": "",
+			"type": "MATERIAL",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 200,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/magnet",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1301,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					22,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I磁铁"
+		},
+		{
+			"name": "磁线圈",
+			"id": 1202,
+			"sid": "",
+			"type": "COMPONENT",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 200,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/magnetism-wire",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1302,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I磁线圈"
+		},
+		{
+			"name": "电动机",
+			"id": 1203,
+			"sid": "",
+			"type": "COMPONENT",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/electric-motor",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1404,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I电动机"
+		},
+		{
+			"name": "电磁涡轮",
+			"id": 1204,
+			"sid": "",
+			"type": "COMPONENT",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/mag-turbine",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1504,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I电磁涡轮"
+		},
+		{
+			"name": "超级磁场环",
+			"id": 1205,
+			"sid": "",
+			"type": "COMPONENT",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/hyper-magnetism-ring",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1604,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I超级磁场环"
+		},
+		{
+			"name": "粒子容器",
+			"id": 1206,
+			"sid": "",
+			"type": "COMPONENT",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/partical-capacitor",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1603,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I粒子容器"
+		},
+		{
+			"name": "奇异物质",
+			"id": 1127,
+			"sid": "",
+			"type": "MATERIAL",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/strange-matter-generator",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1408,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I奇异物质"
+		},
+		{
+			"name": "电路板",
+			"id": 1301,
+			"sid": "",
+			"type": "COMPONENT",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 200,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/circuit-board",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1402,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I电路板"
+		},
+		{
+			"name": "处理器",
+			"id": 1303,
+			"sid": "",
+			"type": "COMPONENT",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 200,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/processor",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1505,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I处理器"
+		},
+		{
+			"name": "量子芯片",
+			"id": 1305,
+			"sid": "",
+			"type": "COMPONENT",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 200,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/quantum-processor",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1611,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I量子芯片"
+		},
+		{
+			"name": "微晶元件",
+			"id": 1302,
+			"sid": "",
+			"type": "COMPONENT",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 200,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/micro-component",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1405,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I微晶元件"
+		},
+		{
+			"name": "位面过滤器",
+			"id": 1304,
+			"sid": "",
+			"type": "COMPONENT",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 200,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/plane-filter",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1610,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I位面过滤器"
+		},
+		{
+			"name": "粒子宽带",
+			"id": 1402,
+			"sid": "",
+			"type": "COMPONENT",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 200,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/particle-wide-band",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1411,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I粒子宽带"
+		},
+		{
+			"name": "电浆激发器",
+			"id": 1401,
+			"sid": "",
+			"type": "COMPONENT",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 200,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/plasma-generator",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1502,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I电浆激发器"
+		},
+		{
+			"name": "光子合并器",
+			"id": 1404,
+			"sid": "",
+			"type": "COMPONENT",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 200,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/photo-shifter",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1503,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I光子合并器"
+		},
+		{
+			"name": "太阳帆",
+			"id": 1501,
+			"sid": "",
+			"type": "PRODUCT",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 200,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/solar-collector",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1708,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				36,
+				1,
+				40
+			],
+			"description": "I太阳帆"
+		},
+		{
+			"name": "水",
+			"id": 1000,
+			"sid": "",
+			"type": "RESOURCE",
+			"sub_id": 0,
+			"mining_from": "海洋",
+			"produce_from": "",
+			"stack_size": 20,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": true,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/water",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1107,
+			"productive": true,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				0,
+				40
+			],
+			"description": "I水"
+		},
+		{
+			"name": "原油",
+			"id": 1007,
+			"sid": "",
+			"type": "RESOURCE",
+			"sub_id": 0,
+			"mining_from": "原油涌泉",
+			"produce_from": "",
+			"stack_size": 20,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": true,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/oil",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 4050000,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 1045220557,
+			"build_mode": 1,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1108,
+			"productive": true,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				2,
+				3,
+				31,
+				0,
+				40
+			],
+			"description": "I原油"
+		},
+		{
+			"name": "精炼油",
+			"id": 1114,
+			"sid": "",
+			"type": "MATERIAL",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 20,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": true,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/refined-oil",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 4500000,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 1050253722,
+			"build_mode": 1,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1208,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				2,
+				3,
+				31,
+				1,
+				40
+			],
+			"description": "I精炼油"
+		},
+		{
+			"name": "硫酸",
+			"id": 1116,
+			"sid": "",
+			"type": "MATERIAL",
+			"sub_id": 0,
+			"mining_from": "硫酸海洋",
+			"produce_from": "",
+			"stack_size": 20,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": true,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/sulphuric-acid",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1207,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				0,
+				40
+			],
+			"description": "I硫酸"
+		},
+		{
+			"name": "氢",
+			"id": 1120,
+			"sid": "",
+			"type": "MATERIAL",
+			"sub_id": 0,
+			"mining_from": "气态巨星轨道",
+			"produce_from": "",
+			"stack_size": 20,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": true,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/hydrogen",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 9000000,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 1065353216,
+			"build_mode": 1,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1109,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				2,
+				3,
+				31,
+				1,
+				0,
+				40
+			],
+			"description": "I氢"
+		},
+		{
+			"name": "重氢",
+			"id": 1121,
+			"sid": "",
+			"type": "MATERIAL",
+			"sub_id": 0,
+			"mining_from": "气态巨星轨道",
+			"produce_from": "分馏塔",
+			"stack_size": 20,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": true,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/deuterium",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 9000000,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 1065353216,
+			"build_mode": 1,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1110,
+			"productive": true,
+			"mecha_material_id": 1134,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				2,
+				3,
+				31,
+				1,
+				0,
+				40
+			],
+			"description": "I重氢"
+		},
+		{
+			"name": "反物质",
+			"id": 1122,
+			"sid": "",
+			"type": "MATERIAL",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 20,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/anti-matter",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": "2576980377600000000",
+			"reactor_inc": 2.1171588516621237e-17,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1111,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				37,
+				1,
+				40
+			],
+			"description": "I反物质"
+		},
+		{
+			"name": "临界光子",
+			"id": 1208,
+			"sid": "",
+			"type": "MATERIAL",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "射线接收站",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/photon-capacitor-full",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": "5153960755200000000",
+			"reactor_inc": 68888,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1602,
+			"productive": true,
+			"mecha_material_id": 1506,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				37,
+				1,
+				40
+			],
+			"description": "I临界光子"
+		},
+		{
+			"name": "氢燃料棒",
+			"id": 1801,
+			"sid": "",
+			"type": "PRODUCT",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 30,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/hydrogen-energy-fuel",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 54000000,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 1073741824,
+			"build_mode": 1,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1209,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				2,
+				3,
+				31,
+				1,
+				40
+			],
+			"description": "I氢燃料棒"
+		},
+		{
+			"name": "氘核燃料棒",
+			"id": 1802,
+			"sid": "",
+			"type": "PRODUCT",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 30,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/deuterium-energy-fuel",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 600000000,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 1077936128,
+			"build_mode": 2,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1210,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				2,
+				3,
+				31,
+				1,
+				40
+			],
+			"description": "I氘核燃料棒"
+		},
+		{
+			"name": "反物质燃料棒",
+			"id": 1803,
+			"sid": "",
+			"type": "PRODUCT",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 30,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/antimatter-energy-fuel",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 7200000000,
+			"potential": 1,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 1084227584,
+			"build_mode": 4,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1211,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				2,
+				3,
+				31,
+				1,
+				40
+			],
+			"description": "I反物质燃料棒"
+		},
+		{
+			"name": "塑料",
+			"id": 1115,
+			"sid": "",
+			"type": "MATERIAL",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/plastic",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1308,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					9,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I塑料"
+		},
+		{
+			"name": "石墨烯",
+			"id": 1123,
+			"sid": "",
+			"type": "MATERIAL",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/graphene",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 96000,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": -1087163597,
+			"build_mode": 1,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1310,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					11,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				2,
+				3,
+				31,
+				1,
+				40
+			],
+			"description": "I石墨烯"
+		},
+		{
+			"name": "碳纳米管",
+			"id": 1124,
+			"sid": "",
+			"type": "MATERIAL",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/nanotube",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 84000,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": -1085485875,
+			"build_mode": 1,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1410,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					12,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				2,
+				3,
+				31,
+				1,
+				40
+			],
+			"description": "I碳纳米管"
+		},
+		{
+			"name": "有机晶体",
+			"id": 1117,
+			"sid": "",
+			"type": "MATERIAL",
+			"sub_id": 0,
+			"mining_from": "有机晶体矿（珍奇）",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/crystal-rubber",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 1800000,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": -1102263091,
+			"build_mode": 1,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1309,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					17,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				2,
+				3,
+				31,
+				1,
+				0,
+				40
+			],
+			"description": "I有机晶体"
+		},
+		{
+			"name": "钛晶石",
+			"id": 1118,
+			"sid": "",
+			"type": "MATERIAL",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/titan-crystal",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1409,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					20,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I钛晶石"
+		},
+		{
+			"name": "卡西米尔晶体",
+			"id": 1126,
+			"sid": "",
+			"type": "MATERIAL",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/casimir-crystal",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1407,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					18,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I卡西米尔晶体"
+		},
+		{
+			"name": "引力透镜",
+			"id": 1209,
+			"sid": "",
+			"type": "COMPONENT",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/gravity-lens",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1605,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					21,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I引力透镜"
+		},
+		{
+			"name": "空间翘曲器",
+			"id": 1210,
+			"sid": "",
+			"type": "COMPONENT",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/space-warper",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1608,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I空间翘曲器"
+		},
+		{
+			"name": "湮灭约束球",
+			"id": 1403,
+			"sid": "",
+			"type": "COMPONENT",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 20,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/fusion-capacitor",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1311,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I湮灭约束球"
+		},
+		{
+			"name": "推进器2",
+			"id": 1405,
+			"sid": "",
+			"type": "COMPONENT",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 200,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/fuel-thruster",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1507,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I推进器"
+		},
+		{
+			"name": "加力推进器",
+			"id": 1406,
+			"sid": "",
+			"type": "COMPONENT",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/ion-thruster",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1508,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I加力推进器"
+		},
+		{
+			"name": "配送运输机",
+			"id": 5003,
+			"sid": "",
+			"type": "LOGISTICS",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 200,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/delivery-drone",
+			"model_index": 372,
+			"model_count": 1,
+			"hp_max": 200,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1509,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				45,
+				46,
+				1,
+				40
+			],
+			"description": "I配送运输机"
+		},
+		{
+			"name": "物流运输机",
+			"id": 5001,
+			"sid": "",
+			"type": "LOGISTICS",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 200,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/logistic-drone",
+			"model_index": 47,
+			"model_count": 1,
+			"hp_max": 300,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1510,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				25,
+				27,
+				1,
+				40
+			],
+			"description": "I物流运输机"
+		},
+		{
+			"name": "星际物流运输船",
+			"id": 5002,
+			"sid": "",
+			"type": "LOGISTICS",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 50,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/logistic-vessel",
+			"model_index": 48,
+			"model_count": 1,
+			"hp_max": 800,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1511,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				26,
+				1,
+				40
+			],
+			"description": "I星际物流运输船"
+		},
+		{
+			"name": "框架材料",
+			"id": 1125,
+			"sid": "",
+			"type": "MATERIAL",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/frame-material",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1709,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					24,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I框架材料"
+		},
+		{
+			"name": "戴森球组件",
+			"id": 1502,
+			"sid": "",
+			"type": "COMPONENT",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/dyson-sphere-component",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1710,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I戴森球组件"
+		},
+		{
+			"name": "小型运载火箭",
+			"id": 1503,
+			"sid": "",
+			"type": "PRODUCT",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 20,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/rocket",
+			"model_index": 75,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1711,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I小型运载火箭"
+		},
+		{
+			"name": "地基",
+			"id": 1131,
+			"sid": "",
+			"type": "COMPONENT",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 1000,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/terrain-tool",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 901,
+			"unlock_key": 4,
+			"pre_tech_override": 1601,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I地基"
+		},
+		{
+			"name": "增产剂 Mk.I",
+			"id": 1141,
+			"sid": "",
+			"type": "MATERIAL",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 200,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/accelerator-1",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 12,
+			"ability": 1,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1406,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				29,
+				41,
+				42,
+				43,
+				1,
+				40
+			],
+			"description": "I增产剂 Mk.I"
+		},
+		{
+			"name": "增产剂 Mk.II",
+			"id": 1142,
+			"sid": "",
+			"type": "MATERIAL",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 200,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/accelerator-2",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 24,
+			"ability": 2,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1506,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				29,
+				41,
+				42,
+				43,
+				1,
+				40
+			],
+			"description": "I增产剂 Mk.II"
+		},
+		{
+			"name": "增产剂 Mk.III",
+			"id": 1143,
+			"sid": "",
+			"type": "MATERIAL",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 200,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/accelerator-3",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 60,
+			"ability": 4,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1606,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				29,
+				41,
+				42,
+				43,
+				1,
+				40
+			],
+			"description": "I增产剂 Mk.III"
+		},
+		{
+			"name": "低速传送带",
+			"id": 2001,
+			"sid": "",
+			"type": "LOGISTICS",
+			"sub_id": 1,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 300,
+			"grade": 1,
+			"upgrades": [
+				2001,
+				2002,
+				2003
+			],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/belt-1",
+			"model_index": 35,
+			"model_count": 1,
+			"hp_max": 300,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 301,
+			"unlock_key": 2,
+			"pre_tech_override": 2201,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				15,
+				1,
+				40
+			],
+			"description": "I低速传送带"
+		},
+		{
+			"name": "高速传送带",
+			"id": 2002,
+			"sid": "",
+			"type": "LOGISTICS",
+			"sub_id": 2,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 300,
+			"grade": 2,
+			"upgrades": [
+				2001,
+				2002,
+				2003
+			],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/belt-2",
+			"model_index": 36,
+			"model_count": 1,
+			"hp_max": 300,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 302,
+			"unlock_key": 2,
+			"pre_tech_override": 2202,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				15,
+				1,
+				40
+			],
+			"description": "I高速传送带"
+		},
+		{
+			"name": "极速传送带",
+			"id": 2003,
+			"sid": "",
+			"type": "LOGISTICS",
+			"sub_id": 3,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 300,
+			"grade": 3,
+			"upgrades": [
+				2001,
+				2002,
+				2003
+			],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/belt-3",
+			"model_index": 37,
+			"model_count": 1,
+			"hp_max": 300,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 303,
+			"unlock_key": 2,
+			"pre_tech_override": 2203,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				15,
+				1,
+				40
+			],
+			"description": "I极速传送带"
+		},
+		{
+			"name": "低速分拣器",
+			"id": 2011,
+			"sid": "",
+			"type": "LOGISTICS",
+			"sub_id": 1,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 200,
+			"grade": 1,
+			"upgrades": [
+				2011,
+				2012,
+				2013
+			],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/inserter-1",
+			"model_index": 41,
+			"model_count": 1,
+			"hp_max": 300,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 304,
+			"unlock_key": 3,
+			"pre_tech_override": 2301,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				20,
+				21,
+				11,
+				12,
+				1,
+				40
+			],
+			"description": "I低速分拣器"
+		},
+		{
+			"name": "高速分拣器",
+			"id": 2012,
+			"sid": "",
+			"type": "LOGISTICS",
+			"sub_id": 2,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 200,
+			"grade": 2,
+			"upgrades": [
+				2011,
+				2012,
+				2013
+			],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/inserter-2",
+			"model_index": 42,
+			"model_count": 1,
+			"hp_max": 300,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 305,
+			"unlock_key": 3,
+			"pre_tech_override": 2302,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				20,
+				21,
+				11,
+				12,
+				1,
+				40
+			],
+			"description": "I高速分拣器"
+		},
+		{
+			"name": "极速分拣器",
+			"id": 2013,
+			"sid": "",
+			"type": "LOGISTICS",
+			"sub_id": 3,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 200,
+			"grade": 3,
+			"upgrades": [
+				2011,
+				2012,
+				2013
+			],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/inserter-3",
+			"model_index": 43,
+			"model_count": 1,
+			"hp_max": 300,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 306,
+			"unlock_key": 3,
+			"pre_tech_override": 2303,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				20,
+				21,
+				11,
+				12,
+				1,
+				40
+			],
+			"description": "I极速分拣器"
+		},
+		{
+			"name": "四向分流器",
+			"id": 2020,
+			"sid": "",
+			"type": "LOGISTICS",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 50,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/splitter-4dir",
+			"model_index": 38,
+			"model_count": 3,
+			"hp_max": 500,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 307,
+			"unlock_key": 1,
+			"pre_tech_override": 2204,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				16,
+				1,
+				40
+			],
+			"description": "I四向分流器"
+		},
+		{
+			"name": "自动集装机",
+			"id": 2040,
+			"sid": "",
+			"type": "LOGISTICS",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 50,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/piler",
+			"model_index": 257,
+			"model_count": 1,
+			"hp_max": 500,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 308,
+			"unlock_key": 1,
+			"pre_tech_override": 2205,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				11,
+				12,
+				1,
+				40
+			],
+			"description": "I自动集装机"
+		},
+		{
+			"name": "流速器",
+			"id": 2030,
+			"sid": "",
+			"type": "LOGISTICS",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/monitor",
+			"model_index": 208,
+			"model_count": 1,
+			"hp_max": 300,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 309,
+			"unlock_key": 5,
+			"pre_tech_override": 2304,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				11,
+				1,
+				40
+			],
+			"description": "I流速监测器"
+		},
+		{
+			"name": "喷涂机",
+			"id": 2313,
+			"sid": "",
+			"type": "PRODUCTION",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 50,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/spray-coater",
+			"model_index": 120,
+			"model_count": 1,
+			"hp_max": 800,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 310,
+			"unlock_key": 5,
+			"pre_tech_override": 2407,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				11,
+				12,
+				1,
+				40
+			],
+			"description": "I喷涂机"
+		},
+		{
+			"name": "物流配送器",
+			"id": 2107,
+			"sid": "",
+			"type": "LOGISTICS",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 50,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/delivery-machine",
+			"model_index": 371,
+			"model_count": 1,
+			"hp_max": 1200,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 601,
+			"unlock_key": 5,
+			"pre_tech_override": 2209,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				38,
+				12,
+				10,
+				44,
+				1,
+				40
+			],
+			"description": "I物流配送器"
+		},
+		{
+			"name": "小型储物仓",
+			"id": 2101,
+			"sid": "",
+			"type": "LOGISTICS",
+			"sub_id": 1,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 50,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/storage-1",
+			"model_index": 51,
+			"model_count": 1,
+			"hp_max": 800,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 401,
+			"unlock_key": 1,
+			"pre_tech_override": 2206,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					63
+				]
+			},
+			"desc_fields": [
+				17,
+				1,
+				40
+			],
+			"description": "I小型储物仓"
+		},
+		{
+			"name": "大型储物仓",
+			"id": 2102,
+			"sid": "",
+			"type": "LOGISTICS",
+			"sub_id": 2,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 50,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/storage-2",
+			"model_index": 52,
+			"model_count": 1,
+			"hp_max": 1600,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 402,
+			"unlock_key": 1,
+			"pre_tech_override": 2207,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					63
+				]
+			},
+			"desc_fields": [
+				17,
+				1,
+				40
+			],
+			"description": "I大型储物仓"
+		},
+		{
+			"name": "储液罐",
+			"id": 2106,
+			"sid": "",
+			"type": "LOGISTICS",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 50,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/storage-tank",
+			"model_index": 121,
+			"model_count": 1,
+			"hp_max": 1200,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 403,
+			"unlock_key": 1,
+			"pre_tech_override": 2208,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					63
+				]
+			},
+			"desc_fields": [
+				30,
+				1,
+				40
+			],
+			"description": "I储液罐"
+		},
+		{
+			"name": "制造台 Mk.I",
+			"id": 2303,
+			"sid": "",
+			"type": "PRODUCTION",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 50,
+			"grade": 1,
+			"upgrades": [
+				2303,
+				2304,
+				2305
+			],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/assembler-1",
+			"model_index": 65,
+			"model_count": 1,
+			"hp_max": 1000,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 503,
+			"unlock_key": 1,
+			"pre_tech_override": 2401,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					63
+				]
+			},
+			"desc_fields": [
+				22,
+				11,
+				12,
+				1,
+				40
+			],
+			"description": "I制造台 Mk.I"
+		},
+		{
+			"name": "制造台 Mk.II",
+			"id": 2304,
+			"sid": "",
+			"type": "PRODUCTION",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 50,
+			"grade": 2,
+			"upgrades": [
+				2303,
+				2304,
+				2305
+			],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/assembler-2",
+			"model_index": 66,
+			"model_count": 1,
+			"hp_max": 1000,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 504,
+			"unlock_key": 1,
+			"pre_tech_override": 2402,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					63
+				]
+			},
+			"desc_fields": [
+				22,
+				11,
+				12,
+				1,
+				40
+			],
+			"description": "I制造台 Mk.II"
+		},
+		{
+			"name": "制造台 Mk.III",
+			"id": 2305,
+			"sid": "",
+			"type": "PRODUCTION",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 50,
+			"grade": 3,
+			"upgrades": [
+				2303,
+				2304,
+				2305
+			],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/assembler-3",
+			"model_index": 67,
+			"model_count": 1,
+			"hp_max": 1000,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 505,
+			"unlock_key": 1,
+			"pre_tech_override": 2403,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					63
+				]
+			},
+			"desc_fields": [
+				22,
+				11,
+				12,
+				1,
+				40
+			],
+			"description": "I制造台 Mk.III"
+		},
+		{
+			"name": "电力感应塔",
+			"id": 2201,
+			"sid": "",
+			"type": "LOGISTICS",
+			"sub_id": 1,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/tesla-coil",
+			"model_index": 44,
+			"model_count": 1,
+			"hp_max": 500,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 101,
+			"unlock_key": 1,
+			"pre_tech_override": 2101,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				13,
+				14,
+				1,
+				40
+			],
+			"description": "I电力感应塔"
+		},
+		{
+			"name": "无线输电塔",
+			"id": 2202,
+			"sid": "",
+			"type": "LOGISTICS",
+			"sub_id": 2,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 100,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/charging-pole",
+			"model_index": 71,
+			"model_count": 1,
+			"hp_max": 600,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 102,
+			"unlock_key": 1,
+			"pre_tech_override": 2102,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				13,
+				14,
+				11,
+				12,
+				1,
+				40
+			],
+			"description": "I无线输电塔"
+		},
+		{
+			"name": "卫星配电站",
+			"id": 2212,
+			"sid": "",
+			"type": "LOGISTICS",
+			"sub_id": 3,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 30,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/orbital-substation",
+			"model_index": 68,
+			"model_count": 1,
+			"hp_max": 800,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 103,
+			"unlock_key": 1,
+			"pre_tech_override": 2103,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				13,
+				14,
+				12,
+				1,
+				40
+			],
+			"description": "I卫星配电站"
+		},
+		{
+			"name": "风力涡轮机",
+			"id": 2203,
+			"sid": "",
+			"type": "PRODUCTION",
+			"sub_id": 4,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 50,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/wind-turbine",
+			"model_index": 53,
+			"model_count": 1,
+			"hp_max": 800,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 104,
+			"unlock_key": 1,
+			"pre_tech_override": 2104,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				4,
+				5,
+				13,
+				14,
+				1,
+				40
+			],
+			"description": "I风力涡轮机"
+		},
+		{
+			"name": "火力发电厂",
+			"id": 2204,
+			"sid": "",
+			"type": "PRODUCTION",
+			"sub_id": 5,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 50,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/fuel-plant",
+			"model_index": 54,
+			"model_count": 1,
+			"hp_max": 2000,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 105,
+			"unlock_key": 1,
+			"pre_tech_override": 2105,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				4,
+				5,
+				6,
+				1,
+				40
+			],
+			"description": "I火力发电厂"
+		},
+		{
+			"name": "微型聚变发电站",
+			"id": 2211,
+			"sid": "",
+			"type": "PRODUCTION",
+			"sub_id": 6,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 50,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/fusion-power-station",
+			"model_index": 118,
+			"model_count": 1,
+			"hp_max": 2000,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 108,
+			"unlock_key": 1,
+			"pre_tech_override": 2108,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				4,
+				5,
+				1,
+				40
+			],
+			"description": "I微型聚变发电站"
+		},
+		{
+			"name": "地热发电站",
+			"id": 2213,
+			"sid": "",
+			"type": "PRODUCTION",
+			"sub_id": 12,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 50,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/geothermal-power-station",
+			"model_index": 255,
+			"model_count": 1,
+			"hp_max": 2000,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 107,
+			"unlock_key": 1,
+			"pre_tech_override": 2107,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				4,
+				39,
+				1,
+				40
+			],
+			"description": "I地热发电站"
+		},
+		{
+			"name": "采矿机",
+			"id": 2301,
+			"sid": "",
+			"type": "PRODUCTION",
+			"sub_id": 1,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 50,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/mining-drill",
+			"model_index": 57,
+			"model_count": 1,
+			"hp_max": 1200,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 201,
+			"unlock_key": 1,
+			"pre_tech_override": 2305,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				18,
+				19,
+				11,
+				12,
+				1,
+				40
+			],
+			"description": "I采矿机"
+		},
+		{
+			"name": "大型采矿机",
+			"id": 2316,
+			"sid": "",
+			"type": "PRODUCTION",
+			"sub_id": 2,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 30,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/mining-drill-mk2",
+			"model_index": 256,
+			"model_count": 1,
+			"hp_max": 2000,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 202,
+			"unlock_key": 1,
+			"pre_tech_override": 2306,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				18,
+				19,
+				11,
+				12,
+				1,
+				40
+			],
+			"description": "I大型采矿机"
+		},
+		{
+			"name": "抽水站",
+			"id": 2306,
+			"sid": "",
+			"type": "PRODUCTION",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 30,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/water-pump",
+			"model_index": 60,
+			"model_count": 1,
+			"hp_max": 1000,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 203,
+			"unlock_key": 1,
+			"pre_tech_override": 2307,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				18,
+				19,
+				11,
+				12,
+				1,
+				40
+			],
+			"description": "I抽水站"
+		},
+		{
+			"name": "电弧熔炉",
+			"id": 2302,
+			"sid": "",
+			"type": "PRODUCTION",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 50,
+			"grade": 1,
+			"upgrades": [
+				2302,
+				2315
+			],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/smelter",
+			"model_index": 62,
+			"model_count": 1,
+			"hp_max": 1000,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 501,
+			"unlock_key": 1,
+			"pre_tech_override": 2404,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				22,
+				11,
+				12,
+				1,
+				40
+			],
+			"description": "I电弧熔炉"
+		},
+		{
+			"name": "位面熔炉",
+			"id": 2315,
+			"sid": "",
+			"type": "PRODUCTION",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 50,
+			"grade": 2,
+			"upgrades": [
+				2302,
+				2315
+			],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/smelter-2",
+			"model_index": 194,
+			"model_count": 1,
+			"hp_max": 1500,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 502,
+			"unlock_key": 1,
+			"pre_tech_override": 2405,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				22,
+				11,
+				12,
+				1,
+				40
+			],
+			"description": "I位面熔炉"
+		},
+		{
+			"name": "原油萃取站",
+			"id": 2307,
+			"sid": "",
+			"type": "PRODUCTION",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 20,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/oil-extractor",
+			"model_index": 61,
+			"model_count": 1,
+			"hp_max": 2000,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 204,
+			"unlock_key": 1,
+			"pre_tech_override": 2308,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				18,
+				19,
+				11,
+				12,
+				1,
+				40
+			],
+			"description": "I原油萃取站"
+		},
+		{
+			"name": "原油精炼厂",
+			"id": 2308,
+			"sid": "",
+			"type": "PRODUCTION",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 30,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/oil-refinery",
+			"model_index": 63,
+			"model_count": 1,
+			"hp_max": 1800,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 506,
+			"unlock_key": 1,
+			"pre_tech_override": 2309,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				22,
+				11,
+				12,
+				1,
+				40
+			],
+			"description": "I原油精炼厂"
+		},
+		{
+			"name": "化工厂",
+			"id": 2309,
+			"sid": "",
+			"type": "PRODUCTION",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 30,
+			"grade": 1,
+			"upgrades": [
+				2309,
+				2317
+			],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/chemical-plant",
+			"model_index": 64,
+			"model_count": 1,
+			"hp_max": 1200,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 508,
+			"unlock_key": 1,
+			"pre_tech_override": 2409,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				22,
+				11,
+				12,
+				1,
+				40
+			],
+			"description": "I化工厂"
+		},
+		{
+			"name": "化工厂 Mk.II",
+			"id": 2317,
+			"sid": "",
+			"type": "PRODUCTION",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 30,
+			"grade": 2,
+			"upgrades": [
+				2309,
+				2317
+			],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/chemical-plant-2",
+			"model_index": 376,
+			"model_count": 1,
+			"hp_max": 1200,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 509,
+			"unlock_key": 1,
+			"pre_tech_override": 2410,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				22,
+				11,
+				12,
+				1,
+				40
+			],
+			"description": "I化工厂 Mk.II"
+		},
+		{
+			"name": "分馏塔",
+			"id": 2314,
+			"sid": "",
+			"type": "PRODUCTION",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 30,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/fractionator",
+			"model_index": 119,
+			"model_count": 1,
+			"hp_max": 1200,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 507,
+			"unlock_key": 1,
+			"pre_tech_override": 2408,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				11,
+				12,
+				1,
+				40
+			],
+			"description": "I分馏塔"
+		},
+		{
+			"name": "太阳能板",
+			"id": 2205,
+			"sid": "",
+			"type": "PRODUCTION",
+			"sub_id": 7,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 50,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/solar-panel",
+			"model_index": 55,
+			"model_count": 1,
+			"hp_max": 1000,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 106,
+			"unlock_key": 1,
+			"pre_tech_override": 2106,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				4,
+				39,
+				1,
+				40
+			],
+			"description": "I太阳能板"
+		},
+		{
+			"name": "蓄电器",
+			"id": 2206,
+			"sid": "",
+			"type": "LOGISTICS",
+			"sub_id": 8,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 50,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/accumulator",
+			"model_index": 46,
+			"model_count": 1,
+			"hp_max": 1200,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 109,
+			"unlock_key": 1,
+			"pre_tech_override": 2411,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				8,
+				9,
+				10,
+				1,
+				40
+			],
+			"description": "I蓄电器"
+		},
+		{
+			"name": "蓄电器（满）",
+			"id": 2207,
+			"sid": "",
+			"type": "LOGISTICS",
+			"sub_id": 8,
+			"mining_from": "",
+			"produce_from": "能量枢纽",
+			"stack_size": 50,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/accumulator-full",
+			"model_index": 46,
+			"model_count": 1,
+			"hp_max": 1200,
+			"ability": 0,
+			"heat_value": 270000000,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 1065353216,
+			"build_mode": 8,
+			"grid_index": 0,
+			"unlock_key": 1,
+			"pre_tech_override": 2412,
+			"productive": true,
+			"mecha_material_id": 1511,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				2,
+				3,
+				31,
+				8,
+				9,
+				10,
+				1,
+				40
+			],
+			"description": "I蓄电器（满）"
+		},
+		{
+			"name": "电磁轨道弹射器",
+			"id": 2311,
+			"sid": "",
+			"type": "PRODUCTION",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 30,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/em-rail-ejector",
+			"model_index": 72,
+			"model_count": 1,
+			"hp_max": 2000,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 801,
+			"unlock_key": 1,
+			"pre_tech_override": 2311,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				34,
+				11,
+				12,
+				1,
+				40
+			],
+			"description": "I电磁轨道弹射器"
+		},
+		{
+			"name": "射线接收站",
+			"id": 2208,
+			"sid": "",
+			"type": "PRODUCTION",
+			"sub_id": 9,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 20,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/ray-receiver",
+			"model_index": 73,
+			"model_count": 1,
+			"hp_max": 3000,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 802,
+			"unlock_key": 1,
+			"pre_tech_override": 2110,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				4,
+				39,
+				1,
+				40
+			],
+			"description": "I射线接收站"
+		},
+		{
+			"name": "垂直发射井",
+			"id": 2312,
+			"sid": "",
+			"type": "PRODUCTION",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 10,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/vertical-launching-silo",
+			"model_index": 74,
+			"model_count": 1,
+			"hp_max": 8000,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 803,
+			"unlock_key": 1,
+			"pre_tech_override": 2312,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				35,
+				11,
+				12,
+				1,
+				40
+			],
+			"description": "I垂直发射井"
+		},
+		{
+			"name": "能量枢纽",
+			"id": 2209,
+			"sid": "",
+			"type": "LOGISTICS",
+			"sub_id": 10,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 20,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/energy-exchanger",
+			"model_index": 45,
+			"model_count": 1,
+			"hp_max": 3000,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 605,
+			"unlock_key": 1,
+			"pre_tech_override": 2109,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				8,
+				9,
+				10,
+				1,
+				40
+			],
+			"description": "I能量枢纽"
+		},
+		{
+			"name": "微型粒子对撞机",
+			"id": 2310,
+			"sid": "",
+			"type": "PRODUCTION",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 20,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/hadron-collider",
+			"model_index": 69,
+			"model_count": 1,
+			"hp_max": 3000,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 510,
+			"unlock_key": 1,
+			"pre_tech_override": 2310,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				22,
+				11,
+				12,
+				1,
+				40
+			],
+			"description": "I微型粒子对撞机"
+		},
+		{
+			"name": "人造恒星",
+			"id": 2210,
+			"sid": "",
+			"type": "PRODUCTION",
+			"sub_id": 11,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 20,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/fusion-reactor",
+			"model_index": 56,
+			"model_count": 1,
+			"hp_max": 2000,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 804,
+			"unlock_key": 1,
+			"pre_tech_override": 2111,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				4,
+				5,
+				6,
+				1,
+				40
+			],
+			"description": "I人造恒星"
+		},
+		{
+			"name": "物流运输站",
+			"id": 2103,
+			"sid": "",
+			"type": "LOGISTICS",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 10,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/logistic-station",
+			"model_index": 49,
+			"model_count": 1,
+			"hp_max": 5000,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 602,
+			"unlock_key": 1,
+			"pre_tech_override": 2210,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					63
+				]
+			},
+			"desc_fields": [
+				24,
+				38,
+				12,
+				10,
+				1,
+				40
+			],
+			"description": "I物流运输站"
+		},
+		{
+			"name": "星际物流运输站",
+			"id": 2104,
+			"sid": "",
+			"type": "LOGISTICS",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 10,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/interstellar-logistic-station",
+			"model_index": 50,
+			"model_count": 1,
+			"hp_max": 8000,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 603,
+			"unlock_key": 1,
+			"pre_tech_override": 2211,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					63
+				]
+			},
+			"desc_fields": [
+				24,
+				38,
+				12,
+				10,
+				1,
+				40
+			],
+			"description": "I星际物流运输站"
+		},
+		{
+			"name": "轨道采集器",
+			"id": 2105,
+			"sid": "",
+			"type": "LOGISTICS",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 10,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": true,
+			"icon_path": "Icons/ItemRecipe/orbital-collector",
+			"model_index": 117,
+			"model_count": 1,
+			"hp_max": 8000,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 604,
+			"unlock_key": 1,
+			"pre_tech_override": 2212,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				18,
+				11,
+				32,
+				1,
+				40
+			],
+			"description": "I轨道采集器"
+		},
+		{
+			"name": "矩阵研究站",
+			"id": 2901,
+			"sid": "",
+			"type": "PRODUCTION",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 50,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/lab",
+			"model_index": 70,
+			"model_count": 1,
+			"hp_max": 1200,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 701,
+			"unlock_key": 1,
+			"pre_tech_override": 2406,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				22,
+				33,
+				11,
+				12,
+				1,
+				40
+			],
+			"description": "I矩阵研究站"
+		},
+		{
+			"name": "高频激光塔",
+			"id": 3001,
+			"sid": "",
+			"type": "PRODUCTION",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 20,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/turret-laser",
+			"model_index": 373,
+			"model_count": 1,
+			"hp_max": 3000,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 1,
+			"pre_tech_override": 0,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				11,
+				12,
+				1,
+				40
+			],
+			"description": "I高频激光塔"
+		},
+		{
+			"name": "高斯机枪塔",
+			"id": 3002,
+			"sid": "",
+			"type": "PRODUCTION",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 20,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/turret-gauss",
+			"model_index": 374,
+			"model_count": 1,
+			"hp_max": 3000,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 1,
+			"pre_tech_override": 0,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				11,
+				12,
+				1,
+				40
+			],
+			"description": "I高斯机枪塔"
+		},
+		{
+			"name": "聚爆加农炮",
+			"id": 3003,
+			"sid": "",
+			"type": "PRODUCTION",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 20,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/turret-cannon",
+			"model_index": 375,
+			"model_count": 1,
+			"hp_max": 3000,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 1,
+			"pre_tech_override": 0,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				11,
+				12,
+				1,
+				40
+			],
+			"description": "I聚爆加农炮"
+		},
+		{
+			"name": "护盾发生器",
+			"id": 3004,
+			"sid": "",
+			"type": "PRODUCTION",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 20,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/turret-shield",
+			"model_index": 402,
+			"model_count": 1,
+			"hp_max": 3000,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 1,
+			"pre_tech_override": 0,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				11,
+				12,
+				1,
+				40
+			],
+			"description": "I护盾发生器"
+		},
+		{
+			"name": "信标",
+			"id": 3005,
+			"sid": "",
+			"type": "PRODUCTION",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 20,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/turret-signal",
+			"model_index": 403,
+			"model_count": 1,
+			"hp_max": 3000,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 1,
+			"pre_tech_override": 0,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				11,
+				12,
+				1,
+				40
+			],
+			"description": "I信标"
+		},
+		{
+			"name": "导弹防御塔",
+			"id": 3006,
+			"sid": "",
+			"type": "PRODUCTION",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 20,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/turret-missile",
+			"model_index": 407,
+			"model_count": 1,
+			"hp_max": 3000,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 1,
+			"pre_tech_override": 0,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				11,
+				12,
+				1,
+				40
+			],
+			"description": "I导弹防御塔"
+		},
+		{
+			"name": "磁化电浆炮",
+			"id": 3007,
+			"sid": "",
+			"type": "PRODUCTION",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 20,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": true,
+			"can_build": true,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/turret-plasma",
+			"model_index": 408,
+			"model_count": 1,
+			"hp_max": 3000,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 1,
+			"pre_tech_override": 0,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 0,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				11,
+				12,
+				1,
+				40
+			],
+			"description": "I磁化电浆炮"
+		},
+		{
+			"name": "电磁矩阵",
+			"id": 6001,
+			"sid": "",
+			"type": "MATRIX",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 200,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/t-matrix",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1701,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					25,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I电磁矩阵"
+		},
+		{
+			"name": "能量矩阵",
+			"id": 6002,
+			"sid": "",
+			"type": "MATRIX",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 200,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/e-matrix",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1702,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					26,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I能量矩阵"
+		},
+		{
+			"name": "结构矩阵",
+			"id": 6003,
+			"sid": "",
+			"type": "MATRIX",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 200,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/c-matrix",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1703,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					27,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I结构矩阵"
+		},
+		{
+			"name": "信息矩阵",
+			"id": 6004,
+			"sid": "",
+			"type": "MATRIX",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 200,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/i-matrix",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1704,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					28,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I信息矩阵"
+		},
+		{
+			"name": "引力矩阵",
+			"id": 6005,
+			"sid": "",
+			"type": "MATRIX",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 200,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/g-matrix",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1705,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					29,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I引力矩阵"
+		},
+		{
+			"name": "宇宙矩阵",
+			"id": 6006,
+			"sid": "",
+			"type": "MATRIX",
+			"sub_id": 0,
+			"mining_from": "",
+			"produce_from": "",
+			"stack_size": 200,
+			"grade": 0,
+			"upgrades": [],
+			"is_fluid": false,
+			"is_entity": false,
+			"can_build": false,
+			"build_in_gas": false,
+			"icon_path": "Icons/ItemRecipe/u-matrix",
+			"model_index": 0,
+			"model_count": 0,
+			"hp_max": 1,
+			"ability": 0,
+			"heat_value": 0,
+			"potential": 0,
+			"reactor_inc": 0,
+			"fuel_type": 0,
+			"build_index": 0,
+			"build_mode": 0,
+			"grid_index": 0,
+			"unlock_key": 0,
+			"pre_tech_override": 1706,
+			"productive": false,
+			"mecha_material_id": 0,
+			"drop_rate": 1.401298464324817e-45,
+			"_unknown1": {
+				"type": "Buffer",
+				"data": [
+					30,
+					0,
+					0,
+					0
+				]
+			},
+			"_unknown2": {
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0
+				]
+			},
+			"desc_fields": [
+				1,
+				40
+			],
+			"description": "I宇宙矩阵"
+		}
+	]
+}

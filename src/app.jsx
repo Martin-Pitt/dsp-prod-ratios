@@ -74,7 +74,7 @@ export function App(props) {
 			if(!output) return null;
 			
 			return Object.entries(output).map(([product, throughput]) => {
-				if(!throughput || process === 'Mining Facility' || throughput === true)
+				if(!throughput || throughput === true)
 				{
 					<li class="output"><span class="perMinute">{renderNumber(factor)}</span>&times; <span class="item">{product}</span> per minute</li>;
 				}
@@ -90,7 +90,7 @@ export function App(props) {
 			if(!byproduct) return null;
 			
 			return Object.entries(byproduct).map(([product, throughput]) => {
-				if(!throughput || process === 'Mining Facility' || throughput === true)
+				if(!throughput || throughput === true)
 				{
 					<li class="byproduct"><span class="perMinute">{renderNumber(factor)}</span>&times; <span class="item">{product}</span> per minute</li>;
 				}

@@ -15,7 +15,24 @@ export function Production(root, factor = 1, depth = 0) {
 	else recipe = root;
 	
 	const node = { factor, depth, ...recipe };
-	if(recipe.process === 'Mining Facility') return node;
+	if(recipe.process === 'Mining Facility')
+	{
+		let products = Object.entries(node.output);
+		node.output = {};
+		for(let [product] of products) {
+			if(product !== name)
+			{
+				if(!node.byproduct) node.byproduct = {};
+				node.byproduct[product] = factor;
+			}
+			
+			else
+			{
+				node.output[product] = factor;
+			}
+		}
+		return node;
+	}
 	
 	node.input = [];
 	
@@ -26,11 +43,28 @@ export function Production(root, factor = 1, depth = 0) {
 		if(!ingredient) continue;
 		else if(ingredient.process === 'Mining Facility' || ingredient.output[name] === true)
 		{
-			node.input.push({
-				factor: perMinute,
+			let subNode = {
+				factor,
 				depth: depth + 1,
 				...ingredient
-			});
+			};
+			
+			let products = Object.entries(subNode.output);
+			subNode.output = {};
+			for(let [product] of products) {
+				if(product !== name)
+				{
+					if(!subNode.byproduct) subNode.byproduct = {};
+					subNode.byproduct[product] = [factor, perMinute];
+				}
+				
+				else
+				{
+					subNode.output[product] = [factor, perMinute];
+				}
+			}
+			
+			node.input.push(subNode);
 			
 			// nodes.push({
 			// 	factor: factor * (perMinute / 60),

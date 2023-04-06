@@ -90,14 +90,19 @@ export function App(props) {
 			if(!byproduct) return null;
 			
 			return Object.entries(byproduct).map(([product, throughput]) => {
-				if(!throughput || throughput === true)
+				if(!throughput || throughput === true || throughput === 1)
 				{
-					<li class="byproduct"><span class="perMinute">{renderNumber(factor)}</span>&times; <span class="item">{product}</span> per minute</li>;
+					// TODO: compute how many miners we would need to achieve this?
+					return <li class="byproduct"><span class="perMinute">{renderNumber(factor)}</span>&times; <span class="item">{product}</span> per minute</li>;
 				}
-				else
+				else if (Array.isArray(throughput) && throughput.length >= 2)
 				{
 					let [amount, perMinute] = throughput;
 					return <li class="byproduct"><span class="perMinute">{renderNumber(perMinute * factor)}</span>&times; <span class="item">{product}</span> per minute</li>;
+				}
+				else 
+				{
+					return <h1>failed to compute, byproduct contents are unexpected: {JSON.stringify({ throughput, product, factor })}</h1>
 				}
 			});
 		}

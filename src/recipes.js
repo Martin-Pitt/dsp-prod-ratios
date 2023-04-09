@@ -20,6 +20,7 @@ export const Items = [
 	{ process: 'Mining Facility', output: { 'Unipolar Magnet': true } },
 	{ process: 'Mining Facility', output: { 'Fractal Silicon': true } },
 	{ process: 'Mining Facility', output: { 'Optical Grating Crystal': true } },
+	{ process: 'Mining Facility', output: { 'Water': true } },
 	
 	
 	{
@@ -366,7 +367,7 @@ export const Items = [
 	},
 	{
 		process: 'Assembler',
-		input: { 'Warp Lens': [1, 4.5] },
+		input: { 'Graviton Lens': [1, 4.5] },
 		output: { 'Space Warper': [1, 4.5] }
 	},
 	{
@@ -524,7 +525,7 @@ export const Buildings = [
 		name: 'Advanced Mining Machine',
 		type: 'Resource Extraction',
 		input: { 'Optical Grating Crystal': [40, 90], 'Titanium Alloy': [20, 45], 'Frame Materials': [10, 22.5], 'Super-magnetic Ring': [10, 22.5], 'Quantum Chip': [4, 9] },
-		output: { 'Advanced Mining Machine': 2.25 }
+		output: { 'Advanced Mining Machine': [1, 2.25] }
 	},
 	{
 		name: 'Oil Extractor',
@@ -550,7 +551,7 @@ export const Buildings = [
 		name: 'Tesla Tower',
 		type: 'Power',
 		input: { 'Iron Ingot': [2, 90], 'Magnetic Coil': [1, 45] },
-		output: { 'Tesla Tower': [45] }
+		output: { 'Tesla Tower': [1, 45] }
 	},
 	{
 		name: 'Wireless Power Tower',
@@ -723,7 +724,7 @@ export const Buildings = [
 	{
 		name: 'Vertical Launching Silo',
 		type: 'Dyson Sphere',
-		input: { 'Titanium Alloy': [80, 120], 'Frame Materials': [30, 45], 'Warp Lens': [20, 30], 'Quantum Chip': [10, 15] },
+		input: { 'Titanium Alloy': [80, 120], 'Frame Materials': [30, 45], 'Graviton Lens': [20, 30], 'Quantum Chip': [10, 15] },
 		output: { 'Vertical Launching Silo': [1, 1.5] }
 	},
 ].map(d => Object.assign({ process: 'Assembler' }, d));

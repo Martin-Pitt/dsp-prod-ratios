@@ -3,9 +3,9 @@
 		"id": 1,
 		"name": "Dyson sphere program",
 		"description": "Welcome to the Dyson Sphere Program!\nYou will start from scratch with a small workshop, develop into a huge intergalactic industrial empire, and finally build the great miracle of the universe: The Dyson Sphere.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1",
-		"hash_needed": 1,
+		"published": true,
+		"iconPath": "Icons/Tech/1",
+		"hashNeeded": 1,
 		"position": [
 			5,
 			1
@@ -16,35 +16,35 @@
 		"name": "Electromagnetism",
 		"description": "Maxwell's equations poetically describe electricity and magnetism intertwining. With a deeper understanding, machines can be created for acquiring and using electrical energy with high efficiency.",
 		"conclusion": "You have unlocked a new automatic mining machine, which will automatically collect ores for you. Of course, its capacity is limited. You may wish to transport these minerals to the smelting facility automatically.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1001",
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1001",
+		"preTechs": [
 			1
 		],
 		"items": [
 			1202
 		],
-		"item_points": [
+		"itemPoints": [
 			30
 		],
-		"property_override_items": [
+		"propertyOverrideItems": [
 			6001
 		],
-		"property_item_counts": [
+		"propertyItemCounts": [
 			10
 		],
-		"hash_needed": 1200,
-		"unlock_recipes": [
+		"hashNeeded": 1200,
+		"unlockRecipes": [
 			7,
 			8,
 			48
 		],
-		"add_items": [
+		"addItems": [
 			2203,
 			2201,
 			2301
 		],
-		"add_item_counts": [
+		"addItemCounts": [
 			1,
 			1,
 			1
@@ -59,34 +59,34 @@
 		"name": "Electromagnetic matrix",
 		"description": "The Electromagnetic Matrix is the foundation of all technologies and one of the basic source codes that keep the CentreBrain simulating. Use a Matrix Lab to create these matrices and use a separate lab for automating the research of new technologies.",
 		"conclusion": "You have unlocked the Matrix lab, or rather the CentreBrain Connector. Use it to produce and upload matrices to the CentreBrain to obtain technology.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1002",
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1002",
+		"preTechs": [
 			1001
 		],
 		"items": [
 			1202,
 			1301
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20
 		],
-		"property_override_items": [
+		"propertyOverrideItems": [
 			6001
 		],
-		"property_item_counts": [
+		"propertyItemCounts": [
 			40
 		],
-		"hash_needed": 1800,
-		"unlock_recipes": [
+		"hashNeeded": 1800,
+		"unlockRecipes": [
 			9,
 			10
 		],
-		"add_items": [
+		"addItems": [
 			2901
 		],
-		"add_item_counts": [
+		"addItemCounts": [
 			1
 		],
 		"position": [
@@ -99,28 +99,28 @@
 		"name": "High-efficiency plasma control",
 		"description": "Through the use of electric and magnetic fields, plasma can be utilized more efficiently. Plasma Exciters are very stable and effective.",
 		"conclusion": "You have mastered the Plasma Control Technology. Now you can build a Wireless Power Tower for remote power transmission and charge mecha. Then you can continue to study crude oil extraction and refining based on this technology.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1101",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1101",
+		"isLabTech": true,
+		"preTechs": [
 			1001
 		],
 		"items": [
 			6001
 		],
-		"item_points": [
+		"itemPoints": [
 			20
 		],
-		"hash_needed": 9000,
-		"unlock_recipes": [
+		"hashNeeded": 9000,
+		"unlockRecipes": [
 			11,
 			12,
 			13
 		],
-		"add_items": [
+		"addItems": [
 			1401
 		],
-		"add_item_counts": [
+		"addItemCounts": [
 			10
 		],
 		"position": [
@@ -133,21 +133,21 @@
 		"name": "Plasma extract refining",
 		"description": "Applying new knowledge of plasma technology enables efficient gathering and refining of Crude Oil which will rapidly facilitate industrial development.",
 		"conclusion": "You can now extract crude oil resources. In addition to using its energy, you can also refine it into various chemical products.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1102",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1102",
+		"isLabTech": true,
+		"preTechs": [
 			1120,
 			1101
 		],
 		"items": [
 			6001
 		],
-		"item_points": [
+		"itemPoints": [
 			10
 		],
-		"hash_needed": 36000,
-		"unlock_recipes": [
+		"hashNeeded": 36000,
+		"unlockRecipes": [
 			14,
 			15,
 			16
@@ -162,10 +162,10 @@
 		"name": "X-ray cracking",
 		"description": "High-energy X-ray photocatalysis can crack refined oil into more hydrogen and process the byproducts into energetic graphite.",
 		"conclusion": "You have mastered X-ray Cracking Technology, which can crack refined oil into hydrogen and obtain energetic graphite as a by-product.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1103",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1103",
+		"isLabTech": true,
+		"preTechs": [
 			1121,
 			1102
 		],
@@ -173,12 +173,12 @@
 			6001,
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20
 		],
-		"hash_needed": 72000,
-		"unlock_recipes": [
+		"hashNeeded": 72000,
+		"unlockRecipes": [
 			58
 		],
 		"position": [
@@ -191,22 +191,22 @@
 		"name": "Reforming refine",
 		"description": "With the development of chemical science, it is now possible to add hydrogen and coal to Crude Oil, and process more Crude Oil through reforming reaction.",
 		"conclusion": "You have mastered reforming refine technology, and you can produce more Crude Oil for the production of next-level chemical products.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1104",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1104",
+		"isLabTech": true,
+		"preTechs": [
 			1103
 		],
 		"items": [
 			6001,
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20
 		],
-		"hash_needed": 90000,
-		"unlock_recipes": [
+		"hashNeeded": 90000,
+		"unlockRecipes": [
 			121
 		],
 		"position": [
@@ -219,20 +219,20 @@
 		"name": "Energy matrix",
 		"description": "One of the five basic source codes that keep the CentreBrain simulating. Continue uploading the Energy Matrix to unlock more advanced energy technologies.",
 		"conclusion": "You have unlocked the Energy Matrix, one of the five source codes to keep the CentreBrain simulating, and the key to activate more technologies.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1111",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1111",
+		"isLabTech": true,
+		"preTechs": [
 			1102
 		],
 		"items": [
 			6001
 		],
-		"item_points": [
+		"itemPoints": [
 			20
 		],
-		"hash_needed": 36000,
-		"unlock_recipes": [
+		"hashNeeded": 36000,
+		"unlockRecipes": [
 			18
 		],
 		"position": [
@@ -245,20 +245,20 @@
 		"name": "Hydrogen fuel rod",
 		"description": "With further development of cryo-technology hydrogen can be liquefied to make fuel rods for higher combustion efficiency. These higher energy Fuel Rods can greatly increase the mecha's fuel power generation.",
 		"conclusion": "You can now produce higher-energy fuel rods. Inserting this into to the mecha's fuel chamber will greatly increase fuel power generation which will recover the mecha's energy more quickly.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1112",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1112",
+		"isLabTech": true,
+		"preTechs": [
 			1111
 		],
 		"items": [
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			20
 		],
-		"hash_needed": 72000,
-		"unlock_recipes": [
+		"hashNeeded": 72000,
+		"unlockRecipes": [
 			19
 		],
 		"position": [
@@ -271,20 +271,20 @@
 		"name": "Thruster",
 		"description": "A high efficiency engine that operates plasma jets at hyperspeed to create a strong counterforce which can drive logistics drones to transport cargo between planetary logistic stations.",
 		"conclusion": "You have unlocked the logistics drone's engine, the Thruster, and now you can use logistics drones to transport cargo within the planet.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1113",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1113",
+		"isLabTech": true,
+		"preTechs": [
 			1112
 		],
 		"items": [
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			20
 		],
-		"hash_needed": 180000,
-		"unlock_recipes": [
+		"hashNeeded": 180000,
+		"unlockRecipes": [
 			20
 		],
 		"position": [
@@ -297,20 +297,20 @@
 		"name": "Reinforced thruster",
 		"description": "Advanced power devices, can drive logisitics vessel to transport goods among planets.",
 		"conclusion": "You have unlocked the logistics vessel's engine, the Reinforced Thruster, and now you can use logistics vessels to realize the transportation of materials between planets.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1114",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1114",
+		"isLabTech": true,
+		"preTechs": [
 			1113
 		],
 		"items": [
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			20
 		],
-		"hash_needed": 288000,
-		"unlock_recipes": [
+		"hashNeeded": 288000,
+		"unlockRecipes": [
 			21
 		],
 		"position": [
@@ -323,27 +323,27 @@
 		"name": "Fluid storage encapsulation",
 		"description": "This technology can encapsulate the fluid in the container, making transportation more convenient.",
 		"conclusion": "You unlocked the Fluid Encapsulation Technology, which allows transport fluid with conveyor belts, also can store excess fluid in a large-capacity storage tank.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1120",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1120",
+		"isLabTech": true,
+		"preTechs": [
 			1001
 		],
 		"items": [
 			6001
 		],
-		"item_points": [
+		"itemPoints": [
 			20
 		],
-		"hash_needed": 9000,
-		"unlock_recipes": [
+		"hashNeeded": 9000,
+		"unlockRecipes": [
 			114,
 			49
 		],
-		"add_items": [
+		"addItems": [
 			2106
 		],
-		"add_item_counts": [
+		"addItemCounts": [
 			1
 		],
 		"position": [
@@ -356,21 +356,21 @@
 		"name": "Basic chemical engineering",
 		"description": "Science is stagnant without chemistry.",
 		"conclusion": "You have mastered Basic Chemical Technology, and now you can use chemical plants to produce more chemical products.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1121",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1121",
+		"isLabTech": true,
+		"preTechs": [
 			1120,
 			1102
 		],
 		"items": [
 			6001
 		],
-		"item_points": [
+		"itemPoints": [
 			10
 		],
-		"hash_needed": 72000,
-		"unlock_recipes": [
+		"hashNeeded": 72000,
+		"unlockRecipes": [
 			22,
 			23,
 			24
@@ -385,22 +385,22 @@
 		"name": "Polymer chemical engineering",
 		"description": "Processing refined oil and plastic with a new polymer synthesis technology will create a new material: Organic Crystal.",
 		"conclusion": "You have unlocked Polymer Chemical Technology which allows you to use chemical plants to produce organic crystals. Organic crystals can be used as fuel but they will reduce fuel generation, slowing down the mecha's energy recharge rate.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1122",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1122",
+		"isLabTech": true,
+		"preTechs": [
 			1121
 		],
 		"items": [
 			6001,
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20
 		],
-		"hash_needed": 72000,
-		"unlock_recipes": [
+		"hashNeeded": 72000,
+		"unlockRecipes": [
 			25,
 			54
 		],
@@ -414,22 +414,22 @@
 		"name": "High-strength crystal",
 		"description": "To obtain a titanium spar with higher strength, you can strengthen the crystal lattice structure of the titanium atoms by mixing a precise proportion of organic crystal into the titanium.",
 		"conclusion": "You are familiar with the production method of high-strength crystals. You can now utilize organic crystals to strengthen the lattice structure of titanium atoms. It will obtain a special titanium atom crystal, the Titanium Crystal.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1123",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1123",
+		"isLabTech": true,
+		"preTechs": [
 			1122
 		],
 		"items": [
 			6001,
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20
 		],
-		"hash_needed": 108000,
-		"unlock_recipes": [
+		"hashNeeded": 108000,
+		"unlockRecipes": [
 			26
 		],
 		"position": [
@@ -442,22 +442,22 @@
 		"name": "Structure matrix",
 		"description": "The Structure Matrix is one of the basic source codes that keep the CentreBrain simulating. Continue uploading these matrices to better understand the structure of matter and to unlock new technologies.",
 		"conclusion": "You have unlocked the Structure Matrix, one of the five source codes to keep the CentreBrain simulating. Uploading the structure matrices to the CentreBrain will give you a clearer understanding of material structure.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1124",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1124",
+		"isLabTech": true,
+		"preTechs": [
 			1123
 		],
 		"items": [
 			6001,
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			12,
 			12
 		],
-		"hash_needed": 240000,
-		"unlock_recipes": [
+		"hashNeeded": 240000,
+		"unlockRecipes": [
 			27
 		],
 		"position": [
@@ -470,10 +470,10 @@
 		"name": "Casimir crystal",
 		"description": "Using the force of a strong electric field, a spatial ring crystal can be formed by the Coulomb repulsion between particles. In a weak, static magnetic field the Casimir effect can be observed.",
 		"conclusion": "You have unlocked the Casimir Crystal. If you find the rare ores, the Optical grating crystal, it will make the production of this crystal much easier.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1125",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1125",
+		"isLabTech": true,
+		"preTechs": [
 			1124
 		],
 		"items": [
@@ -481,13 +481,13 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			12,
 			12,
 			12
 		],
-		"hash_needed": 240000,
-		"unlock_recipes": [
+		"hashNeeded": 240000,
+		"unlockRecipes": [
 			28,
 			29
 		],
@@ -501,22 +501,22 @@
 		"name": "High-strength glass",
 		"description": "Incorporating a specific proportion of titanium and organic crystals into molten glass can create high-strength Titanium Glass which is suitable for more complex industrial production.",
 		"conclusion": "You have unlocked Titanium Glass, a high-strength glass made by adding a certain proportion of titanium to molten glass. When encountering some more intense reaction environments, titanium glass comes in handy.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1126",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1126",
+		"isLabTech": true,
+		"preTechs": [
 			1132
 		],
 		"items": [
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			12,
 			6
 		],
-		"hash_needed": 240000,
-		"unlock_recipes": [
+		"hashNeeded": 240000,
+		"unlockRecipes": [
 			30
 		],
 		"position": [
@@ -529,20 +529,20 @@
 		"name": "Applied superconductor",
 		"description": "In the field of materials, the emergence of graphene is a great breakthrough. When one layer of graphene is stacked on top of another, rotated to a certain Magic Angle, superconductivity takes place.",
 		"conclusion": "You can now produce Graphene, a nano-superconducting material. Graphene is made in a Chemical Facility and can be produced with much greater efficiency through the use of a rare material called Fire Ice.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1131",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1131",
+		"isLabTech": true,
+		"preTechs": [
 			1121
 		],
 		"items": [
 			6001
 		],
-		"item_points": [
+		"itemPoints": [
 			20
 		],
-		"hash_needed": 72000,
-		"unlock_recipes": [
+		"hashNeeded": 72000,
+		"unlockRecipes": [
 			31,
 			32
 		],
@@ -556,22 +556,22 @@
 		"name": "High-strength material",
 		"description": "Objects made of Carbon Nanotubes that are harder than diamond can maintain structural integrity better when subjected to greater pressure. This is very practical for industrial production that requires withstanding extremely high pressure.",
 		"conclusion": "You have obtained Carbon Nanotube, a material harder than diamond. Has extremely high strength and resistance to deformation. You can go to marine planets to find rare ores, the Spiniform stalagmite crystal. It is very convenient to use them to make carbon nanotubes.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1132",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1132",
+		"isLabTech": true,
+		"preTechs": [
 			1131
 		],
 		"items": [
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			16,
 			4
 		],
-		"hash_needed": 135000,
-		"unlock_recipes": [
+		"hashNeeded": 135000,
+		"unlockRecipes": [
 			33,
 			35
 		],
@@ -585,10 +585,10 @@
 		"name": "Particle control technology",
 		"description": "Although it is profound and complicated, it is of great benefit to master particle control technology. Under certain conditions, particles can be made to have a certain regularity, making everything much easier to control.",
 		"conclusion": "You have mastered the Particle Control Technology, can make particle motion have certain regularity.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1133",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1133",
+		"isLabTech": true,
+		"preTechs": [
 			1132
 		],
 		"items": [
@@ -596,13 +596,13 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			16,
 			16,
 			4
 		],
-		"hash_needed": 180000,
-		"unlock_recipes": [
+		"hashNeeded": 180000,
+		"unlockRecipes": [
 			36,
 			62
 		],
@@ -616,10 +616,10 @@
 		"name": "Deuterium fractionation",
 		"description": "At a certain temperature it is possible to take advantage of the high vapor pressure ratio between liquid hydrogen and liquid deuterium. Deuterium can be fractionated from liquid hydrogen with a considerable separation efficiency.",
 		"conclusion": "You have unlocked the Deuterium Fractionation Technology. You can use a fractionator to separate some deuterium from liquid hydrogen. Although it's not perfectly efficient, possessing deuterium means that you are now entering the nuclear energy age.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1134",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1134",
+		"isLabTech": true,
+		"preTechs": [
 			1412,
 			1102
 		],
@@ -627,12 +627,12 @@
 			6001,
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			30
 		],
-		"hash_needed": 36000,
-		"unlock_recipes": [
+		"hashNeeded": 36000,
+		"unlockRecipes": [
 			110,
 			115
 		],
@@ -646,10 +646,10 @@
 		"name": "Wave function interference",
 		"description": "Mastering the regularity of the probability change in the quantum transition process can execute a series of reverse interference to the wave function of the particle thereby increasing the certainty of its collapse. Making good use of this technology may be a good thing for cats.",
 		"conclusion": "You have mastered the Wave Function Interference Technology. During the quantum transition, you can interfere with the particles'wave function and make them collapse toward the expected situation.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1141",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1141",
+		"isLabTech": true,
+		"preTechs": [
 			1126,
 			1125
 		],
@@ -658,13 +658,13 @@
 			6002,
 			6004
 		],
-		"item_points": [
+		"itemPoints": [
 			12,
 			12,
 			2
 		],
-		"hash_needed": 360000,
-		"unlock_recipes": [
+		"hashNeeded": 360000,
+		"unlockRecipes": [
 			38
 		],
 		"position": [
@@ -677,10 +677,10 @@
 		"name": "Miniature particle collider",
 		"description": "The construction of a Miniature Particle Collider requires advanced materials and a huge energy supply. It is expensive, but it is worth it.",
 		"conclusion": "You have unlocked the Miniature Particle Collider, used to produce deuterium and antimatter stably, but will consume a lot of energy.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1142",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1142",
+		"isLabTech": true,
+		"preTechs": [
 			1124
 		],
 		"items": [
@@ -688,13 +688,13 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			12,
 			12,
 			12
 		],
-		"hash_needed": 240000,
-		"unlock_recipes": [
+		"hashNeeded": 240000,
+		"unlockRecipes": [
 			39,
 			40
 		],
@@ -708,10 +708,10 @@
 		"name": "Strange matter",
 		"description": "Under the powerful energy of deuterium fusion, iron vapor is compressed to an extremely small size which causes the quark's of the iron core to change and instantly degenerate into strange matter.",
 		"conclusion": "You have obtained Strange Matter, which can warp the surrounding space and meet the warp engine's negative energy requirement.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1143",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1143",
+		"isLabTech": true,
+		"preTechs": [
 			1142
 		],
 		"items": [
@@ -719,13 +719,13 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			12,
 			12,
 			12
 		],
-		"hash_needed": 300000,
-		"unlock_recipes": [
+		"hashNeeded": 300000,
+		"unlockRecipes": [
 			104
 		],
 		"position": [
@@ -738,10 +738,10 @@
 		"name": "Artificial star",
 		"description": "Energy generated from the destruction caused by colliding positive matter and antimatter can be output to the power grid more stably by containing the reaction inside of an annihilation constraint sphere. The high energy production of this technology makes the core radiation stable in the visible light band which causes the reaction to look like a burning sun.",
 		"conclusion": "You have unlocked the power generation facility, the Mini-sun. It can input the tremendous energy of antimatter fuel rods to the power grid in a stable and controllable way.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1144",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1144",
+		"isLabTech": true,
+		"preTechs": [
 			1145
 		],
 		"items": [
@@ -751,15 +751,15 @@
 			6004,
 			6005
 		],
-		"item_points": [
+		"itemPoints": [
 			10,
 			10,
 			10,
 			10,
 			10
 		],
-		"hash_needed": 432000,
-		"unlock_recipes": [
+		"hashNeeded": 432000,
+		"unlockRecipes": [
 			43
 		],
 		"position": [
@@ -772,22 +772,22 @@
 		"name": "Controlled annihilation reaction",
 		"description": "When matter and antimatter meet, they annihilate and generate tremendous energy. So long as the annihilation process is controllable, we can steadily utilise the energy.",
 		"conclusion": "You have mastered how to constrain the annihilation reaction so that it can produce energy stably. With this technology, we will make antimatter into fuel rods.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1145",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1145",
+		"isLabTech": true,
+		"preTechs": [
 			1506
 		],
 		"items": [
 			6002,
 			6005
 		],
-		"item_points": [
+		"itemPoints": [
 			24,
 			12
 		],
-		"hash_needed": 600000,
-		"unlock_recipes": [
+		"hashNeeded": 600000,
+		"unlockRecipes": [
 			42,
 			44
 		],
@@ -801,21 +801,21 @@
 		"name": "Proliferator Mk.I",
 		"description": "The advent of the Proliferator has made a great change to the entire manufacturing. When it is sprayed to the cargos, an Extra Products gain or Production Speedup effect will occur.",
 		"conclusion": "You have unlocked the Proliferator MK.I, and now you can use the Spray Coater to spray the Proliferator on the cargos. When the sprayed cargos are used as raw materials to produce the next-level products, it can obtain the effect of Extra Products or Production Speedup.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1151",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1151",
+		"isLabTech": true,
+		"preTechs": [
 			1311,
 			1101
 		],
 		"items": [
 			6001
 		],
-		"item_points": [
+		"itemPoints": [
 			20
 		],
-		"hash_needed": 36000,
-		"unlock_recipes": [
+		"hashNeeded": 36000,
+		"unlockRecipes": [
 			106,
 			109
 		],
@@ -829,10 +829,10 @@
 		"name": "Proliferator Mk.II",
 		"description": "The Proliferator MK.II has upgraded the formula, and the effect of Extra Products or Production Speedup has been further improved.",
 		"conclusion": "You have unlocked the Proliferator MK.II. When the sprayed cargos are used as raw materials to produce the next-level products, the effect of Extra Products or Production Speedup will be improved.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1152",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1152",
+		"isLabTech": true,
+		"preTechs": [
 			1302,
 			1151
 		],
@@ -840,12 +840,12 @@
 			6001,
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			16,
 			12
 		],
-		"hash_needed": 180000,
-		"unlock_recipes": [
+		"hashNeeded": 180000,
+		"unlockRecipes": [
 			107
 		],
 		"position": [
@@ -858,10 +858,10 @@
 		"name": "Proliferator Mk.III",
 		"description": "The changes brought about by the application of the Proliferator to the entire industrial production are obvious to all. After seeing such an amazing change, it is imperative to make a more advanced Proliferator. With the persistent improvement of material technology and manufacturing process, the Proliferator MK.III was invented, and its effect is more outstanding. Of course, it also comes with higher requirement for production line design.",
 		"conclusion": "You have unlocked the Proliferator MK.III. When the sprayed cargos are used as raw materials to  produce the next-level products, the effect of Extra Products or Production Speedup can be greatly increased, which also means it requires sufficient supply of raw materials, as well as preventing stacking of cargos.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1153",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1153",
+		"isLabTech": true,
+		"preTechs": [
 			1152,
 			1132
 		],
@@ -870,13 +870,13 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			8,
 			6,
 			4
 		],
-		"hash_needed": 360000,
-		"unlock_recipes": [
+		"hashNeeded": 360000,
+		"unlockRecipes": [
 			108
 		],
 		"position": [
@@ -889,33 +889,33 @@
 		"name": "Basic assembling processes",
 		"description": "The basic assembler uses traditional mechanical technology to process primary items into more advanced ones.",
 		"conclusion": "You have unlocked the Assembling Machine Mk.I. It can make iron and copper ingots into more advanced products. By upgrading technology you can get access to faster assemblers.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1201",
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1201",
+		"preTechs": [
 			1001
 		],
 		"items": [
 			1301,
 			1201
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20
 		],
-		"property_override_items": [
+		"propertyOverrideItems": [
 			6001
 		],
-		"property_item_counts": [
+		"propertyItemCounts": [
 			40
 		],
-		"hash_needed": 1800,
-		"unlock_recipes": [
+		"hashNeeded": 1800,
+		"unlockRecipes": [
 			45
 		],
-		"add_items": [
+		"addItems": [
 			2303
 		],
-		"add_item_counts": [
+		"addItemCounts": [
 			1
 		],
 		"position": [
@@ -928,10 +928,10 @@
 		"name": "High-speed assembling processes",
 		"description": "The upgraded assembler has improved the production speed and can assemble items faster.",
 		"conclusion": "You have unlocked the Assembling Machine Mk.II. You can now process raw materials more efficiently and also increase the replicator's production speed by 50%.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1202",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1202",
+		"isLabTech": true,
+		"preTechs": [
 			1201,
 			1302
 		],
@@ -939,18 +939,18 @@
 			6001,
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			10
 		],
-		"hash_needed": 108000,
-		"unlock_recipes": [
+		"hashNeeded": 108000,
+		"unlockRecipes": [
 			46
 		],
-		"unlock_functions": [
+		"unlockFunctions": [
 			7
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -975,10 +975,10 @@
 		"name": "Quantum printing technology",
 		"description": "We can control the arrangement and combination of particles in 3D space from a more microscopic level using quantum printing technology, which maximizes production speed.",
 		"conclusion": "You have unlocked the Assembling Machine Mk.III. Using quantum printing technology can control the arrangement and combination of particles from a more microscopic level, and the assembling speed is faster. Also, the replicator's production speed is further increased by 50%.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1203",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1203",
+		"isLabTech": true,
+		"preTechs": [
 			1202,
 			1303
 		],
@@ -988,20 +988,20 @@
 			6003,
 			6004
 		],
-		"item_points": [
+		"itemPoints": [
 			10,
 			10,
 			10,
 			10
 		],
-		"hash_needed": 288000,
-		"unlock_recipes": [
+		"hashNeeded": 288000,
+		"unlockRecipes": [
 			47
 		],
-		"unlock_functions": [
+		"unlockFunctions": [
 			7
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -1026,20 +1026,20 @@
 		"name": "Processor",
 		"description": "Large-scale integrated circuit devices are very good at processing data and managing the procedure.",
 		"conclusion": "You have unlocked the Processor, a large-scale integrated circuit device that can handle more complex data operations.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1302",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1302",
+		"isLabTech": true,
+		"preTechs": [
 			1311
 		],
 		"items": [
 			6001
 		],
-		"item_points": [
+		"itemPoints": [
 			20
 		],
-		"hash_needed": 144000,
-		"unlock_recipes": [
+		"hashNeeded": 144000,
+		"unlockRecipes": [
 			51
 		],
 		"position": [
@@ -1052,10 +1052,10 @@
 		"name": "Quantum chip",
 		"description": "Quantum chip can interfere with the wave function during the quantum transition process according to the quantum state's Rabi oscillation, increasing the probability of particles appearing in some states.",
 		"conclusion": "You have unlocked the Quantum Chip, which has more powerful computing power and ultra-fast calculating speed. It can intelligently identify an error in the quantum transition process and timely reverse intervention.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1303",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1303",
+		"isLabTech": true,
+		"preTechs": [
 			1312,
 			1141
 		],
@@ -1064,13 +1064,13 @@
 			6002,
 			6004
 		],
-		"item_points": [
+		"itemPoints": [
 			10,
 			10,
 			10
 		],
-		"hash_needed": 288000,
-		"unlock_recipes": [
+		"hashNeeded": 288000,
+		"unlockRecipes": [
 			52
 		],
 		"position": [
@@ -1083,10 +1083,10 @@
 		"name": "Photon spotlight mining technology",
 		"description": "Under a special gravitational field, the quantum chip could be used to positively intervene in the transition process of the photon group. It can control the propagation path and produce an obvious bunching effect. This high-energy laser beam can instantly cut the ore veins and transform the ores into particles for transportation and packaging, which significantly improves the efficiency of mining.",
 		"conclusion": "You have unlocked Advanced Mining Machine, which can now be built more conveniently, and the gathering speed has been greatly improved. The gathered ores can be transported by the conveyor belt, or set the status to <color=\"#FD965ECC\">\"Supply\"</color>, and the Logistics Drones of the logistics station with the corresponding <color=\"#FD965ECC\">\"Demand\"</color> will automatically come to transport the ores. ",
-		"published": 1,
-		"icon_path": "Icons/Tech/1304",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1304",
+		"isLabTech": true,
+		"preTechs": [
 			1303
 		],
 		"items": [
@@ -1096,15 +1096,15 @@
 			6004,
 			6005
 		],
-		"item_points": [
+		"itemPoints": [
 			10,
 			10,
 			10,
 			10,
 			6
 		],
-		"hash_needed": 360000,
-		"unlock_recipes": [
+		"hashNeeded": 360000,
+		"unlockRecipes": [
 			119
 		],
 		"position": [
@@ -1117,10 +1117,10 @@
 		"name": "Mesoscopic quantum entanglement",
 		"description": "With the support of computing power of quantum chips, strange matter can be distributed to specific points. Then the entanglement effect of a single quantum can be amplified to the macromolecular level. With this technology, subverting the tranditional chemical engineering is just a \"drop by\".",
 		"conclusion": "You have unlocked Mesoscopic quantum entanglement, this would replace tranditional chemical engineering completely. Now you can produce more advanced chemical plant. ",
-		"published": 1,
-		"icon_path": "Icons/Tech/1305",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1305",
+		"isLabTech": true,
+		"preTechs": [
 			1303,
 			1143
 		],
@@ -1130,14 +1130,14 @@
 			6003,
 			6004
 		],
-		"item_points": [
+		"itemPoints": [
 			10,
 			10,
 			10,
 			10
 		],
-		"hash_needed": 360000,
-		"unlock_recipes": [
+		"hashNeeded": 360000,
+		"unlockRecipes": [
 			124
 		],
 		"position": [
@@ -1150,20 +1150,20 @@
 		"name": "Semiconductor material",
 		"description": "Microcrystalline components with semiconductive properties are the excellent materials for manufacturing processors.",
 		"conclusion": "You have unlocked the semiconductor material, the Microcrystalline Component, which can be used to make more complex integrated circuits.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1311",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1311",
+		"isLabTech": true,
+		"preTechs": [
 			1201
 		],
 		"items": [
 			6001
 		],
-		"item_points": [
+		"itemPoints": [
 			40
 		],
-		"hash_needed": 18000,
-		"unlock_recipes": [
+		"hashNeeded": 18000,
+		"unlockRecipes": [
 			53
 		],
 		"position": [
@@ -1176,10 +1176,10 @@
 		"name": "Information matrix",
 		"description": "Immediate and effective information transmission can greatly optimize the industrial production process. By uploading the Information Matrix to obtain more technologies, the information management of the automated production line can be improved.",
 		"conclusion": "You have unlocked the Information Matrix, one of the five source codes to keep the CentreBrain simulating. Uploading the structure matrices can get more information management technology, improving production efficiency.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1312",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1312",
+		"isLabTech": true,
+		"preTechs": [
 			1302,
 			1133
 		],
@@ -1187,12 +1187,12 @@
 			6001,
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			10,
 			10
 		],
-		"hash_needed": 288000,
-		"unlock_recipes": [
+		"hashNeeded": 288000,
+		"unlockRecipes": [
 			55
 		],
 		"position": [
@@ -1205,34 +1205,34 @@
 		"name": "Automatic metallurgy",
 		"description": "The invention of the Smelter has greatly promoted the development of metallurgical technology. Using the smelter for automated smelting will improve production efficiency.",
 		"conclusion": "You have unlocked the Smelter. It will automatically smelt base materials such as iron and copper ingots for you. To achieve full automation, you need to use a sorter to automatically put the ores on the conveyor belt into the smelter.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1401",
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1401",
+		"preTechs": [
 			1001
 		],
 		"items": [
 			1202,
 			1301
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20
 		],
-		"property_override_items": [
+		"propertyOverrideItems": [
 			6001
 		],
-		"property_item_counts": [
+		"propertyItemCounts": [
 			40
 		],
-		"hash_needed": 1800,
-		"unlock_recipes": [
+		"hashNeeded": 1800,
+		"unlockRecipes": [
 			56,
 			57
 		],
-		"add_items": [
+		"addItems": [
 			2302
 		],
-		"add_item_counts": [
+		"addItemCounts": [
 			3
 		],
 		"position": [
@@ -1245,20 +1245,20 @@
 		"name": "Smelting purification",
 		"description": "The development of the smelting process has given rise to ore purification technology, which can help to obtain purer and more advanced products.",
 		"conclusion": "You have mastered more advanced smelting techniques, and you can use smelter to purify ores to obtain purer materials. On a planet without silicon veins, smelting the stone ore into silicon ore is also a good choice.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1402",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1402",
+		"isLabTech": true,
+		"preTechs": [
 			1401
 		],
 		"items": [
 			6001
 		],
-		"item_points": [
+		"itemPoints": [
 			20
 		],
-		"hash_needed": 18000,
-		"unlock_recipes": [
+		"hashNeeded": 18000,
+		"unlockRecipes": [
 			34,
 			17,
 			59
@@ -1273,22 +1273,22 @@
 		"name": "Crystal smelting",
 		"description": "With a better understanding of lattice structure and improved refining technology, we can now use a more advanced method to smelt high-strength crystals.",
 		"conclusion": "You have mastered the ultimate smelting techniques, and now you can change the atomic arrangement of the element through smelting, and quickly produce advanced materials such as diamonds.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1403",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1403",
+		"isLabTech": true,
+		"preTechs": [
 			1402
 		],
 		"items": [
 			6001,
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20
 		],
-		"hash_needed": 90000,
-		"unlock_recipes": [
+		"hashNeeded": 90000,
+		"unlockRecipes": [
 			60,
 			61,
 			37
@@ -1303,20 +1303,20 @@
 		"name": "Steel smelting",
 		"description": "Under extremely strict and controlled temperature conditions, using a smelter to smelt iron ingots will improve the crystal form of material further, producing better mechanical properties.",
 		"conclusion": "You have mastered the Steel Smelting Techniques, and now you can further smelt the iron ingots to produce steel with better mechanical properties.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1411",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1411",
+		"isLabTech": true,
+		"preTechs": [
 			1401
 		],
 		"items": [
 			6001
 		],
-		"item_points": [
+		"itemPoints": [
 			20
 		],
-		"hash_needed": 21600,
-		"unlock_recipes": [
+		"hashNeeded": 21600,
+		"unlockRecipes": [
 			63
 		],
 		"position": [
@@ -1329,26 +1329,26 @@
 		"name": "Thermal power",
 		"description": "Power generation facilities that use combustibles as fuel have a conversion rate between energy output and fuel consumed.",
 		"conclusion": "You can now use a Thermal Power Plant. It is a power generation facility that consumes combustibles to generate electricity and has energy efficiency.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1412",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1412",
+		"isLabTech": true,
+		"preTechs": [
 			1201
 		],
 		"items": [
 			6001
 		],
-		"item_points": [
+		"itemPoints": [
 			20
 		],
-		"hash_needed": 5400,
-		"unlock_recipes": [
+		"hashNeeded": 5400,
+		"unlockRecipes": [
 			64
 		],
-		"add_items": [
+		"addItems": [
 			2204
 		],
-		"add_item_counts": [
+		"addItemCounts": [
 			1
 		],
 		"position": [
@@ -1361,22 +1361,22 @@
 		"name": "Titanium smelting",
 		"description": "The Advancements in mining and smelting technology have made ore control easier. Titanium can now be mined and utilized.",
 		"conclusion": "You have mastered the Titanium Ore Smelting Techniques, and now you can smelt titanium ore into light-weight and high-strength titanium ingots.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1413",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1413",
+		"isLabTech": true,
+		"preTechs": [
 			1411
 		],
 		"items": [
 			6001,
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20
 		],
-		"hash_needed": 36000,
-		"unlock_recipes": [
+		"hashNeeded": 36000,
+		"unlockRecipes": [
 			65
 		],
 		"position": [
@@ -1389,10 +1389,10 @@
 		"name": "High-strength titanium alloy",
 		"description": "Taking advantage of the characteristics of the lattice structure of titanium at different temperatures, adding precise proportions of alloy elements during the smelting process, will produce a new type of alloy material that has higher strength and toughness.",
 		"conclusion": "You have obtained a new type of alloy material, the Titanium Alloy, which has higher strength and better toughness.\n",
-		"published": 1,
-		"icon_path": "Icons/Tech/1414",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1414",
+		"isLabTech": true,
+		"preTechs": [
 			1413
 		],
 		"items": [
@@ -1400,13 +1400,13 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20,
 			2
 		],
-		"hash_needed": 144000,
-		"unlock_recipes": [
+		"hashNeeded": 144000,
+		"unlockRecipes": [
 			66
 		],
 		"position": [
@@ -1419,20 +1419,20 @@
 		"name": "Environment modification",
 		"description": "Collect soil pile from above zero altitudes and use them to fill up the ocean to make the factory construction more convenient. Just rectify the surface will consume the foundation.",
 		"conclusion": "You have unlocked the Foundation. This can flatten the surface of a planet by either leveling mountains or filling an ocean. If used to raise the land it will consume Soil piles, but if used to lower the land it will give Soil piles.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1415",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1415",
+		"isLabTech": true,
+		"preTechs": [
 			1411
 		],
 		"items": [
 			6001
 		],
-		"item_points": [
+		"itemPoints": [
 			20
 		],
-		"hash_needed": 72000,
-		"unlock_recipes": [
+		"hashNeeded": 72000,
+		"unlockRecipes": [
 			112
 		],
 		"position": [
@@ -1445,13 +1445,13 @@
 		"name": "Mini fusion power generation",
 		"description": "By using a stellarator to confine high-temperature plasma, the new generation of controlled nuclear fusion technology can make use of Deuteron fuel rods, these technological breakthroughs promote the miniaturization of fusion reactors.",
 		"conclusion": "You can now use a Mini Fusion Power Plant. It is a power generation facility that converts the energy released by the controlled fusion reaction of deuteron fuel rods into electrical energy.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1416",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1416",
+		"isLabTech": true,
+		"preTechs": [
 			1134
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			1414
 		],
 		"items": [
@@ -1459,13 +1459,13 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			10,
 			5
 		],
-		"hash_needed": 180000,
-		"unlock_recipes": [
+		"hashNeeded": 180000,
+		"unlockRecipes": [
 			113,
 			41
 		],
@@ -1479,13 +1479,13 @@
 		"name": "Plane-Filter Smelting Technology",
 		"description": "Research shows that a thermodynamic negative temperature flow can be generated if the quantum state of monopoles is filtered by Wave Function Interference Technology. Using this technology, the process of ores smelting or purification can be greatly accelerated.",
 		"conclusion": "You have unlocked the more advanced smelter ━━ <color=\"#FD965ECC\">Plane Smelter</color>, which is twice as fast as an Arc Smelter! But you need <color=\"#FD965ECC\">Unipolar Magnet</color> to make it.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1417",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1417",
+		"isLabTech": true,
+		"preTechs": [
 			1141
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			1403
 		],
 		"items": [
@@ -1494,14 +1494,14 @@
 			6003,
 			6004
 		],
-		"item_points": [
+		"itemPoints": [
 			10,
 			10,
 			10,
 			10
 		],
-		"hash_needed": 360000,
-		"unlock_recipes": [
+		"hashNeeded": 360000,
+		"unlockRecipes": [
 			116
 		],
 		"position": [
@@ -1514,10 +1514,10 @@
 		"name": "Solar collection",
 		"description": "The sun continuously radiates energy outwards in the form of electromagnetic waves. By laying solar panels we can collect this radiant energy, but only a small part. We need a more efficient way.",
 		"conclusion": "You can now use Solar Panel. It is a power generation facility that converts solar radiant energy into electrical energy. It does not work at night. You can use accumulators to store surplus electrical energy during the day.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1501",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1501",
+		"isLabTech": true,
+		"preTechs": [
 			1402,
 			1002,
 			1201
@@ -1525,17 +1525,17 @@
 		"items": [
 			6001
 		],
-		"item_points": [
+		"itemPoints": [
 			40
 		],
-		"hash_needed": 18000,
-		"unlock_recipes": [
+		"hashNeeded": 18000,
+		"unlockRecipes": [
 			67
 		],
-		"add_items": [
+		"addItems": [
 			2205
 		],
-		"add_item_counts": [
+		"addItemCounts": [
 			1
 		],
 		"position": [
@@ -1548,22 +1548,22 @@
 		"name": "Photon frequency conversion",
 		"description": "The Photon Combiner can convert low-frequency photons into high-frequency, effectively reducing solar energy loss from solar radiation.",
 		"conclusion": "You have unlocked the Photon Combiner, which emits a high-energy photon after continuously absorbing multiple low-energy photons. The magic is that if you use the natural optical grating crystal to make it,  it will be very efficient.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1502",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1502",
+		"isLabTech": true,
+		"preTechs": [
 			1501
 		],
 		"items": [
 			6001,
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20
 		],
-		"hash_needed": 36000,
-		"unlock_recipes": [
+		"hashNeeded": 36000,
+		"unlockRecipes": [
 			68,
 			69
 		],
@@ -1577,25 +1577,25 @@
 		"name": "Solar sail orbit system",
 		"description": "Use the <color=\"#FD965ECC\">EM-Rail Ejector</color> to launch <color=\"#FD965ECC\">Solar sails</color> to form a Dyson swarm to absorb radiation energy from the star more effectively.",
 		"conclusion": "You can now use the EM-Rail Ejector to eject solar sails to form Dyson swarm. The solar sail has a life cycle, which can be extended by upgrading technology.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1503",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1503",
+		"isLabTech": true,
+		"preTechs": [
 			1502
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			1711
 		],
 		"items": [
 			6001,
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20
 		],
-		"hash_needed": 54000,
-		"unlock_recipes": [
+		"hashNeeded": 54000,
+		"unlockRecipes": [
 			70,
 			71
 		],
@@ -1609,22 +1609,22 @@
 		"name": "Ray receiver",
 		"description": "Receiving the high-energy rays transmitted from the Dyson sphere and directly outputting energy to the power grid. Ray receiving efficiency will affect the energy obtained.",
 		"conclusion": "You can now use the Ray Receiver to receive the high-energy rays transmitted from the Dyson sphere and output the received energy directly to the power grid.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1504",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1504",
+		"isLabTech": true,
+		"preTechs": [
 			1503
 		],
 		"items": [
 			6001,
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20
 		],
-		"hash_needed": 108000,
-		"unlock_recipes": [
+		"hashNeeded": 108000,
+		"unlockRecipes": [
 			72
 		],
 		"position": [
@@ -1637,13 +1637,13 @@
 		"name": "Planetary ionosphere utilization",
 		"description": "with the application of Planetary ionosphere utilization technology, the effective receiving altitude of Ray receiver will extend to the top of the atmosphere. It allows more time to receive high-energy Gamma rays in a day and night cycle, improving the continuous work progress.",
 		"conclusion": "You have mastered the Planetary Ionosphere Utilization Technology, and now you can increase the maximum output power of the ray receiver by consuming the <color=\"#FD965ECC\">Graviton Lens</color>.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1505",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1505",
+		"isLabTech": true,
+		"preTechs": [
 			1504
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			1704
 		],
 		"items": [
@@ -1652,17 +1652,17 @@
 			6003,
 			6005
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20,
 			20,
 			20
 		],
-		"hash_needed": 360000,
-		"unlock_functions": [
+		"hashNeeded": 360000,
+		"unlockFunctions": [
 			8
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -1687,10 +1687,10 @@
 		"name": "Dirac inversion mechanism",
 		"description": "During the research of the Dirac equation in reverse, it discovers that a large number of gamma rays can create an open string in a critical vibration state, and they will easily split into proton and antiproton pairs when they collide mutually. Mastering this technology will improve the ray receiver's efficiency, by storing the energy of stars as antimatter.",
 		"conclusion": "You have mastered the Mass-energy Storage Technology, and now you can use the Photon generation mode of the ray receiver. You can convert the critical photons obtained into antimatter using the Miniature Particle Collider.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1506",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1506",
+		"isLabTech": true,
+		"preTechs": [
 			1505
 		],
 		"items": [
@@ -1700,15 +1700,15 @@
 			6004,
 			6005
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20,
 			5,
 			5,
 			10
 		],
-		"hash_needed": 540000,
-		"unlock_recipes": [
+		"hashNeeded": 540000,
+		"unlockRecipes": [
 			74
 		],
 		"position": [
@@ -1721,10 +1721,10 @@
 		"name": "Universe matrix",
 		"description": "The Universe Matrix contains everything, matter, energy, and information. It turns out that these are all the same thing. It is the ultimate crystallization of the theory of everything, revealing the ultimate mystery of the universe.",
 		"conclusion": "You have unlocked the Universe Matrix. It is the ultimate crystallization of the theory of everything and reveals the ultimate mystery of the universe.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1507",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1507",
+		"isLabTech": true,
+		"preTechs": [
 			1506
 		],
 		"items": [
@@ -1734,15 +1734,15 @@
 			6004,
 			6005
 		],
-		"item_points": [
+		"itemPoints": [
 			10,
 			10,
 			10,
 			10,
 			10
 		],
-		"hash_needed": 720000,
-		"unlock_recipes": [
+		"hashNeeded": 720000,
+		"unlockRecipes": [
 			75
 		],
 		"position": [
@@ -1755,23 +1755,23 @@
 		"name": "Mission completed!",
 		"description": "Congratulations! Builder of great civilizations! The primary mission of the Dyson Sphere Program has been successfully complete with your efforts. (The game will continue after completion)",
 		"conclusion": "Congratulations! Builder of great civilizations! You have completed the Dyson Sphere Program. (You can continue the game)",
-		"published": 1,
-		"icon_path": "Icons/Tech/1508",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1508",
+		"isLabTech": true,
+		"preTechs": [
 			1507
 		],
 		"items": [
 			6006
 		],
-		"item_points": [
+		"itemPoints": [
 			4
 		],
-		"hash_needed": 3600000,
-		"unlock_functions": [
+		"hashNeeded": 3600000,
+		"unlockFunctions": [
 			99
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -1796,26 +1796,26 @@
 		"name": "Energy storage",
 		"description": "Use <color=\"#FD965ECC\">Accumulator</color> to store the surplus electrical energy in the power grid. When the power supply is insufficient, the accumulator will automatically release the stored electric energy to maintain the factory operating.",
 		"conclusion": "You have mastered the Energy Storage Technology. You can now use the accumulator to store surplus electrical energy in the power grid. When power is low the accumulator will automatically discharge.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1511",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1511",
+		"isLabTech": true,
+		"preTechs": [
 			1403,
 			1501
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			1711
 		],
 		"items": [
 			6001,
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20
 		],
-		"hash_needed": 108000,
-		"unlock_recipes": [
+		"hashNeeded": 108000,
+		"unlockRecipes": [
 			76
 		],
 		"position": [
@@ -1828,10 +1828,10 @@
 		"name": "Interstellar power transmission",
 		"description": "Using the Energy Exchanger, the surplus electric energy in the grid can be made into a full accumulator, transported to another planet, and then released through the energy exchanger. Realize the transportation of electricity between planets.",
 		"conclusion": "You have unlocked the Energy Exchanger, can make the surplus electric energy in the power grid into a full accumulator, or release the electric energy stored in the full accumulator to supply the facility.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1512",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1512",
+		"isLabTech": true,
+		"preTechs": [
 			1414,
 			1511
 		],
@@ -1840,13 +1840,13 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20,
 			2
 		],
-		"hash_needed": 216000,
-		"unlock_recipes": [
+		"hashNeeded": 216000,
+		"unlockRecipes": [
 			77
 		],
 		"position": [
@@ -1859,25 +1859,25 @@
 		"name": "Geothermal extraction",
 		"description": "The magma of the lava planet contains enourmous energy, and if you master the technology of geothermal extraction, you can completely capture this energy.",
 		"conclusion": "You have mastered the technology of geothermal extraction, and now you can build a Geothermal Power Station to capture the enormous energy contained in the magma on the lava planet, and input the energy into the grid.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1513",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1513",
+		"isLabTech": true,
+		"preTechs": [
 			1502
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			1711
 		],
 		"items": [
 			6001,
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20
 		],
-		"hash_needed": 144000,
-		"unlock_recipes": [
+		"hashNeeded": 144000,
+		"unlockRecipes": [
 			118
 		],
 		"position": [
@@ -1890,25 +1890,25 @@
 		"name": "High-strength lightweight structure",
 		"description": "Compared with the traditional structure, the new high-strength frame material is made of carbon nanotubes, which can withstand the strong gravitational force of stars.",
 		"conclusion": "You have unlocked a new type of high-strength lightweight structure, the Frame Material. Because it can withstand the strong gravitational force of the star, it is used to produce Dyson Sphere Component and launch them onto the Dyson sphere to form Node and Frame.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1521",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1521",
+		"isLabTech": true,
+		"preTechs": [
 			1503
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			1132
 		],
 		"items": [
 			6001,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			12,
 			2
 		],
-		"hash_needed": 360000,
-		"unlock_recipes": [
+		"hashNeeded": 360000,
+		"unlockRecipes": [
 			80,
 			81
 		],
@@ -1922,13 +1922,13 @@
 		"name": "Vertical launching silo",
 		"description": "Use <color=\"#FD965ECC\">Small Carrier Rocket</color> to launch the <color=\"#FD965ECC\">Dyson sphere components</color> to form the Dyson sphere frames and nodes.",
 		"conclusion": "You have unlocked the Vertical Launching Silo, which can be used to launch a Small Carrier Rocket loaded with Dyson Sphere Component.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1522",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1522",
+		"isLabTech": true,
+		"preTechs": [
 			1521
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			1303
 		],
 		"items": [
@@ -1937,14 +1937,14 @@
 			6003,
 			6004
 		],
-		"item_points": [
+		"itemPoints": [
 			10,
 			10,
 			10,
 			10
 		],
-		"hash_needed": 576000,
-		"unlock_recipes": [
+		"hashNeeded": 576000,
+		"unlockRecipes": [
 			82,
 			83
 		],
@@ -1958,13 +1958,13 @@
 		"name": "Dyson sphere stress system",
 		"description": "As the latitude of the Dyson sphere nodes increases, its surface stress distribution will become more complicated and will be more difficult to maintain the balance of its stress system.",
 		"conclusion": "You have increased the latitude of the Dyson Sphere Node.",
-		"published": 1,
+		"published": true,
 		"level": 1,
-		"max_level": 6,
-		"level_coef1": 180000,
-		"icon_path": "Icons/Tech/1523",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 6,
+		"levelCoef1": 180000,
+		"iconPath": "Icons/Tech/1523",
+		"isLabTech": true,
+		"preTechs": [
 			1522
 		],
 		"items": [
@@ -1974,18 +1974,18 @@
 			6004,
 			6005
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20,
 			20,
 			20,
 			20
 		],
-		"hash_needed": 180000,
-		"unlock_functions": [
+		"hashNeeded": 180000,
+		"unlockFunctions": [
 			26
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -2010,36 +2010,36 @@
 		"name": "Basic logistics system",
 		"description": "Use the <color=\"#FD965ECC\">Conveyor belt</color> and <color=\"#FD965ECC\">Sorter</color> to transport cargo from one place to another to achieve automated production.",
 		"conclusion": "You have unlocked automated logistics, the Conveyor Belt and Sorter. You can use them to automatically transport the ores gathered in the mining machine for smelting or to load them into storage.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1601",
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1601",
+		"preTechs": [
 			1001
 		],
 		"items": [
 			1301,
 			1201
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20
 		],
-		"property_override_items": [
+		"propertyOverrideItems": [
 			6001
 		],
-		"property_item_counts": [
+		"propertyItemCounts": [
 			40
 		],
-		"hash_needed": 1800,
-		"unlock_recipes": [
+		"hashNeeded": 1800,
+		"unlockRecipes": [
 			84,
 			85,
 			86
 		],
-		"add_items": [
+		"addItems": [
 			2001,
 			2011
 		],
-		"add_item_counts": [
+		"addItemCounts": [
 			20,
 			5
 		],
@@ -2053,30 +2053,30 @@
 		"name": "Improved logistics system",
 		"description": "<color=\"#FD965ECC\">Splitter</color> can diverge cargo or balance multiple conveyor belts, making the automated production lines more diverse.\nUse TAB key to switch styles.",
 		"conclusion": "You have unlocked the Splitter. It has three different patterns, which can be used to diverge cargo or balance multiple conveyor belts.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1602",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1602",
+		"isLabTech": true,
+		"preTechs": [
 			1601
 		],
 		"items": [
 			6001
 		],
-		"item_points": [
+		"itemPoints": [
 			20
 		],
-		"hash_needed": 18000,
-		"unlock_recipes": [
+		"hashNeeded": 18000,
+		"unlockRecipes": [
 			87,
 			88,
 			117
 		],
-		"add_items": [
+		"addItems": [
 			2020,
 			2012,
 			2030
 		],
-		"add_item_counts": [
+		"addItemCounts": [
 			1,
 			5,
 			5
@@ -2091,25 +2091,25 @@
 		"name": "High-efficiency logistics system",
 		"description": "Sorter MK.III can sort cargo even faster, very useful when resources are in great demand.",
 		"conclusion": "You have unlocked a conveyor belt with a larger carrying capacity, a sorter with faster sorting speed, and storage with a larger capacity.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1603",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1603",
+		"isLabTech": true,
+		"preTechs": [
 			1602
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			1702
 		],
 		"items": [
 			6001,
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			5
 		],
-		"hash_needed": 72000,
-		"unlock_recipes": [
+		"hashNeeded": 72000,
+		"unlockRecipes": [
 			89,
 			90,
 			91
@@ -2124,13 +2124,13 @@
 		"name": "Planetary logistics system",
 		"description": "Transportation of materials around a planet can be realized through Planetary Logistics Stations and Logistics Drones after the materials technology reaches a certain level. The logistics drones will automatically transport the items after the supply-demand data is setup.",
 		"conclusion": "You have unlocked the planetary logistics system, the Logistics Station and Drone. As long as you set the conditions in the station, the drones will automatically transport cargo.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1604",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1604",
+		"isLabTech": true,
+		"preTechs": [
 			1603
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			1113,
 			3701
 		],
@@ -2138,12 +2138,12 @@
 			6001,
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			10
 		],
-		"hash_needed": 144000,
-		"unlock_recipes": [
+		"hashNeeded": 144000,
+		"unlockRecipes": [
 			92,
 			93,
 			94
@@ -2158,14 +2158,14 @@
 		"name": "Interstellar logistics system",
 		"description": "The magnificent space elevator realizes more convenient transportation of materials between planets.",
 		"conclusion": "You have unlocked the magnificent space elevator, the Interstellar Logistics Station. As long as you put logistics vessels in the station, you will realize the transportation of materials between planets.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1605",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1605",
+		"isLabTech": true,
+		"preTechs": [
 			1604,
 			1414
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			1114
 		],
 		"items": [
@@ -2173,13 +2173,13 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20,
 			2
 		],
-		"hash_needed": 216000,
-		"unlock_recipes": [
+		"hashNeeded": 216000,
+		"unlockRecipes": [
 			95,
 			96
 		],
@@ -2193,10 +2193,10 @@
 		"name": "Gas giants exploitation",
 		"description": "Gas giants contain abundant resources, and the exploitation of Gas giants marks a new level of technology.",
 		"conclusion": "You have unlocked the Orbital Collector, and you can now use it to collect the resources on the Gas giant, but will consume the collected fuel material to maintain the energy needed to work.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1606",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1606",
+		"isLabTech": true,
+		"preTechs": [
 			1605,
 			1512
 		],
@@ -2205,13 +2205,13 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			10,
 			10,
 			10
 		],
-		"hash_needed": 432000,
-		"unlock_recipes": [
+		"hashNeeded": 432000,
+		"unlockRecipes": [
 			111
 		],
 		"position": [
@@ -2224,13 +2224,13 @@
 		"name": "Integrated logistics system",
 		"description": "With a more thorough understanding of the material structure, the use of integrated logistics technology can automatically integrate two consecutive cargos into one, which greatly improves the carrying capacity of the conveyor belt.",
 		"conclusion": "You unlocked the Automatic Piler and it could be built on the conveyor belt. When the power supply is sufficient, it can automatically integrate two consecutive cargos into one, which greatly improves the carrying capacity of the conveyor belt.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1607",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1607",
+		"isLabTech": true,
+		"preTechs": [
 			1603
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			1711
 		],
 		"items": [
@@ -2238,13 +2238,13 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			10,
 			1
 		],
-		"hash_needed": 180000,
-		"unlock_recipes": [
+		"hashNeeded": 180000,
+		"unlockRecipes": [
 			120
 		],
 		"position": [
@@ -2257,32 +2257,32 @@
 		"name": "Distribution logistics system",
 		"description": "Through Logistics Distributor and Logistics Bots, transporting items between storage and Icarus can be accomplished on the same planet. They can also transport items between storages those are on this planet.",
 		"conclusion": "You have unlocked the Logistics Distributor and Logistics Bots, build it on the top of the storage and put Logistics Bots in it. After setting conditions, they will transport items to other storages or Icarus on this planet.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1608",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1608",
+		"isLabTech": true,
+		"preTechs": [
 			1602
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			1702
 		],
 		"items": [
 			6001,
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			10
 		],
-		"hash_needed": 108000,
-		"unlock_recipes": [
+		"hashNeeded": 108000,
+		"unlockRecipes": [
 			122,
 			123
 		],
-		"unlock_functions": [
+		"unlockFunctions": [
 			32
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -2307,20 +2307,20 @@
 		"name": "Electromagnetic drive",
 		"description": "Unlocks the basic power system component: Electric Motor.",
 		"conclusion": "You have unlocked the Electric Motor. It can accelerate the machine's operating, and increase the mecha's move speed in the initial stage.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1701",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1701",
+		"isLabTech": true,
+		"preTechs": [
 			1001
 		],
 		"items": [
 			6001
 		],
-		"item_points": [
+		"itemPoints": [
 			20
 		],
-		"hash_needed": 9000,
-		"unlock_recipes": [
+		"hashNeeded": 9000,
+		"unlockRecipes": [
 			97
 		],
 		"position": [
@@ -2333,22 +2333,22 @@
 		"name": "Magnetic levitation technology",
 		"description": "The magnetic force generated by the electromagnetic turbine can make objects levitate against gravity.",
 		"conclusion": "You have unlocked the Electromagnetic Turbine. You can use the magnetic force it generates to make objects levitate out of gravity.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1702",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1702",
+		"isLabTech": true,
+		"preTechs": [
 			1701
 		],
 		"items": [
 			6001,
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			5
 		],
-		"hash_needed": 72000,
-		"unlock_recipes": [
+		"hashNeeded": 72000,
+		"unlockRecipes": [
 			98
 		],
 		"position": [
@@ -2361,22 +2361,22 @@
 		"name": "Magnetic particle trap",
 		"description": "When material technology reaches a certain level, the particles can be binded by devices. Particles can also be guided to show certain properties.",
 		"conclusion": "You have unlocked the Particle Container, which can fix the particles in certain positions and guide them to show some characteristics.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1703",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1703",
+		"isLabTech": true,
+		"preTechs": [
 			1702
 		],
 		"items": [
 			6001,
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			10
 		],
-		"hash_needed": 288000,
-		"unlock_recipes": [
+		"hashNeeded": 288000,
+		"unlockRecipes": [
 			99,
 			100
 		],
@@ -2390,10 +2390,10 @@
 		"name": "Gravitational wave refraction",
 		"description": "The Graviton Lens made of strange matter can produce a particular range of spatial distortion near the lens through ingenious design, which will refract the passing graviton.",
 		"conclusion": "You have mastered the Gravitational Wave Refraction Technology, and the space warper made of Graviton lens can make mecha and logistics vessels warp.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1704",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1704",
+		"isLabTech": true,
+		"preTechs": [
 			1143,
 			1703
 		],
@@ -2402,13 +2402,13 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			12,
 			12,
 			12
 		],
-		"hash_needed": 360000,
-		"unlock_recipes": [
+		"hashNeeded": 360000,
+		"unlockRecipes": [
 			101,
 			78
 		],
@@ -2422,10 +2422,10 @@
 		"name": "Gravity matrix",
 		"description": "One of the basic source codes that keep the CentreBrain simulating, through the study of the Gravity Matrix, finally reconciled Quantum Field Theory and General Relativity.",
 		"conclusion": "You have unlocked the Gravity Matrix, one of the five source codes to keep the CentreBrain simulating, reconciling Quantum Field Theory and General Relativity.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1705",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1705",
+		"isLabTech": true,
+		"preTechs": [
 			1303,
 			1704
 		],
@@ -2434,13 +2434,13 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			10,
 			10,
 			10
 		],
-		"hash_needed": 576000,
-		"unlock_recipes": [
+		"hashNeeded": 576000,
+		"unlockRecipes": [
 			102,
 			79
 		],
@@ -2454,22 +2454,22 @@
 		"name": "Super magnetic field generator",
 		"description": "Generating high-intensity and stable artificial magnetic fields is very difficult, but it is crucial for developing other advanced technologies. Mastering super magnetic field technology is essential in the development of technology.",
 		"conclusion": "You have mastered the Super Magnetic Field Excitation Technology. Using this technology can induce material lattice distortion on the atomic scale, thereby producing high-performance materials.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1711",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1711",
+		"isLabTech": true,
+		"preTechs": [
 			1702
 		],
 		"items": [
 			6001,
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			5
 		],
-		"hash_needed": 180000,
-		"unlock_recipes": [
+		"hashNeeded": 180000,
+		"unlockRecipes": [
 			103
 		],
 		"position": [
@@ -2482,13 +2482,13 @@
 		"name": "Satellite power distribution system",
 		"description": "Using the powerful magnetic field excited by the super-magnetic ring, there is a longer power transmission distance and a larger supply area.",
 		"conclusion": "You have unlocked the Satellite Substation, which has a longer transmission distance and a larger supply area.",
-		"published": 1,
-		"icon_path": "Icons/Tech/1712",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"published": true,
+		"iconPath": "Icons/Tech/1712",
+		"isLabTech": true,
+		"preTechs": [
 			1711
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			1521
 		],
 		"items": [
@@ -2496,13 +2496,13 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			12,
 			12,
 			12
 		],
-		"hash_needed": 240000,
-		"unlock_recipes": [
+		"hashNeeded": 240000,
+		"unlockRecipes": [
 			73
 		],
 		"position": [
@@ -2515,29 +2515,29 @@
 		"name": "Mecha core",
 		"description": "Improve the mecha core and increase the upper limit of mecha core energy.",
 		"conclusion": "You have increased the Core Energy Limit of the mecha.",
-		"published": 1,
+		"published": true,
 		"level": 1,
-		"max_level": 1,
-		"icon_path": "Icons/Tech/2101",
+		"maxLevel": 1,
+		"iconPath": "Icons/Tech/2101",
 		"items": [
 			1101,
 			1104
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20
 		],
-		"property_override_items": [
+		"propertyOverrideItems": [
 			6001
 		],
-		"property_item_counts": [
+		"propertyItemCounts": [
 			20
 		],
-		"hash_needed": 3600,
-		"unlock_functions": [
+		"hashNeeded": 3600,
+		"unlockFunctions": [
 			6
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -2562,27 +2562,27 @@
 		"name": "Mecha core",
 		"description": "Improve the mecha core and greatly increase the upper limit of mecha core energy.",
 		"conclusion": "You have increased the Core Energy Limit of the mecha.",
-		"published": 1,
+		"published": true,
 		"level": 2,
-		"max_level": 2,
-		"icon_path": "Icons/Tech/2102",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 2,
+		"iconPath": "Icons/Tech/2102",
+		"isLabTech": true,
+		"preTechs": [
 			2101
 		],
 		"items": [
 			6001,
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			10,
 			10
 		],
-		"hash_needed": 36000,
-		"unlock_functions": [
+		"hashNeeded": 36000,
+		"unlockFunctions": [
 			6
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -2607,12 +2607,12 @@
 		"name": "Mecha core",
 		"description": "Improve the mecha core and greatly increase the upper limit of mecha core energy.",
 		"conclusion": "You have increased the Core Energy Limit of the mecha.",
-		"published": 1,
+		"published": true,
 		"level": 3,
-		"max_level": 3,
-		"icon_path": "Icons/Tech/2103",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 3,
+		"iconPath": "Icons/Tech/2103",
+		"isLabTech": true,
+		"preTechs": [
 			2102
 		],
 		"items": [
@@ -2620,16 +2620,16 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			10,
 			10,
 			10
 		],
-		"hash_needed": 108000,
-		"unlock_functions": [
+		"hashNeeded": 108000,
+		"unlockFunctions": [
 			6
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -2654,12 +2654,12 @@
 		"name": "Mecha core",
 		"description": "Improve the mecha core and greatly increase the upper limit of mecha core energy.",
 		"conclusion": "You have increased the Core Energy Limit of the mecha.",
-		"published": 1,
+		"published": true,
 		"level": 4,
-		"max_level": 4,
-		"icon_path": "Icons/Tech/2104",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 4,
+		"iconPath": "Icons/Tech/2104",
+		"isLabTech": true,
+		"preTechs": [
 			2103
 		],
 		"items": [
@@ -2668,17 +2668,17 @@
 			6003,
 			6004
 		],
-		"item_points": [
+		"itemPoints": [
 			6,
 			6,
 			6,
 			6
 		],
-		"hash_needed": 300000,
-		"unlock_functions": [
+		"hashNeeded": 300000,
+		"unlockFunctions": [
 			6
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -2703,12 +2703,12 @@
 		"name": "Mecha core",
 		"description": "Improve the mecha core and greatly increase the upper limit of mecha core energy.",
 		"conclusion": "You have increased the Core Energy Limit of the mecha.",
-		"published": 1,
+		"published": true,
 		"level": 5,
-		"max_level": 5,
-		"icon_path": "Icons/Tech/2105",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 5,
+		"iconPath": "Icons/Tech/2105",
+		"isLabTech": true,
+		"preTechs": [
 			2104
 		],
 		"items": [
@@ -2718,18 +2718,18 @@
 			6004,
 			6005
 		],
-		"item_points": [
+		"itemPoints": [
 			2,
 			2,
 			2,
 			2,
 			2
 		],
-		"hash_needed": 1440000,
-		"unlock_functions": [
+		"hashNeeded": 1440000,
+		"unlockFunctions": [
 			6
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -2754,27 +2754,27 @@
 		"name": "Mecha core",
 		"description": "Improve the mecha core and greatly increase the upper limit of mecha core energy.",
 		"conclusion": "You have increased the Core Energy Limit of the mecha.",
-		"published": 1,
+		"published": true,
 		"level": 6,
-		"max_level": 10000,
-		"level_coef1": -8100000,
-		"level_coef2": 900000,
-		"icon_path": "Icons/Tech/2106",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 10000,
+		"levelCoef1": -8100000,
+		"levelCoef2": 900000,
+		"iconPath": "Icons/Tech/2106",
+		"isLabTech": true,
+		"preTechs": [
 			2105
 		],
 		"items": [
 			6006
 		],
-		"item_points": [
+		"itemPoints": [
 			2
 		],
-		"hash_needed": 18000000,
-		"unlock_functions": [
+		"hashNeeded": 18000000,
+		"unlockFunctions": [
 			6
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -2799,30 +2799,30 @@
 		"name": "Mechanical frame",
 		"description": "Improve the basic move speed of the mecha.",
 		"conclusion": "You obtain faster move speed.",
-		"published": 1,
+		"published": true,
 		"level": 1,
-		"max_level": 1,
-		"icon_path": "Icons/Tech/2201",
-		"pre_techs_implicit": [
+		"maxLevel": 1,
+		"iconPath": "Icons/Tech/2201",
+		"preTechsImplicit": [
 			2101
 		],
 		"items": [
 			1203
 		],
-		"item_points": [
+		"itemPoints": [
 			30
 		],
-		"property_override_items": [
+		"propertyOverrideItems": [
 			6001
 		],
-		"property_item_counts": [
+		"propertyItemCounts": [
 			100
 		],
-		"hash_needed": 7200,
-		"unlock_functions": [
+		"hashNeeded": 7200,
+		"unlockFunctions": [
 			3
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -2847,30 +2847,30 @@
 		"name": "Mechanical frame",
 		"description": "Improve the basic move speed of the mecha, at a cost of higher energy consumption.",
 		"conclusion": "You obtain faster move speed.",
-		"published": 1,
+		"published": true,
 		"level": 2,
-		"max_level": 2,
-		"icon_path": "Icons/Tech/2202",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 2,
+		"iconPath": "Icons/Tech/2202",
+		"isLabTech": true,
+		"preTechs": [
 			2201
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2101
 		],
 		"items": [
 			6001,
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20
 		],
-		"hash_needed": 36000,
-		"unlock_functions": [
+		"hashNeeded": 36000,
+		"unlockFunctions": [
 			3
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -2895,30 +2895,30 @@
 		"name": "Mechanical frame",
 		"description": "Improve the basic move speed of the mecha, at a cost of higher energy consumption.",
 		"conclusion": "You obtain faster move speed.",
-		"published": 1,
+		"published": true,
 		"level": 3,
-		"max_level": 3,
-		"icon_path": "Icons/Tech/2203",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 3,
+		"iconPath": "Icons/Tech/2203",
+		"isLabTech": true,
+		"preTechs": [
 			2202
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2102
 		],
 		"items": [
 			6001,
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20
 		],
-		"hash_needed": 72000,
-		"unlock_functions": [
+		"hashNeeded": 72000,
+		"unlockFunctions": [
 			3
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -2943,15 +2943,15 @@
 		"name": "Mechanical frame",
 		"description": "Improve the basic move speed of the mecha, at a cost of higher energy consumption.",
 		"conclusion": "You obtain faster move speed.",
-		"published": 1,
+		"published": true,
 		"level": 4,
-		"max_level": 4,
-		"icon_path": "Icons/Tech/2204",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 4,
+		"iconPath": "Icons/Tech/2204",
+		"isLabTech": true,
+		"preTechs": [
 			2203
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2102
 		],
 		"items": [
@@ -2959,16 +2959,16 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			12,
 			12,
 			12
 		],
-		"hash_needed": 180000,
-		"unlock_functions": [
+		"hashNeeded": 180000,
+		"unlockFunctions": [
 			3
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -2993,15 +2993,15 @@
 		"name": "Mechanical frame",
 		"description": "Improve the basic move speed of the mecha, at a cost of higher energy consumption.",
 		"conclusion": "You obtain faster move speed.",
-		"published": 1,
+		"published": true,
 		"level": 5,
-		"max_level": 5,
-		"icon_path": "Icons/Tech/2205",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 5,
+		"iconPath": "Icons/Tech/2205",
+		"isLabTech": true,
+		"preTechs": [
 			2204
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2103
 		],
 		"items": [
@@ -3009,16 +3009,16 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			12,
 			12,
 			12
 		],
-		"hash_needed": 240000,
-		"unlock_functions": [
+		"hashNeeded": 240000,
+		"unlockFunctions": [
 			3
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -3043,15 +3043,15 @@
 		"name": "Mechanical frame",
 		"description": "Improve the basic move speed of the mecha, at a cost of higher energy consumption.",
 		"conclusion": "You obtain faster move speed.",
-		"published": 1,
+		"published": true,
 		"level": 6,
-		"max_level": 6,
-		"icon_path": "Icons/Tech/2206",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 6,
+		"iconPath": "Icons/Tech/2206",
+		"isLabTech": true,
+		"preTechs": [
 			2205
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2104
 		],
 		"items": [
@@ -3060,17 +3060,17 @@
 			6003,
 			6004
 		],
-		"item_points": [
+		"itemPoints": [
 			12,
 			12,
 			12,
 			12
 		],
-		"hash_needed": 300000,
-		"unlock_functions": [
+		"hashNeeded": 300000,
+		"unlockFunctions": [
 			3
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -3095,15 +3095,15 @@
 		"name": "Mechanical frame",
 		"description": "Improve the basic move speed of the mecha, at a cost of higher energy consumption.",
 		"conclusion": "You obtain faster move speed.",
-		"published": 1,
+		"published": true,
 		"level": 7,
-		"max_level": 7,
-		"icon_path": "Icons/Tech/2207",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 7,
+		"iconPath": "Icons/Tech/2207",
+		"isLabTech": true,
+		"preTechs": [
 			2206
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2104
 		],
 		"items": [
@@ -3112,17 +3112,17 @@
 			6003,
 			6004
 		],
-		"item_points": [
+		"itemPoints": [
 			12,
 			12,
 			12,
 			12
 		],
-		"hash_needed": 360000,
-		"unlock_functions": [
+		"hashNeeded": 360000,
+		"unlockFunctions": [
 			3
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -3147,15 +3147,15 @@
 		"name": "Mechanical frame",
 		"description": "Improve the basic move speed of the mecha, at a cost of higher energy consumption.",
 		"conclusion": "You obtain faster move speed.",
-		"published": 1,
+		"published": true,
 		"level": 8,
-		"max_level": 8,
-		"icon_path": "Icons/Tech/2208",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 8,
+		"iconPath": "Icons/Tech/2208",
+		"isLabTech": true,
+		"preTechs": [
 			2207
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2105
 		],
 		"items": [
@@ -3165,18 +3165,18 @@
 			6004,
 			6005
 		],
-		"item_points": [
+		"itemPoints": [
 			6,
 			6,
 			6,
 			6,
 			6
 		],
-		"hash_needed": 1200000,
-		"unlock_functions": [
+		"hashNeeded": 1200000,
+		"unlockFunctions": [
 			3
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -3201,32 +3201,32 @@
 		"name": "Inventory capacity",
 		"description": "Increase the inventory capacity, allowing the mecha to carry more items.",
 		"conclusion": "You have obtained more Inventory Capacity.",
-		"published": 1,
+		"published": true,
 		"level": 1,
-		"max_level": 1,
-		"icon_path": "Icons/Tech/2301",
-		"pre_techs_implicit": [
+		"maxLevel": 1,
+		"iconPath": "Icons/Tech/2301",
+		"preTechsImplicit": [
 			2101
 		],
 		"items": [
 			1103,
 			1301
 		],
-		"item_points": [
+		"itemPoints": [
 			60,
 			60
 		],
-		"property_override_items": [
+		"propertyOverrideItems": [
 			6001
 		],
-		"property_item_counts": [
+		"propertyItemCounts": [
 			100
 		],
-		"hash_needed": 7200,
-		"unlock_functions": [
+		"hashNeeded": 7200,
+		"unlockFunctions": [
 			5
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -3251,30 +3251,30 @@
 		"name": "Inventory capacity",
 		"description": "Increase the inventory capacity, allowing the mecha to carry more items.",
 		"conclusion": "You have obtained more Inventory Capacity.",
-		"published": 1,
+		"published": true,
 		"level": 2,
-		"max_level": 2,
-		"icon_path": "Icons/Tech/2302",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 2,
+		"iconPath": "Icons/Tech/2302",
+		"isLabTech": true,
+		"preTechs": [
 			2301
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2101
 		],
 		"items": [
 			6001,
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20
 		],
-		"hash_needed": 36000,
-		"unlock_functions": [
+		"hashNeeded": 36000,
+		"unlockFunctions": [
 			5
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -3299,15 +3299,15 @@
 		"name": "Inventory capacity",
 		"description": "Increase the inventory capacity, allowing the mecha to carry more items.",
 		"conclusion": "You have obtained more Inventory Capacity.",
-		"published": 1,
+		"published": true,
 		"level": 3,
-		"max_level": 3,
-		"icon_path": "Icons/Tech/2303",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 3,
+		"iconPath": "Icons/Tech/2303",
+		"isLabTech": true,
+		"preTechs": [
 			2302
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2102
 		],
 		"items": [
@@ -3315,17 +3315,17 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20,
 			20
 		],
-		"hash_needed": 72000,
-		"unlock_functions": [
+		"hashNeeded": 72000,
+		"unlockFunctions": [
 			5,
 			33
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -3363,15 +3363,15 @@
 		"name": "Inventory capacity",
 		"description": "Increased inventory and logistics list capacity to enable mecha to carry more items.",
 		"conclusion": "You have obtained more Inventory Capacity.",
-		"published": 1,
+		"published": true,
 		"level": 4,
-		"max_level": 4,
-		"icon_path": "Icons/Tech/2304",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 4,
+		"iconPath": "Icons/Tech/2304",
+		"isLabTech": true,
+		"preTechs": [
 			2303
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2102
 		],
 		"items": [
@@ -3379,18 +3379,18 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			12,
 			12,
 			12
 		],
-		"hash_needed": 180000,
-		"unlock_functions": [
+		"hashNeeded": 180000,
+		"unlockFunctions": [
 			5,
 			32,
 			33
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -3441,15 +3441,15 @@
 		"name": "Inventory capacity",
 		"description": "Increased inventory and logistics list capacity to enable mecha to carry more items.",
 		"conclusion": "You have obtained more Inventory Capacity.",
-		"published": 1,
+		"published": true,
 		"level": 5,
-		"max_level": 5,
-		"icon_path": "Icons/Tech/2305",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 5,
+		"iconPath": "Icons/Tech/2305",
+		"isLabTech": true,
+		"preTechs": [
 			2304
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2103
 		],
 		"items": [
@@ -3457,17 +3457,17 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			12,
 			12,
 			12
 		],
-		"hash_needed": 240000,
-		"unlock_functions": [
+		"hashNeeded": 240000,
+		"unlockFunctions": [
 			5,
 			33
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -3505,15 +3505,15 @@
 		"name": "Inventory capacity",
 		"description": "Increased inventory and logistics list capacity to enable mecha to carry more items.",
 		"conclusion": "You have obtained more Inventory Capacity.",
-		"published": 1,
+		"published": true,
 		"level": 6,
-		"max_level": 6,
-		"icon_path": "Icons/Tech/2306",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 6,
+		"iconPath": "Icons/Tech/2306",
+		"isLabTech": true,
+		"preTechs": [
 			2305
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2105
 		],
 		"items": [
@@ -3523,19 +3523,19 @@
 			6004,
 			6005
 		],
-		"item_points": [
+		"itemPoints": [
 			6,
 			6,
 			6,
 			6,
 			6
 		],
-		"hash_needed": 600000,
-		"unlock_functions": [
+		"hashNeeded": 600000,
+		"unlockFunctions": [
 			5,
 			33
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -3573,25 +3573,25 @@
 		"name": "Communication control",
 		"description": "The strong, stable communication network can allow the mecha to control more construction drones. ",
 		"conclusion": "You can now control more construction drones.",
-		"published": 1,
+		"published": true,
 		"level": 1,
-		"max_level": 1,
-		"icon_path": "Icons/Tech/2401",
-		"is_lab_tech": 1,
-		"pre_techs_implicit": [
+		"maxLevel": 1,
+		"iconPath": "Icons/Tech/2401",
+		"isLabTech": true,
+		"preTechsImplicit": [
 			2101
 		],
 		"items": [
 			6001
 		],
-		"item_points": [
+		"itemPoints": [
 			40
 		],
-		"hash_needed": 9000,
-		"unlock_functions": [
+		"hashNeeded": 9000,
+		"unlockFunctions": [
 			1
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -3616,30 +3616,30 @@
 		"name": "Communication control",
 		"description": "Increase number of construction drones controlled. \nThe more drones, the higher the building speed and energy consumption.",
 		"conclusion": "You can now control more construction drones.",
-		"published": 1,
+		"published": true,
 		"level": 2,
-		"max_level": 2,
-		"icon_path": "Icons/Tech/2402",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 2,
+		"iconPath": "Icons/Tech/2402",
+		"isLabTech": true,
+		"preTechs": [
 			2401
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2101
 		],
 		"items": [
 			6001,
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20
 		],
-		"hash_needed": 36000,
-		"unlock_functions": [
+		"hashNeeded": 36000,
+		"unlockFunctions": [
 			1
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -3664,30 +3664,30 @@
 		"name": "Communication control",
 		"description": "Each construction drone can perform more construction tasks at one time.",
 		"conclusion": "Construction drones can now perform more construction tasks at once.",
-		"published": 1,
+		"published": true,
 		"level": 3,
-		"max_level": 3,
-		"icon_path": "Icons/Tech/2403",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 3,
+		"iconPath": "Icons/Tech/2403",
+		"isLabTech": true,
+		"preTechs": [
 			2402
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2102
 		],
 		"items": [
 			6001,
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20
 		],
-		"hash_needed": 72000,
-		"unlock_functions": [
+		"hashNeeded": 72000,
+		"unlockFunctions": [
 			9
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -3712,15 +3712,15 @@
 		"name": "Communication control",
 		"description": "Increase number of construction drones controlled. \nThe more drones, the higher the building speed and energy consumption.",
 		"conclusion": "You can now control more construction drones.",
-		"published": 1,
+		"published": true,
 		"level": 4,
-		"max_level": 4,
-		"icon_path": "Icons/Tech/2404",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 4,
+		"iconPath": "Icons/Tech/2404",
+		"isLabTech": true,
+		"preTechs": [
 			2403
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2103
 		],
 		"items": [
@@ -3728,16 +3728,16 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			12,
 			12,
 			12
 		],
-		"hash_needed": 180000,
-		"unlock_functions": [
+		"hashNeeded": 180000,
+		"unlockFunctions": [
 			1
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -3762,15 +3762,15 @@
 		"name": "Communication control",
 		"description": "Increase number of construction drones controlled. \nThe more drones, the higher the building speed and energy consumption.",
 		"conclusion": "You can now control more construction drones.",
-		"published": 1,
+		"published": true,
 		"level": 5,
-		"max_level": 5,
-		"icon_path": "Icons/Tech/2405",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 5,
+		"iconPath": "Icons/Tech/2405",
+		"isLabTech": true,
+		"preTechs": [
 			2404
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2104
 		],
 		"items": [
@@ -3779,17 +3779,17 @@
 			6003,
 			6004
 		],
-		"item_points": [
+		"itemPoints": [
 			12,
 			12,
 			12,
 			12
 		],
-		"hash_needed": 300000,
-		"unlock_functions": [
+		"hashNeeded": 300000,
+		"unlockFunctions": [
 			1
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -3814,15 +3814,15 @@
 		"name": "Communication control",
 		"description": "Each construction drone can perform more construction tasks at one time.",
 		"conclusion": "Construction Drone can now perform more construction tasks at once.",
-		"published": 1,
+		"published": true,
 		"level": 6,
-		"max_level": 6,
-		"icon_path": "Icons/Tech/2406",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 6,
+		"iconPath": "Icons/Tech/2406",
+		"isLabTech": true,
+		"preTechs": [
 			2405
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2105
 		],
 		"items": [
@@ -3832,18 +3832,18 @@
 			6004,
 			6005
 		],
-		"item_points": [
+		"itemPoints": [
 			4,
 			4,
 			4,
 			4,
 			4
 		],
-		"hash_needed": 1440000,
-		"unlock_functions": [
+		"hashNeeded": 1440000,
+		"unlockFunctions": [
 			9
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -3868,30 +3868,30 @@
 		"name": "Communication control",
 		"description": "Increase number of construction drones controlled. \nThe more drones, the higher the building speed and energy consumption.",
 		"conclusion": "You can now control more Construction Drones.",
-		"published": 1,
+		"published": true,
 		"level": 7,
-		"max_level": 10000,
-		"level_coef1": -21600000,
-		"level_coef2": 1800000,
-		"icon_path": "Icons/Tech/2407",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 10000,
+		"levelCoef1": -21600000,
+		"levelCoef2": 1800000,
+		"iconPath": "Icons/Tech/2407",
+		"isLabTech": true,
+		"preTechs": [
 			2406
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2105
 		],
 		"items": [
 			6006
 		],
-		"item_points": [
+		"itemPoints": [
 			4
 		],
-		"hash_needed": 64800000,
-		"unlock_functions": [
+		"hashNeeded": 64800000,
+		"unlockFunctions": [
 			1
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -3916,11 +3916,11 @@
 		"name": "Energy circuit",
 		"description": "Increase the <color=\"#FD965ECC\">recovery speed</color> of mecha core energy. \nThe higher the fuel chamber's power, the faster the mecha converts fuel into energy.",
 		"conclusion": "Mecha now has more fuel generation. As long as there is fuel in the fuel chamber it can recover its core energy faster.",
-		"published": 1,
+		"published": true,
 		"level": 1,
-		"max_level": 1,
-		"icon_path": "Icons/Tech/2501",
-		"pre_techs_implicit": [
+		"maxLevel": 1,
+		"iconPath": "Icons/Tech/2501",
+		"preTechsImplicit": [
 			2101
 		],
 		"items": [
@@ -3928,22 +3928,22 @@
 			1006,
 			1109
 		],
-		"item_points": [
+		"itemPoints": [
 			30,
 			30,
 			30
 		],
-		"property_override_items": [
+		"propertyOverrideItems": [
 			6001
 		],
-		"property_item_counts": [
+		"propertyItemCounts": [
 			200
 		],
-		"hash_needed": 7200,
-		"unlock_functions": [
+		"hashNeeded": 7200,
+		"unlockFunctions": [
 			2
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -3968,30 +3968,30 @@
 		"name": "Energy circuit",
 		"description": "Increase the <color=\"#FD965ECC\">recovery speed</color> of mecha core energy. \nThe higher the fuel chamber's power, the faster the mecha converts fuel into energy.",
 		"conclusion": "Mecha now has more fuel generation. As long as there is fuel in the fuel chamber it can recover its core energy faster.",
-		"published": 1,
+		"published": true,
 		"level": 2,
-		"max_level": 2,
-		"icon_path": "Icons/Tech/2502",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 2,
+		"iconPath": "Icons/Tech/2502",
+		"isLabTech": true,
+		"preTechs": [
 			2501
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2102
 		],
 		"items": [
 			6001,
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20
 		],
-		"hash_needed": 72000,
-		"unlock_functions": [
+		"hashNeeded": 72000,
+		"unlockFunctions": [
 			2
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -4016,15 +4016,15 @@
 		"name": "Energy circuit",
 		"description": "Increase the <color=\"#FD965ECC\">recovery speed</color> of mecha core energy. \nThe higher the fuel chamber's power, the faster the mecha converts fuel into energy.",
 		"conclusion": "Mecha now has more fuel generation. As long as there is fuel in the fuel chamber it can recover its core energy faster.",
-		"published": 1,
+		"published": true,
 		"level": 3,
-		"max_level": 3,
-		"icon_path": "Icons/Tech/2503",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 3,
+		"iconPath": "Icons/Tech/2503",
+		"isLabTech": true,
+		"preTechs": [
 			2502
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2103
 		],
 		"items": [
@@ -4032,16 +4032,16 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20,
 			20
 		],
-		"hash_needed": 216000,
-		"unlock_functions": [
+		"hashNeeded": 216000,
+		"unlockFunctions": [
 			2
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -4066,15 +4066,15 @@
 		"name": "Energy circuit",
 		"description": "Increase the <color=\"#FD965ECC\">recovery speed</color> of mecha core energy. \nThe higher the fuel chamber's power, the faster the mecha converts fuel into energy.",
 		"conclusion": "Mecha now has more fuel generation. As long as there is fuel in the fuel chamber it can recover its core energy faster.",
-		"published": 1,
+		"published": true,
 		"level": 4,
-		"max_level": 4,
-		"icon_path": "Icons/Tech/2504",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 4,
+		"iconPath": "Icons/Tech/2504",
+		"isLabTech": true,
+		"preTechs": [
 			2503
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2104
 		],
 		"items": [
@@ -4082,16 +4082,16 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			12,
 			12,
 			12
 		],
-		"hash_needed": 600000,
-		"unlock_functions": [
+		"hashNeeded": 600000,
+		"unlockFunctions": [
 			2
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -4116,15 +4116,15 @@
 		"name": "Energy circuit",
 		"description": "Increase the <color=\"#FD965ECC\">recovery speed</color> of mecha core energy. \nThe higher the fuel chamber's power, the faster the mecha converts fuel into energy.",
 		"conclusion": "Mecha now has more fuel generation. As long as there is fuel in the fuel chamber it can recover its core energy faster.",
-		"published": 1,
+		"published": true,
 		"level": 5,
-		"max_level": 5,
-		"icon_path": "Icons/Tech/2505",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 5,
+		"iconPath": "Icons/Tech/2505",
+		"isLabTech": true,
+		"preTechs": [
 			2504
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2105
 		],
 		"items": [
@@ -4134,18 +4134,18 @@
 			6004,
 			6005
 		],
-		"item_points": [
+		"itemPoints": [
 			4,
 			4,
 			4,
 			4,
 			4
 		],
-		"hash_needed": 2700000,
-		"unlock_functions": [
+		"hashNeeded": 2700000,
+		"unlockFunctions": [
 			2
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -4170,30 +4170,30 @@
 		"name": "Energy circuit",
 		"description": "Increase the <color=\"#FD965ECC\">recovery speed</color> of mecha core energy. \nThe higher the fuel chamber's power, the faster the mecha converts fuel into energy.",
 		"conclusion": "Mecha now has more fuel generation. As long as there is fuel in the fuel chamber it can recover its core energy faster.",
-		"published": 1,
+		"published": true,
 		"level": 6,
-		"max_level": 10000,
-		"level_coef1": -16200000,
-		"level_coef2": 1800000,
-		"icon_path": "Icons/Tech/2506",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 10000,
+		"levelCoef1": -16200000,
+		"levelCoef2": 1800000,
+		"iconPath": "Icons/Tech/2506",
+		"isLabTech": true,
+		"preTechs": [
 			2505
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2105
 		],
 		"items": [
 			6006
 		],
-		"item_points": [
+		"itemPoints": [
 			4
 		],
-		"hash_needed": 36000000,
-		"unlock_functions": [
+		"hashNeeded": 36000000,
+		"unlockFunctions": [
 			2
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -4218,25 +4218,25 @@
 		"name": "Drone engine",
 		"description": "Technological advancement in drone engines increases the flight speed of construction drones.",
 		"conclusion": "Construction Drones fly faster.",
-		"published": 1,
+		"published": true,
 		"level": 1,
-		"max_level": 1,
-		"icon_path": "Icons/Tech/2601",
-		"is_lab_tech": 1,
-		"pre_techs_implicit": [
+		"maxLevel": 1,
+		"iconPath": "Icons/Tech/2601",
+		"isLabTech": true,
+		"preTechsImplicit": [
 			2101
 		],
 		"items": [
 			6001
 		],
-		"item_points": [
+		"itemPoints": [
 			40
 		],
-		"hash_needed": 18000,
-		"unlock_functions": [
+		"hashNeeded": 18000,
+		"unlockFunctions": [
 			10
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -4261,30 +4261,30 @@
 		"name": "Drone engine",
 		"description": "Increase the flight speed of construction drones, at a cost of higher energy consumption.",
 		"conclusion": "Construction Drones fly faster.",
-		"published": 1,
+		"published": true,
 		"level": 2,
-		"max_level": 2,
-		"icon_path": "Icons/Tech/2602",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 2,
+		"iconPath": "Icons/Tech/2602",
+		"isLabTech": true,
+		"preTechs": [
 			2601
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2102
 		],
 		"items": [
 			6001,
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20
 		],
-		"hash_needed": 72000,
-		"unlock_functions": [
+		"hashNeeded": 72000,
+		"unlockFunctions": [
 			10
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -4309,15 +4309,15 @@
 		"name": "Drone engine",
 		"description": "Increase the flight speed of construction drones, at a cost of higher energy consumption.",
 		"conclusion": "Construction Drones fly faster.",
-		"published": 1,
+		"published": true,
 		"level": 3,
-		"max_level": 3,
-		"icon_path": "Icons/Tech/2603",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 3,
+		"iconPath": "Icons/Tech/2603",
+		"isLabTech": true,
+		"preTechs": [
 			2602
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2103
 		],
 		"items": [
@@ -4325,16 +4325,16 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20,
 			20
 		],
-		"hash_needed": 144000,
-		"unlock_functions": [
+		"hashNeeded": 144000,
+		"unlockFunctions": [
 			10
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -4359,15 +4359,15 @@
 		"name": "Drone engine",
 		"description": "Increase the flight speed of construction drones, at a cost of higher energy consumption.",
 		"conclusion": "Construction Drones fly faster.",
-		"published": 1,
+		"published": true,
 		"level": 4,
-		"max_level": 4,
-		"icon_path": "Icons/Tech/2604",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 4,
+		"iconPath": "Icons/Tech/2604",
+		"isLabTech": true,
+		"preTechs": [
 			2603
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2104
 		],
 		"items": [
@@ -4376,17 +4376,17 @@
 			6003,
 			6004
 		],
-		"item_points": [
+		"itemPoints": [
 			12,
 			12,
 			12,
 			12
 		],
-		"hash_needed": 360000,
-		"unlock_functions": [
+		"hashNeeded": 360000,
+		"unlockFunctions": [
 			10
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -4411,15 +4411,15 @@
 		"name": "Drone engine",
 		"description": "Increase the flight speed of construction drones, at a cost of higher energy consumption.",
 		"conclusion": "Construction Drones fly faster.",
-		"published": 1,
+		"published": true,
 		"level": 5,
-		"max_level": 5,
-		"icon_path": "Icons/Tech/2605",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 5,
+		"iconPath": "Icons/Tech/2605",
+		"isLabTech": true,
+		"preTechs": [
 			2604
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2105
 		],
 		"items": [
@@ -4429,18 +4429,18 @@
 			6004,
 			6005
 		],
-		"item_points": [
+		"itemPoints": [
 			4,
 			4,
 			4,
 			4,
 			4
 		],
-		"hash_needed": 1440000,
-		"unlock_functions": [
+		"hashNeeded": 1440000,
+		"unlockFunctions": [
 			10
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -4465,30 +4465,30 @@
 		"name": "Drone engine",
 		"description": "Increase the flight speed of construction drones, at a cost of higher energy consumption.",
 		"conclusion": "Construction Drones fly faster.",
-		"published": 1,
+		"published": true,
 		"level": 6,
-		"max_level": 24,
-		"level_coef1": -18000000,
-		"level_coef2": 1800000,
-		"icon_path": "Icons/Tech/2606",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 24,
+		"levelCoef1": -18000000,
+		"levelCoef2": 1800000,
+		"iconPath": "Icons/Tech/2606",
+		"isLabTech": true,
+		"preTechs": [
 			2605
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2105
 		],
 		"items": [
 			6006
 		],
-		"item_points": [
+		"itemPoints": [
 			4
 		],
-		"hash_needed": 45000000,
-		"unlock_functions": [
+		"hashNeeded": 45000000,
+		"unlockFunctions": [
 			10
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -4513,30 +4513,30 @@
 		"name": "Mass construction",
 		"description": "With this technology, it can mass copy the existing production line planning, making construction more effective. Saved blueprints can even be used across star clusters. \n(The basic mass construction technology has a limit of facility number)",
 		"conclusion": "You can now create a blueprint\nPress [Ctrl+C] to copy a piece of production line and save as a blueprint.\nPress [Ctrl+V] to load a blueprint for mass construction.\n(Blueprints can be used across planets, planetary systems, and star clusters)",
-		"published": 1,
+		"published": true,
 		"level": 1,
-		"max_level": 1,
-		"icon_path": "Icons/Tech/2701",
-		"pre_techs_implicit": [
+		"maxLevel": 1,
+		"iconPath": "Icons/Tech/2701",
+		"preTechsImplicit": [
 			2101
 		],
 		"items": [
 			1301
 		],
-		"item_points": [
+		"itemPoints": [
 			30
 		],
-		"property_override_items": [
+		"propertyOverrideItems": [
 			6001
 		],
-		"property_item_counts": [
+		"propertyItemCounts": [
 			100
 		],
-		"hash_needed": 12000,
-		"unlock_functions": [
+		"hashNeeded": 12000,
+		"unlockFunctions": [
 			28
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -4561,28 +4561,28 @@
 		"name": "Mass construction",
 		"description": "More advanced mass construction technology, it allows using blueprints with more facilities.",
 		"conclusion": "Now, you can use blueprint with more facilities.",
-		"published": 1,
+		"published": true,
 		"level": 2,
-		"max_level": 2,
-		"icon_path": "Icons/Tech/2702",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 2,
+		"iconPath": "Icons/Tech/2702",
+		"isLabTech": true,
+		"preTechs": [
 			2701
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2101
 		],
 		"items": [
 			6001
 		],
-		"item_points": [
+		"itemPoints": [
 			30
 		],
-		"hash_needed": 36000,
-		"unlock_functions": [
+		"hashNeeded": 36000,
+		"unlockFunctions": [
 			28
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -4607,30 +4607,30 @@
 		"name": "Mass construction",
 		"description": "More advanced mass construction technology, it allows using blueprints with more facilities.",
 		"conclusion": "Now, you can use blueprint with more facilities.",
-		"published": 1,
+		"published": true,
 		"level": 3,
-		"max_level": 3,
-		"icon_path": "Icons/Tech/2703",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 3,
+		"iconPath": "Icons/Tech/2703",
+		"isLabTech": true,
+		"preTechs": [
 			2702
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2102
 		],
 		"items": [
 			6001,
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			30,
 			30
 		],
-		"hash_needed": 60000,
-		"unlock_functions": [
+		"hashNeeded": 60000,
+		"unlockFunctions": [
 			28
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -4655,15 +4655,15 @@
 		"name": "Mass construction",
 		"description": "More advanced mass construction technology, it allows using blueprints with more facilities.",
 		"conclusion": "Now, you can use blueprint with more facilities.",
-		"published": 1,
+		"published": true,
 		"level": 4,
-		"max_level": 4,
-		"icon_path": "Icons/Tech/2704",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 4,
+		"iconPath": "Icons/Tech/2704",
+		"isLabTech": true,
+		"preTechs": [
 			2703
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2103
 		],
 		"items": [
@@ -4671,16 +4671,16 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			15,
 			15,
 			15
 		],
-		"hash_needed": 192000,
-		"unlock_functions": [
+		"hashNeeded": 192000,
+		"unlockFunctions": [
 			28
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -4705,15 +4705,15 @@
 		"name": "Mass construction",
 		"description": "The ultimate mass construction technology, it allows using blueprints without limit.",
 		"conclusion": "Now, you can use blueprint without limit.",
-		"published": 1,
+		"published": true,
 		"level": 5,
-		"max_level": 5,
-		"icon_path": "Icons/Tech/2705",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 5,
+		"iconPath": "Icons/Tech/2705",
+		"isLabTech": true,
+		"preTechs": [
 			2704
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2104
 		],
 		"items": [
@@ -4722,17 +4722,17 @@
 			6003,
 			6004
 		],
-		"item_points": [
+		"itemPoints": [
 			15,
 			15,
 			15,
 			15
 		],
-		"hash_needed": 240000,
-		"unlock_functions": [
+		"hashNeeded": 240000,
+		"unlockFunctions": [
 			28
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -4757,32 +4757,32 @@
 		"name": "Drive engine",
 		"description": "Double-press <color=\"#FD965ECC\">Space</color> to lift off, and the mecha will increase the move speed by <color=\"#FD965ECC\">150%</color> in low-altitude flight mode, flying will consume a lot of energy.",
 		"conclusion": "You can now fly, and increase the move speed of <color=\"#FD965ECC\">150%</color> in the flying mode, double-press the <color=\"#FD965ECC\">Space</color> key to lift off.",
-		"published": 1,
+		"published": true,
 		"level": 1,
-		"max_level": 1,
-		"icon_path": "Icons/Tech/2901",
-		"pre_techs_implicit": [
+		"maxLevel": 1,
+		"iconPath": "Icons/Tech/2901",
+		"preTechsImplicit": [
 			2101
 		],
 		"items": [
 			1006,
 			1202
 		],
-		"item_points": [
+		"itemPoints": [
 			50,
 			20
 		],
-		"property_override_items": [
+		"propertyOverrideItems": [
 			6001
 		],
-		"property_item_counts": [
+		"propertyItemCounts": [
 			200
 		],
-		"hash_needed": 10800,
-		"unlock_functions": [
+		"hashNeeded": 10800,
+		"unlockFunctions": [
 			4
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -4807,30 +4807,30 @@
 		"name": "Drive engine",
 		"description": "Double-press <color=\"#FD965ECC\">Space</color> to lift off. Hold <color=\"#FD965ECC\">Arrow keys</color> with <color=\"#FD965ECC\">Space</color> in flight mode, which will activate sail mode at a certain altitude. In sail mode, mecha will orbit the planet at a higher speed.",
 		"conclusion": "You can now sail, double-press <color=\"#FD965ECC\">Space</color> to lift off. Hold <color=\"#FD965ECC\">Arrow keys</color> with <color=\"#FD965ECC\">Space</color> in flight mode, which will activate sail mode at a certain altitude. ",
-		"published": 1,
+		"published": true,
 		"level": 2,
-		"max_level": 2,
-		"icon_path": "Icons/Tech/2902",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 2,
+		"iconPath": "Icons/Tech/2902",
+		"isLabTech": true,
+		"preTechs": [
 			2901
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2102
 		],
 		"items": [
 			6001,
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20
 		],
-		"hash_needed": 36000,
-		"unlock_functions": [
+		"hashNeeded": 36000,
+		"unlockFunctions": [
 			4
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -4855,15 +4855,15 @@
 		"name": "Drive engine",
 		"description": "Increase the max sail speed of the mecha in space, but it will greatly increase energy consumption.",
 		"conclusion": "You have increased the sail speed of the mecha in space.",
-		"published": 1,
+		"published": true,
 		"level": 3,
-		"max_level": 3,
-		"icon_path": "Icons/Tech/2903",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 3,
+		"iconPath": "Icons/Tech/2903",
+		"isLabTech": true,
+		"preTechs": [
 			2902
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2103
 		],
 		"items": [
@@ -4871,16 +4871,16 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20,
 			20
 		],
-		"hash_needed": 180000,
-		"unlock_functions": [
+		"hashNeeded": 180000,
+		"unlockFunctions": [
 			11
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -4905,15 +4905,15 @@
 		"name": "Drive engine",
 		"description": "Using the <color=\"#FD965ECC\">CapsLock</color> key to switch on a warp, each time activate the warp will consume <color=\"#FD965ECC\">Space warper</color> x 1.",
 		"conclusion": "You have unlocked the warp, and use the <color=\"#FD965ECC\">CapsLock</color> key to switch on a warp, each time activate the warp will consume <color=\"#FD965ECC\">Space warper</color> x 1.",
-		"published": 1,
+		"published": true,
 		"level": 4,
-		"max_level": 4,
-		"icon_path": "Icons/Tech/2904",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 4,
+		"iconPath": "Icons/Tech/2904",
+		"isLabTech": true,
+		"preTechs": [
 			2903
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2104,
 			1704
 		],
@@ -4922,16 +4922,16 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			10,
 			10,
 			10
 		],
-		"hash_needed": 720000,
-		"unlock_functions": [
+		"hashNeeded": 720000,
+		"unlockFunctions": [
 			4
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -4956,12 +4956,12 @@
 		"name": "Drive engine",
 		"description": "Increase the Max Warp Speed of the mecha in space, but it will greatly increase energy consumption. \nUse [<color=\"#FD965ECC\">SHIFT</color>], [<color=\"#FD965ECC\">S</color>] to control the warp speed.",
 		"conclusion": "You have increased the Space Warp Speed of the mecha.",
-		"published": 1,
+		"published": true,
 		"level": 5,
-		"max_level": 5,
-		"icon_path": "Icons/Tech/2904",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 5,
+		"iconPath": "Icons/Tech/2904",
+		"isLabTech": true,
+		"preTechs": [
 			2904
 		],
 		"items": [
@@ -4970,17 +4970,17 @@
 			6003,
 			6005
 		],
-		"item_points": [
+		"itemPoints": [
 			10,
 			10,
 			10,
 			10
 		],
-		"hash_needed": 1080000,
-		"unlock_functions": [
+		"hashNeeded": 1080000,
+		"unlockFunctions": [
 			27
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -5005,26 +5005,26 @@
 		"name": "Drive engine",
 		"description": "Increase the Max Warp Speed of the mecha in space, but it will greatly increase energy consumption. \nUse [<color=\"#FD965ECC\">SHIFT</color>], [<color=\"#FD965ECC\">S</color>] to control the warp speed.",
 		"conclusion": "You have increased the Space Warp Speed of the mecha.",
-		"published": 1,
+		"published": true,
 		"level": 6,
-		"max_level": 100,
-		"level_coef1": -1800000,
-		"level_coef2": 360000,
-		"icon_path": "Icons/Tech/2904",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 100,
+		"levelCoef1": -1800000,
+		"levelCoef2": 360000,
+		"iconPath": "Icons/Tech/2904",
+		"isLabTech": true,
+		"preTechs": [
 			2905
 		],
 		"items": [
 			6006
 		],
-		"item_points": [
+		"itemPoints": [
 			10
 		],
-		"unlock_functions": [
+		"unlockFunctions": [
 			27
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -5049,12 +5049,12 @@
 		"name": "Solar sail life",
 		"description": "Extend the operational life of solar sails.",
 		"conclusion": "The life of a Solar Sail is longer.",
-		"published": 1,
+		"published": true,
 		"level": 1,
-		"max_level": 1,
-		"icon_path": "Icons/Tech/3101",
-		"is_lab_tech": 1,
-		"pre_techs_implicit": [
+		"maxLevel": 1,
+		"iconPath": "Icons/Tech/3101",
+		"isLabTech": true,
+		"preTechsImplicit": [
 			1503
 		],
 		"items": [
@@ -5062,16 +5062,16 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			40,
 			40,
 			40
 		],
-		"hash_needed": 36000,
-		"unlock_functions": [
+		"hashNeeded": 36000,
+		"unlockFunctions": [
 			12
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -5096,12 +5096,12 @@
 		"name": "Solar sail life",
 		"description": "Extend the operational life of solar sails.",
 		"conclusion": "The life of a Solar Sail is longer.",
-		"published": 1,
+		"published": true,
 		"level": 2,
-		"max_level": 2,
-		"icon_path": "Icons/Tech/3102",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 2,
+		"iconPath": "Icons/Tech/3102",
+		"isLabTech": true,
+		"preTechs": [
 			3101
 		],
 		"items": [
@@ -5109,16 +5109,16 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20,
 			20
 		],
-		"hash_needed": 108000,
-		"unlock_functions": [
+		"hashNeeded": 108000,
+		"unlockFunctions": [
 			12
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -5143,12 +5143,12 @@
 		"name": "Solar sail life",
 		"description": "Extend the operational life of solar sails.",
 		"conclusion": "The life of a Solar Sail is longer.",
-		"published": 1,
+		"published": true,
 		"level": 3,
-		"max_level": 3,
-		"icon_path": "Icons/Tech/3103",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 3,
+		"iconPath": "Icons/Tech/3103",
+		"isLabTech": true,
+		"preTechs": [
 			3102
 		],
 		"items": [
@@ -5156,16 +5156,16 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20,
 			20
 		],
-		"hash_needed": 144000,
-		"unlock_functions": [
+		"hashNeeded": 144000,
+		"unlockFunctions": [
 			12
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -5190,12 +5190,12 @@
 		"name": "Solar sail life",
 		"description": "Extend the operational life of solar sails.",
 		"conclusion": "The life of a Solar Sail is longer.",
-		"published": 1,
+		"published": true,
 		"level": 4,
-		"max_level": 4,
-		"icon_path": "Icons/Tech/3104",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 4,
+		"iconPath": "Icons/Tech/3104",
+		"isLabTech": true,
+		"preTechs": [
 			3103
 		],
 		"items": [
@@ -5204,17 +5204,17 @@
 			6003,
 			6004
 		],
-		"item_points": [
+		"itemPoints": [
 			12,
 			12,
 			12,
 			12
 		],
-		"hash_needed": 300000,
-		"unlock_functions": [
+		"hashNeeded": 300000,
+		"unlockFunctions": [
 			12
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -5239,12 +5239,12 @@
 		"name": "Solar sail life",
 		"description": "Extend the operational life of solar sails.",
 		"conclusion": "The life of a Solar Sail is longer.",
-		"published": 1,
+		"published": true,
 		"level": 5,
-		"max_level": 5,
-		"icon_path": "Icons/Tech/3105",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 5,
+		"iconPath": "Icons/Tech/3105",
+		"isLabTech": true,
+		"preTechs": [
 			3104
 		],
 		"items": [
@@ -5253,17 +5253,17 @@
 			6003,
 			6004
 		],
-		"item_points": [
+		"itemPoints": [
 			12,
 			12,
 			12,
 			12
 		],
-		"hash_needed": 480000,
-		"unlock_functions": [
+		"hashNeeded": 480000,
+		"unlockFunctions": [
 			12
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -5288,12 +5288,12 @@
 		"name": "Solar sail life",
 		"description": "Extend the operational life of solar sails.",
 		"conclusion": "The life of a Solar Sail is longer.",
-		"published": 1,
+		"published": true,
 		"level": 6,
-		"max_level": 6,
-		"icon_path": "Icons/Tech/3106",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 6,
+		"iconPath": "Icons/Tech/3106",
+		"isLabTech": true,
+		"preTechs": [
 			3105
 		],
 		"items": [
@@ -5302,17 +5302,17 @@
 			6003,
 			6004
 		],
-		"item_points": [
+		"itemPoints": [
 			6,
 			6,
 			6,
 			6
 		],
-		"hash_needed": 1200000,
-		"unlock_functions": [
+		"hashNeeded": 1200000,
+		"unlockFunctions": [
 			12
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -5337,12 +5337,12 @@
 		"name": "Ray transmission efficiency",
 		"description": "Reduce the energy dissipation in the solar ray transmission process to improve transmitting efficiency.",
 		"conclusion": "Solar energy loses less energy and has a higher transmission efficiency.",
-		"published": 1,
+		"published": true,
 		"level": 1,
-		"max_level": 1,
-		"icon_path": "Icons/Tech/3201",
-		"is_lab_tech": 1,
-		"pre_techs_implicit": [
+		"maxLevel": 1,
+		"iconPath": "Icons/Tech/3201",
+		"isLabTech": true,
+		"preTechsImplicit": [
 			1504
 		],
 		"items": [
@@ -5350,16 +5350,16 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			40,
 			40,
 			40
 		],
-		"hash_needed": 54000,
-		"unlock_functions": [
+		"hashNeeded": 54000,
+		"unlockFunctions": [
 			13
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -5384,12 +5384,12 @@
 		"name": "Ray transmission efficiency",
 		"description": "Reduce the energy dissipation in the solar ray transmission process to improve transmitting efficiency.",
 		"conclusion": "Solar energy loses less energy and has a higher transmission efficiency.",
-		"published": 1,
+		"published": true,
 		"level": 2,
-		"max_level": 2,
-		"icon_path": "Icons/Tech/3202",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 2,
+		"iconPath": "Icons/Tech/3202",
+		"isLabTech": true,
+		"preTechs": [
 			3201
 		],
 		"items": [
@@ -5397,16 +5397,16 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20,
 			20
 		],
-		"hash_needed": 144000,
-		"unlock_functions": [
+		"hashNeeded": 144000,
+		"unlockFunctions": [
 			13
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -5431,12 +5431,12 @@
 		"name": "Ray transmission efficiency",
 		"description": "Reduce the energy dissipation in the solar ray transmission process to improve transmitting efficiency.",
 		"conclusion": "Solar energy loses less energy and has a higher transmission efficiency.",
-		"published": 1,
+		"published": true,
 		"level": 3,
-		"max_level": 3,
-		"icon_path": "Icons/Tech/3203",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 3,
+		"iconPath": "Icons/Tech/3203",
+		"isLabTech": true,
+		"preTechs": [
 			3202
 		],
 		"items": [
@@ -5444,16 +5444,16 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20,
 			20
 		],
-		"hash_needed": 180000,
-		"unlock_functions": [
+		"hashNeeded": 180000,
+		"unlockFunctions": [
 			13
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -5478,12 +5478,12 @@
 		"name": "Ray transmission efficiency",
 		"description": "Reduce the energy dissipation in the solar ray transmission process to improve transmitting efficiency.",
 		"conclusion": "Solar energy loses less energy and has a higher transmission efficiency.",
-		"published": 1,
+		"published": true,
 		"level": 4,
-		"max_level": 4,
-		"icon_path": "Icons/Tech/3204",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 4,
+		"iconPath": "Icons/Tech/3204",
+		"isLabTech": true,
+		"preTechs": [
 			3203
 		],
 		"items": [
@@ -5492,17 +5492,17 @@
 			6003,
 			6004
 		],
-		"item_points": [
+		"itemPoints": [
 			12,
 			12,
 			12,
 			12
 		],
-		"hash_needed": 360000,
-		"unlock_functions": [
+		"hashNeeded": 360000,
+		"unlockFunctions": [
 			13
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -5527,12 +5527,12 @@
 		"name": "Ray transmission efficiency",
 		"description": "Reduce the energy dissipation in the solar ray transmission process to improve transmitting efficiency.",
 		"conclusion": "Solar energy loses less energy and has a higher transmission efficiency.",
-		"published": 1,
+		"published": true,
 		"level": 5,
-		"max_level": 5,
-		"icon_path": "Icons/Tech/3205",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 5,
+		"iconPath": "Icons/Tech/3205",
+		"isLabTech": true,
+		"preTechs": [
 			3204
 		],
 		"items": [
@@ -5541,17 +5541,17 @@
 			6003,
 			6004
 		],
-		"item_points": [
+		"itemPoints": [
 			12,
 			12,
 			12,
 			12
 		],
-		"hash_needed": 420000,
-		"unlock_functions": [
+		"hashNeeded": 420000,
+		"unlockFunctions": [
 			13
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -5576,12 +5576,12 @@
 		"name": "Ray transmission efficiency",
 		"description": "Reduce the energy dissipation in the solar ray transmission process to improve transmitting efficiency.",
 		"conclusion": "Solar energy loses less energy and has a higher transmission efficiency.",
-		"published": 1,
+		"published": true,
 		"level": 6,
-		"max_level": 6,
-		"icon_path": "Icons/Tech/3206",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 6,
+		"iconPath": "Icons/Tech/3206",
+		"isLabTech": true,
+		"preTechs": [
 			3205
 		],
 		"items": [
@@ -5591,18 +5591,18 @@
 			6004,
 			6005
 		],
-		"item_points": [
+		"itemPoints": [
 			12,
 			12,
 			12,
 			12,
 			12
 		],
-		"hash_needed": 480000,
-		"unlock_functions": [
+		"hashNeeded": 480000,
+		"unlockFunctions": [
 			13
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -5627,12 +5627,12 @@
 		"name": "Ray transmission efficiency",
 		"description": "Reduce the energy dissipation in the solar ray transmission process to improve transmitting efficiency.",
 		"conclusion": "Solar energy loses less energy and has a higher transmission efficiency.",
-		"published": 1,
+		"published": true,
 		"level": 7,
-		"max_level": 7,
-		"icon_path": "Icons/Tech/3207",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 7,
+		"iconPath": "Icons/Tech/3207",
+		"isLabTech": true,
+		"preTechs": [
 			3206
 		],
 		"items": [
@@ -5642,18 +5642,18 @@
 			6004,
 			6005
 		],
-		"item_points": [
+		"itemPoints": [
 			4,
 			4,
 			4,
 			4,
 			4
 		],
-		"hash_needed": 1620000,
-		"unlock_functions": [
+		"hashNeeded": 1620000,
+		"unlockFunctions": [
 			13
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -5678,26 +5678,26 @@
 		"name": "Ray transmission efficiency",
 		"description": "Reduce the energy dissipation in the solar ray transmission process to improve transmitting efficiency.",
 		"conclusion": "Solar energy loses less energy and has a higher transmission efficiency.",
-		"published": 1,
+		"published": true,
 		"level": 8,
-		"max_level": 10000,
-		"level_coef1": 1800000,
-		"icon_path": "Icons/Tech/3208",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 10000,
+		"levelCoef1": 1800000,
+		"iconPath": "Icons/Tech/3208",
+		"isLabTech": true,
+		"preTechs": [
 			3207
 		],
 		"items": [
 			6006
 		],
-		"item_points": [
+		"itemPoints": [
 			4
 		],
-		"hash_needed": -12600000,
-		"unlock_functions": [
+		"hashNeeded": -12600000,
+		"unlockFunctions": [
 			13
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -5722,12 +5722,12 @@
 		"name": "Sorter cargo stacking",
 		"description": "Increase the cargo stacking for sorters Mk.III.",
 		"conclusion": "Increased the number of cargo that the Sorter MK.III carries each time.",
-		"published": 1,
+		"published": true,
 		"level": 1,
-		"max_level": 1,
-		"icon_path": "Icons/Tech/3301",
-		"is_lab_tech": 1,
-		"pre_techs_implicit": [
+		"maxLevel": 1,
+		"iconPath": "Icons/Tech/3301",
+		"isLabTech": true,
+		"preTechsImplicit": [
 			1603
 		],
 		"items": [
@@ -5735,16 +5735,16 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			40,
 			40,
 			40
 		],
-		"hash_needed": 36000,
-		"unlock_functions": [
+		"hashNeeded": 36000,
+		"unlockFunctions": [
 			14
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -5769,12 +5769,12 @@
 		"name": "Sorter cargo stacking",
 		"description": "Increase the cargo stacking for sorters Mk.III.",
 		"conclusion": "Increased the number of cargo that the Sorter MK.III carries each time.",
-		"published": 1,
+		"published": true,
 		"level": 2,
-		"max_level": 2,
-		"icon_path": "Icons/Tech/3302",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 2,
+		"iconPath": "Icons/Tech/3302",
+		"isLabTech": true,
+		"preTechs": [
 			3301
 		],
 		"items": [
@@ -5782,16 +5782,16 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20,
 			20
 		],
-		"hash_needed": 108000,
-		"unlock_functions": [
+		"hashNeeded": 108000,
+		"unlockFunctions": [
 			14
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -5816,12 +5816,12 @@
 		"name": "Sorter cargo stacking",
 		"description": "Increase the cargo stacking for sorters Mk.III.",
 		"conclusion": "Increased the number of cargo that the Sorter MK.III carries each time.",
-		"published": 1,
+		"published": true,
 		"level": 3,
-		"max_level": 3,
-		"icon_path": "Icons/Tech/3303",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 3,
+		"iconPath": "Icons/Tech/3303",
+		"isLabTech": true,
+		"preTechs": [
 			3302
 		],
 		"items": [
@@ -5829,16 +5829,16 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20,
 			20
 		],
-		"hash_needed": 144000,
-		"unlock_functions": [
+		"hashNeeded": 144000,
+		"unlockFunctions": [
 			14
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -5863,12 +5863,12 @@
 		"name": "Sorter cargo stacking",
 		"description": "Increase the cargo stacking for sorters Mk.III.",
 		"conclusion": "Increased the number of cargo that the Sorter MK.III carries each time.",
-		"published": 1,
+		"published": true,
 		"level": 4,
-		"max_level": 4,
-		"icon_path": "Icons/Tech/3304",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 4,
+		"iconPath": "Icons/Tech/3304",
+		"isLabTech": true,
+		"preTechs": [
 			3303
 		],
 		"items": [
@@ -5876,16 +5876,16 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			12,
 			12,
 			12
 		],
-		"hash_needed": 300000,
-		"unlock_functions": [
+		"hashNeeded": 300000,
+		"unlockFunctions": [
 			14
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -5910,12 +5910,12 @@
 		"name": "Sorter cargo stacking",
 		"description": "Increase the cargo stacking for sorters Mk.III.",
 		"conclusion": "Increased the number of cargo that the Sorter MK.III carries each time.",
-		"published": 1,
+		"published": true,
 		"level": 5,
-		"max_level": 5,
-		"icon_path": "Icons/Tech/3305",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 5,
+		"iconPath": "Icons/Tech/3305",
+		"isLabTech": true,
+		"preTechs": [
 			3304
 		],
 		"items": [
@@ -5923,16 +5923,16 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			6,
 			6,
 			6
 		],
-		"hash_needed": 900000,
-		"unlock_functions": [
+		"hashNeeded": 900000,
+		"unlockFunctions": [
 			14
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -5957,27 +5957,27 @@
 		"name": "Distribution range",
 		"description": "Increase the distribution range of logistics bot.",
 		"conclusion": "The range of Logistics Distributor is larger.",
-		"published": 1,
+		"published": true,
 		"level": 1,
-		"max_level": 1,
-		"icon_path": "Icons/Tech/4001",
-		"is_lab_tech": 1,
-		"pre_techs_implicit": [
+		"maxLevel": 1,
+		"iconPath": "Icons/Tech/4001",
+		"isLabTech": true,
+		"preTechsImplicit": [
 			1608
 		],
 		"items": [
 			6001,
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			40,
 			40
 		],
-		"hash_needed": 36000,
-		"unlock_functions": [
+		"hashNeeded": 36000,
+		"unlockFunctions": [
 			36
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -6002,12 +6002,12 @@
 		"name": "Distribution range",
 		"description": "Increase the distribution range of logistics bot.",
 		"conclusion": "The range of Logistics Distributor is larger.",
-		"published": 1,
+		"published": true,
 		"level": 2,
-		"max_level": 2,
-		"icon_path": "Icons/Tech/4002",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 2,
+		"iconPath": "Icons/Tech/4002",
+		"isLabTech": true,
+		"preTechs": [
 			4001
 		],
 		"items": [
@@ -6015,16 +6015,16 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20,
 			20
 		],
-		"hash_needed": 108000,
-		"unlock_functions": [
+		"hashNeeded": 108000,
+		"unlockFunctions": [
 			36
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -6049,12 +6049,12 @@
 		"name": "Distribution range",
 		"description": "Increase the distribution range of logistics bot.",
 		"conclusion": "The range of Logistics Distributor is larger.",
-		"published": 1,
+		"published": true,
 		"level": 3,
-		"max_level": 3,
-		"icon_path": "Icons/Tech/4003",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 3,
+		"iconPath": "Icons/Tech/4003",
+		"isLabTech": true,
+		"preTechs": [
 			4002
 		],
 		"items": [
@@ -6062,16 +6062,16 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20,
 			20
 		],
-		"hash_needed": 144000,
-		"unlock_functions": [
+		"hashNeeded": 144000,
+		"unlockFunctions": [
 			36
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -6096,12 +6096,12 @@
 		"name": "Distribution range",
 		"description": "Increase the distribution range of logistics bot.",
 		"conclusion": "The range of Logistics Distributor is larger.",
-		"published": 1,
+		"published": true,
 		"level": 4,
-		"max_level": 4,
-		"icon_path": "Icons/Tech/4004",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 4,
+		"iconPath": "Icons/Tech/4004",
+		"isLabTech": true,
+		"preTechs": [
 			4003
 		],
 		"items": [
@@ -6110,17 +6110,17 @@
 			6003,
 			6004
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20,
 			20,
 			20
 		],
-		"hash_needed": 180000,
-		"unlock_functions": [
+		"hashNeeded": 180000,
+		"unlockFunctions": [
 			36
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -6145,12 +6145,12 @@
 		"name": "Distribution range",
 		"description": "Increase the distribution range of logistics bot.",
 		"conclusion": "The range of Logistics Distributor is larger.",
-		"published": 1,
+		"published": true,
 		"level": 5,
-		"max_level": 5,
-		"icon_path": "Icons/Tech/4005",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 5,
+		"iconPath": "Icons/Tech/4005",
+		"isLabTech": true,
+		"preTechs": [
 			4004
 		],
 		"items": [
@@ -6160,18 +6160,18 @@
 			6004,
 			6005
 		],
-		"item_points": [
+		"itemPoints": [
 			12,
 			12,
 			12,
 			12,
 			12
 		],
-		"hash_needed": 360000,
-		"unlock_functions": [
+		"hashNeeded": 360000,
+		"unlockFunctions": [
 			36
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -6196,12 +6196,12 @@
 		"name": "Logistics carrier engine",
 		"description": "Increase the flight speed of logistics drones.\nIncrease the flight speed of logistics bots.",
 		"conclusion": "Logistics Drones and Logistics Bots fly faster.",
-		"published": 1,
+		"published": true,
 		"level": 1,
-		"max_level": 1,
-		"icon_path": "Icons/Tech/3401",
-		"is_lab_tech": 1,
-		"pre_techs_implicit": [
+		"maxLevel": 1,
+		"iconPath": "Icons/Tech/3401",
+		"isLabTech": true,
+		"preTechsImplicit": [
 			1604
 		],
 		"items": [
@@ -6209,17 +6209,17 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			40,
 			40,
 			40
 		],
-		"hash_needed": 36000,
-		"unlock_functions": [
+		"hashNeeded": 36000,
+		"unlockFunctions": [
 			15,
 			34
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -6257,12 +6257,12 @@
 		"name": "Logistics carrier engine",
 		"description": "Increase the flight speed of logistics drones.\nIncrease the flight speed of logistics bots.",
 		"conclusion": "Logistics Drones and Logistics Bots fly faster.",
-		"published": 1,
+		"published": true,
 		"level": 2,
-		"max_level": 2,
-		"icon_path": "Icons/Tech/3402",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 2,
+		"iconPath": "Icons/Tech/3402",
+		"isLabTech": true,
+		"preTechs": [
 			3401
 		],
 		"items": [
@@ -6270,17 +6270,17 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20,
 			20
 		],
-		"hash_needed": 108000,
-		"unlock_functions": [
+		"hashNeeded": 108000,
+		"unlockFunctions": [
 			15,
 			34
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -6318,15 +6318,15 @@
 		"name": "Logistics carrier engine",
 		"description": "Increase the flight speed of logistics drones.\nIncrease the flight speed of logistics bots.\nIncreases the navigation speed of logistics vessels.",
 		"conclusion": "Logistics Vessels, Logistics Drones and Logistics Bots fly faster.",
-		"published": 1,
+		"published": true,
 		"level": 3,
-		"max_level": 3,
-		"icon_path": "Icons/Tech/3403",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 3,
+		"iconPath": "Icons/Tech/3403",
+		"isLabTech": true,
+		"preTechs": [
 			3402
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			1605
 		],
 		"items": [
@@ -6334,18 +6334,18 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20,
 			20
 		],
-		"hash_needed": 144000,
-		"unlock_functions": [
+		"hashNeeded": 144000,
+		"unlockFunctions": [
 			15,
 			34,
 			16
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -6396,15 +6396,15 @@
 		"name": "Logistics carrier engine",
 		"description": "Increase the flight speed of logistics drones.\nIncrease the flight speed of logistics bots.\nIncreases the navigation speed of logistics vessels.\nAllows logistics vessels to warp.",
 		"conclusion": "The Logistics Vessel can warp, but need to consume <color=\"#FD965ECC\">Space Warper</color>.\nLogistics Bots fly faster.",
-		"published": 1,
+		"published": true,
 		"level": 4,
-		"max_level": 4,
-		"icon_path": "Icons/Tech/3404",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 4,
+		"iconPath": "Icons/Tech/3404",
+		"isLabTech": true,
+		"preTechs": [
 			3403
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2904
 		],
 		"items": [
@@ -6413,20 +6413,20 @@
 			6003,
 			6004
 		],
-		"item_points": [
+		"itemPoints": [
 			12,
 			12,
 			12,
 			12
 		],
-		"hash_needed": 300000,
-		"unlock_functions": [
+		"hashNeeded": 300000,
+		"unlockFunctions": [
 			15,
 			34,
 			16,
 			17
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -6490,12 +6490,12 @@
 		"name": "Logistics carrier engine",
 		"description": "Increase the flight speed of logistics drones.\nIncrease the flight speed of logistics bots.\nIncreases the navigation speed of logistics vessels.",
 		"conclusion": "Logistics Vessels, Logistics Drones and Logistics Bots fly faster.",
-		"published": 1,
+		"published": true,
 		"level": 5,
-		"max_level": 5,
-		"icon_path": "Icons/Tech/3405",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 5,
+		"iconPath": "Icons/Tech/3405",
+		"isLabTech": true,
+		"preTechs": [
 			3404
 		],
 		"items": [
@@ -6505,20 +6505,20 @@
 			6004,
 			6005
 		],
-		"item_points": [
+		"itemPoints": [
 			12,
 			12,
 			12,
 			12,
 			12
 		],
-		"hash_needed": 360000,
-		"unlock_functions": [
+		"hashNeeded": 360000,
+		"unlockFunctions": [
 			15,
 			34,
 			16
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -6569,12 +6569,12 @@
 		"name": "Logistics carrier engine",
 		"description": "Increase the flight speed of logistics drones.\nIncrease the flight speed of logistics bots.\nIncreases the navigation speed of logistics vessels.",
 		"conclusion": "Logistics Vessels, Logistics Drones and Logistics Bots fly faster.",
-		"published": 1,
+		"published": true,
 		"level": 6,
-		"max_level": 6,
-		"icon_path": "Icons/Tech/3406",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 6,
+		"iconPath": "Icons/Tech/3406",
+		"isLabTech": true,
+		"preTechs": [
 			3405
 		],
 		"items": [
@@ -6584,20 +6584,20 @@
 			6004,
 			6005
 		],
-		"item_points": [
+		"itemPoints": [
 			4,
 			4,
 			4,
 			4,
 			4
 		],
-		"hash_needed": 1440000,
-		"unlock_functions": [
+		"hashNeeded": 1440000,
+		"unlockFunctions": [
 			15,
 			34,
 			16
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -6648,29 +6648,29 @@
 		"name": "Logistics carrier engine",
 		"description": "Increase the flight speed of logistics drones.\nIncrease the flight speed of logistics bots.\nIncreases the navigation speed of logistics vessels.",
 		"conclusion": "Logistics Vessels, Logistics Drones and Logistics Bots fly faster.",
-		"published": 1,
+		"published": true,
 		"level": 7,
-		"max_level": 10000,
-		"level_coef1": -21600000,
-		"level_coef2": 1800000,
-		"icon_path": "Icons/Tech/3407",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 10000,
+		"levelCoef1": -21600000,
+		"levelCoef2": 1800000,
+		"iconPath": "Icons/Tech/3407",
+		"isLabTech": true,
+		"preTechs": [
 			3406
 		],
 		"items": [
 			6006
 		],
-		"item_points": [
+		"itemPoints": [
 			4
 		],
-		"hash_needed": 64800000,
-		"unlock_functions": [
+		"hashNeeded": 64800000,
+		"unlockFunctions": [
 			15,
 			34,
 			16
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -6721,12 +6721,12 @@
 		"name": "Logistics carrier capacity",
 		"description": "Applying material compression technology to logistics, which greatly increases the carrying capacity of logistics drones.\nIncreases the carrying capacity of logistics bots.",
 		"conclusion": "Logistics Drones and Logistics Bots can transport more cargos each time.",
-		"published": 1,
+		"published": true,
 		"level": 1,
-		"max_level": 1,
-		"icon_path": "Icons/Tech/3501",
-		"is_lab_tech": 1,
-		"pre_techs_implicit": [
+		"maxLevel": 1,
+		"iconPath": "Icons/Tech/3501",
+		"isLabTech": true,
+		"preTechsImplicit": [
 			1604
 		],
 		"items": [
@@ -6734,17 +6734,17 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			40,
 			40,
 			40
 		],
-		"hash_needed": 36000,
-		"unlock_functions": [
+		"hashNeeded": 36000,
+		"unlockFunctions": [
 			35,
 			18
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -6782,12 +6782,12 @@
 		"name": "Logistics carrier capacity",
 		"description": "Increases the carrying capacity of logistics drones.\nIncreases the carrying capacity of logistics bots.",
 		"conclusion": "Logistics Drones and Logistics Bots can transport more cargos each time.",
-		"published": 1,
+		"published": true,
 		"level": 2,
-		"max_level": 2,
-		"icon_path": "Icons/Tech/3502",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 2,
+		"iconPath": "Icons/Tech/3502",
+		"isLabTech": true,
+		"preTechs": [
 			3501
 		],
 		"items": [
@@ -6795,17 +6795,17 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20,
 			20
 		],
-		"hash_needed": 108000,
-		"unlock_functions": [
+		"hashNeeded": 108000,
+		"unlockFunctions": [
 			35,
 			18
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -6843,15 +6843,15 @@
 		"name": "Logistics carrier capacity",
 		"description": "Increases the carrying capacity of logistics drones. \nIncreases the carrying capacity of logistics bots.\nIncreases the carrying capacity of logistics vessels.",
 		"conclusion": "Logistics Vessels, Logistics Drones and Logistics Bots can transport more cargos each time.",
-		"published": 1,
+		"published": true,
 		"level": 3,
-		"max_level": 3,
-		"icon_path": "Icons/Tech/3503",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 3,
+		"iconPath": "Icons/Tech/3503",
+		"isLabTech": true,
+		"preTechs": [
 			3502
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			1605
 		],
 		"items": [
@@ -6859,18 +6859,18 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20,
 			20
 		],
-		"hash_needed": 144000,
-		"unlock_functions": [
+		"hashNeeded": 144000,
+		"unlockFunctions": [
 			35,
 			18,
 			19
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -6921,12 +6921,12 @@
 		"name": "Logistics carrier capacity",
 		"description": "Increases the carrying capacity of logistics drones. \nIncreases the carrying capacity of logistics bots.\nIncreases the carrying capacity of logistics vessels.",
 		"conclusion": "Logistics Vessels, Logistics Drones and Logistics Bots can transport more cargos each time.",
-		"published": 1,
+		"published": true,
 		"level": 4,
-		"max_level": 4,
-		"icon_path": "Icons/Tech/3504",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 4,
+		"iconPath": "Icons/Tech/3504",
+		"isLabTech": true,
+		"preTechs": [
 			3503
 		],
 		"items": [
@@ -6934,18 +6934,18 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			12,
 			12,
 			12
 		],
-		"hash_needed": 300000,
-		"unlock_functions": [
+		"hashNeeded": 300000,
+		"unlockFunctions": [
 			35,
 			18,
 			19
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -6996,12 +6996,12 @@
 		"name": "Logistics carrier capacity",
 		"description": "Increases the carrying capacity of logistics drones. \nIncreases the carrying capacity of logistics bots.\nIncreases the carrying capacity of logistics vessels.",
 		"conclusion": "Logistics Vessels, Logistics Drones and Logistics Bots can transport more cargos each time.",
-		"published": 1,
+		"published": true,
 		"level": 5,
-		"max_level": 5,
-		"icon_path": "Icons/Tech/3505",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 5,
+		"iconPath": "Icons/Tech/3505",
+		"isLabTech": true,
+		"preTechs": [
 			3504
 		],
 		"items": [
@@ -7010,19 +7010,19 @@
 			6003,
 			6004
 		],
-		"item_points": [
+		"itemPoints": [
 			6,
 			6,
 			6,
 			6
 		],
-		"hash_needed": 720000,
-		"unlock_functions": [
+		"hashNeeded": 720000,
+		"unlockFunctions": [
 			35,
 			18,
 			19
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -7073,12 +7073,12 @@
 		"name": "Logistics carrier capacity",
 		"description": "Increases the carrying capacity of logistics drones. \nIncreases the carrying capacity of logistics bots.\nIncreases the carrying capacity of logistics vessels.",
 		"conclusion": "Logistics Vessels, Logistics Drones and Logistics Bots can transport more cargos each time.",
-		"published": 1,
+		"published": true,
 		"level": 6,
-		"max_level": 6,
-		"icon_path": "Icons/Tech/3506",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 6,
+		"iconPath": "Icons/Tech/3506",
+		"isLabTech": true,
+		"preTechs": [
 			3505
 		],
 		"items": [
@@ -7087,19 +7087,19 @@
 			6003,
 			6004
 		],
-		"item_points": [
+		"itemPoints": [
 			6,
 			6,
 			6,
 			6
 		],
-		"hash_needed": 960000,
-		"unlock_functions": [
+		"hashNeeded": 960000,
+		"unlockFunctions": [
 			35,
 			18,
 			19
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -7150,12 +7150,12 @@
 		"name": "Logistics carrier capacity",
 		"description": "Increases the carrying capacity of logistics drones. \nIncreases the carrying capacity of logistics bots.\nIncreases the carrying capacity of logistics vessels.",
 		"conclusion": "Logistics Vessels, Logistics Drones and Logistics Bots can transport more cargos each time.",
-		"published": 1,
+		"published": true,
 		"level": 7,
-		"max_level": 7,
-		"icon_path": "Icons/Tech/3507",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 7,
+		"iconPath": "Icons/Tech/3507",
+		"isLabTech": true,
+		"preTechs": [
 			3506
 		],
 		"items": [
@@ -7165,20 +7165,20 @@
 			6004,
 			6005
 		],
-		"item_points": [
+		"itemPoints": [
 			3,
 			3,
 			3,
 			3,
 			3
 		],
-		"hash_needed": 2400000,
-		"unlock_functions": [
+		"hashNeeded": 2400000,
+		"unlockFunctions": [
 			35,
 			18,
 			19
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -7229,12 +7229,12 @@
 		"name": "Logistics carrier capacity",
 		"description": "Increases the carrying capacity of logistics drones. \nIncreases the carrying capacity of logistics bots.\nIncreases the carrying capacity of logistics vessels.",
 		"conclusion": "Logistics Vessels, Logistics Drones and Logistics Bots can transport more cargos each time.",
-		"published": 1,
+		"published": true,
 		"level": 8,
-		"max_level": 8,
-		"icon_path": "Icons/Tech/3508",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 8,
+		"iconPath": "Icons/Tech/3508",
+		"isLabTech": true,
+		"preTechs": [
 			3507
 		],
 		"items": [
@@ -7244,19 +7244,19 @@
 			6004,
 			6005
 		],
-		"item_points": [
+		"itemPoints": [
 			3,
 			3,
 			3,
 			3,
 			3
 		],
-		"hash_needed": 4800000,
-		"unlock_functions": [
+		"hashNeeded": 4800000,
+		"unlockFunctions": [
 			18,
 			19
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -7294,29 +7294,29 @@
 		"name": "Logistics carrier capacity",
 		"description": "Increases the carrying capacity of logistics drones. \nIncreases the carrying capacity of logistics bots.\nIncreases the carrying capacity of logistics vessels.\nIncrease the storage capacity of the logistics stations.",
 		"conclusion": "Logistics Vessels, Logistics Drones and Logistics Bots can transport more cargos each time.\nPlanetary Logistics Station and Interstellar Logistics Station can storge more cargos.",
-		"published": 1,
+		"published": true,
 		"level": 9,
-		"max_level": 11,
-		"level_coef1": 2400000,
-		"icon_path": "Icons/Tech/3509",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 11,
+		"levelCoef1": 2400000,
+		"iconPath": "Icons/Tech/3509",
+		"isLabTech": true,
+		"preTechs": [
 			3508
 		],
 		"items": [
 			6006
 		],
-		"item_points": [
+		"itemPoints": [
 			3
 		],
-		"hash_needed": -14400000,
-		"unlock_functions": [
+		"hashNeeded": -14400000,
+		"unlockFunctions": [
 			18,
 			19,
 			30,
 			31
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -7380,29 +7380,29 @@
 		"name": "Logistics carrier capacity",
 		"description": "Increases the carrying capacity of logistics drones. \nIncreases the carrying capacity of logistics bots.\nIncreases the carrying capacity of logistics vessels.\nIncrease the storage capacity of the logistics stations.",
 		"conclusion": "Logistics Vessels, Logistics Drones and Logistics Bots can transport more cargos each time.\nPlanetary Logistics Station and Interstellar Logistics Station can storge more cargos.",
-		"published": 1,
+		"published": true,
 		"level": 12,
-		"max_level": 13,
-		"level_coef1": 4800000,
-		"icon_path": "Icons/Tech/3510",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 13,
+		"levelCoef1": 4800000,
+		"iconPath": "Icons/Tech/3510",
+		"isLabTech": true,
+		"preTechs": [
 			3509
 		],
 		"items": [
 			6006
 		],
-		"item_points": [
+		"itemPoints": [
 			3
 		],
-		"hash_needed": -43200000,
-		"unlock_functions": [
+		"hashNeeded": -43200000,
+		"unlockFunctions": [
 			18,
 			19,
 			30,
 			31
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -7466,25 +7466,25 @@
 		"name": "Logistics Station integrated logistics",
 		"description": "You can set the output cargo stack count in the \"Configuration\" of the Logistics Station. If you check the \"Use Tech Limit\", it will automatically default to the maximum cargo stack count allowed by the current unlocked technology.",
 		"conclusion": "You can now set the output cargos stack count in the \"Configuration\" of the Planetary Logistics Station and Interstellar Logistics Station. If you check the \"Use Tech Limit\", it will automatically default to the maximum cargo stack count allowed by the current unlocked technology.",
-		"published": 1,
+		"published": true,
 		"level": 1,
-		"max_level": 1,
-		"icon_path": "Icons/Tech/3801",
-		"is_lab_tech": 1,
-		"pre_techs_implicit": [
+		"maxLevel": 1,
+		"iconPath": "Icons/Tech/3801",
+		"isLabTech": true,
+		"preTechsImplicit": [
 			3508
 		],
 		"items": [
 			6006
 		],
-		"item_points": [
+		"itemPoints": [
 			3
 		],
-		"hash_needed": 9600000,
-		"unlock_functions": [
+		"hashNeeded": 9600000,
+		"unlockFunctions": [
 			29
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -7509,29 +7509,29 @@
 		"name": "Logistics Station integrated logistics",
 		"description": "Increase the cargo stack count for Planetary Logistics Station and Interstellar Logistics Station.",
 		"conclusion": "Now the output cargos stack count of Planetary Logistics Station and Interstellar Logistics Station has increased, you can choose the cargo stack count in the \"Configuration\".",
-		"published": 1,
+		"published": true,
 		"level": 2,
-		"max_level": 2,
-		"icon_path": "Icons/Tech/3802",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 2,
+		"iconPath": "Icons/Tech/3802",
+		"isLabTech": true,
+		"preTechs": [
 			3801
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			3509
 		],
-		"pre_techs_max": 1,
+		"preTechsMax": true,
 		"items": [
 			6006
 		],
-		"item_points": [
+		"itemPoints": [
 			2
 		],
-		"hash_needed": 28800000,
-		"unlock_functions": [
+		"hashNeeded": 28800000,
+		"unlockFunctions": [
 			29
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -7556,29 +7556,29 @@
 		"name": "Logistics Station integrated logistics",
 		"description": "Increase the cargo stack count for Planetary Logistics Station and Interstellar Logistics Station.",
 		"conclusion": "Now the output cargos stack count of Planetary Logistics Station and Interstellar Logistics Station has increased, you can choose the cargo stack count in the \"Configuration\".",
-		"published": 1,
+		"published": true,
 		"level": 3,
-		"max_level": 3,
-		"icon_path": "Icons/Tech/3803",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 3,
+		"iconPath": "Icons/Tech/3803",
+		"isLabTech": true,
+		"preTechs": [
 			3802
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			3510
 		],
-		"pre_techs_max": 1,
+		"preTechsMax": true,
 		"items": [
 			6006
 		],
-		"item_points": [
+		"itemPoints": [
 			2
 		],
-		"hash_needed": 43200000,
-		"unlock_functions": [
+		"hashNeeded": 43200000,
+		"unlockFunctions": [
 			29
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -7603,28 +7603,28 @@
 		"name": "Veins utilization",
 		"description": "Maximizes the utilization of resources, which can greatly reduce the ores consumed in each mining operation and increase the mining speed.",
 		"conclusion": "Each mining operation consumes fewer veins and the mining speed is faster.",
-		"published": 1,
+		"published": true,
 		"level": 1,
-		"max_level": 1,
-		"icon_path": "Icons/Tech/3601",
-		"is_lab_tech": 1,
-		"pre_techs_implicit": [
+		"maxLevel": 1,
+		"iconPath": "Icons/Tech/3601",
+		"isLabTech": true,
+		"preTechsImplicit": [
 			1001
 		],
 		"items": [
 			6001,
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			40,
 			40
 		],
-		"hash_needed": 36000,
-		"unlock_functions": [
+		"hashNeeded": 36000,
+		"unlockFunctions": [
 			20,
 			21
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -7662,12 +7662,12 @@
 		"name": "Veins utilization",
 		"description": "Reduce the consumed ores in each mining operation. \nIncreases the mining speed.",
 		"conclusion": "Each mining operation consumes fewer veins and the mining speed is faster.",
-		"published": 1,
+		"published": true,
 		"level": 2,
-		"max_level": 2,
-		"icon_path": "Icons/Tech/3602",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 2,
+		"iconPath": "Icons/Tech/3602",
+		"isLabTech": true,
+		"preTechs": [
 			3601
 		],
 		"items": [
@@ -7675,17 +7675,17 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20,
 			20
 		],
-		"hash_needed": 180000,
-		"unlock_functions": [
+		"hashNeeded": 180000,
+		"unlockFunctions": [
 			20,
 			21
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -7723,12 +7723,12 @@
 		"name": "Veins utilization",
 		"description": "Reduce the consumed ores in each mining operation. \nIncreases the mining speed.",
 		"conclusion": "Each mining operation consumes fewer veins and the mining speed is faster.",
-		"published": 1,
+		"published": true,
 		"level": 3,
-		"max_level": 3,
-		"icon_path": "Icons/Tech/3603",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 3,
+		"iconPath": "Icons/Tech/3603",
+		"isLabTech": true,
+		"preTechs": [
 			3602
 		],
 		"items": [
@@ -7737,18 +7737,18 @@
 			6003,
 			6004
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20,
 			20,
 			20
 		],
-		"hash_needed": 180000,
-		"unlock_functions": [
+		"hashNeeded": 180000,
+		"unlockFunctions": [
 			20,
 			21
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -7786,12 +7786,12 @@
 		"name": "Veins utilization",
 		"description": "Reduce the consumed ores in each mining operation. \nIncreases the mining speed.",
 		"conclusion": "Each mining operation consumes fewer veins and the mining speed is faster.",
-		"published": 1,
+		"published": true,
 		"level": 4,
-		"max_level": 4,
-		"icon_path": "Icons/Tech/3604",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 4,
+		"iconPath": "Icons/Tech/3604",
+		"isLabTech": true,
+		"preTechs": [
 			3603
 		],
 		"items": [
@@ -7800,18 +7800,18 @@
 			6003,
 			6004
 		],
-		"item_points": [
+		"itemPoints": [
 			12,
 			12,
 			12,
 			12
 		],
-		"hash_needed": 480000,
-		"unlock_functions": [
+		"hashNeeded": 480000,
+		"unlockFunctions": [
 			20,
 			21
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -7849,12 +7849,12 @@
 		"name": "Veins utilization",
 		"description": "Reduce the consumed ores in each mining operation. \nIncreases the mining speed.",
 		"conclusion": "Each mining operation consumes fewer veins and the mining speed is faster.",
-		"published": 1,
+		"published": true,
 		"level": 5,
-		"max_level": 5,
-		"icon_path": "Icons/Tech/3605",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 5,
+		"iconPath": "Icons/Tech/3605",
+		"isLabTech": true,
+		"preTechs": [
 			3604
 		],
 		"items": [
@@ -7864,19 +7864,19 @@
 			6004,
 			6005
 		],
-		"item_points": [
+		"itemPoints": [
 			4,
 			4,
 			4,
 			4,
 			4
 		],
-		"hash_needed": 1800000,
-		"unlock_functions": [
+		"hashNeeded": 1800000,
+		"unlockFunctions": [
 			20,
 			21
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -7914,27 +7914,27 @@
 		"name": "Veins utilization",
 		"description": "Reduce the consumed ores in each mining operation. \nIncreases the mining speed.",
 		"conclusion": "Each mining operation consumes fewer veins and the mining speed is faster.",
-		"published": 1,
+		"published": true,
 		"level": 6,
-		"max_level": 10000,
-		"level_coef1": 3600000,
-		"icon_path": "Icons/Tech/3606",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 10000,
+		"levelCoef1": 3600000,
+		"iconPath": "Icons/Tech/3606",
+		"isLabTech": true,
+		"preTechs": [
 			3605
 		],
 		"items": [
 			6006
 		],
-		"item_points": [
+		"itemPoints": [
 			4
 		],
-		"hash_needed": -18000000,
-		"unlock_functions": [
+		"hashNeeded": -18000000,
+		"unlockFunctions": [
 			20,
 			21
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -7972,26 +7972,26 @@
 		"name": "Vertical construction",
 		"description": "Increase vertical construction layers of storage, storage tank, and matrix lab to utilize space more effectively.",
 		"conclusion": "Storages, Storage Tank, and Matrix Lab can have more vertical construction layers.",
-		"published": 1,
+		"published": true,
 		"level": 1,
-		"max_level": 1,
-		"icon_path": "Icons/Tech/3701",
-		"is_lab_tech": 1,
-		"pre_techs_implicit": [
+		"maxLevel": 1,
+		"iconPath": "Icons/Tech/3701",
+		"isLabTech": true,
+		"preTechsImplicit": [
 			1601
 		],
 		"items": [
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			40
 		],
-		"hash_needed": 36000,
-		"unlock_functions": [
+		"hashNeeded": 36000,
+		"unlockFunctions": [
 			24,
 			25
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -8029,26 +8029,26 @@
 		"name": "Vertical construction",
 		"description": "Increase vertical construction layers of storage, storage tank, and matrix lab to utilize space more effectively.",
 		"conclusion": "Storages, Storage Tank, and Matrix Lab can have more vertical construction layers.",
-		"published": 1,
+		"published": true,
 		"level": 2,
-		"max_level": 2,
-		"icon_path": "Icons/Tech/3702",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 2,
+		"iconPath": "Icons/Tech/3702",
+		"isLabTech": true,
+		"preTechs": [
 			3701
 		],
 		"items": [
 			6002
 		],
-		"item_points": [
+		"itemPoints": [
 			20
 		],
-		"hash_needed": 108000,
-		"unlock_functions": [
+		"hashNeeded": 108000,
+		"unlockFunctions": [
 			24,
 			25
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -8086,28 +8086,28 @@
 		"name": "Vertical construction",
 		"description": "Increase vertical construction layers of storage, storage tank, and matrix lab to utilize space more effectively.",
 		"conclusion": "Storages, Storage Tank, and Matrix Lab can have more vertical construction layers.",
-		"published": 1,
+		"published": true,
 		"level": 3,
-		"max_level": 3,
-		"icon_path": "Icons/Tech/3703",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 3,
+		"iconPath": "Icons/Tech/3703",
+		"isLabTech": true,
+		"preTechs": [
 			3702
 		],
 		"items": [
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			20,
 			20
 		],
-		"hash_needed": 144000,
-		"unlock_functions": [
+		"hashNeeded": 144000,
+		"unlockFunctions": [
 			24,
 			25
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -8145,12 +8145,12 @@
 		"name": "Vertical construction",
 		"description": "Increase vertical construction layers of storage, storage tank, and matrix lab to utilize space more effectively.",
 		"conclusion": "Storages, Storage Tank, and Matrix Lab can have more vertical construction layers.",
-		"published": 1,
+		"published": true,
 		"level": 4,
-		"max_level": 4,
-		"icon_path": "Icons/Tech/3704",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 4,
+		"iconPath": "Icons/Tech/3704",
+		"isLabTech": true,
+		"preTechs": [
 			3703
 		],
 		"items": [
@@ -8158,17 +8158,17 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			12,
 			12,
 			12
 		],
-		"hash_needed": 300000,
-		"unlock_functions": [
+		"hashNeeded": 300000,
+		"unlockFunctions": [
 			24,
 			25
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -8206,12 +8206,12 @@
 		"name": "Vertical construction",
 		"description": "Increase vertical construction layers of storage, storage tank, and matrix lab to utilize space more effectively.",
 		"conclusion": "Storages, Storage Tank, and Matrix Lab can have more vertical construction layers.",
-		"published": 1,
+		"published": true,
 		"level": 5,
-		"max_level": 5,
-		"icon_path": "Icons/Tech/3705",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 5,
+		"iconPath": "Icons/Tech/3705",
+		"isLabTech": true,
+		"preTechs": [
 			3704
 		],
 		"items": [
@@ -8219,17 +8219,17 @@
 			6002,
 			6003
 		],
-		"item_points": [
+		"itemPoints": [
 			12,
 			12,
 			12
 		],
-		"hash_needed": 480000,
-		"unlock_functions": [
+		"hashNeeded": 480000,
+		"unlockFunctions": [
 			24,
 			25
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -8267,12 +8267,12 @@
 		"name": "Vertical construction",
 		"description": "Increase vertical construction layers of storage, storage tank, and matrix lab to utilize space more effectively.",
 		"conclusion": "Storages, Storage Tank, and Matrix Lab can have more vertical construction layers.",
-		"published": 1,
+		"published": true,
 		"level": 6,
-		"max_level": 6,
-		"icon_path": "Icons/Tech/3706",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 6,
+		"iconPath": "Icons/Tech/3706",
+		"isLabTech": true,
+		"preTechs": [
 			3705
 		],
 		"items": [
@@ -8281,18 +8281,18 @@
 			6003,
 			6005
 		],
-		"item_points": [
+		"itemPoints": [
 			6,
 			6,
 			6,
 			6
 		],
-		"hash_needed": 1200000,
-		"unlock_functions": [
+		"hashNeeded": 1200000,
+		"unlockFunctions": [
 			24,
 			25
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -8330,25 +8330,25 @@
 		"name": "Research speed",
 		"description": "Strong computing power and speed greatly improve the research speed.",
 		"conclusion": "Improved the research speed of the Matrix Lab.",
-		"published": 1,
+		"published": true,
 		"level": 1,
-		"max_level": 1,
-		"icon_path": "Icons/Tech/3901",
-		"is_lab_tech": 1,
-		"pre_techs_implicit": [
+		"maxLevel": 1,
+		"iconPath": "Icons/Tech/3901",
+		"isLabTech": true,
+		"preTechsImplicit": [
 			1312
 		],
 		"items": [
 			6004
 		],
-		"item_points": [
+		"itemPoints": [
 			6
 		],
-		"hash_needed": 600000,
-		"unlock_functions": [
+		"hashNeeded": 600000,
+		"unlockFunctions": [
 			22
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -8373,25 +8373,25 @@
 		"name": "Research speed",
 		"description": "Strong computing power and speed greatly improve the research speed.",
 		"conclusion": "Improved the research speed of the Matrix Lab.",
-		"published": 1,
+		"published": true,
 		"level": 2,
-		"max_level": 2,
-		"icon_path": "Icons/Tech/3902",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 2,
+		"iconPath": "Icons/Tech/3902",
+		"isLabTech": true,
+		"preTechs": [
 			3901
 		],
 		"items": [
 			6004
 		],
-		"item_points": [
+		"itemPoints": [
 			6
 		],
-		"hash_needed": 1200000,
-		"unlock_functions": [
+		"hashNeeded": 1200000,
+		"unlockFunctions": [
 			22
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -8416,25 +8416,25 @@
 		"name": "Research speed",
 		"description": "Strong computing power and speed greatly improve the research speed.",
 		"conclusion": "Improved the research speed of the Matrix Lab.",
-		"published": 1,
+		"published": true,
 		"level": 3,
-		"max_level": 3,
-		"icon_path": "Icons/Tech/3903",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 3,
+		"iconPath": "Icons/Tech/3903",
+		"isLabTech": true,
+		"preTechs": [
 			3902
 		],
 		"items": [
 			6004
 		],
-		"item_points": [
+		"itemPoints": [
 			6
 		],
-		"hash_needed": 2400000,
-		"unlock_functions": [
+		"hashNeeded": 2400000,
+		"unlockFunctions": [
 			22
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -8459,26 +8459,26 @@
 		"name": "Research speed",
 		"description": "Strong computing power and speed greatly improve the research speed.",
 		"conclusion": "Improved the research speed of the Matrix Lab.",
-		"published": 1,
+		"published": true,
 		"level": 4,
-		"max_level": 10000,
-		"level_coef1": 14400000,
-		"icon_path": "Icons/Tech/3904",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 10000,
+		"levelCoef1": 14400000,
+		"iconPath": "Icons/Tech/3904",
+		"isLabTech": true,
+		"preTechs": [
 			3903
 		],
 		"items": [
 			6006
 		],
-		"item_points": [
+		"itemPoints": [
 			2
 		],
-		"hash_needed": -43200000,
-		"unlock_functions": [
+		"hashNeeded": -43200000,
+		"unlockFunctions": [
 			22
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -8503,22 +8503,22 @@
 		"name": "Universe exploration",
 		"description": "The first step on the planet is the first step toward universe exploration, everything is strange and fascinating!",
 		"conclusion": "You can now view the Vein Distribution on the planet and easily find the location of different veins.",
-		"published": 1,
+		"published": true,
 		"level": 1,
-		"max_level": 1,
-		"icon_path": "Icons/Tech/4101",
-		"is_lab_tech": 1,
+		"maxLevel": 1,
+		"iconPath": "Icons/Tech/4101",
+		"isLabTech": true,
 		"items": [
 			6001
 		],
-		"item_points": [
+		"itemPoints": [
 			20
 		],
-		"hash_needed": 1800,
-		"unlock_functions": [
+		"hashNeeded": 1800,
+		"unlockFunctions": [
 			23
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -8543,25 +8543,25 @@
 		"name": "Universe exploration",
 		"description": "View the ore reserves of the local planetary system.",
 		"conclusion": "You can now view the Vein Reserves of the entire planetary system. It is easier to plan different production lines.",
-		"published": 1,
+		"published": true,
 		"level": 2,
-		"max_level": 2,
-		"icon_path": "Icons/Tech/4102",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 2,
+		"iconPath": "Icons/Tech/4102",
+		"isLabTech": true,
+		"preTechs": [
 			4101
 		],
 		"items": [
 			6001
 		],
-		"item_points": [
+		"itemPoints": [
 			20
 		],
-		"hash_needed": 36000,
-		"unlock_functions": [
+		"hashNeeded": 36000,
+		"unlockFunctions": [
 			23
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -8586,15 +8586,15 @@
 		"name": "Universe exploration",
 		"description": "View the ore reserves of planetary systems within 6 light-years, keeping everything in control.",
 		"conclusion": "You can now view the Vein Reserves of a planetary system within 6 light-years, so you can freely collect resources within 6 light-years.",
-		"published": 1,
+		"published": true,
 		"level": 3,
-		"max_level": 3,
-		"icon_path": "Icons/Tech/4103",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 3,
+		"iconPath": "Icons/Tech/4103",
+		"isLabTech": true,
+		"preTechs": [
 			4102
 		],
-		"pre_techs_implicit": [
+		"preTechsImplicit": [
 			2902
 		],
 		"items": [
@@ -8602,16 +8602,16 @@
 			6002,
 			6004
 		],
-		"item_points": [
+		"itemPoints": [
 			12,
 			12,
 			12
 		],
-		"hash_needed": 300000,
-		"unlock_functions": [
+		"hashNeeded": 300000,
+		"unlockFunctions": [
 			23
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [
@@ -8636,12 +8636,12 @@
 		"name": "Universe exploration",
 		"description": "There are rare veins in the universe, finding them will greatly increase your productivity.",
 		"conclusion": "You can now view the Vein Reserves of the entire star cluster, as well as the details of the rare veins in each planet system. The inter-galactic industrial empire is about to realize.",
-		"published": 1,
+		"published": true,
 		"level": 4,
-		"max_level": 4,
-		"icon_path": "Icons/Tech/4104",
-		"is_lab_tech": 1,
-		"pre_techs": [
+		"maxLevel": 4,
+		"iconPath": "Icons/Tech/4104",
+		"isLabTech": true,
+		"preTechs": [
 			4103
 		],
 		"items": [
@@ -8650,17 +8650,17 @@
 			6004,
 			6005
 		],
-		"item_points": [
+		"itemPoints": [
 			6,
 			6,
 			6,
 			6
 		],
-		"hash_needed": 1200000,
-		"unlock_functions": [
+		"hashNeeded": 1200000,
+		"unlockFunctions": [
 			23
 		],
-		"unlock_values": [
+		"unlockValues": [
 			{
 				"type": "Buffer",
 				"data": [

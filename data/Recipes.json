@@ -5,21 +5,21 @@
 		"description": null,
 		"sid": "1101",
 		"type": "SMELT",
-		"handcraft": 1,
-		"time_spend": 60,
+		"handcraft": true,
+		"timeSpend": 60,
 		"items": [
 			1001
 		],
-		"item_counts": [
+		"itemCounts": [
 			1
 		],
 		"results": [
 			1101
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1101
+		"gridIndex": 1101
 	},
 	{
 		"id": 2,
@@ -27,21 +27,21 @@
 		"description": null,
 		"sid": "1201",
 		"type": "SMELT",
-		"handcraft": 1,
-		"time_spend": 90,
+		"handcraft": true,
+		"timeSpend": 90,
 		"items": [
 			1001
 		],
-		"item_counts": [
+		"itemCounts": [
 			1
 		],
 		"results": [
 			1102
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1201
+		"gridIndex": 1201
 	},
 	{
 		"id": 3,
@@ -49,21 +49,21 @@
 		"description": null,
 		"sid": "1102",
 		"type": "SMELT",
-		"handcraft": 1,
-		"time_spend": 60,
+		"handcraft": true,
+		"timeSpend": 60,
 		"items": [
 			1002
 		],
-		"item_counts": [
+		"itemCounts": [
 			1
 		],
 		"results": [
 			1104
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1102
+		"gridIndex": 1102
 	},
 	{
 		"id": 4,
@@ -71,21 +71,21 @@
 		"description": null,
 		"sid": "1105",
 		"type": "SMELT",
-		"handcraft": 1,
-		"time_spend": 60,
+		"handcraft": true,
+		"timeSpend": 60,
 		"items": [
 			1005
 		],
-		"item_counts": [
+		"itemCounts": [
 			1
 		],
 		"results": [
 			1108
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1105
+		"gridIndex": 1105
 	},
 	{
 		"id": 5,
@@ -93,21 +93,21 @@
 		"description": null,
 		"sid": "1401",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 60,
+		"handcraft": true,
+		"timeSpend": 60,
 		"items": [
 			1101
 		],
-		"item_counts": [
+		"itemCounts": [
 			1
 		],
 		"results": [
 			1201
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1401
+		"gridIndex": 1401
 	},
 	{
 		"id": 6,
@@ -115,23 +115,23 @@
 		"description": null,
 		"sid": "1202",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 60,
+		"handcraft": true,
+		"timeSpend": 60,
 		"items": [
 			1102,
 			1104
 		],
-		"item_counts": [
+		"itemCounts": [
 			2,
 			1
 		],
 		"results": [
 			1202
 		],
-		"result_counts": [
+		"resultCounts": [
 			2
 		],
-		"grid_index": 1202
+		"gridIndex": 1202
 	},
 	{
 		"id": 7,
@@ -139,14 +139,14 @@
 		"description": null,
 		"sid": "2104",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 240,
+		"handcraft": true,
+		"timeSpend": 240,
 		"items": [
 			1101,
 			1201,
 			1202
 		],
-		"item_counts": [
+		"itemCounts": [
 			6,
 			1,
 			3
@@ -154,10 +154,10 @@
 		"results": [
 			2203
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2104
+		"gridIndex": 2104
 	},
 	{
 		"id": 8,
@@ -165,23 +165,23 @@
 		"description": null,
 		"sid": "2101",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 60,
+		"handcraft": true,
+		"timeSpend": 60,
 		"items": [
 			1101,
 			1202
 		],
-		"item_counts": [
+		"itemCounts": [
 			2,
 			1
 		],
 		"results": [
 			2201
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2101
+		"gridIndex": 2101
 	},
 	{
 		"id": 9,
@@ -189,23 +189,23 @@
 		"description": null,
 		"sid": "1701",
 		"type": "RESEARCH",
-		"handcraft": 1,
-		"time_spend": 180,
+		"handcraft": true,
+		"timeSpend": 180,
 		"items": [
 			1202,
 			1301
 		],
-		"item_counts": [
+		"itemCounts": [
 			1,
 			1
 		],
 		"results": [
 			6001
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1701
+		"gridIndex": 1701
 	},
 	{
 		"id": 10,
@@ -213,15 +213,15 @@
 		"description": null,
 		"sid": "2406",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 180,
+		"handcraft": true,
+		"timeSpend": 180,
 		"items": [
 			1101,
 			1110,
 			1301,
 			1202
 		],
-		"item_counts": [
+		"itemCounts": [
 			8,
 			4,
 			4,
@@ -230,10 +230,10 @@
 		"results": [
 			2901
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2406
+		"gridIndex": 2406
 	},
 	{
 		"id": 11,
@@ -241,21 +241,21 @@
 		"description": null,
 		"sid": "1305",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 120,
+		"handcraft": true,
+		"timeSpend": 120,
 		"items": [
 			1110
 		],
-		"item_counts": [
+		"itemCounts": [
 			3
 		],
 		"results": [
 			1111
 		],
-		"result_counts": [
+		"resultCounts": [
 			2
 		],
-		"grid_index": 1305
+		"gridIndex": 1305
 	},
 	{
 		"id": 12,
@@ -263,23 +263,23 @@
 		"description": null,
 		"sid": "1501",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 120,
+		"handcraft": true,
+		"timeSpend": 120,
 		"items": [
 			1202,
 			1111
 		],
-		"item_counts": [
+		"itemCounts": [
 			4,
 			2
 		],
 		"results": [
 			1401
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1501
+		"gridIndex": 1501
 	},
 	{
 		"id": 13,
@@ -287,23 +287,23 @@
 		"description": null,
 		"sid": "2102",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 180,
+		"handcraft": true,
+		"timeSpend": 180,
 		"items": [
 			2201,
 			1401
 		],
-		"item_counts": [
+		"itemCounts": [
 			1,
 			3
 		],
 		"results": [
 			2202
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2102
+		"gridIndex": 2102
 	},
 	{
 		"id": 14,
@@ -311,15 +311,15 @@
 		"description": null,
 		"sid": "2308",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 480,
+		"handcraft": true,
+		"timeSpend": 480,
 		"items": [
 			1103,
 			1108,
 			1301,
 			1401
 		],
-		"item_counts": [
+		"itemCounts": [
 			12,
 			12,
 			6,
@@ -328,10 +328,10 @@
 		"results": [
 			2307
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2308
+		"gridIndex": 2308
 	},
 	{
 		"id": 15,
@@ -339,15 +339,15 @@
 		"description": null,
 		"sid": "2309",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 360,
+		"handcraft": true,
+		"timeSpend": 360,
 		"items": [
 			1103,
 			1108,
 			1301,
 			1401
 		],
-		"item_counts": [
+		"itemCounts": [
 			10,
 			10,
 			6,
@@ -356,10 +356,10 @@
 		"results": [
 			2308
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2309
+		"gridIndex": 2309
 	},
 	{
 		"id": 16,
@@ -367,24 +367,24 @@
 		"description": "Hydrogen and refined oil can be obtained by refining crude oil with plasma.",
 		"sid": "1107",
 		"type": "REFINE",
-		"explicit": 1,
-		"time_spend": 240,
+		"explicit": true,
+		"timeSpend": 240,
 		"items": [
 			1007
 		],
-		"item_counts": [
+		"itemCounts": [
 			2
 		],
 		"results": [
 			1120,
 			1114
 		],
-		"result_counts": [
+		"resultCounts": [
 			1,
 			2
 		],
-		"grid_index": 1107,
-		"icon_path": "Icons/ItemRecipe/plasma-refining"
+		"gridIndex": 1107,
+		"iconPath": "Icons/ItemRecipe/plasma-refining"
 	},
 	{
 		"id": 17,
@@ -392,21 +392,21 @@
 		"description": null,
 		"sid": "1106",
 		"type": "SMELT",
-		"handcraft": 1,
-		"time_spend": 120,
+		"handcraft": true,
+		"timeSpend": 120,
 		"items": [
 			1006
 		],
-		"item_counts": [
+		"itemCounts": [
 			2
 		],
 		"results": [
 			1109
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1106
+		"gridIndex": 1106
 	},
 	{
 		"id": 18,
@@ -414,23 +414,23 @@
 		"description": null,
 		"sid": "1702",
 		"type": "RESEARCH",
-		"handcraft": 1,
-		"time_spend": 360,
+		"handcraft": true,
+		"timeSpend": 360,
 		"items": [
 			1109,
 			1120
 		],
-		"item_counts": [
+		"itemCounts": [
 			2,
 			2
 		],
 		"results": [
 			6002
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1702
+		"gridIndex": 1702
 	},
 	{
 		"id": 19,
@@ -438,23 +438,23 @@
 		"description": null,
 		"sid": "1210",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 360,
+		"handcraft": true,
+		"timeSpend": 360,
 		"items": [
 			1106,
 			1120
 		],
-		"item_counts": [
+		"itemCounts": [
 			1,
 			10
 		],
 		"results": [
 			1801
 		],
-		"result_counts": [
+		"resultCounts": [
 			2
 		],
-		"grid_index": 1210
+		"gridIndex": 1210
 	},
 	{
 		"id": 20,
@@ -462,23 +462,23 @@
 		"description": null,
 		"sid": "1310",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 240,
+		"handcraft": true,
+		"timeSpend": 240,
 		"items": [
 			1103,
 			1104
 		],
-		"item_counts": [
+		"itemCounts": [
 			2,
 			3
 		],
 		"results": [
 			1405
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1310
+		"gridIndex": 1310
 	},
 	{
 		"id": 21,
@@ -486,23 +486,23 @@
 		"description": null,
 		"sid": "1311",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 360,
+		"handcraft": true,
+		"timeSpend": 360,
 		"items": [
 			1107,
 			1204
 		],
-		"item_counts": [
+		"itemCounts": [
 			5,
 			5
 		],
 		"results": [
 			1406
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1311
+		"gridIndex": 1311
 	},
 	{
 		"id": 22,
@@ -510,15 +510,15 @@
 		"description": null,
 		"sid": "2409",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 300,
+		"handcraft": true,
+		"timeSpend": 300,
 		"items": [
 			1103,
 			1108,
 			1110,
 			1301
 		],
-		"item_counts": [
+		"itemCounts": [
 			8,
 			8,
 			8,
@@ -527,10 +527,10 @@
 		"results": [
 			2309
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2409
+		"gridIndex": 2409
 	},
 	{
 		"id": 23,
@@ -538,22 +538,22 @@
 		"description": null,
 		"sid": "1109",
 		"type": "CHEMICAL",
-		"time_spend": 180,
+		"timeSpend": 180,
 		"items": [
 			1114,
 			1109
 		],
-		"item_counts": [
+		"itemCounts": [
 			2,
 			1
 		],
 		"results": [
 			1115
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1109
+		"gridIndex": 1109
 	},
 	{
 		"id": 24,
@@ -561,13 +561,13 @@
 		"description": null,
 		"sid": "1406",
 		"type": "CHEMICAL",
-		"time_spend": 360,
+		"timeSpend": 360,
 		"items": [
 			1114,
 			1005,
 			1000
 		],
-		"item_counts": [
+		"itemCounts": [
 			6,
 			8,
 			4
@@ -575,10 +575,10 @@
 		"results": [
 			1116
 		],
-		"result_counts": [
+		"resultCounts": [
 			4
 		],
-		"grid_index": 1406
+		"gridIndex": 1406
 	},
 	{
 		"id": 25,
@@ -586,13 +586,13 @@
 		"description": null,
 		"sid": "1209",
 		"type": "CHEMICAL",
-		"time_spend": 360,
+		"timeSpend": 360,
 		"items": [
 			1115,
 			1114,
 			1000
 		],
-		"item_counts": [
+		"itemCounts": [
 			2,
 			1,
 			1
@@ -600,10 +600,10 @@
 		"results": [
 			1117
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1209
+		"gridIndex": 1209
 	},
 	{
 		"id": 26,
@@ -611,23 +611,23 @@
 		"description": null,
 		"sid": "1308",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 240,
+		"handcraft": true,
+		"timeSpend": 240,
 		"items": [
 			1117,
 			1106
 		],
-		"item_counts": [
+		"itemCounts": [
 			1,
 			3
 		],
 		"results": [
 			1118
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1308
+		"gridIndex": 1308
 	},
 	{
 		"id": 27,
@@ -635,23 +635,23 @@
 		"description": null,
 		"sid": "1703",
 		"type": "RESEARCH",
-		"handcraft": 1,
-		"time_spend": 480,
+		"handcraft": true,
+		"timeSpend": 480,
 		"items": [
 			1112,
 			1118
 		],
-		"item_counts": [
+		"itemCounts": [
 			1,
 			1
 		],
 		"results": [
 			6003
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1703
+		"gridIndex": 1703
 	},
 	{
 		"id": 28,
@@ -659,14 +659,14 @@
 		"description": null,
 		"sid": "1505",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 240,
+		"handcraft": true,
+		"timeSpend": 240,
 		"items": [
 			1118,
 			1123,
 			1120
 		],
-		"item_counts": [
+		"itemCounts": [
 			1,
 			2,
 			12
@@ -674,10 +674,10 @@
 		"results": [
 			1126
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1505
+		"gridIndex": 1505
 	},
 	{
 		"id": 29,
@@ -685,14 +685,14 @@
 		"description": "The use of rare ore optical grating crystal to make Casimir crystal is more efficient.",
 		"sid": "1605",
 		"type": "ASSEMBLE",
-		"explicit": 1,
-		"time_spend": 240,
+		"explicit": true,
+		"timeSpend": 240,
 		"items": [
 			1014,
 			1123,
 			1120
 		],
-		"item_counts": [
+		"itemCounts": [
 			8,
 			2,
 			12
@@ -700,11 +700,11 @@
 		"results": [
 			1126
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1605,
-		"icon_path": "Icons/ItemRecipe/casimir-crystal-lv2"
+		"gridIndex": 1605,
+		"iconPath": "Icons/ItemRecipe/casimir-crystal-lv2"
 	},
 	{
 		"id": 30,
@@ -712,14 +712,14 @@
 		"description": null,
 		"sid": "1304",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 300,
+		"handcraft": true,
+		"timeSpend": 300,
 		"items": [
 			1110,
 			1106,
 			1000
 		],
-		"item_counts": [
+		"itemCounts": [
 			2,
 			2,
 			2
@@ -727,10 +727,10 @@
 		"results": [
 			1119
 		],
-		"result_counts": [
+		"resultCounts": [
 			2
 		],
-		"grid_index": 1304
+		"gridIndex": 1304
 	},
 	{
 		"id": 31,
@@ -738,22 +738,22 @@
 		"description": null,
 		"sid": "1108",
 		"type": "CHEMICAL",
-		"time_spend": 180,
+		"timeSpend": 180,
 		"items": [
 			1109,
 			1116
 		],
-		"item_counts": [
+		"itemCounts": [
 			3,
 			1
 		],
 		"results": [
 			1123
 		],
-		"result_counts": [
+		"resultCounts": [
 			2
 		],
-		"grid_index": 1108
+		"gridIndex": 1108
 	},
 	{
 		"id": 32,
@@ -761,24 +761,24 @@
 		"description": "It will be a lot easier to produce graphene if you can find combustible ice minerals.",
 		"sid": "1208",
 		"type": "CHEMICAL",
-		"explicit": 1,
-		"time_spend": 120,
+		"explicit": true,
+		"timeSpend": 120,
 		"items": [
 			1011
 		],
-		"item_counts": [
+		"itemCounts": [
 			2
 		],
 		"results": [
 			1123,
 			1120
 		],
-		"result_counts": [
+		"resultCounts": [
 			2,
 			1
 		],
-		"grid_index": 1208,
-		"icon_path": "Icons/ItemRecipe/graphene-lv2"
+		"gridIndex": 1208,
+		"iconPath": "Icons/ItemRecipe/graphene-lv2"
 	},
 	{
 		"id": 33,
@@ -786,22 +786,22 @@
 		"description": null,
 		"sid": "1408",
 		"type": "CHEMICAL",
-		"time_spend": 240,
+		"timeSpend": 240,
 		"items": [
 			1123,
 			1106
 		],
-		"item_counts": [
+		"itemCounts": [
 			3,
 			1
 		],
 		"results": [
 			1124
 		],
-		"result_counts": [
+		"resultCounts": [
 			2
 		],
-		"grid_index": 1408
+		"gridIndex": 1408
 	},
 	{
 		"id": 34,
@@ -809,20 +809,20 @@
 		"description": null,
 		"sid": "1403",
 		"type": "SMELT",
-		"time_spend": 600,
+		"timeSpend": 600,
 		"items": [
 			1005
 		],
-		"item_counts": [
+		"itemCounts": [
 			10
 		],
 		"results": [
 			1003
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1403
+		"gridIndex": 1403
 	},
 	{
 		"id": 35,
@@ -830,22 +830,22 @@
 		"description": "Carbon nanotube can be made directly from spiniform stalagmite crystal, but this ore is extremely rare and difficult to find.",
 		"sid": "1508",
 		"type": "CHEMICAL",
-		"explicit": 1,
-		"time_spend": 240,
+		"explicit": true,
+		"timeSpend": 240,
 		"items": [
 			1015
 		],
-		"item_counts": [
+		"itemCounts": [
 			6
 		],
 		"results": [
 			1124
 		],
-		"result_counts": [
+		"resultCounts": [
 			2
 		],
-		"grid_index": 1508,
-		"icon_path": "Icons/ItemRecipe/nanotube-lv2"
+		"gridIndex": 1508,
+		"iconPath": "Icons/ItemRecipe/nanotube-lv2"
 	},
 	{
 		"id": 36,
@@ -853,14 +853,14 @@
 		"description": null,
 		"sid": "1503",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 480,
+		"handcraft": true,
+		"timeSpend": 480,
 		"items": [
 			1124,
 			1113,
 			1115
 		],
-		"item_counts": [
+		"itemCounts": [
 			2,
 			2,
 			1
@@ -868,10 +868,10 @@
 		"results": [
 			1402
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1503
+		"gridIndex": 1503
 	},
 	{
 		"id": 37,
@@ -879,20 +879,20 @@
 		"description": null,
 		"sid": "1203",
 		"type": "SMELT",
-		"time_spend": 120,
+		"timeSpend": 120,
 		"items": [
 			1105
 		],
-		"item_counts": [
+		"itemCounts": [
 			1
 		],
 		"results": [
 			1113
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1203
+		"gridIndex": 1203
 	},
 	{
 		"id": 38,
@@ -900,23 +900,23 @@
 		"description": null,
 		"sid": "1509",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 720,
+		"handcraft": true,
+		"timeSpend": 720,
 		"items": [
 			1126,
 			1119
 		],
-		"item_counts": [
+		"itemCounts": [
 			1,
 			2
 		],
 		"results": [
 			1304
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1509
+		"gridIndex": 1509
 	},
 	{
 		"id": 39,
@@ -924,8 +924,8 @@
 		"description": null,
 		"sid": "2310",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 900,
+		"handcraft": true,
+		"timeSpend": 900,
 		"items": [
 			1107,
 			1125,
@@ -933,7 +933,7 @@
 			1123,
 			1303
 		],
-		"item_counts": [
+		"itemCounts": [
 			20,
 			20,
 			25,
@@ -943,10 +943,10 @@
 		"results": [
 			2310
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2310
+		"gridIndex": 2310
 	},
 	{
 		"id": 40,
@@ -954,21 +954,21 @@
 		"description": null,
 		"sid": "1507",
 		"type": "PARTICLE",
-		"time_spend": 150,
+		"timeSpend": 150,
 		"items": [
 			1120
 		],
-		"item_counts": [
+		"itemCounts": [
 			10
 		],
 		"results": [
 			1121
 		],
-		"result_counts": [
+		"resultCounts": [
 			5
 		],
-		"grid_index": 1507,
-		"non_productive": 1
+		"gridIndex": 1507,
+		"nonProductive": true
 	},
 	{
 		"id": 41,
@@ -976,14 +976,14 @@
 		"description": null,
 		"sid": "1211",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 720,
+		"handcraft": true,
+		"timeSpend": 720,
 		"items": [
 			1107,
 			1121,
 			1205
 		],
-		"item_counts": [
+		"itemCounts": [
 			1,
 			20,
 			1
@@ -991,10 +991,10 @@
 		"results": [
 			1802
 		],
-		"result_counts": [
+		"resultCounts": [
 			2
 		],
-		"grid_index": 1211
+		"gridIndex": 1211
 	},
 	{
 		"id": 42,
@@ -1002,23 +1002,23 @@
 		"description": null,
 		"sid": "1610",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 1200,
+		"handcraft": true,
+		"timeSpend": 1200,
 		"items": [
 			1206,
 			1303
 		],
-		"item_counts": [
+		"itemCounts": [
 			1,
 			1
 		],
 		"results": [
 			1403
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1610
+		"gridIndex": 1610
 	},
 	{
 		"id": 43,
@@ -1026,15 +1026,15 @@
 		"description": null,
 		"sid": "2112",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 1800,
+		"handcraft": true,
+		"timeSpend": 1800,
 		"items": [
 			1107,
 			1125,
 			1403,
 			1305
 		],
-		"item_counts": [
+		"itemCounts": [
 			20,
 			20,
 			10,
@@ -1043,10 +1043,10 @@
 		"results": [
 			2210
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2112
+		"gridIndex": 2112
 	},
 	{
 		"id": 44,
@@ -1054,14 +1054,14 @@
 		"description": null,
 		"sid": "1212",
 		"type": "ASSEMBLE",
-		"time_spend": 1440,
+		"timeSpend": 1440,
 		"items": [
 			1122,
 			1120,
 			1403,
 			1107
 		],
-		"item_counts": [
+		"itemCounts": [
 			12,
 			12,
 			1,
@@ -1070,11 +1070,11 @@
 		"results": [
 			1803
 		],
-		"result_counts": [
+		"resultCounts": [
 			2
 		],
-		"grid_index": 1212,
-		"non_productive": 1
+		"gridIndex": 1212,
+		"nonProductive": true
 	},
 	{
 		"id": 45,
@@ -1082,14 +1082,14 @@
 		"description": null,
 		"sid": "2401",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 120,
+		"handcraft": true,
+		"timeSpend": 120,
 		"items": [
 			1101,
 			1201,
 			1301
 		],
-		"item_counts": [
+		"itemCounts": [
 			4,
 			8,
 			4
@@ -1097,10 +1097,10 @@
 		"results": [
 			2303
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2401
+		"gridIndex": 2401
 	},
 	{
 		"id": 46,
@@ -1108,14 +1108,14 @@
 		"description": null,
 		"sid": "2402",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 180,
+		"handcraft": true,
+		"timeSpend": 180,
 		"items": [
 			2303,
 			1123,
 			1303
 		],
-		"item_counts": [
+		"itemCounts": [
 			1,
 			8,
 			4
@@ -1123,10 +1123,10 @@
 		"results": [
 			2304
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2402
+		"gridIndex": 2402
 	},
 	{
 		"id": 47,
@@ -1134,14 +1134,14 @@
 		"description": null,
 		"sid": "2403",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 240,
+		"handcraft": true,
+		"timeSpend": 240,
 		"items": [
 			2304,
 			1402,
 			1305
 		],
-		"item_counts": [
+		"itemCounts": [
 			1,
 			8,
 			2
@@ -1149,10 +1149,10 @@
 		"results": [
 			2305
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2403
+		"gridIndex": 2403
 	},
 	{
 		"id": 48,
@@ -1160,15 +1160,15 @@
 		"description": null,
 		"sid": "2305",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 180,
+		"handcraft": true,
+		"timeSpend": 180,
 		"items": [
 			1101,
 			1301,
 			1202,
 			1201
 		],
-		"item_counts": [
+		"itemCounts": [
 			4,
 			2,
 			2,
@@ -1177,10 +1177,10 @@
 		"results": [
 			2301
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2305
+		"gridIndex": 2305
 	},
 	{
 		"id": 49,
@@ -1188,15 +1188,15 @@
 		"description": null,
 		"sid": "2307",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 240,
+		"handcraft": true,
+		"timeSpend": 240,
 		"items": [
 			1101,
 			1108,
 			1203,
 			1301
 		],
-		"item_counts": [
+		"itemCounts": [
 			8,
 			4,
 			4,
@@ -1205,10 +1205,10 @@
 		"results": [
 			2306
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2307
+		"gridIndex": 2307
 	},
 	{
 		"id": 50,
@@ -1216,23 +1216,23 @@
 		"description": null,
 		"sid": "1404",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 60,
+		"handcraft": true,
+		"timeSpend": 60,
 		"items": [
 			1101,
 			1104
 		],
-		"item_counts": [
+		"itemCounts": [
 			2,
 			1
 		],
 		"results": [
 			1301
 		],
-		"result_counts": [
+		"resultCounts": [
 			2
 		],
-		"grid_index": 1404
+		"gridIndex": 1404
 	},
 	{
 		"id": 51,
@@ -1240,23 +1240,23 @@
 		"description": null,
 		"sid": "1504",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 180,
+		"handcraft": true,
+		"timeSpend": 180,
 		"items": [
 			1301,
 			1302
 		],
-		"item_counts": [
+		"itemCounts": [
 			2,
 			2
 		],
 		"results": [
 			1303
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1504
+		"gridIndex": 1504
 	},
 	{
 		"id": 52,
@@ -1264,23 +1264,23 @@
 		"description": null,
 		"sid": "1604",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 360,
+		"handcraft": true,
+		"timeSpend": 360,
 		"items": [
 			1303,
 			1304
 		],
-		"item_counts": [
+		"itemCounts": [
 			2,
 			2
 		],
 		"results": [
 			1305
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1604
+		"gridIndex": 1604
 	},
 	{
 		"id": 53,
@@ -1288,23 +1288,23 @@
 		"description": null,
 		"sid": "1603",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 120,
+		"handcraft": true,
+		"timeSpend": 120,
 		"items": [
 			1105,
 			1104
 		],
-		"item_counts": [
+		"itemCounts": [
 			2,
 			1
 		],
 		"results": [
 			1302
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1603
+		"gridIndex": 1603
 	},
 	{
 		"id": 54,
@@ -1312,15 +1312,15 @@
 		"description": "Organic crystal can be obtained by processing the three resources of wood, plant fuel and water.",
 		"sid": "1309",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"explicit": 1,
-		"time_spend": 360,
+		"handcraft": true,
+		"explicit": true,
+		"timeSpend": 360,
 		"items": [
 			1030,
 			1031,
 			1000
 		],
-		"item_counts": [
+		"itemCounts": [
 			20,
 			30,
 			10
@@ -1328,11 +1328,11 @@
 		"results": [
 			1117
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1309,
-		"icon_path": "Icons/ItemRecipe/crystal-rubber-lv0"
+		"gridIndex": 1309,
+		"iconPath": "Icons/ItemRecipe/crystal-rubber-lv0"
 	},
 	{
 		"id": 55,
@@ -1340,23 +1340,23 @@
 		"description": null,
 		"sid": "1704",
 		"type": "RESEARCH",
-		"handcraft": 1,
-		"time_spend": 600,
+		"handcraft": true,
+		"timeSpend": 600,
 		"items": [
 			1303,
 			1402
 		],
-		"item_counts": [
+		"itemCounts": [
 			2,
 			1
 		],
 		"results": [
 			6004
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1704
+		"gridIndex": 1704
 	},
 	{
 		"id": 56,
@@ -1364,15 +1364,15 @@
 		"description": null,
 		"sid": "2404",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 180,
+		"handcraft": true,
+		"timeSpend": 180,
 		"items": [
 			1101,
 			1108,
 			1301,
 			1202
 		],
-		"item_counts": [
+		"itemCounts": [
 			4,
 			2,
 			4,
@@ -1381,10 +1381,10 @@
 		"results": [
 			2302
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2404
+		"gridIndex": 2404
 	},
 	{
 		"id": 57,
@@ -1392,21 +1392,21 @@
 		"description": null,
 		"sid": "1205",
 		"type": "SMELT",
-		"handcraft": 1,
-		"time_spend": 120,
+		"handcraft": true,
+		"timeSpend": 120,
 		"items": [
 			1005
 		],
-		"item_counts": [
+		"itemCounts": [
 			2
 		],
 		"results": [
 			1110
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1205
+		"gridIndex": 1205
 	},
 	{
 		"id": 58,
@@ -1414,13 +1414,13 @@
 		"description": "Under the catalysis of hydrogen, X-rays can crack the refined oil into more hydrogen and a by-product, energetic graphite.",
 		"sid": "1207",
 		"type": "REFINE",
-		"explicit": 1,
-		"time_spend": 240,
+		"explicit": true,
+		"timeSpend": 240,
 		"items": [
 			1114,
 			1120
 		],
-		"item_counts": [
+		"itemCounts": [
 			1,
 			2
 		],
@@ -1428,13 +1428,13 @@
 			1120,
 			1109
 		],
-		"result_counts": [
+		"resultCounts": [
 			3,
 			1
 		],
-		"grid_index": 1207,
-		"icon_path": "Icons/ItemRecipe/X-ray",
-		"non_productive": 1
+		"gridIndex": 1207,
+		"iconPath": "Icons/ItemRecipe/X-ray",
+		"nonProductive": true
 	},
 	{
 		"id": 59,
@@ -1442,21 +1442,21 @@
 		"description": null,
 		"sid": "1103",
 		"type": "SMELT",
-		"handcraft": 1,
-		"time_spend": 120,
+		"handcraft": true,
+		"timeSpend": 120,
 		"items": [
 			1003
 		],
-		"item_counts": [
+		"itemCounts": [
 			2
 		],
 		"results": [
 			1105
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1103
+		"gridIndex": 1103
 	},
 	{
 		"id": 60,
@@ -1464,20 +1464,20 @@
 		"description": null,
 		"sid": "1206",
 		"type": "SMELT",
-		"time_spend": 120,
+		"timeSpend": 120,
 		"items": [
 			1109
 		],
-		"item_counts": [
+		"itemCounts": [
 			1
 		],
 		"results": [
 			1112
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1206
+		"gridIndex": 1206
 	},
 	{
 		"id": 61,
@@ -1485,22 +1485,22 @@
 		"description": "Find Kimberlite ore and smelt directly to obtain diamond.",
 		"sid": "1306",
 		"type": "SMELT",
-		"explicit": 1,
-		"time_spend": 90,
+		"explicit": true,
+		"timeSpend": 90,
 		"items": [
 			1012
 		],
-		"item_counts": [
+		"itemCounts": [
 			1
 		],
 		"results": [
 			1112
 		],
-		"result_counts": [
+		"resultCounts": [
 			2
 		],
-		"grid_index": 1306,
-		"icon_path": "Icons/ItemRecipe/diamond-lv2"
+		"gridIndex": 1306,
+		"iconPath": "Icons/ItemRecipe/diamond-lv2"
 	},
 	{
 		"id": 62,
@@ -1508,22 +1508,22 @@
 		"description": "The unique fractal structure of Fractal silicon is the material of choice for the efficient production of Crystal silicon.",
 		"sid": "1303",
 		"type": "ASSEMBLE",
-		"explicit": 1,
-		"time_spend": 90,
+		"explicit": true,
+		"timeSpend": 90,
 		"items": [
 			1013
 		],
-		"item_counts": [
+		"itemCounts": [
 			1
 		],
 		"results": [
 			1113
 		],
-		"result_counts": [
+		"resultCounts": [
 			2
 		],
-		"grid_index": 1303,
-		"icon_path": "Icons/ItemRecipe/silicium-high-purity-lv2"
+		"gridIndex": 1303,
+		"iconPath": "Icons/ItemRecipe/silicium-high-purity-lv2"
 	},
 	{
 		"id": 63,
@@ -1531,20 +1531,20 @@
 		"description": null,
 		"sid": "1301",
 		"type": "SMELT",
-		"time_spend": 180,
+		"timeSpend": 180,
 		"items": [
 			1101
 		],
-		"item_counts": [
+		"itemCounts": [
 			3
 		],
 		"results": [
 			1103
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1301
+		"gridIndex": 1301
 	},
 	{
 		"id": 64,
@@ -1552,15 +1552,15 @@
 		"description": null,
 		"sid": "2105",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 300,
+		"handcraft": true,
+		"timeSpend": 300,
 		"items": [
 			1101,
 			1108,
 			1201,
 			1202
 		],
-		"item_counts": [
+		"itemCounts": [
 			10,
 			4,
 			4,
@@ -1569,10 +1569,10 @@
 		"results": [
 			2204
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2105
+		"gridIndex": 2105
 	},
 	{
 		"id": 65,
@@ -1580,21 +1580,21 @@
 		"description": null,
 		"sid": "1104",
 		"type": "SMELT",
-		"handcraft": 1,
-		"time_spend": 120,
+		"handcraft": true,
+		"timeSpend": 120,
 		"items": [
 			1004
 		],
-		"item_counts": [
+		"itemCounts": [
 			2
 		],
 		"results": [
 			1106
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1104
+		"gridIndex": 1104
 	},
 	{
 		"id": 66,
@@ -1602,13 +1602,13 @@
 		"description": null,
 		"sid": "1204",
 		"type": "SMELT",
-		"time_spend": 720,
+		"timeSpend": 720,
 		"items": [
 			1106,
 			1103,
 			1116
 		],
-		"item_counts": [
+		"itemCounts": [
 			4,
 			4,
 			8
@@ -1616,10 +1616,10 @@
 		"results": [
 			1107
 		],
-		"result_counts": [
+		"resultCounts": [
 			4
 		],
-		"grid_index": 1204
+		"gridIndex": 1204
 	},
 	{
 		"id": 67,
@@ -1627,14 +1627,14 @@
 		"description": null,
 		"sid": "2106",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 360,
+		"handcraft": true,
+		"timeSpend": 360,
 		"items": [
 			1104,
 			1105,
 			1301
 		],
-		"item_counts": [
+		"itemCounts": [
 			10,
 			10,
 			5
@@ -1642,10 +1642,10 @@
 		"results": [
 			2205
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2106
+		"gridIndex": 2106
 	},
 	{
 		"id": 68,
@@ -1653,23 +1653,23 @@
 		"description": null,
 		"sid": "1601",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 180,
+		"handcraft": true,
+		"timeSpend": 180,
 		"items": [
 			1111,
 			1301
 		],
-		"item_counts": [
+		"itemCounts": [
 			2,
 			1
 		],
 		"results": [
 			1404
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1601
+		"gridIndex": 1601
 	},
 	{
 		"id": 69,
@@ -1677,24 +1677,24 @@
 		"description": "The discovery of optical grating crystal has diversified the production of Photon combiner.",
 		"sid": "1602",
 		"type": "ASSEMBLE",
-		"explicit": 1,
-		"time_spend": 180,
+		"explicit": true,
+		"timeSpend": 180,
 		"items": [
 			1014,
 			1301
 		],
-		"item_counts": [
+		"itemCounts": [
 			1,
 			1
 		],
 		"results": [
 			1404
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1602,
-		"icon_path": "Icons/ItemRecipe/photo-shifter-lv2"
+		"gridIndex": 1602,
+		"iconPath": "Icons/ItemRecipe/photo-shifter-lv2"
 	},
 	{
 		"id": 70,
@@ -1702,23 +1702,23 @@
 		"description": null,
 		"sid": "1510",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 240,
+		"handcraft": true,
+		"timeSpend": 240,
 		"items": [
 			1123,
 			1404
 		],
-		"item_counts": [
+		"itemCounts": [
 			1,
 			1
 		],
 		"results": [
 			1501
 		],
-		"result_counts": [
+		"resultCounts": [
 			2
 		],
-		"grid_index": 1510
+		"gridIndex": 1510
 	},
 	{
 		"id": 71,
@@ -1726,15 +1726,15 @@
 		"description": null,
 		"sid": "2311",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 360,
+		"handcraft": true,
+		"timeSpend": 360,
 		"items": [
 			1103,
 			1201,
 			1303,
 			1205
 		],
-		"item_counts": [
+		"itemCounts": [
 			20,
 			20,
 			5,
@@ -1743,10 +1743,10 @@
 		"results": [
 			2311
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2311
+		"gridIndex": 2311
 	},
 	{
 		"id": 72,
@@ -1754,8 +1754,8 @@
 		"description": null,
 		"sid": "2111",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 480,
+		"handcraft": true,
+		"timeSpend": 480,
 		"items": [
 			1103,
 			1105,
@@ -1763,7 +1763,7 @@
 			1303,
 			1205
 		],
-		"item_counts": [
+		"itemCounts": [
 			20,
 			20,
 			10,
@@ -1773,10 +1773,10 @@
 		"results": [
 			2208
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2111
+		"gridIndex": 2111
 	},
 	{
 		"id": 73,
@@ -1784,14 +1784,14 @@
 		"description": null,
 		"sid": "2103",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 300,
+		"handcraft": true,
+		"timeSpend": 300,
 		"items": [
 			2202,
 			1205,
 			1125
 		],
-		"item_counts": [
+		"itemCounts": [
 			1,
 			10,
 			2
@@ -1799,10 +1799,10 @@
 		"results": [
 			2212
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2103
+		"gridIndex": 2103
 	},
 	{
 		"id": 74,
@@ -1810,25 +1810,25 @@
 		"description": "Photons can be inverted into antimatter and hydrogen under the effect of super magnetic field.",
 		"sid": "1609",
 		"type": "PARTICLE",
-		"explicit": 1,
-		"time_spend": 120,
+		"explicit": true,
+		"timeSpend": 120,
 		"items": [
 			1208
 		],
-		"item_counts": [
+		"itemCounts": [
 			2
 		],
 		"results": [
 			1122,
 			1120
 		],
-		"result_counts": [
+		"resultCounts": [
 			2,
 			2
 		],
-		"grid_index": 1609,
-		"icon_path": "Icons/ItemRecipe/photon-formula",
-		"non_productive": 1
+		"gridIndex": 1609,
+		"iconPath": "Icons/ItemRecipe/photon-formula",
+		"nonProductive": true
 	},
 	{
 		"id": 75,
@@ -1836,7 +1836,7 @@
 		"description": null,
 		"sid": "1706",
 		"type": "RESEARCH",
-		"time_spend": 900,
+		"timeSpend": 900,
 		"items": [
 			6001,
 			6002,
@@ -1845,7 +1845,7 @@
 			6005,
 			1122
 		],
-		"item_counts": [
+		"itemCounts": [
 			1,
 			1,
 			1,
@@ -1856,10 +1856,10 @@
 		"results": [
 			6006
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1706
+		"gridIndex": 1706
 	},
 	{
 		"id": 76,
@@ -1867,14 +1867,14 @@
 		"description": null,
 		"sid": "2107",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 300,
+		"handcraft": true,
+		"timeSpend": 300,
 		"items": [
 			1101,
 			1205,
 			1113
 		],
-		"item_counts": [
+		"itemCounts": [
 			6,
 			1,
 			6
@@ -1882,10 +1882,10 @@
 		"results": [
 			2206
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2107
+		"gridIndex": 2107
 	},
 	{
 		"id": 77,
@@ -1893,15 +1893,15 @@
 		"description": null,
 		"sid": "2110",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 900,
+		"handcraft": true,
+		"timeSpend": 900,
 		"items": [
 			1107,
 			1103,
 			1303,
 			1206
 		],
-		"item_counts": [
+		"itemCounts": [
 			40,
 			40,
 			40,
@@ -1910,10 +1910,10 @@
 		"results": [
 			2209
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2110
+		"gridIndex": 2110
 	},
 	{
 		"id": 78,
@@ -1921,21 +1921,21 @@
 		"description": null,
 		"sid": "1607",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 600,
+		"handcraft": true,
+		"timeSpend": 600,
 		"items": [
 			1209
 		],
-		"item_counts": [
+		"itemCounts": [
 			1
 		],
 		"results": [
 			1210
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1607
+		"gridIndex": 1607
 	},
 	{
 		"id": 79,
@@ -1943,23 +1943,23 @@
 		"description": "With the Gravity matrix, the production of the space warper becomes easier.",
 		"sid": "1608",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"explicit": 1,
-		"time_spend": 600,
+		"handcraft": true,
+		"explicit": true,
+		"timeSpend": 600,
 		"items": [
 			6005
 		],
-		"item_counts": [
+		"itemCounts": [
 			1
 		],
 		"results": [
 			1210
 		],
-		"result_counts": [
+		"resultCounts": [
 			8
 		],
-		"grid_index": 1608,
-		"icon_path": "Icons/ItemRecipe/space-warper-lv2"
+		"gridIndex": 1608,
+		"iconPath": "Icons/ItemRecipe/space-warper-lv2"
 	},
 	{
 		"id": 80,
@@ -1967,14 +1967,14 @@
 		"description": null,
 		"sid": "1511",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 360,
+		"handcraft": true,
+		"timeSpend": 360,
 		"items": [
 			1124,
 			1107,
 			1105
 		],
-		"item_counts": [
+		"itemCounts": [
 			4,
 			1,
 			1
@@ -1982,10 +1982,10 @@
 		"results": [
 			1125
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1511
+		"gridIndex": 1511
 	},
 	{
 		"id": 81,
@@ -1993,14 +1993,14 @@
 		"description": null,
 		"sid": "1512",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 480,
+		"handcraft": true,
+		"timeSpend": 480,
 		"items": [
 			1125,
 			1501,
 			1303
 		],
-		"item_counts": [
+		"itemCounts": [
 			3,
 			3,
 			3
@@ -2008,10 +2008,10 @@
 		"results": [
 			1502
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1512
+		"gridIndex": 1512
 	},
 	{
 		"id": 82,
@@ -2019,15 +2019,15 @@
 		"description": null,
 		"sid": "2312",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 1800,
+		"handcraft": true,
+		"timeSpend": 1800,
 		"items": [
 			1107,
 			1125,
 			1209,
 			1305
 		],
-		"item_counts": [
+		"itemCounts": [
 			80,
 			30,
 			20,
@@ -2036,10 +2036,10 @@
 		"results": [
 			2312
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2312
+		"gridIndex": 2312
 	},
 	{
 		"id": 83,
@@ -2047,14 +2047,14 @@
 		"description": null,
 		"sid": "1412",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 360,
+		"handcraft": true,
+		"timeSpend": 360,
 		"items": [
 			1502,
 			1802,
 			1305
 		],
-		"item_counts": [
+		"itemCounts": [
 			2,
 			4,
 			2
@@ -2062,10 +2062,10 @@
 		"results": [
 			1503
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1412
+		"gridIndex": 1412
 	},
 	{
 		"id": 84,
@@ -2073,23 +2073,23 @@
 		"description": null,
 		"sid": "2201",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 60,
+		"handcraft": true,
+		"timeSpend": 60,
 		"items": [
 			1101,
 			1201
 		],
-		"item_counts": [
+		"itemCounts": [
 			2,
 			1
 		],
 		"results": [
 			2001
 		],
-		"result_counts": [
+		"resultCounts": [
 			3
 		],
-		"grid_index": 2201
+		"gridIndex": 2201
 	},
 	{
 		"id": 85,
@@ -2097,23 +2097,23 @@
 		"description": null,
 		"sid": "2301",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 60,
+		"handcraft": true,
+		"timeSpend": 60,
 		"items": [
 			1101,
 			1301
 		],
-		"item_counts": [
+		"itemCounts": [
 			1,
 			1
 		],
 		"results": [
 			2011
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2301
+		"gridIndex": 2301
 	},
 	{
 		"id": 86,
@@ -2121,23 +2121,23 @@
 		"description": null,
 		"sid": "2206",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 120,
+		"handcraft": true,
+		"timeSpend": 120,
 		"items": [
 			1101,
 			1108
 		],
-		"item_counts": [
+		"itemCounts": [
 			4,
 			4
 		],
 		"results": [
 			2101
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2206
+		"gridIndex": 2206
 	},
 	{
 		"id": 87,
@@ -2145,14 +2145,14 @@
 		"description": null,
 		"sid": "2204",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 120,
+		"handcraft": true,
+		"timeSpend": 120,
 		"items": [
 			1101,
 			1201,
 			1301
 		],
-		"item_counts": [
+		"itemCounts": [
 			3,
 			2,
 			1
@@ -2160,10 +2160,10 @@
 		"results": [
 			2020
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2204
+		"gridIndex": 2204
 	},
 	{
 		"id": 88,
@@ -2171,23 +2171,23 @@
 		"description": null,
 		"sid": "2302",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 60,
+		"handcraft": true,
+		"timeSpend": 60,
 		"items": [
 			2011,
 			1203
 		],
-		"item_counts": [
+		"itemCounts": [
 			2,
 			1
 		],
 		"results": [
 			2012
 		],
-		"result_counts": [
+		"resultCounts": [
 			2
 		],
-		"grid_index": 2302
+		"gridIndex": 2302
 	},
 	{
 		"id": 89,
@@ -2195,23 +2195,23 @@
 		"description": null,
 		"sid": "2202",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 60,
+		"handcraft": true,
+		"timeSpend": 60,
 		"items": [
 			2001,
 			1204
 		],
-		"item_counts": [
+		"itemCounts": [
 			3,
 			1
 		],
 		"results": [
 			2002
 		],
-		"result_counts": [
+		"resultCounts": [
 			3
 		],
-		"grid_index": 2202
+		"gridIndex": 2202
 	},
 	{
 		"id": 90,
@@ -2219,23 +2219,23 @@
 		"description": null,
 		"sid": "2303",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 60,
+		"handcraft": true,
+		"timeSpend": 60,
 		"items": [
 			2012,
 			1204
 		],
-		"item_counts": [
+		"itemCounts": [
 			2,
 			1
 		],
 		"results": [
 			2013
 		],
-		"result_counts": [
+		"resultCounts": [
 			2
 		],
-		"grid_index": 2303
+		"gridIndex": 2303
 	},
 	{
 		"id": 91,
@@ -2243,23 +2243,23 @@
 		"description": null,
 		"sid": "2207",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 240,
+		"handcraft": true,
+		"timeSpend": 240,
 		"items": [
 			1103,
 			1108
 		],
-		"item_counts": [
+		"itemCounts": [
 			8,
 			8
 		],
 		"results": [
 			2102
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2207
+		"gridIndex": 2207
 	},
 	{
 		"id": 92,
@@ -2267,14 +2267,14 @@
 		"description": null,
 		"sid": "2203",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 60,
+		"handcraft": true,
+		"timeSpend": 60,
 		"items": [
 			2002,
 			1205,
 			1123
 		],
-		"item_counts": [
+		"itemCounts": [
 			3,
 			1,
 			1
@@ -2282,10 +2282,10 @@
 		"results": [
 			2003
 		],
-		"result_counts": [
+		"resultCounts": [
 			3
 		],
-		"grid_index": 2203
+		"gridIndex": 2203
 	},
 	{
 		"id": 93,
@@ -2293,15 +2293,15 @@
 		"description": null,
 		"sid": "2210",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 1200,
+		"handcraft": true,
+		"timeSpend": 1200,
 		"items": [
 			1103,
 			1106,
 			1303,
 			1206
 		],
-		"item_counts": [
+		"itemCounts": [
 			40,
 			40,
 			40,
@@ -2310,10 +2310,10 @@
 		"results": [
 			2103
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2210
+		"gridIndex": 2210
 	},
 	{
 		"id": 94,
@@ -2321,14 +2321,14 @@
 		"description": null,
 		"sid": "1410",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 240,
+		"handcraft": true,
+		"timeSpend": 240,
 		"items": [
 			1101,
 			1303,
 			1405
 		],
-		"item_counts": [
+		"itemCounts": [
 			5,
 			2,
 			2
@@ -2336,10 +2336,10 @@
 		"results": [
 			5001
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1410
+		"gridIndex": 1410
 	},
 	{
 		"id": 95,
@@ -2347,14 +2347,14 @@
 		"description": null,
 		"sid": "2211",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 1800,
+		"handcraft": true,
+		"timeSpend": 1800,
 		"items": [
 			2103,
 			1107,
 			1206
 		],
-		"item_counts": [
+		"itemCounts": [
 			1,
 			40,
 			20
@@ -2362,10 +2362,10 @@
 		"results": [
 			2104
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2211
+		"gridIndex": 2211
 	},
 	{
 		"id": 96,
@@ -2373,14 +2373,14 @@
 		"description": null,
 		"sid": "1411",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 360,
+		"handcraft": true,
+		"timeSpend": 360,
 		"items": [
 			1107,
 			1303,
 			1406
 		],
-		"item_counts": [
+		"itemCounts": [
 			10,
 			10,
 			2
@@ -2388,10 +2388,10 @@
 		"results": [
 			5002
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1411
+		"gridIndex": 1411
 	},
 	{
 		"id": 97,
@@ -2399,14 +2399,14 @@
 		"description": null,
 		"sid": "1302",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 120,
+		"handcraft": true,
+		"timeSpend": 120,
 		"items": [
 			1101,
 			1201,
 			1202
 		],
-		"item_counts": [
+		"itemCounts": [
 			2,
 			1,
 			1
@@ -2414,10 +2414,10 @@
 		"results": [
 			1203
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1302
+		"gridIndex": 1302
 	},
 	{
 		"id": 98,
@@ -2425,23 +2425,23 @@
 		"description": null,
 		"sid": "1402",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 120,
+		"handcraft": true,
+		"timeSpend": 120,
 		"items": [
 			1203,
 			1202
 		],
-		"item_counts": [
+		"itemCounts": [
 			2,
 			2
 		],
 		"results": [
 			1204
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1402
+		"gridIndex": 1402
 	},
 	{
 		"id": 99,
@@ -2449,14 +2449,14 @@
 		"description": null,
 		"sid": "1506",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 240,
+		"handcraft": true,
+		"timeSpend": 240,
 		"items": [
 			1204,
 			1104,
 			1123
 		],
-		"item_counts": [
+		"itemCounts": [
 			2,
 			2,
 			2
@@ -2464,10 +2464,10 @@
 		"results": [
 			1206
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1506
+		"gridIndex": 1506
 	},
 	{
 		"id": 100,
@@ -2475,24 +2475,24 @@
 		"description": "Although the Unipolar magnet is extremely rare, as long as you find it, you can make Particle container more efficiently.",
 		"sid": "1606",
 		"type": "ASSEMBLE",
-		"explicit": 1,
-		"time_spend": 240,
+		"explicit": true,
+		"timeSpend": 240,
 		"items": [
 			1016,
 			1104
 		],
-		"item_counts": [
+		"itemCounts": [
 			10,
 			2
 		],
 		"results": [
 			1206
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1606,
-		"icon_path": "Icons/ItemRecipe/partical-capacitor-lv2"
+		"gridIndex": 1606,
+		"iconPath": "Icons/ItemRecipe/partical-capacitor-lv2"
 	},
 	{
 		"id": 101,
@@ -2500,23 +2500,23 @@
 		"description": null,
 		"sid": "1405",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 360,
+		"handcraft": true,
+		"timeSpend": 360,
 		"items": [
 			1112,
 			1127
 		],
-		"item_counts": [
+		"itemCounts": [
 			4,
 			1
 		],
 		"results": [
 			1209
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1405
+		"gridIndex": 1405
 	},
 	{
 		"id": 102,
@@ -2524,23 +2524,23 @@
 		"description": null,
 		"sid": "1705",
 		"type": "RESEARCH",
-		"handcraft": 1,
-		"time_spend": 1440,
+		"handcraft": true,
+		"timeSpend": 1440,
 		"items": [
 			1209,
 			1305
 		],
-		"item_counts": [
+		"itemCounts": [
 			1,
 			1
 		],
 		"results": [
 			6005
 		],
-		"result_counts": [
+		"resultCounts": [
 			2
 		],
-		"grid_index": 1705
+		"gridIndex": 1705
 	},
 	{
 		"id": 103,
@@ -2548,14 +2548,14 @@
 		"description": null,
 		"sid": "1502",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 180,
+		"handcraft": true,
+		"timeSpend": 180,
 		"items": [
 			1204,
 			1102,
 			1109
 		],
-		"item_counts": [
+		"itemCounts": [
 			2,
 			3,
 			1
@@ -2563,10 +2563,10 @@
 		"results": [
 			1205
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1502
+		"gridIndex": 1502
 	},
 	{
 		"id": 104,
@@ -2574,13 +2574,13 @@
 		"description": null,
 		"sid": "1312",
 		"type": "PARTICLE",
-		"time_spend": 480,
+		"timeSpend": 480,
 		"items": [
 			1206,
 			1101,
 			1121
 		],
-		"item_counts": [
+		"itemCounts": [
 			2,
 			2,
 			10
@@ -2588,10 +2588,10 @@
 		"results": [
 			1127
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1312
+		"gridIndex": 1312
 	},
 	{
 		"id": 106,
@@ -2599,21 +2599,21 @@
 		"description": null,
 		"sid": "1110",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 30,
+		"handcraft": true,
+		"timeSpend": 30,
 		"items": [
 			1006
 		],
-		"item_counts": [
+		"itemCounts": [
 			1
 		],
 		"results": [
 			1141
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1110
+		"gridIndex": 1110
 	},
 	{
 		"id": 107,
@@ -2621,23 +2621,23 @@
 		"description": null,
 		"sid": "1111",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 60,
+		"handcraft": true,
+		"timeSpend": 60,
 		"items": [
 			1141,
 			1112
 		],
-		"item_counts": [
+		"itemCounts": [
 			2,
 			1
 		],
 		"results": [
 			1142
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1111
+		"gridIndex": 1111
 	},
 	{
 		"id": 108,
@@ -2645,23 +2645,23 @@
 		"description": null,
 		"sid": "1112",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 120,
+		"handcraft": true,
+		"timeSpend": 120,
 		"items": [
 			1142,
 			1124
 		],
-		"item_counts": [
+		"itemCounts": [
 			2,
 			1
 		],
 		"results": [
 			1143
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1112
+		"gridIndex": 1112
 	},
 	{
 		"id": 109,
@@ -2669,15 +2669,15 @@
 		"description": null,
 		"sid": "2407",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 180,
+		"handcraft": true,
+		"timeSpend": 180,
 		"items": [
 			1103,
 			1401,
 			1301,
 			1302
 		],
-		"item_counts": [
+		"itemCounts": [
 			4,
 			2,
 			2,
@@ -2686,10 +2686,10 @@
 		"results": [
 			2313
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2407
+		"gridIndex": 2407
 	},
 	{
 		"id": 110,
@@ -2697,15 +2697,15 @@
 		"description": null,
 		"sid": "2408",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 180,
+		"handcraft": true,
+		"timeSpend": 180,
 		"items": [
 			1103,
 			1108,
 			1110,
 			1303
 		],
-		"item_counts": [
+		"itemCounts": [
 			8,
 			4,
 			4,
@@ -2714,10 +2714,10 @@
 		"results": [
 			2314
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2408
+		"gridIndex": 2408
 	},
 	{
 		"id": 111,
@@ -2725,15 +2725,15 @@
 		"description": null,
 		"sid": "2212",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 1800,
+		"handcraft": true,
+		"timeSpend": 1800,
 		"items": [
 			2104,
 			1205,
 			1406,
 			2207
 		],
-		"item_counts": [
+		"itemCounts": [
 			1,
 			50,
 			20,
@@ -2742,10 +2742,10 @@
 		"results": [
 			2105
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2212
+		"gridIndex": 2212
 	},
 	{
 		"id": 112,
@@ -2753,23 +2753,23 @@
 		"description": null,
 		"sid": "1712",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 60,
+		"handcraft": true,
+		"timeSpend": 60,
 		"items": [
 			1108,
 			1103
 		],
-		"item_counts": [
+		"itemCounts": [
 			3,
 			1
 		],
 		"results": [
 			1131
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1712
+		"gridIndex": 1712
 	},
 	{
 		"id": 113,
@@ -2777,15 +2777,15 @@
 		"description": null,
 		"sid": "2109",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 600,
+		"handcraft": true,
+		"timeSpend": 600,
 		"items": [
 			1107,
 			1205,
 			1124,
 			1303
 		],
-		"item_counts": [
+		"itemCounts": [
 			12,
 			10,
 			8,
@@ -2794,10 +2794,10 @@
 		"results": [
 			2211
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2109
+		"gridIndex": 2109
 	},
 	{
 		"id": 114,
@@ -2805,14 +2805,14 @@
 		"description": null,
 		"sid": "2208",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 120,
+		"handcraft": true,
+		"timeSpend": 120,
 		"items": [
 			1101,
 			1108,
 			1110
 		],
-		"item_counts": [
+		"itemCounts": [
 			8,
 			4,
 			4
@@ -2820,10 +2820,10 @@
 		"results": [
 			2106
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2208
+		"gridIndex": 2208
 	},
 	{
 		"id": 115,
@@ -2831,22 +2831,22 @@
 		"description": "The successful fractionation of deuterium from liquid hydrogen has greatly promoted the use of nuclear fuel.",
 		"sid": "1407",
 		"type": "FRACTIONATE",
-		"explicit": 1,
-		"time_spend": 1,
+		"explicit": true,
+		"timeSpend": 1,
 		"items": [
 			1120
 		],
-		"item_counts": [
+		"itemCounts": [
 			100
 		],
 		"results": [
 			1121
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1407,
-		"icon_path": "Icons/ItemRecipe/deuterium-formula"
+		"gridIndex": 1407,
+		"iconPath": "Icons/ItemRecipe/deuterium-formula"
 	},
 	{
 		"id": 116,
@@ -2854,15 +2854,15 @@
 		"description": null,
 		"sid": "2405",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 300,
+		"handcraft": true,
+		"timeSpend": 300,
 		"items": [
 			2302,
 			1125,
 			1304,
 			1016
 		],
-		"item_counts": [
+		"itemCounts": [
 			1,
 			5,
 			4,
@@ -2871,10 +2871,10 @@
 		"results": [
 			2315
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2405
+		"gridIndex": 2405
 	},
 	{
 		"id": 117,
@@ -2882,15 +2882,15 @@
 		"description": null,
 		"sid": "2304",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 120,
+		"handcraft": true,
+		"timeSpend": 120,
 		"items": [
 			1101,
 			1201,
 			1110,
 			1301
 		],
-		"item_counts": [
+		"itemCounts": [
 			3,
 			2,
 			1,
@@ -2899,10 +2899,10 @@
 		"results": [
 			2030
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2304
+		"gridIndex": 2304
 	},
 	{
 		"id": 118,
@@ -2910,15 +2910,15 @@
 		"description": null,
 		"sid": "2108",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 360,
+		"handcraft": true,
+		"timeSpend": 360,
 		"items": [
 			1103,
 			1104,
 			1404,
 			1205
 		],
-		"item_counts": [
+		"itemCounts": [
 			15,
 			20,
 			4,
@@ -2927,10 +2927,10 @@
 		"results": [
 			2213
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2108
+		"gridIndex": 2108
 	},
 	{
 		"id": 119,
@@ -2938,8 +2938,8 @@
 		"description": null,
 		"sid": "2306",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 1200,
+		"handcraft": true,
+		"timeSpend": 1200,
 		"items": [
 			1107,
 			1125,
@@ -2947,7 +2947,7 @@
 			1305,
 			1014
 		],
-		"item_counts": [
+		"itemCounts": [
 			20,
 			10,
 			10,
@@ -2957,10 +2957,10 @@
 		"results": [
 			2316
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2306
+		"gridIndex": 2306
 	},
 	{
 		"id": 120,
@@ -2968,15 +2968,15 @@
 		"description": null,
 		"sid": "2205",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 240,
+		"handcraft": true,
+		"timeSpend": 240,
 		"items": [
 			1103,
 			1201,
 			1205,
 			1303
 		],
-		"item_counts": [
+		"itemCounts": [
 			3,
 			4,
 			1,
@@ -2985,10 +2985,10 @@
 		"results": [
 			2040
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2205
+		"gridIndex": 2205
 	},
 	{
 		"id": 121,
@@ -2996,14 +2996,14 @@
 		"description": "Add hydrogen and coal to Crude Oil, and process more Crude Oil through reforming reaction.",
 		"sid": "1307",
 		"type": "REFINE",
-		"explicit": 1,
-		"time_spend": 240,
+		"explicit": true,
+		"timeSpend": 240,
 		"items": [
 			1114,
 			1120,
 			1006
 		],
-		"item_counts": [
+		"itemCounts": [
 			2,
 			1,
 			1
@@ -3011,12 +3011,12 @@
 		"results": [
 			1114
 		],
-		"result_counts": [
+		"resultCounts": [
 			3
 		],
-		"grid_index": 1307,
-		"icon_path": "Icons/ItemRecipe/reforming-refine",
-		"non_productive": 1
+		"gridIndex": 1307,
+		"iconPath": "Icons/ItemRecipe/reforming-refine",
+		"nonProductive": true
 	},
 	{
 		"id": 122,
@@ -3024,14 +3024,14 @@
 		"description": null,
 		"sid": "2209",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 480,
+		"handcraft": true,
+		"timeSpend": 480,
 		"items": [
 			1101,
 			1401,
 			1303
 		],
-		"item_counts": [
+		"itemCounts": [
 			8,
 			4,
 			4
@@ -3039,10 +3039,10 @@
 		"results": [
 			2107
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2209
+		"gridIndex": 2209
 	},
 	{
 		"id": 123,
@@ -3050,14 +3050,14 @@
 		"description": null,
 		"sid": "1409",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 120,
+		"handcraft": true,
+		"timeSpend": 120,
 		"items": [
 			1101,
 			1204,
 			1303
 		],
-		"item_counts": [
+		"itemCounts": [
 			2,
 			1,
 			1
@@ -3065,10 +3065,10 @@
 		"results": [
 			5003
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 1409
+		"gridIndex": 1409
 	},
 	{
 		"id": 124,
@@ -3076,15 +3076,15 @@
 		"description": null,
 		"sid": "2410",
 		"type": "ASSEMBLE",
-		"handcraft": 1,
-		"time_spend": 600,
+		"handcraft": true,
+		"timeSpend": 600,
 		"items": [
 			2309,
 			1119,
 			1127,
 			1305
 		],
-		"item_counts": [
+		"itemCounts": [
 			1,
 			10,
 			3,
@@ -3093,9 +3093,9 @@
 		"results": [
 			2317
 		],
-		"result_counts": [
+		"resultCounts": [
 			1
 		],
-		"grid_index": 2410
+		"gridIndex": 2410
 	}
 ]

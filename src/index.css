@@ -22,6 +22,18 @@
 	}
 	
 	summary::marker { content: none; }
+	summary::-webkit-details-marker { display: none; }
+	input[type="number"] {
+		-webkit-appearance: none;
+		-moz-appearance: textfield;
+	}
+	input[type="number"]::-webkit-outer-spin-button,
+	input[type="number"]::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		margin: 0;
+	}
 }
 
 html {
@@ -55,10 +67,6 @@ input[type="number"] {
 	font-size: 16px;
 	text-align: right;
 	vertical-align: middle;
-}
-
-input[type="number"]::-webkit-inner-spin-button {
-	display: none;
 }
 
 select {

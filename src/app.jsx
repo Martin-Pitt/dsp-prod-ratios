@@ -36,13 +36,52 @@ function renderNumber(factor) {
 
 export function App(props) {
 	const [selected, setSelected] = useState(null);
-	const onSelect = useCallback(event => {
-		setSelected(event.target.value);
-	});
+	const [recipe, setRecipe] = useState(null);
 	const [factor, setFactor] = useState(1);
-	const onFactor = useCallback(event => {
-		setFactor(+event.target.value);
+	const [per, setPer] = useState(60);
+	const [timeScale, setTimeScale] = useState('minute');
+	
+	const onItem = useCallback(event => {
+		setSelected(event.target.value);
+		const recipe = Recipes.find(recipe => recipe.name === event.target.value || event.target.value in recipe.output);
+		setRecipe(recipe);
+		
+		const output = recipe.output[Object.keys(recipe.output)[0]];
+		if(output === true) return;
+		const [produced, perMinute] = output;
+		
+		let per = perMinute * factor;
+		if(timeScale === 'second') per *= 60.0;
+		setPer(per);
 	});
+	
+	const onFactor = useCallback(event => {
+		let value = +event.target.value;
+		setFactor(value);
+		
+		const output = recipe.output[Object.keys(recipe.output)[0]];
+		if(output === true) return;
+		const [produced, perMinute] = output;
+		
+		setPer(perMinute * value);
+	});
+	
+	const onPer = useCallback(event => {
+		let value = +event.target.value;
+		if(timeScale === 'second') value *= 60.0;
+		setPer(value);
+		
+		const output = recipe.output[Object.keys(recipe.output)[0]];
+		if(output === true) return;
+		const [produced, perMinute] = output;
+		
+		setFactor(value / perMinute);
+	});
+	
+	const onTimeScale = useCallback(event => {
+		setTimeScale(event.target.value);
+	});
+	
 	
 	
 	const processesSkipped = [
@@ -50,12 +89,6 @@ export function App(props) {
 		'Factionation Facility',
 		'Ray Receiver',
 	];
-	
-	// const production = useMemo(() => {
-	// 	if(!selected) return null;
-	// 	else return Chain(selected, factor)
-	// 		.filter(recipe => !processesSkipped.includes(recipe.process))
-	// }, [selected, factor]);
 	
 	const production = useMemo(() => {
 		if(!selected) return null;
@@ -71,6 +104,21 @@ export function App(props) {
 		return prod;
 	}, [selected, factor]);
 	
+	function renderThroughput(perMinute, product) {
+		if(timeScale === 'second') perMinute /= 60;
+		return (
+			<>
+				<span class="perMinute">{renderNumber(perMinute)}</span>&times; <span class="item">{product}</span> per {timeScale}
+			</>
+		);
+	}
+	
+	// function renderFactor() {
+	// 	&nbsp;&nbsp; <span class="process">{recipe.process}</span> <span class="item">{recipe.name || Object.keys(recipe.output).pop()}</span>
+	// 	<span class="factor">{renderNumber(recipe.factor)}</span>&times; <span class="process">{recipe.process}</span> <span class="item">{recipe.name || Object.keys(recipe.output).pop()}</span>
+	// 	<span class="factor">{renderNumber(recipe.factor)}</span>&times; <span class="process">{recipe.process}</span> <span class="item">{recipe.name || Object.keys(recipe.output).pop()}</span>
+	// }
+	
 	function renderProduction(recipe) {
 		function renderOutput(recipe, ) {
 			let { process, output, factor } = recipe;
@@ -79,12 +127,14 @@ export function App(props) {
 			return Object.entries(output).map(([product, throughput]) => {
 				if(!throughput || throughput === true)
 				{
-					<li class="output"><span class="perMinute">{renderNumber(factor)}</span>&times; <span class="item">{product}</span> per minute</li>;
+					return <li class="output">{renderThroughput(factor, product)}</li>;
+					// return <li class="output"><span class="perMinute">{renderNumber(factor)}</span>&times; <span class="item">{product}</span> per minute</li>;
 				}
 				else
 				{
 					let [amount, perMinute] = throughput;
-					return <li class="output"><span class="perMinute">{renderNumber(perMinute * factor)}</span>&times; <span class="item">{product}</span> per minute</li>;
+					return <li class="output">{renderThroughput(perMinute * factor, product)}</li>;
+					// return <li class="output"><span class="perMinute">{renderNumber(perMinute * factor)}</span>&times; <span class="item">{product}</span> per minute</li>;
 				}
 			});
 		}
@@ -96,12 +146,14 @@ export function App(props) {
 				if(!throughput || throughput === true || throughput === 1)
 				{
 					// TODO: compute how many miners we would need to achieve this?
-					return <li class="byproduct"><span class="perMinute">{renderNumber(factor)}</span>&times; <span class="item">{product}</span> per minute</li>;
+					return <li class="byproduct">{renderThroughput(factor, product)}</li>;
+					// return <li class="byproduct"><span class="perMinute">{renderNumber(factor)}</span>&times; <span class="item">{product}</span> per minute</li>;
 				}
 				else if (Array.isArray(throughput) && throughput.length >= 2)
 				{
 					let [amount, perMinute] = throughput;
-					return <li class="byproduct"><span class="perMinute">{renderNumber(perMinute * factor)}</span>&times; <span class="item">{product}</span> per minute</li>;
+					return <li class="byproduct">{renderThroughput(perMinute * factor, product)}</li>
+					// return <li class="byproduct"><span class="perMinute">{renderNumber(perMinute * factor)}</span>&times; <span class="item">{product}</span> per minute</li>;
 				}
 				else 
 				{
@@ -172,8 +224,18 @@ export function App(props) {
 					DSP Production Ratio Calculator
 				</h1>
 				<div class="combo-selector">
-					<input type="number" value={factor} min="1" onInput={onFactor}/>
-					<select onChange={onSelect}>
+					<input
+						class="factor"
+						type="number"
+						value={factor}
+						min="0"
+						onInput={onFactor}
+						disabled={!selected}
+					/>
+					<select
+						class="recipe"
+						onChange={onItem}
+					>
 						<option disabled selected> -- select an item to produce -- </option>
 						{Array.from(Processes)
 						.filter(process => !processesSkipped.includes(process))
@@ -200,8 +262,23 @@ export function App(props) {
 								).map(name => <option value={name}>{name}</option>)}
 							</optgroup>
 						)}
-						
-						{/* {Array.from(Names).map(name => <option>{name}</option>)} */}
+					</select>
+					<input
+						class="per"
+						type="number"
+						value={timeScale === 'minute'? per : per / 60}
+						min="0"
+						step={timeScale === 'minute'? 5 : 1}
+						onInput={onPer}
+						disabled={!selected}
+					/>
+					<select
+						class="timescale"
+						onChange={onTimeScale}
+						disabled={!selected}
+					>
+						<option value="minute" selected>per minute</option>
+						<option value="second">per second</option>
 					</select>
 				</div>
 				<a class="link github" target="_blank" href="https://github.com/Martin-Pitt/dsp-prod-ratios">

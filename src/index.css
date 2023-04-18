@@ -69,6 +69,7 @@ header {
 }
 
 header .combo-selector {
+	display: flex;
 	margin: 10px 0;
 }
 
@@ -83,6 +84,7 @@ header input[type="number"] {
 	font-size: 16px;
 	text-align: right;
 	vertical-align: middle;
+	color: black;
 }
 
 header select {
@@ -94,6 +96,20 @@ header select {
 	font-size: 16px;
 	vertical-align: middle;
 }
+
+.combo-selector .factor {
+	width: 60px;
+}
+.combo-selector .recipe {}
+.combo-selector .per {
+	width: 80px;
+}
+.combo-selector .timescale {}
+
+.combo-selector * + .per {
+	margin-left: 20px;
+}
+
 
 header .link {
 	display: block;

@@ -7,6 +7,7 @@ import {
 } from './recipes.js';
 import { Production, Chain } from './prod.js';
 import iconGithub from './github-mark-white.svg';
+import logo from './logo.svg';
 
 
 window.Items = Items;
@@ -166,7 +167,10 @@ export function App(props) {
 	return (
 		<>
 			<header>
-				<h1>DSP Production Ratio Calculator</h1>
+				<h1 class="title">
+					<img class="logo" src={logo} alt=""/>
+					DSP Production Ratio Calculator
+				</h1>
 				<div class="combo-selector">
 					<input type="number" value={factor} min="1" onInput={onFactor}/>
 					<select onChange={onSelect}>
@@ -201,7 +205,7 @@ export function App(props) {
 					</select>
 				</div>
 				<a class="link github" target="_blank" href="https://github.com/Martin-Pitt/dsp-prod-ratios">
-					<img class="icon" src={iconGithub}/>
+					<img class="icon" src={iconGithub} alt=""/>
 				</a>
 			</header>
 			<main>

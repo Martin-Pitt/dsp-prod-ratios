@@ -1,15 +1,20 @@
-<svg width="410" height="404" viewBox="0 0 410 404" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M399.641 59.5246L215.643 388.545C211.844 395.338 202.084 395.378 198.228 388.618L10.5817 59.5563C6.38087 52.1896 12.6802 43.2665 21.0281 44.7586L205.223 77.6824C206.398 77.8924 207.601 77.8904 208.776 77.6763L389.119 44.8058C397.439 43.2894 403.768 52.1434 399.641 59.5246Z" fill="url(#paint0_linear)"/>
-<path d="M292.965 1.5744L156.801 28.2552C154.563 28.6937 152.906 30.5903 152.771 32.8664L144.395 174.33C144.198 177.662 147.258 180.248 150.51 179.498L188.42 170.749C191.967 169.931 195.172 173.055 194.443 176.622L183.18 231.775C182.422 235.487 185.907 238.661 189.532 237.56L212.947 230.446C216.577 229.344 220.065 232.527 219.297 236.242L201.398 322.875C200.278 328.294 207.486 331.249 210.492 326.603L212.5 323.5L323.454 102.072C325.312 98.3645 322.108 94.137 318.036 94.9228L279.014 102.454C275.347 103.161 272.227 99.746 273.262 96.1583L298.731 7.86689C299.767 4.27314 296.636 0.855181 292.965 1.5744Z" fill="url(#paint1_linear)"/>
-<defs>
-<linearGradient id="paint0_linear" x1="6.00017" y1="32.9999" x2="235" y2="344" gradientUnits="userSpaceOnUse">
-<stop stop-color="#41D1FF"/>
-<stop offset="1" stop-color="#BD34FE"/>
-</linearGradient>
-<linearGradient id="paint1_linear" x1="194.651" y1="8.81818" x2="236.076" y2="292.989" gradientUnits="userSpaceOnUse">
-<stop stop-color="#FFEA83"/>
-<stop offset="0.0833333" stop-color="#FFDD35"/>
-<stop offset="1" stop-color="#FFA800"/>
-</linearGradient>
-</defs>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <clipPath id="clip-favicon">
+      <rect width="512" height="512"/>
+    </clipPath>
+  </defs>
+  <g id="favicon" clip-path="url(#clip-favicon)">
+    <g id="Group_7" data-name="Group 7" transform="translate(-76.793 -85.976)">
+      <g id="Group_5" data-name="Group 5" transform="translate(198.5 204.5)">
+        <line id="Line_1" data-name="Line 1" y1="313.486" x2="313.486" transform="translate(-20.859 -20.859)" fill="none" stroke="#673ab8" stroke-linecap="round" stroke-width="190"/>
+        <line id="Line_2" data-name="Line 2" y1="313.486" x2="313.486" transform="translate(292.627 -20.859) rotate(90)" fill="none" stroke="#673ab8" stroke-linecap="round" stroke-width="190"/>
+        <circle id="Ellipse_3" data-name="Ellipse 3" cx="247" cy="247" r="247" transform="translate(-112.707 -109.524)" fill="#673ab8"/>
+      </g>
+    </g>
+    <g id="Group_3" data-name="Group 3" transform="translate(90.954 14.225)">
+      <path id="Subtraction_2" data-name="Subtraction 2" d="M330.091,413.763h0L208.879,433.639,42.617,460.9,33.37,360.889l286.5-19.8,10.226,72.673Zm-12.455-88.518h0l-53.028,2.585-8.255-62.656,8.324.214L248.1,140.924l29.2,4.984,16.6,120.23,12.23.314,4.093,6.164,7.405,52.629ZM116.48,335.052h0L31.364,339.2l-6.633-71.736,5.162-8.107,21.4.55L36.232,104.764l45.076,7.693L96.883,261.078l11.73.3,7.867,73.672Zm120.4-6.142-84.659,4.1L149.893,312.4l84.6-2.26,2.385,18.77Zm46.9-196.507h0L229.65,122.2l-.9-6.909-59.564-11.686L100.917,90.212l.857,7.886L19.748,82.637l-6.1-64.5,12.1-11.439L81.63,21.224l13.644,17.04.994,9.15,68.106,16.194,59.48,14.143-1.048-8.035,7.471-9.844L267.329,69.5l9.559,13.548,6.886,49.35Z" transform="translate(0 0)" fill="#fff"/>
+      <path id="Path_6" data-name="Path 6" d="M0,0,65.387,12.956l3.128,24.9-7.56,7.888L14.039,38.189,3.052,26.652Z" transform="translate(135.125 95.039)" fill="#fff"/>
+    </g>
+  </g>
 </svg>

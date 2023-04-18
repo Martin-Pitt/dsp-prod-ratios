@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <clipPath id="clip-logo">
+      <rect width="512" height="512"/>
+    </clipPath>
+  </defs>
+  <g id="logo" clip-path="url(#clip-logo)">
+    <g id="Group_7" data-name="Group 7" transform="translate(-76.793 -85.976)">
+      <g id="Group_5" data-name="Group 5" transform="translate(198.5 204.5)">
+        <line id="Line_1" data-name="Line 1" y1="313.486" x2="313.486" transform="translate(-20.859 -20.859)" fill="none" stroke="#673ab8" stroke-linecap="round" stroke-width="190"/>
+        <line id="Line_2" data-name="Line 2" y1="313.486" x2="313.486" transform="translate(292.627 -20.859) rotate(90)" fill="none" stroke="#673ab8" stroke-linecap="round" stroke-width="190"/>
+      </g>
+    </g>
+    <g id="Group_3" data-name="Group 3" transform="translate(126.002 68.702)">
+      <path id="Subtraction_2" data-name="Subtraction 2" d="M260,326.418h0l-98.659,11.192L34.931,351.949l-7.47-75.267,224.493-8.922L260,326.417Zm-9.8-71.482h0L206.35,255.98l-6.51-50.2,6.809.236L193.5,105.5l24.086,3.616,13.188,97.744,10.189.354,3.385,5.035,5.853,42.689Zm-160.71,3.829h0l-63.652,1.516-5.4-54.453,3.738-6.138,15.849.55L27.733,80.608l34,5.1L74.283,201.428l8.93.31,6.272,57.026Zm94.371-2.464-66.9,1.578-1.84-16.057,66.866-.438,1.878,14.917Zm39.177-158.36h0l-44.564-7.33-.719-5.591-47.825-8.162-53.306-9.1.692,6.214-62-10.2L10.258,13.671l8.913-9.41L61.5,13.668,72.049,26.733l.806,7.238,53.212,10.868,47.77,9.757L173,48.074l6.114-8.267,30.512,6.781,7.9,10.9,5.507,40.453Z" transform="translate(0)" fill="#fff"/>
+      <path id="Path_6" data-name="Path 6" d="M0,0,51.8,8.921l2.5,20.021-6.067,6.467L11.067,30.117,2.451,21.138Z" transform="translate(103.127 70.784)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

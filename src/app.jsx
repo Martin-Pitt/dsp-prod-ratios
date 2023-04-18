@@ -6,6 +6,8 @@ import {
 	findRecipeByOutput,
 } from './recipes.js';
 import { Production, Chain } from './prod.js';
+import iconGithub from './github-mark-white.svg';
+
 
 window.Items = Items;
 window.Buildings = Buildings;
@@ -165,37 +167,42 @@ export function App(props) {
 		<>
 			<header>
 				<h1>DSP Production Ratio Calculator</h1>
-				<input type="number" value={factor} min="1" onInput={onFactor}/>
-				<select onChange={onSelect}>
-					<option disabled selected> -- select an item to produce -- </option>
-					{Array.from(Processes)
-					.filter(process => !processesSkipped.includes(process))
-					.map(process => 
-						<optgroup label={process}>
-							{Array.from(
-								new Set(
-									Items
-										.filter(item => item.process === process)
-										.flatMap(recipe => recipe.name || Object.keys(recipe.output))
-								)
-							).map(name => <option value={name}>{name}</option>)}
-						</optgroup>
-					)}
-					
-					{Array.from(Types).map(type => 
-						<optgroup label={type}>
-							{Array.from(
-								new Set(
-									Buildings
-										.filter(building => building.type === type)
-										.flatMap(recipe => Object.keys(recipe.output))
-								)
-							).map(name => <option value={name}>{name}</option>)}
-						</optgroup>
-					)}
-					
-					{/* {Array.from(Names).map(name => <option>{name}</option>)} */}
-				</select>
+				<div class="combo-selector">
+					<input type="number" value={factor} min="1" onInput={onFactor}/>
+					<select onChange={onSelect}>
+						<option disabled selected> -- select an item to produce -- </option>
+						{Array.from(Processes)
+						.filter(process => !processesSkipped.includes(process))
+						.map(process => 
+							<optgroup label={process}>
+								{Array.from(
+									new Set(
+										Items
+											.filter(item => item.process === process)
+											.flatMap(recipe => recipe.name || Object.keys(recipe.output))
+									)
+								).map(name => <option value={name}>{name}</option>)}
+							</optgroup>
+						)}
+						
+						{Array.from(Types).map(type => 
+							<optgroup label={type}>
+								{Array.from(
+									new Set(
+										Buildings
+											.filter(building => building.type === type)
+											.flatMap(recipe => Object.keys(recipe.output))
+									)
+								).map(name => <option value={name}>{name}</option>)}
+							</optgroup>
+						)}
+						
+						{/* {Array.from(Names).map(name => <option>{name}</option>)} */}
+					</select>
+				</div>
+				<a class="link github" target="_blank" href="https://github.com/Martin-Pitt/dsp-prod-ratios">
+					<img class="icon" src={iconGithub}/>
+				</a>
 			</header>
 			<main>
 				{production && (

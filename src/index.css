@@ -34,6 +34,10 @@
 		appearance: none;
 		margin: 0;
 	}
+	
+	select, summary {
+		cursor: pointer;
+	}
 }
 
 html {
@@ -46,17 +50,23 @@ html {
 }
 
 header {
-	padding: 10px;
+	display: flex;
+	align-items: center;
+	padding: 0 20px;
 	background: black;
+	gap: 20px;
 }
 
-h1 {
+header h1 {
 	display: inline-block;
-	padding: 0 20px;
 	font-size: 16px;
 }
 
-input[type="number"] {
+header .combo-selector {
+	margin: 10px 0;
+}
+
+header input[type="number"] {
 	display: inline-block;
 	width: 60px;
 	height: 30px;
@@ -69,7 +79,7 @@ input[type="number"] {
 	vertical-align: middle;
 }
 
-select {
+header select {
 	display: inline-block;
 	height: 30px;
 	padding: 4px 10px;
@@ -78,6 +88,23 @@ select {
 	font-size: 16px;
 	vertical-align: middle;
 }
+
+header .link {
+	display: block;
+	padding: 10px;
+	margin-left: auto;
+}
+
+header .link:hover {
+	background: hsla(0, 0%, 100%, 0.2);
+}
+
+header .link .icon {
+	display: inline-block;
+	width: 1.75em;
+	vertical-align: middle;;
+}
+
 
 pre {
 	background: hsl(0deg 0% 0% / 10%);
@@ -116,10 +143,6 @@ main {
 	padding: 0px 20px 0 40px;
 	width: 100%;
 	background-color: hsl(0deg 0% 0% / calc(5% * var(--depth, 0)));
-}
-
-.node > summary {
-	cursor: pointer;
 }
 
 .node > summary:hover::after {

@@ -1,0 +1,44 @@
+@layer reset {
+	html,
+	body {
+		height: 100%;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		font-family: 'Helvetica Neue', arial, sans-serif;
+		color: #444;
+	}
+
+	ul, ol, dl, li, dd, dt {
+		list-style: none;
+	}
+
+	* {
+		box-sizing: border-box;
+		padding: 0;
+		margin: 0;
+	}
+
+	summary::marker { content: none; }
+	summary::-webkit-details-marker { display: none; }
+	input[type="number"] {
+		-webkit-appearance: none;
+		-moz-appearance: textfield;
+	}
+	input[type="number"]::-webkit-outer-spin-button,
+	input[type="number"]::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		margin: 0;
+	}
+
+	select, summary {
+		cursor: pointer;
+	}
+	
+	dialog {
+		margin: auto;
+		outline: none;
+	}	
+}

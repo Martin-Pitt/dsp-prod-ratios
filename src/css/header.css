@@ -1,0 +1,79 @@
+@layer components {
+	.app-header {
+		display: flex;
+		align-items: center;
+		padding: 0 20px;
+		background: black;
+		gap: 30px;
+	}
+
+	.title {
+		display: inline-block;
+		padding: 10px 0;
+		font-size: 16px;
+	}
+	.title .logo {
+		height: 3em;
+		vertical-align: middle;
+		margin-right: 1em;
+	}
+
+	.app-header .combo-selector {
+		display: flex;
+		margin: 10px 0;
+	}
+
+	.app-header input[type="number"] {
+		display: inline-block;
+		width: 60px;
+		height: 30px;
+		padding: 4px 10px;
+		border: none;
+		border-radius: 10px 0 0 10px;
+		margin-right: 1px;
+		font-size: 16px;
+		text-align: right;
+		vertical-align: middle;
+		color: black;
+	}
+
+	.app-header select {
+		display: inline-block;
+		height: 30px;
+		padding: 4px 10px;
+		border: none;
+		border-radius: 0 10px 10px 0;
+		font-size: 16px;
+		vertical-align: middle;
+	}
+
+	.combo-selector .factor {
+		width: 60px;
+	}
+	.combo-selector .recipe {}
+	.combo-selector .per {
+		width: 80px;
+	}
+	.combo-selector .timescale {}
+
+	.combo-selector * + .per {
+		margin-left: 20px;
+	}
+
+
+	.app-header .link {
+		display: block;
+		padding: 10px;
+		margin-left: auto;
+	}
+
+	.app-header .link:hover {
+		background: hsla(0, 0%, 100%, 0.2);
+	}
+
+	.app-header .link .icon {
+		display: inline-block;
+		width: 1.75em;
+		vertical-align: middle;;
+	}
+}

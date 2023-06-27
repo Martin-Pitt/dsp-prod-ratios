@@ -1,0 +1,17 @@
+@layer skeleton {
+	html {
+		background-color: #673ab8;
+	}
+	
+	#app {
+		height: 100%;
+		color: #fff;
+		font-family: Saira, sans-serif;
+		font-weight: 500;
+	}
+	
+	pre {
+		background: hsl(0deg 0% 0% / 10%);
+		tab-size: 3ch;
+	}
+}

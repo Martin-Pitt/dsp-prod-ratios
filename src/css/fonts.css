@@ -1,0 +1,12 @@
+@layer skeleton {
+    @font-face {
+        font-family: 'Saira';
+        src: url('../fonts/Saira-VariableFont_wdth,wght.ttf');
+    }
+    
+    @font-face {
+        font-family: 'Saira';
+        font-style: italic;
+        src: url('../fonts/Saira-Italic-VariableFont_wdth,wght.ttf');
+    }
+}

@@ -1,0 +1,116 @@
+@layer components {
+	dialog.window {
+		
+	}
+
+	dialog.window::backdrop {
+		background: radial-gradient(10px at center, transparent 10%, hsla(0, 0%, 0%, 0.2) 0%) center / 10px 10px;
+		/* backdrop-filter: blur(10px); */
+	}
+
+	dialog.window.recipes {
+		/* display: grid; */
+		padding: 20px;
+		background: none;
+		border: none;
+		backdrop-filter: blur(10px);
+		border-image-source: url('./images/window-2.png');
+		border-image-slice: 30 41 24 21 fill;
+		border-image-width: 30px 41px 24px 21px;
+		border-image-outset: 0px;
+		border-image-repeat: stretch;
+		filter: drop-shadow(2px 7px 4px hsla(0, 0%, 0%, 0.2));
+		color: white;
+		
+		/* clip-path: polygon(
+			1px 9px, 9px 1px,
+			21px 1px, 21px 2px,
+			calc(100% - 21px) 2px, calc(100% - 21px) 1px,
+			calc(100% - 2px) 1px, calc(100% - 1px) 2px,
+			calc(100% - 1px) 30px, calc(100% - 2px) 30px,
+			calc(100% - 2px) calc(100% - 24px), calc(100% - 1px) calc(100% - 24px),
+			calc(100% - 1px) calc(100% - 5px), calc(100% - 5px) 100%,
+			2px 100%, 0% calc(100% - 2px)
+		); */
+	}
+	
+	/* dialog.window.recipes::before,
+	dialog.window.recipes::after {
+		content: '';
+		position: absolute;
+		inset: 0;
+	}
+	
+	dialog.window.recipes::before {
+		border-image-source: url('./images/window-border-2.avif');
+		border-image-slice: 30 41 24 21;
+		border-image-width: 30px 41px 24px 21px;
+		border-image-outset: 2px;
+		border-image-repeat: stretch;
+	}
+	
+	dialog.window.recipes::after {
+		z-index: -1;
+		backdrop-filter: blur(10px);
+		border-image-source: url('./images/window-content-3.avif');
+		border-image-slice: 30 41 24 21;
+		border-image-width: 30px 41px 24px 21px;
+		border-image-outset: 0px;
+		border-image-repeat: stretch;
+		opacity: 0.5;
+	} */
+	
+	.recipe-grid {
+		position: relative;
+		display: grid;
+		grid-template-columns: repeat(12, 60px);
+		grid-template-rows: repeat(7, 60px);
+		place-items: center;
+		padding: 10px;
+		/* background-clip: content-box; */
+		/* background-origin: content-box; */
+		background-color: hsla(0, 0%, 0%, 0.3);
+		
+		/* background-image: url('./images/window-content-5.avif'); */
+		
+		/* border-image-source: url('./images/window-content-5.avif');
+		border-image-slice: 8 25 10 8;
+		border-image-width: 8px 25px 10px 8px;
+		border-image-outset: 1px;
+		border-image-repeat: stretch; */
+		clip-path: polygon(
+			0% 6px,
+			6px 0%,
+			100% 0%,
+			100% calc(100% - 7px),
+			calc(100% - 5px) calc(100% - 3px),
+			calc(100% - 20px) calc(100% - 3px),
+			calc(100% - 23px) calc(100% - 0px),
+			0% 100%
+		);
+	}
+	
+	.recipe-grid::before {
+		content: '';
+		grid-area: 1 / 1 / -1 / -1;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		/* position: absolute;
+		inset: 10px; */
+		background: url('./images/panel-4.avif') 0 0 / 60px 60px repeat;
+		opacity: 0.15;
+	}
+	
+	.recipe-grid .icon {
+		width: 60px;
+		padding: 5px;
+		background-clip: content-box;
+		background-origin: content-box;
+	}
+	
+	.recipe-grid .icon:hover {
+		background-color: #3c6b7c;
+		cursor: pointer;
+	}
+}

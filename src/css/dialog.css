@@ -103,6 +103,7 @@
 	}
 	
 	.recipe-grid .icon {
+		position: relative;
 		width: 60px;
 		padding: 5px;
 		background-clip: content-box;
@@ -112,5 +113,12 @@
 	.recipe-grid .icon:hover {
 		background-color: #3c6b7c;
 		cursor: pointer;
+	}
+	
+	.recipe-grid .icon.is-selected::before {
+		position: absolute;
+		inset: 0;
+		content: '';
+		background: url('./images/window-border-2.avif') 0 0 / 60px 60px repeat;
 	}
 }

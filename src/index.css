@@ -6,4 +6,5 @@
 @import url('./css/header.css');
 @import url('./css/main.css');
 @import url('./css/dialog.css');
+@import url('./css/tabs.css');
 @layer reset, skeleton, components;

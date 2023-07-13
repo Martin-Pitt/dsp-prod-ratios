@@ -1,204 +1,75 @@
-import { useState, useCallback, useMemo, useRef } from 'preact/hooks';
+import { useState, useCallback, useEffect, useMemo, useRef } from 'preact/hooks';
 import { signal } from '@preact/signals';
 import {
-	Tech, Recipes, Items, Strings,
-	supportedLocales, locale,
-	translateableKeys, translate
-} from './lib/data.js';
-
-import iconGithub from './images/github-mark-white.svg';
-import logo from './images/logo.svg';
-
+	createBrowserRouter,
+	createRoutesFromElements,
+	Outlet,
+	Route,
+	RouterProvider,
+	redirect,
+} from "react-router-dom";
+import { Tech, Recipes, Items, Strings } from './lib/data.js';
+import * as state from './state.js';
+import Header from './components/header.jsx';
+import Intro from './pages/intro.jsx';
+import Calculator from './pages/calculator.jsx';
+import Research from './pages/research.jsx';
+import Reference from './pages/reference.jsx';
+import Settings from './pages/settings.jsx';
 
 
 window.Tech = Tech;
 window.Recipes = Recipes;
 window.Items = Items;
 window.Strings = Strings;
-
-window.supportedLocales = supportedLocales;
-window.locale = locale;
-window.translateableKeys = translateableKeys;
-window.translate = translate;
-
-
-
-
-
-
-
-const state = {
-	recipe: signal(null),
-	factor: signal(1),
-	per: signal(60),
-	timeScale: signal('minute'),
-};
-
 window.state = state;
 
 
-function Header(props) {
+
+function Root(props) {
 	return (
-		<header class="app-header">
-			<h1 class="title">
-				<img class="logo" src={logo} alt=""/>
-				DSP Production Ratio Calculator
-			</h1>
-			{props.children}
-			<a class="link github" target="_blank" href="https://github.com/Martin-Pitt/dsp-prod-ratios">
-				<img class="icon" src={iconGithub} alt=""/>
-			</a>
-		</header>
+		<>
+			<Header/>
+			<Outlet/>
+		</>
 	);
 }
 
-function ComboSelector(props) {
-	const onRecipe = useCallback(event => {
-		let id = +event.target.value;
-		let recipe = Recipes.find(recipe => recipe.id === id);
-		state.recipe.value = recipe;
-		
-		// setPer w/ recipe throughput (check timeScale)
-	});
-	
-	const refRecipeWindow = useRef(null);
-	const onSelectRecipe = useCallback(event => {
-		event.preventDefault();
-		refRecipeWindow.current.showModal();
-	});
-	
-	const onFactor = useCallback(event => {
-		// setFactor w/ event.target.value
-		state.factor.value = event.target.value;
-		// find recipe
-		// setFactor w/ event.target.value / recipe's perMinute
-	});
-	
-	const onPer = useCallback(event => {
-		// setPer w/ event.target.value (check timeScale)
-		state.per.value = event.target.value;
-		// find recipe
-		// setFactor w/ event.target.value / recipe's perMinute
-	});
-	
-	const onTimeScale = useCallback(event => {
-		// setTimeScale w/ event.target.value
-		state.timeScale.value = event.target.value;
-	});
-	
-	
-	return (
-		<div class="combo-selector">
-			<input
-				class="factor"
-				type="number"
-				value={state.factor.value}
-				min="0"
-				onInput={onFactor}
-				disabled={!state.recipe.value}
-			/>
-			<select
-				class="recipe"
-				onChange={onRecipe}
-				onMouseDown={onSelectRecipe}
-				onTouchEnd={onSelectRecipe}
-			>
-				<option disabled selected>Please select a recipe</option>
-				{Recipes.map(recipe => <option value={recipe.id}>{recipe.name}</option>)}
-			</select>
-			<dialog class="window recipes" ref={refRecipeWindow}>
-				<header>
-					Select a recipe
-					Items
-					Buildings
-				</header>
-				<ul class="recipe-grid">
-					{Recipes.map(recipe => {
-						let icon;
-						
-						let primaryResult = recipe.results[0];
-						
-						if(Items.find(i => i.id === primaryResult).name !== recipe.name)
-							icon = `recipe.${recipe.id}`;
-						
-						else
-							icon = `item.${primaryResult}`;
-						
-						let gridIndex = recipe.gridIndex.toString();
-						let Z = parseInt(gridIndex.at(0), 10);
-						let Y = parseInt(gridIndex.at(1), 10);
-						let X = parseInt(gridIndex.at(2) + gridIndex.at(3), 10);
-						
-						if(Z !== 1) return null;
-						
-						return (
-							<li
-								key={recipe.id}
-								class="icon"
-								data-icon={icon}
-								style={{
-									gridArea: `${Y} / ${X}`
-								}}
-							/>
-						);
-					})}
-				</ul>
-			</dialog>
-			<input
-				class="per"
-				type="number"
-				value={state.timeScale.value === 'minute'? state.per.value : state.per.value / 60}
-				min="0"
-				step={state.timeScale.value === 'minute'? 5 : 1}
-				onInput={onPer}
-				disabled={!state.recipe.value}
-			/>
-			<select
-				class="timescale"
-				onChange={onTimeScale}
-				disabled={!state.recipe.value}
-			>
-				<option value="minute" selected>per minute</option>
-				<option value="second">per second</option>
-			</select>
-		</div>
-	);
-}
 
+const router = createBrowserRouter(
+	createRoutesFromElements(
+		<Route path="/dsp-prod-ratios/" element={<Root/>}>
+			<Route path="intro" element={<Intro/>}/>
+			<Route path="calculator" element={<Calculator/>}/>
+			<Route path="research" element={<Research/>}/>
+			<Route path="reference" element={<Reference/>}/>
+			<Route path="settings" element={<Settings/>}/>
+			<Route path="" loader={() => redirect('/dsp-prod-ratios/calculator')}/>
+		</Route>
+	)
+);
 
 
 export function App(props) {
-	return (
-		<>
-			<Header>
-				<ComboSelector/>
-			</Header>
-			<main>
-				<pre>
-					recipe: {JSON.stringify(state.recipe.value, null, '\t')}<br/>
-					factor: {state.factor.value}<br/>
-					per: {state.per.value}<br/>
-					timeScale: {state.timeScale.value}<br/>
-				</pre>
-				
-				{/*production && (
-					<>
-						<div class="production-header">
-							<div><span class="factor">Facility</span>&times; <span class="process">Process</span> <span class="item">Recipe</span></div>
-							<div>
-								<div class="output"><span class="perMinute">Throughput</span>&times; <span class="item">Product</span></div>
-								<div class="byproduct"><span class="perMinute">Throughput</span>&times; <span class="item">Byproduct</span></div>
-							</div>
-						</div>
-						{renderProduction(production)}
-					</>
-				)*/}
-			</main>
-		</>
-	);
+	return <RouterProvider router={router} />;
 };
 
 
+
+
+
+/*production && (
+	<>
+		<div class="production-header">
+			<div><span class="factor">Facility</span>&times; <span class="process">Process</span> <span class="item">Recipe</span></div>
+			<div>
+				<div class="output"><span class="perMinute">Throughput</span>&times; <span class="item">Product</span></div>
+				<div class="byproduct"><span class="perMinute">Throughput</span>&times; <span class="item">Byproduct</span></div>
+			</div>
+		</div>
+		{renderProduction(production)}
+	</>
+)*/
 
 /*
 

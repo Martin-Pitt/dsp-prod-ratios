@@ -27,9 +27,9 @@ export default function Tips(props) {
 					This mix helps reduce the factory size from the upper stage, while helping being UPS friendly on the lower stage.
 					
 					{/*
-						Confirmed Product Materisl per The Superior Tentacle:
+						Confirmed Product Materials per The Superior Tentacle:
 						
-						Small Carrier Rocket
+						Small Carrier Rocket (obviously)
 						Dyson Sphere Component
 						Frame Material (0.3% difference, negligible aside from material cost)
 						Deuteron Fuel Rod
@@ -42,13 +42,19 @@ export default function Tips(props) {
 						Titanium Alloy
 						Circuit Boards (0.02% difference, negligible aside from material cost)
 						Magnetic Ring (0.1% difference, negligible aside from material cost)
-						Universe Matrix
+
+						Universe Matrix (Obviously)
 						Information Matrix
 						Gravitational Matrix
 						Graviton Lens
 						Particle Container
+
+						Notables:
+						Electromagnetic Matrix (0.65% difference in favor of speed, negligible aside from material cost)
+						Structure Matrix (1.84% difference in favor of speed, negligible aside from material cost)
+						Particle Container favors speed using Unipolar Magnets
 						
-						--
+						---
 						
 						Although you might tweak things to speed to reduce the scale of other industries.
 						For example particle broadband on products, even though speed is most optimal, to reduce need on chemical plants & oil refineries.

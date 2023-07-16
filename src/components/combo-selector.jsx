@@ -52,7 +52,7 @@ function onRecipe(event) {
 
 function onFactor(event) {
 	// setFactor w/ event.target.value
-	state.factor.value = event.target.value;
+	state.factor.value = event.target.valueAsNumber;
 	
 	// setFactor w/ event.target.value / recipe's perMinute
 	// let recipePerMinute = state.recipe.value.resultCounts[0] * 60 * (60 / state.recipe.value.timeSpend);

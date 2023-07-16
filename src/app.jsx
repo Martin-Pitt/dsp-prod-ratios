@@ -56,13 +56,22 @@ const router = createBrowserRouter(
 			<Route path="research" element={<Research/>}/>
 			<Route path="reference" element={<Reference/>}/>
 			<Route path="settings" element={<Settings/>}/>
-			<Route path="" loader={() => redirect('/dsp-prod-ratios/calculator')}/>
+			<Route path="" loader={() => {
+				if(window.location.search.startsWith('?[') && window.location.search.endsWith(']'))
+				{
+					let [pathname, search, hash] = JSON.parse(decodeURIComponent(window.location.search.slice(1)));
+					redirect(pathname + '?' + search + '#' + hash);
+				}
+				
+				else redirect('/dsp-prod-ratios/calculator');
+			}}/>
 		</Route>
 	)
 );
 
 
 export function App(props) {
+	
 	return <RouterProvider router={router} />;
 };
 

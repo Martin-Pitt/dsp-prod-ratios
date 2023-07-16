@@ -236,7 +236,7 @@
 		content: '';
 		aspect-ratio: 1;
 		width: 48px;
-		background: url('./images/window-border-2.avif') 0 0 / 100% 100% repeat;
+		background: url('../images/window-border-2.avif') 0 0 / 100% 100% repeat;
 	}
 	
 	.combo-selector .preferred label:has(:disabled) {

@@ -1,5 +1,152 @@
 @layer components {
 	main.reference {
-		background-color: #673ab8;
+		background-color: lch(6 1.65 328.72);
+	}
+	
+	.sheet {
+		--gap: 2px;
+		--gutter: 10px;
+		padding: 20px;
+	}
+	
+	.sheet table {
+		position: relative;
+		
+		/* display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+		grid-template-rows: masonry;
+		grid-gap: 10px; */
+		
+		display: block;
+		columns: 3 480px;
+		column-gap: var(--gutter);
+		padding-top: 60px;
+	}
+	
+	.sheet thead {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		display: grid;
+		grid-column: 1 / -1;
+	}
+
+	.sheet thead th {
+		display: flex;
+		align-content: center;
+		align-items: center;
+		height: calc(60px - var(--gutter));
+		/* background: lch(59 18.91 232.08 / 0.2); */
+		border-bottom: 2px solid;
+		font-weight: 300;
+		font-size: 24px;
+	}
+	
+	.sheet tbody {
+		position: relative;
+		display: grid;
+		grid-gap: var(--gap);
+		break-inside: avoid;
+	}
+	
+	.sheet tbody[data-label] {
+		/* padding-left: 1.5em; */
+	}
+	
+	.sheet tbody[data-label]::before {
+		/* position: absolute;
+		top: 0;
+		right: 100%; */
+		content: attr(data-label);
+		font-weight: 100;
+		font-size: 14px;
+		font-stretch: 120%;
+		white-space: nowrap;
+		/* transform: rotate(-0.25turn);
+		transform-origin: top right; */
+	}
+	
+	.sheet tbody + tbody {
+		margin-top: var(--gutter);
+	}
+	
+	.sheet tbody tr {
+		display: inline-grid;
+		grid-auto-flow: column;
+		grid-template-columns: auto 1fr;
+		grid-gap: calc(var(--gap) * 2);
+		width: fit-content;
+	}
+	
+	.sheet tbody th {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100px;
+		background: lch(70 0 0 / 0.2);
+	}
+	
+	.sheet tbody td {
+		display: flex;
+		align-items: center;
+		background: lch(90 0 0 / 0.1);
+	}
+	
+	.sheet .node {
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		padding: 2px 10px;
+	}
+	
+	.sheet .icon {
+		width: 60px;
+		padding: 4px;
+		background-origin: content-box;
+		background-clip: content-box;
+	}
+	
+	.sheet .text {
+		font-weight: 300;
+		font-size: 12px;
+		font-stretch: 90%;
+	}
+	
+	.sheet .alternates {
+		display: flex;
+	}
+	
+	.sheet .alternates:empty {
+		display: none;
+	}
+	
+	.sheet .alternates::before,
+	.sheet .alternates::after {
+		content: '';
+		width: 6px;
+		border-top: 1px solid;
+		border-bottom: 1px solid;
+		margin: 6px 0;
+	}
+	
+	.sheet .alternates::before {
+		border-left: 1px solid;
+		margin-left: 10px;
+	}
+	
+	.sheet .alternates::after {
+		border-right: 1px solid;
+		margin-right: 10px;
+	}
+	
+	.sheet .alternate {
+		display: flex;
+	}
+	
+	.sheet .alternate + .alternate::before {
+		content: '';
+		border-left: 1px dashed;
+		margin: 6px 0;
 	}
 }

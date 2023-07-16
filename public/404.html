@@ -14,9 +14,8 @@
                 null, ''
             )
         );
-        window.location.replace(
-            location.pathname.split('/').slice(0, 2).join('/') + '/?' + payload
-        );
+        
+        location = location.pathname.split('/').slice(0, 2).join('/') + '/?' + payload;
     </script>
 </head>
 <body>

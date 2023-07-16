@@ -57,9 +57,12 @@ const router = createBrowserRouter(
 			<Route path="reference" element={<Reference/>}/>
 			<Route path="settings" element={<Settings/>}/>
 			<Route path="" loader={() => {
-				if(window.location.search.startsWith('?[') && window.location.search.endsWith(']'))
+				console.log('search is', location.search);
+				
+				if(window.location.search.startsWith('?' + encodeURIComponent('[')) && window.location.search.endsWith(encodeURIComponent(']')))
 				{
 					let [pathname, search, hash] = JSON.parse(decodeURIComponent(window.location.search.slice(1)));
+					console.log('Redirect', pathname);
 					return redirect(pathname); // + '?' + search + '#' + hash);
 				}
 				

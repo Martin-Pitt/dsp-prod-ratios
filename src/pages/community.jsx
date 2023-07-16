@@ -13,6 +13,18 @@ export default function Community(props) {
 					<a target="_blank" href="https://reddit.com/r/Dyson_Sphere_Program/">https://reddit.com/r/Dyson_Sphere_Program/</a>
 				</li>
 				<li>
+					Official English DSP Wiki
+					<a target="_blank" href="https://dsp-wiki.com/">https://dsp-wiki.com/</a>
+				</li>
+				<li>
+					Official Chinese DSP Wiki
+					<a target="_blank" href="https://wiki.biligame.com/dsp/">https://wiki.biligame.com/dsp/</a>
+				</li>
+				<li>
+					Dyson Shpere Blueprints
+					<a target="_blank" href="https://www.dysonsphereblueprints.com/">https://www.dysonsphereblueprints.com/</a>
+				</li>
+				<li>
 					Factoriolab
 					<a target="_blank" href="https://factoriolab.github.io/list?s=dsp&v=9">https://factoriolab.github.io/list?s=dsp&v=9</a>
 				</li>
@@ -31,14 +43,6 @@ export default function Community(props) {
 				<li>
 					Svlik's DSP Mass Production Calculator Tool
 					<a target="_blank" href="https://www.svlik.com/t/dsq/">https://www.svlik.com/t/dsq/</a>
-				</li>
-				<li>
-					Official English DSP Wiki
-					<a target="_blank" href="https://dsp-wiki.com/">https://dsp-wiki.com/</a>
-				</li>
-				<li>
-					Official Chinese DSP Wiki
-					<a target="_blank" href="https://wiki.biligame.com/dsp/">https://wiki.biligame.com/dsp/</a>
 				</li>
 				<li>
 					Petra's Center Brain Archive — Recipe viewer for Dyson Sphere Program

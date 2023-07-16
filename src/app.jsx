@@ -50,7 +50,7 @@ function Root(props) {
 
 const router = createBrowserRouter(
 	createRoutesFromElements(
-		<Route path="/dsp-prod-ratios/" element={<Root/>}>
+		<Route path="/" element={<Root/>}>
 			<Route path="intro" element={<Intro/>}/>
 			<Route path="calculator" element={<Calculator/>}/>
 			<Route path="research" element={<Research/>}/>
@@ -66,7 +66,7 @@ const router = createBrowserRouter(
 					return redirect(pathname); // + '?' + search + '#' + hash);
 				}
 				
-				return redirect('/dsp-prod-ratios/calculator');
+				return redirect('/calculator');
 			}}/>
 		</Route>
 	)

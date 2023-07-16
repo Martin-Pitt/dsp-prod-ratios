@@ -60,7 +60,7 @@ const router = createBrowserRouter(
 				if(window.location.search.startsWith('?[') && window.location.search.endsWith(']'))
 				{
 					let [pathname, search, hash] = JSON.parse(decodeURIComponent(window.location.search.slice(1)));
-					return redirect(pathname + '?' + search + '#' + hash);
+					return redirect(pathname); // + '?' + search + '#' + hash);
 				}
 				
 				return redirect('/dsp-prod-ratios/calculator');

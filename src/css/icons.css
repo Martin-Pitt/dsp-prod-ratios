@@ -1,0 +1,33 @@
+@layer icons {
+	[data-icon^="ui"] {
+		width: 80px;
+		aspect-ratio: 1;
+	}
+	
+	[data-icon="ui.select-recipe"] {
+		background: url('../images/select-recipe.avif') top left / 100% auto no-repeat;
+	}
+	[data-icon="ui.research"] {
+		background: url('../images/research-icon-80.avif') top left / 100% auto no-repeat;
+	}
+	[data-icon="ui.tech"] {
+		background: url('../images/tech-icon.avif') top left / 100% auto no-repeat;
+	}
+	
+	[data-icon="ui.tri-up"] {
+		background: url('../images/noun-triangle-up-851966.svg') top left / 100% auto no-repeat;
+	}
+	[data-icon="ui.tri-right"] {
+		background: url('../images/noun-triangle-right-851967.svg') top left / 100% auto no-repeat;
+	}
+	[data-icon="ui.tri-down"] {
+		background: url('../images/noun-triangle-down-851964.svg') top left / 100% auto no-repeat;
+	}
+	[data-icon="ui.tri-left"] {
+		background: url('../imagesnoun-triangle-left-851965.svg/') top left / 100% auto no-repeat;
+	}
+	
+	
+	
+	
+}

@@ -1,14 +1,89 @@
-import { useState, useCallback, useMemo } from 'preact/hooks';
+import { useState, useCallback, useEffect, useMemo, useRef } from 'preact/hooks';
+import { signal } from '@preact/signals';
 import {
-	Items,
-	Buildings,
-	Recipes,
-	findRecipeByOutput,
-} from './recipes.js';
-import { Production, Chain } from './prod.js';
-import iconGithub from './github-mark-white.svg';
-import logo from './logo.svg';
+	createBrowserRouter,
+	createRoutesFromElements,
+	Outlet,
+	Route,
+	RouterProvider,
+	redirect,
+} from "react-router-dom";
+import {
+	Tech, Recipes, Items, Strings,
+	AssemblerProductionSpeed,
+	SmelterProductionSpeed,
+	ChemicalProductionSpeed,
+	BeltTransportSpeed,
+	StringFromTypes,
+} from './lib/data.js';
+import state from './state.js';
+import Header from './components/header.jsx';
+import Intro from './pages/intro.jsx';
+import Calculator from './pages/calculator.jsx';
+import Research from './pages/research.jsx';
+import Reference from './pages/reference.jsx';
+import Settings from './pages/settings.jsx';
 
+
+window.Tech = Tech;
+window.Recipes = Recipes;
+window.Items = Items;
+window.Strings = Strings;
+window.state = state;
+window.AssemblerProductionSpeed = AssemblerProductionSpeed;
+window.SmelterProductionSpeed = SmelterProductionSpeed;
+window.ChemicalProductionSpeed = ChemicalProductionSpeed;
+window.BeltTransportSpeed = BeltTransportSpeed;
+window.StringFromTypes = StringFromTypes;
+
+
+
+function Root(props) {
+	return (
+		<>
+			<Header/>
+			<Outlet/>
+		</>
+	);
+}
+
+
+const router = createBrowserRouter(
+	createRoutesFromElements(
+		<Route path="/dsp-prod-ratios/" element={<Root/>}>
+			<Route path="intro" element={<Intro/>}/>
+			<Route path="calculator" element={<Calculator/>}/>
+			<Route path="research" element={<Research/>}/>
+			<Route path="reference" element={<Reference/>}/>
+			<Route path="settings" element={<Settings/>}/>
+			<Route path="" loader={() => redirect('/dsp-prod-ratios/calculator')}/>
+		</Route>
+	)
+);
+
+
+export function App(props) {
+	return <RouterProvider router={router} />;
+};
+
+
+
+
+
+/*production && (
+	<>
+		<div class="production-header">
+			<div><span class="factor">Facility</span>&times; <span class="process">Process</span> <span class="item">Recipe</span></div>
+			<div>
+				<div class="output"><span class="perMinute">Throughput</span>&times; <span class="item">Product</span></div>
+				<div class="byproduct"><span class="perMinute">Throughput</span>&times; <span class="item">Byproduct</span></div>
+			</div>
+		</div>
+		{renderProduction(production)}
+	</>
+)*/
+
+/*
 
 window.Items = Items;
 window.Buildings = Buildings;
@@ -298,41 +373,9 @@ export function App(props) {
 						{renderProduction(production)}
 					</>
 				)}
-				
-				{/* {production && (
-					<ul class="list">
-						{production.map(recipe => recipe.process === 'Mining Facility'? (
-							<li class="list-item" style={{ '--depth': recipe.depth }}>
-								<div class="meta">
-									<span class="factor">{renderNumber(recipe.factor)}</span>&times; <span class="process">{recipe.process}</span> <span class="item">{recipe.name || Object.keys(recipe.output).pop()}</span>
-								</div>
-								<ul class="output">
-									{Object.entries(recipe.output).map(([product]) =>
-										<li><span class="item">{product}</span>/min</li>
-									)}
-								</ul>
-							</li>
-						) : (
-							<li class="list-item" style={{ '--depth': recipe.depth }}>
-								<div class="meta">
-									<span class="factor">{renderNumber(recipe.factor)}</span>&times; <span class="process">{recipe.process}</span> <span class="item">{recipe.name || Object.keys(recipe.output).pop()}</span>
-								</div>
-								<ul class="output">
-									{Object.entries(recipe.output).map(([product, [amount, perMinute]]) =>
-										<li><span class="perMinute">{renderNumber(perMinute * recipe.factor)}</span>&times; <span class="item">{product}</span> per minute</li>
-									)}
-								</ul>
-							</li>
-						))}
-					</ul>
-				)} */}
-				
-				{/* {production && (
-					<pre>
-						{JSON.stringify(production, null, '\t')}
-					</pre>
-				)} */}
 			</main>
 		</>
 	)
 }
+
+*/

@@ -1,0 +1,305 @@
+@layer components {
+	.combo-selector {
+		display: inline-grid;
+		grid-template-areas:
+			"recipe ratio ."
+			"recipe specific ."
+			"buildings buildings buildings"
+			"recipes recipes recipes"
+		;
+		align-items: center;
+		grid-gap: 10px 20px;
+		margin: 10px 20px;
+	}
+	
+	@media (max-width: 640px) {
+		.combo-selector {
+			grid-gap: 10px 10px;
+			margin: 10px 10px;
+		}
+	}
+	
+	.combo-selector .recipe {
+		position: relative;
+		grid-area: recipe;
+		width: 94px;
+		height: 94px;
+		border: 2px solid lch(100 0 0 / 0.4);
+		border-radius: 50%;
+		background: lch(0 0 0 / 0.3);
+		cursor: pointer;
+	}
+	
+	.combo-selector .recipe:hover {
+		border: 2px solid lch(100 0 0 / 0.5);
+		background: lch(0 0 0 / 0.2);
+	}
+	
+	.combo-selector .recipe .icon {
+		position: absolute;
+		inset: 0;
+		width: 60px;
+		margin: auto;
+	}
+	
+	.combo-selector .hint {
+		position: absolute;
+		top: 0;
+		left: calc(100% + 60px);
+		bottom: 0;
+		height: 1lh;
+		width: max-content;
+		margin: auto 0;
+	}
+	
+	.combo-selector .hint::before {
+		position: absolute;
+		top: calc(50% - 10px);
+		right: calc(100% + 20px);
+		content: '';
+		width: 20px;
+		height: 20px;
+		background: url('../images/noun-triangle-left-851965.svg') top left / 100% auto no-repeat;
+	}
+	
+	
+	.combo-selector input[type="number"] {
+		width: 8ch;
+		padding: 2px 10px;
+		background-color: lch(0 0 0 / 0.2);
+		clip-path: polygon(0 6px, 6px 0, 100% 0, 100% calc(100% - 6px), calc(100% - 6px) 100%, 0 100%);
+	}
+	
+	@media (max-width: 420px) {
+		.combo-selector input[type="number"] {
+			font-stretch: 80%;
+		}
+	}
+	
+	.combo-selector .steppers {
+		display: inline-flex;
+		flex-flow: column nowrap;
+		align-items: stretch;
+		width: 30px;
+		height: calc(2px + 1.5em + 10px);
+		vertical-align: middle;
+	}
+	.combo-selector .steppers .increment,
+	.combo-selector .steppers .decrement {
+		height: 50%;
+		background-position: center;
+		background-size: 60% auto;
+		background-repeat: no-repeat;
+	}
+	.combo-selector .steppers .increment {
+		background-image: url('../images/noun-triangle-up-851966.svg');
+	}
+	.combo-selector .steppers .decrement {
+		background-image: url('../images/noun-triangle-down-851964.svg');
+	}
+	
+	.combo-selector .steppers .increment:active,
+	.combo-selector .steppers .decrement:active {
+		background-color: lch(100 0 0 / 0.2);
+	}
+	
+	
+	.combo-selector .ratio {
+		grid-area: ratio;
+	}
+	
+	.combo-selector .ratio input {}
+	
+	.combo-selector .specific {
+		grid-area: specific;
+	}
+	
+	.combo-selector .specific input {}
+	
+	@media (max-width: 640px) {
+		.combo-selector .ratio .text,
+		.combo-selector .specific .text {
+			font-weight: 550;
+			font-stretch: 80%;
+		}
+	}
+	
+	
+	
+	
+	.combo-selector .preferred {
+		align-self: flex-start;
+		width: fit-content;
+	}
+	
+	@media (max-width: 420px) {
+		.combo-selector .preferred {
+			font-stretch: 80%;
+			line-height: 1.2;
+		}
+	}
+	
+	.combo-selector .preferred-buildings {
+		grid-area: buildings;
+	}
+	.combo-selector .preferred-recipes {
+		grid-area: recipes;
+	}
+	
+	.combo-selector details {
+		background-color: lch(0 0 0 / 0.2);
+		clip-path: polygon(0 6px, 6px 0, 100% 0, 100% calc(100% - 6px), calc(100% - 6px) 100%, 0 100%);
+	}
+	
+	.combo-selector details summary {
+		padding: 8px 20px;
+	}
+	
+	.combo-selector details summary::after {
+		content: '';
+		display: inline-block;
+		aspect-ratio: 1;
+		width: 20px;
+		background: url('../images/noun-triangle-down-851964.svg') top left / 100% auto no-repeat;
+		vertical-align: middle;
+	}
+	
+	.combo-selector details[open] summary::after {
+		background-image: url('../images/noun-triangle-up-851966.svg');
+	}
+
+	.combo-selector .preferred .note {
+		padding: 0 20px;
+		font-size: 75%;
+	}
+	
+	.combo-selector .preferred .fields {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 4px 10px;
+		padding: 10px 20px;
+	}
+	
+	.combo-selector .preferred-buildings .fields:empty::before {
+		content: 'No preferrable buildings available in current research';
+	}
+	.combo-selector .preferred-recipes .fields:empty::before {
+		content: 'No alternative recipes available in current research';
+	}
+	
+	.combo-selector .preferred .name {
+		align-self: center;
+	}
+	
+	.combo-selector .preferred:has(.is-used) .name.is-used {
+		color: var(--neon-green);
+		filter: drop-shadow(0 0 3px currentColor);
+	}
+	
+	/* .combo-selector .preferred:has(.is-used) .name:not(.is-used) {
+		opacity: 0.6;
+	} */
+	
+	/* .combo-selector .preferred .name.is-unused {
+		opacity: 0.6;
+	} */
+	
+	.combo-selector .preferred label {
+		position: relative;
+	}
+	
+	.combo-selector .preferred input[type="radio"] {
+		position: absolute;
+		aspect-ratio: 1;
+		width: 100%;
+		opacity: 0;
+		cursor: pointer;
+	}
+	
+	.combo-selector .preferred .icon {
+		width: 40px;
+		margin: 4px;
+	}
+	
+	.combo-selector .preferred label:has(:checked) {
+		/* background-color: var(--neon-blue); */
+	}
+	
+	.combo-selector .preferred label:hover {
+		background-color: color-mix(in lch, var(--neon-purple) 20%, transparent);
+		cursor: pointer;
+	}
+	
+	.combo-selector .preferred label:has(:checked)::before {
+		position: absolute;
+		inset: 0;
+		content: '';
+		aspect-ratio: 1;
+		width: 48px;
+		background: url('./images/window-border-2.avif') 0 0 / 100% 100% repeat;
+	}
+	
+	.combo-selector .preferred label:has(:disabled) {
+		filter: grayscale();
+	}
+	
+	.combo-selector .preferred label:has(:disabled)::before {
+		display: none;
+	}
+
+	.combo-selector .preferred label:has(:disabled) input {
+		cursor: default;
+	}
+	
+	.combo-selector .preferred label:has(:disabled) .icon {
+		filter: contrast(0) brightness(0);
+		opacity: 0.2;
+		cursor: default;
+	}
+	
+	.combo-selector .preferred label:has(:disabled):hover {
+		background: none;
+	}
+	
+	
+	
+	
+	/*
+	.combo-selector input[type="number"] {
+		display: inline-block;
+		width: 60px;
+		height: 30px;
+		padding: 4px 10px;
+		border: none;
+		border-radius: 10px 0 0 10px;
+		margin-right: 1px;
+		font-size: 16px;
+		text-align: right;
+		vertical-align: middle;
+		color: black;
+	}
+	
+	.combo-selector select {
+		display: inline-block;
+		height: 30px;
+		padding: 4px 10px;
+		border: none;
+		border-radius: 0 10px 10px 0;
+		font-size: 16px;
+		vertical-align: middle;
+	}
+	
+	.combo-selector .factor {
+		width: 60px;
+	}
+	.combo-selector .recipe {}
+	.combo-selector .per {
+		width: 80px;
+	}
+	.combo-selector .timescale {}
+	
+	.combo-selector * + .per {
+		margin-left: 20px;
+	}
+	*/
+}

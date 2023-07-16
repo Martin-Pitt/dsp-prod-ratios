@@ -64,6 +64,8 @@ const router = createBrowserRouter(
 				}
 				
 				else redirect('/dsp-prod-ratios/calculator');
+				
+				return null;
 			}}/>
 		</Route>
 	)

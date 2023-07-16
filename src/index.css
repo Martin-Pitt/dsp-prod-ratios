@@ -1,10 +1,15 @@
+@import url('./css/variables.css');
 @import url('./css/reset.css');
 @import url('./spritesheets/icons.css');
+@import url('./css/icons.css');
 @import url('./css/skeleton.css');
 @import url('./css/fonts.css');
-@import url('./css/syntax.css');
 @import url('./css/header.css');
-@import url('./css/main.css');
+@import url('./css/calculator.css');
+@import url('./css/research.css');
+@import url('./css/reference.css');
 @import url('./css/dialog.css');
 @import url('./css/tabs.css');
+@import url('./css/combo-selector.css');
+@import url('./css/solver.css');
 @layer reset, skeleton, components;

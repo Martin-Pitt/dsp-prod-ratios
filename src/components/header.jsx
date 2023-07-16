@@ -9,14 +9,12 @@ export default function Header(props) {
 				<img class="logo" src={logo} alt=""/>
 				DSP Production Ratio Calculator
 			</h1>
-			
-			<NavLink className="link" to="/dsp-prod-ratios/calculator">Calculator</NavLink>
-			<NavLink className="link" to="/dsp-prod-ratios/research">Research</NavLink>
-			<NavLink className="link" to="/dsp-prod-ratios/reference">Reference</NavLink>
-			{/* <NavLink to="/dsp-prod-ratios/settings">Settings</NavLink> */}
-			
-			{props.children}
-			
+			<div class="links">
+				<NavLink className="link" to="/dsp-prod-ratios/calculator">Calculator</NavLink>
+				<NavLink className="link" to="/dsp-prod-ratios/research">Research</NavLink>
+				{/* <NavLink className="link" to="/dsp-prod-ratios/reference">Reference</NavLink> */}
+				{/* <NavLink className="link" to="/dsp-prod-ratios/settings">Settings</NavLink> */}
+			</div>
 			<a class="github" target="_blank" href="https://github.com/Martin-Pitt/dsp-prod-ratios">
 				<img class="icon" src={iconGithub} alt=""/>
 			</a>

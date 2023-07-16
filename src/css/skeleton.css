@@ -1,17 +1,24 @@
 @layer skeleton {
 	html {
-		background-color: #673ab8;
+		background: black;
 	}
 	
 	#app {
+		display: grid;
+		grid-template-rows: auto minmax(auto, 1fr);
 		height: 100%;
 		color: #fff;
 		font-family: Saira, sans-serif;
 		font-weight: 500;
+		line-height: 1.4;
 	}
 	
 	pre {
 		background: hsl(0deg 0% 0% / 10%);
 		tab-size: 3ch;
+	}
+	
+	main {
+		padding: 20px 0;
 	}
 }

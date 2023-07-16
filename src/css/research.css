@@ -1,0 +1,131 @@
+@layer components {
+	main.research {
+		display: grid;
+		overflow: scroll;
+		grid-auto-columns: 100px;
+		grid-auto-rows: 60px;
+		grid-auto-columns: 100px 0px;
+		grid-auto-rows: 60px 10px 10px 10px;
+		padding: 40px 20px 20px 20px;
+		background:
+			url('../images/dot-grid.avif') 0 0 / 20px repeat,
+			url('../images/vignette.avif') center / cover no-repeat
+		;
+		background-blend-mode: overlay, normal;
+		background-attachment: local, fixed;
+		background-color: lch(17 0 0);
+	}
+	
+	main.research .tech {
+		position: relative;
+		width: 100px;
+		height: 60px;
+		background-color: var(--tech-unavailable);
+		cursor: pointer;
+		
+		/* border-style: solid;
+		border-width: 8px 25px 10px 8px;
+		border-image-source: url('./images/window-content-5.avif');
+		border-image-slice: 8 25 10 8 fill;
+		border-image-width: 8px 25px 10px 8px;
+		border-image-outset: 0px;
+		border-image-repeat: stretch; */
+	}
+	
+	main.research .tech.can-research {
+		background-color: var(--tech-available);
+	}
+	
+	main.research .tech.is-researched {
+		background-color: var(--tech-researched);
+		outline: 3px solid var(--tech-researched-border);
+	}
+	
+	main.research .tech .name {
+		position: absolute;
+		left: 0;
+		bottom: calc(100% + 4px);
+		color: var(--neon-white);
+		font-stretch: 80%;
+		font-size: 0.75rem;
+		white-space: nowrap;
+	}
+	
+	main.research .tech .icon {
+		position: absolute;
+		inset: 0;
+		width: 40px;
+		margin: auto;
+	}
+	
+	main.research .link {
+		position: relative;
+		top: calc(var(--index) * 8px - 16px);
+		color: var(--tech-unavailable);
+		visibility: hidden;
+	}
+	
+	main.research .link.is-active {
+		color: var(--tech-link);
+	}
+	
+	main.research .link::before,
+	main.research .link::after {
+		position: absolute;
+		content: '';
+		visibility: initial;
+	}
+	
+	main.research .link::before {
+		top: calc(30px - 2px);
+		left: 0;
+		right: calc(50% - 2px);
+		/* right: calc(50% - 2px - (var(--index) * 10px)); */
+		bottom: calc(30px - 2px);
+	}
+	
+	main.research .link::after {
+		top: calc(30px - 2px);
+		left: calc(50% - 2px);
+		/* left: calc(50% - 2px + (var(--index) * 10px)); */
+		right: 0;
+		bottom: calc(30px - 2px);
+	}
+	
+	main.research .link.in-line::before,
+	main.research .link.in-line::after {
+		top: calc(30px - 2px);
+		bottom: calc(30px - 2px);
+		border-top: 4px solid;
+	}
+	
+	main.research .link.is-main::before,
+	main.research .link.is-main::after {
+		top: calc(30px - 8px);
+		bottom: calc(30px - 8px);
+		border-top: 16px solid;
+	}
+	
+	main.research .link.is-above::before {
+		bottom: calc(30px - 2px + 15px);
+	}
+	
+	main.research .link.is-below::before {
+		top: calc(30px - 2px + 15px);
+	}
+	
+	main.research .link.is-above::before,
+	main.research .link.is-below::before {
+		border-right: 4px solid;
+	}
+	
+	main.research .link.is-above::before,
+	main.research .link.is-below::after {
+		border-bottom: 4px solid;
+	}
+	
+	main.research .link.is-above::after,
+	main.research .link.is-below::before {
+		border-top: 4px solid;
+	}
+}

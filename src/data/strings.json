@@ -2,6 +2,654 @@
 	"type": "Map",
 	"value": [
 		[
+			"未知分类",
+			{
+				"zh_cn": "未知分类",
+				"en_us": "Unknown Category",
+				"fr_fr": "Catégorie inconnue"
+			}
+		],
+		[
+			"自然资源",
+			{
+				"zh_cn": "自然资源",
+				"en_us": "Natural Resource",
+				"fr_fr": "Ressource naturelle"
+			}
+		],
+		[
+			"材料",
+			{
+				"zh_cn": "材料",
+				"en_us": "Material",
+				"fr_fr": "Matériau"
+			}
+		],
+		[
+			"组件",
+			{
+				"zh_cn": "组件",
+				"en_us": "Component",
+				"fr_fr": "Composant"
+			}
+		],
+		[
+			"成品",
+			{
+				"zh_cn": "成品",
+				"en_us": "End Product",
+				"fr_fr": "Produit final"
+			}
+		],
+		[
+			"电力储存",
+			{
+				"zh_cn": "电力储存",
+				"en_us": "Power Storage",
+				"fr_fr": "Stockage d'énergie"
+			}
+		],
+		[
+			"电力运输",
+			{
+				"zh_cn": "电力运输",
+				"en_us": "Power Transmission",
+				"fr_fr": "Transmission d'énergie"
+			}
+		],
+		[
+			"电力交换",
+			{
+				"zh_cn": "电力交换",
+				"en_us": "Power Exchanger",
+				"fr_fr": "Échange d'énergie"
+			}
+		],
+		[
+			"物流运输",
+			{
+				"zh_cn": "物流运输",
+				"en_us": "Logistics",
+				"fr_fr": "Logistique"
+			}
+		],
+		[
+			"电力设备",
+			{
+				"zh_cn": "电力设备",
+				"en_us": "Power Facility",
+				"fr_fr": "Centrale électrique"
+			}
+		],
+		[
+			"冶炼设备",
+			{
+				"zh_cn": "冶炼设备",
+				"en_us": "Smelting Facility",
+				"fr_fr": "Centrale de fusion"
+			}
+		],
+		[
+			"化工设备",
+			{
+				"zh_cn": "化工设备",
+				"en_us": "Chemical Facility",
+				"fr_fr": "Centrale chimique"
+			}
+		],
+		[
+			"精炼设备",
+			{
+				"zh_cn": "精炼设备",
+				"en_us": "Refining Facility",
+				"fr_fr": "Raffinerie"
+			}
+		],
+		[
+			"制造台",
+			{
+				"zh_cn": "制造台",
+				"en_us": "Assembler",
+				"fr_fr": "Assembleur"
+			}
+		],
+		[
+			"粒子对撞机",
+			{
+				"zh_cn": "粒子对撞机",
+				"en_us": "Particle Collider",
+				"fr_fr": "Collisionneur de Particules"
+			}
+		],
+		[
+			"能量交换器",
+			{
+				"zh_cn": "能量交换器",
+				"en_us": "Energy Exchanger",
+				"fr_fr": "Échangeur d'Énergie"
+			}
+		],
+		[
+			"科研设备",
+			{
+				"zh_cn": "科研设备",
+				"en_us": "Research Facility",
+				"fr_fr": "Équipement de recherche"
+			}
+		],
+		[
+			"采矿设备",
+			{
+				"zh_cn": "采矿设备",
+				"en_us": "Mining Facility",
+				"fr_fr": "Équipement minier"
+			}
+		],
+		[
+			"抽水设备",
+			{
+				"zh_cn": "抽水设备",
+				"en_us": "Fluid Pumping Facility",
+				"fr_fr": "Équipement de pompage d'eau"
+			}
+		],
+		[
+			"抽油设备",
+			{
+				"zh_cn": "抽油设备",
+				"en_us": "Oil Extraction Facility",
+				"fr_fr": "Équipement de gisement pétrolier"
+			}
+		],
+		[
+			"生产设备",
+			{
+				"zh_cn": "生产设备",
+				"en_us": "Production Facility",
+				"fr_fr": "Équipement de production"
+			}
+		],
+		[
+			"分馏设备",
+			{
+				"zh_cn": "分馏设备",
+				"en_us": "Fractionation Facility",
+				"fr_fr": "Équipement de fractionnement"
+			}
+		],
+		[
+			"装饰物",
+			{
+				"zh_cn": "装饰物",
+				"en_us": "Decoration",
+				"fr_fr": "Décoration"
+			}
+		],
+		[
+			"武器",
+			{
+				"zh_cn": "武器",
+				"en_us": "Weapon",
+				"fr_fr": "Arme"
+			}
+		],
+		[
+			"科学矩阵",
+			{
+				"zh_cn": "科学矩阵",
+				"en_us": "Science Matrix",
+				"fr_fr": "Matrice scientifique"
+			}
+		],
+		[
+			"其他分类",
+			{
+				"zh_cn": "其他分类",
+				"en_us": "Other Categories",
+				"fr_fr": "Autres catégories"
+			}
+		],
+		[
+			"化学",
+			{
+				"zh_cn": "化学",
+				"en_us": "Chemical",
+				"fr_fr": "Chimique"
+			}
+		],
+		[
+			"核能",
+			{
+				"zh_cn": "核能",
+				"en_us": "Nuclear Energy",
+				"fr_fr": "Énergie nucléaire"
+			}
+		],
+		[
+			"质能",
+			{
+				"zh_cn": "质能",
+				"en_us": "Mass Energy",
+				"fr_fr": "Énergie de masse"
+			}
+		],
+		[
+			"储存",
+			{
+				"zh_cn": "储存",
+				"en_us": "Storage",
+				"fr_fr": "Stockage"
+			}
+		],
+		[
+			"采集自",
+			{
+				"zh_cn": "采集自",
+				"en_us": "Gathered From",
+				"fr_fr": "Collecté de"
+			}
+		],
+		[
+			"制造于",
+			{
+				"zh_cn": "制造于",
+				"en_us": "Made in",
+				"fr_fr": "Fabriqué en"
+			}
+		],
+		[
+			"燃料类型",
+			{
+				"zh_cn": "燃料类型",
+				"en_us": "Fuel Type",
+				"fr_fr": "Type de carburant"
+			}
+		],
+		[
+			"能量",
+			{
+				"zh_cn": "能量",
+				"en_us": "Energy",
+				"fr_fr": "Énergie"
+			}
+		],
+		[
+			"发电类型",
+			{
+				"zh_cn": "发电类型",
+				"en_us": "Energy Type",
+				"fr_fr": "Type d'énergie"
+			}
+		],
+		[
+			"发电功率",
+			{
+				"zh_cn": "发电功率",
+				"en_us": "Power",
+				"fr_fr": "Puissance"
+			}
+		],
+		[
+			"热效率",
+			{
+				"zh_cn": "能量转化率",
+				"en_us": "Energy Efficiency",
+				"fr_fr": "Efficacité énergétique"
+			}
+		],
+		[
+			"流体消耗",
+			{
+				"zh_cn": "流体消耗",
+				"en_us": "Fluid Consumption",
+				"fr_fr": "Consommation de fluides"
+			}
+		],
+		[
+			"输入功率",
+			{
+				"zh_cn": "输入功率",
+				"en_us": "Input Power",
+				"fr_fr": "Puissance d'entrée"
+			}
+		],
+		[
+			"输出功率",
+			{
+				"zh_cn": "输出功率",
+				"en_us": "Output Power",
+				"fr_fr": "Puissance de sortie"
+			}
+		],
+		[
+			"蓄电量",
+			{
+				"zh_cn": "蓄电量",
+				"en_us": "Accumulated",
+				"fr_fr": "Accumulé"
+			}
+		],
+		[
+			"工作功率",
+			{
+				"zh_cn": "工作功率",
+				"en_us": "Work Consumption",
+				"fr_fr": "Consommation de travail"
+			}
+		],
+		[
+			"待机功率",
+			{
+				"zh_cn": "待机功率",
+				"en_us": "Idle Consumption",
+				"fr_fr": "Consommation à vide"
+			}
+		],
+		[
+			"最大充能功率",
+			{
+				"zh_cn": "最大充能功率",
+				"en_us": "Max Charging Power",
+				"fr_fr": "Puissance de charge maxi"
+			}
+		],
+		[
+			"基础发电功率",
+			{
+				"zh_cn": "基础发电功率",
+				"en_us": "Basic Generation",
+				"fr_fr": "Génération de base"
+			}
+		],
+		[
+			"增产剂效果",
+			{
+				"zh_cn": "增产剂效果",
+				"en_us": "Proliferator Effect",
+				"fr_fr": "Proliferator Effect"
+			}
+		],
+		[
+			"喷涂增产效果",
+			{
+				"zh_cn": "额外产出",
+				"en_us": "Extra Products",
+				"fr_fr": "Extra Products"
+			}
+		],
+		[
+			"喷涂加速效果",
+			{
+				"zh_cn": "加速生产",
+				"en_us": "Production Speedup",
+				"fr_fr": "Speedup"
+			}
+		],
+		[
+			"额外电力消耗",
+			{
+				"zh_cn": "电力消耗",
+				"en_us": "Energy Consumption",
+				"fr_fr": "Energy Consumption"
+			}
+		],
+		[
+			"连接长度",
+			{
+				"zh_cn": "连接长度",
+				"en_us": "Connection Length",
+				"fr_fr": "Longueur de connexion"
+			}
+		],
+		[
+			"覆盖范围",
+			{
+				"zh_cn": "覆盖范围",
+				"en_us": "Supply Area",
+				"fr_fr": "Zone de fournitures"
+			}
+		],
+		[
+			"运载速度",
+			{
+				"zh_cn": "运载量",
+				"en_us": "Transport Speed",
+				"fr_fr": "Vitesse de transport"
+			}
+		],
+		[
+			"接口数量",
+			{
+				"zh_cn": "接口数量",
+				"en_us": "Number of Ports",
+				"fr_fr": "Nombre de ports"
+			}
+		],
+		[
+			"仓储空间",
+			{
+				"zh_cn": "仓储空间",
+				"en_us": "Storage Size",
+				"fr_fr": "Taille de stockage"
+			}
+		],
+		[
+			"开采对象",
+			{
+				"zh_cn": "开采对象",
+				"en_us": "Gathering Target",
+				"fr_fr": "Cible de collecte"
+			}
+		],
+		[
+			"开采速度",
+			{
+				"zh_cn": "开采速度",
+				"en_us": "Gathering Speed",
+				"fr_fr": "Vitesse de collecte"
+			}
+		],
+		[
+			"运送速度",
+			{
+				"zh_cn": "往返速度",
+				"en_us": "Sorting Speed",
+				"fr_fr": "Vitesse de triage"
+			}
+		],
+		[
+			"货物堆叠",
+			{
+				"zh_cn": "货物堆叠",
+				"en_us": "Cargo Stacking",
+				"fr_fr": "Empilage du cargo"
+			}
+		],
+		[
+			"使用寿命",
+			{
+				"zh_cn": "使用寿命",
+				"en_us": "Life",
+				"fr_fr": "Durée de vie"
+			}
+		],
+		[
+			"制造速度",
+			{
+				"zh_cn": "制造速度",
+				"en_us": "Production Speed",
+				"fr_fr": "Vitesse de production"
+			}
+		],
+		[
+			"研究速度",
+			{
+				"zh_cn": "研究速度",
+				"en_us": "Research Speed",
+				"fr_fr": "Vitesse de recherche"
+			}
+		],
+		[
+			"弹射速度",
+			{
+				"zh_cn": "弹射速度",
+				"en_us": "Eject Speed",
+				"fr_fr": "Vitesse d'éjection"
+			}
+		],
+		[
+			"发射速度",
+			{
+				"zh_cn": "发射速度",
+				"en_us": "Launch Speed",
+				"fr_fr": "Vitesse de lancement"
+			}
+		],
+		[
+			"血量",
+			{
+				"zh_cn": "血量",
+				"en_us": "HP",
+				"fr_fr": "CV"
+			}
+		],
+		[
+			"仓储物品",
+			{
+				"zh_cn": "仓储物品",
+				"en_us": "Storage",
+				"fr_fr": "Stockage"
+			}
+		],
+		[
+			"船运载量",
+			{
+				"zh_cn": "运载量",
+				"en_us": "Carrying Capacity",
+				"fr_fr": "Capacité de transport"
+			}
+		],
+		[
+			"飞行速度",
+			{
+				"zh_cn": "飞行速度",
+				"en_us": "Flight Speed",
+				"fr_fr": "Vitesse de vol"
+			}
+		],
+		[
+			"制造加速",
+			{
+				"zh_cn": "制造加速",
+				"en_us": "Produce Acceleration",
+				"fr_fr": "Produit une accélération"
+			}
+		],
+		[
+			"喷涂次数",
+			{
+				"zh_cn": "喷涂次数",
+				"en_us": "Numbers of Sprays",
+				"fr_fr": "Nombre de pulvérisation"
+			}
+		],
+		[
+			"采集速度",
+			{
+				"zh_cn": "采集速度",
+				"en_us": "Gathering Speed",
+				"fr_fr": "Vitesse de collecte"
+			}
+		],
+		[
+			"配送范围",
+			{
+				"zh_cn": "配送范围",
+				"en_us": "Distribution Range",
+				"fr_fr": "Portée de la distribution"
+			}
+		],
+		[
+			"风能",
+			{
+				"zh_cn": "风能",
+				"en_us": "Wind",
+				"fr_fr": "Vent"
+			}
+		],
+		[
+			"光伏",
+			{
+				"zh_cn": "光伏",
+				"en_us": "Photovoltaic",
+				"fr_fr": "Photovoltaïque"
+			}
+		],
+		[
+			"火力",
+			{
+				"zh_cn": "火力",
+				"en_us": "Thermal",
+				"fr_fr": "Thermique"
+			}
+		],
+		[
+			"离子流",
+			{
+				"zh_cn": "离子流",
+				"en_us": "Ion Current",
+				"fr_fr": "Courant ionique"
+			}
+		],
+		[
+			"地热",
+			{
+				"zh_cn": "地热",
+				"en_us": "Geothermal",
+				"fr_fr": "Geothermal"
+			}
+		],
+		[
+			"地热强度",
+			{
+				"zh_cn": "地热 ",
+				"en_us": "Geothermal ",
+				"fr_fr": "Geothermal "
+			}
+		],
+		[
+			"仓储空间的后缀",
+			{
+				"zh_cn": " 格",
+				"en_us": " slots",
+				"fr_fr": " emplacements"
+			}
+		],
+		[
+			"水源",
+			{
+				"zh_cn": "水源",
+				"en_us": "Liquid Source",
+				"fr_fr": "Source de liquide"
+			}
+		],
+		[
+			"矿脉",
+			{
+				"zh_cn": "矿脉",
+				"en_us": "Vein",
+				"fr_fr": "Veine"
+			}
+		],
+		[
+			"油田",
+			{
+				"zh_cn": "油田",
+				"en_us": "Oil Field",
+				"fr_fr": "Champ pétrolier"
+			}
+		],
+		[
 			"推进器",
 			{
 				"zh_cn": " - 推进器",
@@ -2830,7 +3478,7 @@
 			{
 				"zh_cn": "双击<span style=\"color: #FD965ECC\">空格</span>键升空，在飞行模式下持续按住<span style=\"color: #FD965ECC\">前进方向</span>与<span style=\"color: #FD965ECC\">空格</span>键，达到一定高度时将进入航行模式。航行模式下，机甲将以更高的速度环绕行星飞行。",
 				"en_us": "Double-press <span style=\"color: #FD965ECC\">Space</span> to lift off. Hold <span style=\"color: #FD965ECC\">Arrow keys</span> with <span style=\"color: #FD965ECC\">Space</span> in flight mode, which will activate sail mode at a certain altitude. In sail mode, mecha will orbit the planet at a higher speed.",
-				"fr_fr": "Appuyez deux fois sur <span style=\"color: #FD965ECC\">Espace</span> pour décoller. Maintenez les <span style=\"color: #FD965ECC\" >Touches fléchées</color> avec <color=\"#FD965ECC\">Espace</span> en mode vol, ce qui activera le mode Voile à une certaine altitude. En mode Voile, le Méca sera en orbite autour de la planète à une vitesse plus élevée."
+				"fr_fr": "Appuyez deux fois sur <span style=\"color: #FD965ECC\">Espace</span> pour décoller. Maintenez les <span style=\"color: #FD965ECC\" \">Touches fléchées</span> avec <span style=\"color: #FD965ECC\">Espace</span> en mode vol, ce qui activera le mode Voile à une certaine altitude. En mode Voile, le Méca sera en orbite autour de la planète à une vitesse plus élevée."
 			}
 		],
 		[

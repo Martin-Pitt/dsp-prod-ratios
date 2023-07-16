@@ -2,12 +2,12 @@
 	dialog.window {
 		
 	}
-
+	
 	dialog.window::backdrop {
 		background: radial-gradient(10px at center, transparent 10%, hsla(0, 0%, 0%, 0.2) 0%) center / 10px 10px;
 		/* backdrop-filter: blur(10px); */
 	}
-
+	
 	dialog.window.recipes {
 		/* display: grid; */
 		padding: 20px;
@@ -67,6 +67,7 @@
 		grid-template-rows: repeat(7, 60px);
 		place-items: center;
 		padding: 10px;
+		overflow-x: auto;
 		/* background-clip: content-box; */
 		/* background-origin: content-box; */
 		background-color: hsla(0, 0%, 0%, 0.3);

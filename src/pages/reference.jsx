@@ -1,9 +1,9 @@
 
 
 export default function Reference(props) {
-    return (
-        <main class="page reference">
-            Quick Reference Sheets
-        </main>
-    );
+	return (
+		<main class="page reference">
+			Quick Reference Sheets
+		</main>
+	);
 }

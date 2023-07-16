@@ -29,6 +29,8 @@
 			calc(50% - 16px) calc(100% - 4px),
 			0% calc(100% - 4px)
 		);
+		color: var(--neon-yellow);
+		filter: drop-shadow(0 0 3px currentColor);
 	}
 	
 	

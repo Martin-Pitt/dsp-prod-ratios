@@ -1,8 +1,6 @@
-import {
-	Tech, Recipes, Items, Strings,
-	supportedLocales, locale,
-	translateableKeys, translate
-} from '../lib/data.js';
+import { Tech, Recipes, Items, Strings } from '../lib/data.js';
+
+
 
 
 

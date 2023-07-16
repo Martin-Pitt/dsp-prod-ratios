@@ -24,6 +24,12 @@
 	input[type="number"] {
 		-webkit-appearance: none;
 		-moz-appearance: textfield;
+		width: 6ch;
+		background: none;
+		border: none;
+		color: inherit;
+		font: inherit;
+		text-align: right;
 	}
 	
 	input[type="number"]::-webkit-outer-spin-button,
@@ -42,6 +48,14 @@
 		color: inherit;
 		font: inherit;
 		cursor: pointer;
+	}
+	
+	select {
+		padding: 0;
+		border: none;
+		background: none;
+		color: inherit;
+		font: inherit;
 	}
 	
 	select, summary {

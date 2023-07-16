@@ -1,0 +1,20 @@
+:root {
+	--neon-white: lch(100 0 0 / 0.76);
+	--neon-red: lch(75 45.02 40.39 / 0.78);
+	--neon-orange: lch(72 58.89 52.09 / 0.8);
+	--neon-orange2: lch(84 44.1 74.07);
+	--neon-yellow: lch(97 79.89 103.3 / 0.76);
+	--neon-green: lch(89 78.97 147.57 / 0.83);
+	--neon-cyan: lch(88 36.65 209.6 / 0.78);
+	--neon-blue: lch(87 21.33 249.3 / 0.77);
+	--neon-purple: lch(67 74.83 318.61 / 0.85);
+	
+	--tech-unavailable: lch(20 0.01 0);
+	--tech-available: lch(24 16.68 233.76);
+	--tech-available-border: white;
+	--tech-researched: lch(30 16.84 158.35);
+	--tech-researched-border: var(--neon-orange2);
+	--tech-link: lch(46 41.43 51.34);
+}
+
+

@@ -1,8 +1,9 @@
-import { useCallback, useEffect, useRef } from 'preact/hooks';
+import { useCallback, useEffect, useMemo, useRef } from 'preact/hooks';
 import classNames from 'classnames';
 import { Tabs, Tab } from './tabs.jsx';
 import { ListBox, ListBoxOption } from './listbox.jsx';
-import { Recipes, Items } from '../lib/data.js';
+import { Recipes, Items, RecipesUnlocked } from '../lib/data.js';
+import state from '../state.js';
 
 
 export default function RecipeSelector(props) {
@@ -24,9 +25,9 @@ export default function RecipeSelector(props) {
 		let Z = parseInt(gridIndex.at(0), 10);
 		if(Z !== grid) return null;
 		
-		let primaryResult = recipe.results[0];
-		let primaryItem = Items.find(i => i.id === primaryResult);
-		let icon = primaryItem.name !== recipe.name? `recipe.${recipe.id}` : `item.${primaryResult}`;
+		let primaryItem = Items.find(i => i.id === recipe.results[0]);
+		let icon = recipe.explicit? `recipe.${recipe.id}` : `item.${primaryItem.id}`;
+		let name = recipe.explicit? recipe.name : primaryItem.name;
 		
 		return (
 			<ListBoxOption
@@ -35,10 +36,12 @@ export default function RecipeSelector(props) {
 				data-icon={icon}
 				style={{ gridArea: `${Y} / ${X}` }}
 				onSelect={() => onRecipe(recipe)}
-				title={recipe.name}
+				title={name}
 			/>
 		);
 	}, [onRecipe]);
+	
+	const recipes = useMemo(() => RecipesUnlocked(state.research.value), [state.research.value]);
 	
 	return (
 		<dialog class="window recipes" ref={refRecipeWindow} onClose={onDismiss}>
@@ -48,17 +51,13 @@ export default function RecipeSelector(props) {
 			<Tabs label="Select a recipe group">
 				<Tab label="Items">
 					<ListBox class="recipe-grid" label="Select an item recipe">
-						{Recipes.map(recipe => renderRecipeGrid(1, recipe))}
+						{recipes.map(recipe => renderRecipeGrid(1, recipe))}
 					</ListBox>
 				</Tab>
 				<Tab label="Buildings">
-					<ul
-						class="recipe-grid"
-						role="listbox"
-						aria-label="Select a building recipe"
-					>
-						{Recipes.map(recipe => renderRecipeGrid(2, recipe))}
-					</ul>
+					<ListBox class="recipe-grid" label="Select a building recipe">
+						{recipes.map(recipe => renderRecipeGrid(2, recipe))}
+					</ListBox>
 				</Tab>
 			</Tabs>
 		</dialog>

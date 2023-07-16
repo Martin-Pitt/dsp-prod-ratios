@@ -13,3 +13,13 @@ export function JSONReviver(key, value) {
 	else
 		return value;
 }
+
+// Replacer implementation used for stringifying JSON data originally
+export function JSONReplacer(key, value) {
+	if(typeof value === 'bigint')
+		return { type: 'BigInt', value: value.toString() };
+	if(value instanceof Map)
+		return { type: 'Map', value: Array.from(value.entries()) };
+	
+	else return value;
+}

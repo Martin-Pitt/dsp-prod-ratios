@@ -8,8 +8,15 @@ import {
 	RouterProvider,
 	redirect,
 } from "react-router-dom";
-import { Tech, Recipes, Items, Strings } from './lib/data.js';
-import * as state from './state.js';
+import {
+	Tech, Recipes, Items, Strings,
+	AssemblerProductionSpeed,
+	SmelterProductionSpeed,
+	ChemicalProductionSpeed,
+	BeltTransportSpeed,
+	StringFromTypes,
+} from './lib/data.js';
+import state from './state.js';
 import Header from './components/header.jsx';
 import Intro from './pages/intro.jsx';
 import Calculator from './pages/calculator.jsx';
@@ -23,6 +30,11 @@ window.Recipes = Recipes;
 window.Items = Items;
 window.Strings = Strings;
 window.state = state;
+window.AssemblerProductionSpeed = AssemblerProductionSpeed;
+window.SmelterProductionSpeed = SmelterProductionSpeed;
+window.ChemicalProductionSpeed = ChemicalProductionSpeed;
+window.BeltTransportSpeed = BeltTransportSpeed;
+window.StringFromTypes = StringFromTypes;
 
 
 

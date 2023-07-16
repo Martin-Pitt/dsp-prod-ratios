@@ -17,7 +17,7 @@
 				"title github"
 				"links links"
 			;
-			grid-template-columns: auto auto;
+			grid-template-columns: 1fr auto;
 			grid-template-rows: 50px 50px;
 		}
 	}
@@ -49,6 +49,9 @@
 	.app-header .links {
 		display: flex;
 		grid-area: links;
+		overflow-x: auto;
+		padding: 0 20px 20px;
+		margin: 0 -20px -20px;
 	}
 	
 	.app-header .link {
@@ -58,6 +61,12 @@
 		padding: 0 40px 10px;
 		color: white;
 		text-decoration: none;
+	}
+
+	@media (max-width: 640px) {
+		.app-header .link {
+			padding: 0 20px 10px;
+		}
 	}
 	
 	.app-header .link::before {

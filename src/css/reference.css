@@ -1,12 +1,20 @@
 @layer components {
 	main.reference {
+		overflow-x: auto;
 		background-color: lch(6 1.65 328.72);
 	}
 	
 	.sheet {
 		--gap: 2px;
 		--gutter: 10px;
+		/* width: min-content; */
 		padding: 20px;
+	}
+	
+	@media (max-width: 540px) {
+		.sheet {
+			width: min-content;
+		}
 	}
 	
 	.sheet table {
@@ -31,7 +39,7 @@
 		display: grid;
 		grid-column: 1 / -1;
 	}
-
+	
 	.sheet thead th {
 		display: flex;
 		align-content: center;
@@ -111,6 +119,7 @@
 		font-weight: 300;
 		font-size: 12px;
 		font-stretch: 90%;
+		white-space: nowrap;
 	}
 	
 	.sheet .alternates {

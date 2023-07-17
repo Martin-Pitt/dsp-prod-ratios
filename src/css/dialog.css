@@ -14,7 +14,7 @@
 		background: none;
 		border: none;
 		backdrop-filter: blur(10px);
-		border-image-source: url('../images/window-2.png');
+		border-image-source: url('../images/textures/window-2.png');
 		border-image-slice: 30 41 24 21 fill;
 		border-image-width: 30px 41px 24px 21px;
 		border-image-outset: 0px;
@@ -42,7 +42,7 @@
 	}
 	
 	dialog.window.recipes::before {
-		border-image-source: url('../images/window-border-2.avif');
+		border-image-source: url('../images/textures/window-border-2.avif');
 		border-image-slice: 30 41 24 21;
 		border-image-width: 30px 41px 24px 21px;
 		border-image-outset: 2px;
@@ -52,7 +52,7 @@
 	dialog.window.recipes::after {
 		z-index: -1;
 		backdrop-filter: blur(10px);
-		border-image-source: url('../images/window-content-3.avif');
+		border-image-source: url('../images/textures/window-content-3.avif');
 		border-image-slice: 30 41 24 21;
 		border-image-width: 30px 41px 24px 21px;
 		border-image-outset: 0px;
@@ -72,9 +72,9 @@
 		/* background-origin: content-box; */
 		background-color: hsla(0, 0%, 0%, 0.3);
 		
-		/* background-image: url('../images/window-content-5.avif'); */
+		/* background-image: url('../images/textures/window-content-5.avif'); */
 		
-		/* border-image-source: url('../images/window-content-5.avif');
+		/* border-image-source: url('../images/textures/window-content-5.avif');
 		border-image-slice: 8 25 10 8;
 		border-image-width: 8px 25px 10px 8px;
 		border-image-outset: 1px;
@@ -99,7 +99,7 @@
 		height: 100%;
 		/* position: absolute;
 		inset: 10px; */
-		background: url('../images/panel-4.avif') 0 0 / 60px 60px repeat;
+		background: url('../images/textures/panel-4.avif') 0 0 / 60px 60px repeat;
 		opacity: 0.15;
 	}
 	
@@ -120,6 +120,6 @@
 		position: absolute;
 		inset: 0;
 		content: '';
-		background: url('../images/window-border-2.avif') 0 0 / 60px 60px repeat;
+		background: url('../images/textures/window-border-2.avif') 0 0 / 60px 60px repeat;
 	}
 }

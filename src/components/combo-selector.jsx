@@ -83,13 +83,13 @@ function onPer(event) {
 }
 
 function onPerInc() {
-	let step = state.timeScale.value === 'minute'? 5 : 1;
+	let step = state.timeScale.value === 'minute'? 5 : 7.5;
 	state.per.value = Math.round(state.per.value + step);
 	recalculateFactor();
 }
 
 function onPerDec() {
-	let step = state.timeScale.value === 'minute'? 5 : 1;
+	let step = state.timeScale.value === 'minute'? 5 : 7.5;
 	state.per.value = Math.max(0, Math.round(state.per.value - step));
 	recalculateFactor();
 }
@@ -214,8 +214,8 @@ export default function ComboSelector(props) {
 						onInput={onFactor}
 						disabled={!state.recipe.value}
 					/><div class="steppers">
-						<button class="increment" aria-label="Increment factor by 1" onClick={onFactorInc}/>
-						<button class="decrement" aria-label="Decrement factor by 1" onClick={onFactorDec}/>
+						<button class="increment" onClick={onFactorInc}/>
+						<button class="decrement" onClick={onFactorDec}/>
 					</div> <span class="text">&times; {StringFromTypes.get(state.recipe.value.type)}</span>
 				</label>
 				
@@ -229,8 +229,8 @@ export default function ComboSelector(props) {
 						onInput={onPer}
 						disabled={!state.recipe.value}
 					/><div class="steppers">
-						<button class="increment" aria-label="Increment factor by 1" onClick={onPerInc}/>
-						<button class="decrement" aria-label="Decrement factor by 1" onClick={onPerDec}/>
+						<button class="increment" onClick={onPerInc}/>
+						<button class="decrement" onClick={onPerDec}/>
 					</div> <span class="text">items <select
 						class="timescale"
 						onChange={onTimeScale}

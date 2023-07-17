@@ -122,6 +122,7 @@ export default function Reference(props) {
 				TODO: Are there other reference sheets that can be added?
 					Perhaps the Vein Utilisation chart with list of notable VU#'s
 				TODO: Better background visual would be nice
+				TODO: Filter based on research?
 			*/}
 		</main>
 	);

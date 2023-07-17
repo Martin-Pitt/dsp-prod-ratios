@@ -48,6 +48,9 @@ export default function Research(props) {
 	
 	return (
 		<main class="page research">
+			<p class="about">
+				Select your research progress so far, the calculator will filter to unlocked recipes
+			</p>
 			{Tech.filter(tech => tech.id < 2000).map(tech => {
 				if(!tech.preTechs) return;
 				// const [X, Y] = getGridPosition(tech);

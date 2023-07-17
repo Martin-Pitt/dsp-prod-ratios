@@ -5,13 +5,13 @@
 	}
 	
 	[data-icon="ui.select-recipe"] {
-		background: url('../images/select-recipe.avif') top left / 100% auto no-repeat;
+		background: url('../images/textures/select-recipe.avif') top left / 100% auto no-repeat;
 	}
 	[data-icon="ui.research"] {
-		background: url('../images/research-icon-80.avif') top left / 100% auto no-repeat;
+		background: url('../images/textures/research-icon-80.avif') top left / 100% auto no-repeat;
 	}
 	[data-icon="ui.tech"] {
-		background: url('../images/tech-icon.avif') top left / 100% auto no-repeat;
+		background: url('../images/textures/tech-icon.avif') top left / 100% auto no-repeat;
 	}
 	
 	[data-icon="ui.tri-up"] {

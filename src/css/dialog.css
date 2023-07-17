@@ -1,6 +1,6 @@
 @layer components {
 	dialog.window {
-		
+		overflow: visible;
 	}
 	
 	dialog.window::backdrop {
@@ -32,6 +32,41 @@
 			calc(100% - 1px) calc(100% - 5px), calc(100% - 5px) 100%,
 			2px 100%, 0% calc(100% - 2px)
 		); */
+	}
+	
+	dialog.window.recipes .corner-nav {
+		position: absolute;
+		top: -17px;
+		right: 19px;
+	}
+	
+	dialog.window.recipes .corner-nav::before {
+		position: absolute;
+		inset: 4px 2px;
+		content: '';
+		clip-path: polygon(0% 50%, calc(0% + 10px) 0%, calc(100% - 10px) 0%, 100% 50%, calc(100% - 10px) 100%, calc(0% + 10px) 100%);
+		background-color: color-mix(in lch, var(--neon-cyan) 70%, #343434);
+		pointer-events: none;
+	}
+	
+	dialog.window.recipes .corner-nav::after {
+		position: absolute;
+		inset: -1px;
+		content: '';
+		border-image-source: url('../images/textures/hex-border-up.avif');
+		border-image-slice: 11 11 11 11;
+		border-image-width: 18px 18px 18px 18px;
+		border-image-outset: 0px;
+		border-image-repeat: stretch;
+		pointer-events: none;
+	}
+	
+	dialog.window.recipes .close {
+		position: relative;
+		width: 64px;
+		height: 32px;
+		background: url('../images/textures/close-x-m-4k.avif') 50% calc(50% + 2px) / 24px auto no-repeat;
+		cursor: pointer;
 	}
 	
 	/* dialog.window.recipes::before,

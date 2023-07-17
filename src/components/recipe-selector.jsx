@@ -60,6 +60,9 @@ export default function RecipeSelector(props) {
 					</ListBox>
 				</Tab>
 			</Tabs>
+			<div class="corner-nav">
+				<button class="close" onClick={onDismiss}/>
+			</div>
 		</dialog>
 	);
 }

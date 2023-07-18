@@ -205,7 +205,7 @@
 	}
 	
 	.combo-selector .preferred:has(.is-used) .name.is-used {
-		color: var(--neon-green);
+		color: var(--neon-yellow);
 		filter: drop-shadow(0 0 3px currentColor);
 	}
 	

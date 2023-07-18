@@ -62,7 +62,7 @@
 		color: white;
 		text-decoration: none;
 	}
-
+	
 	@media (max-width: 640px) {
 		.app-header .link {
 			padding: 0 20px 10px;
@@ -101,6 +101,7 @@
 			calc(50% - 16px) calc(100% - 4px),
 			0% calc(100% - 4px)
 		);
+		view-transition-name: active-tab-underline;
 	}
 	
 	.app-header .github {

@@ -20,5 +20,42 @@
 	
 	main {
 		padding: 20px 0;
+		view-transition-name: main;
+	}
+
+	::view-transition-old(root),
+	::view-transition-new(root) {
+		/* animation-duration: 200ms; */
+	}
+
+
+
+	@keyframes grow-x {
+		from { transform: scaleX(0) }
+		to { transform: scaleX(1) }
+	}
+	
+	@keyframes shrink-x {
+		from { transform: scaleX(1) }
+		to { transform: scaleX(0) }
+	}
+	
+	@keyframes  main-in {
+		0% { opacity: 0; }
+		100% { opacity: 1; }
+	}
+	
+	@keyframes main-out {
+		0% { filter: opacity(1) }
+		50% { filter: opacity(0.8) grayscale() }
+		100% { filter: opacity(0) grayscale() }
+	}
+	
+	::view-transition-old(main) {
+		animation: main-out 200ms linear both;
+	}
+	
+	::view-transition-new(main) {
+		animation: main-in 200ms 50ms linear both;
 	}
 }

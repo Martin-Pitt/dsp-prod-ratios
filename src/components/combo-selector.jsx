@@ -96,7 +96,6 @@ function onPerDec() {
 
 
 function onTimeScale(event) {
-	// setTimeScale w/ event.target.value
 	state.timeScale.value = event.target.value;
 }
 
@@ -236,8 +235,9 @@ export default function ComboSelector(props) {
 						onChange={onTimeScale}
 						disabled={!state.recipe.value}
 					>
-						<option value="minute" selected>per minute</option>
-						<option value="second">per second</option>
+						{['minute', 'second'].map(scale =>
+							<option value={scale} selected={scale === state.timeScale.value}>per {scale}</option>
+						)}
 					</select></span>
 				</label>
 				

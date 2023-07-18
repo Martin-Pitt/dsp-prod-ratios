@@ -180,7 +180,7 @@
 	.combo-selector details[open] summary::after {
 		background-image: url('../images/noun-triangle-up-851966.svg');
 	}
-
+	
 	.combo-selector .preferred .note {
 		padding: 0 20px;
 		font-size: 75%;

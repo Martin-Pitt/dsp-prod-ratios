@@ -51,6 +51,68 @@
 		font-size: 24px;
 	}
 	
+	.sheet .preferred .name {
+		margin-right: 0.5em;
+	}
+	
+	.sheet .preferred label {
+		position: relative;
+	}
+	
+	.sheet .preferred input[type="radio"] {
+		position: absolute;
+		aspect-ratio: 1;
+		width: 100%;
+		opacity: 0;
+		cursor: pointer;
+	}
+	
+	.sheet .preferred .icon {
+		width: 40px;
+		margin: 4px;
+	}
+	
+	.sheet .preferred label:has(:checked) {
+		/* background-color: var(--neon-blue); */
+	}
+	
+	.sheet .preferred label:hover {
+		background-color: color-mix(in lch, var(--neon-purple) 20%, transparent);
+		cursor: pointer;
+	}
+	
+	.sheet .preferred label:has(:checked)::before {
+		position: absolute;
+		inset: 0;
+		content: '';
+		aspect-ratio: 1;
+		width: 48px;
+		background: url('../images/textures/window-border-2.avif') 0 0 / 100% 100% repeat;
+	}
+	
+	.sheet .preferred label:has(:disabled) {
+		filter: grayscale();
+	}
+	
+	.sheet .preferred label:has(:disabled)::before {
+		display: none;
+	}
+
+	.sheet .preferred label:has(:disabled) input {
+		cursor: default;
+	}
+	
+	.sheet .preferred label:has(:disabled) .icon {
+		filter: contrast(0) brightness(0);
+		opacity: 0.2;
+		cursor: default;
+	}
+	
+	.sheet .preferred label:has(:disabled):hover {
+		background: none;
+	}
+	
+	
 	.sheet tbody {
 		position: relative;
 		display: grid;
@@ -115,11 +177,13 @@
 		background-clip: content-box;
 	}
 	
-	.sheet .text {
+	.sheet .per {
+		color: var(--neon-green);
 		font-weight: 300;
-		font-size: 12px;
+		font-size: 18px;
 		font-stretch: 90%;
 		white-space: nowrap;
+		filter: drop-shadow(0 0 3px currentColor);
 	}
 	
 	.sheet .alternates {

@@ -11,24 +11,66 @@ import {
 import state from '../state.js';
 
 
-// Recipes.filter(recipe => recipe.gridIndex < 2000 && recipe.type === 'ASSEMBLE')
+function renderNumber(factor) {
+	let string = factor.toString();
+	if(!/\d\.\d/.test(string)) return string;
+	let repeats = string.toString().match(/(\d+?)\1+\d$/);
+	if(!repeats || !repeats[1]) return +factor;//.toFixed(6);
+	
+	let left = string.substr(0, repeats.index);
+	let right = repeats[1];
+	if(right === '0') return left;
+	return left + right + right + right;
+}
 
 function renderTimeSpend(recipe, amount = 1) {
-	const separator = ' / ';
-	const timeSpend = (60/recipe.timeSpend*60);
+	// const separator = ' / ';
+	let timeSpend = (60/recipe.timeSpend*60);
+	if(state.timeScale.value === 'second') timeSpend /= 60;
+	let per;
 	switch(recipe.type) {
-		case 'ASSEMBLE': return Array.from(AssemblerProductionSpeed.values(), modifier => amount * timeSpend * modifier).join(separator);
-		case 'SMELT': return Array.from(SmelterProductionSpeed.values(), modifier => amount * timeSpend * modifier).join(separator);
-		case 'CHEMICAL': return Array.from(ChemicalProductionSpeed.values(), modifier => amount * timeSpend * modifier).join(separator);
-		default: return amount * timeSpend;
+		case 'ASSEMBLE': per = amount * timeSpend * AssemblerProductionSpeed.get(state.preferred.assembler.value); break;
+		case 'SMELT': per = amount * timeSpend * SmelterProductionSpeed.get(state.preferred.smelter.value); break;
+		case 'CHEMICAL': per = amount * timeSpend * ChemicalProductionSpeed.get(state.preferred.chemical.value); break;
+		default: per = amount * timeSpend; break;
 	}
+	
+	return renderNumber(per);
+	
+	
+	// switch(recipe.type) {
+	// 	case 'ASSEMBLE': values = Array.from(AssemblerProductionSpeed.values(), modifier => amount * modifier); break;
+	// 	case 'SMELT': values = Array.from(SmelterProductionSpeed.values(), modifier => amount * modifier); break;
+	// 	case 'CHEMICAL': values = Array.from(ChemicalProductionSpeed.values(), modifier => amount * modifier); break;
+	// 	default: values = [amount];
+	// }
+	
+	// return values.map(value => renderNumber(value)).join(separator);
 }
 
 
+function onTimeScale(event) {
+	state.timeScale.value = event.target.value;
+}
+
+function onPreferred(event) {
+	state.preferred[event.target.name].value = +event.target.value;
+}
 
 export default function Reference(props) {
 	return (
 		<main class="page reference">
+			<p>
+				Numbers below items are in <select
+					class="timescale"
+					onChange={onTimeScale}
+				>
+					{['minute', 'second'].map(scale =>
+						<option value={scale} selected={scale === state.timeScale.value}>per {scale}</option>
+					)}
+				</select> units. Quantity &gt;1 is shown in bottom right in blue.
+			</p>
+			
 			{/*
 				Reference sheets are directly based on the Quick Reference images created by reddit.com/user/oldshavingfoam
 				https://dsp-wiki.com/images/d/d9/Recipe_Quick_Reference.jpg
@@ -38,7 +80,26 @@ export default function Reference(props) {
 				<table>
 					<thead>
 						<tr>
-							<th colspan="2">{StringFromTypes.get('ASSEMBLE')}</th>
+							<th class="preferred" colspan="2">
+								<span class={'name'}>
+									{StringFromTypes.get('ASSEMBLE')}
+								</span>
+								{Items.find(item => item.id === state.preferred.assembler.value)
+								.upgrades.map(upgrade => Items.find(item => item.id === upgrade))
+								.map(item =>
+									<label>
+										<input
+											type="radio"
+											name={'assembler'}
+											value={item.id}
+											title={item.name}
+											checked={item.id === state.preferred.assembler.value}
+											onClick={onPreferred}
+										/>
+										<div class="icon" data-icon={`item.${item.id}`}/>
+									</label>
+								)}
+							</th>
 						</tr>
 					</thead>
 					{[
@@ -83,8 +144,13 @@ export default function Reference(props) {
 									<tr>
 										<th>
 											<div class="node">
-												<div class="icon" title={recipe.explicit? recipe.name : Items.find(d => d.id === recipe.results[0]).name} data-icon={recipe.explicit? `recipe.${recipe.id}` : `item.${recipe.results[0]}`} data-count={recipe.resultCounts[0] > 1? recipe.resultCounts[0] : null}/>
-												<span class="text">{renderTimeSpend(recipe, recipe.resultCounts[0])}</span>
+												<div
+													class="icon"
+													title={recipe.explicit? recipe.name : Items.find(d => d.id === recipe.results[0]).name}
+													data-icon={recipe.explicit? `recipe.${recipe.id}` : `item.${recipe.results[0]}`}
+													data-count={recipe.resultCounts[0] > 1? recipe.resultCounts[0] : null}
+												/>
+												<span class="per">{renderTimeSpend(recipe, recipe.resultCounts[0])}</span>
 											</div>
 										</th>
 										<td>
@@ -92,20 +158,33 @@ export default function Reference(props) {
 												<div class="alternates">
 													{alternates.map(alternate =>
 														<div class="alternate">
-															{alternate.map((item, index) =>
-																<div class="node">
-																	<div class="icon" title={item.name} data-icon={`item.${item.id}`} data-count={recipe.itemCounts[index] > 1? recipe.itemCounts[index] : null}/>
-																	<span class="text">{renderTimeSpend(recipe, recipe.itemCounts[index])}</span>
-																</div>
-															)}
+															{alternate.map((item, index) => {
+																let count = recipe.itemCounts[index];
+																return (
+																	<div class="node">
+																		<div
+																			class="icon"
+																			title={item.name}
+																			data-icon={`item.${item.id}`}
+																			data-count={count > 1? count : null}
+																		/>
+																		<span class="per">{renderTimeSpend(recipe, count)}</span>
+																	</div>
+																);
+															})}
 														</div>
 													)}
 												</div>
 											)}
 											{common.map((item, index) =>
 												<div class="node">
-													<div class="icon" title={item.name} data-icon={`item.${item.id}`} data-count={recipe.itemCounts[index] > 1? recipe.itemCounts[index] : null}/>
-													<span class="text">{renderTimeSpend(recipe, recipe.itemCounts[index])}</span>
+													<div
+														class="icon"
+														title={item.name}
+														data-icon={`item.${item.id}`}
+														data-count={recipe.itemCounts[index] > 1? recipe.itemCounts[index] : null}
+													/>
+													<span class="per">{renderTimeSpend(recipe, recipe.itemCounts[index])}</span>
 												</div>
 											)}
 										</td>

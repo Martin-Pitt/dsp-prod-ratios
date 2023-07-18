@@ -27,9 +27,9 @@
 	::view-transition-new(root) {
 		/* animation-duration: 200ms; */
 	}
-
-
-
+	
+	
+	
 	@keyframes grow-x {
 		from { transform: scaleX(0) }
 		to { transform: scaleX(1) }
@@ -51,11 +51,216 @@
 		100% { filter: opacity(0) grayscale() }
 	}
 	
+	@keyframes hex-in {
+		0% {
+			opacity: 0;
+			clip-path: polygon(
+				calc(0vmax + -50vmax * 0.5 * 0.200) calc(0vmax + 0vmax * 0.5 * 0.000),
+				calc(0vmax + -25vmax * 0.5 * 0.200) calc(0vmax + -45vmax * 0.5 * 0.000),
+				calc(0vmax + 25vmax * 0.5 * 0.200) calc(0vmax + -45vmax * 0.5 * 0.000),
+				calc(0vmax + 50vmax * 0.5 * 0.200) calc(0vmax + 0vmax * 0.5 * 0.000),
+				calc(0vmax + 25vmax * 0.5 * 0.200) calc(0vmax + 45vmax * 0.5 * 0.000),
+				calc(0vmax + -25vmax * 0.5 * 0.200) calc(0vmax + 45vmax * 0.5 * 0.000),
+				calc(0vmax + -50vmax * 0.5 * 0.200) calc(0vmax + 0vmax * 0.5 * 0.000),
+				calc(0vmax + -50vmax * 0.5 * 0.200) calc(0vmax + 0vmax * 0.5 * 0.000), 0 0,
+				
+				
+				calc(37.5vmax + -50vmax * 0.5 * 0.200) calc(22.5vmax + 0vmax * 0.5 * 0.000),
+				
+				calc(37.5vmax + -25vmax * 0.5 * 0.200) calc(22.5vmax + -45vmax * 0.5 * 0.000),
+				calc(37.5vmax + 25vmax * 0.5 * 0.200) calc(22.5vmax + -45vmax * 0.5 * 0.000),
+				calc(37.5vmax + 50vmax * 0.5 * 0.200) calc(22.5vmax + 0vmax * 0.5 * 0.000),
+				calc(37.5vmax + 25vmax * 0.5 * 0.200) calc(22.5vmax + 45vmax * 0.5 * 0.000),
+				calc(37.5vmax + -25vmax * 0.5 * 0.200) calc(22.5vmax + 45vmax * 0.5 * 0.000),
+				calc(37.5vmax + -50vmax * 0.5 * 0.200) calc(22.5vmax + 0vmax * 0.5 * 0.000),
+				
+				calc(37.5vmax + -50vmax * 0.5 * 0.200) calc(22.5vmax + 0vmax * 0.5 * 0.000), 0 0,
+				
+				
+				calc(75vmax + -50vmax * 0.5 * 0.200) calc(0vmax + 0vmax * 0.5 * 0.000),
+				
+				calc(75vmax + -25vmax * 0.5 * 0.200) calc(0vmax + -45vmax * 0.5 * 0.000),
+				calc(75vmax + 25vmax * 0.5 * 0.200) calc(0vmax + -45vmax * 0.5 * 0.000),
+				calc(75vmax + 50vmax * 0.5 * 0.200) calc(0vmax + 0vmax * 0.5 * 0.000),
+				calc(75vmax + 25vmax * 0.5 * 0.200) calc(0vmax + 45vmax * 0.5 * 0.000),
+				calc(75vmax + -25vmax * 0.5 * 0.200) calc(0vmax + 45vmax * 0.5 * 0.000),
+				calc(75vmax + -50vmax * 0.5 * 0.200) calc(0vmax + 0vmax * 0.5 * 0.000),
+				
+				calc(75vmax + -50vmax * 0.5 * 0.200) calc(0vmax + 0vmax * 0.5 * 0.000), 0 0,
+				
+				
+				calc(112.5vmax + -50vmax * 0.5 * 0.200) calc(22.5vmax + 0vmax * 0.5 * 0.000),
+				
+				calc(112.5vmax + -25vmax * 0.5 * 0.200) calc(22.5vmax + -45vmax * 0.5 * 0.000),
+				calc(112.5vmax + 25vmax * 0.5 * 0.200) calc(22.5vmax + -45vmax * 0.5 * 0.000),
+				calc(112.5vmax + 50vmax * 0.5 * 0.200) calc(22.5vmax + 0vmax * 0.5 * 0.000),
+				calc(112.5vmax + 25vmax * 0.5 * 0.200) calc(22.5vmax + 45vmax * 0.5 * 0.000),
+				calc(112.5vmax + -25vmax * 0.5 * 0.200) calc(22.5vmax + 45vmax * 0.5 * 0.000),
+				calc(112.5vmax + -50vmax * 0.5 * 0.200) calc(22.5vmax + 0vmax * 0.5 * 0.000),
+				
+				calc(112.5vmax + -50vmax * 0.5 * 0.200) calc(22.5vmax + 0vmax * 0.5 * 0.000), 0 0,
+				
+				
+				
+				
+				
+				
+				calc(0vmax + -50vmax * 0.5 * 0.200) calc(45vmax + 0vmax * 0.5 * 0.000),
+				calc(0vmax + -25vmax * 0.5 * 0.200) calc(45vmax + -45vmax * 0.5 * 0.000),
+				calc(0vmax + 25vmax * 0.5 * 0.200) calc(45vmax + -45vmax * 0.5 * 0.000),
+				calc(0vmax + 50vmax * 0.5 * 0.200) calc(45vmax + 0vmax * 0.5 * 0.000),
+				calc(0vmax + 25vmax * 0.5 * 0.200) calc(45vmax + 45vmax * 0.5 * 0.000),
+				calc(0vmax + -25vmax * 0.5 * 0.200) calc(45vmax + 45vmax * 0.5 * 0.000),
+				calc(0vmax + -50vmax * 0.5 * 0.200) calc(45vmax + 0vmax * 0.5 * 0.000),
+				calc(0vmax + -50vmax * 0.5 * 0.200) calc(45vmax + 0vmax * 0.5 * 0.000), 0 0,
+				
+				
+				calc(37.5vmax + -50vmax * 0.5 * 0.200) calc(67.5vmax + 0vmax * 0.5 * 0.000),
+				
+				calc(37.5vmax + -25vmax * 0.5 * 0.200) calc(67.5vmax + -45vmax * 0.5 * 0.000),
+				calc(37.5vmax + 25vmax * 0.5 * 0.200) calc(67.5vmax + -45vmax * 0.5 * 0.000),
+				calc(37.5vmax + 50vmax * 0.5 * 0.200) calc(67.5vmax + 0vmax * 0.5 * 0.000),
+				calc(37.5vmax + 25vmax * 0.5 * 0.200) calc(67.5vmax + 45vmax * 0.5 * 0.000),
+				calc(37.5vmax + -25vmax * 0.5 * 0.200) calc(67.5vmax + 45vmax * 0.5 * 0.000),
+				calc(37.5vmax + -50vmax * 0.5 * 0.200) calc(67.5vmax + 0vmax * 0.5 * 0.000),
+				
+				calc(37.5vmax + -50vmax * 0.5 * 0.200) calc(67.5vmax + 0vmax * 0.5 * 0.000), 0 0,
+				
+				
+				calc(75vmax + -50vmax * 0.5 * 0.200) calc(45vmax + 0vmax * 0.5 * 0.000),
+				
+				calc(75vmax + -25vmax * 0.5 * 0.200) calc(45vmax + -45vmax * 0.5 * 0.000),
+				calc(75vmax + 25vmax * 0.5 * 0.200) calc(45vmax + -45vmax * 0.5 * 0.000),
+				calc(75vmax + 50vmax * 0.5 * 0.200) calc(45vmax + 0vmax * 0.5 * 0.000),
+				calc(75vmax + 25vmax * 0.5 * 0.200) calc(45vmax + 45vmax * 0.5 * 0.000),
+				calc(75vmax + -25vmax * 0.5 * 0.200) calc(45vmax + 45vmax * 0.5 * 0.000),
+				calc(75vmax + -50vmax * 0.5 * 0.200) calc(45vmax + 0vmax * 0.5 * 0.000),
+				
+				calc(75vmax + -50vmax * 0.5 * 0.200) calc(45vmax + 0vmax * 0.5 * 0.000), 0 0,
+				
+				
+				calc(112.5vmax + -50vmax * 0.5 * 0.200) calc(67.5vmax + 0vmax * 0.5 * 0.000),
+				
+				calc(112.5vmax + -25vmax * 0.5 * 0.200) calc(67.5vmax + -45vmax * 0.5 * 0.000),
+				calc(112.5vmax + 25vmax * 0.5 * 0.200) calc(67.5vmax + -45vmax * 0.5 * 0.000),
+				calc(112.5vmax + 50vmax * 0.5 * 0.200) calc(67.5vmax + 0vmax * 0.5 * 0.000),
+				calc(112.5vmax + 25vmax * 0.5 * 0.200) calc(67.5vmax + 45vmax * 0.5 * 0.000),
+				calc(112.5vmax + -25vmax * 0.5 * 0.200) calc(67.5vmax + 45vmax * 0.5 * 0.000),
+				calc(112.5vmax + -50vmax * 0.5 * 0.200) calc(67.5vmax + 0vmax * 0.5 * 0.000),
+				
+				calc(112.5vmax + -50vmax * 0.5 * 0.200) calc(67.5vmax + 0vmax * 0.5 * 0.000), 0 0
+			);
+		}
+		40% {
+			opacity: 0.4;
+			clip-path: polygon(
+				calc(0vmax + -50vmax * 0.5 * 1.000) calc(0vmax + 0vmax * 0.5 * 1.000),
+				calc(0vmax + -25vmax * 0.5 * 1.000) calc(0vmax + -45vmax * 0.5 * 1.000),
+				calc(0vmax + 25vmax * 0.5 * 1.000) calc(0vmax + -45vmax * 0.5 * 1.000),
+				calc(0vmax + 50vmax * 0.5 * 1.000) calc(0vmax + 0vmax * 0.5 * 1.000),
+				calc(0vmax + 25vmax * 0.5 * 1.000) calc(0vmax + 45vmax * 0.5 * 1.000),
+				calc(0vmax + -25vmax * 0.5 * 1.000) calc(0vmax + 45vmax * 0.5 * 1.000),
+				calc(0vmax + -50vmax * 0.5 * 1.000) calc(0vmax + 0vmax * 0.5 * 1.000),
+				calc(0vmax + -50vmax * 0.5 * 1.000) calc(0vmax + 0vmax * 0.5 * 1.000), 0 0,
+				
+				
+				calc(37.5vmax + -50vmax * 0.5 * 1.000) calc(22.5vmax + 0vmax * 0.5 * 1.000),
+				
+				calc(37.5vmax + -25vmax * 0.5 * 1.000) calc(22.5vmax + -45vmax * 0.5 * 1.000),
+				calc(37.5vmax + 25vmax * 0.5 * 1.000) calc(22.5vmax + -45vmax * 0.5 * 1.000),
+				calc(37.5vmax + 50vmax * 0.5 * 1.000) calc(22.5vmax + 0vmax * 0.5 * 1.000),
+				calc(37.5vmax + 25vmax * 0.5 * 1.000) calc(22.5vmax + 45vmax * 0.5 * 1.000),
+				calc(37.5vmax + -25vmax * 0.5 * 1.000) calc(22.5vmax + 45vmax * 0.5 * 1.000),
+				calc(37.5vmax + -50vmax * 0.5 * 1.000) calc(22.5vmax + 0vmax * 0.5 * 1.000),
+				
+				calc(37.5vmax + -50vmax * 0.5 * 1.000) calc(22.5vmax + 0vmax * 0.5 * 1.000), 0 0,
+				
+				
+				calc(75vmax + -50vmax * 0.5 * 1.000) calc(0vmax + 0vmax * 0.5 * 1.000),
+				
+				calc(75vmax + -25vmax * 0.5 * 1.000) calc(0vmax + -45vmax * 0.5 * 1.000),
+				calc(75vmax + 25vmax * 0.5 * 1.000) calc(0vmax + -45vmax * 0.5 * 1.000),
+				calc(75vmax + 50vmax * 0.5 * 1.000) calc(0vmax + 0vmax * 0.5 * 1.000),
+				calc(75vmax + 25vmax * 0.5 * 1.000) calc(0vmax + 45vmax * 0.5 * 1.000),
+				calc(75vmax + -25vmax * 0.5 * 1.000) calc(0vmax + 45vmax * 0.5 * 1.000),
+				calc(75vmax + -50vmax * 0.5 * 1.000) calc(0vmax + 0vmax * 0.5 * 1.000),
+				
+				calc(75vmax + -50vmax * 0.5 * 1.000) calc(0vmax + 0vmax * 0.5 * 1.000), 0 0,
+				
+				
+				calc(112.5vmax + -50vmax * 0.5 * 1.000) calc(22.5vmax + 0vmax * 0.5 * 1.000),
+				
+				calc(112.5vmax + -25vmax * 0.5 * 1.000) calc(22.5vmax + -45vmax * 0.5 * 1.000),
+				calc(112.5vmax + 25vmax * 0.5 * 1.000) calc(22.5vmax + -45vmax * 0.5 * 1.000),
+				calc(112.5vmax + 50vmax * 0.5 * 1.000) calc(22.5vmax + 0vmax * 0.5 * 1.000),
+				calc(112.5vmax + 25vmax * 0.5 * 1.000) calc(22.5vmax + 45vmax * 0.5 * 1.000),
+				calc(112.5vmax + -25vmax * 0.5 * 1.000) calc(22.5vmax + 45vmax * 0.5 * 1.000),
+				calc(112.5vmax + -50vmax * 0.5 * 1.000) calc(22.5vmax + 0vmax * 0.5 * 1.000),
+				
+				calc(112.5vmax + -50vmax * 0.5 * 1.000) calc(22.5vmax + 0vmax * 0.5 * 1.000), 0 0,
+				
+				
+				
+				
+				
+				
+				calc(0vmax + -50vmax * 0.5 * 1.000) calc(45vmax + 0vmax * 0.5 * 1.000),
+				calc(0vmax + -25vmax * 0.5 * 1.000) calc(45vmax + -45vmax * 0.5 * 1.000),
+				calc(0vmax + 25vmax * 0.5 * 1.000) calc(45vmax + -45vmax * 0.5 * 1.000),
+				calc(0vmax + 50vmax * 0.5 * 1.000) calc(45vmax + 0vmax * 0.5 * 1.000),
+				calc(0vmax + 25vmax * 0.5 * 1.000) calc(45vmax + 45vmax * 0.5 * 1.000),
+				calc(0vmax + -25vmax * 0.5 * 1.000) calc(45vmax + 45vmax * 0.5 * 1.000),
+				calc(0vmax + -50vmax * 0.5 * 1.000) calc(45vmax + 0vmax * 0.5 * 1.000),
+				calc(0vmax + -50vmax * 0.5 * 1.000) calc(45vmax + 0vmax * 0.5 * 1.000), 0 0,
+				
+				
+				calc(37.5vmax + -50vmax * 0.5 * 1.000) calc(67.5vmax + 0vmax * 0.5 * 1.000),
+				
+				calc(37.5vmax + -25vmax * 0.5 * 1.000) calc(67.5vmax + -45vmax * 0.5 * 1.000),
+				calc(37.5vmax + 25vmax * 0.5 * 1.000) calc(67.5vmax + -45vmax * 0.5 * 1.000),
+				calc(37.5vmax + 50vmax * 0.5 * 1.000) calc(67.5vmax + 0vmax * 0.5 * 1.000),
+				calc(37.5vmax + 25vmax * 0.5 * 1.000) calc(67.5vmax + 45vmax * 0.5 * 1.000),
+				calc(37.5vmax + -25vmax * 0.5 * 1.000) calc(67.5vmax + 45vmax * 0.5 * 1.000),
+				calc(37.5vmax + -50vmax * 0.5 * 1.000) calc(67.5vmax + 0vmax * 0.5 * 1.000),
+				
+				calc(37.5vmax + -50vmax * 0.5 * 1.000) calc(67.5vmax + 0vmax * 0.5 * 1.000), 0 0,
+				
+				
+				calc(75vmax + -50vmax * 0.5 * 1.000) calc(45vmax + 0vmax * 0.5 * 1.000),
+				
+				calc(75vmax + -25vmax * 0.5 * 1.000) calc(45vmax + -45vmax * 0.5 * 1.000),
+				calc(75vmax + 25vmax * 0.5 * 1.000) calc(45vmax + -45vmax * 0.5 * 1.000),
+				calc(75vmax + 50vmax * 0.5 * 1.000) calc(45vmax + 0vmax * 0.5 * 1.000),
+				calc(75vmax + 25vmax * 0.5 * 1.000) calc(45vmax + 45vmax * 0.5 * 1.000),
+				calc(75vmax + -25vmax * 0.5 * 1.000) calc(45vmax + 45vmax * 0.5 * 1.000),
+				calc(75vmax + -50vmax * 0.5 * 1.000) calc(45vmax + 0vmax * 0.5 * 1.000),
+				
+				calc(75vmax + -50vmax * 0.5 * 1.000) calc(45vmax + 0vmax * 0.5 * 1.000), 0 0,
+				
+				
+				calc(112.5vmax + -50vmax * 0.5 * 1.000) calc(67.5vmax + 0vmax * 0.5 * 1.000),
+				
+				calc(112.5vmax + -25vmax * 0.5 * 1.000) calc(67.5vmax + -45vmax * 0.5 * 1.000),
+				calc(112.5vmax + 25vmax * 0.5 * 1.000) calc(67.5vmax + -45vmax * 0.5 * 1.000),
+				calc(112.5vmax + 50vmax * 0.5 * 1.000) calc(67.5vmax + 0vmax * 0.5 * 1.000),
+				calc(112.5vmax + 25vmax * 0.5 * 1.000) calc(67.5vmax + 45vmax * 0.5 * 1.000),
+				calc(112.5vmax + -25vmax * 0.5 * 1.000) calc(67.5vmax + 45vmax * 0.5 * 1.000),
+				calc(112.5vmax + -50vmax * 0.5 * 1.000) calc(67.5vmax + 0vmax * 0.5 * 1.000),
+				
+				calc(112.5vmax + -50vmax * 0.5 * 1.000) calc(67.5vmax + 0vmax * 0.5 * 1.000), 0 0
+			);
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	
 	::view-transition-old(main) {
-		animation: main-out 200ms linear both;
+		animation: none;
+		/* animation: main-out 200ms linear both; */
 	}
 	
 	::view-transition-new(main) {
-		animation: main-in 200ms 50ms linear both;
+		animation: hex-in 200ms 50ms linear both;
 	}
 }

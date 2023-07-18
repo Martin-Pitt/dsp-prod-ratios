@@ -84,7 +84,7 @@ export default function Reference(props) {
 										<th>
 											<div class="node">
 												<div class="icon" title={recipe.explicit? recipe.name : Items.find(d => d.id === recipe.results[0]).name} data-icon={recipe.explicit? `recipe.${recipe.id}` : `item.${recipe.results[0]}`} data-count={recipe.resultCounts[0] > 1? recipe.resultCounts[0] : null}/>
-												<span class="text">{renderTimeSpend(recipe)}</span>
+												<span class="text">{renderTimeSpend(recipe, recipe.resultCounts[0])}</span>
 											</div>
 										</th>
 										<td>

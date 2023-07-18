@@ -28,8 +28,31 @@ function renderNumber(factor) {
 
 
 
-function Solve({ solve, per, depth = 0, ingredient = null, ...props }) {
+function Solve({ solve, per, amount = 1, ingredient = null, depth = 0, ...props }) {
 	if(!solve || depth > 10) return null;
+	
+	if(solve.item)
+	{
+		let { item } = solve;
+		return (
+			<div class="node solve" style={{ '--depth': depth }}>
+				<div class="node-header">
+					<div class="meta">
+						<span class="item">{item.name}</span>
+					</div>
+					<ul class="products">
+						<li class={classNames('output', 'is-ingredient')}>
+							<span class="perMinute">{renderNumber(state.timeScale.value === 'minute'? per : per / 60)}</span>&times;
+							<span class="item icon" data-icon={`item.${item.id}`} title={item.name}/>
+							<span class="timeScale">per {state.timeScale.value}</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		);
+	}
+	
+	
 	let { recipe, children } = solve;
 	
 	
@@ -55,7 +78,13 @@ function Solve({ solve, per, depth = 0, ingredient = null, ...props }) {
 							<span class="factor">{renderNumber(factor)}</span>&times; <span class="process">{StringFromTypes.get(recipe.type)}</span> <span class="item">{recipe.explicit? recipe.name : Items.find(i => i.id === recipe.results[0]).name}</span>
 						</div>
 						<ul class="products">
-							<li class="output"><span class="perMinute">{renderNumber(state.timeScale.value === 'minute'? per : per / 60)}</span>&times; <span class="item">{Items.find(item => item.id === (ingredient || recipe.results[0]))?.name}</span> <span class="timeScale">per {state.timeScale.value}</span></li>
+							{recipe.results.map((result, index) =>
+								<li class={classNames('output', { 'is-ingredient': !ingredient || result === ingredient })}>
+									<span class="perMinute">{renderNumber((state.timeScale.value === 'minute'? per : per / 60))}</span>&times;
+									<span class="item icon" data-icon={`item.${result}`} title={Items.find(i => i.id === result).name}/>
+									<span class="timeScale">per {state.timeScale.value}</span>
+								</li>
+							)}
 						</ul>
 					</div>
 				</summary>
@@ -73,10 +102,38 @@ function Solve({ solve, per, depth = 0, ingredient = null, ...props }) {
 							solve={child}
 							depth={depth + 1}
 							per={per * recipe.itemCounts[index]}
+							amount={recipe.itemCounts[index]}
 							ingredient={recipe.items[index]}
 						/>
 					);
 				})}
+				{/* {recipe.items
+					.filter(item => children.some((child, index) => {
+						if(Array.isArray(child))
+						{
+							let preferredAltRecipe = state.preferred[recipe.items[index]].value;
+							child = child.find(d => d.recipe.id === preferredAltRecipe);
+						}
+						return child?.recipe && !child.recipe.results.includes(item);
+					}))
+					.map(id => Items.find(item => item.id === id))
+					.map((item, index) =>
+						<div class="node solve" style={{ '--depth': depth + 1 }}>
+							<div class="node-header">
+								<div class="meta">
+									<span class="item">{item.name}</span>
+								</div>
+								<ul class="products">
+									<li class={classNames('output', 'is-ingredient')}>
+										<span class="perMinute">{renderNumber((state.timeScale.value === 'minute'? per : per / 60) * recipe.itemCounts[index])}</span>&times;
+										<span class="item icon" data-icon={`item.${item.id}`} title={item.name}/>
+										<span class="timeScale">per {state.timeScale.value}</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					)
+				} */}
 			</details>
 		);
 	}
@@ -84,16 +141,43 @@ function Solve({ solve, per, depth = 0, ingredient = null, ...props }) {
 	else
 	{
 		return (
-			<div class="node solve" style={{ '--depth': depth }}>
-				<div class="node-header">
-					<div class="meta">
-						<span class="factor">{renderNumber(factor)}</span>&times; <span class="process">{StringFromTypes.get(recipe.type)}</span> <span class="item">{recipe.explicit? recipe.name : Items.find(i => i.id === recipe.results[0]).name}</span>
+			<details key={recipe.id} class="node solve" style={{ '--depth': depth }} open={depth === 0}>
+				<summary>
+					<div class="node-header">
+						<div class="meta">
+							<span class="factor">{renderNumber(factor)}</span>&times; <span class="process">{StringFromTypes.get(recipe.type)}</span> <span class="item">{recipe.explicit? recipe.name : Items.find(i => i.id === recipe.results[0]).name}</span>
+						</div>
+						<ul class="products">
+							{recipe.results.map((result, index) =>
+								<li class={classNames('output', { 'is-ingredient': !ingredient || result === ingredient })}>
+									<span class="perMinute">{renderNumber((state.timeScale.value === 'minute'? per : per / 60) * recipe.resultCounts[index])}</span>&times;
+									<span class="item icon" data-icon={`item.${result}`} title={Items.find(i => i.id === result).name}/>
+									<span class="timeScale">per {state.timeScale.value}</span>
+								</li>
+							)}
+						</ul>
 					</div>
-					<ul class="products">
-						<li class="output"><span class="perMinute">{renderNumber(state.timeScale.value === 'minute'? per : per / 60)}</span>&times; <span class="item">{Items.find(i => i.id === recipe.results[0]).name}</span> <span class="timeScale">per {state.timeScale.value}</span></li>
-					</ul>
-				</div>
-			</div>
+				</summary>
+				{/* {recipe.items
+					.map(id => Items.find(item => item.id === id))
+					.map((item, index) =>
+						<div class="node solve" style={{ '--depth': depth + 1 }}>
+							<div class="node-header">
+								<div class="meta">
+									<span class="item">{item.name}</span>
+								</div>
+								<ul class="products">
+									<li class={classNames('output', 'is-ingredient')}>
+										<span class="perMinute">{renderNumber((state.timeScale.value === 'minute'? per : per / 60) * recipe.itemCounts[index])}</span>&times;
+										<span class="item icon" data-icon={`item.${item.id}`} title={item.name}/>
+										<span class="timeScale">per {state.timeScale.value}</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					)
+				} */}
+			</details>
 		);
 	}
 }
@@ -127,7 +211,7 @@ export default function Solver(props) {
 					let subRecipes = recipesUnlocked.filter(subRecipe => recipe !== subRecipe && subRecipe.results.includes(id));
 					if(!subRecipes.length)
 					{
-						// node.children[item.id] = null;
+						node.children.push({ item });
 					}
 					
 					else

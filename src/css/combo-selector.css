@@ -117,13 +117,17 @@
 		grid-area: ratio;
 	}
 	
-	.combo-selector .ratio input {}
+	.combo-selector .ratio input {
+		color: var(--neon-blue);
+	}
 	
 	.combo-selector .specific {
 		grid-area: specific;
 	}
 	
-	.combo-selector .specific input {}
+	.combo-selector .specific input {
+		color: var(--neon-green);
+	}
 	
 	@media (max-width: 640px) {
 		.combo-selector .ratio .text,

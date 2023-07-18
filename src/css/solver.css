@@ -162,15 +162,24 @@
 		color: white;
 	}
 	
+	.solver .node .item.icon {
+		display: inline-block;
+		width: 2.5em;
+		vertical-align: middle;
+	}
+	
 	.solver .node .perMinute {
 		display: inline-block;
 		min-width: 5ch;
 		text-align: right;
-		color: lch(74 32.82 22.8);
+	}
+
+	.solver .node .output.is-ingredient .perMinute {
+		color: var(--neon-green);
 	}
 	
 	.solver .node .factor {
-		color: lch(74 32.82 22.8);
+		color: var(--neon-blue);
 	}
 	
 	.solver .node .process {

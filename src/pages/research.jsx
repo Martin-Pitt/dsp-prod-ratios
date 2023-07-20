@@ -38,6 +38,10 @@ function toggleResearch(tech) {
 	else pinResearch(tech);
 }
 
+function resetResearch() {
+	state.research.value = [];
+}
+
 
 export default function Research(props) {
 	const onResearch = useCallback((event, tech) => {
@@ -49,7 +53,8 @@ export default function Research(props) {
 	return (
 		<main class="page research">
 			<p class="about">
-				Select your research progress so far, the calculator will filter to unlocked recipes
+				Select your research progress so far, this tool will then only show recipes available to you.
+				{state.research.value.length? <button class="reset" onClick={resetResearch}>Reset research</button> : null}
 			</p>
 			{Tech.filter(tech => tech.id < 2000).map(tech => {
 				if(!tech.preTechs) return;

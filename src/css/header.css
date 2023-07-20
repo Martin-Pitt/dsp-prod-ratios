@@ -104,6 +104,20 @@
 		view-transition-name: active-tab-underline;
 	}
 	
+	::view-transition-old(active-tab-underline) {
+		animation: none;
+	}
+	
+	::view-transition-new(active-tab-underline) {
+		animation: none;
+	}
+	
+	
+	.app-header .link.has-research::after {
+		content: '*';
+	}
+	
+	
 	.app-header .github {
 		position: relative;
 		grid-area: github;

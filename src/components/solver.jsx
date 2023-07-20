@@ -31,8 +31,18 @@ function renderNumber(factor) {
 function Solve({ solve, per, amount = 1, ingredient = null, depth = 0, ...props }) {
 	if(!solve || depth > 10) return null;
 	
-	if(solve.item)
+	if('item' in solve)
 	{
+		if(!solve.item) return (
+			<div class="node solve" style={{ '--depth': depth }}>
+				<div class="node-header">
+					<div class="meta">
+						<span class="item">(Locked due to research)</span>
+					</div>
+				</div>
+			</div>
+		);
+		
 		let { item } = solve;
 		return (
 			<div class="node solve" style={{ '--depth': depth }}>
@@ -54,7 +64,6 @@ function Solve({ solve, per, amount = 1, ingredient = null, depth = 0, ...props 
 	
 	
 	let { recipe, children } = solve;
-	
 	
 	let recipePerMinute = recipe.resultCounts[0] * (60/recipe.timeSpend*60);
 	

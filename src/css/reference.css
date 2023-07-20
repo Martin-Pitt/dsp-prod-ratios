@@ -1,8 +1,16 @@
 @layer components {
 	main.reference {
+		padding: 0;
 		overflow-x: auto;
 		background-color: lch(6 1.65 328.72);
 	}
+	
+	main.reference .instruction {
+		padding: 15px 20px 5px;
+		background-color: lch(20 1.65 328.72);
+	}
+	
+	
 	
 	.sheet {
 		--gap: 2px;
@@ -17,38 +25,68 @@
 		}
 	}
 	
-	.sheet table {
+	
+	.sheet header {
+		display: flex;
+		border-bottom: 1px solid;
+		margin-bottom: 20px;
+	}
+	
+	.sheet header .sheet-tab {
 		position: relative;
-		
-		/* display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
-		grid-template-rows: masonry;
-		grid-gap: 10px; */
-		
-		display: block;
-		columns: 3 480px;
-		column-gap: var(--gutter);
-		padding-top: 60px;
-	}
-	
-	.sheet thead {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		display: grid;
-		grid-column: 1 / -1;
-	}
-	
-	.sheet thead th {
 		display: flex;
 		align-content: center;
 		align-items: center;
-		height: calc(60px - var(--gutter));
+		/* height: calc(60px - var(--gutter)); */
+		margin-bottom: -1px;
 		/* background: lch(59 18.91 232.08 / 0.2); */
-		border-bottom: 2px solid;
+	}
+	
+	.sheet header .name {
+		padding: 10px 10px 10px 20px;
+		color: inherit;
 		font-weight: 300;
 		font-size: 24px;
+		text-decoration: none;
+	}
+	
+	.sheet header .sheet-tab:has(.name.active) {
+		color: var(--neon-yellow);
+	}
+	
+	.sheet header .sheet-tab:has(.name.active) .name {
+		filter: drop-shadow(0 0 3px currentColor);
+	}
+	
+	.sheet header .sheet-tab:has(.name.active)::before {
+		position: absolute;
+		top: calc(100% - 1px);
+		left: 0;
+		right: 0;
+		content: '';
+		border-bottom: 8px solid;
+		filter: drop-shadow(0 0 3px currentColor);
+		clip-path: polygon(
+			0% 0%,
+			100% 0%,
+			100% calc(100% - 4px),
+			calc(50% + 16px) calc(100% - 4px),
+			50% 100%,
+			calc(50% - 16px) calc(100% - 4px),
+			0% calc(100% - 4px)
+		);
+		view-transition-name: ref-active-tab-underline;
+	}
+	
+	.sheet .preferred {
+		display: flex;
+		overflow: auto;
+		max-width: 0;
+		transition: max-width 200ms;
+	}
+	
+	.sheet .sheet-tab:has(.active) .preferred {
+		max-width: 200px;
 	}
 	
 	.sheet .preferred .name {
@@ -112,6 +150,28 @@
 		background: none;
 	}
 	
+	
+	
+	.sheet table {
+		position: relative;
+		
+		/* display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+		grid-template-rows: masonry;
+		grid-gap: 10px; */
+		
+		display: block;
+		columns: 1 480px;
+		column-gap: var(--gutter);
+	}
+	
+	.sheet table.assemble {
+		columns: 3 480px;
+	}
+	
+	.sheet table.smelt {
+		columns: 3 200px;
+	}
 	
 	.sheet tbody {
 		position: relative;

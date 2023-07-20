@@ -255,6 +255,23 @@
 		}
 	}
 	
+	@keyframes main-to-left {
+		to { transform: translateX(-100px); opacity: 0; }
+	}
+	
+	@keyframes main-to-right {
+		to { transform: translateX(100px); opacity: 0; }
+	}
+	
+	@keyframes main-from-left {
+		from { transform: translateX(-100px); opacity: 0; }
+	}
+	
+	@keyframes main-from-right {
+		from { transform: translateX(100px); opacity: 0; }
+	}
+	
+	
 	::view-transition-old(main) {
 		animation: none;
 		/* animation: main-out 200ms linear both; */
@@ -263,4 +280,24 @@
 	::view-transition-new(main) {
 		animation: hex-in 200ms 50ms linear both;
 	}
+	
+	
+	.view-left::view-transition-old(main) {
+		animation: main-to-right 200ms cubic-bezier(.45,.04,.5,.1) both;
+	}
+	
+	.view-right::view-transition-old(main) {
+		animation: main-to-left 200ms cubic-bezier(.45,.04,.5,.1) both;
+	}
+	
+	.view-left::view-transition-new(main) {
+		animation: main-from-left 200ms cubic-bezier(.09,.44,.33,1) both;
+	}
+	
+	.view-right::view-transition-new(main) {
+		animation: main-from-right 200ms cubic-bezier(.09,.44,.33,1) both;
+	}
+	
+	
+	
 }

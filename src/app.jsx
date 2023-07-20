@@ -22,6 +22,8 @@ import Intro from './pages/intro.jsx';
 import Calculator from './pages/calculator.jsx';
 import Research from './pages/research.jsx';
 import Reference from './pages/reference.jsx';
+import ReferenceAssemble from './pages/reference/assemble.jsx';
+import ReferenceSmelt from './pages/reference/smelt.jsx';
 import Settings from './pages/settings.jsx';
 
 
@@ -54,7 +56,11 @@ const router = createBrowserRouter(
 			<Route path="intro" element={<Intro/>}/>
 			<Route path="calculator" element={<Calculator/>}/>
 			<Route path="research" element={<Research/>}/>
-			<Route path="reference" element={<Reference/>}/>
+			<Route path="reference" element={<Reference/>}>
+				<Route path="assemble" element={<ReferenceAssemble/>}/>
+				<Route path="smelt" element={<ReferenceSmelt/>}/>
+				<Route path="" loader={() => redirect('assemble')}/>
+			</Route>
 			<Route path="settings" element={<Settings/>}/>
 			<Route path="" loader={() => {
 				console.log('search is', location.search);

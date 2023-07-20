@@ -23,6 +23,13 @@
 		/* padding: 4px 10px; */
 	}
 	
+	main.research .reset {
+		display: block;
+		margin-top: 10px;
+		padding: 6px 10px;
+		border: 1px solid var(--neon-red);
+	}
+	
 	main.research .tech {
 		position: relative;
 		width: 100px;

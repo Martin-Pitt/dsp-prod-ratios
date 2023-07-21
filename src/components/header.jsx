@@ -17,7 +17,8 @@ export default function Header(props) {
 		let transition = document.startViewTransition(() => {
 			let a = RelativePaths.findIndex(path => location.pathname.startsWith(path));
 			let b = RelativePaths.indexOf(newRoute);
-			document.documentElement.classList.add(`view-${b > a? 'right' : 'left'}`);
+			let direction = a < b? 'right' : a > b? 'left' : 'same';
+			document.documentElement.classList.add(`view-${direction}`);
 			navigate(newRoute);
 		});
 		transition.finished.then(() => {

@@ -51,6 +51,7 @@
 		100% { filter: opacity(0) grayscale() }
 	}
 	
+	/* bestagons rendered via https://gist.github.com/Martin-Pitt/efef3417ec4a552e77edc2c962119cd4 */
 	@keyframes hex-in {
 		0% {
 			opacity: 0;

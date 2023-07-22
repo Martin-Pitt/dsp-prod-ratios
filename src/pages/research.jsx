@@ -54,7 +54,7 @@ export default function Research(props) {
 		<main class="page research">
 			<p class="about">
 				Select your research progress so far, this tool will then only show recipes available to you.
-				{state.research.value.length? <button class="reset" onClick={resetResearch}>Reset research</button> : null}
+				{state.research.value.length? <button class="reset" onClick={resetResearch}>Reset research</button> : <><br/><br/>With nothing selected, all recipes are available.</>}
 			</p>
 			{Tech.filter(tech => tech.id < 2000).map(tech => {
 				if(!tech.preTechs) return;

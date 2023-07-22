@@ -5,6 +5,7 @@ import iconGithub from '../images/github-mark-white.svg';
 import logo from '../images/logo.svg';
 
 const RelativePaths = [
+	'/intro',
 	'/calculator',
 	'/research',
 	'/reference',
@@ -28,10 +29,12 @@ export default function Header(props) {
 	
 	return (
 		<header class="app-header">
-			<h1 class="title">
-				<img class="logo" src={logo} alt=""/>
-				DSP Production Ratio Calculator
-			</h1>
+			<NavLink className="title-link" to="/intro" onClick={(event) => { event.preventDefault(); viewNavigate('/intro') }}>
+				<h1 class="title">
+					<img class="logo" src={logo} alt=""/>
+					DSP Ratios
+				</h1>
+			</NavLink>
 			<div class="links">
 				<NavLink className="link" to="/calculator" onClick={(event) => { event.preventDefault(); viewNavigate('/calculator') }}>Calculator</NavLink>
 				<NavLink className={classNames('link', { 'has-research': state.research.value.length > 0 })} to="/research" onClick={(event) => { event.preventDefault(); viewNavigate('/research') }}>Research</NavLink>

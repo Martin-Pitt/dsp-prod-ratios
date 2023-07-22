@@ -1,0 +1,47 @@
+@layer components {
+	main.intro {
+		background-color: lch(50 21.33 249.3 / 0.77);
+		/* color: black; */
+		padding: 30px;
+	}
+	
+	main.intro > * + * {
+		margin-top: calc(10px + 2vw);
+	}
+	
+	main.intro .desc {
+		font-size: 18px;
+		font-weight: 500;
+	}
+	
+	main.intro .link {
+		/* color: var(--neon-yellow); */
+		color: inherit;
+	}
+	
+	
+	main.intro .tiles {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+		grid-gap: calc(10px + 2vw);
+		max-width: 1000px;
+	}
+	
+	main.intro .tile {
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+		aspect-ratio: 3;
+		padding: calc(5px + 1vw);;
+		border-radius: 10px;
+		border: 1px solid;
+		background: lch(0 0 0 / 0.1);
+		font-size: 20px;
+		font-weight: 500;
+		orphans: 4;
+		widows: 1;
+	}
+	
+	
+}

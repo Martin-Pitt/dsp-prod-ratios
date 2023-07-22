@@ -22,8 +22,14 @@
 		}
 	}
 	
-	.title {
+	.title-link {
 		grid-area: title;
+		display: flex;
+		color: inherit;
+		text-decoration: none;
+	}
+	
+	.title {
 		display: flex;
 		align-items: center;
 		width: fit-content;

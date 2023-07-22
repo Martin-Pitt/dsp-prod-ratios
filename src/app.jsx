@@ -72,7 +72,8 @@ const router = createBrowserRouter(
 					return redirect(pathname); // + '?' + search + '#' + hash);
 				}
 				
-				return redirect('/calculator');
+				// return redirect('/calculator');
+				return redirect('/intro');
 			}}/>
 		</Route>
 	)

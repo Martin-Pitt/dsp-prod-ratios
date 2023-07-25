@@ -83,14 +83,48 @@ function onPer(event) {
 }
 
 function onPerInc() {
-	let step = state.timeScale.value === 'minute'? 5 : 7.5;
-	state.per.value = Math.round(state.per.value + step);
+	let step;
+	if(state.timeScale.value === 'minute')
+	{
+		let recipePerMinute = state.recipe.value.resultCounts[0] * (60/state.recipe.value.timeSpend*60);
+		let modifier = 1.0;
+		switch(state.recipe.value.type) {
+			case 'ASSEMBLE': modifier = AssemblerProductionSpeed.get(state.preferred.assembler.value); break;
+			case 'SMELT': modifier = SmelterProductionSpeed.get(state.preferred.smelter.value); break;
+			case 'CHEMICAL': modifier = ChemicalProductionSpeed.get(state.preferred.chemical.value); break;
+		}
+		
+		step = recipePerMinute * modifier;
+	}
+	else step = 60;
+	
+	let value = state.per.value + step;
+	value = Math.round(value / step) * step;
+	state.per.value = value;
+	
 	recalculateFactor();
 }
 
 function onPerDec() {
-	let step = state.timeScale.value === 'minute'? 5 : 7.5;
-	state.per.value = Math.max(0, Math.round(state.per.value - step));
+	let step;
+	if(state.timeScale.value === 'minute')
+	{
+		let recipePerMinute = state.recipe.value.resultCounts[0] * (60/state.recipe.value.timeSpend*60);
+		let modifier = 1.0;
+		switch(state.recipe.value.type) {
+			case 'ASSEMBLE': modifier = AssemblerProductionSpeed.get(state.preferred.assembler.value); break;
+			case 'SMELT': modifier = SmelterProductionSpeed.get(state.preferred.smelter.value); break;
+			case 'CHEMICAL': modifier = ChemicalProductionSpeed.get(state.preferred.chemical.value); break;
+		}
+		
+		step = recipePerMinute * modifier;
+	}
+	else step = 60;
+	
+	let value = state.per.value - step;
+	value = Math.round(value / step) * step;
+	state.per.value = Math.max(0, value);
+	
 	recalculateFactor();
 }
 

@@ -17,13 +17,13 @@ export default function Intro(props) {
 				<summary>For Example</summary>
 				<div>
 					<p>
-						You want to make an assembly line that produces <span class="per">180</span> <Icon id={1203}/> Electric Motors per minute (<span class="per">3</span> per second).<br/>
+						You want to make an assembly line that produces <span class="per">360</span> <Icon id={1203}/> Electric Motors per minute (<span class="per">6</span> per second).<br/>
 					</p>
 					<p>
-						This calculator helps you figure out how many assemblers & smelters you need for the <Icon id={1203}/> Electric Motors (<span class="quantity">8</span>&times;), <Icon id={1101}/> Iron Ingots (<span class="quantity">6</span>&times;), <Icon id={1201}/> Gears (<span class="quantity">4</span>&times;) and <Icon id={1202}/> Magnetic Coils (<span class="quantity">2</span>&times;).
+						This calculator helps you figure out how many assemblers & smelters you need for the <Icon id={1203}/> Electric Motors (<span class="quantity">16</span>&times;), <Icon id={1101}/> Iron Ingots (<span class="quantity">12</span>&times;), <Icon id={1201}/> Gears (<span class="quantity">8</span>&times;) and <Icon id={1202}/> Magnetic Coils (<span class="quantity">4</span>&times;).
 					</p>
 					<p>
-						It will also help you realise that the amount of <Icon id={1101}/> Iron Ingots (<span class="per">360</span> per minute) that will go into your assembly line will be more than one line of <Icon id={2001}/> Conveyor Belt MK.I's can handle (<span class="per">300</span> per minute), meaning that you'll need to upgrade that belt or have a second supply line of iron ingots.
+						It will also help you realise that the amount of <Icon id={1101}/> Iron Ingots (<span class="per">720</span> per minute) that will go into your assembly line will be more than one line of <Icon id={2001}/> Conveyor Belt MK.I's can handle (<span class="per">360</span> per minute), meaning that you'll need to upgrade that belt or have a second supply line of iron ingots.
 					</p>
 				</div>
 			</details>

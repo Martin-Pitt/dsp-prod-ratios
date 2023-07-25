@@ -169,7 +169,7 @@ export default function ComboSelector(props) {
 		{ name: 'smelter', label: StringFromTypes.get('SMELT'), baseBuilding: 2302, type: 'SMELT' },
 		{ name: 'chemical', label: StringFromTypes.get('CHEMICAL'), baseBuilding: 2309, type: 'CHEMICAL' },
 		{ name: 'belt', label: StringFromTypes.get('LOGISTICS'), baseBuilding: 2001 },
-	];
+	].filter(building => !building.type || state.typesUsed.value.has(building.type));
 	
 	const usesPreferredBuilding = preferredBuildings.some(building => building.type && state.typesUsed.value.has(building.type));
 	const hasDisabledPreferredBuilding = preferredBuildings.some(building =>
@@ -189,11 +189,13 @@ export default function ComboSelector(props) {
 		
 		let hasDisabledPreferredRecipe = preferredRecipes.some(([item, recipes]) => recipes.some(recipe => !recipesUnlocked.has(recipe.id)));
 		
+		preferredRecipes = preferredRecipes.filter(([item, recipes]) => recipes.some(recipe => state.recipesUsed.value.has(recipe.id)));
+		
 		return [
 			preferredRecipes,
 			hasDisabledPreferredRecipe
 		];
-	}, [state.research.value]);
+	}, [state.research.value, state.recipesUsed.value]);
 	const usesPreferredRecipe = preferredRecipes.some(([item, recipes]) => recipes.some(recipe => state.recipesUsed.value.has(recipe.id)));
 	
 	
@@ -241,9 +243,9 @@ export default function ComboSelector(props) {
 					</select></span>
 				</label>
 				
-				<details class="preferred preferred-buildings">
+				<details key="preferred-buildings" class="preferred preferred-buildings">
 					<summary>Preferred Buildings</summary>
-					{usesPreferredBuilding && <p class="note">Highlighted are used in current recipe.</p>}
+					{/* {usesPreferredBuilding && <p class="note">Highlighted are used in current recipe.</p>} */}
 					{hasDisabledPreferredBuilding && <p class="note">Disabled are due to current research progress.</p>}
 					<div class="fields">
 						{preferredBuildings
@@ -252,8 +254,7 @@ export default function ComboSelector(props) {
 							<>
 								<span
 									class={classNames('name', type && {
-										'is-used': state.typesUsed.value.has(type),
-										// 'is-unused': !state.typesUsed.value.has(type),
+										// 'is-used': state.typesUsed.value.has(type),
 									})}
 									style={`grid-row: ${index + 1}/${index + 2}`}
 								>
@@ -279,48 +280,49 @@ export default function ComboSelector(props) {
 						)}
 					</div>
 				</details>
-				<details class="preferred preferred-recipes">
-					<summary>Preferred Recipes</summary>
-					{usesPreferredRecipe && <p class="note">Highlighted are used in current recipe.</p>}
-					{hasDisabledPreferredRecipe && <p class="note">Disabled are due to current research progress.</p>}
-					<div class="fields">
-						{preferredRecipes.map(([item, recipes], index, array) => {
-							const MaxRows = window.outerWidth <= 640? Infinity : (window.outerWidth <= 920? 8 : 5);
-							const MinColumnWidth = 1 + array.reduce((previous, current) => Math.min(previous, current[1].length, 0));
-							const row = 1 + index % MaxRows;
-							const column = 1 + Math.floor(index / MaxRows) * 5;
-							
-							return (
-								<>
-									<span
-										class={classNames('name', {
-											'is-used': recipes.some(recipe => state.recipesUsed.value.has(recipe.id)),
-											// 'is-unused': !recipes.some(recipe => state.recipesUsed.value.has(recipe.id)),
-										})}
-										style={{ gridArea: `${row} / ${column} / ${row + 1} / ${column + 1}` }}
-									>
-										{item.name}
-									</span>
-									{recipes.map((recipe, index) =>
-										<label style={{ gridArea: `${row} / ${column + index + 1} / ${row + 1} / ${column + index + 2}` }}>
-											<input
-												type="radio"
-												name={item.id}
-												value={recipe.id}
-												title={recipe.explicit? recipe.name : item.name}
-												checked={recipe.id === state.preferred[item.id].value}
-												onClick={onPreferred}
-												disabled={!recipesUnlocked.has(recipe.id)}
-											/>
-											<div class="icon" data-icon={recipe.explicit? `recipe.${recipe.id}` : `item.${item.id}`}/>
-										</label>
-									)}
-								</>
-							);
-						})}
-					</div>
-				</details>
-				
+				{preferredRecipes.length > 0 && (
+					<details key="preferred-recipes" class="preferred preferred-recipes">
+						<summary>Alternate Recipes</summary>
+						<p class="note"><i>(advanced)</i> recipes are better but make sure to save special resources towards advanced buildings</p>
+						{/* {usesPreferredRecipe && <p class="note">Highlighted are used in current recipe.</p>} */}
+						{hasDisabledPreferredRecipe && <p class="note">Disabled are due to current research progress.</p>}
+						<div class="fields">
+							{preferredRecipes.map(([item, recipes], index, array) => {
+								const MaxRows = window.outerWidth <= 640? Infinity : (window.outerWidth <= 920? 8 : 5);
+								const MinColumnWidth = 1 + array.reduce((previous, current) => Math.min(previous, current[1].length, 0));
+								const row = 1 + index % MaxRows;
+								const column = 1 + Math.floor(index / MaxRows) * 5;
+								
+								return (
+									<>
+										<span
+											class={classNames('name', {
+												// 'is-used': recipes.some(recipe => state.recipesUsed.value.has(recipe.id)),
+											})}
+											style={{ gridArea: `${row} / ${column} / ${row + 1} / ${column + 1}` }}
+										>
+											{item.name}
+										</span>
+										{recipes.map((recipe, index) =>
+											<label style={{ gridArea: `${row} / ${column + index + 1} / ${row + 1} / ${column + index + 2}` }}>
+												<input
+													type="radio"
+													name={item.id}
+													value={recipe.id}
+													title={recipe.explicit? recipe.name : item.name}
+													checked={recipe.id === state.preferred[item.id].value}
+													onClick={onPreferred}
+													disabled={!recipesUnlocked.has(recipe.id)}
+												/>
+												<div class="icon" data-icon={recipe.explicit? `recipe.${recipe.id}` : `item.${item.id}`}/>
+											</label>
+										)}
+									</>
+								);
+							})}
+						</div>
+					</details>
+				)}
 			</div>
 			
 			<RecipeSelector

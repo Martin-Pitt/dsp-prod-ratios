@@ -63,7 +63,7 @@ export const Items = translate(JSONRecurse(undefined, items));
 export const AssemblerProductionSpeed = new Map([[2303, 0.75], [2304, 1], [2305, 1.5]]);
 export const SmelterProductionSpeed = new Map([[2302, 1], [2315, 2]]);
 export const ChemicalProductionSpeed = new Map([[2309, 1], [2317, 2]]);
-export const BeltTransportSpeed = new Map([[2001, 6], [2002, 12], [2003, 30]]);
+export const BeltTransportSpeed = new Map([[2001, 6*60], [2002, 12*60], [2003, 30*60]]);
 export const StringFromTypes = new Map(
     Object.entries({
         // Item Types

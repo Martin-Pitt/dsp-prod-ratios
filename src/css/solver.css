@@ -2,23 +2,7 @@
 	.solver {
 		position: relative;
 		z-index: 0;
-		border-top: 2px solid lch(100 0 0 / 0.1);
 	}
-	
-	
-	
-	
-	.solver .production-header {
-		display: inline-grid;
-		grid-template-columns: 4fr 2fr;
-		align-items: end;
-		width: 100%;
-		padding: 0 20px 6px 40px;
-		border-bottom: 10px solid lch(100 0 0 / 0.05);
-		margin-bottom: 6px;
-		font-size: 14px;
-	}
-	
 	
 	.solver .node {
 		position: relative;
@@ -44,7 +28,7 @@
 	
 	.solver .node-header {
 		display: inline-grid;
-		grid-template-columns: 4fr 2fr;
+		grid-template-columns: 4fr 0.5fr 2fr;
 		padding: 0px 20px 0 var(--indent);
 		width: 100%;
 		background-color: lch(0 0 0 / calc(5% * var(--depth, 0)));
@@ -53,7 +37,7 @@
 	@media(max-width: 920px) {
 		.solver .node-header {
 			padding-right: 10px;
-			grid-template-columns: 1.5fr 1fr;
+			grid-template-columns: 1.5fr 0.25fr 0.5fr;
 		}
 	}
 	
@@ -96,27 +80,19 @@
 	}
 	
 	
-	/* .list {
-		margin-top: 10px;
-		color: lch(61 48.55 302.46 / 0.55);
-		font-size: 20px;
+	
+	.solver .solver-header {
+		padding: 20px 10px 4px;
+		border-bottom: 4px solid lch(100 0 0 / 0.05);
+		margin-bottom: 10px;
+		font-size: 14px;
 	}
 	
-	.list-item {
-		display: grid;
-		grid-template-columns: 4fr 2fr;
-		padding: 0px 20px;
-		background-color: lch(0 0 0 / calc(10% * var(--depth, 0)));
+	.solver .solver-header div {
+		padding: 0 20px;
 	}
 	
-	.list-item:hover {
-		background-image: linear-gradient(
-			90deg,
-			hsla(261.43deg 95% 60% / calc(25% * var(--depth, 0))),
-			hsla(261.43deg 75% 40% / calc(25% * var(--depth, 0)))
-		);
-		background-blend-mode: color;
-	} */
+	
 	
 	
 	
@@ -131,6 +107,22 @@
 		}
 	}
 	
+	.solver .logistics {}
+	
+	.solver .logistics .belt {
+		display: flex;
+		align-items: center;
+		height: 2.5em;
+		vertical-align: middle;
+	}
+
+	.solver .logistics .factor {
+		display: inline-block;
+		min-width: 5ch;
+		text-align: right;
+	}
+	
+	.solver .logistics,
 	.solver .products {
 		align-self: center;
 		padding: 3px 0px;
@@ -139,7 +131,8 @@
 	}
 	
 	@media(max-width: 640px) {
-		.solver .products {
+		.solver .logistics,
+		.solver .products{
 			font-weight: 500;
 			font-size: 12px;
 			font-stretch: 80%;
@@ -162,9 +155,23 @@
 		color: white;
 	}
 	
-	.solver .node .item.icon {
+	.solver .node .item .icon {
+		display: inline-block;
+		width: 2em;
+		/* margin: 0 0.2em; */
+		vertical-align: middle;
+	}
+	
+	.solver .node .item .name {}
+	
+	.solver .node .item .icon + .name {
+		margin-left: 0.4em;
+	}
+	
+	.solver .node .products .item.icon {
 		display: inline-block;
 		width: 2.5em;
+		margin: 0 0.5em;
 		vertical-align: middle;
 	}
 	

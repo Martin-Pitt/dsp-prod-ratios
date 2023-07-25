@@ -1,12 +1,32 @@
 import { Link } from "react-router-dom";
 
 
+function Icon(props) {
+	let item = Items.find(item => item.id === props.id);
+	return <span class="item icon" data-icon={`item.${item.id}`} title={item.name}/>
+}
+
+
 export default function Intro(props) {
 	return (
 		<main class="page intro">
 			<p class="desc">
-				<b>DSP Ratios</b> is a tool to help you figure out how many buildings you need.
+				<b>DSP Ratios</b> is a calculator for Dyson Sphere Program to help you figure out how many assemblers and other buildings you need for a recipe.
 			</p>
+			<details>
+				<summary>For Example</summary>
+				<div>
+					<p>
+						You want to make an assembly line that produces <span class="per">180</span> <Icon id={1203}/> Electric Motors per minute (<span class="per">3</span> per second).<br/>
+					</p>
+					<p>
+						This calculator helps you figure out how many assemblers & smelters you need for the <Icon id={1203}/> Electric Motors (<span class="quantity">8</span>&times;), <Icon id={1101}/> Iron Ingots (<span class="quantity">6</span>&times;), <Icon id={1201}/> Gears (<span class="quantity">4</span>&times;) and <Icon id={1202}/> Magnetic Coils (<span class="quantity">2</span>&times;).
+					</p>
+					<p>
+						It will also help you realise that the amount of <Icon id={1101}/> Iron Ingots (<span class="per">360</span> per minute) that will go into your assembly line will be more than one line of <Icon id={2001}/> Conveyor Belt MK.I's can handle (<span class="per">300</span> per minute), meaning that you'll need to upgrade that belt or have a second supply line of iron ingots.
+					</p>
+				</div>
+			</details>
 			<ul class="tiles">
 				<li class="tile">
 					<p>

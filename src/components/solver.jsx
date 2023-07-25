@@ -5,6 +5,7 @@ import {
 	AssemblerProductionSpeed,
 	SmelterProductionSpeed,
 	ChemicalProductionSpeed,
+	BeltTransportSpeed,
 	RecipesUnlocked,
 	ItemsUnlocked,
 } from '../lib/data.js';
@@ -24,6 +25,33 @@ function renderNumber(factor) {
 	let right = repeats[1];
 	if(right === '0') return left;
 	return <>{left}{right}&#773;</>
+}
+
+function Icon({ id }) {
+	return <span class="icon" data-icon={id}/>;
+}
+
+function IconLabel({ recipe, item }) {
+	let icon, name;
+	if(recipe)
+	{
+		let primaryItem = Items.find(i => i.id === recipe.results[0]);
+		icon = recipe.explicit? `recipe.${recipe.id}` : `item.${primaryItem.id}`;
+		name = recipe.explicit? recipe.name : primaryItem.name;
+	}
+	
+	else if(item)
+	{
+		icon = `item.${item.id}`;
+		name = item.name;
+	}
+	
+	return (
+		<>
+			<span class="icon" data-icon={icon}/>
+			<span class="name">{name}</span>
+		</>
+	);
 }
 
 
@@ -48,7 +76,10 @@ function Solve({ solve, per, amount = 1, ingredient = null, depth = 0, ...props 
 			<div class="node solve" style={{ '--depth': depth }}>
 				<div class="node-header">
 					<div class="meta">
-						<span class="item">{item.name}</span>
+						<span class="item"><IconLabel item={item}/></span>
+					</div>
+					<div class="logistics">
+						
 					</div>
 					<ul class="products">
 						<li class={classNames('output', 'is-ingredient')}>
@@ -84,7 +115,12 @@ function Solve({ solve, per, amount = 1, ingredient = null, depth = 0, ...props 
 				<summary>
 					<div class="node-header">
 						<div class="meta">
-							<span class="factor">{renderNumber(factor)}</span>&times; <span class="process">{StringFromTypes.get(recipe.type)}</span> <span class="item">{recipe.explicit? recipe.name : Items.find(i => i.id === recipe.results[0]).name}</span>
+							<span class="factor">{renderNumber(factor)}</span>&times; <span class="process">{StringFromTypes.get(recipe.type)}</span> <span class="item"><IconLabel recipe={recipe}/></span>
+						</div>
+						<div class="logistics">
+							{recipe.results.map((result, index) =>
+								<span class="belt"><span class="factor">{renderNumber(per / BeltTransportSpeed.get(state.preferred.belt.value))}</span>&times;</span>
+							)}
 						</div>
 						<ul class="products">
 							{recipe.results.map((result, index) =>
@@ -116,33 +152,6 @@ function Solve({ solve, per, amount = 1, ingredient = null, depth = 0, ...props 
 						/>
 					);
 				})}
-				{/* {recipe.items
-					.filter(item => children.some((child, index) => {
-						if(Array.isArray(child))
-						{
-							let preferredAltRecipe = state.preferred[recipe.items[index]].value;
-							child = child.find(d => d.recipe.id === preferredAltRecipe);
-						}
-						return child?.recipe && !child.recipe.results.includes(item);
-					}))
-					.map(id => Items.find(item => item.id === id))
-					.map((item, index) =>
-						<div class="node solve" style={{ '--depth': depth + 1 }}>
-							<div class="node-header">
-								<div class="meta">
-									<span class="item">{item.name}</span>
-								</div>
-								<ul class="products">
-									<li class={classNames('output', 'is-ingredient')}>
-										<span class="perMinute">{renderNumber((state.timeScale.value === 'minute'? per : per / 60) * recipe.itemCounts[index])}</span>&times;
-										<span class="item icon" data-icon={`item.${item.id}`} title={item.name}/>
-										<span class="timeScale">per {state.timeScale.value}</span>
-									</li>
-								</ul>
-							</div>
-						</div>
-					)
-				} */}
 			</details>
 		);
 	}
@@ -154,7 +163,10 @@ function Solve({ solve, per, amount = 1, ingredient = null, depth = 0, ...props 
 				<summary>
 					<div class="node-header">
 						<div class="meta">
-							<span class="factor">{renderNumber(factor)}</span>&times; <span class="process">{StringFromTypes.get(recipe.type)}</span> <span class="item">{recipe.explicit? recipe.name : Items.find(i => i.id === recipe.results[0]).name}</span>
+							<span class="factor">{renderNumber(factor)}</span>&times; <span class="process">{StringFromTypes.get(recipe.type)}</span> <span class="item"><IconLabel recipe={recipe}/></span>
+						</div>
+						<div class="logistics">
+							
 						</div>
 						<ul class="products">
 							{recipe.results.map((result, index) =>
@@ -167,25 +179,6 @@ function Solve({ solve, per, amount = 1, ingredient = null, depth = 0, ...props 
 						</ul>
 					</div>
 				</summary>
-				{/* {recipe.items
-					.map(id => Items.find(item => item.id === id))
-					.map((item, index) =>
-						<div class="node solve" style={{ '--depth': depth + 1 }}>
-							<div class="node-header">
-								<div class="meta">
-									<span class="item">{item.name}</span>
-								</div>
-								<ul class="products">
-									<li class={classNames('output', 'is-ingredient')}>
-										<span class="perMinute">{renderNumber((state.timeScale.value === 'minute'? per : per / 60) * recipe.itemCounts[index])}</span>&times;
-										<span class="item icon" data-icon={`item.${item.id}`} title={item.name}/>
-										<span class="timeScale">per {state.timeScale.value}</span>
-									</li>
-								</ul>
-							</div>
-						</div>
-					)
-				} */}
 			</details>
 		);
 	}
@@ -271,112 +264,20 @@ export default function Solver(props) {
 	
 	return (
 		<div class="solver">
+			<div class="solver-header node-header">
+				<div>
+					Buildings &times; Recipe
+				</div>
+				<div>
+					Belts
+				</div>
+				<div>
+					Throughput
+				</div>
+			</div>
 			<Solve solve={solve} per={state.per.value}/>
-			
-			
-			{/* <pre>
-				{JSON.stringify(solve, (() => {
-					const cache = new Set();
-					return (key, value) => {
-						if(typeof value === 'object' && value !== null) {
-							if(cache.has(value)) return value?.recipe?.name? `[Circular‹${value.recipe.name}›]` : '[Circular]';
-							cache.add(value);
-						}
-						return value;
-					};
-				})(), '\t')}
-			</pre> */}
-			
-			{/* <pre>
-				recipe: {JSON.stringify(state.recipe.value, null, '\t')}<br/>
-				factor: {state.factor.value}<br/>
-				per: {state.per.value}<br/>
-				timeScale: {state.timeScale.value}<br/>
-				<br/>
-				research: {JSON.stringify(state.research.value.map(research => research.name), JSONReplacer, '\t')}<br/>
-				<br/>
-				preferred: {JSON.stringify(state.preferred, null, '\t')}<br/>
-			</pre> */}
 		</div>
 	);
 }
-
-
-
-
-
-
-/*function solve(recipe, depth = 0, cyclic = new Map(), node = {}) {
-	if(depth > 10) throw new 'Hit max depth'; // return null;
-	
-	console.groupCollapsed(
-		'Recipe',
-		recipe.explicit? recipe.name : Items.find(item => item.id === recipe.results[0]).name,
-	);
-
-	node.recipe = recipe;
-	
-	if(recipe.items.length)
-	{
-		// let ingredients = {};
-		// node.ingredients = ingredients;
-		
-		for(let id of recipe.items)
-		{
-			let item = Items.find(item => item.id === id);
-			
-			let subRecipes = Recipes.filter(recipe => recipe.results.includes(id));
-			if(!subRecipes.length)
-			{
-				console.log('Raw', item.name);
-				// ingredients.push(item);
-				// ingredients[item.id] = null;
-				node[item.id] = null;
-			}
-
-			else
-			{
-				console.groupCollapsed('Item', item.name);
-				let subNodes = [];
-				for(let iter = 0; iter < subRecipes.length; ++iter)
-				{
-					let subRecipe = subRecipes[iter];
-					
-					if(cyclic.has(subRecipe))
-					{
-						console.log('Cyclic', subRecipe.explicit? subRecipe.name : Items.find(item => item.id === subRecipe.results[0]).name);
-						let subNode = cyclic.get(subRecipe);
-						subNodes.push(subNode);
-						// Maybe mark cyclic dependencies more obv?
-						// e.g. subNode.cyclic = true or subNode = { cyclic: true, ...subNode } / subNode = { cyclic: true, subNode }
-					}
-					
-					else
-					{
-						let subNode = {};
-						cyclic.set(subRecipe, subNode);
-						solve(subRecipe, depth + 1, cyclic, subNode);
-						subNodes.push(subNode);
-					}
-				}
-				console.groupEnd();
-
-				if(subNodes.length === 1) subNodes = subNodes[0];
-				// ingredients.push(subNodes);
-				// ingredients[item.id] = subNodes;
-				node[item.id] = subNodes;
-			}
-		}
-	}
-	
-	console.groupEnd();
-	return node;
-}
-
-
-// solve(
-// 	Recipes.find(recipe => recipe.id === 83) // 83) // Small Carrier Rocket
-// );
-*/
 
 

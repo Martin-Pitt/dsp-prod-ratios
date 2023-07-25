@@ -39,9 +39,50 @@
 		background: lch(0 0 0 / 0.1);
 		font-size: 20px;
 		font-weight: 500;
-		orphans: 4;
-		widows: 1;
 	}
 	
+	main.intro .icon {
+		display: inline-block;
+		width: 2em;
+		vertical-align: middle;
+	}
 	
+	main.intro .per {
+		color: var(--neon-green);
+	}
+	
+	main.intro .quantity {
+		color: var(--neon-blue);
+	}
+	
+	main.intro details {
+		width: fit-content;
+		background-color: lch(0 0 0 / 0.2);
+		clip-path: polygon(0 6px, 6px 0, 100% 0, 100% calc(100% - 6px), calc(100% - 6px) 100%, 0 100%);
+	}
+	
+	main.intro details summary {
+		padding: 8px 20px;
+	}
+	
+	main.intro details summary::after {
+		content: '';
+		display: inline-block;
+		aspect-ratio: 1;
+		width: 20px;
+		background: url('../images/noun-triangle-down-851964.svg') top left / 100% auto no-repeat;
+		vertical-align: middle;
+	}
+	
+	main.intro details[open] summary::after {
+		background-image: url('../images/noun-triangle-up-851966.svg');
+	}
+	
+	main.intro details > div {
+		padding: 20px 20px;
+	}
+	
+	main.intro details p + p {
+		margin-top: 0.3lh;
+	}
 }

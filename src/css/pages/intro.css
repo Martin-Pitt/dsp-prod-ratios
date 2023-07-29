@@ -113,6 +113,12 @@
 		background-position: right -10px bottom -10px;
 	}
 	
+	main.intro .tile--dummies::after {
+		background-image: url('../../images/dsp-for-dummies.png');
+		background-position: right -40px bottom -30px;
+		background-size: 120px auto;
+	}
+	
 	main.intro .per {
 		color: var(--neon-green);
 	}

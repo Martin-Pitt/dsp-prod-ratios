@@ -33,6 +33,12 @@ export default function Intro(props) {
 						Spotted any issues? Check the <a class="link external-link" target="_blank" rel="noopener noreferrer" href="https://github.com/Martin-Pitt/dsp-prod-ratios/issues">github&nbsp;project</a>
 					</p>
 				</li>
+				<li class="tile tile--dummies">
+					<p>
+						Learn all the basics, tips & tricks and best practices — <a class="link external-link" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/document/d/16dKGU5dfRpUtI2dtEJnBiUps4ccdzQnFscYnl93Q7v8/edit">DSP for Dummies</a>
+					</p>
+				</li>
+				
 				{/* <li class="tile tile--translate">
 					<p>
 						Translate me to different languages! See <a class="link external-link" target="_blank" rel="noopener noreferrer" href="…">translations</a>

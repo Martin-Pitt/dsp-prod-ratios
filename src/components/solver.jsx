@@ -99,7 +99,7 @@ function Solve({ solve, per, amount = 1, ingredient = null, depth = 0, ...props 
 						<ul class="products">
 							{recipe.results.map((result, index) =>
 								<li class={classNames('output', { 'is-ingredient': !ingredient || result === ingredient })}>
-									<span class="perMinute">{renderNumber((state.timeScale.value === 'minute'? per : per / 60))}</span>&times;
+									<span class="perMinute">{renderNumber((state.timeScale.value === 'minute'? per : per / 60) * recipe.resultCounts[index])}</span>&times;
 									<Item id={result}/>
 									<span class="timeScale">per {state.timeScale.value}</span>
 								</li>

@@ -1,6 +1,7 @@
 @layer pages {
 	main.intro {
 		background-color: lch(50 21.33 249.3 / 0.77);
+		background-color: lch(39 16.84 247.12);
 		/* color: black; */
 		padding: 30px;
 	}

@@ -23,32 +23,26 @@
 		view-transition-name: main;
 	}
 
-	::view-transition-old(root),
+	/* ::view-transition-old(root),
 	::view-transition-new(root) {
-		/* animation-duration: 200ms; */
-	}
+		animation-duration: 200ms;
+	} */
 	
-	
-	
-	@keyframes grow-x {
-		from { transform: scaleX(0) }
-		to { transform: scaleX(1) }
-	}
-	
-	@keyframes shrink-x {
-		from { transform: scaleX(1) }
-		to { transform: scaleX(0) }
-	}
-	
-	@keyframes  main-in {
+	/* @keyframes  main-in {
 		0% { opacity: 0; }
 		100% { opacity: 1; }
+	} */
+	
+	@keyframes main-in {
+		0% { filter: opacity(0.0) grayscale(0.5) }
+		50% { filter: opacity(0.8) grayscale(0.5) }
+		100% { filter: opacity(1.0) }
 	}
 	
 	@keyframes main-out {
-		0% { filter: opacity(1) }
-		50% { filter: opacity(0.8) grayscale() }
-		100% { filter: opacity(0) grayscale() }
+		0% { filter: opacity(1.0) }
+		50% { filter: opacity(0.8) grayscale(0.5) }
+		100% { filter: opacity(0.0) grayscale(0.5) }
 	}
 	
 	/* bestagons rendered via https://gist.github.com/Martin-Pitt/efef3417ec4a552e77edc2c962119cd4 */
@@ -1216,31 +1210,30 @@
 		from { transform: translateX(100px); opacity: 0; }
 	}
 	
-	
-	::view-transition-old(main) {
+	html::view-transition-old(main) {
 		animation: none;
 		/* animation: main-out 200ms linear both; */
 	}
 	
-	::view-transition-new(main) {
-		animation: hex-in 200ms 50ms linear both;
+	html::view-transition-new(main) {
+		animation: main-in 200ms 50ms linear both;
 	}
 	
 	
-	.view-left::view-transition-old(main) {
-		animation: main-to-right 200ms cubic-bezier(0.71, -0.01, 0.85, -0.09) both;
+	html.view-left::view-transition-old(main) {
+		/* animation: main-to-right 200ms cubic-bezier(0.71, -0.01, 0.85, -0.09) both; */
 	}
 	
-	.view-right::view-transition-old(main) {
-		animation: main-to-left 200ms cubic-bezier(0.71, -0.01, 0.85, -0.09) both;
+	html.view-right::view-transition-old(main) {
+		/* animation: main-to-left 200ms cubic-bezier(0.71, -0.01, 0.85, -0.09) both; */
 	}
 	
-	.view-left::view-transition-new(main) {
-		animation: main-from-left 200ms cubic-bezier(0, 0.76, 0.27, 1) both, hex-in 200ms 50ms linear both;
+	html.view-left::view-transition-new(main) {
+		animation: main-from-left 200ms 50ms cubic-bezier(0, 0.76, 0.27, 1) both, main-in 200ms 50ms linear both;
 	}
 	
-	.view-right::view-transition-new(main) {
-		animation: main-from-right 200ms cubic-bezier(0, 0.76, 0.27, 1) both, hex-in 200ms 50ms linear both;
+	html.view-right::view-transition-new(main) {
+		animation: main-from-right 200ms 50ms cubic-bezier(0, 0.76, 0.27, 1) both, main-in 200ms 50ms linear both;
 	}
 	
 	

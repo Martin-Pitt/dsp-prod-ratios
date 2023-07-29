@@ -20,6 +20,16 @@
 		color: inherit;
 	}
 	
+	main.intro .external-link::after {
+		content: '';
+		display: inline-block;
+		width: 0.7em;
+		aspect-ratio: 1;
+		background: url('../../images/noun-share-3066982-FFFFFF.svg') center / 100% auto no-repeat;
+		margin-left: 0.15em;
+		vertical-align: 15%;
+	}
+	
 	
 	main.intro .tiles {
 		display: grid;
@@ -48,7 +58,7 @@
 		z-index: 1;
 	}
 	
-	main.intro .tile:has(a:hover)::before {
+	main.intro .tile::before {
 		position: absolute;
 		inset: -2px;
 		z-index: -2;
@@ -56,6 +66,13 @@
 		background: lch(100 0 0 / 0.2);
 		background-color: white;
 		clip-path: polygon(0 16px, 16px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%);
+		opacity: 0;
+		transition: opacity 120ms;
+	}
+	
+	main.intro .tile:has(a:hover)::before {
+		opacity: 1;
+		transition-duration: 60ms;
 	}
 	
 	main.intro .tile::after {
@@ -64,7 +81,36 @@
 		z-index: -1;
 		content: '';
 		background-color: lch(36 16 249.3);
+		background-repeat: no-repeat;
+		background-size: 60px auto;
 		clip-path: polygon(0 16px, 16px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%);
+	}
+	
+	main.intro .tile--research::after {
+		background-image: url('../../images/textures/tech-icon.avif');
+		background-position: right -23px bottom -5px;
+	}
+	
+	main.intro .tile--calculator::after {
+		background-image: url('../../images/textures/select-recipe.avif');
+		background-position: right -20px bottom -20px;
+	}
+	
+	main.intro .tile--reference::after {}
+	
+	main.intro .tile--github::after {
+		background-image: url('../../images/github-mark-white.svg');
+		background-position: right -10px bottom -10px;
+	}
+	
+	main.intro .tile--discord::after {
+		background-image: url('../../images/discord-mark-white.svg');
+		background-position: right -10px bottom -10px;
+	}
+	
+	main.intro .tile--reddit::after {
+		background-image: url('../../images/reddit-mark-white.svg');
+		background-position: right -10px bottom -10px;
 	}
 	
 	main.intro .per {

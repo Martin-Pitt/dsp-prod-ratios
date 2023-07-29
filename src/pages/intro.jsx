@@ -10,11 +10,40 @@ export default function Intro(props) {
 	return (
 		<main class="page intro">
 			<p class="desc">
-				<b>DSP Ratios</b> is a calculator for Dyson Sphere Program to help you figure out how many assemblers and other buildings you need for a recipe.
+				<b>DSP Ratios</b> is a calculator for <a class="link external-link" target="_blank" rel="noopener noreferrer" href="https://store.steampowered.com/app/1366540/Dyson_Sphere_Program/">Dyson Sphere Program</a> to help you figure out how many assemblers and other buildings you need for a recipe.
 			</p>
-			<p class="desc">
-				DSP Ratios is meant to be mobile friendly, so you can use it on your phone while playing
-			</p>
+			<ul class="tiles">
+				<li class="tile tile--research">
+					<p>
+						<b>Started a new game?</b> Avoid spoilers by setting your current progress in&nbsp;<Link className="link" to="/research">Research</Link>
+					</p>
+				</li>
+				<li class="tile tile--calculator">
+					<p>
+						Need the production ratios for a recipe? Let the <Link className="link" to="/calculator">Calculator</Link> help&nbsp;you
+					</p>
+				</li>
+				<li class="tile tile--reference">
+					<p>
+						Just looking for a quick reference? See the <Link className="link" to="/reference">Quick&nbsp;Reference&nbsp;Sheets</Link>
+					</p>
+				</li>
+				<li class="tile tile--github">
+					<p>
+						Spotted any issues? Check the <a class="link external-link" target="_blank" rel="noopener noreferrer" href="https://github.com/Martin-Pitt/dsp-prod-ratios/issues">github&nbsp;project</a>
+					</p>
+				</li>
+				<li class="tile tile--discord">
+					<p>
+						Got any questions? Ask the <a class="link external-link" target="_blank" rel="noopener noreferrer" href="https://discord.com/servers/dyson-sphere-program-750553061369577492">Discord</a>
+					</p>
+				</li>
+				<li class="tile tile--reddit">
+					<p>
+						See what's new on <a class="link external-link" target="_blank" rel="noopener noreferrer" href="https://reddit.com/r/Dyson_Sphere_Program/">r/Dyson_Sphere_Program</a>
+					</p>
+				</li>
+			</ul>
 			<details>
 				<summary>For Example</summary>
 				<div>
@@ -33,30 +62,11 @@ export default function Intro(props) {
 					</p>
 				</div>
 			</details>
-			<ul class="tiles">
-				<li class="tile">
-					<p>
-						<b>Started a new game?</b> Avoid spoilers by setting your current progress in&nbsp;<Link className="link" to="/research">Research</Link>
-					</p>
-				</li>
-				<li class="tile">
-					<p>
-						Need the production ratios for a recipe? Let the <Link className="link" to="/calculator">Calculator</Link> help&nbsp;you
-					</p>
-				</li>
-				<li class="tile">
-					<p>
-						Just looking for a quick reference? See the <Link className="link" to="/reference">Quick&nbsp;Reference&nbsp;Sheets</Link>
-					</p>
-				</li>
-				<li class="tile">
-					<p>
-						Spotted any issues? Check the <a class="link external-link" target="_blank" href="https://github.com/Martin-Pitt/dsp-prod-ratios/issues">github&nbsp;project</a>
-					</p>
-				</li>
-			</ul>
 			<p class="desc">
 				Data last generated at <time dateTime={Meta.generatedAt}>{new Date(Meta.generatedAt).toLocaleDateString()}</time> from Dyson Sphere Program version {Meta.version}
+			</p>
+			<p class="desc">
+				DSP Ratios is meant to be mobile friendly, so you can use it on your phone while playing
 			</p>
 		</main>
 	);

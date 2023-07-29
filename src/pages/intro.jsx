@@ -10,7 +10,7 @@ export default function Intro(props) {
 	return (
 		<main class="page intro">
 			<p class="desc">
-				<b>DSP Ratios</b> is a calculator for <a class="link external-link" target="_blank" rel="noopener noreferrer" href="https://store.steampowered.com/app/1366540/Dyson_Sphere_Program/">Dyson Sphere Program</a> to help you figure out how many assemblers and other buildings you need for a recipe.
+				<b>DSP Ratios</b> is an unofficial calculator for <a class="link external-link" target="_blank" rel="noopener noreferrer" href="https://store.steampowered.com/app/1366540/Dyson_Sphere_Program/">Dyson Sphere Program</a> (DSP) to help you plan and design production lines, to provide the best tools COSMO can afford to build massive-scale automated production lines.
 			</p>
 			<ul class="tiles">
 				<li class="tile tile--research">
@@ -33,6 +33,11 @@ export default function Intro(props) {
 						Spotted any issues? Check the <a class="link external-link" target="_blank" rel="noopener noreferrer" href="https://github.com/Martin-Pitt/dsp-prod-ratios/issues">github&nbsp;project</a>
 					</p>
 				</li>
+				{/* <li class="tile tile--translate">
+					<p>
+						Translate me to different languages! See <a class="link external-link" target="_blank" rel="noopener noreferrer" href="…">translations</a>
+					</p>
+				</li> */}
 				<li class="tile tile--discord">
 					<p>
 						Got any questions? Ask the <a class="link external-link" target="_blank" rel="noopener noreferrer" href="https://discord.com/servers/dyson-sphere-program-750553061369577492">Discord</a>
@@ -63,10 +68,16 @@ export default function Intro(props) {
 				</div>
 			</details>
 			<p class="desc">
-				Data last generated at <time dateTime={Meta.generatedAt}>{new Date(Meta.generatedAt).toLocaleDateString()}</time> from Dyson Sphere Program version {Meta.version}
+				Data last generated at <time class="per" dateTime={Meta.generatedAt}>{new Date(Meta.generatedAt).toLocaleDateString()}</time> from Dyson Sphere Program version <span class="quantity">{Meta.version}</span>
 			</p>
 			<p class="desc">
-				DSP Ratios is meant to be mobile friendly, so you can use it on your phone while playing
+				DSP Ratios is meant to be mobile friendly, so you can use it on your phone while playing.
+			</p>
+			<p class="credits">
+				Handmade with 💜 by Nexii  |  2023<br/>
+				<br/>
+				Data and assets from Dyson Sphere Program are the intellectual property of Youthcat Studio.<br/>
+				Additional assets obtained through The Noun Project with a Royalty-Free License.
 			</p>
 		</main>
 	);

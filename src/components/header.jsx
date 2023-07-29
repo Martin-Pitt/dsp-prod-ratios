@@ -5,7 +5,7 @@ import iconGithub from '../images/github-mark-white.svg';
 import logo from '../images/logo.svg';
 
 const RelativePaths = [
-	'/intro',
+	'/',
 	'/calculator',
 	'/research',
 	'/reference',
@@ -29,7 +29,7 @@ export default function Header(props) {
 	
 	return (
 		<header class="app-header">
-			<NavLink className="title-link" to="/intro" onClick={(event) => { event.preventDefault(); viewNavigate('/intro') }}>
+			<NavLink className="title-link" to="/" onClick={(event) => { event.preventDefault(); viewNavigate('/') }}>
 				<h1 class="title">
 					<img class="logo" src={logo} alt=""/>
 					DSP Ratios

@@ -155,4 +155,9 @@
 	main.intro details p + p {
 		margin-top: 0.3lh;
 	}
+	
+	main.intro .credits {
+		font-size: 70%;
+		font-weight: 200;
+	}
 }

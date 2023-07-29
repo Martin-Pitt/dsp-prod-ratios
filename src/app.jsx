@@ -54,10 +54,37 @@ function Root(props) {
 }
 
 
+function SinglePageAppRedirect() {
+	if(window.location.search.startsWith('?' + encodeURIComponent('[')) && window.location.search.endsWith(encodeURIComponent(']')))
+	{
+		let [pathname, search, hash] = JSON.parse(decodeURIComponent(window.location.search.slice(1)));
+		console.log('Redirect', pathname);
+		return redirect(pathname); // + '?' + search + '#' + hash);
+	}
+	
+	// If we are a user already accustomed to the app, then swap default page on first session to a useful one
+	else if(('sessionStorage' in window && 'localStorage' in window) && !sessionStorage.visit)
+	{
+		sessionStorage.visit = true;
+		
+		if(state.research.value.length)
+		{
+			// TODO: Either calculator or references, should find out which they seem to use most frequently?
+			return redirect('/calculator');
+		}
+	}
+	
+	// return redirect('/calculator');
+	// return redirect('/intro');
+	return null;
+}
+
+
+
 const router = createBrowserRouter(
 	createRoutesFromElements(
 		<Route path="/" element={<Root/>}>
-			<Route path="intro" element={<Intro/>}/>
+			
 			<Route path="calculator" element={<Calculator/>}/>
 			<Route path="research" element={<Research/>}/>
 			<Route path="reference" element={<Reference/>}>
@@ -66,17 +93,9 @@ const router = createBrowserRouter(
 				<Route path="" loader={() => redirect('assemble')}/>
 			</Route>
 			<Route path="settings" element={<Settings/>}/>
-			<Route path="" loader={() => {
-				if(window.location.search.startsWith('?' + encodeURIComponent('[')) && window.location.search.endsWith(encodeURIComponent(']')))
-				{
-					let [pathname, search, hash] = JSON.parse(decodeURIComponent(window.location.search.slice(1)));
-					console.log('Redirect', pathname);
-					return redirect(pathname); // + '?' + search + '#' + hash);
-				}
-				
-				// return redirect('/calculator');
-				return redirect('/intro');
-			}}/>
+			{/* <Route path="" element={<Intro/>}/> */}
+			<Route path="intro" loader={() => redirect('/')}/>
+			<Route path="" loader={SinglePageAppRedirect} element={<Intro/>}/>
 		</Route>
 	)
 );

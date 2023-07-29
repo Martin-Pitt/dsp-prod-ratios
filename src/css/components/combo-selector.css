@@ -19,7 +19,7 @@
 		}
 	}
 	
-	.combo-selector .recipe {
+	.combo-selector .recipe-picker {
 		position: relative;
 		grid-area: recipe;
 		width: 94px;
@@ -30,12 +30,12 @@
 		cursor: pointer;
 	}
 	
-	.combo-selector .recipe:hover {
+	.combo-selector .recipe-picker:hover {
 		border: 2px solid lch(100 0 0 / 0.5);
 		background: lch(0 0 0 / 0.2);
 	}
 	
-	.combo-selector .recipe .icon {
+	.combo-selector .recipe-picker .icon {
 		position: absolute;
 		inset: 0;
 		width: 60px;
@@ -43,11 +43,11 @@
 		transition: transform 120ms;
 	}
 	
-	.combo-selector .recipe:hover .icon {
+	.combo-selector .recipe-picker:hover .icon {
 		transform: scale(1.1);
 	}
 	
-	.combo-selector .recipe:active .icon {
+	.combo-selector .recipe-picker:active .icon {
 		transform: scale(0.98);
 	}
 	
@@ -68,7 +68,7 @@
 		content: '';
 		width: 20px;
 		height: 20px;
-		background: url('../images/noun-triangle-left-851965.svg') top left / 100% auto no-repeat;
+		background: url('../../images/noun-triangle-left-851965.svg') top left / 100% auto no-repeat;
 	}
 	
 	
@@ -101,10 +101,10 @@
 		background-repeat: no-repeat;
 	}
 	.combo-selector .steppers .increment {
-		background-image: url('../images/noun-triangle-up-851966.svg');
+		background-image: url('../../images/noun-triangle-up-851966.svg');
 	}
 	.combo-selector .steppers .decrement {
-		background-image: url('../images/noun-triangle-down-851964.svg');
+		background-image: url('../../images/noun-triangle-down-851964.svg');
 	}
 	
 	.combo-selector .steppers .increment:active,
@@ -168,17 +168,21 @@
 		padding: 8px 20px;
 	}
 	
+	.combo-selector details summary:hover:not(:active) {
+		background-color: lch(0 0 0 / 0.1);
+	}
+	
 	.combo-selector details summary::after {
 		content: '';
 		display: inline-block;
 		aspect-ratio: 1;
 		width: 20px;
-		background: url('../images/noun-triangle-down-851964.svg') top left / 100% auto no-repeat;
+		background: url('../../images/noun-triangle-down-851964.svg') top left / 100% auto no-repeat;
 		vertical-align: middle;
 	}
 	
 	.combo-selector details[open] summary::after {
-		background-image: url('../images/noun-triangle-up-851966.svg');
+		background-image: url('../../images/noun-triangle-up-851966.svg');
 	}
 	
 	.combo-selector .preferred .note {
@@ -249,7 +253,7 @@
 		content: '';
 		aspect-ratio: 1;
 		width: 48px;
-		background: url('../images/textures/window-border-2.avif') 0 0 / 100% 100% repeat;
+		background: url('../../images/textures/window-border-2.avif') 0 0 / 100% 100% repeat;
 	}
 	
 	.combo-selector .preferred label:has(:disabled) {

@@ -1,4 +1,5 @@
 import { JSONReviver } from '../data/reviver.js';
+import meta from '../data/meta.json';
 import tech from '../data/tech.json';
 import recipes from '../data/recipes.json';
 import items from '../data/items.json';
@@ -17,24 +18,25 @@ function JSONRecurse(key, value, depth = 0) {
 }
 
 
+export const Meta = JSONRecurse(undefined, meta);
 export const Strings = JSONRecurse(undefined, strings);
 
-const supportedLocales = Intl.getCanonicalLocales(
-	Object.keys(Strings.entries().next().value[1])
-	.map(locale => locale.replace('_', '-'))
-);
-
-const locale = (() => {
-	for(const preferred of navigator.languages)
+export const locale = (() => {
+	// TODO: I'd prefer a proper 'best fit' or 'lookup' algorithm here, but also how do we prioritise navigator.languages?
+	for(const Preferred of navigator.languages)
 	{
-		const match = supportedLocales.find(supported =>
-			supported.startsWith(preferred) || preferred.startsWith(supported)
-		);
+		let preferred = Preferred.toLowerCase();
+		const match = Meta.supportedCanonicalLocales.find(Supported => {
+			let supported = Supported.toLowerCase();
+			return supported.startsWith(preferred)
+			    || preferred.startsWith(supported)
+			    || supported.split('-')[0] === preferred.split('-')[0]
+		});
 		if(match) return match;
 	}
 	return 'en-US';
 })();
-const internalLocale = locale.replace('-', '_').toLowerCase();
+export const internalLocale = locale.replace('-', '_').toLowerCase();
 const translateableKeys = ['name', 'description', 'conclusion', 'miningFrom', 'produceFrom'];
 function translate(input) {
 	if(typeof input === 'string') return Strings.get(input)[internalLocale];
@@ -52,6 +54,7 @@ function translate(input) {
 	else throw new Error('Undefined behaviour for translate');
 }
 
+// TODO: Preferred language can potentially change, see 'languagechange' event
 export const Tech = translate(JSONRecurse(undefined, tech));
 export const Recipes = translate(JSONRecurse(undefined, recipes));
 export const Items = translate(JSONRecurse(undefined, items));

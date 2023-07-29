@@ -1,6 +1,5 @@
 import { useState, useCallback, useMemo } from 'preact/hooks';
 import classNames from 'classnames';
-import RecipeSelector from './recipe-selector.jsx';
 import {
 	Recipes, Items, StringFromTypes,
 	AssemblerProductionSpeed,
@@ -10,6 +9,9 @@ import {
 	ItemsUnlocked,
 } from '../lib/data.js';
 import state from '../state.js';
+import RecipeSelector from './recipe-selector.jsx';
+import Item from './item.jsx';
+import Recipe from './recipe.jsx';
 
 
 
@@ -177,7 +179,7 @@ export default function ComboSelector(props) {
 	{
 		return (
 			<div class="combo-selector">
-				<div class="recipe"  onClick={onSelectRecipe}>
+				<div class="recipe-picker"  onClick={onSelectRecipe}>
 					<div class="icon" data-icon="ui.select-recipe" title="Select a recipe"/>
 					<span class="hint">Please select a recipe</span>
 				</div>
@@ -236,8 +238,8 @@ export default function ComboSelector(props) {
 	return (
 		<>
 			<div class="combo-selector">
-				<div class="recipe" onClick={onSelectRecipe}>
-					<RecipeIcon recipe={state.recipe.value}/>
+				<div class="recipe-picker" onClick={onSelectRecipe}>
+					<Recipe recipe={state.recipe.value}/>
 				</div>
 				
 				<label class="ratio">
@@ -307,7 +309,7 @@ export default function ComboSelector(props) {
 											onClick={onPreferred}
 											disabled={!itemsUnlocked.has(item.id)}
 										/>
-										<div class="icon" data-icon={`item.${item.id}`}/>
+										<Item item={item}/>
 									</label>
 								)}
 							</>
@@ -348,7 +350,7 @@ export default function ComboSelector(props) {
 													onClick={onPreferred}
 													disabled={!recipesUnlocked.has(recipe.id)}
 												/>
-												<div class="icon" data-icon={recipe.explicit? `recipe.${recipe.id}` : `item.${item.id}`}/>
+												<Recipe recipe={recipe}/>
 											</label>
 										)}
 									</>
@@ -370,73 +372,5 @@ export default function ComboSelector(props) {
 				selected={state.recipe.value}
 			/>
 		</>
-		
-		
-		/*
-		
-		Recipe Picker
-		# x Facility
-		# items per [minute]
-		
-		Preferred Buildings
-		Assembling Machine [Mk.I, Mk.II, Mk.III]
-		Smelter [Arc, Plane]
-		Chemical Plant [Chemical, Quantum]
-		Conveyor Belt [Mk.I, Mk.II, Mk.III]
-		
-		
-		*/
-		
-		
-		
-		
-		
-		/*<div class="combo-selector">
-			<input
-				class="factor"
-				type="number"
-				value={state.factor.value}
-				min="0"
-				onInput={onFactor}
-				disabled={!state.recipe.value}
-			/>
-			<select
-				class="recipe"
-				onChange={onRecipe}
-				onMouseDown={onSelectRecipe}
-				onTouchEnd={onSelectRecipe}
-			>
-				<option disabled selected={!state.recipe.value}>Please select a recipe</option>
-				{Recipes.map(recipe => <option value={recipe.id} selected={state.recipe.value === recipe}>{recipe.name}</option>)}
-			</select>
-			<RecipeSelector
-				isOpen={isSelectorOpen}
-				onRecipe={(recipe) => {
-					state.recipe.value = recipe;
-					let recipePerMinute = recipe.resultCounts[0] * 60 * (60 / recipe.timeSpend);
-					state.per.value = state.factor.value * recipePerMinute;
-					setSelectorOpen(false);
-				}}
-				onDismiss={() => setSelectorOpen(false)}
-				selected={state.recipe.value}
-			/>
-			<input
-				class="per"
-				type="number"
-				value={state.timeScale.value === 'minute'? state.per.value : state.per.value / 60}
-				min="0"
-				step={state.timeScale.value === 'minute'? 5 : 1}
-				onInput={onPer}
-				disabled={!state.recipe.value}
-			/>
-			<select
-				class="timescale"
-				onChange={onTimeScale}
-				disabled={!state.recipe.value}
-			>
-				<option value="minute" selected>per minute</option>
-				<option value="second">per second</option>
-			</select>
-		</div>*/
 	);
 }

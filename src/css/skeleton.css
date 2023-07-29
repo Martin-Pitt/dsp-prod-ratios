@@ -1228,19 +1228,19 @@
 	
 	
 	.view-left::view-transition-old(main) {
-		animation: main-to-right 200ms cubic-bezier(.45,.04,.5,.1) both;
+		animation: main-to-right 200ms cubic-bezier(0.71, -0.01, 0.85, -0.09) both;
 	}
 	
 	.view-right::view-transition-old(main) {
-		animation: main-to-left 200ms cubic-bezier(.45,.04,.5,.1) both;
+		animation: main-to-left 200ms cubic-bezier(0.71, -0.01, 0.85, -0.09) both;
 	}
 	
 	.view-left::view-transition-new(main) {
-		animation: main-from-left 200ms cubic-bezier(.09,.44,.33,1) both, hex-in 200ms 50ms linear both;
+		animation: main-from-left 200ms cubic-bezier(0, 0.76, 0.27, 1) both, hex-in 200ms 50ms linear both;
 	}
 	
 	.view-right::view-transition-new(main) {
-		animation: main-from-right 200ms cubic-bezier(.09,.44,.33,1) both, hex-in 200ms 50ms linear both;
+		animation: main-from-right 200ms cubic-bezier(0, 0.76, 0.27, 1) both, hex-in 200ms 50ms linear both;
 	}
 	
 	

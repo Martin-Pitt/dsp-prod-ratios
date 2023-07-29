@@ -10,6 +10,9 @@ import {
 	ItemsUnlocked,
 } from '../lib/data.js';
 import state from '../state.js';
+import Item from '../components/item';
+import Recipe from '../components/recipe';
+
 
 
 function renderNumber(factor) {
@@ -96,7 +99,7 @@ export default function Reference(props) {
 										checked={item.id === state.preferred.assembler.value}
 										onClick={onPreferred}
 									/>
-									<div class="icon" data-icon={`item.${item.id}`}/>
+									<Item item={item}/>
 								</label>
 							)}
 						</div>
@@ -120,7 +123,7 @@ export default function Reference(props) {
 										checked={item.id === state.preferred.smelter.value}
 										onClick={onPreferred}
 									/>
-									<div class="icon" data-icon={`item.${item.id}`}/>
+									<Item item={item}/>
 								</label>
 							)}
 						</div>

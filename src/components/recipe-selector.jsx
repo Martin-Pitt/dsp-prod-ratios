@@ -1,9 +1,10 @@
 import { useCallback, useEffect, useMemo, useRef } from 'preact/hooks';
 import classNames from 'classnames';
+import state from '../state.js';
 import { Tabs, Tab } from './tabs.jsx';
 import { ListBox, ListBoxOption } from './listbox.jsx';
 import { Recipes, Items, RecipesUnlocked } from '../lib/data.js';
-import state from '../state.js';
+import Recipe from './recipe.jsx';
 
 
 export default function RecipeSelector(props) {
@@ -32,12 +33,12 @@ export default function RecipeSelector(props) {
 		return (
 			<ListBoxOption
 				key={recipe.id}
-				class={classNames('icon', { 'is-selected': props.selected === recipe })}
-				data-icon={icon}
+				class={classNames({ 'is-selected': props.selected === recipe })}
 				style={{ gridArea: `${Y} / ${X}` }}
 				onSelect={() => onRecipe(recipe)}
-				title={name}
-			/>
+			>
+				<Recipe recipe={recipe}/>
+			</ListBoxOption>
 		);
 	}, [onRecipe]);
 	

@@ -8,6 +8,9 @@ import {
 	ItemsUnlocked,
 } from '../../lib/data.js';
 import state from '../../state.js';
+import Item from '../../components/item';
+import Recipe from '../../components/recipe';
+
 
 
 function renderNumber(factor) {
@@ -82,12 +85,7 @@ export default function ReferenceAssemble(props) {
                             <tr>
                                 <th>
                                     <div class="node">
-                                        <div
-                                            class="icon"
-                                            title={recipe.explicit? recipe.name : Items.find(d => d.id === recipe.results[0]).name}
-                                            data-icon={recipe.explicit? `recipe.${recipe.id}` : `item.${recipe.results[0]}`}
-                                            data-count={recipe.resultCounts[0] > 1? recipe.resultCounts[0] : null}
-                                        />
+                                        <Recipe recipe={recipe} count={recipe.resultCounts[0] > 1? recipe.resultCounts[0] : null}/>
                                         <span class="per">{renderTimeSpend(recipe, recipe.resultCounts[0])}</span>
                                     </div>
                                 </th>
@@ -100,12 +98,7 @@ export default function ReferenceAssemble(props) {
                                                         let count = recipe.itemCounts[index];
                                                         return (
                                                             <div class="node">
-                                                                <div
-                                                                    class="icon"
-                                                                    title={item.name}
-                                                                    data-icon={`item.${item.id}`}
-                                                                    data-count={count > 1? count : null}
-                                                                />
+                                                                <Item item={item} count={count > 1? count : null}/>
                                                                 <span class="per">{renderTimeSpend(recipe, count)}</span>
                                                             </div>
                                                         );
@@ -116,12 +109,7 @@ export default function ReferenceAssemble(props) {
                                     )}
                                     {common.map((item, index) =>
                                         <div class="node">
-                                            <div
-                                                class="icon"
-                                                title={item.name}
-                                                data-icon={`item.${item.id}`}
-                                                data-count={recipe.itemCounts[index] > 1? recipe.itemCounts[index] : null}
-                                            />
+                                            <Item item={item} count={recipe.itemCounts[index] > 1? recipe.itemCounts[index] : null}/>
                                             <span class="per">{renderTimeSpend(recipe, recipe.itemCounts[index])}</span>
                                         </div>
                                     )}

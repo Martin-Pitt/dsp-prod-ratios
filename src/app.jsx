@@ -9,12 +9,13 @@ import {
 	redirect,
 } from "react-router-dom";
 import {
-	Tech, Recipes, Items, Strings,
+	Meta, Tech, Recipes, Items, Strings,
 	AssemblerProductionSpeed,
 	SmelterProductionSpeed,
 	ChemicalProductionSpeed,
 	BeltTransportSpeed,
 	StringFromTypes,
+	locale, internalLocale,
 } from './lib/data.js';
 import state from './state.js';
 import Header from './components/header.jsx';
@@ -27,6 +28,7 @@ import ReferenceSmelt from './pages/reference/smelt.jsx';
 import Settings from './pages/settings.jsx';
 
 
+window.Meta = Meta;
 window.Tech = Tech;
 window.Recipes = Recipes;
 window.Items = Items;
@@ -37,6 +39,8 @@ window.SmelterProductionSpeed = SmelterProductionSpeed;
 window.ChemicalProductionSpeed = ChemicalProductionSpeed;
 window.BeltTransportSpeed = BeltTransportSpeed;
 window.StringFromTypes = StringFromTypes;
+window.locale = locale;
+window.internalLocale = internalLocale;
 
 
 
@@ -63,8 +67,6 @@ const router = createBrowserRouter(
 			</Route>
 			<Route path="settings" element={<Settings/>}/>
 			<Route path="" loader={() => {
-				console.log('search is', location.search);
-				
 				if(window.location.search.startsWith('?' + encodeURIComponent('[')) && window.location.search.endsWith(encodeURIComponent(']')))
 				{
 					let [pathname, search, hash] = JSON.parse(decodeURIComponent(window.location.search.slice(1)));

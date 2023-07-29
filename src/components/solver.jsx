@@ -10,8 +10,9 @@ import {
 	ItemsUnlocked,
 } from '../lib/data.js';
 import state from '../state.js';
-import { render } from 'preact';
-import { JSONReplacer } from '../data/reviver.js';
+import Item from './item.jsx';
+import Recipe from './recipe.jsx';
+
 
 
 
@@ -76,7 +77,7 @@ function Solve({ solve, per, amount = 1, ingredient = null, depth = 0, ...props 
 			<div class="node solve" style={{ '--depth': depth }}>
 				<div class="node-header">
 					<div class="meta">
-						<span class="item"><IconLabel item={item}/></span>
+						<Item item={item} named/>
 					</div>
 					<div class="logistics">
 						
@@ -115,7 +116,7 @@ function Solve({ solve, per, amount = 1, ingredient = null, depth = 0, ...props 
 				<summary>
 					<div class="node-header">
 						<div class="meta">
-							<span class="factor">{renderNumber(factor)}</span>&times; <span class="process">{StringFromTypes.get(recipe.type)}</span> <span class="item"><IconLabel recipe={recipe}/></span>
+							<span class="factor">{renderNumber(factor)}</span>&times; <span class="process">{StringFromTypes.get(recipe.type)}</span> <Recipe recipe={recipe} named/>
 						</div>
 						<div class="logistics">
 							{recipe.results.map((result, index) =>
@@ -126,7 +127,7 @@ function Solve({ solve, per, amount = 1, ingredient = null, depth = 0, ...props 
 							{recipe.results.map((result, index) =>
 								<li class={classNames('output', { 'is-ingredient': !ingredient || result === ingredient })}>
 									<span class="perMinute">{renderNumber((state.timeScale.value === 'minute'? per : per / 60))}</span>&times;
-									<span class="item icon" data-icon={`item.${result}`} title={Items.find(i => i.id === result).name}/>
+									<Item id={result}/>
 									<span class="timeScale">per {state.timeScale.value}</span>
 								</li>
 							)}
@@ -163,7 +164,7 @@ function Solve({ solve, per, amount = 1, ingredient = null, depth = 0, ...props 
 				<summary>
 					<div class="node-header">
 						<div class="meta">
-							<span class="factor">{renderNumber(factor)}</span>&times; <span class="process">{StringFromTypes.get(recipe.type)}</span> <span class="item"><IconLabel recipe={recipe}/></span>
+							<span class="factor">{renderNumber(factor)}</span>&times; <span class="process">{StringFromTypes.get(recipe.type)}</span> <Recipe recipe={recipe}/>
 						</div>
 						<div class="logistics">
 							
@@ -172,7 +173,7 @@ function Solve({ solve, per, amount = 1, ingredient = null, depth = 0, ...props 
 							{recipe.results.map((result, index) =>
 								<li class={classNames('output', { 'is-ingredient': !ingredient || result === ingredient })}>
 									<span class="perMinute">{renderNumber((state.timeScale.value === 'minute'? per : per / 60) * recipe.resultCounts[index])}</span>&times;
-									<span class="item icon" data-icon={`item.${result}`} title={Items.find(i => i.id === result).name}/>
+									<Item id={result}/>
 									<span class="timeScale">per {state.timeScale.value}</span>
 								</li>
 							)}

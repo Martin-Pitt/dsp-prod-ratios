@@ -1,4 +1,4 @@
-@layer components {
+@layer pages {
 	main.intro {
 		background-color: lch(50 21.33 249.3 / 0.77);
 		/* color: black; */
@@ -34,17 +34,36 @@
 		align-items: center;
 		aspect-ratio: 3;
 		padding: calc(5px + 1vw);;
-		border-radius: 10px;
-		border: 1px solid;
-		background: lch(0 0 0 / 0.1);
+		/* border-radius: 10px;
+		border: 1px solid; */
+		/* background: lch(0 0 0 / 0.1);
+		clip-path: polygon(0 16px, 16px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%); */
 		font-size: 20px;
 		font-weight: 500;
 	}
 	
-	main.intro .icon {
-		display: inline-block;
-		width: 2em;
-		vertical-align: middle;
+	main.intro .tile {
+		position: relative;
+		z-index: 1;
+	}
+	
+	main.intro .tile:has(a:hover)::before {
+		position: absolute;
+		inset: -2px;
+		z-index: -2;
+		content: '';
+		background: lch(100 0 0 / 0.2);
+		background-color: white;
+		clip-path: polygon(0 16px, 16px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%);
+	}
+	
+	main.intro .tile::after {
+		position: absolute;
+		inset: 0px;
+		z-index: -1;
+		content: '';
+		background-color: lch(36 16 249.3);
+		clip-path: polygon(0 16px, 16px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%);
 	}
 	
 	main.intro .per {
@@ -65,17 +84,21 @@
 		padding: 8px 20px;
 	}
 	
+	main.intro details summary:hover:not(:active) {
+		background-color: lch(0 0 0 / 0.1);
+	}
+	
 	main.intro details summary::after {
 		content: '';
 		display: inline-block;
 		aspect-ratio: 1;
 		width: 20px;
-		background: url('../images/noun-triangle-down-851964.svg') top left / 100% auto no-repeat;
+		background: url('../../images/noun-triangle-down-851964.svg') top left / 100% auto no-repeat;
 		vertical-align: middle;
 	}
 	
 	main.intro details[open] summary::after {
-		background-image: url('../images/noun-triangle-up-851966.svg');
+		background-image: url('../../images/noun-triangle-up-851966.svg');
 	}
 	
 	main.intro details > div {

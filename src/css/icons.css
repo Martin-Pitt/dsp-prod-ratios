@@ -26,20 +26,4 @@
 	[data-icon="ui.tri-left"] {
 		background: url('../imagesnoun-triangle-left-851965.svg/') top left / 100% auto no-repeat;
 	}
-	
-	
-	[data-icon][data-count] {
-		position: relative;
-	}
-	[data-icon][data-count]::before {
-		position: absolute;
-		right: 0;
-		bottom: 0;
-		content: attr(data-count);
-		color: var(--neon-blue);
-		font-weight: 600;
-		font-size: 14px;
-		font-stretch: 80%;
-		filter: drop-shadow(0 0 3px currentColor);
-	}
 }

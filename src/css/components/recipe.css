@@ -1,0 +1,36 @@
+@layer components {
+	.recipe[data-icon],
+	.recipe .icon[data-icon] {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	
+	.recipe[data-icon] {
+		width: 3.75em;;
+	}
+	
+	.recipe .icon[data-icon] {
+		width: 2em;
+	}
+	
+	.recipe[data-icon][data-count] {
+		position: relative;
+		background-origin: content-box;
+		background-clip: content-box;
+		padding: 4px;
+	}
+	
+	.recipe[data-icon][data-count]::before,
+	.recipe .icon[data-icon][data-count]::before {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		content: attr(data-count);
+		color: var(--neon-blue);
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 1;
+		font-stretch: 80%;
+		filter: drop-shadow(0 0 3px currentColor);
+	}
+}

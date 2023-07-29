@@ -151,28 +151,14 @@
 		opacity: 0.5;
 	}
 	
+	.solver .node .recipe,
 	.solver .node .item {
 		color: white;
 	}
 	
-	.solver .node .item .icon {
-		display: inline-block;
-		width: 2em;
-		/* margin: 0 0.2em; */
-		vertical-align: middle;
-	}
-	
-	.solver .node .item .name {}
-	
-	.solver .node .item .icon + .name {
-		margin-left: 0.4em;
-	}
-	
 	.solver .node .products .item.icon {
-		display: inline-block;
 		width: 2.5em;
 		margin: 0 0.5em;
-		vertical-align: middle;
 	}
 	
 	.solver .node .perMinute {

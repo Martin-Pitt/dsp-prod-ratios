@@ -1,10 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
+import Item from '../components/item';
+import Recipe from '../components/recipe';
 
 
-function Icon(props) {
-	let item = Items.find(item => item.id === props.id);
-	return <span class="item icon" data-icon={`item.${item.id}`} title={item.name}/>
-}
+
 
 
 export default function Intro(props) {
@@ -13,17 +12,24 @@ export default function Intro(props) {
 			<p class="desc">
 				<b>DSP Ratios</b> is a calculator for Dyson Sphere Program to help you figure out how many assemblers and other buildings you need for a recipe.
 			</p>
+			<p class="desc">
+				DSP Ratios is meant to be mobile friendly, so you can use it on your phone while playing
+			</p>
 			<details>
 				<summary>For Example</summary>
 				<div>
+					{/*
+						TODO: Actually calculate the below dynamically in case internal values change.
+						Would be pretty neat if the user could select a different recipe example from here like a mini calculator!
+					*/}
 					<p>
-						You want to make an assembly line that produces <span class="per">360</span> <Icon id={1203}/> Electric Motors per minute (<span class="per">6</span> per second).<br/>
+						You want to make an assembly line that produces <span class="per">360</span> <Item id={1203} named/> per minute (<span class="per">6</span> per second).<br/>
 					</p>
 					<p>
-						This calculator helps you figure out how many assemblers & smelters you need for the <Icon id={1203}/> Electric Motors (<span class="quantity">16</span>&times;), <Icon id={1101}/> Iron Ingots (<span class="quantity">12</span>&times;), <Icon id={1201}/> Gears (<span class="quantity">8</span>&times;) and <Icon id={1202}/> Magnetic Coils (<span class="quantity">4</span>&times;).
+						This calculator helps you figure out how many assemblers & smelters you need for the <Item id={1203} named/> (<span class="quantity">16</span>&times;), <Item id={1101} named/> (<span class="quantity">12</span>&times;), <Item id={1201} named/> (<span class="quantity">8</span>&times;) and <Item id={1202} named/> (<span class="quantity">4</span>&times;).
 					</p>
 					<p>
-						It will also help you realise that the amount of <Icon id={1101}/> Iron Ingots (<span class="per">720</span> per minute) that will go into your assembly line will be more than one line of <Icon id={2001}/> Conveyor Belt MK.I's can handle (<span class="per">360</span> per minute), meaning that you'll need to upgrade that belt or have a second supply line of iron ingots.
+						It will also help you realise that the amount of <Item id={1101} named/> (<span class="per">720</span> per minute) that will go into your assembly line will be more than one line of <Item id={2001} named/>'s can handle (<span class="per">360</span> per minute), meaning that you'll need to upgrade that belt or have a second supply line of iron ingots.
 					</p>
 				</div>
 			</details>
@@ -49,8 +55,8 @@ export default function Intro(props) {
 					</p>
 				</li>
 			</ul>
-			<p>
-				DSP Ratios is meant to be mobile friendly, so you can use it on your phone while playing
+			<p class="desc">
+				Data last generated at <time dateTime={Meta.generatedAt}>{new Date(Meta.generatedAt).toLocaleDateString()}</time> from Dyson Sphere Program version {Meta.version}
 			</p>
 		</main>
 	);

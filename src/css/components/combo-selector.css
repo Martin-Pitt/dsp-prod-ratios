@@ -186,6 +186,8 @@
 	}
 	
 	.combo-selector .preferred .note {
+		min-width: 360px;
+		max-width: min-content;
 		padding: 0 20px;
 		font-size: 75%;
 	}

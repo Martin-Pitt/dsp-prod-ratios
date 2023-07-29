@@ -220,6 +220,7 @@ export default function ComboSelector(props) {
 			.map(item => [
 				item,
 				Recipes.filter(recipe => recipe.results.includes(item.id))
+				       .filter(recipe => state.showHiddenUpgrades.value || recipesUnlocked.has(recipe.id))
 			])
 			.filter(([item, recipes]) => recipes.length > 1);
 		
@@ -285,8 +286,8 @@ export default function ComboSelector(props) {
 					{hasDisabledPreferredBuilding && <p class="note">Disabled are due to current research progress.</p>}
 					<div class="fields">
 						{preferredBuildings
-						.filter(row => itemsUnlocked.has(row.baseBuilding))
-						.map(({ name, label, type }, index) =>
+						.filter(row => itemsUnlocked.has(row.baseBuilding) && (state.showHiddenUpgrades.value || Items.find(item => item.id === row.baseBuilding)?.upgrades?.some(upgrade => row.baseBuilding !== upgrade && itemsUnlocked.has(upgrade))))
+						.map(({ name, label, type, baseBuilding }, index) =>
 							<>
 								<span
 									class={classNames('name', type && {
@@ -297,7 +298,8 @@ export default function ComboSelector(props) {
 									{label}
 								</span>
 								{Items.find(item => item.id === state.preferred[name].value)
-								.upgrades.map(upgrade => Items.find(item => item.id === upgrade))
+								.upgrades.filter(upgrade => upgrade === baseBuilding || (state.showHiddenUpgrades.value || itemsUnlocked.has(upgrade)))
+								.map(upgrade => Items.find(item => item.id === upgrade))
 								.map(item =>
 									<label style={`grid-row: ${index + 1}/${index + 2}`}>
 										<input
@@ -339,7 +341,9 @@ export default function ComboSelector(props) {
 										>
 											{item.name}
 										</span>
-										{recipes.map((recipe, index) =>
+										{recipes
+										.filter(recipe => state.showHiddenUpgrades.value || recipesUnlocked.has(recipe.id))
+										.map((recipe, index) =>
 											<label style={{ gridArea: `${row} / ${column + index + 1} / ${row + 1} / ${column + index + 2}` }}>
 												<input
 													type="radio"

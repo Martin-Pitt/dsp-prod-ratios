@@ -67,6 +67,7 @@ const state = {
 	
 	recipesUsed: signal(new Set()),
 	typesUsed: signal(new Set()),
+	showHiddenUpgrades: signal(false),
 };
 
 

@@ -28,33 +28,6 @@ function renderNumber(factor) {
 	return <>{left}{right}&#773;</>
 }
 
-function Icon({ id }) {
-	return <span class="icon" data-icon={id}/>;
-}
-
-function IconLabel({ recipe, item }) {
-	let icon, name;
-	if(recipe)
-	{
-		let primaryItem = Items.find(i => i.id === recipe.results[0]);
-		icon = recipe.explicit? `recipe.${recipe.id}` : `item.${primaryItem.id}`;
-		name = recipe.explicit? recipe.name : primaryItem.name;
-	}
-	
-	else if(item)
-	{
-		icon = `item.${item.id}`;
-		name = item.name;
-	}
-	
-	return (
-		<>
-			<span class="icon" data-icon={icon}/>
-			<span class="name">{name}</span>
-		</>
-	);
-}
-
 
 
 function Solve({ solve, per, amount = 1, ingredient = null, depth = 0, ...props }) {

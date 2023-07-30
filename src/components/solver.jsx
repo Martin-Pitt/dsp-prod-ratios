@@ -53,7 +53,7 @@ function Solve({ solve, per, amount = 1, ingredient = null, depth = 0, ...props 
 						<Item item={item} named/>
 					</div>
 					<div class="logistics">
-						
+						<span class="belt"><span class="factor">{renderNumber(per / BeltTransportSpeed.get(state.preferred.belt.value))}</span>&times;</span>
 					</div>
 					<ul class="products">
 						<li class={classNames('output', 'is-ingredient')}>

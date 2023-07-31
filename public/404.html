@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
+	<meta charset="UTF-8"/>
 	<link rel="icon" type="image/svg+xml" href="/src/images/favicon.svg"/>
 	<link rel="mask-icon" href="/src/images/favicon.svg" color="#ffffff"/>
 	<link rel="apple-touch-icon" href="/src/images/favicon.png"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>Dyson Sphere Program Production Ratios Calculator</title>
 	<script>
-        let payload = encodeURIComponent(
-            JSON.stringify(
-                [location.pathname, location.search, location.hash],
-                null, ''
-            )
-        );
-        
-        // location = location.pathname.split('/').slice(0, 2).join('/') + '/?' + payload;
-        location = '/?' + payload;
-    </script>
+		// MIT License
+		// Based on https://github.com/rafgraph/spa-github-pages
+		let l = window.location;
+		window.location.replace(
+			l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+			l.pathname.split('/').slice(0, 1).join('/') + '/?/' +
+			l.pathname.slice(1).split('/').slice(0).join('/').replace(/&/g, '~and~') +
+			(l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+			l.hash
+		);
+	</script>
 </head>
 <body>
 </body>

@@ -118,6 +118,7 @@ export const Proliferator = {
 				break;
 			case 'RESEARCH':
 				canProduceExtra = true;
+				canSpeedupProduction = true;
 				break;
 			case 'FRACTIONATE':
 				canSpeedupProduction = true;
@@ -125,29 +126,30 @@ export const Proliferator = {
 		}
 		return { canProduceExtra, canSpeedupProduction };
 	},
-	BestPracticeMix(recipe, ingredientIndex = 0) {
+	BestPracticeMix(recipe) {
 		const ExtraProducts = new Set([
-			1503, // Small Carrier Rocket
-			1502, // Dyson Sphere Component
-			1125, // Frame Material
-			1802, // Deuteron Fuel Rod
-			1305, // Quantum Chip
-			1303, // Processor
-			1301, // Circuit Board
-			1205, // Super-magnetic Ring
-			1204, // Electromagnetic Turbine
-			1203, // Electric Motor
-			1202, // Magnetic Coil
-			1143, // Proliferator Mk.III
-			1107, // Titanium Alloy
-			6006, // Universe Matrix
-			6005, // Gravity Matrix
-			6004, // Information Matrix
-			1209, // Graviton Lens
-			1206, // Particle Container
+			83, // Small Carrier Rocket
+			81, // Dyson Sphere Component
+			80, // Frame Material
+			41, // Deuteron Fuel Rod
+			52, // Quantum Chip
+			51, // Processor
+			50, // Circuit Board
+			103, // Super-magnetic Ring
+			98, // Electromagnetic Turbine
+			97, // Electric Motor
+			6, // Magnetic Coil
+			108, // Proliferator Mk.III
+			66, // Titanium Alloy
+			75, // Universe Matrix
+			102, // Gravity Matrix
+			55, // Information Matrix
+			101, // Graviton Lens
+			99, // Particle Container
 		]);
+		
 		const { canProduceExtra, canSpeedupProduction } = this.RecipeBonuses(recipe);
-		const isExtraProduct = ExtraProducts.has(recipe.results[ingredientIndex]);
+		const isExtraProduct = ExtraProducts.has(recipe.id);
 		
 		if(canProduceExtra && isExtraProduct) return 'extra';
 		else if(canSpeedupProduction) return 'speedup';

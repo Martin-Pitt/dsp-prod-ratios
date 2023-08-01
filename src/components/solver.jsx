@@ -124,7 +124,7 @@ function SolveTree({ solve, depth = 0, output, ingredient = null, hasProliferato
 		let proliferator = state.proliferator.value;
 		if(points)
 		{
-			if(proliferator === 'mixed') proliferator = Proliferator.BestPracticeMix(recipe, ingredientIndex);
+			if(proliferator === 'mixed') proliferator = Proliferator.BestPracticeMix(recipe);
 			else
 			{
 				let { canProduceExtra, canSpeedupProduction } = Proliferator.RecipeBonuses(recipe);

@@ -28,14 +28,15 @@ function renderNumber(factor) {
 function renderTimeSpend(recipe, amount = 1) {
 	let timeSpend = (60/recipe.timeSpend*60);
 	if(state.timeScale.value === 'second') timeSpend /= 60;
-	let per;
+	let modifier = 1.0;
 	switch(recipe.type) {
-		case 'ASSEMBLE': per = amount * timeSpend * AssemblerProductionSpeed.get(state.preferred.assembler.value); break;
-		case 'SMELT': per = amount * timeSpend * SmelterProductionSpeed.get(state.preferred.smelter.value); break;
-		case 'CHEMICAL': per = amount * timeSpend * ChemicalProductionSpeed.get(state.preferred.chemical.value); break;
-		default: per = amount * timeSpend; break;
+		case 'ASSEMBLE': modifier = AssemblerProductionSpeed.get(state.preferred.assembler.value); break;
+		case 'SMELT': modifier = SmelterProductionSpeed.get(state.preferred.smelter.value); break;
+		case 'CHEMICAL': modifier = ChemicalProductionSpeed.get(state.preferred.chemical.value); break;
 	}
-	return renderNumber(per);
+    let recipePerMinute = amount * timeSpend;
+    let perMinute = recipePerMinute * modifier;
+	return renderNumber(perMinute);
 }
 
 

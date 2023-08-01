@@ -13,7 +13,8 @@
 		width: 2em;
 	}
 	
-	.recipe[data-icon][data-count] {
+	.recipe[data-icon][data-count],
+	.recipe .icon[data-icon][data-count] {
 		position: relative;
 		background-origin: content-box;
 		background-clip: content-box;

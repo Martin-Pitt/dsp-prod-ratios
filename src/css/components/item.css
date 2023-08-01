@@ -13,7 +13,8 @@
 		width: 2em;
 	}
 	
-	.item[data-icon][data-count] {
+	.item[data-icon][data-count],
+	.item .icon[data-icon][data-count] {
 		position: relative;
 		background-origin: content-box;
 		background-clip: content-box;

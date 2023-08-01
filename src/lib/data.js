@@ -89,6 +89,13 @@ export const StringFromTypes = new Map(
     })
     .map(([type, key]) => [type, Strings.get(key)[internalLocale]])
 );
+export const Proliferator = {
+	Ability: [1, 2, 4],
+	ProductionSpeed: [1.25, 1.5, 2.0],
+	ExtraProducts: [1.125, 1.20, 1.25],
+	EnergyConsumption: [1.3, 1.7, 2.5],
+	Sprays: [12, 24, 60],
+};
 
 
 

@@ -9,11 +9,11 @@ export default function Recipe(props) {
 	
 	if(props.named) return (
 		<span class="recipe" lang={locale}>
-			<span class="icon" data-icon={icon}/> <span class="name">{name}</span>
+			<span class="icon" data-icon={icon} data-count={props.count}/> <span class="name">{name}</span>
 		</span>
 	);
 	
 	else return (
-		<span class="recipe icon" data-icon={icon} title={name} lang={locale}/>
+		<span class="recipe icon" data-icon={icon} data-count={props.count} title={name} lang={locale}/>
 	);
 }

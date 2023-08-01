@@ -166,9 +166,13 @@
 		min-width: 5ch;
 		text-align: right;
 	}
-
+	
 	.solver .node .output.is-ingredient .perMinute {
 		color: var(--neon-green);
+	}
+	
+	.solver .node .output:not(.is-ingredient) .item {
+		opacity: 0.5;
 	}
 	
 	.solver .node .factor {
@@ -176,7 +180,7 @@
 	}
 	
 	.solver .node .process {
-		display: none;
+		/* display: none; */
 		color: lch(100 0 0 / 0.4);
 		/* color: hsl(338.6deg 81.13% 68.82% / 37%); */
 	}

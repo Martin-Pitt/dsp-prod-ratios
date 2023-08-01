@@ -28,9 +28,16 @@ function renderNumber(factor) {
 	return <>{left}{right}&#773;</>
 }
 
+function renderTime(time) {
+	if(state.timeScale.value === 'second') time /= 60;
+	return renderNumber(time);
+}
 
 
-function Solve({ solve, per, amount = 1, ingredient = null, depth = 0, ...props }) {
+
+
+
+function SolveTree({ solve, depth = 0, output, ingredient = null }) {
 	if(!solve || depth > 10) return null;
 	
 	if('item' in solve)
@@ -53,12 +60,12 @@ function Solve({ solve, per, amount = 1, ingredient = null, depth = 0, ...props 
 						<Item item={item} named/>
 					</div>
 					<div class="logistics">
-						<span class="belt"><span class="factor">{renderNumber(per / BeltTransportSpeed.get(state.preferred.belt.value))}</span>&times;</span>
+						<span class="belt"><span class="factor">{renderNumber(output / BeltTransportSpeed.get(state.preferred.belt.value))}</span>&times;</span>
 					</div>
 					<ul class="products">
 						<li class={classNames('output', 'is-ingredient')}>
-							<span class="perMinute">{renderNumber(state.timeScale.value === 'minute'? per : per / 60)}</span>&times;
-							<span class="item icon" data-icon={`item.${item.id}`} title={item.name}/>
+							<span class="perMinute">{renderTime(output)}</span>&times;
+							<Item item={item}/>
 							<span class="timeScale">per {state.timeScale.value}</span>
 						</li>
 					</ul>
@@ -67,39 +74,41 @@ function Solve({ solve, per, amount = 1, ingredient = null, depth = 0, ...props 
 		);
 	}
 	
-	
-	let { recipe, children } = solve;
-	
-	let recipePerMinute = recipe.resultCounts[0] * (60/recipe.timeSpend*60);
-	
-	let modifier = 1.0;
-	switch(recipe.type) {
-		case 'ASSEMBLE': modifier = AssemblerProductionSpeed.get(state.preferred.assembler.value); break;
-		case 'SMELT': modifier = SmelterProductionSpeed.get(state.preferred.smelter.value); break;
-		case 'CHEMICAL': modifier = ChemicalProductionSpeed.get(state.preferred.chemical.value); break;
-	}
-	
-	let factor = (per / recipePerMinute) / modifier;
-	
-	
-	if(children && children.length)
+	else
 	{
+		let { recipe, children } = solve;
+		
+		if(!ingredient) ingredient = recipe.results[0];
+		let ingredientIndex = recipe.results.findIndex(result => result === ingredient);
+		let count = recipe.resultCounts[ingredientIndex];
+		let ingredientPerMinute = count * (60/recipe.timeSpend*60);
+		
+		let modifier = 1.0;
+		switch(recipe.type) {
+			case 'ASSEMBLE': modifier = AssemblerProductionSpeed.get(state.preferred.assembler.value); break;
+			case 'SMELT': modifier = SmelterProductionSpeed.get(state.preferred.smelter.value); break;
+			case 'CHEMICAL': modifier = ChemicalProductionSpeed.get(state.preferred.chemical.value); break;
+		}
+		
+		let factor = output / ingredientPerMinute / modifier;
+		
 		return (
 			<details key={recipe.id} class="node solve" style={{ '--depth': depth }} open={depth === 0}>
 				<summary>
 					<div class="node-header">
 						<div class="meta">
-							<span class="factor">{renderNumber(factor)}</span>&times; <span class="process">{StringFromTypes.get(recipe.type)}</span> <Recipe recipe={recipe} named/>
+							{/* <span class="factor">{renderNumber(factor)}</span>&times; <span class="process">{StringFromTypes.get(recipe.type)}</span> <Recipe recipe={recipe} named/> */}
+							<span class="factor">{renderNumber(factor)}</span>&times; <Recipe recipe={recipe} named/>
 						</div>
 						<div class="logistics">
 							{recipe.results.map((result, index) =>
-								<span class="belt"><span class="factor">{renderNumber(per / BeltTransportSpeed.get(state.preferred.belt.value))}</span>&times;</span>
+								<span class="belt"><span class="factor">{renderNumber(output / BeltTransportSpeed.get(state.preferred.belt.value))}</span>&times;</span>
 							)}
 						</div>
 						<ul class="products">
 							{recipe.results.map((result, index) =>
 								<li class={classNames('output', { 'is-ingredient': !ingredient || result === ingredient })}>
-									<span class="perMinute">{renderNumber((state.timeScale.value === 'minute'? per : per / 60) * recipe.resultCounts[index])}</span>&times;
+									<span class="perMinute">{renderTime(output * (recipe.resultCounts[index] / recipe.resultCounts[ingredientIndex]))}</span>&times;
 									<Item id={result}/>
 									<span class="timeScale">per {state.timeScale.value}</span>
 								</li>
@@ -116,12 +125,13 @@ function Solve({ solve, per, amount = 1, ingredient = null, depth = 0, ...props 
 					
 					if(!child) return 'Error, no child'; // ??
 					
+					let count = recipe.itemCounts[index];
+					let itemPerMinute = count * (60/recipe.timeSpend*60);
 					return (
-						<Solve
+						<SolveTree
 							solve={child}
 							depth={depth + 1}
-							per={per * recipe.itemCounts[index]}
-							amount={recipe.itemCounts[index]}
+							output={factor * itemPerMinute * modifier}
 							ingredient={recipe.items[index]}
 						/>
 					);
@@ -129,34 +139,12 @@ function Solve({ solve, per, amount = 1, ingredient = null, depth = 0, ...props 
 			</details>
 		);
 	}
-	
-	else
-	{
-		return (
-			<details key={recipe.id} class="node solve" style={{ '--depth': depth }} open={depth === 0}>
-				<summary>
-					<div class="node-header">
-						<div class="meta">
-							<span class="factor">{renderNumber(factor)}</span>&times; <span class="process">{StringFromTypes.get(recipe.type)}</span> <Recipe recipe={recipe}/>
-						</div>
-						<div class="logistics">
-							
-						</div>
-						<ul class="products">
-							{recipe.results.map((result, index) =>
-								<li class={classNames('output', { 'is-ingredient': !ingredient || result === ingredient })}>
-									<span class="perMinute">{renderNumber((state.timeScale.value === 'minute'? per : per / 60) * recipe.resultCounts[index])}</span>&times;
-									<Item id={result}/>
-									<span class="timeScale">per {state.timeScale.value}</span>
-								</li>
-							)}
-						</ul>
-					</div>
-				</summary>
-			</details>
-		);
-	}
 }
+
+
+
+
+
 
 
 export default function Solver(props) {
@@ -172,7 +160,7 @@ export default function Solver(props) {
 			if(depth > 10) throw new 'Hit max depth'; // return null;
 			
 			node.recipe = recipe;
-			recipesUsed.add(recipe.id);
+			if(depth) recipesUsed.add(recipe.id);
 			typesUsed.add(recipe.type);
 			
 			if(recipe.items.length)
@@ -249,7 +237,55 @@ export default function Solver(props) {
 					Throughput
 				</div>
 			</div>
-			<Solve solve={solve} per={state.per.value}/>
+			<SolveTree solve={solve} output={state.per.value}/>
+			
+			{/* <pre>
+				{JSON.stringify(solve, (() => {
+					const cache = new Set();
+					return (key, value) => {
+						if(key === 'recipe')
+							return {
+								name: value.name,
+								timeSpend: value.timeSpend,
+								items: value.items.map((id, index) => `${value.itemCounts[index]} x ${Items.find(item => item.id === id).name}`).join(', '),
+								results: value.results.map((id, index) => `${value.resultCounts[index]} x ${Items.find(item => item.id === id).name}`).join(', '),
+							};
+						
+						else if(key === 'item')
+							return value.name;
+						
+						
+						
+						if(key === 'heatValue')
+						{
+							if(value < 1000000n)
+								return `${Number(value) / 1000} KJ`;
+							if(value < 1000000000n)
+								return `${Number(value) / 1000000} MJ`;
+							// if(value < 1000000000000n)
+								return `${Number(value) / 1000000000} GJ`;
+						}
+						
+						if(typeof value === 'bigint')
+							return { type: 'BigInt', value: value.toString() };
+						if(value instanceof Map)
+							return { type: 'Map', value: Array.from(value.entries()) };
+						
+						if(typeof value === 'object' && value !== null) {
+							if(cache.has(value)) return value?.recipe?.name? `[Circular‹${value.recipe.name}›]` : '[Circular]';
+							cache.add(value);
+						}
+						
+						// if(['items', 'results'].includes(key))
+						// 	return value.map(id => Items.find(item => item.id === id).name).join(', ');
+						
+						// if(['itemCounts', 'resultCounts'].includes(key))
+						// 	return value.join('x, ') + 'x';
+						
+						return value;
+					};
+				})(), '\t')}
+			</pre> */}
 		</div>
 	);
 }

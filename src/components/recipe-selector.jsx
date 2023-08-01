@@ -33,7 +33,7 @@ export default function RecipeSelector(props) {
 		return (
 			<ListBoxOption
 				key={recipe.id}
-				class={classNames({ 'is-selected': props.selected === recipe })}
+				class={classNames({ 'is-selected': props.selected?.id === recipe.id })}
 				style={{ gridArea: `${Y} / ${X}` }}
 				onSelect={() => onRecipe(recipe)}
 			>

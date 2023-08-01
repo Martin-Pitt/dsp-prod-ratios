@@ -35,12 +35,35 @@ function persistentSignal(name, fallback, fn) {
 	return sig;
 }
 
+function temporarySignal(name, fallback, fn) {
+	if(!'sessionStorage' in window) return signal(fallback);
+	
+	let value = fallback;
+	
+	if(sessionStorage[name])
+	{
+		let restored = JSON.parse(sessionStorage[name]);
+		if(fn?.restore) restored = fn.restore(restored);
+		value = restored;
+	}
+	
+	let sig = signal(value);
+	
+	effect(() => {
+		let value = sig.value;
+		if(fn?.persist) value = fn.persist(value);
+		sessionStorage[name] = JSON.stringify(value);
+	});
+	
+	return sig;
+}
+
 
 
 const state = {
-	recipe: signal(null),
-	factor: signal(1),
-	per: signal(60),
+	recipe: temporarySignal('recipe', null), // signal(null),
+	factor: temporarySignal('factor', 1), // signal(1),
+	per: temporarySignal('per', 60), // signal(60),
 	timeScale: persistentSignal('timeScale', 'minute'),
 	
 	research: persistentSignal('research', [], {

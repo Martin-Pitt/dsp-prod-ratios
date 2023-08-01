@@ -15,43 +15,6 @@ import Recipe from './recipe.jsx';
 
 
 
-function RecipeIcon(props) {
-	let recipe = props.recipe;
-	let primaryResult = recipe.results[0];
-	let primaryItem = Items.find(i => i.id === primaryResult);
-	let icon = primaryItem.name !== recipe.name? `recipe.${recipe.id}` : `item.${primaryResult}`;
-	
-	return (
-		<div
-			key={recipe.id}
-			class={classNames('icon', { 'is-selected': props.isSelected })}
-			data-icon={icon}
-			style={props.style}
-			title={recipe.name}
-		/>
-	);
-}
-
-
-function onRecipe(event) {
-	let id = +event.target.value;
-	let recipe = Recipes.find(recipe => recipe.id === id);
-	state.recipe.value = recipe;
-	
-	// setPer w/ recipe throughput (check timeScale)
-	// let recipePerMinute = recipe.resultCounts[0] * 60 * (60 / recipe.timeSpend);
-	let recipePerMinute = state.recipe.value.resultCounts[0] * (60/state.recipe.value.timeSpend*60);
-	
-	let modifier = 1.0;
-	switch(state.recipe.value.type) {
-		case 'ASSEMBLE': modifier = AssemblerProductionSpeed.get(state.preferred.assembler.value); break;
-		case 'SMELT': modifier = SmelterProductionSpeed.get(state.preferred.smelter.value); break;
-		case 'CHEMICAL': modifier = ChemicalProductionSpeed.get(state.preferred.chemical.value); break;
-	}
-	
-	state.per.value = state.factor.value * recipePerMinute * modifier;
-}
-
 function onFactor(event) {
 	// setFactor w/ event.target.value
 	state.factor.value = event.target.valueAsNumber;
@@ -84,8 +47,7 @@ function onPer(event) {
 	recalculateFactor();
 }
 
-function onPerInc() {
-	let step;
+function calcPerStep() {
 	if(state.timeScale.value === 'minute')
 	{
 		let recipePerMinute = state.recipe.value.resultCounts[0] * (60/state.recipe.value.timeSpend*60);
@@ -96,9 +58,13 @@ function onPerInc() {
 			case 'CHEMICAL': modifier = ChemicalProductionSpeed.get(state.preferred.chemical.value); break;
 		}
 		
-		step = recipePerMinute * modifier;
+		return recipePerMinute * modifier;
 	}
-	else step = 60;
+	else return 60;
+}
+
+function onPerInc() {
+	let step = calcPerStep();
 	
 	let value = state.per.value + step;
 	value = Math.round(value / step) * step;
@@ -108,20 +74,7 @@ function onPerInc() {
 }
 
 function onPerDec() {
-	let step;
-	if(state.timeScale.value === 'minute')
-	{
-		let recipePerMinute = state.recipe.value.resultCounts[0] * (60/state.recipe.value.timeSpend*60);
-		let modifier = 1.0;
-		switch(state.recipe.value.type) {
-			case 'ASSEMBLE': modifier = AssemblerProductionSpeed.get(state.preferred.assembler.value); break;
-			case 'SMELT': modifier = SmelterProductionSpeed.get(state.preferred.smelter.value); break;
-			case 'CHEMICAL': modifier = ChemicalProductionSpeed.get(state.preferred.chemical.value); break;
-		}
-		
-		step = recipePerMinute * modifier;
-	}
-	else step = 60;
+	let step = calcPerStep();
 	
 	let value = state.per.value - step;
 	value = Math.round(value / step) * step;
@@ -235,6 +188,10 @@ export default function ComboSelector(props) {
 	}, [state.research.value, state.recipesUsed.value]);
 	const usesPreferredRecipe = preferredRecipes.some(([item, recipes]) => recipes.some(recipe => state.recipesUsed.value.has(recipe.id)));
 	
+	const perStep = useMemo(() => {
+		if(state.timeScale.value === 'minute') return calcPerStep();
+		return 1;
+	}, [state.recipe.value, state.timeScale.value]);
 	
 	return (
 		<>
@@ -263,7 +220,7 @@ export default function ComboSelector(props) {
 						type="number"
 						value={state.timeScale.value === 'minute'? state.per.value : state.per.value / 60}
 						min="0"
-						step={state.timeScale.value === 'minute'? 5 : 1}
+						step={perStep}
 						onInput={onPer}
 						disabled={!state.recipe.value}
 					/><div class="steppers">

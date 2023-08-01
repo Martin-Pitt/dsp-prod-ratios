@@ -168,6 +168,11 @@
 		filter: drop-shadow(0 0 3px currentColor);
 	}
 	
+	.combo-selector .proliferator.is-custom select {
+		color: var(--neon-white);
+		filter: drop-shadow(0 0 3px currentColor);
+	}
+	
 	
 	
 	.combo-selector .preferred {

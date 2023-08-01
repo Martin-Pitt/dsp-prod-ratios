@@ -1,4 +1,4 @@
-import { useState, useMemo, useCallback } from 'preact/hooks';
+import { useState, useMemo, useCallback, useEffect } from 'preact/hooks';
 import classNames from 'classnames';
 import {
 	Recipes, Items, StringFromTypes,
@@ -37,27 +37,56 @@ function renderTime(time) {
 }
 
 
-function Juice(props) {
-	if(props.type === 'none' && !props.proliferated) return null;
+function onCustomProliferator(event, solve) {
+	let type = event.target.value;
 	
+	if(state.proliferator.value !== 'custom')
+	{
+		state.proliferator.value = 'custom';
+		state.proliferatorCustom.value = new Map();
+	}
+	
+	state.proliferatorCustom.value.set(solve.id, type);
+	state.proliferatorCustom.value = new Map(state.proliferatorCustom.value);
+}
+
+
+function Juice(props) {
 	let points = props.points || state.proliferatorPoints.value;
+	
+	if(!props.solve)
+	{
+		return (
+			<div class="icon" data-icon={`ui.inc-${props.proliferated? points : 0}`}/>
+		);
+	}
+	
 	let index = Proliferator.Ability.indexOf(points);
 	let type = Proliferator.Types[props.type];
-	let percent;
-	switch(props.type)
-	{
-		case 'speedup': percent = `+${(Proliferator.ProductionSpeed[index]*100 - 100)}% speed`; break;
-		case 'extra': percent = `+${(Proliferator.ExtraProducts[index]*100 - 100)}% extra`; break;
-	}
+	let { canProduceExtra, canSpeedupProduction } = Proliferator.RecipeBonuses(props.solve.recipe);
+	let percents = { none: 'none' };
+	if(canSpeedupProduction) percents.speedup = `+${(Proliferator.ProductionSpeed[index]*100 - 100)}% speed`;
+	if(canProduceExtra) percents.extra = `+${(Proliferator.ExtraProducts[index]*100 - 100)}% extra`;
+	let percent = percents[props.type];
 	
 	return (
 		<div
 			class="icon"
 			data-icon={`ui.inc-${props.proliferated? points : 0}`}
-			data-count={percent}
+			data-count=""
 			data-inc={props.type}
-			title={`${percent} ${type}`}
-		/>
+			title={props.type !== 'none'? `${type}: ${percent}` : type}
+		>
+			{props.solve? (
+				<select class="count" onChange={(event) => onCustomProliferator(event, props.solve)}>
+					{Object.entries(percents).map(([key, label]) =>
+						<option value={key} selected={key === props.type}>{label}</option>
+					)}
+				</select>
+			) : (
+				<span class="count">{percent}</span>
+			)}
+		</div>
 	);
 }
 
@@ -124,19 +153,32 @@ function SolveTree({ solve, depth = 0, output, ingredient = null, hasProliferato
 		let ingredientPerMinute = count * (60/recipe.timeSpend*60);
 		
 		
+		// let points = state.proliferatorPoints.value;
+		// let proliferator = state.proliferator.value;
+		// if(points)
+		// {
+		// 	if(proliferator === 'mixed') proliferator = Proliferator.BestPracticeMix(recipe);
+		// 	else if(proliferator === 'custom') proliferator = state.proliferatorCustom.value.find(set => set.id === solve.id).type;
+		// 	else
+		// 	{
+		// 		let { canProduceExtra, canSpeedupProduction } = Proliferator.RecipeBonuses(recipe);
+		// 		if((proliferator === 'speedup' && !canSpeedupProduction)
+		// 		|| (proliferator === 'extra' && !canProduceExtra)) proliferator = 'none';
+		// 	}
+			
+			
+		// 	let index = Proliferator.Ability.indexOf(points);
+		// 	switch(proliferator)
+		// 	{
+		// 		case 'speedup': modifier *= Proliferator.ProductionSpeed[index]; break;
+		// 		case 'extra': ingredientPerMinute *= Proliferator.ExtraProducts[index]; break;
+		// 	}
+		// }
+		
 		let points = state.proliferatorPoints.value;
-		let proliferator = state.proliferator.value;
+		let proliferator = state.proliferatorCustom.value.has(solve.id)? state.proliferatorCustom.value.get(solve.id) : state.proliferatorPreset.value.get(solve.id);
 		if(points)
 		{
-			if(proliferator === 'mixed') proliferator = Proliferator.BestPracticeMix(recipe);
-			else
-			{
-				let { canProduceExtra, canSpeedupProduction } = Proliferator.RecipeBonuses(recipe);
-				if((proliferator === 'speedup' && !canSpeedupProduction)
-				|| (proliferator === 'extra' && !canProduceExtra)) proliferator = 'none';
-			}
-			
-			
 			let index = Proliferator.Ability.indexOf(points);
 			switch(proliferator)
 			{
@@ -144,6 +186,7 @@ function SolveTree({ solve, depth = 0, output, ingredient = null, hasProliferato
 				case 'extra': ingredientPerMinute *= Proliferator.ExtraProducts[index]; break;
 			}
 		}
+		
 		
 		
 		if(recipe.type === 'FRACTIONATE')
@@ -156,7 +199,7 @@ function SolveTree({ solve, depth = 0, output, ingredient = null, hasProliferato
 						</div>
 						{hasProliferators && (
 							<div class="proliferator">
-								{(proliferator || proliferated) && <Juice type={proliferator} proliferated={proliferated}/>}
+								{(proliferator || proliferated) && <Juice type={proliferator} proliferated={proliferated} solve={solve}/>}
 							</div>
 						)}
 						<div class="logistics">
@@ -194,7 +237,7 @@ function SolveTree({ solve, depth = 0, output, ingredient = null, hasProliferato
 						</div>
 						{hasProliferators && (
 							<div class="proliferator">
-								{(proliferator || proliferated) && <Juice type={proliferator} proliferated={proliferated}/>}
+								{(proliferator || proliferated) && <Juice type={proliferator} proliferated={proliferated} solve={solve}/>}
 							</div>
 						)}
 						<div class="logistics">
@@ -252,9 +295,10 @@ export default function Solver(props) {
 	const recipesUnlocked = useMemo(() => RecipesUnlocked(state.research.value), [state.research.value]);
 	const itemsUnlocked = useMemo(() => ItemsUnlocked(state.research.value), [state.research.value]);
 	
-	const solve = useMemo(() => {
+	const [solve, solveNodes] = useMemo(() => {
 		let recipesUsed = new Set();
 		let typesUsed = new Set();
+		let solveNodes = new Set();
 		
 		function solve(recipe, depth = 0, cyclic = new Map(), node = {}) {
 			if(depth > 10) throw new 'Hit max depth'; // return null;
@@ -307,6 +351,7 @@ export default function Solver(props) {
 				}
 			}
 			
+			solveNodes.add(node);
 			return node;
 		}
 		
@@ -314,7 +359,7 @@ export default function Solver(props) {
 		state.recipesUsed.value = recipesUsed;
 		state.typesUsed.value = typesUsed;
 		
-		return solved;
+		return [solved, solveNodes];
 	}, [
 		state.research.value,
 		state.recipe.value,
@@ -322,6 +367,7 @@ export default function Solver(props) {
 	]);
 	
 	window.solve = solve;
+	
 	
 	const [unlockedProliferators, hasProliferators] = useMemo(() => {
 		let unlocked = [];
@@ -333,6 +379,67 @@ export default function Solver(props) {
 		
 		return [unlocked, unlocked.length > 0];
 	}, [itemsUnlocked]);
+	
+	useEffect(() => {
+		const preset = new Map();
+		state.proliferatorCustom.value = new Map();
+		
+		let points = state.proliferatorPoints.value;
+		if(!points) return state.proliferatorPreset.value = preset;
+		
+		let id = 0;
+		for(let solve of solveNodes)
+		{
+			solve.id = ++id;
+			
+			if(solve.item) continue;
+			
+			let proliferator = state.proliferator.value;
+			if(proliferator === 'mixed') proliferator = Proliferator.BestPracticeMix(solve.recipe);
+			else if(proliferator === 'custom') proliferator = Proliferator.BestPracticeMix(solve.recipe);
+			else
+			{
+				let { canProduceExtra, canSpeedupProduction } = Proliferator.RecipeBonuses(solve.recipe);
+				if((proliferator === 'speedup' && !canSpeedupProduction)
+				|| (proliferator === 'extra' && !canProduceExtra)) proliferator = 'none';
+			}
+			
+			preset.set(solve.id, proliferator);
+		}
+		
+		return state.proliferatorPreset.value = preset;
+	}, [solveNodes]);
+	
+	useEffect(() => {
+		if(state.proliferator.value === 'custom') return;
+		
+		const preset = new Map();
+		state.proliferatorCustom.value = new Map();
+		
+		let points = state.proliferatorPoints.value;
+		if(!points) return state.proliferatorPreset.value = preset;
+		
+		let id = 0;
+		for(let solve of solveNodes)
+		{
+			solve.id = ++id;
+			
+			if(solve.item) continue;
+			
+			let proliferator = state.proliferator.value;
+			if(proliferator === 'mixed') proliferator = Proliferator.BestPracticeMix(solve.recipe);
+			else
+			{
+				let { canProduceExtra, canSpeedupProduction } = Proliferator.RecipeBonuses(solve.recipe);
+				if((proliferator === 'speedup' && !canSpeedupProduction)
+				|| (proliferator === 'extra' && !canProduceExtra)) proliferator = 'none';
+			}
+			
+			preset.set(solve.id, proliferator);
+		}
+		
+		return state.proliferatorPreset.value = preset;
+	}, [state.proliferator.value]);
 	
 	
 	return (

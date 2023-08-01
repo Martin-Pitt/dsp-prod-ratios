@@ -16,6 +16,8 @@ import Recipe from './recipe.jsx';
 
 
 
+
+
 function onFactor(event) {
 	// setFactor w/ event.target.value
 	state.factor.value = event.target.valueAsNumber;
@@ -128,26 +130,27 @@ export default function ComboSelector(props) {
 	const onSelectRecipe = useCallback(event => {
 		event.preventDefault();
 		setSelectorOpen(true);
-		// refRecipeWindow.current.showModal();
 	});
 	
+	const onRecipe = useCallback(recipe => {
+		state.recipe.value = recipe;
+		if(state.proliferator.value === 'custom') state.proliferator.value = 'none';
+		recalculatePer();
+		setSelectorOpen(false);
+	}, [state.recipe.value, state.proliferator.value, setSelectorOpen]);
 	
 	
 	if(!state.recipe.value)
 	{
 		return (
 			<div class="combo-selector">
-				<div class="recipe-picker"  onClick={onSelectRecipe}>
+				<div class="recipe-picker" onClick={onSelectRecipe}>
 					<div class="icon" data-icon="ui.select-recipe" title="Select a recipe"/>
 					<span class="hint">Please select a recipe</span>
 				</div>
 				<RecipeSelector
 					isOpen={isSelectorOpen}
-					onRecipe={(recipe) => {
-						state.recipe.value = recipe;
-						recalculatePer();
-						setSelectorOpen(false);
-					}}
+					onRecipe={onRecipe}
 					onDismiss={() => setSelectorOpen(false)}
 					selected={state.recipe.value}
 					/>
@@ -268,6 +271,7 @@ export default function ComboSelector(props) {
 								'mixed': 'High-end materials are better with extra products and everything else on production speed',
 								'speedup': 'Every recipe to promote production speed where possible',
 								'extra': 'Every recipe to promote extra products where possible',
+								'custom': 'Proliferation customised for calculation',
 							}[state.proliferator.value]}
 						>
 							{Array.from(
@@ -275,6 +279,7 @@ export default function ComboSelector(props) {
 							).map(([key, label]) =>
 								<option value={key} selected={key === state.proliferator.value}>{label}</option>
 							)}
+							{state.proliferator.value === 'custom' && <option value="custom" selected disabled>Customised</option>}
 						</select>
 					</label>
 				)}
@@ -368,11 +373,7 @@ export default function ComboSelector(props) {
 			
 			<RecipeSelector
 				isOpen={isSelectorOpen}
-				onRecipe={(recipe) => {
-					state.recipe.value = recipe;
-					recalculatePer();
-					setSelectorOpen(false);
-				}}
+				onRecipe={onRecipe}
 				onDismiss={() => setSelectorOpen(false)}
 				selected={state.recipe.value}
 			/>

@@ -73,6 +73,15 @@ const state = {
 	
 	proliferator: temporarySignal('proliferator', 'none'),
 	proliferatorPoints: temporarySignal('proliferatorPoints', 1),
+	proliferatorPreset: temporarySignal('proliferatorPreset', new Map(), {
+		restore: map => new Map(map),
+		persist: map => Array.from(map.entries()),
+	}),
+	proliferatorCustom: temporarySignal('proliferatorCustom', new Map(), {
+		restore: map => new Map(map),
+		persist: map => Array.from(map.entries()),
+	}),
+	
 	
 	preferred: {
 		assembler: persistentSignal('preferred.assembler', 2303 /* Assembling Machine Mk.I */),

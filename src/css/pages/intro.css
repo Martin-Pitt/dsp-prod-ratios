@@ -6,8 +6,21 @@
 		padding: 30px;
 	}
 	
-	main.intro > * + * {
+	main.intro .page-content {
+		max-width: calc(400px + (10px + 2vw) + 400px);
+		margin: 0 auto;
+	}
+	
+	main.intro .page-content > * + * {
 		margin-top: calc(10px + 2vw);
+	}
+	
+	main.intro .page-content > :first-child {
+		margin-top: 5vh;
+	}
+	
+	main.intro .page-content > :last-child {
+		margin-bottom: 5vh;
 	}
 	
 	main.intro .desc {

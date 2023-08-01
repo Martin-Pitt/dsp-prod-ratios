@@ -69,21 +69,34 @@
 	}
 	
 	
-	[data-new] {
+	[data-new],
+	[data-wip] {
 		position: relative;
 	}
 	
-	[data-new]::after {
+	[data-new]::after,
+	[data-wip]::after {
 		position: absolute;
 		top: 0;
 		left: 100%;
-		content: 'NEW';
 		padding: 0 6px;
-		background: lch(59 87.3 39.08);
-		color: var(--neon-white);
+		padding: 2px 6px 1px;
 		font-weight: 600;
 		font-size: 8px;
-		clip-path: polygon(0 6px, 6px 0, 100% 0, 100% calc(100% - 3px), calc(100% - 3px) 100%, 0 100%);
+		line-height: 1;
+		clip-path: polygon(0 4px, 4px 0, 100% 0, 100% calc(100% - 3px), calc(100% - 3px) 100%, 0 100%);
+	}
+	
+	[data-new]::after {
+		content: 'NEW';
+		background: lch(59 87.3 39.08);
+		color: white;
+	}
+	
+	[data-wip]::after {
+		content: 'WIP';
+		background: lch(86 74.78 84.18);
+		color: black;
 	}
 	
 	

@@ -152,4 +152,19 @@
 			width: 1.2em;
 		}
 	}
+	
+	
+	
+	.app-header [data-wip]::after {
+		top: auto;
+		left: calc(100% - 35px);
+		bottom: 20px;
+	}
+	
+	@media (max-width: 640px) {
+		.app-header [data-wip]::after {
+			left: calc(100% - 18px);
+			padding: 2px 4px 1px;
+		}
+	}
 }

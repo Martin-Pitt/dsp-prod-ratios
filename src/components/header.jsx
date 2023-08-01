@@ -38,7 +38,7 @@ export default function Header(props) {
 			<div class="links">
 				<NavLink className="link" to="/calculator" onClick={(event) => { event.preventDefault(); viewNavigate('/calculator') }}>Calculator</NavLink>
 				<NavLink className={classNames('link', { 'has-research': state.research.value.length > 0 })} to="/research" onClick={(event) => { event.preventDefault(); viewNavigate('/research') }}>Research</NavLink>
-				<NavLink className="link" to="/reference" onClick={(event) => { event.preventDefault(); viewNavigate('/reference') }}>Reference</NavLink>
+				<NavLink className="link" to="/reference" onClick={(event) => { event.preventDefault(); viewNavigate('/reference') }} data-wip>Reference</NavLink>
 				{/* <NavLink className="link" to="/settings">Settings</NavLink> */}
 			</div>
 			<a class="github" target="_blank" href="https://github.com/Martin-Pitt/dsp-prod-ratios">

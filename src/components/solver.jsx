@@ -38,13 +38,14 @@ function renderTime(time) {
 
 
 function Juice(props) {
+	if(props.type === 'none' && !props.proliferated) return null;
+	
 	let points = props.points || state.proliferatorPoints.value;
 	let index = Proliferator.Ability.indexOf(points);
 	let type = Proliferator.Types[props.type];
 	let percent;
 	switch(props.type)
 	{
-		case 'none': return null;
 		case 'speedup': percent = `+${(Proliferator.ProductionSpeed[index]*100 - 100)}% speed`; break;
 		case 'extra': percent = `+${(Proliferator.ExtraProducts[index]*100 - 100)}% extra`; break;
 	}

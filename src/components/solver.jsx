@@ -188,7 +188,7 @@ function SolveTree({ solve, depth = 0, output, ingredient = null, hasProliferato
 					<div class="node-header">
 						<div class="meta">
 							{/* <span class="factor">{renderNumber(factor)}</span>&times; <span class="process">{StringFromTypes.get(recipe.type)}</span> <Recipe recipe={recipe} named/> */}
-							<span title={`${renderNumber(factor)}× ${StringFromTypes.get(recipe.type)}`}>
+							<span title={`${+factor.toFixed(6)}× ${StringFromTypes.get(recipe.type)}`}>
 								<span class="factor">{renderNumber(factor)}</span>&times;
 							</span> <Recipe recipe={recipe} named/>
 						</div>

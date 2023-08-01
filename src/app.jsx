@@ -14,6 +14,8 @@ import {
 	SmelterProductionSpeed,
 	ChemicalProductionSpeed,
 	BeltTransportSpeed,
+	RecipesUnlocked,
+	ItemsUnlocked,
 	StringFromTypes,
 	locale, internalLocale,
 } from './lib/data.js';
@@ -38,6 +40,8 @@ window.AssemblerProductionSpeed = AssemblerProductionSpeed;
 window.SmelterProductionSpeed = SmelterProductionSpeed;
 window.ChemicalProductionSpeed = ChemicalProductionSpeed;
 window.BeltTransportSpeed = BeltTransportSpeed;
+window.RecipesUnlocked = RecipesUnlocked;
+window.ItemsUnlocked = ItemsUnlocked;
 window.StringFromTypes = StringFromTypes;
 window.locale = locale;
 window.internalLocale = internalLocale;

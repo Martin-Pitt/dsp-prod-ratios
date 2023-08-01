@@ -158,7 +158,8 @@ export default function ComboSelector(props) {
 		{ name: 'smelter', label: StringFromTypes.get('SMELT'), baseBuilding: 2302, type: 'SMELT' },
 		{ name: 'chemical', label: StringFromTypes.get('CHEMICAL'), baseBuilding: 2309, type: 'CHEMICAL' },
 		{ name: 'belt', label: StringFromTypes.get('LOGISTICS'), baseBuilding: 2001 },
-	].filter(building => !building.type || state.typesUsed.value.has(building.type));
+	].filter(building => !building.type || state.typesUsed.value.has(building.type))
+	.filter(row => itemsUnlocked.has(row.baseBuilding) && (state.showHiddenUpgrades.value || Items.find(item => item.id === row.baseBuilding)?.upgrades?.some(upgrade => row.baseBuilding !== upgrade && itemsUnlocked.has(upgrade))))
 	
 	const usesPreferredBuilding = preferredBuildings.some(building => building.type && state.typesUsed.value.has(building.type));
 	const hasDisabledPreferredBuilding = preferredBuildings.some(building =>
@@ -237,50 +238,51 @@ export default function ComboSelector(props) {
 					</select></span>
 				</label>
 				
-				<details key="preferred-buildings" class="preferred preferred-buildings">
-					<summary>Preferred Buildings</summary>
-					{/* {usesPreferredBuilding && <p class="note">Highlighted are used in current recipe.</p>} */}
-					{hasDisabledPreferredBuilding && <p class="note">Disabled are due to current research progress.</p>}
-					<div class="fields">
-						{preferredBuildings
-						.filter(row => itemsUnlocked.has(row.baseBuilding) && (state.showHiddenUpgrades.value || Items.find(item => item.id === row.baseBuilding)?.upgrades?.some(upgrade => row.baseBuilding !== upgrade && itemsUnlocked.has(upgrade))))
-						.map(({ name, label, type, baseBuilding }, index) =>
-							<>
-								<span
-									class={classNames('name', type && {
-										// 'is-used': state.typesUsed.value.has(type),
-									})}
-									style={`grid-row: ${index + 1}/${index + 2}`}
-								>
-									{label}
-								</span>
-								{Items.find(item => item.id === state.preferred[name].value)
-								.upgrades.filter(upgrade => upgrade === baseBuilding || (state.showHiddenUpgrades.value || itemsUnlocked.has(upgrade)))
-								.map(upgrade => Items.find(item => item.id === upgrade))
-								.map(item =>
-									<label style={`grid-row: ${index + 1}/${index + 2}`}>
-										<input
-											type="radio"
-											name={name}
-											value={item.id}
-											title={item.name}
-											checked={item.id === state.preferred[name].value}
-											onClick={onPreferred}
-											disabled={!itemsUnlocked.has(item.id)}
-										/>
-										<Item item={item}/>
-									</label>
-								)}
-							</>
-						)}
-					</div>
-				</details>
+				{preferredBuildings.length > 0 && (
+					<details key="preferred-buildings" class="preferred preferred-buildings">
+						<summary>Preferred Buildings</summary>
+						{/* {usesPreferredBuilding && <p class="note">Highlighted are used in current recipe.</p>} */}
+						{state.showHiddenUpgrades.value && hasDisabledPreferredBuilding && <p class="note">Disabled are due to current research progress.</p>}
+						<div class="fields">
+							{preferredBuildings
+							.map(({ name, label, type, baseBuilding }, index) =>
+								<>
+									<span
+										class={classNames('name', type && {
+											// 'is-used': state.typesUsed.value.has(type),
+										})}
+										style={`grid-row: ${index + 1}/${index + 2}`}
+									>
+										{label}
+									</span>
+									{Items.find(item => item.id === state.preferred[name].value)
+									.upgrades.filter(upgrade => upgrade === baseBuilding || (state.showHiddenUpgrades.value || itemsUnlocked.has(upgrade)))
+									.map(upgrade => Items.find(item => item.id === upgrade))
+									.map(item =>
+										<label style={`grid-row: ${index + 1}/${index + 2}`}>
+											<input
+												type="radio"
+												name={name}
+												value={item.id}
+												title={item.name}
+												checked={item.id === state.preferred[name].value}
+												onClick={onPreferred}
+												disabled={!itemsUnlocked.has(item.id)}
+											/>
+											<Item item={item}/>
+										</label>
+									)}
+								</>
+							)}
+						</div>
+					</details>
+				)}
 				{preferredRecipes.length > 0 && (
 					<details key="preferred-recipes" class="preferred preferred-recipes">
 						<summary>Alternate Recipes</summary>
 						<p class="note"><i>(advanced)</i> recipes are better but make sure to save special resources towards advanced buildings</p>
 						{/* {usesPreferredRecipe && <p class="note">Highlighted are used in current recipe.</p>} */}
-						{hasDisabledPreferredRecipe && <p class="note">Disabled are due to current research progress.</p>}
+						{state.showHiddenUpgrades.value && hasDisabledPreferredRecipe && <p class="note">Disabled are due to current research progress.</p>}
 						<div class="fields">
 							{preferredRecipes.map(([item, recipes], index, array) => {
 								const MaxRows = window.outerWidth <= 640? Infinity : (window.outerWidth <= 920? 8 : 5);

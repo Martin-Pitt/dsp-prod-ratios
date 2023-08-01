@@ -258,9 +258,17 @@ export default function ComboSelector(props) {
 				
 				{hasProliferators && (
 					<label class={classNames('proliferator', `is-${state.proliferator.value}`)} data-new>
-						Proliferator:
+						<span title={`Highest unlocked tier will be used: ${Items.find(item => item.id === unlockedProliferators[unlockedProliferators.length - 1]).name}`}>
+							Proliferator:
+						</span>
 						<select
 							onChange={onProliferator}
+							title={{
+								'none': 'No proliferator to be used',
+								'mixed': 'High-end materials are better with extra products and everything else on production speed',
+								'speedup': 'Every recipe to promote production speed where possible',
+								'extra': 'Every recipe to promote extra products where possible',
+							}[state.proliferator.value]}
 						>
 							{Array.from(
 								Object.entries(Proliferator.Types)

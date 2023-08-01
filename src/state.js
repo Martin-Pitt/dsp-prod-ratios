@@ -71,6 +71,9 @@ const state = {
 		persist: array => array.map(tech => tech.id)
 	}),
 	
+	proliferator: temporarySignal('proliferator', 'none'),
+	proliferatorPoints: temporarySignal('proliferatorPoints', 1),
+	
 	preferred: {
 		assembler: persistentSignal('preferred.assembler', 2303 /* Assembling Machine Mk.I */),
 		smelter: persistentSignal('preferred.smelter', 2302 /* Arc Smelter */),

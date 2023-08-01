@@ -7,6 +7,7 @@ import {
 	ChemicalProductionSpeed,
 	RecipesUnlocked,
 	ItemsUnlocked,
+	Proliferator,
 } from '../lib/data.js';
 import state from '../state.js';
 import RecipeSelector from './recipe-selector.jsx';
@@ -92,6 +93,10 @@ function onPreferred(event) {
 	state.preferred[event.target.name].value = +event.target.value;
 	
 	recalculatePer();
+}
+
+function onProliferator(event) {
+	state.proliferator.value = event.target.value;
 }
 
 function recalculatePer() {
@@ -194,6 +199,19 @@ export default function ComboSelector(props) {
 		return 1;
 	}, [state.recipe.value, state.timeScale.value]);
 	
+	const [unlockedProliferators, hasProliferators] = useMemo(() => {
+		let unlocked = [];
+		for(let id of Proliferator.Items)
+		{
+			if(!itemsUnlocked.has(id)) break;
+			unlocked.push(id);
+		}
+		
+		state.proliferatorPoints.value = unlocked.length? Proliferator.Ability[unlocked.length - 1] : 0;
+		
+		return [unlocked, unlocked.length > 0];
+	}, [itemsUnlocked]);
+	
 	return (
 		<>
 			<div class="combo-selector">
@@ -238,6 +256,21 @@ export default function ComboSelector(props) {
 					</select></span>
 				</label>
 				
+				{hasProliferators && (
+					<label class={classNames('proliferator', `is-${state.proliferator.value}`)} data-new>
+						Proliferator:
+						<select
+							onChange={onProliferator}
+						>
+							{Array.from(
+								Object.entries(Proliferator.Types)
+							).map(([key, label]) =>
+								<option value={key} selected={key === state.proliferator.value}>{label}</option>
+							)}
+						</select>
+					</label>
+				)}
+				
 				{preferredBuildings.length > 0 && (
 					<details key="preferred-buildings" class="preferred preferred-buildings">
 						<summary>Preferred Buildings</summary>
@@ -277,6 +310,7 @@ export default function ComboSelector(props) {
 						</div>
 					</details>
 				)}
+				
 				{preferredRecipes.length > 0 && (
 					<details key="preferred-recipes" class="preferred preferred-recipes">
 						<summary>Alternate Recipes</summary>

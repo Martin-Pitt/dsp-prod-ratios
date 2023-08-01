@@ -2,14 +2,26 @@
 	.combo-selector {
 		display: inline-grid;
 		grid-template-areas:
-			"recipe ratio ."
-			"recipe specific ."
-			"buildings buildings buildings"
-			"recipes recipes recipes"
+			"recipe ratio proliferator ."
+			"recipe specific . ."
+			"buildings buildings buildings buildings"
+			"recipes recipes recipes recipes"
 		;
 		align-items: center;
 		grid-gap: 10px 20px;
 		margin: 10px 20px;
+	}
+	
+	@media (max-width: 740px) {
+		.combo-selector {
+			grid-template-areas:
+			"recipe ratio ."
+			"recipe specific ."
+			". proliferator ."
+			"buildings buildings buildings"
+			"recipes recipes recipes"
+		;
+		}
 	}
 	
 	@media (max-width: 640px) {
@@ -137,6 +149,24 @@
 		}
 	}
 	
+	.combo-selector .proliferator {
+		grid-area: proliferator;
+	}
+	
+	.combo-selector .proliferator.is-speedup select {
+		color: var(--neon-yellow);
+		filter: drop-shadow(0 0 3px currentColor);
+	}
+	
+	.combo-selector .proliferator.is-extra select {
+		color: var(--neon-blue);
+		filter: drop-shadow(0 0 3px currentColor);
+	}
+	
+	.combo-selector .proliferator.is-mixed select {
+		color: var(--neon-green);
+		filter: drop-shadow(0 0 3px currentColor);
+	}
 	
 	
 	

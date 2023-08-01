@@ -19,7 +19,7 @@
 			font-size: 14px;
 		}
 	}
-
+	
 	@media (max-width: 420px) {
 		.solver .node {
 			font-stretch: 80%;
@@ -34,10 +34,18 @@
 		background-color: lch(0 0 0 / calc(5% * var(--depth, 0)));
 	}
 	
+	.solver.has-proliferators .node-header {
+		grid-template-columns: 4fr 0.5fr 0.5fr 2fr;
+	}
+	
 	@media(max-width: 920px) {
 		.solver .node-header {
 			padding-right: 10px;
 			grid-template-columns: 1.5fr 0.25fr 0.5fr;
+		}
+		
+		.solver.has-proliferators .node-header {
+			grid-template-columns: 1.5fr 0.25fr 0.25fr 0.5fr;
 		}
 	}
 	
@@ -107,6 +115,18 @@
 		}
 	}
 	
+	.solver .proliferator {}
+	
+	.solver .proliferator .icon {
+		width: auto;
+		height: 2.5em;
+		padding: 0 10px 10px 0;
+	}
+	
+	.solver .proliferator .icon[data-count]::before {
+		font-size: 0.9em;
+	}
+	
 	.solver .logistics {}
 	
 	.solver .logistics .belt {
@@ -115,13 +135,14 @@
 		height: 2.5em;
 		vertical-align: middle;
 	}
-
+	
 	.solver .logistics .factor {
 		display: inline-block;
 		min-width: 5ch;
 		text-align: right;
 	}
 	
+	.solver .proliferator,
 	.solver .logistics,
 	.solver .products {
 		align-self: center;
@@ -129,8 +150,12 @@
 		font-size: 14px;
 		line-height: 1.2;
 	}
+	.solver .proliferator {
+		padding-top: 0px;
+	}
 	
 	@media(max-width: 640px) {
+		.solver .proliferator,
 		.solver .logistics,
 		.solver .products{
 			font-weight: 500;

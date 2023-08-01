@@ -14,6 +14,7 @@ import {
 	SmelterProductionSpeed,
 	ChemicalProductionSpeed,
 	BeltTransportSpeed,
+	Proliferator,
 	RecipesUnlocked,
 	ItemsUnlocked,
 	StringFromTypes,
@@ -40,6 +41,7 @@ window.AssemblerProductionSpeed = AssemblerProductionSpeed;
 window.SmelterProductionSpeed = SmelterProductionSpeed;
 window.ChemicalProductionSpeed = ChemicalProductionSpeed;
 window.BeltTransportSpeed = BeltTransportSpeed;
+window.Proliferator = Proliferator;
 window.RecipesUnlocked = RecipesUnlocked;
 window.ItemsUnlocked = ItemsUnlocked;
 window.StringFromTypes = StringFromTypes;

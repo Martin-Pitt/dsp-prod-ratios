@@ -90,11 +90,103 @@ export const StringFromTypes = new Map(
     .map(([type, key]) => [type, Strings.get(key)[internalLocale]])
 );
 export const Proliferator = {
+	Types: {
+		'none': 'None',
+		'mixed': 'Best Practices Mix',
+		'speedup': 'Production Speedup',
+		'extra': 'Extra Products',
+	},
+	Items: [1141, 1142, 1143],
 	Ability: [1, 2, 4],
 	ProductionSpeed: [1.25, 1.5, 2.0],
 	ExtraProducts: [1.125, 1.20, 1.25],
 	EnergyConsumption: [1.3, 1.7, 2.5],
 	Sprays: [12, 24, 60],
+	RecipeBonuses(recipe) {
+		let canProduceExtra = false, canSpeedupProduction = false;
+		switch(recipe.type) {
+			// All production categories
+			case 'SMELT':
+			case 'ASSEMBLE':
+			case 'REFINE':
+			case 'CHEMICAL':
+			case 'PARTICLE':
+				const hasBuilding = recipe.items.some(id => id >= 2000);
+				const isOtherException = [1122, 1803].includes(recipe.results[0]) || [58].includes(recipe.id); // Antimatter cannot be extra'd and neither can X-Ray Cracking
+				canProduceExtra = !(hasBuilding || isOtherException);
+				canSpeedupProduction = true;
+				break;
+			case 'RESEARCH':
+				canProduceExtra = true;
+				break;
+			case 'FRACTIONATE':
+				canSpeedupProduction = true;
+				break;
+		}
+		return { canProduceExtra, canSpeedupProduction };
+	},
+	BestPracticeMix(recipe, ingredientIndex = 0) {
+		const ExtraProducts = new Set([
+			1503, // Small Carrier Rocket
+			1502, // Dyson Sphere Component
+			1125, // Frame Material
+			1802, // Deuteron Fuel Rod
+			1305, // Quantum Chip
+			1303, // Processor
+			1301, // Circuit Board
+			1205, // Super-magnetic Ring
+			1204, // Electromagnetic Turbine
+			1203, // Electric Motor
+			1202, // Magnetic Coil
+			1143, // Proliferator Mk.III
+			1107, // Titanium Alloy
+			6006, // Universe Matrix
+			6005, // Gravity Matrix
+			6004, // Information Matrix
+			1209, // Graviton Lens
+			1206, // Particle Container
+		]);
+		const { canProduceExtra, canSpeedupProduction } = this.RecipeBonuses(recipe);
+		const isExtraProduct = ExtraProducts.has(recipe.results[ingredientIndex]);
+		
+		if(canProduceExtra && isExtraProduct) return 'extra';
+		else if(canSpeedupProduction) return 'speedup';
+		else return 'none';
+	}
+	
+	/*
+	Confirmed Product Materials per The Superior Tentacle:
+	
+	Small Carrier Rocket (obviously)
+	Dyson Sphere Component
+	Frame Material (0.3% difference, negligible aside from material cost)
+	Deuteron Fuel Rod
+	Super Magnetic Rings
+	Electromagnetic Turbine
+	Electric Motor (0.1% difference, negligible aside from material cost)
+	Quantum Chips
+	Proliferator Mk.III
+	Processors
+	Titanium Alloy
+	Circuit Boards (0.02% difference, negligible aside from material cost)
+	Magnetic Ring (0.1% difference, negligible aside from material cost)
+
+	Universe Matrix (Obviously)
+	Information Matrix
+	Gravitational Matrix
+	Graviton Lens
+	Particle Container
+
+	Notables:
+	Electromagnetic Matrix (0.65% difference in favor of speed, negligible aside from material cost)
+	Structure Matrix (1.84% difference in favor of speed, negligible aside from material cost)
+	Particle Container favors speed using Unipolar Magnets
+	*/
+	
+	
+	
+	
+	
 };
 
 

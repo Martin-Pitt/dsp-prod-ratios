@@ -24,6 +24,67 @@
 		background: url('../images/noun-triangle-down-851964.svg') top left / 100% auto no-repeat;
 	}
 	[data-icon="ui.tri-left"] {
-		background: url('../imagesnoun-triangle-left-851965.svg/') top left / 100% auto no-repeat;
+		background: url('../images/noun-triangle-left-851965.svg') top left / 100% auto no-repeat;
 	}
+	
+	[data-icon="ui.inc-1"] {
+		background: url('../images/textures/inc-1.avif') top left / 100% auto no-repeat;
+	}
+	[data-icon="ui.inc-2"] {
+		background: url('../images/textures/inc-2.avif') top left / 100% auto no-repeat;
+	}
+	[data-icon="ui.inc-4"] {
+		background: url('../images/textures/inc-4.avif') top left / 100% auto no-repeat;
+	}
+	
+	[data-icon^="ui.inc"] {
+		background-origin: content-box;
+		background-clip: content-box;
+		padding: 4px;
+	}
+	
+	[data-icon^="ui.inc"][data-count] {
+		position: relative;
+	}
+	
+	[data-icon^="ui.inc"][data-count]::before {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		content: attr(data-count);
+		color: var(--neon-white);
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 1;
+		font-stretch: 80%;
+		white-space: nowrap;
+		filter: drop-shadow(0 0 3px currentColor);
+	}
+	
+	[data-icon^="ui.inc"][data-inc="extra"]::before {
+		color: var(--neon-blue);
+	}
+	[data-icon^="ui.inc"][data-inc="speedup"]::before {
+		color: var(--neon-yellow);
+	}
+	
+	
+	[data-new] {
+		position: relative;
+	}
+	
+	[data-new]::after {
+		position: absolute;
+		top: 0;
+		left: 100%;
+		content: 'NEW';
+		padding: 0 6px;
+		background: lch(59 87.3 39.08);
+		color: var(--neon-white);
+		font-weight: 600;
+		font-size: 8px;
+		clip-path: polygon(0 6px, 6px 0, 100% 0, 100% calc(100% - 3px), calc(100% - 3px) 100%, 0 100%);
+	}
+	
+	
 }

@@ -21,6 +21,18 @@ export default function Community(props) {
 					<a target="_blank" href="https://wiki.biligame.com/dsp/">https://wiki.biligame.com/dsp/</a>
 				</li>
 				<li>
+					Official Japanese DSP Wiki
+					<a target="_blank" href="https://wikiwiki.jp/dsp/">https://wikiwiki.jp/dsp/</a>
+				</li>
+				<li>
+					Unofficial Japanese DSP Discord
+					<a target="_blank" href="https://discord.com/invite/4WVRQnUcr6">https://discord.com/invite/4WVRQnUcr6</a>
+				</li>
+				{/* <li> it looks super bare, not sure worth having here part of the curated list
+					Russian DSP Wiki
+					<a target="_blank" href="https://dyson-sphere-program.fandom.com/ru/wiki/Dyson_Sphere_Program_%D0%92%D0%B8%D0%BA%D0%B8">https://dyson-sphere-program.fandom.com/ru/wiki/Dyson_Sphere_Program_%D0%92%D0%B8%D0%BA%D0%B8</a>
+				</li> */}
+				<li>
 					Steam Community
 					<a target="_blank" href="https://steamcommunity.com/app/1366540/discussions">https://steamcommunity.com/app/1366540/discussions</a>
 				</li>

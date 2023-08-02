@@ -61,7 +61,7 @@
 		filter: drop-shadow(0 0 3px currentColor);
 	}
 	
-	[data-icon^="ui.inc"][data-count]:not([data-count=""]])::before {
+	[data-icon^="ui.inc"][data-count]:not([data-count=""])::before {
 		content: attr(data-count);
 	}
 	

@@ -120,10 +120,11 @@
 	.solver .proliferator .icon {
 		width: auto;
 		height: 2.5em;
-		padding: 0 10px 10px 0;
+		padding: 0 1em 1em 0;
 	}
 	
-	.solver .proliferator .icon[data-count]::before {
+	.solver .proliferator .icon[data-count]::before,
+	.solver .proliferator .icon[data-count] select {
 		font-size: 0.9em;
 	}
 	

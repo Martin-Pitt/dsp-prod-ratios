@@ -78,7 +78,7 @@ function Juice(props) {
 			title={props.type !== 'none'? `${type}: ${percent}` : type}
 		>
 			{props.solve? (
-				<select class="count" onChange={(event) => onCustomProliferator(event, props.solve)}>
+				<select class="count" onInput={(event) => onCustomProliferator(event, props.solve)}>
 					{Object.entries(percents).map(([key, label]) =>
 						<option value={key} selected={key === props.type}>{label}</option>
 					)}

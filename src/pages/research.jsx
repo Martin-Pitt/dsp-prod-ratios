@@ -4,22 +4,12 @@ import { Tech } from '../lib/data.js';
 import state from '../state.js';
 
 
-function getGridPosition(tech) {
-	let X = tech.position[0];
-	let Y = -tech.position[1];
-	if(Y > 0) Y += 2;
-	if(tech.id < 2000) X -= 4;
-	return [X, Y];
-}
-
 function pinResearch(tech) {
 	if(state.research.value.includes(tech)) return;
 	state.research.value = [...state.research.value, tech];
 	if(!tech.preTechs) return;
-	for(let preTech of tech.preTechs)
-	{
-		pinResearch(Tech.find(t => t.id === preTech));
-	}
+	if(tech.preTechs) for(let preTech of tech.preTechs) pinResearch(Tech.find(t => t.id === preTech));
+	if(tech.preTechsImplicit) for(let preTech of tech.preTechsImplicit) pinResearch(Tech.find(t => t.id === preTech));
 }
 
 function unpinResearch(tech) {
@@ -29,7 +19,8 @@ function unpinResearch(tech) {
 	
 	for(let postTech of state.research.value)
 	{
-		if(postTech.preTechs && postTech.preTechs.includes(tech.id)) unpinResearch(postTech);
+		if(postTech.preTechs?.includes(tech.id)) unpinResearch(postTech);
+		if(postTech.preTechsImplicit?.includes(tech.id)) unpinResearch(postTech);
 	}
 }
 
@@ -49,6 +40,7 @@ export default function Research(props) {
 		toggleResearch(tech);
 	});
 	
+	const mainLinePosition = Tech.find(tech => tech.isMain).y;
 	
 	return (
 		<main class="page research">
@@ -57,81 +49,99 @@ export default function Research(props) {
 				{state.research.value.length? <button class="reset" onClick={resetResearch}>Reset research</button> : <><br/><br/>With nothing selected, all recipes are available.</>}
 			</p>
 			{Tech.filter(tech => tech.id < 2000).map(tech => {
-				if(!tech.preTechs) return;
-				// const [X, Y] = getGridPosition(tech);
+				if(!tech.preTechs) return [];
+				
+				const isResearched = state.research.value.includes(tech);
+				const hasPreTechs = !tech.preTechs || tech.preTechs.every(id => state.research.value.includes(Tech.find(t => t.id === id)));
+				const hasImplicitPreTechs = !tech.preTechsImplicit || tech.preTechsImplicit.every(id => state.research.value.includes(Tech.find(t => t.id === id)));
 				
 				let links = tech.preTechs.map((id, index) => {
 					const preTech = Tech.find(t => t.id === id);
-					// const [PX, PY] = getGridPosition(preTech);
-					
-					let X = tech.position[0];
-					let Y = -tech.position[1];
-					let PX = preTech.position[0];
-					let PY = -preTech.position[1];
-					
-					PX += 1;
-					if(PY >= Y) PY += 1;
-					if(PY < Y) Y += 1;
-					
-					const isActive = state.research.value.includes(preTech);
-					const isBelow = PY < Y + 1;
-					const isAbove = PY > Y + 1;
-					const isMain = PY === 0 & Y === -1;
-					
-					// Re-align
-					if(Y >= 0) Y += 2;
-					if(tech.id < 2000) X -= 4;
-					if(PY >= 0) PY += 2;
-					if(preTech.id < 2000) PX -= 4;
+					const hasPreRequisite = state.research.value.includes(preTech);
 					
 					return {
-						index,
-						PX, PY, X, Y,
-						isActive, isMain, isBelow, isAbove,
+						toIndex: index,
+						tech,
+						preTech,
+						isActive: hasPreRequisite && hasPreTechs && hasImplicitPreTechs,
+						isBelow: preTech.y < tech.y,
+						isAbove: preTech.y > tech.y,
+						inLine: preTech.y === tech.y,
+						aboveMain: preTech.y < mainLinePosition,
+						belowMain: preTech.y > mainLinePosition,
 					};
 				});
 				
-				links = links.sort((a, b) => a.PY - b.PY);
+				links = links.sort((a, b) => a.preTech.y - b.preTech.y);
+				links.forEach((link, index) => link.toIndex = index);
 				
-				let hasMain = links.findIndex(link => link.isMain);
-				if(hasMain !== -1)
+				const inMainLine = links.findIndex(link => link.inLine && link.tech.isMain);
+				if(inMainLine !== -1 && links.length > 1)
 				{
-					for(let link of links) link.index -= hasMain;
+					const inMainLinePos = links[inMainLine].toIndex;
+					for(let link of links) link.toIndex -= inMainLinePos;
 				}
 				
-				return links.map((tech => {
-					return (
-						<div
-							class={classNames('link', {
-								'is-active': tech.isActive,
-								'is-main': tech.isMain,
-								'is-below': tech.isBelow,
-								'is-above': tech.isAbove,
-								'in-line': !tech.isBelow && !tech.isAbove,
-							})}
-							
-							style={{
-								gridRowStart: tech.PY,
-								gridRowEnd: tech.Y,
-								gridColumnStart: tech.PX,
-								gridColumnEnd: tech.X,
-								'--index': tech.index, // tech.isMain? 0 : tech.index,
-							}}
-						/>
-					);
-				}))
-			})}
+				return links;
+			})
+			.flat()
+			.sort((a, b) => a.isActive === b.isActive? 0 : a.isActive? 1 : -1)
+			.map(link => (
+				<div
+					class={classNames('link', {
+						'is-active': link.isActive,
+						'is-main': link.inLine && link.tech.isMain,
+						'is-below': link.isBelow,
+						'is-above': link.isAbove,
+						'in-line': link.inLine,
+						'above-main': link.aboveMain,
+						'below-main': link.belowMain,
+						'from-main': link.preTech.isMain,
+						'to-main': link.tech.isMain,
+					})}
+					
+					style={{
+						gridRowStart: link.isAbove? link.preTech.y + 1 : link.preTech.y,
+						gridRowEnd: link.isBelow? link.tech.y + 1 : link.tech.y,
+						gridColumnStart: link.preTech.x,
+						gridColumnEnd: link.tech.x + 1,
+						'--to': link.toIndex,
+					}}
+				>
+					{link.inLine? (
+						<div class="line">
+							{!link.tech.isMain && (
+								<>
+									<div class="base"/>
+									<div class="arrow"/>
+								</>
+							)}
+						</div>
+					) : (
+						<div class="before">
+							{!link.preTech.isMain && <div class="base"/>}
+						</div>
+					)}
+					{((link.isBelow && !(link.aboveMain && link.tech.isMain)) || (link.isAbove && !(link.belowMain && link.tech.isMain))) && (
+						<div class="after">
+							<div class="arrow"/>
+						</div>
+					)}
+				</div>
+			))}
 			{Tech.filter(tech => tech.id < 2000).map(tech => {
-				const [X, Y] = getGridPosition(tech);
+				const isResearched = state.research.value.includes(tech);
+				const hasPreTechs = !tech.preTechs || tech.preTechs.every(id => state.research.value.includes(Tech.find(t => t.id === id)));
+				const hasImplicitPreTechs = !tech.preTechsImplicit || tech.preTechsImplicit.every(id => state.research.value.includes(Tech.find(t => t.id === id)));
 				
 				return (
 					<div
 						class={classNames('tech', {
-							'is-researched': state.research.value.includes(tech),
-							'can-research': tech.preTechs && tech.preTechs.every(id => state.research.value.includes(Tech.find(t => t.id === id)))
+							'is-researched': isResearched,
+							'can-research': hasPreTechs && hasImplicitPreTechs,
 						})}
 						data-id={tech.id}
-						style={{ gridArea: `${Y} / ${X}` }}
+						style={{ gridArea: `${tech.y} / ${tech.x}` }}
 						onClick={(event) => onResearch(event, tech)}
 					>
 						<div class="icon" data-icon={`tech.${tech.id}`}/>

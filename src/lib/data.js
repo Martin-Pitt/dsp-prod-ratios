@@ -59,6 +59,45 @@ export const Tech = translate(JSONRecurse(undefined, tech));
 export const Recipes = translate(JSONRecurse(undefined, recipes));
 export const Items = translate(JSONRecurse(undefined, items));
 
+// Mark all tech part of main quest
+for(let tech of Tech) if(tech.id < 2000 && tech.position[1] === 1) tech.isMain = true;
+
+// Move tech around, remove gaps etc
+let positions = {
+	x: Array.from(new Set(Tech.map(tech => tech.position[0]).sort((a, b) => a - b))),
+	y: Array.from(new Set(Tech.map(tech => tech.position[1]).sort((a, b) => a - b))),
+};
+
+for(let index = 0; index < positions.x.length; ++index)
+{
+	let x = positions.x[index];
+	for(let tech of Tech)
+	{
+		let tx = tech.position[0];
+		if(tx === x) tech.x = index + 1;
+	}
+}
+
+for(let index = 0; index < positions.y.length; ++index)
+{
+	let y = positions.y[index];
+	for(let tech of Tech)
+	{
+		let ty = tech.position[1];
+		if(ty === y) tech.y = positions.y.length - index;
+	}
+}
+
+
+let topResearch = Math.min(...Tech.filter(tech => tech.id < 2000).map(tech => tech.y));
+let topUpgrades = Math.min(...Tech.filter(tech => tech.id > 2000).map(tech => tech.y));
+for(let tech of Tech) tech.y = 1 + tech.y - (tech.id < 2000? topResearch : topUpgrades);
+
+
+
+
+// Tech.map(({ name, x, y }) => ({ name, x, y }));
+
 
 
 

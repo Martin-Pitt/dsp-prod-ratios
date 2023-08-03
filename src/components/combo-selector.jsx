@@ -250,7 +250,7 @@ export default function ComboSelector(props) {
 						<button class="decrement" onClick={onPerDec}/>
 					</div> <span class="text">items <select
 						class="timescale"
-						onChange={onTimeScale}
+						onInput={onTimeScale}
 						disabled={!state.recipe.value}
 					>
 						{['minute', 'second'].map(scale =>
@@ -265,7 +265,7 @@ export default function ComboSelector(props) {
 							Proliferator:
 						</span>
 						<select
-							onChange={onProliferator}
+							onInput={onProliferator}
 							title={{
 								'none': 'No proliferator to be used',
 								'mixed': 'High-end materials are better with extra products and everything else on production speed',

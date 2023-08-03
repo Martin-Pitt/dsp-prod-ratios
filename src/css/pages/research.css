@@ -2,10 +2,11 @@
 	main.research {
 		display: grid;
 		overflow: scroll;
-		grid-auto-columns: 100px;
-		grid-auto-rows: 60px;
-		grid-auto-columns: 100px 0px;
-		grid-auto-rows: 60px 10px 10px 10px;
+		/* grid-auto-columns: 100px; */
+		/* grid-auto-rows: 200px; */
+		/* grid-auto-columns: 100px 0px; */
+		/* grid-auto-rows: 60px 10px 10px 10px; */
+		grid-gap: 40px var(--horizontal-gap);
 		padding: 40px 20px 20px 20px;
 		background:
 			url('../../images/textures/dot-grid.avif') 0 0 / 20px repeat,
@@ -14,12 +15,14 @@
 		background-blend-mode: overlay, normal;
 		background-attachment: local, fixed;
 		background-color: lch(17 0 0);
+		--horizontal-gap: 60px;
 	}
 	
 	main.research .about {
-		grid-column: 1 / 6;
-		grid-row-start: -21;
+		grid-column: 1 / 3;
+		grid-row: 2 / 5;
 		height: fit-content;
+		/* outline: 2px dashed lch(100 0 0 / 0.2); */
 		/* padding: 4px 10px; */
 	}
 	
@@ -74,72 +77,228 @@
 	
 	main.research .link {
 		position: relative;
-		top: calc(var(--index) * 8px - 16px);
+		margin-left: 100px;
+		margin-right: 100px;
 		color: var(--tech-unavailable);
 		visibility: hidden;
+		--line-thickness: 2px;
+		--base-thickness: 10px;
+		--arrow-thickness: 8px;
+		--arrow-aspect: 1.4;
 	}
 	
 	main.research .link.is-active {
 		color: var(--tech-link);
 	}
 	
-	main.research .link::before,
-	main.research .link::after {
+	
+	main.research .link.in-line .line,
+	main.research .link.is-above .before,
+	main.research .link.is-above .after,
+	main.research .link.is-below .before,
+	main.research .link.is-below .after {
 		position: absolute;
 		content: '';
 		visibility: initial;
 	}
 	
-	main.research .link::before {
-		top: calc(30px - 2px);
+	main.research .link.is-above .before,
+	main.research .link.is-below .before {
+		top: calc(30px - var(--line-thickness)*0.5);
 		left: 0;
-		right: calc(50% - 2px);
-		/* right: calc(50% - 2px - (var(--index) * 10px)); */
-		bottom: calc(30px - 2px);
+		width: calc(var(--horizontal-gap)*0.5 - 2px);
+		bottom: calc(30px - var(--line-thickness)*0.5);
 	}
 	
-	main.research .link::after {
-		top: calc(30px - 2px);
-		left: calc(50% - 2px);
-		/* left: calc(50% - 2px + (var(--index) * 10px)); */
+	main.research .link.is-above .after,
+	main.research .link.is-below .after {
+		top: calc(30px - var(--line-thickness)*0.5);
+		left: calc(var(--horizontal-gap)*0.5 - 2px);
 		right: 0;
-		bottom: calc(30px - 2px);
+		bottom: calc(30px - var(--line-thickness)*0.5);
 	}
 	
-	main.research .link.in-line::before,
-	main.research .link.in-line::after {
-		top: calc(30px - 2px);
-		bottom: calc(30px - 2px);
-		border-top: 4px solid;
+	main.research .link.in-line .line {
+		top: calc(30px - var(--line-thickness)*0.5);
+		left: 0;
+		right: 0;
+		bottom: calc(30px - var(--line-thickness)*0.5);
+		border-top: var(--line-thickness) solid;
 	}
 	
-	main.research .link.is-main::before,
-	main.research .link.is-main::after {
+	main.research .link.in-line.is-main .line {
 		top: calc(30px - 8px);
 		bottom: calc(30px - 8px);
 		border-top: 16px solid;
+		/* opacity: 0.4; */
 	}
 	
-	main.research .link.is-above::before {
-		bottom: calc(30px - 2px + 15px);
+	main.research .link.in-line.is-main .line::before {
+		position: absolute;
+		left: 6px;
+		bottom: 0;
+		content: 'Main quest';
+		color: lch(20 0 0);
+		font-weight: 600;
+		font-size: 8px;
+		line-height: 14px;
+		font-stretch: 110%;
+		white-space: nowrap;
+	}
+	main.research .link.in-line.is-main:not(.is-active) .line::before {
+		color: lch(60 0 0);
+		font-weight: 400;
 	}
 	
-	main.research .link.is-below::before {
-		top: calc(30px - 2px + 15px);
+	main.research .link.above-main {}
+	main.research .link.below-main {}
+	
+	
+	main.research .link.is-above .before,
+	main.research .link.is-below .before {
+		border-right: var(--line-thickness) solid;
 	}
 	
-	main.research .link.is-above::before,
-	main.research .link.is-below::before {
-		border-right: 4px solid;
+	main.research .link.is-above:not(.from-main) .before,
+	main.research .link.is-below .after {
+		border-bottom: var(--line-thickness) solid;
 	}
 	
-	main.research .link.is-above::before,
-	main.research .link.is-below::after {
-		border-bottom: 4px solid;
+	main.research .link.is-above .after,
+	main.research .link.is-below:not(.from-main) .before {
+		border-top: var(--line-thickness) solid;
 	}
 	
-	main.research .link.is-above::after,
-	main.research .link.is-below::before {
-		border-top: 4px solid;
+	
+	
+	main.research .link.is-above:not(.to-main) .before,
+	main.research .link.is-above .after {
+		top: calc((30px - var(--line-thickness)*0.5) + var(--to, 0) * 12px);
 	}
+	
+	main.research .link.is-below:not(.to-main) .before,
+	main.research .link.is-below .after {
+		bottom: calc((30px - var(--line-thickness)*0.5) - var(--to, 0) * 12px);
+	}
+	
+	main.research .link.is-below.from-main .before,
+	main.research .link.is-below.from-main .after {
+		top: calc(30px + 8px);
+	}
+	
+	main.research .link.is-above.from-main .before,
+	main.research .link.is-above.from-main .after {
+		bottom: calc(30px + 8px);
+	}
+	
+	main.research .link.is-above.below-main.to-main .before {
+		top: calc(30px + 8px);
+	}
+	
+	main.research .link.is-below.to-main .before {
+		bottom: calc(30px + 8px);
+	}
+	
+	
+	
+	
+	
+	
+	/* main.research .link.in-line:not(.is-main) .line::before {
+		top: -10px;
+		left: 0;
+		height: 16px;
+		width: 10px;
+		background: currentColor;
+		clip-path: polygon(
+			0% 0%,
+			50% 0%,
+			100% 50%,
+			50% 100%,
+			0% 100%
+		);
+	}
+	
+	main.research .link.in-line:not(.is-main) .line::after {
+		top: -7px;
+		left: 100%;
+		height: 10px;
+		width: 12px;
+		background: currentColor;
+		clip-path: polygon(
+			0% 0%,
+			100% 50%,
+			0% 100%
+		);
+	} */
+	
+	
+	
+	
+	
+	main.research .link.in-line:not(.is-main) .line,
+	main.research .link.is-above .after,
+	main.research .link.is-below .after {
+		right: calc(var(--arrow-thickness) * var(--arrow-aspect));
+	}
+	
+	
+	main.research .link .base,
+	main.research .link .arrow {
+		position: absolute;
+		background: currentColor;
+	}
+	
+	main.research .link .base {
+		left: 0;
+		height: var(--base-thickness);
+		width: calc(var(--base-thickness)*0.75);
+		clip-path: polygon(
+			0% 0%,
+			50% 0%,
+			100% 50%,
+			50% 100%,
+			0% 100%
+		);
+	}
+	
+	main.research .link.in-line .base,
+	main.research .link.is-below .base {
+		top: calc(var(--base-thickness)*-0.5 - var(--line-thickness)*0.5);
+	}
+	main.research .link.is-above .base {
+		bottom: calc(var(--base-thickness)*-0.5 - var(--line-thickness)*0.5);
+	}
+	
+	main.research .link .arrow {
+		left: 100%;
+		height: var(--arrow-thickness);
+		width: calc(var(--arrow-thickness) * var(--arrow-aspect));
+		clip-path: polygon(
+			0% 0%,
+			100% 50%,
+			0% 100%
+		);
+	}
+	
+	main.research .link.in-line .arrow,
+	main.research .link.is-above .arrow {
+		top: calc(var(--arrow-thickness)*-0.5 - var(--line-thickness)*0.5);
+	}
+	
+	main.research .link.is-below .arrow {
+		bottom: calc(var(--arrow-thickness)*-0.5 - var(--line-thickness)*0.5);
+	}
+	
+	
+	
+	
+	
+	/* main.research .link:not(.in-line).from-main .before { border-right: var(--line-thickness) dotted white; }
+	main.research .link:not(.in-line).from-main .after { border-left: var(--line-thickness) dotted white; }
+	main.research .link.is-above.from-main .before,
+	main.research .link.is-below.from-main .after{ border-bottom: var(--line-thickness) dotted white; }
+	main.research .link.is-above.from-main .after,
+	main.research .link.is-below.from-main .before { border-top: var(--line-thickness) dotted white; } */
+	
 }

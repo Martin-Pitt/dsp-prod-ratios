@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'preact-router/match';
 import Item from '../components/item';
 import Recipe from '../components/recipe';
 
@@ -16,17 +16,17 @@ export default function Intro(props) {
 				<ul class="tiles">
 					<li class="tile tile--research">
 						<p>
-							<b>Started a new game?</b> Avoid spoilers by setting your current progress in&nbsp;<Link className="link" to="/research">Research</Link>
+							<b>Started a new game?</b> Avoid spoilers by setting your current progress in&nbsp;<Link class="link" href="/research">Research</Link>
 						</p>
 					</li>
 					<li class="tile tile--calculator">
 						<p>
-							Need the production ratios for a recipe? Let the <Link className="link" to="/calculator">Calculator</Link> help&nbsp;you
+							Need the production ratios for a recipe? Let the <Link class="link" href="/calculator">Calculator</Link> help&nbsp;you
 						</p>
 					</li>
 					<li class="tile tile--reference">
 						<p>
-							Just looking for a quick reference? See the <Link className="link" to="/reference">Quick&nbsp;Reference&nbsp;Sheets</Link>
+							Just looking for a quick reference? See the <Link class="link" href="/reference">Quick&nbsp;Reference&nbsp;Sheets</Link>
 						</p>
 					</li>
 					<li class="tile tile--github">

@@ -1,8 +1,41 @@
-import { NavLink, useNavigate } from 'react-router-dom';
+// import { NavLink, useNavigate } from 'react-router-dom';
+import { Link } from 'preact-router/match';
+
 import classNames from 'classnames';
-import state from '../state';
+import state from '../state.js';
 import iconGithub from '../images/github-mark-white.svg';
 import logo from '../images/logo.svg';
+
+function NavLink(props) {
+	return <Link activeClassName="is-active" {...props}/>;
+}
+
+
+
+export default function Header(props) {
+	return (
+		<header class="app-header">
+			<NavLink class="title-link" href="/">
+				<h1 class="title">
+					<img class="logo" src={logo} alt=""/>
+					DSP Ratios
+				</h1>
+			</NavLink>
+			<div class="links">
+				<NavLink class="link" href="/calculator">Calculator</NavLink>
+				<NavLink class={classNames('link', { 'has-research': state.research.value.length > 0 })} href="/research">Research</NavLink>
+				<NavLink class="link" href="/reference" data-wip>Reference</NavLink>
+			</div>
+			<a class="github" target="_blank" href="https://github.com/Martin-Pitt/dsp-prod-ratios">
+				<img class="icon" src={iconGithub} alt=""/>
+			</a>
+		</header>
+	);
+}
+
+
+/*
+
 
 const RelativePaths = [
 	'/',
@@ -39,7 +72,6 @@ export default function Header(props) {
 				<NavLink className="link" to="/calculator" onClick={(event) => { event.preventDefault(); viewNavigate('/calculator') }}>Calculator</NavLink>
 				<NavLink className={classNames('link', { 'has-research': state.research.value.length > 0 })} to="/research" onClick={(event) => { event.preventDefault(); viewNavigate('/research') }}>Research</NavLink>
 				<NavLink className="link" to="/reference" onClick={(event) => { event.preventDefault(); viewNavigate('/reference') }} data-wip>Reference</NavLink>
-				{/* <NavLink className="link" to="/settings">Settings</NavLink> */}
 			</div>
 			<a class="github" target="_blank" href="https://github.com/Martin-Pitt/dsp-prod-ratios">
 				<img class="icon" src={iconGithub} alt=""/>
@@ -47,3 +79,5 @@ export default function Header(props) {
 		</header>
 	);
 }
+
+*/

@@ -90,12 +90,12 @@
 		opacity: 0.9;
 	}
 	
-	.app-header .link.active {
+	.app-header .link.is-active {
 		color: var(--neon-yellow);
 		filter: drop-shadow(0 0 3px currentColor);
 	}
 	
-	.app-header .link.active::before {
+	.app-header .link.is-active::before {
 		opacity: 1;
 		border-bottom-width: 8px;
 		clip-path: polygon(

@@ -10,6 +10,16 @@
 		background-color: lch(20 1.65 328.72);
 	}
 	
+	main.reference .instruction .per {
+		color: var(--neon-green);
+		filter: drop-shadow(0 0 3px currentColor);
+	}
+	
+	main.reference .instruction .quantity {
+		color: var(--neon-blue);
+		filter: drop-shadow(0 0 3px currentColor);
+	}
+	
 	
 	
 	.sheet {
@@ -24,12 +34,15 @@
 			width: min-content;
 		}
 	}
+
+	.sheet > * + * {
+		margin-top: 30px;
+	}
 	
 	
 	.sheet header {
 		display: flex;
 		border-bottom: 1px solid;
-		margin-bottom: 20px;
 	}
 	
 	.sheet header .sheet-tab {
@@ -81,13 +94,13 @@
 	.sheet .preferred {
 		display: flex;
 		overflow: auto;
-		max-width: 0;
-		transition: max-width 200ms;
+		/* max-width: 0;
+		transition: max-width 200ms; */
 	}
 	
-	.sheet .sheet-tab:has(.active) .preferred {
+	/* .sheet .sheet-tab:has(.active) .preferred {
 		max-width: 200px;
-	}
+	} */
 	
 	.sheet .preferred .name {
 		margin-right: 0.5em;

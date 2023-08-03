@@ -28,6 +28,10 @@ export default function Community(props) {
 					Unofficial Japanese DSP Discord
 					<a target="_blank" href="https://discord.com/invite/4WVRQnUcr6">https://discord.com/invite/4WVRQnUcr6</a>
 				</li>
+				<li>
+					DSP Nebula Multiplayer Mod Discord
+					<a target="_blank" href="https://discord.gg/UHeB2QvgDa">https://discord.gg/UHeB2QvgDa</a>
+				</li>
 				{/* <li> it looks super bare, not sure worth having here part of the curated list
 					Russian DSP Wiki
 					<a target="_blank" href="https://dyson-sphere-program.fandom.com/ru/wiki/Dyson_Sphere_Program_%D0%92%D0%B8%D0%BA%D0%B8">https://dyson-sphere-program.fandom.com/ru/wiki/Dyson_Sphere_Program_%D0%92%D0%B8%D0%BA%D0%B8</a>

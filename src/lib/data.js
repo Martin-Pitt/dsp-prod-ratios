@@ -268,3 +268,7 @@ export function ItemsUnlocked(research, returnSet = false) {
 	if(returnSet) return unlocked;
 	return Items.filter(item => unlocked.has(item.id));
 }
+
+export const RecipesIgnored = new Set([
+	34, /* Silicon Ore from Stone */
+]);

@@ -9,6 +9,7 @@ import {
 	Proliferator,
 	RecipesUnlocked,
 	ItemsUnlocked,
+	RecipesIgnored,
 } from '../lib/data.js';
 import state from '../state.js';
 import Item from './item.jsx';
@@ -316,7 +317,7 @@ export default function Solver(props) {
 				{
 					let item = itemsUnlocked.find(item => item.id === id);
 					
-					let subRecipes = recipesUnlocked.filter(subRecipe => recipe !== subRecipe && subRecipe.results.includes(id));
+					let subRecipes = recipesUnlocked.filter(subRecipe => recipe !== subRecipe && subRecipe.results.includes(id) && !RecipesIgnored.has(subRecipe.id));
 					if(!subRecipes.length)
 					{
 						node.children.push({ item });

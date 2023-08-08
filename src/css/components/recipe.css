@@ -1,6 +1,7 @@
 @layer components {
 	.recipe[data-icon],
-	.recipe .icon[data-icon] {
+	.recipe:not([data-icon]) > .icon[data-icon] {
+		position: relative;
 		display: inline-block;
 		vertical-align: middle;
 	}
@@ -9,29 +10,50 @@
 		width: 3.75em;;
 	}
 	
-	.recipe .icon[data-icon] {
+	.recipe >.icon[data-icon] {
 		width: 2em;
 	}
 	
 	.recipe[data-icon][data-count],
-	.recipe .icon[data-icon][data-count] {
-		position: relative;
+	.recipe[data-icon][data-per],
+	.recipe:not([data-icon]) > .icon[data-icon][data-count],
+	.recipe:not([data-icon]) > .icon[data-icon][data-per] {
 		background-origin: content-box;
 		background-clip: content-box;
 		padding: 4px;
 	}
 	
 	.recipe[data-icon][data-count]::before,
-	.recipe .icon[data-icon][data-count]::before {
+	.recipe[data-icon][data-per]::before,
+	.recipe:not([data-icon]) > .icon[data-icon][data-count]::before,
+	.recipe:not([data-icon]) > .icon[data-icon][data-per]::before {
 		position: absolute;
 		right: 0;
 		bottom: 0;
-		content: attr(data-count);
-		color: var(--neon-blue);
 		font-weight: 600;
 		font-size: 14px;
 		line-height: 1;
 		font-stretch: 80%;
 		filter: drop-shadow(0 0 3px currentColor);
+	}
+	
+	.recipe[data-icon][data-count]::before,
+	.recipe:not([data-icon]) > .icon[data-icon][data-count]::before {
+		content: attr(data-count);
+		color: var(--neon-blue);
+	}
+	
+	.recipe[data-icon][data-per]::before,
+	.recipe:not([data-icon]) > .icon[data-icon][data-per]::before {
+		content: attr(data-per);
+		color: var(--neon-green);
+	}
+	
+	.recipe .proliferated {
+		position: absolute;
+		top: -0.2em;
+		right: -0.2em;
+		width: 1.0em;
+		padding: 0;
 	}
 }

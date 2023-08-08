@@ -11,7 +11,6 @@ import {
 import state from '../state.js';
 import Item from '../components/item';
 import Recipe from '../components/recipe';
-import { useMemo } from 'preact/hooks';
 
 
 
@@ -97,8 +96,8 @@ export default function Reference(props) {
 
 
 function Assembler(props) {
-	const recipesUnlocked = useMemo(() => RecipesUnlocked(state.research.value, true), [state.research.value]);
-	const itemsUnlocked = useMemo(() => ItemsUnlocked(state.research.value, true), [state.research.value]);
+	const recipesUnlocked = state.recipesUnlockedSet.value;
+	const itemsUnlocked = state.itemsUnlockedSet.value;
 	
 	return (
 		<>
@@ -214,8 +213,8 @@ function Assembler(props) {
 
 
 function Smelter(props) {
-	const recipesUnlocked = useMemo(() => RecipesUnlocked(state.research.value, true), [state.research.value]);
-	const itemsUnlocked = useMemo(() => ItemsUnlocked(state.research.value, true), [state.research.value]);
+	const recipesUnlocked = state.recipesUnlockedSet.value;
+	const itemsUnlocked = state.itemsUnlockedSet.value;
 	
 	return (
 		<>

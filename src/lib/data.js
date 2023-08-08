@@ -54,6 +54,17 @@ function translate(input) {
 	else throw new Error('Undefined behaviour for translate');
 }
 
+export function t(key) {
+	let string = Strings.get(key);
+	if(!string)
+	{
+		console.error(`Missing String '${key}'`);
+		return `[Missing String '${key}']`;
+	}
+	
+	return string[internalLocale] || string.en_us || string.zh_cn || `[Missing in String '${key}']`;
+}
+
 // TODO: Preferred language can potentially change, see 'languagechange' event
 export const Tech = translate(JSONRecurse(undefined, tech));
 export const Recipes = translate(JSONRecurse(undefined, recipes));
@@ -132,8 +143,8 @@ export const Proliferator = {
 	Types: {
 		'none': 'None',
 		'mixed': 'Best Practices Mix',
-		'speedup': 'Production Speedup',
-		'extra': 'Extra Products',
+		'speedup': t('喷涂加速效果' /* Production Speedup */),
+		'extra': t('喷涂增产效果' /* Extra Products */),
 	},
 	Items: [1141, 1142, 1143],
 	Ability: [1, 2, 4],

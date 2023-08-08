@@ -1,6 +1,7 @@
 @layer components {
 	.item[data-icon],
-	.item .icon[data-icon] {
+	.item:not([data-icon]) > .icon[data-icon] {
+		position: relative;
 		display: inline-block;
 		vertical-align: middle;
 	}
@@ -9,29 +10,50 @@
 		width: 3.75em;
 	}
 	
-	.item .icon[data-icon] {
+	.item:not([data-icon]) > .icon[data-icon] {
 		width: 2em;
 	}
 	
 	.item[data-icon][data-count],
-	.item .icon[data-icon][data-count] {
-		position: relative;
+	.item[data-icon][data-per],
+	.item:not([data-icon]) > .icon[data-icon][data-count],
+	.item:not([data-icon]) > .icon[data-icon][data-per] {
 		background-origin: content-box;
 		background-clip: content-box;
 		padding: 4px;
 	}
 	
 	.item[data-icon][data-count]::before,
-	.item .icon[data-icon][data-count]::before {
+	.item[data-icon][data-per]::before,
+	.item:not([data-icon]) > .icon[data-icon][data-count]::before,
+	.item:not([data-icon]) > .icon[data-icon][data-per]::before {
 		position: absolute;
 		right: 0;
 		bottom: 0;
-		content: attr(data-count);
-		color: var(--neon-blue);
 		font-weight: 600;
 		font-size: 14px;
 		line-height: 1;
 		font-stretch: 80%;
 		filter: drop-shadow(0 0 3px currentColor);
+	}
+	
+	.item[data-icon][data-count]::before,
+	.item:not([data-icon]) > .icon[data-icon][data-count]::before {
+		content: attr(data-count);
+		color: var(--neon-blue);
+	}
+	
+	.item[data-icon][data-per]::before,
+	.item:not([data-icon]) > .icon[data-icon][data-per]::before {
+		content: attr(data-per);
+		color: var(--neon-green);
+	}
+	
+	.item .proliferated {
+		position: absolute;
+		top: -0.2em;
+		right: -0.2em;
+		width: 1.0em;
+		padding: 0;
 	}
 }

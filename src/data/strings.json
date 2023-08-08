@@ -666,6 +666,54 @@
 			}
 		],
 		[
+			"配方选取",
+			{
+				"zh_cn": "配方选取",
+				"en_us": "Select a recipe",
+				"fr_fr": "Choisir un planning"
+			}
+		],
+		[
+			"建筑公式",
+			{
+				"zh_cn": "建筑",
+				"en_us": "Buildings",
+				"fr_fr": "Constructions"
+			}
+		],
+		[
+			"组件公式",
+			{
+				"zh_cn": "物品",
+				"en_us": "Items",
+				"fr_fr": "Composants"
+			}
+		],
+		[
+			"公式图标",
+			{
+				"zh_cn": "公式",
+				"en_us": "Recipes",
+				"fr_fr": ""
+			}
+		],
+		[
+			"科技图标",
+			{
+				"zh_cn": "科技",
+				"en_us": "Technologies",
+				"fr_fr": ""
+			}
+		],
+		[
+			"升级图标",
+			{
+				"zh_cn": "升级",
+				"en_us": "Upgrades",
+				"fr_fr": ""
+			}
+		],
+		[
 			"玻璃",
 			{
 				"zh_cn": "玻璃",

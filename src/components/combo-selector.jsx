@@ -1,12 +1,11 @@
 import { useState, useCallback, useMemo } from 'preact/hooks';
 import classNames from 'classnames';
 import {
-	Recipes, Items, StringFromTypes,
+	Recipes, Items, StringFromTypes, t,
 	AssemblerProductionSpeed,
 	SmelterProductionSpeed,
 	ChemicalProductionSpeed,
-	RecipesUnlocked,
-	ItemsUnlocked,
+	BeltTransportSpeed,
 	Proliferator,
 } from '../lib/data.js';
 import state from '../state.js';
@@ -123,6 +122,26 @@ function recalculateFactor() {
 	state.factor.value = (state.per.value / recipePerMinute) / modifier;
 }
 
+function renderNumber(factor) {
+	// let string = factor.toString();
+	let string = factor.toFixed(3);
+	if(!/\d\.\d/.test(string)) return string;
+	let repeats = string.toString().match(/(\d+?)\1+\d$/);
+	// if(!repeats || !repeats[1]) return +factor;//.toFixed(6);
+	if(!repeats || !repeats[1]) return +factor.toFixed(3);
+	
+	let left = string.substr(0, repeats.index);
+	let right = repeats[1];
+	if(right === '0') return left.slice(0, -1);
+	return <>{left}{right}&#773;</>
+}
+
+function renderTime(time) {
+	if(state.timeScale.value === 'second') time /= 60;
+	return renderNumber(time);
+}
+
+
 
 export default function ComboSelector(props) {
 	const [isSelectorOpen, setSelectorOpen] = useState(false);
@@ -158,8 +177,8 @@ export default function ComboSelector(props) {
 		);
 	}
 	
-	const recipesUnlocked = useMemo(() => RecipesUnlocked(state.research.value, true), [state.research.value]);
-	const itemsUnlocked = useMemo(() => ItemsUnlocked(state.research.value, true), [state.research.value]);
+	const recipesUnlocked = state.recipesUnlockedSet.value; // useMemo(() => RecipesUnlocked(state.research.value, true), [state.research.value]);
+	const itemsUnlocked = state.itemsUnlockedSet.value; // useMemo(() => ItemsUnlocked(state.research.value, true), [state.research.value]);
 	
 	const preferredBuildings = [
 		{ name: 'assembler', label: StringFromTypes.get('ASSEMBLE'), baseBuilding: 2303, type: 'ASSEMBLE' },
@@ -184,7 +203,7 @@ export default function ComboSelector(props) {
 				Recipes.filter(recipe => recipe.results.includes(item.id))
 				       .filter(recipe => state.showHiddenUpgrades.value || recipesUnlocked.has(recipe.id))
 			])
-			.filter(([item, recipes]) => recipes.length > 1);
+			.filter(([item, recipes]) => recipes.length > (item.miningFrom? 0 : 1));
 		
 		let hasDisabledPreferredRecipe = preferredRecipes.some(([item, recipes]) => recipes.some(recipe => !recipesUnlocked.has(recipe.id)));
 		
@@ -304,20 +323,51 @@ export default function ComboSelector(props) {
 									{Items.find(item => item.id === state.preferred[name].value)
 									.upgrades.filter(upgrade => upgrade === baseBuilding || (state.showHiddenUpgrades.value || itemsUnlocked.has(upgrade)))
 									.map(upgrade => Items.find(item => item.id === upgrade))
-									.map(item =>
-										<label style={`grid-row: ${index + 1}/${index + 2}`}>
-											<input
-												type="radio"
-												name={name}
-												value={item.id}
-												title={item.name}
-												checked={item.id === state.preferred[name].value}
-												onClick={onPreferred}
-												disabled={!itemsUnlocked.has(item.id)}
-											/>
-											<Item item={item}/>
-										</label>
-									)}
+									.map(item => {
+										let per, count, title = item.name;
+										
+										switch(name) {
+											case 'assembler':
+												count = renderNumber(AssemblerProductionSpeed.get(item.id)) + '×';
+												break;
+											case 'smelter':
+												count = renderNumber(SmelterProductionSpeed.get(item.id)) + '×';
+												break;
+											case 'chemical':
+												count = renderNumber(ChemicalProductionSpeed.get(item.id)) + '×';
+												break;
+											case 'belt':
+												per = renderTime(BeltTransportSpeed.get(item.id));
+												break;
+										}
+										
+										switch(name) {
+											case 'assembler':
+											case 'smelter':
+											case 'chemical':
+												title += ' — ' + `${t('制造速度' /* Production Speed */)}: ${count}`.replace(/ /g, ' ');
+												break;
+											
+											case 'belt':
+												title += ' — ' + `${t('运载速度' /* Transport Speed */)}: ${per} items per ${state.timeScale.value}`.replace(/ /g, ' ');
+												break;
+										}
+										
+										return (
+											<label style={`grid-row: ${index + 1}/${index + 2}`}>
+												<input
+													type="radio"
+													name={name}
+													value={item.id}
+													title={title}
+													checked={item.id === state.preferred[name].value}
+													onClick={onPreferred}
+													disabled={!itemsUnlocked.has(item.id)}
+												/>
+												<Item item={item} count={count} per={per}/>
+											</label>
+										);
+									})}
 								</>
 							)}
 						</div>
@@ -331,11 +381,19 @@ export default function ComboSelector(props) {
 						{/* {usesPreferredRecipe && <p class="note">Highlighted are used in current recipe.</p>} */}
 						{state.showHiddenUpgrades.value && hasDisabledPreferredRecipe && <p class="note">Disabled are due to current research progress.</p>}
 						<div class="fields">
-							{preferredRecipes.map(([item, recipes], index, array) => {
+							{preferredRecipes
+							.sort((a, b) => {
+								let x = a[1].length + (a[0].miningFrom? 1 : 0);
+								let y = b[1].length + (b[0].miningFrom? 1 : 0);
+								if(a > b) return 1;
+								if(a < b) return -1;
+								return 0;
+							})
+							.map(([item, recipes], index, array) => {
 								const MaxRows = window.outerWidth <= 640? Infinity : (window.outerWidth <= 920? 8 : 5);
-								const MinColumnWidth = 1 + array.reduce((previous, current) => Math.min(previous, current[1].length, 0));
+								const MinColumnWidth = 1 + array.reduce((previous, [item, recipes]) => Math.min(previous, recipes.length + (item.miningFrom? 1 : 0), 0));
 								const row = 1 + index % MaxRows;
-								const column = 1 + Math.floor(index / MaxRows) * 5;
+								const column = 1 + Math.floor(index / MaxRows) * 6;
 								
 								return (
 									<>
@@ -347,10 +405,25 @@ export default function ComboSelector(props) {
 										>
 											{item.name}
 										</span>
+										{item.miningFrom && (
+											<label style={{ gridArea: `${row} / ${column + 1} / ${row + 1} / ${column + 2}` }}>
+												<Item item={item} data-lvl={0}/>
+												<input
+													type="radio"
+													name={item.id}
+													value={item.id}
+													title={item.miningFrom}
+													checked={item.id === state.preferred[item.id].value}
+													onClick={onPreferred}
+													// disabled= Check if it can be actually gathered?
+												/>
+											</label>
+										)}
 										{recipes
 										.filter(recipe => state.showHiddenUpgrades.value || recipesUnlocked.has(recipe.id))
 										.map((recipe, index) =>
-											<label style={{ gridArea: `${row} / ${column + index + 1} / ${row + 1} / ${column + index + 2}` }}>
+											<label style={{ gridArea: `${row} / ${column + index + (item.miningFrom? 2 : 1)} / ${row + 1} / ${column + index + (item.miningFrom? 2 : 1)}` }}>
+												<Recipe recipe={recipe}/>
 												<input
 													type="radio"
 													name={item.id}
@@ -360,7 +433,6 @@ export default function ComboSelector(props) {
 													onClick={onPreferred}
 													disabled={!recipesUnlocked.has(recipe.id)}
 												/>
-												<Recipe recipe={recipe}/>
 											</label>
 										)}
 									</>

@@ -1,6 +1,4 @@
-import { useState, useCallback, useEffect, useMemo, useRef, useLayoutEffect } from 'preact/hooks';
-import { signal } from '@preact/signals';
-import { lazy, Suspense } from 'preact/compat';
+import { useState, useEffect } from 'preact/hooks';
 import { Router } from 'preact-router';
 import {
 	Meta, Tech, Recipes, Items, Strings,

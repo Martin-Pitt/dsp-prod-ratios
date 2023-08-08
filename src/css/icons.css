@@ -38,9 +38,9 @@
 	}
 	
 	[data-icon^="ui.inc"] {
+		padding: 4px;
 		background-origin: content-box;
 		background-clip: content-box;
-		padding: 4px;
 	}
 	
 	[data-icon^="ui.inc"][data-count] {
@@ -74,6 +74,36 @@
 		color: var(--neon-yellow);
 	}
 	
+	[data-icon="ui.lvl0"] {
+		background: url('../images/textures/lvl0.png') top left / 100% auto no-repeat;
+	}
+	[data-icon="ui.lvl2"] {
+		background: url('../images/textures/lvl2.png') top left / 100% auto no-repeat;
+	}
+	
+	[data-icon^="item."][data-lvl] {
+		position: relative;
+		padding-top: 0.4em;
+		padding-left: 0.4em;
+		background-origin: content-box;
+		background-clip: content-box;
+	}
+	[data-icon^="item."][data-lvl]::before {
+		position: absolute;
+		top: -5%;
+		left: -5%;
+		content: '';
+		width: 50%;
+		aspect-ratio: 1;
+		background: top left / 100% auto no-repeat;
+	}
+
+	[data-icon^="item."][data-lvl="0"]::before {
+		background-image: url('../images/textures/lvl0.png');
+	}
+	[data-icon^="item."][data-lvl="2"]::before {
+		background-image: url('../images/textures/lvl2.png');
+	}
 	
 	[data-new],
 	[data-wip] {

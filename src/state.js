@@ -1,5 +1,5 @@
-import { signal, effect } from '@preact/signals';
-import { Items, Recipes } from './lib/data.js';
+import { signal, effect, computed } from '@preact/signals';
+import { Items, ItemsUnlocked, Recipes } from './lib/data.js';
 import { Tech } from './lib/data.js';
 
 // If there is a conflicting change we might need to reset localStorage
@@ -92,7 +92,7 @@ const state = {
 			let recipes = Recipes.filter(recipe => recipe.results.includes(item.id));
 			return [item, recipes]
 		})
-		.filter(([item, recipes]) => recipes.length > 1)
+		.filter(([item, recipes]) => recipes.length > (item.miningFrom? 0 : 1))
 		.reduce((accumulator, [item, recipes]) => {
 			let recipe = recipes[0]; // Should be fine with first recipe as default
 			accumulator[item.id] = persistentSignal(`preferred.${item.id}`, recipe.id);
@@ -103,6 +103,12 @@ const state = {
 	recipesUsed: signal(new Set()),
 	typesUsed: signal(new Set()),
 	showHiddenUpgrades: signal(false),
+	
+	recipesUnlocked: computed(() => RecipesUnlocked(state.research.value)),
+	itemsUnlocked: computed(() => ItemsUnlocked(state.research.value)),
+	recipesUnlockedSet: computed(() => RecipesUnlocked(state.research.value, true)),
+	itemsUnlockedSet: computed(() => ItemsUnlocked(state.research.value, true)),
+	// hasRecipeUnlocked(id) { state.recipesUnlocked.value }
 };
 
 

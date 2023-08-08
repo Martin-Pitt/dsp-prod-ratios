@@ -1,6 +1,7 @@
 import { Link } from 'preact-router/match';
 import Item from '../components/item';
 import Recipe from '../components/recipe';
+import { BeltTransportSpeed } from '../lib/data';
 
 
 
@@ -10,9 +11,13 @@ export default function Intro(props) {
 	return (
 		<main class="page intro">
 			<div class="page-content">
+				<h2>
+					About DSP Ratios
+				</h2>
 				<p class="desc">
 					<b>DSP Ratios</b> is an unofficial calculator for <a class="link external-link" target="_blank" rel="noopener noreferrer" href="https://store.steampowered.com/app/1366540/Dyson_Sphere_Program/">Dyson Sphere Program</a> (DSP) to help you plan and design production lines, to provide the best tools COSMO can afford to build massive-scale automated production lines.
 				</p>
+				
 				<ul class="tiles">
 					<li class="tile tile--research">
 						<p>
@@ -56,6 +61,15 @@ export default function Intro(props) {
 						</p>
 					</li>
 				</ul>
+				
+				<h2>
+					Calculator
+				</h2>
+				
+				<p class="desc">
+					The calculator for DSP Ratios lets you pick from recipes for items or buildings and the desired amount of facilities or the throughput (items produced per minute/second).
+				</p>
+				
 				<details>
 					<summary>For Example</summary>
 					<div>
@@ -74,6 +88,17 @@ export default function Intro(props) {
 						</p>
 					</div>
 				</details>
+				
+				<p class="desc">
+					This app uses a <span class="quantity">blue</span>/<span class="per">green</span> colour syntax to help distinguish between <span class="quantity highlight">quantities/amounts</span> and <span class="per highlight">throughputs/time</span>.<br/>
+					<br/>
+					E.g.<br/>
+					There are 4&times; <Item id={2201} name/>s: <Item id={2201} count={4}/><br/>
+					The <Item id={2001} name/> can move <span class="per">{BeltTransportSpeed.get(2001)}</span> items per minute: <Item id={2001} per={BeltTransportSpeed.get(2001)}/>
+				</p>
+				
+				<hr/>
+				
 				<p class="desc">
 					Data last generated at <time class="per" dateTime={Meta.generatedAt}>{new Date(Meta.generatedAt).toLocaleDateString()}</time> from Dyson Sphere Program version <span class="quantity">{Meta.version}</span>
 				</p>

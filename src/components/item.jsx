@@ -2,15 +2,48 @@ import { Items, locale } from '../lib/data';
 
 
 export default function Item(props) {
-	const item = props.item || Items.find(item => item.id === props.id);
+	let { item, id, named, count, per, proliferated, points, ...other } = props;
+	if(!item) item = Items.find(item => item.id === id);
+	if(proliferated && !points) points = state.proliferatorPoints.value;
 	
-	if(props.named) return (
-		<span class="item" locale={locale}>
-			<span class="icon" data-icon={`item.${item.id}`} data-count={props.count}/> <span class="name">{item.name}</span>
+	if(props.name) return (
+		<span class="item named" lang={locale} {...other}>
+			<span class="name">{item.name}</span>
+		</span>
+	);
+	
+	else if(props.named) return (
+		<span class="item named" lang={locale} {...other}>
+			<span
+				class="icon"
+				data-icon={`item.${item.id}`}
+				data-count={count}
+				data-per={per}
+			>
+				{proliferated && (
+					<div
+						class="icon proliferated"
+						data-icon={`ui.inc-${proliferated? points : 0}`}
+					/>
+				)}
+			</span> <span class="name">{item.name}</span>
 		</span>
 	);
 	
 	else return (
-		<span class="item icon" data-icon={`item.${item.id}`} data-count={props.count} title={item.name} locale={locale}/>
+		<span
+			class="item icon"
+			data-icon={`item.${item.id}`}
+			data-count={count} data-per={per}
+			title={item.name}
+			lang={locale}
+			{...other}
+		>
+			{proliferated && (
+				<div
+					class="icon proliferated"
+					data-icon={`ui.inc-${proliferated? points : 0}`}
+				/>)}
+		</span>
 	);
 }

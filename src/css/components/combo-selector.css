@@ -264,6 +264,7 @@
 	
 	.combo-selector .preferred input[type="radio"] {
 		position: absolute;
+		inset: 0;
 		aspect-ratio: 1;
 		width: 100%;
 		opacity: 0;
@@ -272,7 +273,9 @@
 	
 	.combo-selector .preferred .icon {
 		width: 40px;
+		padding: 0px 10px 10px 0px;
 		margin: 4px;
+		pointer-events: none;
 	}
 	
 	.combo-selector .preferred label:has(:checked) {

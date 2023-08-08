@@ -3,8 +3,9 @@ import classNames from 'classnames';
 import state from '../state.js';
 import { Tabs, Tab } from './tabs.jsx';
 import { ListBox, ListBoxOption } from './listbox.jsx';
-import { Recipes, Items, RecipesUnlocked } from '../lib/data.js';
+import { Recipes, Items, RecipesUnlocked, t } from '../lib/data.js';
 import Recipe from './recipe.jsx';
+
 
 
 export default function RecipeSelector(props) {
@@ -47,15 +48,15 @@ export default function RecipeSelector(props) {
 	return (
 		<dialog class="window recipes" ref={refRecipeWindow} onClose={onDismiss}>
 			<header>
-				Select a recipe
+				{t('配方选取' /* Select a recipe */)}
 			</header>
-			<Tabs label="Select a recipe group">
-				<Tab label="Items">
+			<Tabs>
+				<Tab label={t('组件公式' /* Items */)}>
 					<ListBox class="recipe-grid" label="Select an item recipe">
 						{recipes.map(recipe => renderRecipeGrid(1, recipe))}
 					</ListBox>
 				</Tab>
-				<Tab label="Buildings">
+				<Tab label={t('建筑公式' /* Buildings */)}>
 					<ListBox class="recipe-grid" label="Select a building recipe">
 						{recipes.map(recipe => renderRecipeGrid(2, recipe))}
 					</ListBox>

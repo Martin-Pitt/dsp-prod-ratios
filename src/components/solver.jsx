@@ -1,7 +1,7 @@
 import { useState, useMemo, useCallback, useEffect } from 'preact/hooks';
 import classNames from 'classnames';
 import {
-	Recipes, Items, StringFromTypes,
+	Recipes, Items, StringFromTypes, t,
 	AssemblerProductionSpeed,
 	SmelterProductionSpeed,
 	ChemicalProductionSpeed,
@@ -113,7 +113,12 @@ function SolveTree({ solve, depth = 0, output, ingredient = null, hasProliferato
 			<div class="node solve" style={{ '--depth': depth }}>
 				<div class="node-header">
 					<div class="meta">
-						<Item item={item} named/>
+						<Item item={item} proliferated={proliferated} named/>
+						{item.miningFrom && (
+							<>
+								  {t('采集自' /* Gathered From */)} <span class="item" dangerouslySetInnerHTML={{ __html: item.miningFrom }}/>
+							</>
+						)}
 					</div>
 					{hasProliferators && (
 						<div class="proliferator">
@@ -126,7 +131,7 @@ function SolveTree({ solve, depth = 0, output, ingredient = null, hasProliferato
 					<ul class="products">
 						<li class={classNames('output', 'is-ingredient')}>
 							<span class="perMinute">{renderTime(output)}</span>&times;
-							<Item item={item}/>
+							<Item item={item} proliferated={proliferated}/>
 							<span class="timeScale">per {state.timeScale.value}</span>
 						</li>
 					</ul>
@@ -154,27 +159,6 @@ function SolveTree({ solve, depth = 0, output, ingredient = null, hasProliferato
 		let ingredientPerMinute = count * (60/recipe.timeSpend*60);
 		
 		
-		// let points = state.proliferatorPoints.value;
-		// let proliferator = state.proliferator.value;
-		// if(points)
-		// {
-		// 	if(proliferator === 'mixed') proliferator = Proliferator.BestPracticeMix(recipe);
-		// 	else if(proliferator === 'custom') proliferator = state.proliferatorCustom.value.find(set => set.id === solve.id).type;
-		// 	else
-		// 	{
-		// 		let { canProduceExtra, canSpeedupProduction } = Proliferator.RecipeBonuses(recipe);
-		// 		if((proliferator === 'speedup' && !canSpeedupProduction)
-		// 		|| (proliferator === 'extra' && !canProduceExtra)) proliferator = 'none';
-		// 	}
-			
-			
-		// 	let index = Proliferator.Ability.indexOf(points);
-		// 	switch(proliferator)
-		// 	{
-		// 		case 'speedup': modifier *= Proliferator.ProductionSpeed[index]; break;
-		// 		case 'extra': ingredientPerMinute *= Proliferator.ExtraProducts[index]; break;
-		// 	}
-		// }
 		
 		let points = state.proliferatorPoints.value;
 		let proliferator = state.proliferatorCustom.value.has(solve.id)? state.proliferatorCustom.value.get(solve.id) : state.proliferatorPreset.value.get(solve.id);
@@ -189,14 +173,13 @@ function SolveTree({ solve, depth = 0, output, ingredient = null, hasProliferato
 		}
 		
 		
-		
 		if(recipe.type === 'FRACTIONATE')
 		{
 			return (
 				<div class="node solve" style={{ '--depth': depth }}>
 					<div class="node-header">
 						<div class="meta">
-							<Recipe recipe={recipe} named/>
+							<Recipe recipe={recipe} proliferated={proliferated} named/>
 						</div>
 						{hasProliferators && (
 							<div class="proliferator">
@@ -212,7 +195,7 @@ function SolveTree({ solve, depth = 0, output, ingredient = null, hasProliferato
 							{recipe.results.map((result, index) =>
 								<li class={classNames('output', { 'is-ingredient': !ingredient || result === ingredient })}>
 									<span class="perMinute">{renderTime(output * (recipe.resultCounts[index] / recipe.resultCounts[ingredientIndex]))}</span>&times;
-									<Item id={result}/>
+									<Item id={result} proliferated={proliferated}/>
 									<span class="timeScale">per {state.timeScale.value}</span>
 								</li>
 							)}
@@ -221,6 +204,7 @@ function SolveTree({ solve, depth = 0, output, ingredient = null, hasProliferato
 				</div>
 			);
 		}
+		
 		
 		
 		
@@ -234,7 +218,7 @@ function SolveTree({ solve, depth = 0, output, ingredient = null, hasProliferato
 							{/* <span class="factor">{renderNumber(factor)}</span>&times; <span class="process">{StringFromTypes.get(recipe.type)}</span> <Recipe recipe={recipe} named/> */}
 							<span title={`${+factor.toFixed(6)}× ${StringFromTypes.get(recipe.type)}`}>
 								<span class="factor">{renderNumber(factor)}</span>&times;
-							</span> <Recipe recipe={recipe} named/>
+							</span> <Recipe recipe={recipe} proliferated={proliferated} named/>
 						</div>
 						{hasProliferators && (
 							<div class="proliferator">
@@ -250,7 +234,7 @@ function SolveTree({ solve, depth = 0, output, ingredient = null, hasProliferato
 							{recipe.results.map((result, index) =>
 								<li class={classNames('output', { 'is-ingredient': !ingredient || result === ingredient })}>
 									<span class="perMinute">{renderTime(output * (recipe.resultCounts[index] / recipe.resultCounts[ingredientIndex]))}</span>&times;
-									<Item id={result}/>
+									<Item id={result} proliferated={proliferated}/>
 									<span class="timeScale">per {state.timeScale.value}</span>
 								</li>
 							)}
@@ -260,8 +244,40 @@ function SolveTree({ solve, depth = 0, output, ingredient = null, hasProliferato
 				{children && children.map((child, index) => {
 					if(Array.isArray(child))
 					{
-						let preferredAltRecipe = state.preferred[recipe.items[index]].value;
-						child = child.find(d => d.recipe.id === preferredAltRecipe);
+						let item = Items.find(item => item.id === recipe.items[index]);
+						let preferredAltRecipe = state.preferred[item.id]?.value;
+						
+						const hasMiningFrom = preferredAltRecipe === item.id && item.miningFrom;
+						
+						if(!hasMiningFrom && !state.recipesUnlockedSet.value.has(preferredAltRecipe)) return (
+							<div class="node solve" style={{ '--depth': depth }}>
+								<div class="node-header">
+									<div class="meta">
+										<span class="item">(Alternative Recipe for <Item item={item}/> locked due to research)</span>
+										{Recipes.filter(recipe => recipe.results.includes(item.id))
+										.filter(recipe => state.showHiddenUpgrades.value || state.recipesUnlockedSet.value.has(recipe.id))
+										.map((recipe, index) =>
+											<label>
+												<input
+													type="radio"
+													name={item.id}
+													value={recipe.id}
+													title={recipe.explicit? recipe.name : item.name}
+													checked={recipe.id === state.preferred[item.id]?.value}
+													onClick={event => state.preferred[event.target.name].value = +event.target.value}
+													disabled={!state.recipesUnlockedSet.value.has(recipe.id)}
+												/>
+												<Recipe recipe={recipe}/>
+											</label>
+										)}
+									</div>
+								</div>
+							</div>
+						);
+						
+						let preferredChild = child.find(d => d.recipe?.id === preferredAltRecipe);
+						if(!preferredChild && hasMiningFrom) preferredChild = child.find(d => d.item === item);
+						child = preferredChild;
 					}
 					
 					if(!child) return 'Error, no child'; // ??
@@ -293,8 +309,8 @@ function SolveTree({ solve, depth = 0, output, ingredient = null, hasProliferato
 export default function Solver(props) {
 	if(!state.recipe.value) return <div class="solver"/>;
 	
-	const recipesUnlocked = useMemo(() => RecipesUnlocked(state.research.value), [state.research.value]);
-	const itemsUnlocked = useMemo(() => ItemsUnlocked(state.research.value), [state.research.value]);
+	const recipesUnlocked = state.recipesUnlocked.value; // Array.from(state.recipesUnlocked.value, id => Recipes.find(recipe => recipe.id === id)); // useMemo(() => RecipesUnlocked(state.research.value), [state.research.value]);
+	const itemsUnlocked = state.itemsUnlocked.value; // Array.from(state.itemsUnlocked.value, id => Items.find(item => item.id === id)); // useMemo(() => ItemsUnlocked(state.research.value), [state.research.value]);
 	
 	const [solve, solveNodes] = useMemo(() => {
 		let recipesUsed = new Set();
@@ -316,16 +332,20 @@ export default function Solver(props) {
 				for(let id of recipe.items)
 				{
 					let item = itemsUnlocked.find(item => item.id === id);
+					let subNodes = [];
 					
 					let subRecipes = recipesUnlocked.filter(subRecipe => recipe !== subRecipe && subRecipe.results.includes(id) && !RecipesIgnored.has(subRecipe.id));
-					if(!subRecipes.length)
+					// if(!subRecipes.length)
+					
+					if(!subRecipes.length || item.miningFrom)
 					{
-						node.children.push({ item });
+						subNodes.push({ item });
+						// node.children.push({ item });
 					}
 					
-					else
+					// else
+					if(subRecipes.length)
 					{
-						let subNodes = [];
 						for(let iter = 0; iter < subRecipes.length; ++iter)
 						{
 							let subRecipe = subRecipes[iter];
@@ -345,10 +365,12 @@ export default function Solver(props) {
 							}
 						}
 						
-						if(subNodes.length === 1) subNodes = subNodes[0];
-						// node.children[item.id] = subNodes;
-						node.children.push(subNodes);
+						// if(subNodes.length === 1) subNodes = subNodes[0];
+						// node.children.push(subNodes);
 					}
+					
+					if(subNodes.length === 1) subNodes = subNodes[0];
+					node.children.push(subNodes);
 				}
 			}
 			
@@ -360,6 +382,9 @@ export default function Solver(props) {
 		state.recipesUsed.value = recipesUsed;
 		state.typesUsed.value = typesUsed;
 		
+		let id = 0;
+		for(let solve of solveNodes) solve.id = ++id;
+		
 		return [solved, solveNodes];
 	}, [
 		state.research.value,
@@ -368,6 +393,7 @@ export default function Solver(props) {
 	]);
 	
 	window.solve = solve;
+	window.solveNodes = Array.from(solveNodes);
 	
 	
 	const [unlockedProliferators, hasProliferators] = useMemo(() => {
@@ -388,10 +414,10 @@ export default function Solver(props) {
 		let points = state.proliferatorPoints.value;
 		if(!points) return state.proliferatorPreset.value = preset;
 		
-		let id = 0;
+		// let id = 0;
 		for(let solve of solveNodes)
 		{
-			solve.id = ++id;
+			// solve.id = ++id;
 			
 			if(solve.item) continue;
 			
@@ -420,12 +446,13 @@ export default function Solver(props) {
 		let points = state.proliferatorPoints.value;
 		if(!points) return state.proliferatorPreset.value = preset;
 		
-		let id = 0;
+		// let id = 0;
 		for(let solve of solveNodes)
 		{
-			solve.id = ++id;
+			// solve.id = ++id;
 			
 			if(solve.item) continue;
+			
 			
 			let proliferator = state.proliferator.value;
 			if(proliferator === 'mixed') proliferator = Proliferator.BestPracticeMix(solve.recipe);

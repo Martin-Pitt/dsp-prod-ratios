@@ -132,6 +132,10 @@
 		background-size: 120px auto;
 	}
 	
+	main.intro .highlight {
+		filter: drop-shadow(0 0 3px currentColor);
+	}
+	
 	main.intro .per {
 		color: var(--neon-green);
 	}

@@ -5,6 +5,7 @@ import {
 	AssemblerProductionSpeed,
 	SmelterProductionSpeed,
 	ChemicalProductionSpeed,
+	FractionationProductionSpeed,
 	BeltTransportSpeed,
 	Proliferator,
 	RecipesUnlocked,
@@ -149,6 +150,7 @@ function SolveTree({ solve, depth = 0, output, ingredient = null, hasProliferato
 			case 'ASSEMBLE': modifier = AssemblerProductionSpeed.get(state.preferred.assembler.value); break;
 			case 'SMELT': modifier = SmelterProductionSpeed.get(state.preferred.smelter.value); break;
 			case 'CHEMICAL': modifier = ChemicalProductionSpeed.get(state.preferred.chemical.value); break;
+			case 'FRACTIONATE': modifier = FractionationProductionSpeed(state.research.value) / 60 / 60; break;
 		}
 		
 		
@@ -157,7 +159,6 @@ function SolveTree({ solve, depth = 0, output, ingredient = null, hasProliferato
 		let ingredientIndex = recipe.results.findIndex(result => result === ingredient);
 		let count = recipe.resultCounts[ingredientIndex];
 		let ingredientPerMinute = count * (60/recipe.timeSpend*60);
-		
 		
 		
 		let points = state.proliferatorPoints.value;
@@ -173,37 +174,37 @@ function SolveTree({ solve, depth = 0, output, ingredient = null, hasProliferato
 		}
 		
 		
-		if(recipe.type === 'FRACTIONATE')
-		{
-			return (
-				<div class="node solve" style={{ '--depth': depth }}>
-					<div class="node-header">
-						<div class="meta">
-							<Recipe recipe={recipe} proliferated={proliferated} named/>
-						</div>
-						{hasProliferators && (
-							<div class="proliferator">
-								{(proliferator || proliferated) && <Juice type={proliferator} proliferated={proliferated} solve={solve}/>}
-							</div>
-						)}
-						<div class="logistics">
-							{recipe.results.map((result, index) =>
-								<span class="belt"><span class="factor">{renderNumber(output / BeltTransportSpeed.get(state.preferred.belt.value))}</span>&times;</span>
-							)}
-						</div>
-						<ul class="products">
-							{recipe.results.map((result, index) =>
-								<li class={classNames('output', { 'is-ingredient': !ingredient || result === ingredient })}>
-									<span class="perMinute">{renderTime(output * (recipe.resultCounts[index] / recipe.resultCounts[ingredientIndex]))}</span>&times;
-									<Item id={result} proliferated={proliferated}/>
-									<span class="timeScale">per {state.timeScale.value}</span>
-								</li>
-							)}
-						</ul>
-					</div>
-				</div>
-			);
-		}
+		// if(recipe.type === 'FRACTIONATE')
+		// {
+		// 	return (
+		// 		<div class="node solve" style={{ '--depth': depth }}>
+		// 			<div class="node-header">
+		// 				<div class="meta">
+		// 					<Recipe recipe={recipe} proliferated={proliferated} named/>
+		// 				</div>
+		// 				{hasProliferators && (
+		// 					<div class="proliferator">
+		// 						{(proliferator || proliferated) && <Juice type={proliferator} proliferated={proliferated} solve={solve}/>}
+		// 					</div>
+		// 				)}
+		// 				<div class="logistics">
+		// 					{recipe.results.map((result, index) =>
+		// 						<span class="belt"><span class="factor">{renderNumber(output / BeltTransportSpeed.get(state.preferred.belt.value))}</span>&times;</span>
+		// 					)}
+		// 				</div>
+		// 				<ul class="products">
+		// 					{recipe.results.map((result, index) =>
+		// 						<li class={classNames('output', { 'is-ingredient': !ingredient || result === ingredient })}>
+		// 							<span class="perMinute">{renderTime(output * (recipe.resultCounts[index] / recipe.resultCounts[ingredientIndex]))}</span>&times;
+		// 							<Item id={result} proliferated={proliferated}/>
+		// 							<span class="timeScale">per {state.timeScale.value}</span>
+		// 						</li>
+		// 					)}
+		// 				</ul>
+		// 			</div>
+		// 		</div>
+		// 	);
+		// }
 		
 		
 		

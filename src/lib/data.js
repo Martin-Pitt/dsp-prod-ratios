@@ -240,7 +240,15 @@ export const Proliferator = {
 	
 	
 };
-
+export function FractionationProductionSpeed(research) {
+	let recipe = Recipes.find(recipe => recipe.id === 115); // Deuterium Fractionation
+	let fractionationChance = recipe.resultCounts[0] / recipe.itemCounts[0]; // The 1% chance to produce Deuterium
+	let itemsUnlocked = ItemsUnlocked(research, true);
+	let fastestBeltSpeed = Array.from(BeltTransportSpeed).filter(([id, speed]) => itemsUnlocked.has(id)).pop()[1];
+	let fastestProductionPerMinute = fastestBeltSpeed * fractionationChance;
+	// Should pilers be accounted for? Do people use them in fractionation designs?
+	return fastestProductionPerMinute;
+}
 
 
 const StartingRecipes = [1, 2, 3, 4, 5, 6, 50];

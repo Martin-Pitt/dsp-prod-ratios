@@ -5,6 +5,7 @@ import {
 	AssemblerProductionSpeed,
 	SmelterProductionSpeed,
 	ChemicalProductionSpeed,
+	FractionationProductionSpeed,
 	BeltTransportSpeed,
 	Proliferator,
 } from '../lib/data.js';
@@ -50,14 +51,16 @@ function onPer(event) {
 }
 
 function calcPerStep() {
+	let recipe = state.recipe.value;
 	if(state.timeScale.value === 'minute')
 	{
-		let recipePerMinute = state.recipe.value.resultCounts[0] * (60/state.recipe.value.timeSpend*60);
+		let recipePerMinute = recipe.resultCounts[0] * (60/recipe.timeSpend*60);
 		let modifier = 1.0;
-		switch(state.recipe.value.type) {
+		switch(recipe.type) {
 			case 'ASSEMBLE': modifier = AssemblerProductionSpeed.get(state.preferred.assembler.value); break;
 			case 'SMELT': modifier = SmelterProductionSpeed.get(state.preferred.smelter.value); break;
 			case 'CHEMICAL': modifier = ChemicalProductionSpeed.get(state.preferred.chemical.value); break;
+			case 'FRACTIONATE': modifier = FractionationProductionSpeed(state.research.value) / 60 / 60; break;
 		}
 		
 		return recipePerMinute * modifier;
@@ -101,23 +104,27 @@ function onProliferator(event) {
 }
 
 function recalculatePer() {
-	let recipePerMinute = state.recipe.value.resultCounts[0] * (60/state.recipe.value.timeSpend*60);
+	const recipe = state.recipe.value;
+	let recipePerMinute = recipe.resultCounts[0] * (60/recipe.timeSpend*60);
 	let modifier = 1.0;
-	switch(state.recipe.value.type) {
+	switch(recipe.type) {
 		case 'ASSEMBLE': modifier = AssemblerProductionSpeed.get(state.preferred.assembler.value); break;
 		case 'SMELT': modifier = SmelterProductionSpeed.get(state.preferred.smelter.value); break;
 		case 'CHEMICAL': modifier = ChemicalProductionSpeed.get(state.preferred.chemical.value); break;
+		case 'FRACTIONATE': modifier = FractionationProductionSpeed(state.research.value) / 60 / 60; break;
 	}
 	state.per.value = state.factor.value * recipePerMinute * modifier;
 }
 
 function recalculateFactor() {
-	let recipePerMinute = state.recipe.value.resultCounts[0] * (60/state.recipe.value.timeSpend*60);
+	const recipe = state.recipe.value;
+	let recipePerMinute = recipe.resultCounts[0] * (60/recipe.timeSpend*60);
 	let modifier = 1.0;
-	switch(state.recipe.value.type) {
+	switch(recipe.type) {
 		case 'ASSEMBLE': modifier = AssemblerProductionSpeed.get(state.preferred.assembler.value); break;
 		case 'SMELT': modifier = SmelterProductionSpeed.get(state.preferred.smelter.value); break;
 		case 'CHEMICAL': modifier = ChemicalProductionSpeed.get(state.preferred.chemical.value); break;
+		case 'FRACTIONATE': modifier = FractionationProductionSpeed(state.research.value) / 60 / 60; break;
 	}
 	state.factor.value = (state.per.value / recipePerMinute) / modifier;
 }

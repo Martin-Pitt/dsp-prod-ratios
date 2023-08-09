@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import {
-	Recipes, Items, Tech, StringFromTypes,
+	Recipes, Items, Tech, StringFromTypes, t,
 	AssemblerProductionSpeed,
 	SmelterProductionSpeed,
 	ChemicalProductionSpeed,
@@ -98,6 +98,7 @@ export default function Reference(props) {
 function Assembler(props) {
 	const recipesUnlocked = state.recipesUnlockedSet.value;
 	const itemsUnlocked = state.itemsUnlockedSet.value;
+	const name = 'assembler';
 	
 	return (
 		<>
@@ -109,19 +110,42 @@ function Assembler(props) {
 							.upgrades
 							.filter(upgrade => state.showHiddenUpgrades.value || itemsUnlocked.has(upgrade))
 							.map(upgrade => Items.find(item => item.id === upgrade))
-							.map(item =>
-								<label>
-									<input
-										type="radio"
-										name={'assembler'}
-										value={item.id}
-										title={item.name}
-										checked={item.id === state.preferred.assembler.value}
-										onClick={onPreferred}
-									/>
-									<Item item={item}/>
-								</label>
-							)}
+							.map(item => {
+								let per, count, title = item.name;
+								
+								switch(name) {
+									case 'assembler': count = renderNumber(AssemblerProductionSpeed.get(item.id)) + '×'; break;
+									case 'smelter': count = renderNumber(SmelterProductionSpeed.get(item.id)) + '×'; break;
+									case 'chemical': count = renderNumber(ChemicalProductionSpeed.get(item.id)) + '×'; break;
+									case 'belt': per = renderTime(BeltTransportSpeed.get(item.id)); break;
+								}
+								
+								switch(name) {
+									case 'assembler':
+									case 'smelter':
+									case 'chemical':
+										title += ' — ' + `${t('制造速度' /* Production Speed */)}: ${count}`.replace(/ /g, ' ');
+										break;
+									
+									case 'belt':
+										title += ' — ' + `${t('运载速度' /* Transport Speed */)}: ${per} items per ${state.timeScale.value}`.replace(/ /g, ' ');
+										break;
+								}
+								
+								return (
+									<label>
+										<input
+											type="radio"
+											name={name}
+											value={item.id}
+											title={title}
+											checked={item.id === state.preferred[name].value}
+											onClick={onPreferred}
+										/>
+										<Item item={item} count={count} per={per}/>
+									</label>
+								);
+							})}
 						</div>
 					</div>
 				</header>

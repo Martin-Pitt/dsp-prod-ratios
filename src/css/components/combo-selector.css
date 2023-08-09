@@ -260,6 +260,7 @@
 	
 	.combo-selector .preferred label {
 		position: relative;
+		cursor: pointer;
 	}
 	
 	.combo-selector .preferred input[type="radio"] {
@@ -273,20 +274,19 @@
 	
 	.combo-selector .preferred .icon {
 		width: 40px;
-		padding: 0px 10px 10px 0px;
 		margin: 4px;
 		pointer-events: none;
+	}
+	
+	.combo-selector .preferred .icon[data-count] {
+		padding: 0px 10px 10px 0px;
 	}
 	
 	.combo-selector .preferred label:has(:checked) {
 		/* background-color: var(--neon-blue); */
 	}
 	
-	.combo-selector .preferred label:hover {
-		background-color: color-mix(in lch, var(--neon-purple) 20%, transparent);
-		cursor: pointer;
-	}
-	
+	.combo-selector .preferred label:hover::before,
 	.combo-selector .preferred label:has(:checked)::before {
 		position: absolute;
 		inset: 0;
@@ -294,6 +294,14 @@
 		aspect-ratio: 1;
 		width: 48px;
 		background: url('../../images/textures/window-border-2.avif') 0 0 / 100% 100% repeat;
+	}
+	
+	.combo-selector .preferred label:hover::before {
+		opacity: 0.4;
+	}
+	
+	.combo-selector .preferred label:has(:checked)::before {
+		opacity: 1;
 	}
 	
 	.combo-selector .preferred label:has(:disabled) {

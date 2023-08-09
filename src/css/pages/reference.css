@@ -121,6 +121,11 @@
 	.sheet .preferred .icon {
 		width: 40px;
 		margin: 4px;
+		pointer-events: none;
+	}
+	
+	.sheet .preferred .icon[data-count] {
+		padding: 0px 10px 10px 0px;
 	}
 	
 	.sheet .preferred label:has(:checked) {

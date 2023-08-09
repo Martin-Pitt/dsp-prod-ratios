@@ -327,18 +327,10 @@ export default function ComboSelector(props) {
 										let per, count, title = item.name;
 										
 										switch(name) {
-											case 'assembler':
-												count = renderNumber(AssemblerProductionSpeed.get(item.id)) + '×';
-												break;
-											case 'smelter':
-												count = renderNumber(SmelterProductionSpeed.get(item.id)) + '×';
-												break;
-											case 'chemical':
-												count = renderNumber(ChemicalProductionSpeed.get(item.id)) + '×';
-												break;
-											case 'belt':
-												per = renderTime(BeltTransportSpeed.get(item.id));
-												break;
+											case 'assembler': count = renderNumber(AssemblerProductionSpeed.get(item.id)) + '×'; break;
+											case 'smelter': count = renderNumber(SmelterProductionSpeed.get(item.id)) + '×'; break;
+											case 'chemical': count = renderNumber(ChemicalProductionSpeed.get(item.id)) + '×'; break;
+											case 'belt': per = renderTime(BeltTransportSpeed.get(item.id)); break;
 										}
 										
 										switch(name) {

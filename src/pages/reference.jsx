@@ -4,6 +4,7 @@ import {
 	AssemblerProductionSpeed,
 	SmelterProductionSpeed,
 	ChemicalProductionSpeed,
+	FractionationProductionSpeed,
 	BeltTransportSpeed,
 	RecipesUnlocked,
 	ItemsUnlocked,
@@ -34,6 +35,7 @@ function renderTimeSpend(recipe, amount = 1) {
 		case 'ASSEMBLE': modifier = AssemblerProductionSpeed.get(state.preferred.assembler.value); break;
 		case 'SMELT': modifier = SmelterProductionSpeed.get(state.preferred.smelter.value); break;
 		case 'CHEMICAL': modifier = ChemicalProductionSpeed.get(state.preferred.chemical.value); break;
+		case 'FRACTIONATE': modifier = FractionationProductionSpeed(state.research.value) / 60 / 60; break;
 	}
     let recipePerMinute = amount * timeSpend;
     let perMinute = recipePerMinute * modifier;

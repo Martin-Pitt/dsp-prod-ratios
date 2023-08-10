@@ -5,7 +5,8 @@
 	
 	dialog.window::backdrop {
 		background: radial-gradient(10px at center, transparent 10%, hsla(0, 0%, 0%, 0.2) 0%) center / 10px 10px;
-		/* backdrop-filter: blur(10px); */
+		background: radial-gradient(6px at center, lch(0 0 0 / 0.9) 1px, lch(0 0 0 / 0.6) 0px) center / 6px 6px;
+		/* backdrop-filter: blur(2px); */
 	}
 	
 	dialog.window.recipes {
@@ -66,7 +67,7 @@
 		width: 64px;
 		height: 32px;
 		background: url('../../images/textures/close-x-m-4k.avif') 50% calc(50% + 2px) / 24px auto no-repeat;
-		cursor: pointer;
+		cursor: var(--cursor-pointer);
 	}
 	
 	/* dialog.window.recipes::before,
@@ -150,7 +151,7 @@
 	
 	.recipe-grid > li:hover {
 		background-color: #3c6b7c;
-		cursor: pointer;
+		cursor: var(--cursor-pointer);
 	}
 	
 	.recipe-grid .is-selected::before {

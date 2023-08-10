@@ -1,0 +1,81 @@
+@layer components {
+	/*
+		I would like to visual design style like Dyson Sphere Program but also maintain high UX
+		Would like to indicate in parallel:
+		- Is this interactive?
+			* Clickable thing — E.g. like 'pointer' cursor
+			* Keyboard / type thing — E.g. like 'text' cursor
+			* Other normal cursor
+			Otherwise if not interactive then the arrow-style cursor
+		- Does this have a tooltip?
+			* If the thing has a tooltip
+	*/
+	
+	:root {
+		--cursor-default:
+			url('../images/cursor-default.svg') 3 3,
+			url('../images/cursor-default.png') 3 3,
+			default;
+		--cursor-pointer:
+			url('../images/cursor-pointer.svg') 8 2,
+			url('../images/cursor-pointer.png') 8 2,
+			pointer;
+		--cursor-text:
+			url('../images/cursor-text.svg') 6 11,
+			url('../images/cursor-text.png') 8 8,
+			text;
+		--cursor-default-help:
+			url('../images/cursor-default-help.svg') 3 3,
+			url('../images/cursor-default-help.png') 3 3,
+			default;
+		--cursor-pointer-help:
+			url('../images/cursor-pointer-help.svg') 8 2,
+			url('../images/cursor-pointer-help.png') 8 2,
+			pointer;
+		--cursor-text-help:
+			url('../images/cursor-text-help.svg') 6 11,
+			url('../images/cursor-text-help.png') 8 8,
+			text;
+	}
+	
+	body {
+		cursor: var(--cursor-default);
+	}
+	
+	[title] {
+		cursor: var(--cursor-default-help);
+	}
+	
+	input {
+		cursor: var(--cursor-text);
+	}
+	
+	input[title] {
+		cursor: var(--cursor-text-help);
+	}
+	
+	a,
+	button,
+	label,
+	input[type="checkbox"],
+	select,
+	summary {
+		cursor: var(--cursor-pointer);
+	}
+	
+	a[title],
+	button[title],
+	label[title],
+	input[type="checkbox"][title],
+	select[title],
+	summary[title] {
+		cursor: var(--cursor-pointer-help);
+	}
+	
+	/* [title] {
+		cursor: help;
+	} */
+	
+	
+	
+}

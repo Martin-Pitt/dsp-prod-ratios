@@ -415,16 +415,19 @@ export default function Solver(props) {
 		let points = state.proliferatorPoints.value;
 		if(!points) return state.proliferatorPreset.value = preset;
 		
-		// let id = 0;
 		for(let solve of solveNodes)
 		{
-			// solve.id = ++id;
-			
 			if(solve.item) continue;
 			
 			let proliferator = state.proliferator.value;
-			if(proliferator === 'mixed') proliferator = Proliferator.BestPracticeMix(solve.recipe);
-			else if(proliferator === 'custom') proliferator = Proliferator.BestPracticeMix(solve.recipe);
+			if(proliferator.startsWith('mixed'))
+			{
+				if(proliferator === 'mixed.tsp' || proliferator === 'mixed')
+					proliferator = Proliferator.Mix.TheSuperiorTentacle(solve.recipe);
+				else if(proliferator === 'mixed.fh')
+					proliferator = Proliferator.Mix.FlameHaze(solve.recipe);
+			}
+			else if(proliferator === 'custom') proliferator = Proliferator.Mix.TheSuperiorTentacle(solve.recipe);
 			else
 			{
 				let { canProduceExtra, canSpeedupProduction } = Proliferator.RecipeBonuses(solve.recipe);
@@ -447,16 +450,20 @@ export default function Solver(props) {
 		let points = state.proliferatorPoints.value;
 		if(!points) return state.proliferatorPreset.value = preset;
 		
-		// let id = 0;
 		for(let solve of solveNodes)
 		{
-			// solve.id = ++id;
-			
 			if(solve.item) continue;
 			
 			
 			let proliferator = state.proliferator.value;
-			if(proliferator === 'mixed') proliferator = Proliferator.BestPracticeMix(solve.recipe);
+			if(proliferator.startsWith('mixed'))
+			{
+				if(proliferator === 'mixed.tsp' || proliferator === 'mixed')
+					proliferator = Proliferator.Mix.TheSuperiorTentacle(solve.recipe);
+				else if(proliferator === 'mixed.fh')
+					proliferator = Proliferator.Mix.FlameHaze(solve.recipe);
+			}
+			
 			else
 			{
 				let { canProduceExtra, canSpeedupProduction } = Proliferator.RecipeBonuses(solve.recipe);

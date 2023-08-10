@@ -115,7 +115,7 @@
 		aspect-ratio: 1;
 		width: 100%;
 		opacity: 0;
-		cursor: pointer;
+		cursor: var(--cursor-pointer);
 	}
 	
 	.sheet .preferred .icon {
@@ -134,7 +134,7 @@
 	
 	.sheet .preferred label:hover {
 		background-color: color-mix(in lch, var(--neon-purple) 20%, transparent);
-		cursor: pointer;
+		cursor: var(--cursor-pointer);
 	}
 	
 	.sheet .preferred label:has(:checked)::before {
@@ -155,13 +155,13 @@
 	}
 
 	.sheet .preferred label:has(:disabled) input {
-		cursor: default;
+		cursor: var(--cursor-default);
 	}
 	
 	.sheet .preferred label:has(:disabled) .icon {
 		filter: contrast(0) brightness(0);
 		opacity: 0.2;
-		cursor: default;
+		cursor: var(--cursor-default);
 	}
 	
 	.sheet .preferred label:has(:disabled):hover {

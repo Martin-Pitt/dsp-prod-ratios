@@ -39,7 +39,7 @@
 		border: 2px solid lch(100 0 0 / 0.4);
 		border-radius: 50%;
 		background: lch(0 0 0 / 0.3);
-		cursor: pointer;
+		cursor: var(--cursor-pointer);
 	}
 	
 	.combo-selector .recipe-picker:hover {
@@ -260,7 +260,7 @@
 	
 	.combo-selector .preferred label {
 		position: relative;
-		cursor: pointer;
+		cursor: var(--cursor-pointer);
 	}
 	
 	.combo-selector .preferred input[type="radio"] {
@@ -269,7 +269,7 @@
 		aspect-ratio: 1;
 		width: 100%;
 		opacity: 0;
-		cursor: pointer;
+		cursor: var(--cursor-pointer);
 	}
 	
 	.combo-selector .preferred .icon {
@@ -313,13 +313,13 @@
 	}
 
 	.combo-selector .preferred label:has(:disabled) input {
-		cursor: default;
+		cursor: var(--cursor-default);
 	}
 	
 	.combo-selector .preferred label:has(:disabled) .icon {
 		filter: contrast(0) brightness(0);
 		opacity: 0.2;
-		cursor: default;
+		cursor: var(--cursor-default);
 	}
 	
 	.combo-selector .preferred label:has(:disabled):hover {

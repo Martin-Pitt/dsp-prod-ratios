@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27.118" height="28.494" viewBox="0 0 27.118 28.494">
+  <defs>
+    <linearGradient id="linear-gradient" x2="0.9" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5a483e"/>
+      <stop offset="0.668" stop-color="#5f5351"/>
+      <stop offset="0.784" stop-color="#635d61"/>
+      <stop offset="1" stop-color="#645f65"/>
+    </linearGradient>
+    <filter id="Path_130" x="3.279" y="11.351" width="12.267" height="12.226" filterUnits="userSpaceOnUse">
+      <feOffset dx="1.5" dy="2.5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feFlood flood-opacity="0.62"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" y1="0.5" x2="1" y2="0.533" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d28b3c"/>
+      <stop offset="0.325" stop-color="#d99844"/>
+      <stop offset="0.419" stop-color="#f3c460"/>
+      <stop offset="1" stop-color="#fdd66b"/>
+    </linearGradient>
+    <filter id="Path_129" x="0" y="9.76" width="13.415" height="13.364" filterUnits="userSpaceOnUse">
+      <feOffset dx="1.5" dy="2.5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur-2"/>
+      <feFlood flood-opacity="0.62"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-3" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#eda834"/>
+      <stop offset="1" stop-color="#fff586"/>
+    </linearGradient>
+    <filter id="Union_6" x="4.01" y="0" width="23.108" height="28.494" filterUnits="userSpaceOnUse">
+      <feOffset dx="1.5" dy="2.5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur-3"/>
+      <feFlood flood-opacity="0.62"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_3" x="18.191" y="1.227" width="8" height="6" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-4"/>
+      <feFlood flood-opacity="0.608" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-4"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="cursor-pointer-help" transform="translate(-126.054 -191.291)">
+    <g transform="matrix(1, 0, 0, 1, 126.05, 191.29)" filter="url(#Path_130)">
+      <path id="Path_130-2" data-name="Path 130" d="M0,2.521H2.587V0H0Z" transform="translate(7.1 13.35) rotate(19)" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 126.05, 191.29)" filter="url(#Path_129)">
+      <path id="Path_129-2" data-name="Path 129" d="M0,.409,1.2,0H3.194V3.112H1.1L0,2.775Z" transform="translate(4.2 11.95) rotate(19)" stroke="#212121" stroke-width="0.3" fill="url(#linear-gradient-2)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 126.05, 191.29)" filter="url(#Union_6)">
+      <path id="Union_6-2" data-name="Union 6" d="M2.092,19.186,1.207,17.9,0,14l.812-2.653H12.789L13.794,14l-1.005,4.01-.614,1.18Zm3.062-7.843V8.186H8.705v3.158ZM9.018,11.3V8.391H12.4V11.3ZM1.134,8.009,4.5,7.655l.347,3.293L1.481,11.3Zm7.883.272V6.915H12.4V8.281ZM5.154,8.01V6.623H8.705V8.01ZM.731,4.306l3.375-.355.389,3.7L1.12,8.01ZM.536,1.284l.79-1.1L3.074,0l.762.937.314,3L.684,4.3Z" transform="translate(7.17 2.16)" stroke="#212121" stroke-width="0.3" fill="url(#linear-gradient-3)"/>
+    </g>
+    <line id="Line_1" data-name="Line 1" y2="2.38" transform="translate(135.59 206.351)" fill="none" stroke="#000" stroke-width="0.5"/>
+    <line id="Line_2" data-name="Line 2" y2="2.38" transform="translate(145.109 206.351)" fill="none" stroke="#000" stroke-width="0.5"/>
+    <g data-type="innerShadowGroup">
+      <path id="Rectangle_3-2" data-name="Rectangle 3" d="M2,0H4A2,2,0,0,1,6,2V2A2,2,0,0,1,4,4H0A0,0,0,0,1,0,4V2A2,2,0,0,1,2,0Z" transform="translate(145.244 193.518)"/>
+      <g transform="matrix(1, 0, 0, 1, 126.05, 191.29)" filter="url(#Rectangle_3)">
+        <path id="Rectangle_3-3" data-name="Rectangle 3" d="M2,0H4A2,2,0,0,1,6,2V2A2,2,0,0,1,4,4H0A0,0,0,0,1,0,4V2A2,2,0,0,1,2,0Z" transform="translate(19.19 2.23)" fill="#fff"/>
+      </g>
+      <g id="Rectangle_3-4" data-name="Rectangle 3" transform="translate(145.244 193.518)" fill="none" stroke="#fff" stroke-width="1">
+        <path d="M2,0H4A2,2,0,0,1,6,2V2A2,2,0,0,1,4,4H0A0,0,0,0,1,0,4V2A2,2,0,0,1,2,0Z" stroke="none"/>
+        <path d="M2-.5H4A2.5,2.5,0,0,1,6.5,2V2A2.5,2.5,0,0,1,4,4.5H-.5a0,0,0,0,1,0,0V2A2.5,2.5,0,0,1,2-.5Z" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27.515" height="30.95" viewBox="0 0 27.515 30.95">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.181" x2="0.5" y2="0.71" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffff80"/>
+      <stop offset="1" stop-color="#ecac3a"/>
+    </linearGradient>
+    <filter id="Path_117" x="0" y="0" width="27.515" height="30.95" filterUnits="userSpaceOnUse">
+      <feOffset dx="1.5" dy="2.5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feFlood flood-opacity="0.616"/>
+      <feComposite operator="in" in2="blur"/>
+    </filter>
+    <filter id="Path_117-2" x="0" y="0" width="27.515" height="30.95" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-2"/>
+      <feFlood flood-opacity="0.608" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="cursor-default" transform="translate(-2.954 -2.333)">
+    <path id="Path_118" data-name="Path 118" d="M42.044,21.974l7.176-5.326L37.6,7.5Z" transform="translate(-29 1)" fill="#731405"/>
+    <g data-type="innerShadowGroup">
+      <g transform="matrix(1, 0, 0, 1, 2.95, 2.33)" filter="url(#Path_117)">
+        <path id="Path_117-3" data-name="Path 117" d="M6.654,5.58,9.777,23.224l1.533,2.495,3.1-2.26-2.373-9.895L16.6,16.987l-2.8,2.7,1.8,2.949,7.974-5.418Z" transform="translate(-2.95 -2.49)" stroke="rgba(0,0,0,0.12)" stroke-width="1" fill="url(#linear-gradient)"/>
+      </g>
+      <path id="Path_117-4" data-name="Path 117" d="M6.654,5.58,9.777,23.224l1.533,2.495,3.1-2.26-2.373-9.895L16.6,16.987l-2.8,2.7,1.8,2.949,7.974-5.418Z" transform="translate(0 -0.159)" fill="url(#linear-gradient)"/>
+      <g transform="matrix(1, 0, 0, 1, 2.95, 2.33)" filter="url(#Path_117-2)">
+        <path id="Path_117-5" data-name="Path 117" d="M6.654,5.58,9.777,23.224l1.533,2.495,3.1-2.26-2.373-9.895L16.6,16.987l-2.8,2.7,1.8,2.949,7.974-5.418Z" transform="translate(-2.95 -2.49)" fill="#fff"/>
+      </g>
+      <path id="Path_117-6" data-name="Path 117" d="M6.654,5.58,9.777,23.224l1.533,2.495,3.1-2.26-2.373-9.895L16.6,16.987l-2.8,2.7,1.8,2.949,7.974-5.418Z" transform="translate(0 -0.159)" fill="none" stroke="rgba(0,0,0,0.12)" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

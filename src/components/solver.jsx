@@ -160,7 +160,6 @@ function SolveTree({ solve, depth = 0, output, ingredient = null, hasProliferato
 		let count = recipe.resultCounts[ingredientIndex];
 		let ingredientPerMinute = count * (60/recipe.timeSpend*60);
 		
-		
 		let points = state.proliferatorPoints.value;
 		let proliferator = state.proliferatorCustom.value.has(solve.id)? state.proliferatorCustom.value.get(solve.id) : state.proliferatorPreset.value.get(solve.id);
 		if(points)
@@ -173,43 +172,8 @@ function SolveTree({ solve, depth = 0, output, ingredient = null, hasProliferato
 			}
 		}
 		
-		
-		// if(recipe.type === 'FRACTIONATE')
-		// {
-		// 	return (
-		// 		<div class="node solve" style={{ '--depth': depth }}>
-		// 			<div class="node-header">
-		// 				<div class="meta">
-		// 					<Recipe recipe={recipe} proliferated={proliferated} named/>
-		// 				</div>
-		// 				{hasProliferators && (
-		// 					<div class="proliferator">
-		// 						{(proliferator || proliferated) && <Juice type={proliferator} proliferated={proliferated} solve={solve}/>}
-		// 					</div>
-		// 				)}
-		// 				<div class="logistics">
-		// 					{recipe.results.map((result, index) =>
-		// 						<span class="belt"><span class="factor">{renderNumber(output / BeltTransportSpeed.get(state.preferred.belt.value))}</span>&times;</span>
-		// 					)}
-		// 				</div>
-		// 				<ul class="products">
-		// 					{recipe.results.map((result, index) =>
-		// 						<li class={classNames('output', { 'is-ingredient': !ingredient || result === ingredient })}>
-		// 							<span class="perMinute">{renderTime(output * (recipe.resultCounts[index] / recipe.resultCounts[ingredientIndex]))}</span>&times;
-		// 							<Item id={result} proliferated={proliferated}/>
-		// 							<span class="timeScale">per {state.timeScale.value}</span>
-		// 						</li>
-		// 					)}
-		// 				</ul>
-		// 			</div>
-		// 		</div>
-		// 	);
-		// }
-		
-		
-		
-		
 		let factor = output / ingredientPerMinute / modifier;
+		
 		
 		return (
 			<details key={recipe.id} class="node solve" style={{ '--depth': depth }} open={depth === 0}>

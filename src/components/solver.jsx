@@ -169,7 +169,7 @@ function SolveTree({ solve, depth = 0, throughput, ingredient = null, hasProlife
 			}
 		}
 		
-		let facitilies = throughput / ingredientsPerMinute / modifier;
+		let facilities = throughput / ingredientsPerMinute / modifier;
 		
 		
 		return (
@@ -177,9 +177,9 @@ function SolveTree({ solve, depth = 0, throughput, ingredient = null, hasProlife
 				<summary>
 					<div class="node-header">
 						<div class="meta">
-							{/* <span class="factor">{renderNumber(facitilies)}</span>&times; <span class="process">{StringFromTypes.get(recipe.type)}</span> <Recipe recipe={recipe} named/> */}
-							<span title={`${+facitilies.toFixed(6)}× ${StringFromTypes.get(recipe.type)}`}>
-								<span class="factor">{renderNumber(facitilies)}</span>&times;
+							{/* <span class="factor">{renderNumber(facilities)}</span>&times; <span class="process">{StringFromTypes.get(recipe.type)}</span> <Recipe recipe={recipe} named/> */}
+							<span title={`${+facilities.toFixed(6)}× ${StringFromTypes.get(recipe.type)}`}>
+								<span class="factor">{renderNumber(facilities)}</span>&times;
 							</span> <Recipe recipe={recipe} proliferated={proliferated} named/>
 						</div>
 						{hasProliferators && (
@@ -249,7 +249,7 @@ function SolveTree({ solve, depth = 0, throughput, ingredient = null, hasProlife
 						<SolveTree
 							solve={child}
 							depth={depth + 1}
-							throughput={facitilies * itemsPerMinute * modifier}
+							throughput={facilities * itemsPerMinute * modifier}
 							ingredient={recipe.items[index]}
 							hasProliferators={hasProliferators}
 							proliferated={proliferatorType !== 'none'}

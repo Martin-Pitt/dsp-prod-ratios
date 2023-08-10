@@ -178,7 +178,7 @@ function SolveTree({ solve, depth = 0, throughput, ingredient = null, hasProlife
 					<div class="node-header">
 						<div class="meta">
 							{/* <span class="factor">{renderNumber(facitilies)}</span>&times; <span class="process">{StringFromTypes.get(recipe.type)}</span> <Recipe recipe={recipe} named/> */}
-							<span title={`${+factor.toFixed(6)}× ${StringFromTypes.get(recipe.type)}`}>
+							<span title={`${+facitilies.toFixed(6)}× ${StringFromTypes.get(recipe.type)}`}>
 								<span class="factor">{renderNumber(facitilies)}</span>&times;
 							</span> <Recipe recipe={recipe} proliferated={proliferated} named/>
 						</div>

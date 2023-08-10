@@ -165,7 +165,7 @@
 		}
 	}
 	
-	.solver .output {}
+	.solver .throughput {}
 	
 	
 	
@@ -193,11 +193,11 @@
 		text-align: right;
 	}
 	
-	.solver .node .output.is-ingredient .perMinute {
+	.solver .node .throughput.is-ingredient .perMinute {
 		color: var(--neon-green);
 	}
 	
-	.solver .node .output:not(.is-ingredient) .item {
+	.solver .node .throughput:not(.is-ingredient) .item {
 		opacity: 0.5;
 	}
 	

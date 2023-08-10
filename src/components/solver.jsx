@@ -94,7 +94,7 @@ function Juice(props) {
 
 
 
-function SolveTree({ solve, depth = 0, output, ingredient = null, hasProliferators = false, proliferated = null }) {
+function SolveTree({ solve, depth = 0, throughput, ingredient = null, hasProliferators = false, proliferated = null }) {
 	if(!solve || depth > 10) return null;
 	
 	if('item' in solve)
@@ -127,11 +127,11 @@ function SolveTree({ solve, depth = 0, output, ingredient = null, hasProliferato
 						</div>
 					)}
 					<div class="logistics">
-						<span class="belt"><span class="factor">{renderNumber(output / BeltTransportSpeed.get(state.preferred.belt.value))}</span>&times;</span>
+						<span class="belt"><span class="factor">{renderNumber(throughput / BeltTransportSpeed.get(state.preferred.belt.value))}</span>&times;</span>
 					</div>
 					<ul class="products">
-						<li class={classNames('output', 'is-ingredient')}>
-							<span class="perMinute">{renderTime(output)}</span>&times;
+						<li class={classNames('throughput', 'is-ingredient')}>
+							<span class="perMinute">{renderTime(throughput)}</span>&times;
 							<Item item={item} proliferated={proliferated}/>
 							<span class="timeScale">per {state.timeScale.value}</span>
 						</li>
@@ -153,26 +153,23 @@ function SolveTree({ solve, depth = 0, output, ingredient = null, hasProliferato
 			case 'FRACTIONATE': modifier = FractionationProductionSpeed(state.research.value) / 60 / 60; break;
 		}
 		
-		
-		
 		if(!ingredient) ingredient = recipe.results[0];
 		let ingredientIndex = recipe.results.findIndex(result => result === ingredient);
-		let count = recipe.resultCounts[ingredientIndex];
-		let ingredientPerMinute = count * (60/recipe.timeSpend*60);
+		let ingredientsPerMinute = recipe.resultCounts[ingredientIndex] * (60/recipe.timeSpend*60);
 		
-		let points = state.proliferatorPoints.value;
-		let proliferator = state.proliferatorCustom.value.has(solve.id)? state.proliferatorCustom.value.get(solve.id) : state.proliferatorPreset.value.get(solve.id);
-		if(points)
+		let proliferatorPoints = state.proliferatorPoints.value;
+		let proliferatorType = state.proliferatorCustom.value.has(solve.id)? state.proliferatorCustom.value.get(solve.id) : state.proliferatorPreset.value.get(solve.id);
+		if(proliferatorPoints)
 		{
-			let index = Proliferator.Ability.indexOf(points);
-			switch(proliferator)
+			let index = Proliferator.Ability.indexOf(proliferatorPoints);
+			switch(proliferatorType)
 			{
 				case 'speedup': modifier *= Proliferator.ProductionSpeed[index]; break;
-				case 'extra': ingredientPerMinute *= Proliferator.ExtraProducts[index]; break;
+				case 'extra': ingredientsPerMinute *= Proliferator.ExtraProducts[index]; break;
 			}
 		}
 		
-		let factor = output / ingredientPerMinute / modifier;
+		let facitilies = throughput / ingredientsPerMinute / modifier;
 		
 		
 		return (
@@ -180,25 +177,25 @@ function SolveTree({ solve, depth = 0, output, ingredient = null, hasProliferato
 				<summary>
 					<div class="node-header">
 						<div class="meta">
-							{/* <span class="factor">{renderNumber(factor)}</span>&times; <span class="process">{StringFromTypes.get(recipe.type)}</span> <Recipe recipe={recipe} named/> */}
+							{/* <span class="factor">{renderNumber(facitilies)}</span>&times; <span class="process">{StringFromTypes.get(recipe.type)}</span> <Recipe recipe={recipe} named/> */}
 							<span title={`${+factor.toFixed(6)}× ${StringFromTypes.get(recipe.type)}`}>
-								<span class="factor">{renderNumber(factor)}</span>&times;
+								<span class="factor">{renderNumber(facitilies)}</span>&times;
 							</span> <Recipe recipe={recipe} proliferated={proliferated} named/>
 						</div>
 						{hasProliferators && (
 							<div class="proliferator">
-								{(proliferator || proliferated) && <Juice type={proliferator} proliferated={proliferated} solve={solve}/>}
+								{(proliferatorType || proliferated) && <Juice type={proliferatorType} proliferated={proliferated} solve={solve}/>}
 							</div>
 						)}
 						<div class="logistics">
 							{recipe.results.map((result, index) =>
-								<span class="belt"><span class="factor">{renderNumber(output / BeltTransportSpeed.get(state.preferred.belt.value))}</span>&times;</span>
+								<span class="belt"><span class="factor">{renderNumber(throughput / BeltTransportSpeed.get(state.preferred.belt.value))}</span>&times;</span>
 							)}
 						</div>
 						<ul class="products">
 							{recipe.results.map((result, index) =>
-								<li class={classNames('output', { 'is-ingredient': !ingredient || result === ingredient })}>
-									<span class="perMinute">{renderTime(output * (recipe.resultCounts[index] / recipe.resultCounts[ingredientIndex]))}</span>&times;
+								<li class={classNames('throughput', { 'is-ingredient': !ingredient || result === ingredient })}>
+									<span class="perMinute">{renderTime(throughput * (recipe.resultCounts[index] / recipe.resultCounts[ingredientIndex]))}</span>&times;
 									<Item id={result} proliferated={proliferated}/>
 									<span class="timeScale">per {state.timeScale.value}</span>
 								</li>
@@ -247,16 +244,15 @@ function SolveTree({ solve, depth = 0, output, ingredient = null, hasProliferato
 					
 					if(!child) return 'Error, no child'; // ??
 					
-					let count = recipe.itemCounts[index];
-					let itemPerMinute = count * (60/recipe.timeSpend*60);
+					let itemsPerMinute = recipe.itemCounts[index] * (60/recipe.timeSpend*60);
 					return (
 						<SolveTree
 							solve={child}
 							depth={depth + 1}
-							output={factor * itemPerMinute * modifier}
+							throughput={facitilies * itemsPerMinute * modifier}
 							ingredient={recipe.items[index]}
 							hasProliferators={hasProliferators}
-							proliferated={proliferator !== 'none'}
+							proliferated={proliferatorType !== 'none'}
 						/>
 					);
 				})}
@@ -462,7 +458,7 @@ export default function Solver(props) {
 			</div>
 			<SolveTree
 				solve={solve}
-				output={state.per.value}
+				throughput={state.per.value}
 				hasProliferators={hasProliferators}
 			/>
 			

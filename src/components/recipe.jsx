@@ -8,6 +8,12 @@ export default function Recipe(props) {
 	const name = recipe.explicit? recipe.name : primaryItem.name;
 	const points = props.points || state.proliferatorPoints.value;
 	
+	if(props.name) return (
+		<span class="recipe named" lang={locale}>
+			<span class="name">{name}</span>
+		</span>
+	);
+	
 	if(props.named) return (
 		<span class="recipe" lang={locale}>
 			<span class="icon" data-icon={icon} data-count={props.count}>
@@ -16,7 +22,7 @@ export default function Recipe(props) {
 		</span>
 	);
 	
-	else return (
+	return (
 		<span class="recipe icon" data-icon={icon} data-count={props.count} title={name} lang={locale}>
 			{props.proliferated && <div class="icon proliferated" data-icon={`ui.inc-${props.proliferated? points : 0}`}/>}
 		</span>

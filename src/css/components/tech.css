@@ -1,0 +1,16 @@
+@layer components {
+	.tech[data-icon],
+	.tech:not([data-icon]) > .icon[data-icon] {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	
+	.tech[data-icon] {
+		width: 3.75em;
+	}
+	
+	.tech:not([data-icon]) > .icon[data-icon] {
+		width: 2em;
+	}
+}

@@ -264,6 +264,73 @@ function SolveTree({ solve, depth = 0, throughput, ingredient = null, hasProlife
 
 
 
+function CalcFacilities({ solve, depth = 0, throughput, ingredient = null, hasProliferators = false, proliferated = null }) {
+	if(!solve || depth > 10) return 0;
+	
+	if('item' in solve) return 0;
+	
+	else
+	{
+		let { recipe, children } = solve;
+		
+		let modifier = 1.0;
+		switch(recipe.type) {
+			case 'ASSEMBLE': modifier = AssemblerProductionSpeed.get(state.preferred.assembler.value); break;
+			case 'SMELT': modifier = SmelterProductionSpeed.get(state.preferred.smelter.value); break;
+			case 'CHEMICAL': modifier = ChemicalProductionSpeed.get(state.preferred.chemical.value); break;
+			case 'FRACTIONATE': modifier = FractionationProductionSpeed(state.research.value) / 60 / 60; break;
+		}
+		
+		if(!ingredient) ingredient = recipe.results[0];
+		let ingredientIndex = recipe.results.findIndex(result => result === ingredient);
+		let ingredientsPerMinute = recipe.resultCounts[ingredientIndex] * (60/recipe.timeSpend*60);
+		
+		let proliferatorPoints = state.proliferatorPoints.value;
+		let proliferatorType = state.proliferatorCustom.value.has(solve.id)? state.proliferatorCustom.value.get(solve.id) : state.proliferatorPreset.value.get(solve.id);
+		if(proliferatorPoints)
+		{
+			let index = Proliferator.Ability.indexOf(proliferatorPoints);
+			switch(proliferatorType)
+			{
+				case 'speedup': modifier *= Proliferator.ProductionSpeed[index]; break;
+				case 'extra': ingredientsPerMinute *= Proliferator.ExtraProducts[index]; break;
+			}
+		}
+		
+		let facilities = throughput / ingredientsPerMinute / modifier;
+		let subFacilities = children? children.map((child, index) => {
+			if(Array.isArray(child))
+			{
+				let item = Items.find(item => item.id === recipe.items[index]);
+				let preferredAltRecipe = state.preferred[item.id]?.value;
+				
+				const hasMiningFrom = preferredAltRecipe === item.id && item.miningFrom;
+				
+				if(!hasMiningFrom && !state.recipesUnlockedSet.value.has(preferredAltRecipe)) return 0;
+				
+				let preferredChild = child.find(d => d.recipe?.id === preferredAltRecipe);
+				if(!preferredChild && hasMiningFrom) preferredChild = child.find(d => d.item === item);
+				child = preferredChild;
+			}
+			
+			if(!child) return 0;
+			
+			let itemsPerMinute = recipe.itemCounts[index] * (60/recipe.timeSpend*60);
+			return CalcFacilities({
+				solve: child,
+				depth: depth + 1,
+				throughput: facilities * itemsPerMinute * modifier,
+				ingredient: recipe.items[index],
+				hasProliferators: hasProliferators,
+				proliferated: proliferatorType !== 'none',
+			});
+		}).reduce((accumulator, current) => accumulator + current, 0) : 0;
+		
+		return facilities + subFacilities;
+	}
+}
+
+
 
 
 
@@ -441,6 +508,14 @@ export default function Solver(props) {
 		return state.proliferatorPreset.value = preset;
 	}, [state.proliferator.value]);
 	
+	let totalFacilities = // useMemo(() =>
+		CalcFacilities({
+			solve,
+			throughput: state.per.value,
+			hasProliferators,
+		});
+	// 	[solveNodes]
+	// );
 	
 	return (
 		<div class={classNames('solver', { 'has-proliferators': hasProliferators })}>
@@ -465,6 +540,13 @@ export default function Solver(props) {
 				throughput={state.per.value}
 				hasProliferators={hasProliferators}
 			/>
+			
+			{/* <footer class="stats">
+				Total facilities: {renderNumber(totalFacilities)}
+			</footer> */}
+			{/* <pre>{JSON.stringify({
+				totalFacilities
+			}, null, '\t')}</pre> */}
 			
 			{/* <pre>
 				{JSON.stringify(solve, (() => {

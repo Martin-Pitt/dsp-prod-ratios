@@ -1,6 +1,6 @@
 import { useCallback } from 'preact/hooks';
 import classNames from 'classnames';
-import { Tech } from '../lib/data.js';
+import { Techs } from '../lib/data.js';
 import state from '../state.js';
 
 
@@ -8,8 +8,8 @@ function pinResearch(tech) {
 	if(state.research.value.includes(tech)) return;
 	state.research.value = [...state.research.value, tech];
 	if(!tech.preTechs) return;
-	if(tech.preTechs) for(let preTech of tech.preTechs) pinResearch(Tech.find(t => t.id === preTech));
-	if(tech.preTechsImplicit) for(let preTech of tech.preTechsImplicit) pinResearch(Tech.find(t => t.id === preTech));
+	if(tech.preTechs) for(let preTech of tech.preTechs) pinResearch(Techs.find(t => t.id === preTech));
+	if(tech.preTechsImplicit) for(let preTech of tech.preTechsImplicit) pinResearch(Techs.find(t => t.id === preTech));
 }
 
 function unpinResearch(tech) {
@@ -40,7 +40,7 @@ export default function Research(props) {
 		toggleResearch(tech);
 	});
 	
-	const mainLinePosition = Tech.find(tech => tech.isMain).y;
+	const mainLinePosition = Techs.find(tech => tech.isMain).y;
 	
 	return (
 		<main class="page research">
@@ -48,15 +48,15 @@ export default function Research(props) {
 				Select your research progress so far, this tool will then only show recipes available to you.
 				{state.research.value.length? <button class="reset" onClick={resetResearch}>Reset research</button> : <><br/><br/>With nothing selected, all recipes are available.</>}
 			</p>
-			{Tech.filter(tech => tech.id < 2000).map(tech => {
+			{Techs.filter(tech => tech.id < 2000).map(tech => {
 				if(!tech.preTechs) return [];
 				
 				const isResearched = state.research.value.includes(tech);
-				const hasPreTechs = !tech.preTechs || tech.preTechs.every(id => state.research.value.includes(Tech.find(t => t.id === id)));
-				const hasImplicitPreTechs = !tech.preTechsImplicit || tech.preTechsImplicit.every(id => state.research.value.includes(Tech.find(t => t.id === id)));
+				const hasPreTechs = !tech.preTechs || tech.preTechs.every(id => state.research.value.includes(Techs.find(t => t.id === id)));
+				const hasImplicitPreTechs = !tech.preTechsImplicit || tech.preTechsImplicit.every(id => state.research.value.includes(Techs.find(t => t.id === id)));
 				
 				let links = tech.preTechs.map((id, index) => {
-					const preTech = Tech.find(t => t.id === id);
+					const preTech = Techs.find(t => t.id === id);
 					const hasPreRequisite = state.research.value.includes(preTech);
 					
 					return {
@@ -129,10 +129,10 @@ export default function Research(props) {
 					)}
 				</div>
 			))}
-			{Tech.filter(tech => tech.id < 2000).map(tech => {
+			{Techs.filter(tech => tech.id < 2000).map(tech => {
 				const isResearched = state.research.value.includes(tech);
-				const hasPreTechs = !tech.preTechs || tech.preTechs.every(id => state.research.value.includes(Tech.find(t => t.id === id)));
-				const hasImplicitPreTechs = !tech.preTechsImplicit || tech.preTechsImplicit.every(id => state.research.value.includes(Tech.find(t => t.id === id)));
+				const hasPreTechs = !tech.preTechs || tech.preTechs.every(id => state.research.value.includes(Techs.find(t => t.id === id)));
+				const hasImplicitPreTechs = !tech.preTechsImplicit || tech.preTechsImplicit.every(id => state.research.value.includes(Techs.find(t => t.id === id)));
 				
 				return (
 					<div

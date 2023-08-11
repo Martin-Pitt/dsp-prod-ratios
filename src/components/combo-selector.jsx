@@ -13,6 +13,7 @@ import state from '../state.js';
 import RecipeSelector from './recipe-selector.jsx';
 import Item from './item.jsx';
 import Recipe from './recipe.jsx';
+import Tech from './tech.jsx';
 
 
 
@@ -400,7 +401,7 @@ export default function ComboSelector(props) {
 										</span>
 										{item.miningFrom && (
 											<label style={{ gridArea: `${row} / ${column + 1} / ${row + 1} / ${column + 2}` }}>
-												<Item item={item} data-lvl={0}/>
+												{[1120, 1121].includes(item.id)? <Tech id={1606}/> : <Item item={item} data-lvl={0}/>}
 												<input
 													type="radio"
 													name={item.id}
@@ -416,7 +417,7 @@ export default function ComboSelector(props) {
 										.filter(recipe => state.showHiddenUpgrades.value || recipesUnlocked.has(recipe.id))
 										.map((recipe, index) =>
 											<label style={{ gridArea: `${row} / ${column + index + (item.miningFrom? 2 : 1)} / ${row + 1} / ${column + index + (item.miningFrom? 2 : 1)}` }}>
-												<Recipe recipe={recipe}/>
+												{recipe.id === 40? <Tech id={1142}/> : <Recipe recipe={recipe}/>}
 												<input
 													type="radio"
 													name={item.id}

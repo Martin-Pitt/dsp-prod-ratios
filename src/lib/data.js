@@ -1,6 +1,6 @@
 import { JSONReviver } from '../data/reviver.js';
 import meta from '../data/meta.json';
-import tech from '../data/tech.json';
+import techs from '../data/tech.json';
 import recipes from '../data/recipes.json';
 import items from '../data/items.json';
 import strings from '../data/strings.json';
@@ -66,23 +66,23 @@ export function t(key) {
 }
 
 // TODO: Preferred language can potentially change, see 'languagechange' event
-export const Tech = translate(JSONRecurse(undefined, tech));
+export const Techs = translate(JSONRecurse(undefined, techs));
 export const Recipes = translate(JSONRecurse(undefined, recipes));
 export const Items = translate(JSONRecurse(undefined, items));
 
 // Mark all tech part of main quest
-for(let tech of Tech) if(tech.id < 2000 && tech.position[1] === 1) tech.isMain = true;
+for(let tech of Techs) if(tech.id < 2000 && tech.position[1] === 1) tech.isMain = true;
 
 // Move tech around, remove gaps etc
 let positions = {
-	x: Array.from(new Set(Tech.map(tech => tech.position[0]).sort((a, b) => a - b))),
-	y: Array.from(new Set(Tech.map(tech => tech.position[1]).sort((a, b) => a - b))),
+	x: Array.from(new Set(Techs.map(tech => tech.position[0]).sort((a, b) => a - b))),
+	y: Array.from(new Set(Techs.map(tech => tech.position[1]).sort((a, b) => a - b))),
 };
 
 for(let index = 0; index < positions.x.length; ++index)
 {
 	let x = positions.x[index];
-	for(let tech of Tech)
+	for(let tech of Techs)
 	{
 		let tx = tech.position[0];
 		if(tx === x) tech.x = index + 1;
@@ -92,7 +92,7 @@ for(let index = 0; index < positions.x.length; ++index)
 for(let index = 0; index < positions.y.length; ++index)
 {
 	let y = positions.y[index];
-	for(let tech of Tech)
+	for(let tech of Techs)
 	{
 		let ty = tech.position[1];
 		if(ty === y) tech.y = positions.y.length - index;
@@ -100,14 +100,14 @@ for(let index = 0; index < positions.y.length; ++index)
 }
 
 
-let topResearch = Math.min(...Tech.filter(tech => tech.id < 2000).map(tech => tech.y));
-let topUpgrades = Math.min(...Tech.filter(tech => tech.id > 2000).map(tech => tech.y));
-for(let tech of Tech) tech.y = 1 + tech.y - (tech.id < 2000? topResearch : topUpgrades);
+let topResearch = Math.min(...Techs.filter(tech => tech.id < 2000).map(tech => tech.y));
+let topUpgrades = Math.min(...Techs.filter(tech => tech.id > 2000).map(tech => tech.y));
+for(let tech of Techs) tech.y = 1 + tech.y - (tech.id < 2000? topResearch : topUpgrades);
 
 
 
 
-// Tech.map(({ name, x, y }) => ({ name, x, y }));
+// Techs.map(({ name, x, y }) => ({ name, x, y }));
 
 
 
@@ -204,7 +204,7 @@ export function FractionationProductionSpeed(research) {
 
 const StartingRecipes = [1, 2, 3, 4, 5, 6, 50];
 export function RecipesUnlocked(research, returnSet = false) {
-	if(!research || !research.length) research = Tech;
+	if(!research || !research.length) research = Techs;
 	
 	let unlocked = new Set(StartingRecipes);
 	for(let tech of research)
@@ -217,7 +217,7 @@ export function RecipesUnlocked(research, returnSet = false) {
 }
 
 export function ItemsUnlocked(research, returnSet = false) {
-	if(!research || !research.length) research = Tech;
+	if(!research || !research.length) research = Techs;
 	
 	let unlocked = new Set();
 	for(let tech of research)
@@ -422,22 +422,22 @@ Proliferator.Mix = {
 		// 	.filter(recipe => recipe.results.some(id => id < 2000) && recipe.items.some(id => id < 2000))
 		// );
 		
-		console.groupCollapsed('Least buildings that are extras');
-		Recipes
-		.filter(recipe => recipe.results.some(id => id < 2000) && recipe.items.some(id => id < 2000))
-		.filter(recipe => Proliferator.RecipeBonuses(recipe).canProduceExtra && totalFacilities('extra', recipe) < totalFacilities('speedup', recipe))
-		.map(recipe => {
-			let extras = totalFacilities('extra', recipe);
-			let speedups = totalFacilities('speedup', recipe);
-			let gain = Math.abs((extras - speedups) / Math.max(extras, speedups));
-			console.log(
-				recipe.explicit? Items.find(item => item.id === recipe.results[0]).name : recipe.name,
-				+((gain * 100).toFixed(2)) + '%',
-				{ extras: +extras.toFixed(3), speedups: +speedups.toFixed(3) }
-			);
-			return;
-		});
-		console.groupEnd();
+		// console.groupCollapsed('Least buildings that are extras');
+		// Recipes
+		// .filter(recipe => recipe.results.some(id => id < 2000) && recipe.items.some(id => id < 2000))
+		// .filter(recipe => Proliferator.RecipeBonuses(recipe).canProduceExtra && totalFacilities('extra', recipe) < totalFacilities('speedup', recipe))
+		// .map(recipe => {
+		// 	let extras = totalFacilities('extra', recipe);
+		// 	let speedups = totalFacilities('speedup', recipe);
+		// 	let gain = Math.abs((extras - speedups) / Math.max(extras, speedups));
+		// 	console.log(
+		// 		recipe.explicit? Items.find(item => item.id === recipe.results[0]).name : recipe.name,
+		// 		+((gain * 100).toFixed(2)) + '%',
+		// 		{ extras: +extras.toFixed(3), speedups: +speedups.toFixed(3) }
+		// 	);
+		// 	return;
+		// });
+		// console.groupEnd();
 		
 		
 		return (recipe) => {

@@ -1,6 +1,6 @@
 import { signal, effect, computed } from '@preact/signals';
 import { Items, ItemsUnlocked, Recipes } from './lib/data.js';
-import { Tech } from './lib/data.js';
+import { Techs } from './lib/data.js';
 
 // If there is a conflicting change we might need to reset localStorage
 const StateFormat = '1';
@@ -67,7 +67,7 @@ const state = {
 	timeScale: persistentSignal('timeScale', 'minute'),
 	
 	research: persistentSignal('research', [], {
-		restore: array => array.map(id => Tech.find(tech => tech.id === id)),
+		restore: array => array.map(id => Techs.find(tech => tech.id === id)),
 		persist: array => array.map(tech => tech.id)
 	}),
 	

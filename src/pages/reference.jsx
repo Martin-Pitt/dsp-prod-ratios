@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import {
-	Recipes, Items, Tech, StringFromTypes, t,
+	Recipes, Items, Techs, StringFromTypes, t,
 	AssemblerProductionSpeed,
 	SmelterProductionSpeed,
 	ChemicalProductionSpeed,

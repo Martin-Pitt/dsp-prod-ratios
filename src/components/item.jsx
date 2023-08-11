@@ -2,7 +2,7 @@ import { Items, locale } from '../lib/data';
 
 
 export default function Item(props) {
-	let { item, id, named, count, per, proliferated, points, ...other } = props;
+	let { item, id, named, name, count, per, proliferated, points, ...other } = props;
 	if(!item) item = Items.find(item => item.id === id);
 	if(proliferated && !points) points = state.proliferatorPoints.value;
 	

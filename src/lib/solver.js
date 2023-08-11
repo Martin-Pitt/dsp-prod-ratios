@@ -1,4 +1,4 @@
-import { Tech, Recipes, Items, Strings } from '../lib/data.js';
+import { Techs, Recipes, Items, Strings } from '../lib/data.js';
 
 
 

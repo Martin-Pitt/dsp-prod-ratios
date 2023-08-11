@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'preact/hooks';
 import { Router } from 'preact-router';
 import {
-	Meta, Tech, Recipes, Items, Strings,
+	Meta, Techs, Recipes, Items, Strings,
 	AssemblerProductionSpeed,
 	SmelterProductionSpeed,
 	ChemicalProductionSpeed,
@@ -28,7 +28,7 @@ import Settings from './pages/settings.jsx';
 console.log('Hey there! Want to play with the internal data? These are exposed on `window.…` for you to play with');
 const Debuggables = {
 	Meta,
-	Tech,
+	Techs,
 	Recipes,
 	Items,
 	Strings,

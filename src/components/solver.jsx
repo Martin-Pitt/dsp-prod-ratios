@@ -384,8 +384,10 @@ export default function Solver(props) {
 			{
 				if(proliferator === 'mixed.tsp' || proliferator === 'mixed')
 					proliferator = Proliferator.Mix.TheSuperiorTentacle(solve.recipe);
-				else if(proliferator === 'mixed.fh')
-					proliferator = Proliferator.Mix.FlameHaze(solve.recipe);
+				else if(proliferator === 'mixed.ab')
+					proliferator = Proliferator.Mix.Aaronbog(solve.recipe);
+				else if(proliferator === 'mixed.least')
+					proliferator = Proliferator.Mix.LeastBuildings(solve.recipe);
 			}
 			else if(proliferator === 'custom') proliferator = Proliferator.Mix.TheSuperiorTentacle(solve.recipe);
 			else
@@ -420,8 +422,10 @@ export default function Solver(props) {
 			{
 				if(proliferator === 'mixed.tsp' || proliferator === 'mixed')
 					proliferator = Proliferator.Mix.TheSuperiorTentacle(solve.recipe);
-				else if(proliferator === 'mixed.fh')
-					proliferator = Proliferator.Mix.FlameHaze(solve.recipe);
+				else if(proliferator === 'mixed.ab')
+					proliferator = Proliferator.Mix.Aaronbog(solve.recipe);
+				else if(proliferator === 'mixed.least')
+					proliferator = Proliferator.Mix.LeastBuildings(solve.recipe);
 			}
 			
 			else

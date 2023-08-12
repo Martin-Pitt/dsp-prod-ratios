@@ -14,6 +14,8 @@ import {
 	locale, internalLocale,
 } from './lib/data.js';
 import state from './state.js';
+import { SolverTree, RecipeTree, CalcTree } from './lib/solver.js';
+
 
 import Header from './components/header.jsx';
 
@@ -27,12 +29,8 @@ import Settings from './pages/settings.jsx';
 // Debugging & DevTools fun
 console.log('Hey there! Want to play with the internal data? These are exposed on `window.…` for you to play with');
 const Debuggables = {
-	Meta,
-	Techs,
-	Recipes,
-	Items,
-	Strings,
-	state,
+	Meta, Techs, Recipes, Items, Strings,
+	SolverTree, RecipeTree, CalcTree,
 	AssemblerProductionSpeed,
 	SmelterProductionSpeed,
 	ChemicalProductionSpeed,
@@ -44,6 +42,7 @@ const Debuggables = {
 	StringFromTypes,
 	locale,
 	internalLocale,
+	state,
 };
 Object.assign(window, Debuggables);
 console.log(...Object.keys(Debuggables));

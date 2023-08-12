@@ -8,60 +8,29 @@ export default function Tips(props) {
 					Got FPS problems? Try the <a target="_blank" href="https://dsp.thunderstore.io/package/Selsion/DSPOptimizations/">DSPOptmizations mod</a>
 				</li>
 				<li>
+					Generally you want to aim at having fewer buildings and also avoid using those that affect your UPS the most.
+				</li>
+				<li>
+					Don't use pilers, splitters — they do roughly 20&times; computation of sorters.
+					Merge belts directly and use sorters to split.
+				</li>
+				<li>
+					Avoid Solar and Tesla Towers if you can help it. Use Satellite Substations over Tesla Towers. The game performs connection checks between power facilities every update. Fewer facilities lead to fewer checks and thus better UPS.
+				</li>
+				<li>
 					Unfinished Dyson Shells can contribute to lag. Recommend building it one at a time.
 				</li>
 				<li>
-					Don't use pilers, splitters, solar panels, tesla towers if you can help it
+					If you use proliferators set to speedup production, this can allow you to use fewer buildings in your production chain.
+					On high end materials it is better to use extra products instead.
 				</li>
 				<li>
-					Avoid Pilers — they are performance hungry
+					Avoid having idle facilities and sorters, as they can go into a polling state that is more computationally expensive than when they are actively in operation. For example using lower level sorters on production chains so they are less idle where it makes sense.
 				</li>
 				<li>
-					Use Satellites over Tesla Towers — they are more performant
-				</li>
-				<li>
-					It is best to use proliferators to boost products on more complex/end materials.
-					Most time using proliferators on speed are better, but a few end materials are better at product.
-					
-					It is best to use proliferators to boost products on complex/end materials, while boosting speed on the lower stages.
-					This mix helps reduce the factory size from the upper stage, while helping being UPS friendly on the lower stage.
-					
-					{/*
-						Confirmed Product Materials per The Superior Tentacle:
-						
-						Small Carrier Rocket (obviously)
-						Dyson Sphere Component
-						Frame Material (0.3% difference, negligible aside from material cost)
-						Deuteron Fuel Rod
-						Super Magnetic Rings
-						Electromagnetic Turbine
-						Electric Motor (0.1% difference, negligible aside from material cost)
-						Quantum Chips
-						Proliferator Mk.III
-						Processors
-						Titanium Alloy
-						Circuit Boards (0.02% difference, negligible aside from material cost)
-						Magnetic Ring (0.1% difference, negligible aside from material cost)
-
-						Universe Matrix (Obviously)
-						Information Matrix
-						Gravitational Matrix
-						Graviton Lens
-						Particle Container
-
-						Notables:
-						Electromagnetic Matrix (0.65% difference in favor of speed, negligible aside from material cost)
-						Structure Matrix (1.84% difference in favor of speed, negligible aside from material cost)
-						Particle Container favors speed using Unipolar Magnets
-						
-						---
-						
-						Although you might tweak things to speed to reduce the scale of other industries.
-						For example particle broadband on products, even though speed is most optimal, to reduce need on chemical plants & oil refineries.
-					*/}
-				</li>
-				<li>
-					Use speed on microcrystalline to greatly reduce the size of your processor production
+					Minor optimisations:
+					Shorter belt paths — every additional segment causes more segments.
+					MK.II Sorters perform a tiny bit better than MK.III Sorters.
 				</li>
 			</ul>
 		</main>

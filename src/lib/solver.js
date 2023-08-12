@@ -237,7 +237,7 @@ export function CalcTree(recipeTree, throughput, proliferator = null) {
 					modifier,
 					ingredientsPerMinute,
 					facilities,
-					sorters: facilities * recipe.results.length + recipe.items.length,
+					sorters: facilities * (recipe.results.length + recipe.items.length),
 					// footprint: 
 				},
 				proliferatorType,
@@ -313,7 +313,6 @@ let calcTree = CalcTree(recipeTree, 90, proliferator);
 */
 
 /*
-// Testing permutation space of proliferator choices and optimise against a statistic
 let recipe = Recipes.find(recipe => recipe.name === 'Titanium Alloy');
 let solverTree = SolverTree(recipe);
 let recipeTree = RecipeTree(solverTree);
@@ -337,6 +336,8 @@ function permutator(list) {
 
 let permutations = permutator(recipesWithBonuses);
 
+// Reference values from https://discord.com/channels/750553061369577492/868196064900038766/1072046140737982515
+// Of course the numbers in reality are sketchy, but a relevant comparison can be drawn to eachother and seem to make sense in that context
 let Lag = {
 	Sorter: 0.025339674,
 	Facility: 0.028362772,

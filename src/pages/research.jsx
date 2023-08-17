@@ -46,6 +46,10 @@ function toggleResearch(tech) {
 	if(state.research.value.includes(tech)) unpinResearch(tech);
 	else pinResearch(tech);
 }
+function onResearch(event, tech) {
+	event.preventDefault();
+	toggleResearch(tech);
+}
 
 function resetResearch() {
 	state.research.value = [];
@@ -107,13 +111,10 @@ export default function Research(props) {
 		setMouseDown(true);
 	}, [root.current, setMouseDown]);
 	
+	
 	const [hovered, setHovered] = useState(null);
 	const hoveredTech = useMemo(() => hovered? hoverResearch(hovered) : new Set(), [hovered]);
 	
-	const onResearch = useCallback((event, tech) => {
-		event.preventDefault();
-		toggleResearch(tech);
-	});
 	
 	const mainLinePosition = Techs.find(tech => tech.isMain).y;
 	
@@ -171,6 +172,7 @@ export default function Research(props) {
 				.sort((a, b) => a.isActive === b.isActive? 0 : a.isActive? 1 : -1)
 				.map(link => (
 					<div
+						key={`${link.preTech.id}-${link.tech.id}`}
 						class={classNames('link', {
 							'is-active': link.isActive,
 							'is-main': link.inLine && link.tech.isMain,
@@ -220,6 +222,7 @@ export default function Research(props) {
 					
 					return (
 						<div
+							key={tech.id}
 							class={classNames('tech', {
 								'is-researched': isResearched,
 								'can-research': hasPreTechs && hasImplicitPreTechs,
@@ -241,43 +244,3 @@ export default function Research(props) {
 		</main>
 	);
 }
-
-/*
-style={{
-	gridRowStart: tech.PY, // PY < Y? PY : PY + 1,
-	gridRowEnd: tech.Y, // PY < Y? Y + 1 : Y,
-	gridColumnStart: tech.PX,
-	gridColumnEnd: tech.X,
-	'--index': tech.isMain? 0 : tech.index,
-	
-	// gridArea: `${PY < Y? PY : PY + 1} / ${PX + 1} / ${PY < Y? Y + 1 : Y} / ${X}`,
-	// var(--start-y) / var(--start-x) / var(--end-y) / var(--end-x)
-	// '--start-x': PX + 1,
-	// '--start-y': PY < Y? PY : PY + 1,
-	// '--end-x': X,
-	// '--end-y': PY < Y? Y + 1 : Y,
-}}
-*/
-
-{/* <style>
-	{`.tech[data-id="${tech.id}"] {
-		anchor-name: --tech-${tech.id};
-	}`}
-	{tech.preTechs && tech.preTechs.map(preTech => (
-		`.link[data-start="${tech.id}"][data-end="${preTech}"] {
-			top: anchor(--tech-${tech.id} center);
-			left: anchor(--tech-${tech.id} right);
-			right: anchor(--tech-${preTech} left);
-			bottom: anchor(--tech-${preTech} center);
-		}`
-	))}
-</style> */}
-
-// style={{
-// 	// '--start': `--tech-${tech.id}`,
-// 	// '--end': `--tech-${preTech}`,
-// 	top: `anchor(--tech-${tech.id} center)`,
-// 	left: `anchor(--tech-${tech.id} right)`,
-// 	right: `anchor(--tech-${preTech} left)`,
-// 	bottom: `anchor(--tech-${preTech} center)`,
-// }}

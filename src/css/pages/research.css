@@ -1,13 +1,7 @@
 @layer pages {
 	main.research {
-		display: grid;
 		overflow: scroll;
-		/* grid-auto-columns: 100px; */
-		/* grid-auto-rows: 200px; */
-		/* grid-auto-columns: 100px 0px; */
-		/* grid-auto-rows: 60px 10px 10px 10px; */
-		grid-gap: 40px var(--horizontal-gap);
-		padding: 40px 20px 20px 20px;
+		padding: 0;
 		background:
 			url('../../images/textures/dot-grid.avif') 0 0 / 20px repeat,
 			url('../../images/textures/vignette.avif') center / cover no-repeat
@@ -16,6 +10,23 @@
 		background-attachment: local, fixed;
 		background-color: lch(17 0 0);
 		--horizontal-gap: 60px;
+		cursor: var(--cursor-grab);
+	}
+	
+	main.research .canvas {
+		display: inline-grid;
+		grid-gap: 40px var(--horizontal-gap);
+		/* padding: 40px 20px 20px 20px; */
+		margin: 300px;
+	}
+	
+	main.research.is-dragging {
+		cursor: var(--cursor-grabbing);
+		user-select: none;
+	}
+	
+	main.research.is-dragging > * {
+		pointer-events: none;
 	}
 	
 	main.research .about {

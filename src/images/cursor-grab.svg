@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="29.158" viewBox="0 0 28 29.158">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28.191" height="29.205" viewBox="0 0 28.191 29.205">
   <defs>
     <linearGradient id="linear-gradient" x2="0.9" gradientUnits="objectBoundingBox">
       <stop offset="0" stop-color="#5a483e"/>
@@ -6,7 +6,7 @@
       <stop offset="0.784" stop-color="#635d61"/>
       <stop offset="1" stop-color="#645f65"/>
     </linearGradient>
-    <filter id="Path_130" x="4.089" y="11.351" width="12.267" height="12.226" filterUnits="userSpaceOnUse">
+    <filter id="Path_130" x="3.279" y="11.398" width="12.267" height="12.226" filterUnits="userSpaceOnUse">
       <feOffset dx="1.5" dy="2.5" input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="1.5" result="blur"/>
       <feFlood flood-opacity="0.62"/>
@@ -19,7 +19,7 @@
       <stop offset="0.419" stop-color="#f3c460"/>
       <stop offset="1" stop-color="#fdd66b"/>
     </linearGradient>
-    <filter id="Path_129" x="0.809" y="9.76" width="13.415" height="13.364" filterUnits="userSpaceOnUse">
+    <filter id="Path_129" x="0" y="9.808" width="13.415" height="13.364" filterUnits="userSpaceOnUse">
       <feOffset dx="1.5" dy="2.5" input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="1.5" result="blur-2"/>
       <feFlood flood-opacity="0.62"/>
@@ -30,7 +30,7 @@
       <stop offset="0" stop-color="#eda834"/>
       <stop offset="1" stop-color="#fff586"/>
     </linearGradient>
-    <filter id="Union_6" x="4.819" y="0" width="23.108" height="28.494" filterUnits="userSpaceOnUse">
+    <filter id="Union_6" x="3.722" y="0" width="23.659" height="28.541" filterUnits="userSpaceOnUse">
       <feOffset dx="1.5" dy="2.5" input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="1.5" result="blur-3"/>
       <feFlood flood-opacity="0.62"/>
@@ -38,18 +38,18 @@
       <feComposite in="SourceGraphic"/>
     </filter>
   </defs>
-  <g id="cursor-pointer" transform="translate(-125.244 -191.291)">
-    <g transform="matrix(1, 0, 0, 1, 125.24, 191.29)" filter="url(#Path_130)">
-      <path id="Path_130-2" data-name="Path 130" d="M0,2.521H2.587V0H0Z" transform="translate(7.91 13.35) rotate(19)" fill="url(#linear-gradient)"/>
+  <g id="cursor-grab" transform="translate(-126.054 -191.243)">
+    <g transform="matrix(1, 0, 0, 1, 126.05, 191.24)" filter="url(#Path_130)">
+      <path id="Path_130-2" data-name="Path 130" d="M0,2.521H2.587V0H0Z" transform="translate(7.1 13.4) rotate(19)" fill="url(#linear-gradient)"/>
     </g>
-    <g transform="matrix(1, 0, 0, 1, 125.24, 191.29)" filter="url(#Path_129)">
-      <path id="Path_129-2" data-name="Path 129" d="M0,.409,1.2,0H3.194V3.112H1.1L0,2.775Z" transform="translate(5.01 11.95) rotate(19)" stroke="#212121" stroke-width="0.3" fill="url(#linear-gradient-2)"/>
+    <g transform="matrix(1, 0, 0, 1, 126.05, 191.24)" filter="url(#Path_129)">
+      <path id="Path_129-2" data-name="Path 129" d="M0,.409,1.2,0H3.194V3.112H1.1L0,2.775Z" transform="translate(4.2 12) rotate(19)" stroke="#212121" stroke-width="0.3" fill="url(#linear-gradient-2)"/>
     </g>
-    <g transform="matrix(1, 0, 0, 1, 125.24, 191.29)" filter="url(#Union_6)">
-      <path id="Union_6-2" data-name="Union 6" d="M2.092,19.186,1.207,17.9,0,14l.812-2.653H12.789L13.794,14l-1.005,4.01-.614,1.18Zm3.062-7.843V8.186H8.705v3.158ZM9.018,11.3V8.391H12.4V11.3ZM1.134,8.009,4.5,7.655l.347,3.293L1.481,11.3Zm7.883.272V6.915H12.4V8.281ZM5.154,8.01V6.623H8.705V8.01ZM.731,4.306l3.375-.355.389,3.7L1.12,8.01ZM.536,1.284l.79-1.1L3.074,0l.762.937.314,3L.684,4.3Z" transform="translate(7.98 2.16)" stroke="#212121" stroke-width="0.3" fill="url(#linear-gradient-3)"/>
+    <g transform="matrix(1, 0, 0, 1, 126.05, 191.24)" filter="url(#Union_6)">
+      <path id="Union_6-2" data-name="Union 6" d="M2.092,19.186,1.207,17.9,0,14l.812-2.653h.711L.893,8.1l3.317-.644.632,3.251-3.256.634H12.276L9.017,10.71l.555-2.858,3.319.645-.553,2.846h.45L13.794,14l-1.005,4.01-.613,1.179Zm3.061-7.843V8.186H8.706v3.158Zm4.441-3.6L10.2,4.613l3.318.645L12.912,8.39ZM.167,4.451,3.5,3.8l.7,3.58L.863,8.033ZM5.153,8.01V4.64H8.706V8.01ZM10.262,4.4l.47-2.418.753-.561,2.072.394.5.79-.474,2.44Zm-5.108.062V1.958l.577-.866H8.078l.627.9V4.464ZM-.29,1.458.4.293,2.126-.042l.841.867.574,2.956L.12,4.446Z" transform="translate(7.17 2.21)" stroke="#212121" stroke-width="0.3" fill="url(#linear-gradient-3)"/>
     </g>
     <line id="Line_1" data-name="Line 1" y2="2.38" transform="translate(135.59 206.351)" fill="none" stroke="#000" stroke-width="0.5"/>
     <line id="Line_2" data-name="Line 2" y2="2.38" transform="translate(145.109 206.351)" fill="none" stroke="#000" stroke-width="0.5"/>
-    <rect id="mask" width="28" height="29" transform="translate(125.244 191.448)" fill="rgba(255,255,255,0)"/>
+    <rect id="mask" width="28" height="29" transform="translate(126.244 191.448)" fill="rgba(255,255,255,0)"/>
   </g>
 </svg>

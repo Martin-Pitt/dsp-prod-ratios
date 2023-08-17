@@ -36,6 +36,22 @@
 			url('../images/cursor-text-help.svg') 6 11,
 			url('../images/cursor-text-help.png') 8 8,
 			text;
+		/* --cursor-grab:
+			url('../images/cursor-grab.svg') 8 2,
+			url('../images/cursor-grab.png') 8 2,
+			grab;
+		--cursor-grabbing:
+			url('../images/cursor-grabbing.svg') 8 2,
+			url('../images/cursor-grabbing.png') 8 2,
+			grabbing; */
+		--cursor-grab:
+			url('../images/cursor-grab.svg') 14 14,
+			url('../images/cursor-grab.png') 14 14,
+			grab;
+		--cursor-grabbing:
+			url('../images/cursor-grabbing.svg') 14 14,
+			url('../images/cursor-grabbing.png') 14 14,
+			grabbing;
 	}
 	
 	body {

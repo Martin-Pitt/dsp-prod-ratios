@@ -95,7 +95,7 @@
 		--arrow-aspect: 1.4;
 	}
 	
-	main.research .link.hovered {
+	main.research .link.hovered:not(.is-active) {
 		color: var(--tech-hovered);
 		z-index: 1;
 	}

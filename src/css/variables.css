@@ -15,6 +15,7 @@
 	--tech-researched: lch(30 16.84 158.35);
 	--tech-researched-border: var(--neon-orange2);
 	--tech-link: lch(46 41.43 51.34);
+	--tech-hovered: lch(70 0 0);
 }
 
 

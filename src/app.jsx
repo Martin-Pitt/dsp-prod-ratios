@@ -24,6 +24,8 @@ import Calculator from './pages/calculator.jsx';
 import Research from './pages/research.jsx';
 import Reference from './pages/reference.jsx';
 import Settings from './pages/settings.jsx';
+import Tips from './pages/tips.jsx';
+import Community from './pages/community.jsx';
 
 
 // Debugging & DevTools fun
@@ -173,6 +175,20 @@ export function App(props) {
 						title="Settings | DSP Ratios"
 						description="Settings for DSP Ratios"
 						canonical="https://dsp-ratios.com/settings"
+					/>
+					<ViewTransitionPage
+						path="/tips"
+						element={<Tips/>}
+						title="Tips | DSP Ratios"
+						description="Tips for Dyson Sphere Program"
+						canonical="https://dsp-ratios.com/tips"
+					/>
+					<ViewTransitionPage
+						path="/community"
+						element={<Community/>}
+						title="Community | DSP Ratios"
+						description="Community of Dyson Sphere Program"
+						canonical="https://dsp-ratios.com/community"
 					/>
 				</Router>
 		</>

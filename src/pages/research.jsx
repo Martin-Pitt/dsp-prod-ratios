@@ -1,4 +1,4 @@
-import { useCallback } from 'preact/hooks';
+import { useState, useCallback, useMemo } from 'preact/hooks';
 import classNames from 'classnames';
 import { Techs } from '../lib/data.js';
 import state from '../state.js';
@@ -6,10 +6,15 @@ import state from '../state.js';
 
 function pinResearch(tech) {
 	if(state.research.value.includes(tech)) return;
-	state.research.value = [...state.research.value, tech];
-	if(!tech.preTechs) return;
+	if(tech.items) for(let item of tech.items) {
+		if(state.itemsUnlockedSet.value.has(item)) continue;
+		let itemRecipe = Recipes.find(recipe => recipe.results.includes(item));
+		let itemTech = Techs.find(tech => tech.unlockRecipes?.includes(itemRecipe.id));
+		if(itemTech) pinResearch(itemTech);
+	}
 	if(tech.preTechs) for(let preTech of tech.preTechs) pinResearch(Techs.find(t => t.id === preTech));
 	if(tech.preTechsImplicit) for(let preTech of tech.preTechsImplicit) pinResearch(Techs.find(t => t.id === preTech));
+	state.research.value = [...state.research.value, tech];
 }
 
 function unpinResearch(tech) {
@@ -24,6 +29,21 @@ function unpinResearch(tech) {
 	}
 }
 
+function hoverResearch(tech, set = new Set()) {
+	if(state.research.value.includes(tech)) return set;
+	set.add(tech);
+	if(tech.preTechs) for(let preTech of tech.preTechs) hoverResearch(Techs.find(t => t.id === preTech), set);
+	if(tech.preTechsImplicit) for(let preTech of tech.preTechsImplicit) hoverResearch(Techs.find(t => t.id === preTech), set);
+	if(tech.items) for(let item of tech.items) {
+		if(state.itemsUnlockedSet.value.has(item)) continue;
+		let itemRecipe = Recipes.find(recipe => recipe.results.includes(item));
+		let itemTech = Techs.find(tech => tech.unlockRecipes?.includes(itemRecipe.id));
+		if(itemTech) hoverResearch(itemTech, set);
+	}
+	return set;
+}
+
+
 function toggleResearch(tech) {
 	if(state.research.value.includes(tech)) unpinResearch(tech);
 	else pinResearch(tech);
@@ -35,6 +55,9 @@ function resetResearch() {
 
 
 export default function Research(props) {
+	const [hovered, setHovered] = useState(null);
+	const hoveredTech = useMemo(() => hovered? hoverResearch(hovered) : new Set(), [hovered]);
+	
 	const onResearch = useCallback((event, tech) => {
 		event.preventDefault();
 		toggleResearch(tech);
@@ -98,6 +121,7 @@ export default function Research(props) {
 						'below-main': link.belowMain,
 						'from-main': link.preTech.isMain,
 						'to-main': link.tech.isMain,
+						'hovered': hoveredTech.has(link.tech),
 					})}
 					
 					style={{
@@ -139,10 +163,13 @@ export default function Research(props) {
 						class={classNames('tech', {
 							'is-researched': isResearched,
 							'can-research': hasPreTechs && hasImplicitPreTechs,
+							'hovered': hoveredTech.has(tech),
 						})}
 						data-id={tech.id}
 						style={{ gridArea: `${tech.y} / ${tech.x}` }}
-						onClick={(event) => onResearch(event, tech)}
+						onClick={event => onResearch(event, tech)}
+						onPointerEnter={event => setHovered(tech)}
+						onPointerLeave={event => setHovered(null)}
 					>
 						<div class="icon" data-icon={`tech.${tech.id}`}/>
 						<span class="name">{tech.name}</span>

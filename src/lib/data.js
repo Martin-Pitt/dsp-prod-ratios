@@ -23,7 +23,7 @@ export const Strings = JSONRecurse(undefined, strings);
 
 export const locale = (() => {
 	// TODO: I'd prefer a proper 'best fit' or 'lookup' algorithm here, but also how do we prioritise navigator.languages?
-	for(const Preferred of navigator.languages)
+	for(const Preferred of (navigator?.languages || ['en']))
 	{
 		let preferred = Preferred.toLowerCase();
 		const match = Meta.supportedCanonicalLocales.find(Supported => {

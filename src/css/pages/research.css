@@ -49,6 +49,14 @@
 		border-image-repeat: stretch; */
 	}
 	
+	main.research .tech.hovered {
+		outline: 1px solid var(--tech-hovered);
+	}
+	
+	main.research .tech:hover {
+		outline: 3px solid var(--tech-hovered);
+	}
+	
 	main.research .tech.can-research {
 		background-color: var(--tech-available);
 	}
@@ -85,6 +93,11 @@
 		--base-thickness: 10px;
 		--arrow-thickness: 8px;
 		--arrow-aspect: 1.4;
+	}
+	
+	main.research .link.hovered {
+		color: var(--tech-hovered);
+		z-index: 1;
 	}
 	
 	main.research .link.is-active {

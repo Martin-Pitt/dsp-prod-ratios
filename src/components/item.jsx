@@ -8,7 +8,7 @@ export default function Item(props) {
 	
 	if(props.name) return (
 		<span class="item named" lang={locale} {...other}>
-			<span class="name">{item.name}</span>
+			<span class="name">{item.name}{props.plural? 's' : '' /* TODO: Localisation support needed here */}</span>
 		</span>
 	);
 	
@@ -26,7 +26,7 @@ export default function Item(props) {
 						data-icon={`ui.inc-${proliferated? points : 0}`}
 					/>
 				)}
-			</span> <span class="name">{item.name}</span>
+			</span> <span class="name">{item.name}{props.plural? 's' : '' /* TODO: Localisation support needed here */}</span>
 		</span>
 	);
 	

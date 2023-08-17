@@ -3,6 +3,11 @@ import {
 	Recipes,
 	Items,
 	Strings,
+	AssemblerProductionSpeed,
+	SmelterProductionSpeed,
+	ChemicalProductionSpeed,
+	FractionationProductionSpeed,
+	BeltTransportSpeed,
 	Proliferator,
 	RecipesIgnored,
 } from '../lib/data.js';
@@ -264,6 +269,8 @@ export function CalcTree(recipeTree, throughput, proliferator = null) {
 		isProliferated: !!proliferator
 	};
 }
+
+
 
 
 

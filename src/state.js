@@ -1,10 +1,15 @@
 import { signal, effect, computed } from '@preact/signals';
-import { Items, ItemsUnlocked, Recipes } from './lib/data.js';
-import { Techs } from './lib/data.js';
+import {
+	Items, ItemsUnlocked,
+	Recipes, RecipesUnlocked,
+	Techs,
+} from './lib/data.js';
+
+
 
 // If there is a conflicting change we might need to reset localStorage
 const StateFormat = '1';
-if('localStorage' in window && localStorage.format !== StateFormat)
+if('localStorage' in globalThis && localStorage.format !== StateFormat)
 {
 	localStorage.clear();
 	localStorage.format = StateFormat;
@@ -13,7 +18,7 @@ if('localStorage' in window && localStorage.format !== StateFormat)
 
 
 function persistentSignal(name, fallback, fn) {
-	if(!'localStorage' in window) return signal(fallback);
+	if(!('localStorage' in globalThis)) return signal(fallback);
 	
 	let value = fallback;
 	
@@ -36,7 +41,7 @@ function persistentSignal(name, fallback, fn) {
 }
 
 function temporarySignal(name, fallback, fn) {
-	if(!'sessionStorage' in window) return signal(fallback);
+	if(!('sessionStorage' in globalThis)) return signal(fallback);
 	
 	let value = fallback;
 	

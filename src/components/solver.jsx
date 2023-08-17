@@ -15,6 +15,7 @@ import {
 import state from '../state.js';
 import Item from './item.jsx';
 import Recipe from './recipe.jsx';
+import Tech from './tech.jsx';
 
 
 
@@ -264,81 +265,12 @@ function SolveTree({ solve, depth = 0, throughput, ingredient = null, hasProlife
 
 
 
-function CalcFacilities({ solve, depth = 0, throughput, ingredient = null, hasProliferators = false, proliferated = null }) {
-	if(!solve || depth > 10) return 0;
-	
-	if('item' in solve) return 0;
-	
-	else
-	{
-		let { recipe, children } = solve;
-		
-		let modifier = 1.0;
-		switch(recipe.type) {
-			case 'ASSEMBLE': modifier = AssemblerProductionSpeed.get(state.preferred.assembler.value); break;
-			case 'SMELT': modifier = SmelterProductionSpeed.get(state.preferred.smelter.value); break;
-			case 'CHEMICAL': modifier = ChemicalProductionSpeed.get(state.preferred.chemical.value); break;
-			case 'FRACTIONATE': modifier = FractionationProductionSpeed(state.research.value) / 60 / 60; break;
-		}
-		
-		if(!ingredient) ingredient = recipe.results[0];
-		let ingredientIndex = recipe.results.findIndex(result => result === ingredient);
-		let ingredientsPerMinute = recipe.resultCounts[ingredientIndex] * (60/recipe.timeSpend*60);
-		
-		let proliferatorPoints = state.proliferatorPoints.value;
-		let proliferatorType = state.proliferatorCustom.value.has(solve.id)? state.proliferatorCustom.value.get(solve.id) : state.proliferatorPreset.value.get(solve.id);
-		if(proliferatorPoints)
-		{
-			let index = Proliferator.Ability.indexOf(proliferatorPoints);
-			switch(proliferatorType)
-			{
-				case 'speedup': modifier *= Proliferator.ProductionSpeed[index]; break;
-				case 'extra': ingredientsPerMinute *= Proliferator.ExtraProducts[index]; break;
-			}
-		}
-		
-		let facilities = throughput / ingredientsPerMinute / modifier;
-		let subFacilities = children? children.map((child, index) => {
-			if(Array.isArray(child))
-			{
-				let item = Items.find(item => item.id === recipe.items[index]);
-				let preferredAltRecipe = state.preferred[item.id]?.value;
-				
-				const hasMiningFrom = preferredAltRecipe === item.id && item.miningFrom;
-				
-				if(!hasMiningFrom && !state.recipesUnlockedSet.value.has(preferredAltRecipe)) return 0;
-				
-				let preferredChild = child.find(d => d.recipe?.id === preferredAltRecipe);
-				if(!preferredChild && hasMiningFrom) preferredChild = child.find(d => d.item === item);
-				child = preferredChild;
-			}
-			
-			if(!child) return 0;
-			
-			let itemsPerMinute = recipe.itemCounts[index] * (60/recipe.timeSpend*60);
-			return CalcFacilities({
-				solve: child,
-				depth: depth + 1,
-				throughput: facilities * itemsPerMinute * modifier,
-				ingredient: recipe.items[index],
-				hasProliferators: hasProliferators,
-				proliferated: proliferatorType !== 'none',
-			});
-		}).reduce((accumulator, current) => accumulator + current, 0) : 0;
-		
-		return facilities + subFacilities;
-	}
-}
-
-
-
-
 
 export default function Solver(props) {
 	if(!state.recipe.value) return <div class="solver"/>;
 	
-	const recipesUnlocked = state.recipesUnlocked.value; // Array.from(state.recipesUnlocked.value, id => Recipes.find(recipe => recipe.id === id)); // useMemo(() => RecipesUnlocked(state.research.value), [state.research.value]);
-	const itemsUnlocked = state.itemsUnlocked.value; // Array.from(state.itemsUnlocked.value, id => Items.find(item => item.id === id)); // useMemo(() => ItemsUnlocked(state.research.value), [state.research.value]);
+	const recipesUnlocked = state.recipesUnlocked.value;
+	const itemsUnlocked = state.itemsUnlocked.value;
 	
 	const [solve, solveNodes] = useMemo(() => {
 		let recipesUsed = new Set();
@@ -346,7 +278,7 @@ export default function Solver(props) {
 		let solveNodes = new Set();
 		
 		function solve(recipe, depth = 0, cyclic = new Map(), node = {}) {
-			if(depth > 10) throw new 'Hit max depth'; // return null;
+			if(depth > 10) throw new 'Hit max depth';
 			
 			node.recipe = recipe;
 			if(depth) recipesUsed.add(recipe.id);
@@ -354,7 +286,6 @@ export default function Solver(props) {
 			
 			if(recipe.items.length)
 			{
-				// node.children = {};
 				node.children = [];
 				
 				for(let id of recipe.items)
@@ -363,15 +294,12 @@ export default function Solver(props) {
 					let subNodes = [];
 					
 					let subRecipes = recipesUnlocked.filter(subRecipe => recipe !== subRecipe && subRecipe.results.includes(id) && !RecipesIgnored.has(subRecipe.id));
-					// if(!subRecipes.length)
 					
 					if(!subRecipes.length || item.miningFrom)
 					{
 						subNodes.push({ item });
-						// node.children.push({ item });
 					}
 					
-					// else
 					if(subRecipes.length)
 					{
 						for(let iter = 0; iter < subRecipes.length; ++iter)
@@ -392,9 +320,6 @@ export default function Solver(props) {
 								subNodes.push(subNode);
 							}
 						}
-						
-						// if(subNodes.length === 1) subNodes = subNodes[0];
-						// node.children.push(subNodes);
 					}
 					
 					if(subNodes.length === 1) subNodes = subNodes[0];
@@ -417,7 +342,6 @@ export default function Solver(props) {
 	}, [
 		state.research.value,
 		state.recipe.value,
-		// ...Object.values(state.preferred).map(pref => pref.value)
 	]);
 	
 	window.solve = solve;
@@ -507,15 +431,6 @@ export default function Solver(props) {
 		
 		return state.proliferatorPreset.value = preset;
 	}, [state.proliferator.value]);
-	
-	let totalFacilities = // useMemo(() =>
-		CalcFacilities({
-			solve,
-			throughput: state.per.value,
-			hasProliferators,
-		});
-	// 	[solveNodes]
-	// );
 	
 	return (
 		<div class={classNames('solver', { 'has-proliferators': hasProliferators })}>

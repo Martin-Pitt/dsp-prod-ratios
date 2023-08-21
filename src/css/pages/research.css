@@ -9,15 +9,17 @@
 		background-blend-mode: overlay, normal;
 		background-attachment: local, fixed;
 		background-color: lch(17 0 0);
-		--horizontal-gap: 60px;
 		cursor: var(--cursor-grab);
 	}
 	
 	main.research .canvas {
 		display: inline-grid;
+		grid-auto-columns: 100px;
+		grid-auto-rows: 60px;
 		grid-gap: 40px var(--horizontal-gap);
 		/* padding: 40px 20px 20px 20px; */
-		margin: 300px;
+		margin: 500px;
+		--horizontal-gap: 60px;
 	}
 	
 	main.research.is-dragging {
@@ -43,6 +45,39 @@
 		padding: 6px 10px;
 		border: 1px solid var(--neon-red);
 	}
+	
+	main.research .epoch {
+		position: relative;
+		grid-area: 1 / 1 / -1 / -1;
+		/* background: var(--tint); */
+		/* background: radial-gradient(16px at center, var(--tint) 2px, lch(0 0 0 / 0.0) 3px) center / 16px 16px; */
+		/* background: repeating-radial-gradient(16px at center, var(--tint) 2px, lch(0 0 0 / 0.0) 6px) center / 16px 16px; */
+		/* opacity: 0.1; */
+		
+		background-image:
+			repeating-linear-gradient(var(--angle), var(--tint), var(--tint) 4px, transparent 4px, transparent 7px),
+			repeating-linear-gradient(var(--angle), var(--tint), var(--tint) 96px, transparent 112px, transparent 128px, var(--tint) 144px, var(--tint) 240px);
+		/* background-blend-mode: difference; */
+		pointer-events: none;
+		opacity: 0.1;
+		--tint: lch(100 0 0 / 0.5);
+		--angle: 0deg;
+	}
+	
+	main.research .epoch:nth-of-type(1) { --angle: 5deg }
+	main.research .epoch:nth-of-type(2) { --angle: -40deg }
+	main.research .epoch:nth-of-type(3) { --angle: 20deg }
+	main.research .epoch:nth-of-type(4) { --angle: -60deg }
+	main.research .epoch:nth-of-type(5) { --angle: 30deg }
+	main.research .epoch:nth-of-type(6) { --angle: -45deg }
+	
+	main.research .epoch:nth-of-type(1) { --angle: 90deg }
+	main.research .epoch:nth-of-type(2) { --angle: -80deg }
+	main.research .epoch:nth-of-type(3) { --angle: 70deg }
+	main.research .epoch:nth-of-type(4) { --angle: -80deg }
+	main.research .epoch:nth-of-type(5) { --angle: 110deg }
+	main.research .epoch:nth-of-type(6) { --angle: -95deg }
+	
 	
 	main.research .tech {
 		position: relative;
@@ -80,7 +115,10 @@
 	main.research .tech .name {
 		position: absolute;
 		left: 0;
-		bottom: calc(100% + 4px);
+		right: 0;
+		bottom: 100%;
+		min-width: fit-content;
+		padding-bottom: 4px;
 		color: var(--neon-white);
 		font-stretch: 80%;
 		font-size: 0.75rem;
@@ -100,6 +138,7 @@
 		margin-right: 100px;
 		color: var(--tech-unavailable);
 		visibility: hidden;
+		pointer-events: none;
 		--line-thickness: 2px;
 		--base-thickness: 10px;
 		--arrow-thickness: 8px;

@@ -1,6 +1,6 @@
 import { useState, useCallback, useMemo, useRef, useEffect } from 'preact/hooks';
 import classNames from 'classnames';
-import { Techs } from '../lib/data.js';
+import { Recipes, Techs } from '../lib/data.js';
 import state from '../state.js';
 
 
@@ -25,6 +25,14 @@ function unpinResearch(tech) {
 	{
 		if(postTech.preTechs?.includes(tech.id)) unpinResearch(postTech);
 		if(postTech.preTechsImplicit?.includes(tech.id)) unpinResearch(postTech);
+	}
+	
+	if(tech.unlockRecipes) for(let id of tech.unlockRecipes)
+	{
+		let recipe = Recipes.find(recipe => recipe.id === id);
+		for(let postTech of state.research.value)
+			if(postTech.items?.some(item => recipe.results?.includes(item)))
+				unpinResearch(postTech);
 	}
 }
 
@@ -55,6 +63,16 @@ function resetResearch() {
 	state.research.value = [];
 }
 
+function getEpochTechs(epoch) {
+	return Techs.filter(tech =>
+		tech.id < 2000 &&
+		tech.items?.every(item => item <= epoch) &&
+		(epoch === 6000? true :
+			tech.items.some(item => item === epoch)
+		)
+	);
+}
+
 
 
 export default function Research(props) {
@@ -69,8 +87,8 @@ export default function Research(props) {
 		
 		else
 		{
-			root.current.scrollLeft = 300 - 40;
-			root.current.scrollTop = 300 - 40;
+			root.current.scrollLeft = 500 - 40;
+			root.current.scrollTop = 500 - 40;
 		}
 		
 		return () => {
@@ -86,7 +104,7 @@ export default function Research(props) {
 	
 	const [isMouseDown, setMouseDown] = useState(false);
 	const [isDragging, setDragging] = useState(false);
-	let pos = { top: 0, left: 0, startX: 0, startY: 0, x: 0, y: 0 };
+	const [pos, setPos] = useState({ top: 0, left: 0, x: 0, y: 0 });
 	const onMouseMoveScrollDrag = useCallback(event => {
 		let dx = event.clientX - pos.x;
 		let dy = event.clientY - pos.y;
@@ -94,7 +112,7 @@ export default function Research(props) {
 		root.current.scrollTop = pos.top - dy;
 		
 		if(!isDragging && (Math.abs(dx) > 4 || Math.abs(dy) > 4)) setDragging(true);
-	}, [root.current, setDragging]);
+	}, [root.current, setDragging, pos]);
 	
 	const onMouseUpScrollDrag = useCallback(event => {
 		setDragging(false);
@@ -104,19 +122,27 @@ export default function Research(props) {
 	}, [root.current, setDragging, setMouseDown]);
 	
 	const onMouseDownScrollDrag = useCallback(event => {
-		pos.left = root.current.scrollLeft;
-		pos.top = root.current.scrollTop;
-		pos.x = event.clientX;
-		pos.y = event.clientY;
+		setPos({
+			left: root.current.scrollLeft,
+			top: root.current.scrollTop,
+			x: event.clientX,
+			y: event.clientY,
+		});
+		
 		setMouseDown(true);
-	}, [root.current, setMouseDown]);
+	}, [root.current, setMouseDown, setPos]);
 	
 	
 	const [hovered, setHovered] = useState(null);
 	const hoveredTech = useMemo(() => hovered? hoverResearch(hovered) : new Set(), [hovered]);
 	
+	const techs = Techs.filter(tech => tech.id < 2000);
+	const mainLinePosition = techs.find(tech => tech.isMain).y;
 	
-	const mainLinePosition = Techs.find(tech => tech.isMain).y;
+	let techsX = techs.map(tech => tech.x);
+	let techsY = techs.map(tech => tech.y);
+	const columns = Math.max(...techsX);
+	const rows = Math.max(...techsY);
 	
 	return (
 		<main
@@ -127,12 +153,143 @@ export default function Research(props) {
 			onScroll={saveScroll}
 			ref={root}
 		>
-			<div class="canvas">
+			<div
+				class="canvas"
+				style={{
+					gridTemplateColumns: `repeat(${columns}, 100px)`,
+					gridTemplateRows: `repeat(${rows}, 60px)`,
+				}}
+			>
 				<p class="about">
 					Select your research progress so far, this tool will then only show recipes available to you.
 					{state.research.value.length? <button class="reset" onClick={resetResearch}>Reset research</button> : <><br/><br/>With nothing selected, all recipes are available.</>}
 				</p>
-				{Techs.filter(tech => tech.id < 2000).map(tech => {
+				{[/*
+					6000,
+					6001,
+					6002,
+					6003,
+					6004,
+					6005,
+					6006,
+				*/].map(epoch => {
+					const epochColours = new Map([
+						[6000, 'var(--jello-none)'],
+						[6001, 'var(--jello-blue)'],
+						[6002, 'var(--jello-red)'],
+						[6003, 'var(--jello-yellow)'],
+						[6004, 'var(--jello-purple)'],
+						[6005, 'var(--jello-green)'],
+						[6006, 'var(--jello-white)'],
+					])
+					const tileWidth = 100;
+					const tileHeight = 60;
+					const gapWidth = 60;
+					const gapHeight = 40;
+					const canvasWidth = ((columns * (tileWidth + gapWidth)) - gapWidth) + gapWidth;
+					const canvasHeight = ((rows * (tileHeight + gapHeight)) - gapHeight) + gapHeight;
+					
+					function gridToPixel({ x, y }) { return { x: (x-1) * (tileWidth + gapWidth), y: (y-1) * (tileHeight + gapHeight) } }
+					function pixelToPath({ x, y }) { return { x: (gapWidth*0.5 + x) / canvasWidth, y: (gapHeight*0.5 + y) / canvasHeight } }
+					function pathToPolygon({ x, y }) { return `${x * 100}% ${y * 100}%` }
+					function posToIndex({ x, y }) { return x + y*100 }
+					
+					let collisions = Techs.filter(tech => tech.id < 2000).reduce((accumulator, current) => {
+						accumulator.set(posToIndex(current), current);
+						return accumulator;
+					}, new Map);
+					
+					let shape = [];
+					
+					/*
+					let points = getEpochTechs(epoch)
+					.map(({ x, y }) => ({ x, y }))
+					.sort((a, b) => a.y < b.y? -1 : a.y > b.y? 1 : 0)
+					.sort((a, b) => a.x < b.x? -1 : a.x > b.x? 1 : 0)
+					.reduce((accumulator, current) => {
+						let column = accumulator.find(c => c.x === current.x);
+						if(!column) accumulator.push(column = { x: current.x, rows: [] });
+						column.rows.push(current.y);
+						return accumulator;
+					}, [])
+					.map(({ x, rows }) => {
+						let regions = rows.reduce((regions, y, i, rows) => {
+							let region = regions[regions.length - 1];
+							
+							if(!region)
+								regions.push(region = [y]);
+							
+							else
+							{
+								for(let testY = region[region.length - 1] + 1; testY < y; ++testY)
+								{
+									if(collisions.has(posToIndex({ x, y: testY })))
+									{
+										regions.push(region = []);
+										break;
+									}
+								}
+								
+								region.push(y);
+							}
+							
+							return regions;
+						}, []);
+						
+						return regions.map(region => {
+							if(region.length === 1) return [{ x, y: region[0] }];
+							return [
+								{ x, y: region[0] },
+								{ x, y: region[region.length - 1] }
+							];
+						});
+					});
+					
+					let shape = points.flatMap((column, index, columns) => {
+						let hasNextColumn = index < columns.length - 1;
+						let hasPrevColumn = index > 0;
+						return column.flatMap(rows => {
+							let start, end;
+							if(rows.length === 1)
+							{
+								start = end = rows.map(gridToPixel)[0];
+							}
+							
+							else
+							{
+								[start, end] = rows.map(gridToPixel);
+							}
+							
+							let topEdge = gapHeight*0.7;
+							let leftEdge = hasPrevColumn? gapWidth*0.5 : gapWidth*0.5;
+							let rightEdge = tileWidth + (hasNextColumn? gapWidth*0.5 : gapWidth*0.5);
+							let bottomEdge = tileHeight + gapHeight*0.3;
+							return [
+								{ x: start.x - leftEdge, y: start.y - topEdge },
+								{ x: start.x + rightEdge, y: start.y - topEdge },
+								{ x: end.x + rightEdge, y: end.y + bottomEdge },
+								{ x: end.x - leftEdge, y: end.y + bottomEdge },
+								{ x: start.x - leftEdge, y: start.y - topEdge },
+								{ x: 0, y: 0 },
+							];
+						})
+					}).map(pixelToPath);*/
+					
+					return (
+						<div
+							class="epoch"
+							style={{
+								inset: `${gapHeight*-0.5}px ${gapWidth*-0.5}px`,
+								width: `${canvasWidth}px`,
+								height: `${canvasHeight}px`,
+								clipPath: `polygon(${shape.map(pathToPolygon).join(', ')})`,
+								'--tint': epochColours.get(epoch),
+							}}
+							// style={{ gridArea: `${tech.y} / ${tech.x}` }}
+						/>
+					);
+				})}
+				{techs.map(tech => {
 					if(!tech.preTechs) return [];
 					
 					const isResearched = state.research.value.includes(tech);
@@ -215,7 +372,7 @@ export default function Research(props) {
 						)}
 					</div>
 				))}
-				{Techs.filter(tech => tech.id < 2000).map(tech => {
+				{techs.map(tech => {
 					const isResearched = state.research.value.includes(tech);
 					const hasPreTechs = !tech.preTechs || tech.preTechs.every(id => state.research.value.includes(Techs.find(t => t.id === id)));
 					const hasImplicitPreTechs = !tech.preTechsImplicit || tech.preTechsImplicit.every(id => state.research.value.includes(Techs.find(t => t.id === id)));

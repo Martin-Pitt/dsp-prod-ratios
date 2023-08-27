@@ -4,6 +4,7 @@
 @import url('./css/icons.css');
 @import url('./css/skeleton.css');
 @import url('./css/fonts.css');
+@import url('./css/components/loader.css');
 @import url('./css/components/item.css');
 @import url('./css/components/recipe.css');
 @import url('./css/components/tech.css');

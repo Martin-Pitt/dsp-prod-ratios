@@ -1,0 +1,92 @@
+@layer components {
+	.tbp-loader,
+	.tbp-loader::before,
+	.tbp-loader::after {
+		content: '';
+		position: absolute;
+		top: calc(50% - 24px);
+		left: calc(50% - 24px);
+		width: 48px;
+		height: 48px;
+	}
+	
+	.tbp-loader {
+		background: url('../../images/textures/star-grey.avif') center / cover no-repeat;
+		transform-style: preserve-3d;
+		animation: figure-eight 9s linear infinite;
+	}
+	
+	.tbp-loader::before,
+	.tbp-loader::after {
+		animation:
+			figure-eight-invert 9s linear infinite,
+			figure-eight 9s linear infinite
+		;
+		animation-composition: add;
+	}
+	
+	.tbp-loader::before {
+		background: url('../../images/textures/star-red.avif') center / cover no-repeat;
+		animation-delay: 0s, -3s;
+		
+	}
+	
+	.tbp-loader::after {
+		background: url('../../images/textures/star-vio.avif') center / cover no-repeat;
+		animation-delay: 0s, -6s;
+	}
+	
+	@keyframes figure-eight {
+		from { transform: rotateX(1turn) rotateY(1turn) translateZ(48px) rotateY(-1turn) rotateX(-1turn) }
+		to { transform: rotateX(-1turn) rotateY(-1turn) translateZ(48px) rotateY(1turn) rotateX(1turn) }
+	}
+	
+	@keyframes figure-eight-invert {
+		from { transform: rotateX(-1turn) rotateY(-1turn) translateZ(48px) rotateY(1turn) rotateX(1turn) }
+		to { transform: rotateX(1turn) rotateY(1turn) translateZ(48px) rotateY(-1turn) rotateX(-1turn) }
+	}
+	
+	
+	
+	.satellite-loader {
+		position: absolute;
+		top: calc(50% - 50px);
+		left: calc(50% - 50px);
+		width: 100px;
+		height: 100px;
+		background:
+			url('../../images/textures/flare04-01.png') center / 100px no-repeat;
+			/* url('../../images/textures/sun-mark-15px.avif') center / 20px no-repeat; */
+		perspective: 400px;
+		transform-style: preserve-3d;
+	}
+	
+	.satellite-loader::before,
+	.satellite-loader::after {
+		content: '';
+		position: absolute;
+		top: calc(50% - 20px);
+		left: calc(50% - 20px);
+		width: 40px;
+		height: 40px;
+		background: url('../../images/textures/dyson-shell-icon-80.avif') center / cover no-repeat;
+	}
+	
+	.satellite-loader::before {
+		animation: satellite-orbit-1 16s infinite linear;
+	}
+	
+	.satellite-loader::after {
+		animation: satellite-orbit-2 6s infinite linear;
+	}
+	
+	@keyframes satellite-orbit-1 {
+		from { transform: rotate3d(-0.15, 0.95, 0, 2turn) translateZ(100px) scale(0.4) rotateZ(0turn); }
+		to { transform: rotate3d(-0.15, 0.95, 0, 0turn) translateZ(100px) scale(0.4) rotateZ(2turn); }
+	}
+	
+	@keyframes satellite-orbit-2 {
+		from { transform: rotate3d(0.1, 0.9, 0, 2turn) translateZ(60px) scale(0.4) rotateZ(1turn); }
+		to { transform: rotate3d(0.1, 0.9, 0, 0turn) translateZ(60px) scale(0.4) rotateZ(0turn); }
+	}
+}

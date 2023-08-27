@@ -39,7 +39,7 @@ export default function Intro(props) {
 								<time class="news-pubdate" dateTime={news.item.pubDate.toJSON()}>{news.item.pubDate.toLocaleDateString()}</time> */}
 							</div>
 						</>
-					) : <div class="loader"/>}
+					) : <div class="tbp-loader"/>}
 				</article>
 				
 				<h3>

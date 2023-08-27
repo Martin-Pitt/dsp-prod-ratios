@@ -69,7 +69,7 @@ const state = {
 	
 	news: signal(null),
 	
-	lastVisit: localStorage.getItem('last-visit')? new Date(localStorage.getItem('last-visit')) : null,
+	lastVisit: localStorage.getItem('last-visit')? new Date(localStorage.getItem('last-visit')) : new Date(),
 };
 
 localStorage.setItem('last-visit', new Date());

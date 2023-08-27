@@ -120,6 +120,7 @@
 		font-weight: 600;
 		font-size: 8px;
 		line-height: 1;
+		white-space: nowrap;
 		clip-path: polygon(0 4px, 4px 0, 100% 0, 100% calc(100% - 3px), calc(100% - 3px) 100%, 0 100%);
 	}
 	
@@ -127,6 +128,10 @@
 		content: 'NEW';
 		background: lch(59 87.3 39.08);
 		color: white;
+	}
+	
+	[data-new]:not([data-new=""])::after {
+		content: 'NEW ' attr(data-new);
 	}
 	
 	[data-wip]::after {

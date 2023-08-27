@@ -1,6 +1,5 @@
-// import { NavLink, useNavigate } from 'react-router-dom';
+import { useState, useEffect } from 'preact/hooks';
 import { Link } from 'preact-router/match';
-
 import classNames from 'classnames';
 import state from '../state.js';
 import iconGithub from '../images/github-mark-white.svg';
@@ -11,11 +10,11 @@ function NavLink(props) {
 }
 
 
-
 export default function Header(props) {
+	const news = state.news.value;
 	return (
 		<header class="app-header">
-			<NavLink class="title-link" href="/">
+			<NavLink class="title-link" href="/" data-new={news?.item.isNew? 'NEWS' : null}>
 				<h1 class="title">
 					<img class="logo" src={logo} alt=""/>
 					DSP Ratios
@@ -26,7 +25,7 @@ export default function Header(props) {
 				<NavLink class={classNames('link', { 'has-research': state.research.value.length > 0 })} href="/research">Research</NavLink>
 				<NavLink class="link" href="/reference" data-wip>Reference</NavLink>
 			</div>
-			<a class="github" target="_blank" href="https://github.com/Martin-Pitt/dsp-prod-ratios">
+			<a class="github" rel="noreferrer" target="_blank" href="https://github.com/Martin-Pitt/dsp-prod-ratios">
 				<img class="icon" src={iconGithub} alt=""/>
 			</a>
 		</header>
@@ -34,8 +33,8 @@ export default function Header(props) {
 }
 
 
-/*
 
+/*
 
 const RelativePaths = [
 	'/',

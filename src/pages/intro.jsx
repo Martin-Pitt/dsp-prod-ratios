@@ -1,13 +1,14 @@
+import { useState, useEffect } from 'preact/hooks';
 import { Link } from 'preact-router/match';
 import Item from '../components/item';
 import Recipe from '../components/recipe';
 import { BeltTransportSpeed } from '../lib/data';
-
-
+import classNames from 'classnames';
 
 
 
 export default function Intro(props) {
+	const news = state.news.value;
 	return (
 		<main class="page intro">
 			<div class="page-content">
@@ -15,8 +16,35 @@ export default function Intro(props) {
 					About DSP Ratios
 				</h2>
 				<p class="desc">
-					<b>DSP Ratios</b> is an unofficial calculator for <a class="link external-link" target="_blank" rel="noopener noreferrer" href="https://store.steampowered.com/app/1366540/Dyson_Sphere_Program/">Dyson Sphere Program</a> (DSP) to help you plan and design production lines, to provide the best tools COSMO can afford to build massive-scale automated production lines.
+					<b>DSP Ratios</b> is an unofficial calculator for <a class="link external-link" target="_blank" rel="noreferrer" href="https://store.steampowered.com/app/1366540/Dyson_Sphere_Program/">Dyson Sphere Program</a> (DSP) to help you plan and design production lines, to provide the best tools COSMO can afford to build massive-scale automated production lines.
 				</p>
+				
+				{/* <h3>{news.title}</h3>
+				<p class="news-description">{news.description}</p> */}
+				
+				<article class={classNames('news', { 'is-loading': !news, 'is-snippet': news?.item.snippet, 'is-new': news?.item.isNew })}>
+					{news? (
+						<>
+							<header className="news-header">
+								<h3 class="news-title" data-new={news?.item.isNew? 'SINCE LAST VISIT' : null}>{news.item.title}</h3>
+								<div class="news-header-edge"/>
+							</header>
+							<div class="news-article">
+								<p class="news-content" dangerouslySetInnerHTML={{ __html: news.item.snippet || news.item.description }}/>
+								<a class="read-more external-link" target="_blank" rel="noreferrer" href={news.item.link}>Read More</a>
+								<p class="news-meta">
+									NEWS POSTED <time class="news-pubdate" dateTime={news.item.pubDate.toJSON()}>{news.item.pubDate.toLocaleDateString(navigator.languages, { dateStyle: 'full' })}</time> by <address class="news-author">{news.item.author}</address>
+								</p>
+								{/* <address class="news-author">{news.item.author}</address>
+								<time class="news-pubdate" dateTime={news.item.pubDate.toJSON()}>{news.item.pubDate.toLocaleDateString()}</time> */}
+							</div>
+						</>
+					) : <div class="loader"/>}
+				</article>
+				
+				<h3>
+					Quicklinks
+				</h3>
 				
 				<ul class="tiles">
 					<li class="tile tile--research">
@@ -36,28 +64,28 @@ export default function Intro(props) {
 					</li>
 					<li class="tile tile--github">
 						<p>
-							Spotted any issues? Check the <a class="link external-link" target="_blank" rel="noopener noreferrer" href="https://github.com/Martin-Pitt/dsp-prod-ratios/issues">github&nbsp;project</a>
+							Spotted any issues? Check the <a class="link external-link" target="_blank" rel="noreferrer" href="https://github.com/Martin-Pitt/dsp-prod-ratios/issues">github&nbsp;project</a>
 						</p>
 					</li>
 					<li class="tile tile--dummies">
 						<p>
-							Learn all the basics, tips & tricks and best practices — <a class="link external-link" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/document/d/16dKGU5dfRpUtI2dtEJnBiUps4ccdzQnFscYnl93Q7v8/edit">DSP for Dummies</a>
+							Learn all the basics, tips & tricks and best practices — <a class="link external-link" target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/16dKGU5dfRpUtI2dtEJnBiUps4ccdzQnFscYnl93Q7v8/edit">DSP for Dummies</a>
 						</p>
 					</li>
 					
 					{/* <li class="tile tile--translate">
 						<p>
-							Translate me to different languages! See <a class="link external-link" target="_blank" rel="noopener noreferrer" href="…">translations</a>
+							Translate me to different languages! See <a class="link external-link" target="_blank" rel="noreferrer" href="…">translations</a>
 						</p>
 					</li> */}
 					<li class="tile tile--discord">
 						<p>
-							Got any questions? Ask the <a class="link external-link" target="_blank" rel="noopener noreferrer" href="https://discord.com/servers/dyson-sphere-program-750553061369577492">Discord</a>
+							Got any questions? Ask the <a class="link external-link" target="_blank" rel="noreferrer" href="https://discord.com/servers/dyson-sphere-program-750553061369577492">Discord</a>
 						</p>
 					</li>
 					<li class="tile tile--reddit">
 						<p>
-							See what's new on <a class="link external-link" target="_blank" rel="noopener noreferrer" href="https://reddit.com/r/Dyson_Sphere_Program/">r/Dyson_Sphere_Program</a>
+							See what's new on <a class="link external-link" target="_blank" rel="noreferrer" href="https://reddit.com/r/Dyson_Sphere_Program/">r/Dyson_Sphere_Program</a>
 						</p>
 					</li>
 				</ul>

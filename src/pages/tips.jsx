@@ -27,11 +27,25 @@ export default function Tips(props) {
 				)}
 			</p>
 			<h3>
+				Gameplay
+			</h3>
+			<ul>
+				<li>
+					Fire Ice is the most important resource. Most commonly you will find gas giants that produce Fire Ice, or you can find Fire Ice Veins on some planets.
+				</li>
+				<li>
+					Second most important is Sulfuric Acid. You can find some planets that have Sulfuric Acid Oceans, which you can use a Water Pump on to gather the Sulfuric Acid.
+				</li>
+				<li>
+					
+				</li>
+			</ul>
+			<h3>
 				Performance
 			</h3>
 			<ul>
 				<li>
-					Got FPS problems? Try the <a target="_blank" href="https://dsp.thunderstore.io/package/Selsion/DSPOptimizations/">DSPOptmizations mod</a>
+					Got FPS problems? Try the <a target="_blank" rel="noreferrer" href="https://dsp.thunderstore.io/package/Selsion/DSPOptimizations/">DSPOptmizations</a> and <a target="_blank" rel="noreferrer" href="https://dsp.thunderstore.io/package/starfi5h/AlterTickrate/">AlterTickRate</a> mods
 				</li>
 				<li>
 					Generally you want to aim at having fewer buildings and also avoid using those that affect your UPS the most.
@@ -47,7 +61,7 @@ export default function Tips(props) {
 					Fewer facilities lead to fewer checks and thus better UPS.
 				</li>
 				<li class={classNames({ 'is-locked': isLockedItem(2312) })}>
-					Unfinished Dyson Shells can contribute to lag. Recommend building it one shell at a time.
+					[High Impact] Unfinished Dyson Shells can contribute to lag. Recommend building it one shell at a time.
 				</li>
 				<li class={classNames({ 'is-locked': isLockedItem(1141) })}>
 					If you use <Item id={1141} named plural/> with speedup production you can use fewer buildings in your production chain.
@@ -56,10 +70,10 @@ export default function Tips(props) {
 					Avoid having idle facilities and sorters, as they can go into a polling state that is more computationally expensive than when they are actively in operation. For example using lower level sorters on production chains so they are less idle where it makes sense.
 				</li>
 				<li>
-					Shorter belt paths — every additional segment causes more segments.
+					[Low Impact] Shorter belt paths — every additional segment causes more segments.
 				</li>
 				<li class={classNames({ 'is-locked': isLockedItem(2013) })}>
-					<Item id={2012} named plural/> Sorters perform a tiny bit better than <Item id={2013} named plural/>.
+					[Low Impact] <Item id={2012} named plural/> perform a tiny bit better than <Item id={2013} named plural/>.
 				</li>
 			</ul>
 			<h3 class={classNames({ 'is-locked': isLockedItem(2030) })}>

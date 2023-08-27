@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="105" height="45" viewBox="0 0 105 45">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_4" data-name="Rectangle 4" width="105" height="45" transform="translate(16 86)" fill="#fff" opacity="0.5"/>
+    </clipPath>
+  </defs>
+  <g id="window-2-header" transform="translate(-16 -86)">
+    <g id="content-mask" clip-path="url(#clip-path)">
+      <g id="content" transform="translate(0 70)" fill="#2f3539" opacity="0.6">
+        <path d="M18,62V42.5L40.5,18h36l41,17H122V62Z" stroke="none"/>
+        <path d="M 122 62 L 122 35 L 117.5 35 L 76.5 18 L 40.5 18 L 18 42.5 L 18 62 L 122 62 M 123 63 L 17 63 L 17 42.1104850769043 L 40.06064224243164 17 L 76.6990966796875 17 L 117.6990966796875 34 L 123 34 L 123 63 Z" stroke="none" fill="rgba(187,193,196,0.5)"/>
+      </g>
+    </g>
+    <path id="top-left" d="M58,86l2,2v16.5L36,130H18l-2-2H35l23-24.5Z" transform="translate(76 216) rotate(180)" fill="#fff"/>
+  </g>
+</svg>

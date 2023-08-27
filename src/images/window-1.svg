@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64.064" viewBox="0 0 64 64.064">
+  <g id="window-1" transform="translate(-16 -86)">
+    <g id="content" transform="translate(0 70)" fill="#2f3539" opacity="0.6">
+      <path d="M19.5,78,18,76.5v-51L25.5,18h51L78,19.5V69l-5,5H56.5l-4,4Z" stroke="none"/>
+      <path d="M 52.5 78 L 56.5 74 L 73 74 L 78 69 L 78 19.5 L 76.5 18 L 25.5 18 L 18 25.5 L 18 76.5 L 19.5 78 L 52.5 78 M 52.91421127319336 79 L 19.08579063415527 79 L 17 76.91420745849609 L 17 25.08579063415527 L 25.08579063415527 17 L 76.91420745849609 17 L 79 19.08579063415527 L 79 69.41420745849609 L 73.41420745849609 75 L 56.91421890258789 75 L 52.91421127319336 79 Z" stroke="none" fill="rgba(187,193,196,0.5)"/>
+    </g>
+    <path id="edge" d="M79,70.5v4L74.5,79l-20.587.064L57,76H73.5Z" transform="translate(1 71)" fill="#fff" opacity="0.34"/>
+    <path id="top-left" d="M37,18H26l-8,8V46" transform="translate(-1 69)" fill="none" stroke="#fff" stroke-width="2"/>
+    <path id="top-right" d="M59,18H76l2,2V46" transform="translate(1 69)" fill="none" stroke="#fff" stroke-width="2"/>
+    <path id="bottom-right" d="M77.987,55.991,78,68.5,72.5,74H56l-4,4H39" transform="translate(1 71)" fill="none" stroke="#fff" stroke-width="2"/>
+    <path id="bottom-left" d="M37,78H20l-2-2V61" transform="translate(-1 71)" fill="none" stroke="#fff" stroke-width="2"/>
+  </g>
+</svg>

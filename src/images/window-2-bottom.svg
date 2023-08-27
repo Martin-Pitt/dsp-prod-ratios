@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="125" height="24" viewBox="0 0 125 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="mask" width="125" height="24" transform="translate(16 126.064)" fill="#fff" opacity="0.5"/>
+    </clipPath>
+  </defs>
+  <g id="window-2-bottom" transform="translate(-16 -126.064)">
+    <g id="content-mask" clip-path="url(#clip-path)">
+      <g id="content" transform="translate(0 70)" fill="#2f3539" opacity="0.6">
+        <path d="M19.5,78.064l-1.5-1.5v-21.5H139v14l-5,5H117.5l-4,4Z" stroke="none"/>
+        <path d="M 113.5 78.064208984375 L 117.5 74.064208984375 L 134 74.064208984375 L 139 69.064208984375 L 139 55.064208984375 L 18 55.064208984375 L 18 76.564208984375 L 19.5 78.064208984375 L 113.5 78.064208984375 M 113.9142150878906 79.064208984375 L 19.08578300476074 79.064208984375 L 17 76.97842407226562 L 17 54.064208984375 L 140 54.064208984375 L 140 69.47842407226562 L 134.4142150878906 75.064208984375 L 117.9141998291016 75.064208984375 L 113.9142150878906 79.064208984375 Z" stroke="none" fill="rgba(187,193,196,0.5)"/>
+      </g>
+    </g>
+    <path id="edge" d="M79,70.5v4L74.5,79l-20.587.064L57,76H73.5Z" transform="translate(62 71)" fill="#fff" opacity="0.34"/>
+    <path id="bottom-right" d="M100,148.063l2,2h11.5l4-4h17l6.5-6.5v-10.5l-2-2v11.5l-5.5,5.5H117l-4,4Z" fill="#fff"/>
+    <path id="bottom-left" d="M33.5,148.064l-2,2H19l-3-3v-11.5l2-2v13l1.5,1.5Z" fill="#fff"/>
+  </g>
+</svg>

@@ -371,7 +371,7 @@ export default function Solver(props) {
 			if(solve.item) continue;
 			
 			let proliferator = state.proliferator.value;
-			if(proliferator.startsWith('mixed'))
+			if(proliferator?.startsWith('mixed'))
 			{
 				if(proliferator === 'mixed.tsp' || proliferator === 'mixed')
 					proliferator = Proliferator.Mix.TheSuperiorTentacle(solve.recipe);
@@ -409,7 +409,7 @@ export default function Solver(props) {
 			
 			
 			let proliferator = state.proliferator.value;
-			if(proliferator.startsWith('mixed'))
+			if(proliferator?.startsWith('mixed'))
 			{
 				if(proliferator === 'mixed.tsp' || proliferator === 'mixed')
 					proliferator = Proliferator.Mix.TheSuperiorTentacle(solve.recipe);

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="125" height="24" viewBox="0 0 125 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="mask" width="125" height="24" transform="translate(16 126.064)" fill="#fff" opacity="0.5"/>
+    </clipPath>
+  </defs>
+  <g id="frame-2-bottom" transform="translate(-16 -126.064)">
+    <g id="content-mask" clip-path="url(#clip-path)">
+      <g id="content" transform="translate(0 70)" fill="none">
+        <path d="M19.5,78.064l-1.5-1.5v-21.5H139v14l-5,5H117.5l-4,4Z" stroke="none"/>
+        <path d="M 113.5 78.064208984375 L 117.5 74.064208984375 L 134 74.064208984375 L 139 69.064208984375 L 139 55.064208984375 L 18 55.064208984375 L 18 76.564208984375 L 19.5 78.064208984375 L 113.5 78.064208984375 M 114.3284301757812 80.064208984375 L 18.67156600952148 80.064208984375 L 16 77.39263916015625 L 16 53.064208984375 L 141 53.064208984375 L 141 69.89263916015625 L 134.8284301757812 76.064208984375 L 118.3284301757812 76.064208984375 L 114.3284301757812 80.064208984375 Z" stroke="none" fill="#fff"/>
+      </g>
+    </g>
+    <path id="edge" d="M79,70.5v4L74.5,79l-20.587.064L57,76H73.5Z" transform="translate(62 71)" fill="#fff" opacity="0.598"/>
+  </g>
+</svg>

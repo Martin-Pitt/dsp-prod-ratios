@@ -3,8 +3,9 @@ import {
 	Items, ItemsUnlocked,
 	Recipes, RecipesUnlocked,
 	Techs,
+	locale,
 } from './lib/data.js';
-
+import { persistentSignal, temporarySignal } from './lib/persistent-signal.js';
 
 
 // If there is a conflicting change we might need to reset localStorage
@@ -14,55 +15,6 @@ if('localStorage' in globalThis && localStorage.format !== StateFormat)
 	localStorage.clear();
 	localStorage.format = StateFormat;
 }
-
-
-
-function persistentSignal(name, fallback, fn) {
-	if(!('localStorage' in globalThis)) return signal(fallback);
-	
-	let value = fallback;
-	
-	if(localStorage[name])
-	{
-		let restored = JSON.parse(localStorage[name]);
-		if(fn?.restore) restored = fn.restore(restored);
-		value = restored;
-	}
-	
-	let sig = signal(value);
-	
-	effect(() => {
-		let value = sig.value;
-		if(fn?.persist) value = fn.persist(value);
-		localStorage[name] = JSON.stringify(value);
-	});
-	
-	return sig;
-}
-
-function temporarySignal(name, fallback, fn) {
-	if(!('sessionStorage' in globalThis)) return signal(fallback);
-	
-	let value = fallback;
-	
-	if(sessionStorage[name])
-	{
-		let restored = JSON.parse(sessionStorage[name]);
-		if(fn?.restore) restored = fn.restore(restored);
-		value = restored;
-	}
-	
-	let sig = signal(value);
-	
-	effect(() => {
-		let value = sig.value;
-		if(fn?.persist) value = fn.persist(value);
-		sessionStorage[name] = JSON.stringify(value);
-	});
-	
-	return sig;
-}
-
 
 
 const state = {
@@ -114,7 +66,52 @@ const state = {
 	recipesUnlockedSet: computed(() => RecipesUnlocked(state.research.value, true)),
 	itemsUnlockedSet: computed(() => ItemsUnlocked(state.research.value, true)),
 	// hasRecipeUnlocked(id) { state.recipesUnlocked.value }
+	
+	news: signal(null),
+	
+	lastVisit: localStorage.getItem('last-visit')? new Date(localStorage.getItem('last-visit')) : null,
 };
+
+localStorage.setItem('last-visit', new Date());
+
+
+
+(async () => {
+	// Fetch the latest news, or cached network request if still fresh
+	let language = 'english';
+	if(locale === 'zh-CN') language = 'schinese';
+	let response = await fetch(`https://steam-news-proxy.vercel.app/api/feed?l=${language}`, { mode: 'cors', credentials: 'omit', });
+	let content = await response.json();
+	
+	// Convert pubData to Date
+	content.item.pubDate = new Date(content.item.pubDate);
+	
+	// Clean the description
+	content.item.description = content.item.description.trim().replaceAll(/(<br>)*?$/gm, '');
+	
+	// Create a snippet preview from the description
+	let paragraphs = content.item.description.split('<br>');
+	let snippet = [], length = 0;
+	while(length < 200)
+	{
+		let paragraph = paragraphs.shift();
+		length += paragraph.length;
+		snippet.push(paragraph);
+	}
+	if(paragraphs.length)
+	{
+		content.item.snippet = snippet.join('<br>').replaceAll(/(<\/?)iframe/g, '$1not-iframe');
+	}
+	
+	// Mark as new if so
+	content.item.isNew = state.lastVisit < content.item.pubDate;
+
+	// Add locale to link
+	content.item.link += `?l=${language}`;
+	
+	state.news.value = content;
+})();
+
 
 
 export default state;

@@ -29,6 +29,11 @@
 		text-decoration: none;
 	}
 	
+	.title-link[data-new]::after {
+		top: 4px;
+		left: calc(100% - 30px);
+	}
+	
 	.title {
 		display: flex;
 		align-items: center;

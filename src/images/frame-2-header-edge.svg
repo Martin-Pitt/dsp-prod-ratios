@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="45" viewBox="0 0 20 45">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_4" data-name="Rectangle 4" width="20" height="45" transform="translate(16 86)" fill="#fff" opacity="0.5"/>
+    </clipPath>
+  </defs>
+  <g id="frame-2-header-edge" transform="translate(-16 -86)">
+    <g id="content-mask" clip-path="url(#clip-path)">
+      <g id="content" transform="translate(0 70)" fill="none">
+        <path d="M15,62V35H33l1,1V62Z" stroke="none"/>
+        <path d="M 34 62 L 34 36 L 33 35 L 15 35 L 15 62 L 34 62 M 36 64 L 13 64 L 13 33 L 33.82843017578125 33 L 36 35.17156982421875 L 36 64 Z" stroke="none" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

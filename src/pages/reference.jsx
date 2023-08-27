@@ -109,7 +109,7 @@ function Assembler(props) {
 						<span class="name">{StringFromTypes.get('ASSEMBLE')}</span>
 						<div class="preferred">
 							{Items.find(item => item.id === state.preferred.assembler.value)
-							.upgrades
+							?.upgrades
 							.filter(upgrade => state.showHiddenUpgrades.value || itemsUnlocked.has(upgrade))
 							.map(upgrade => Items.find(item => item.id === upgrade))
 							.map(item => {
@@ -249,7 +249,7 @@ function Smelter(props) {
 					<span class="name">{StringFromTypes.get('SMELT')}</span>
 					<div class="preferred">
 						{Items.find(item => item.id === state.preferred.smelter.value)
-						.upgrades
+						?.upgrades
 						.filter(upgrade => state.showHiddenUpgrades.value || itemsUnlocked.has(upgrade))
 						.map(upgrade => Items.find(item => item.id === upgrade))
 						.map(item =>

@@ -202,25 +202,8 @@
 	
 	
 	
-	/*
-	main.intro .news {
-		padding: 20px;
-		background-color: lch(36 16 249.3);
-		background-repeat: no-repeat;
-		background-size: 60px auto;
-		clip-path: polygon(0 16px, 16px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%);
-	}
-	*/
+	main.intro .news {}
 	
-	main.intro .news {
-		/* padding: 20px;
-		border-image-source: url('../../images/window-1.svg');
-		border-image-slice: 30 41 24 21 fill;
-		border-image-width: 30px 41px 24px 21px;
-		border-image-outset: 0px;
-		border-image-repeat: stretch; */
-	}
-
 	main.intro .news.is-loading {
 		min-height: 100px;
 		border-image-source: url('../../images/window-1.svg');
@@ -408,5 +391,20 @@
 	main.intro .news:has(a:hover) .news-article,
 	main.intro .news.is-new .news-article {
 		border-image-source: url(/src/images/window-3-bottom.svg);
+	}
+	
+	
+	main.intro .news {
+		position: relative;
+	}
+	
+	main.intro .news::after {
+		content: '';
+		position: absolute;
+		inset: 24px 4px -6px 4px;
+		z-index: -1;
+		background: var(--image) bottom / cover;
+		filter: blur(8px) saturate(150%) opacity(0.4);
+		mix-blend-mode: multiply;
 	}
 }

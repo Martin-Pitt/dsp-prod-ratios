@@ -22,11 +22,14 @@ export default function Intro(props) {
 				{/* <h3>{news.title}</h3>
 				<p class="news-description">{news.description}</p> */}
 				
-				<article class={classNames('news', { 'is-loading': !news, 'is-snippet': news?.item.snippet, 'is-new': news?.item.isNew })}>
+				<article
+					class={classNames('news', { 'is-loading': !news, 'is-snippet': news?.item.snippet, 'is-new': news?.item.isNew })}
+					style={{ '--image': news && `url("${news.item?.titleImage}")` }}
+				>
 					{news? (
 						<>
 							<header className="news-header">
-								<h3 class="news-title" data-new={news?.item.isNew? 'SINCE LAST VISIT' : null}>{news.item.title}</h3>
+								<h3 class="news-title" data-new={news.item.isNew? 'SINCE LAST VISIT' : null}>{news.item.title}</h3>
 								<div class="news-header-edge"/>
 							</header>
 							<div class="news-article">

@@ -20,15 +20,13 @@
 	.tbp-loader::after {
 		animation:
 			figure-eight-invert 9s linear infinite,
-			figure-eight 9s linear infinite
-		;
+			figure-eight 9s linear infinite;
 		animation-composition: add;
 	}
 	
 	.tbp-loader::before {
 		background: url('../../images/textures/star-red.avif') center / cover no-repeat;
 		animation-delay: 0s, -3s;
-		
 	}
 	
 	.tbp-loader::after {

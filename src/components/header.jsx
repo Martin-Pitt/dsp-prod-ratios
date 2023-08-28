@@ -14,13 +14,13 @@ export default function Header(props) {
 	const news = state.news.value;
 	return (
 		<header class="app-header">
-			<NavLink class="title-link" href="/" data-new={news?.item.isNew? 'NEWS' : null}>
-				<h1 class="title">
-					<img class="logo" src={logo} alt=""/>
-					DSP Ratios
-				</h1>
-			</NavLink>
 			<div class="links">
+				<NavLink class="link title-link" href="/" data-new={news?.item.isNew? 'NEWS' : null}>
+					<h1 class="title">
+						<img class="logo" src={logo} alt=""/>
+						<span>DSP Ratios</span>
+					</h1>
+				</NavLink>
 				<NavLink class="link" href="/calculator">Calculator</NavLink>
 				<NavLink class={classNames('link', { 'has-research': state.research.value.length > 0 })} href="/research">Research</NavLink>
 				<NavLink class="link" href="/reference" data-wip>Reference</NavLink>

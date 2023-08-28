@@ -22,37 +22,37 @@
 		}
 	}
 	
-	.title-link {
+	.app-header .title-link {
 		grid-area: title;
 		display: flex;
 		color: inherit;
 		text-decoration: none;
 	}
 	
-	.title-link[data-new]::after {
+	.app-header .title-link[data-new]::after {
 		top: 4px;
 		left: calc(100% - 30px);
 	}
 	
-	.title {
+	.app-header .title {
 		display: flex;
 		align-items: center;
 		width: fit-content;
 		font-size: 16px;
 	}
 	
-	.title .logo {
+	.app-header .title .logo {
 		height: 3em;
 		vertical-align: middle;
 		margin-right: 1em;
 	}
 	
-	.title + .link {
+	.app-header .title + .link {
 		margin-left: 30px;
 	}
 	
 	@media(max-width: 920px) {
-		.title .logo {
+		.app-header .title .logo {
 			height: 2em;
 		}
 	}
@@ -61,15 +61,15 @@
 		display: flex;
 		grid-area: links;
 		overflow-x: auto;
-		padding: 0 20px 20px;
+		padding: 0 0 20px;
 		margin: 0 -20px -20px;
 	}
 	
 	.app-header .link {
 		position: relative;
 		display: flex;
-		align-items: flex-end;
-		padding: 0 40px 10px;
+		align-items: center;
+		padding: 8px 40px 10px;
 		color: white;
 		text-decoration: none;
 	}
@@ -78,6 +78,10 @@
 		.app-header .link {
 			padding: 0 20px 10px;
 		}
+	}
+	
+	.app-header .link.title-link {
+		padding-left: 0;
 	}
 	
 	.app-header .link::before {
@@ -95,7 +99,9 @@
 		opacity: 0.9;
 	}
 	
-	.app-header .link.is-active {
+	.app-header .link:not(.title-link).is-active,
+	.app-header .title-link.is-active::before,
+	.app-header .title-link.is-active span {
 		color: var(--neon-yellow);
 		filter: drop-shadow(0 0 3px currentColor);
 	}
@@ -163,7 +169,7 @@
 	.app-header [data-wip]::after {
 		top: auto;
 		left: calc(100% - 35px);
-		bottom: 20px;
+		bottom: 40px;
 	}
 	
 	@media (max-width: 640px) {

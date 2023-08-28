@@ -205,16 +205,11 @@
 	main.intro .news {}
 	
 	main.intro .news.is-loading {
-		min-height: 100px;
-		border-image-source: url('../../images/window-1.svg');
-		border-image-slice: 30 41 24 21 fill;
-		border-image-width: 30px 41px 24px 21px;
-		border-image-outset: 0px;
-		border-image-repeat: stretch;
+		position: relative;
 	}
 	
-	main.intro .news.is-loading {
-		position: relative;
+	main.intro .news.is-loading .news-article {
+		min-height: 150px;
 	}
 	
 	
@@ -245,7 +240,6 @@
 	}
 	
 	main.intro .news-header-edge {
-		
 		border-image-source: url('../../images/window-2-header-edge.svg');
 		border-image-slice: 0 19 0 0 fill;
 		border-image-width: 0px 19px 0px 0px;
@@ -303,14 +297,9 @@
 	}
 	
 	main.intro .read-more:hover {
-		top: -1px;
 		background-color: lch(100 0 0 / 0.2);
 	}
 	
-	main.intro .read-more:active {
-		top: 1px;
-	}
-
 	main.intro .news-meta {
 		grid-area: meta;
 		color: lch(100 0 0 / 0.6);
@@ -401,10 +390,12 @@
 	main.intro .news::after {
 		content: '';
 		position: absolute;
-		inset: 24px 4px -6px 4px;
+		inset: 12px -24px -32px -24px;
 		z-index: -1;
-		background: var(--image) bottom / cover;
-		filter: blur(6px) saturate(150%) opacity(0.8);
-		mix-blend-mode: multiply;
+		background: var(--image) center / cover;
+		filter: blur(32px) saturate(0.9) opacity(0.6);
 	}
+	
+	main.intro .news.is-loading::after { opacity: 0 }
+	main.intro .news:not(.is-loading)::after { transition: opacity 1s }
 }

@@ -9,6 +9,7 @@ import classNames from 'classnames';
 
 export default function Intro(props) {
 	const news = state.news.value;
+	
 	return (
 		<main class="page intro">
 			<div class="page-content">
@@ -42,7 +43,17 @@ export default function Intro(props) {
 								<time class="news-pubdate" dateTime={news.item.pubDate.toJSON()}>{news.item.pubDate.toLocaleDateString()}</time> */}
 							</div>
 						</>
-					) : <div class="tbp-loader"/>}
+					) : (
+						<>
+							<header className="news-header">
+								<h3 class="news-title"/>
+								<div class="news-header-edge"/>
+							</header>
+							<div class="news-article">
+								<div class="tbp-loader"/>
+							</div>
+						</>
+					)}
 				</article>
 				
 				<h3>

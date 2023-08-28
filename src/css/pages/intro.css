@@ -404,7 +404,7 @@
 		inset: 24px 4px -6px 4px;
 		z-index: -1;
 		background: var(--image) bottom / cover;
-		filter: blur(8px) saturate(150%) opacity(0.4);
+		filter: blur(6px) saturate(150%) opacity(0.8);
 		mix-blend-mode: multiply;
 	}
 }

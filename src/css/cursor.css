@@ -74,6 +74,8 @@
 	button,
 	label,
 	input[type="checkbox"],
+	input[type="radio"],
+	input[type="range"],
 	select,
 	summary {
 		cursor: var(--cursor-pointer);
@@ -83,6 +85,8 @@
 	button[title],
 	label[title],
 	input[type="checkbox"][title],
+	input[type="radio"][title],
+	input[type="range"][title],
 	select[title],
 	summary[title] {
 		cursor: var(--cursor-pointer-help);

@@ -260,7 +260,6 @@
 	
 	.combo-selector .preferred label {
 		position: relative;
-		cursor: var(--cursor-pointer);
 	}
 	
 	.combo-selector .preferred input[type="radio"] {
@@ -269,7 +268,6 @@
 		aspect-ratio: 1;
 		width: 100%;
 		opacity: 0;
-		cursor: var(--cursor-pointer);
 	}
 	
 	.combo-selector .preferred .icon {

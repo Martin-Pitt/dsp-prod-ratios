@@ -130,7 +130,7 @@
 		color: white;
 	}
 	
-	[data-new]:not([data-new=""])::after {
+	[data-new]:not([data-new=""]):not([data-new="true"])::after {
 		content: 'NEW ' attr(data-new);
 	}
 	

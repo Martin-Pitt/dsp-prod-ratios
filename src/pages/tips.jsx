@@ -37,7 +37,8 @@ export default function Tips(props) {
 					Second most important is Sulfuric Acid. You can find some planets that have Sulfuric Acid Oceans, which you can use a Water Pump on to gather the Sulfuric Acid.
 				</li>
 				<li>
-					
+					Getting lost? You can misuse <Item id={2030} named plural/> as beacons (see below).
+					Use <Item id={1131} named plural/> to paint lines or zones that can be seen from afar or when quickly popping into orbit.
 				</li>
 			</ul>
 			<h3>

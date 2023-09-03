@@ -439,6 +439,10 @@ export default function Research(props) {
 					'--rows': rows,
 				}}
 			>
+				<p class="about">
+					Select your research progress so far, this tool will then only show recipes available to you.
+					{state.research.value.length? <button class="reset" onClick={resetResearch}>Reset research</button> : <><br/><br/>With nothing selected, all recipes are available.</>}
+				</p>
 				<Wires techs={techs} columns={columns} rows={rows}/>
 				<Tiles techs={techs}/>
 			</div>

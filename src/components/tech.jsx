@@ -1,9 +1,9 @@
-import { Techs, locale } from '../lib/data';
+import { Techs, TechsByID, locale } from '../lib/data';
 
 
 export default function Tech(props) {
 	let { tech, id, named, name, ...other } = props;
-	if(!tech) tech = Techs.find(tech => tech.id === id);
+	if(!tech) tech = TechsByID.get(id);
 	
 	if(props.name) return (
 		<span class="tech named" lang={locale} {...other}>

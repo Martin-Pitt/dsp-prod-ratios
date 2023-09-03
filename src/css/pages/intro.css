@@ -57,23 +57,16 @@
 	}
 	
 	main.intro .tile {
+		position: relative;
+		z-index: 1;
 		display: flex;
 		flex-flow: column;
 		justify-content: center;
 		align-items: center;
 		aspect-ratio: 3;
 		padding: calc(5px + 1vw);;
-		/* border-radius: 10px;
-		border: 1px solid; */
-		/* background: lch(0 0 0 / 0.1);
-		clip-path: polygon(0 16px, 16px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%); */
 		font-size: 20px;
 		font-weight: 500;
-	}
-	
-	main.intro .tile {
-		position: relative;
-		z-index: 1;
 	}
 	
 	main.intro .tile::before {

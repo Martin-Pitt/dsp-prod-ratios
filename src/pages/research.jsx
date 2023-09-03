@@ -1,7 +1,12 @@
 import { useState, useCallback, useMemo, useRef, useEffect } from 'preact/hooks';
+import { signal, computed } from '@preact/signals';
 import classNames from 'classnames';
-import { Recipes, Techs } from '../lib/data.js';
+import { Recipes, Techs, TechsByID } from '../lib/data.js';
 import state from '../state.js';
+import CSSVariables from '../css/variables.js';
+import ScrollableGrid from '../components/scrollable-grid.jsx';
+
+
 
 
 function pinResearch(tech) {
@@ -11,8 +16,8 @@ function pinResearch(tech) {
 		let itemTech = Techs.find(tech => tech.unlockRecipes?.includes(itemRecipe.id));
 		if(itemTech) pinResearch(itemTech);
 	}
-	if(tech.preTechs) for(let preTech of tech.preTechs) pinResearch(Techs.find(t => t.id === preTech));
-	if(tech.preTechsImplicit) for(let preTech of tech.preTechsImplicit) pinResearch(Techs.find(t => t.id === preTech));
+	if(tech.preTechs) for(let preTech of tech.preTechs) pinResearch(TechsByID.get(preTech));
+	if(tech.preTechsImplicit) for(let preTech of tech.preTechsImplicit) pinResearch(TechsByID.get(preTech));
 	state.research.value = [...state.research.value, tech];
 }
 
@@ -37,10 +42,10 @@ function unpinResearch(tech) {
 }
 
 function hoverResearch(tech, set = new Set()) {
-	if(state.research.value.includes(tech)) return set;
+	// if(state.research.value.includes(tech)) return set;
 	set.add(tech);
-	if(tech.preTechs) for(let preTech of tech.preTechs) hoverResearch(Techs.find(t => t.id === preTech), set);
-	if(tech.preTechsImplicit) for(let preTech of tech.preTechsImplicit) hoverResearch(Techs.find(t => t.id === preTech), set);
+	if(tech.preTechs) for(let preTech of tech.preTechs) hoverResearch(TechsByID.get(preTech), set);
+	if(tech.preTechsImplicit) for(let preTech of tech.preTechsImplicit) hoverResearch(TechsByID.get(preTech), set);
 	if(tech.items) for(let item of tech.items) {
 		let itemRecipe = Recipes.find(recipe => recipe.results.includes(item));
 		let itemTech = Techs.find(tech => tech.unlockRecipes?.includes(itemRecipe.id));
@@ -49,11 +54,11 @@ function hoverResearch(tech, set = new Set()) {
 	return set;
 }
 
-
 function toggleResearch(tech) {
 	if(state.research.value.includes(tech)) unpinResearch(tech);
 	else pinResearch(tech);
 }
+
 function onResearch(event, tech) {
 	event.preventDefault();
 	toggleResearch(tech);
@@ -75,329 +80,368 @@ function getEpochTechs(epoch) {
 
 
 
-export default function Research(props) {
+
+const hovered = signal(null);
+const hoveredTech = computed(() => hovered.value? hoverResearch(hovered.value) : new Set());
+
+
+
+function Tile(props) {
+	const { tech } = props;
+	const isResearched = state.research.value.includes(tech);
+	const hasPreTechs = !tech.preTechs || tech.preTechs.every(id => state.research.value.includes(TechsByID.get(id)));
+	const hasImplicitPreTechs = !tech.preTechsImplicit || tech.preTechsImplicit.every(id => state.research.value.includes(TechsByID.get(id)));
+	
+	return (
+		<div
+			key={tech.id}
+			class={classNames('tech', {
+				'is-researched': isResearched,
+				'can-research': hasPreTechs && hasImplicitPreTechs,
+				'hovered': hoveredTech.value.has(tech),
+			})}
+			data-id={tech.id}
+			style={{ gridArea: `${tech.y} / ${tech.x}` }}
+			onClick={event => onResearch(event, tech)}
+			onPointerEnter={event => hovered.value = tech}
+			onPointerLeave={event => hovered.value = null}
+		>
+			<span class="name">{tech.name}</span>
+			<div class="tile">
+				<div class="icon" data-icon={`tech.${tech.id}`}/>
+			</div>
+		</div>
+	);
+}
+
+function Tiles(props) {
+	return props.techs.map(tech => <Tile tech={tech}/>);
+}
+
+function Wires(props) {
+	const { techs, columns, rows } = props;
 	const root = useRef(null);
 	
 	useEffect(() => {
-		if('researchScrollTop' in sessionStorage)
-		{
-			root.current.scrollLeft = parseInt(sessionStorage.researchScrollTop, 10);
-			root.current.scrollTop = parseInt(sessionStorage.researchScrollLeft, 10);
-		}
-		
-		else
-		{
-			root.current.scrollLeft = 500 - 40;
-			root.current.scrollTop = 500 - 40;
-		}
-		
-		return () => {
-			sessionStorage.researchScrollTop = root.current.scrollLeft;
-			sessionStorage.researchScrollLeft = root.current.scrollTop;
+		const layout = {
+			tile: { width: 100, height: 60 },
+			gap: { columns: 60, rows: 40 },
+			step: 4,
+			mainLine: techs.find(tech => tech.isMain).y,
 		};
-	}, [root.current]);
-	
-	const saveScroll = useCallback(() => {
-		sessionStorage.researchScrollTop = root.current.scrollLeft;
-		sessionStorage.researchScrollLeft = root.current.scrollTop;
-	}, [root.current]);
-	
-	const [isMouseDown, setMouseDown] = useState(false);
-	const [isDragging, setDragging] = useState(false);
-	const [pos, setPos] = useState({ top: 0, left: 0, x: 0, y: 0 });
-	const onMouseMoveScrollDrag = useCallback(event => {
-		let dx = event.clientX - pos.x;
-		let dy = event.clientY - pos.y;
-		root.current.scrollLeft = pos.left - dx;
-		root.current.scrollTop = pos.top - dy;
 		
-		if(!isDragging && (Math.abs(dx) > 4 || Math.abs(dy) > 4)) setDragging(true);
-	}, [root.current, setDragging, pos]);
-	
-	const onMouseUpScrollDrag = useCallback(event => {
-		setDragging(false);
-		setMouseDown(false);
-		sessionStorage.researchScrollTop = root.current.scrollLeft;
-		sessionStorage.researchScrollLeft = root.current.scrollTop;
-	}, [root.current, setDragging, setMouseDown]);
-	
-	const onMouseDownScrollDrag = useCallback(event => {
-		setPos({
-			left: root.current.scrollLeft,
-			top: root.current.scrollTop,
-			x: event.clientX,
-			y: event.clientY,
+		
+		// Setup tiles & wires
+		const wires = [];
+		const tiles = techs.map(tech => {
+			let tile = {
+				tech,
+				in: [],
+				out: [],
+				x: (tech.x-1) * layout.tile.width + Math.max(0, tech.x - 1) * layout.gap.columns,
+				y: (tech.y-1) * layout.tile.height + Math.max(0, tech.y - 1) * layout.gap.rows,
+				isMain: tech.isMain,
+			};
+			
+			if(tech.preTechs) tile.in = tech.preTechs.map((preTech, index) => {
+				let wire = {
+					from: null,
+					to: tile,
+					fi: 0, fx: 0, fy: 0,
+					vx: 0,
+					ti: index, tx: 0, ty: 0,
+				};
+				wires.push(wire);
+				return wire;
+			});
+			
+			return tile;
 		});
 		
-		setMouseDown(true);
-	}, [root.current, setMouseDown, setPos]);
+		for(let wire of wires)
+		{
+			let preTech = wire.to.tech.preTechs[wire.ti];
+			let tile = tiles.find(tile => tile.tech.id === preTech);
+			wire.from = tile;
+			wire.fi = tile.out.length;
+			tile.out.push(wire);
+		}
+		
+		for(let tile of tiles)
+		{
+			tile.in.sort((a, b) => a.from.y - b.from.y);
+			tile.out.sort((a, b) => a.to.y - b.to.y);
+			tile.in.forEach((wire, index) => wire.ti = index);
+			tile.out.forEach((wire, index) => wire.fi = index);
+		}
+		
+		
+		// Setup wire coords
+		for(let tile of tiles)
+		{
+			const outCenterIndex = Math.max(0, tile.out.findIndex(wire => wire.from.y === wire.to.y));
+			const outCenterOffset = outCenterIndex * -layout.step;
+			for(let wire of tile.out)
+			{
+				const isAbove = wire.from.y > wire.to.y;
+				const isBelow = wire.from.y < wire.to.y;
+				const wireOffset = wire.fi * layout.step;
+				
+				wire.fx = wire.from.x + layout.tile.width;
+				wire.fy = wire.from.y + 20 + wireOffset + outCenterOffset;
+				wire.vx = wire.fx + 35;
+				
+				if(tile.isMain && isAbove) wire.fy -= 4;
+				if(tile.isMain && isBelow) wire.fy += 4;
+			}
+			
+			const inCenterIndex = Math.max(0, tile.in.findIndex(wire => wire.from.y === wire.to.y));
+			const inCenterOffset = inCenterIndex * -layout.step;
+			for(let wire of tile.in)
+			{
+				const isAbove = wire.to.y > wire.from.y;
+				const isBelow = wire.to.y < wire.from.y;
+				const wireOffset = wire.ti * layout.step;
+				
+				wire.tx = wire.to.x;
+				wire.ty = wire.to.y + 20 + wireOffset + inCenterOffset;
+				
+				if(tile.isMain && isAbove) wire.ty -= 4;
+				if(tile.isMain && isBelow) wire.ty += 4;
+			}
+		}
+		
+		
+		// Figure out overlapping wires and separate out the vertical lines
+		const bundles = wires.reduce((bundles, wire) => {
+			if(wire.fy === wire.ty) return bundles;
+			
+			let miny = Math.min(wire.fy, wire.ty);
+			let maxy = Math.max(wire.fy, wire.ty);
+			
+			let bundle = bundles.find(bundle =>
+				bundle.x === wire.fx && maxy >= bundle.miny && miny <= bundle.maxy
+			);
+			
+			// Create new bundle with bounding extents of wire
+			if(!bundle)
+			{
+				bundles.push({
+					x: wire.fx,
+					miny,
+					maxy,
+					wires: [wire],
+				});
+			}
+			
+			// Add wire to bundle & update bounding extents
+			else
+			{
+				bundle.miny = Math.min(bundle.miny, miny);
+				bundle.maxy = Math.max(bundle.maxy, maxy);
+				bundle.wires.push(wire);
+			}
+			
+			return bundles;
+		}, []).reduce((bundles, a) => {
+			
+			let b = bundles.find(b => 
+				a.x === b.x && a.maxy >= b.miny && a.miny <= b.maxy
+			);
+			
+			if(b)
+			{
+				b.miny = Math.min(b.miny, a.miny);
+				b.maxy = Math.max(b.maxy, a.maxy);
+				b.wires = b.wires.concat(a.wires);
+			}
+			
+			else
+			{
+				bundles.push(a);
+			}
+			
+			return bundles;
+		}, []);
+		
+		for(let bundle of bundles)
+		{
+			if(bundle.wires.length === 1) continue;
+			
+			bundle.wires.sort((a, b) => a.ty - b.ty);
+			
+			for(let iter = 0; iter < bundle.wires.length; ++iter)
+			{
+				const wire = bundle.wires[iter];
+				const isAbove = wire.from.y > wire.to.y;
+				const isBelow = wire.from.y < wire.to.y;
+				if(isAbove) wire.vx += iter * layout.step - bundle.wires.length * layout.step * 0.5;
+				if(isBelow) wire.vx -= iter * layout.step;
+			}
+		}
+		
+		
+		// Setup canvas
+		let dPR = window.devicePixelRatio;
+		let width = columns * layout.tile.width + (columns-1) * layout.gap.columns;
+		let height = rows * layout.tile.height + (rows-1) * layout.gap.rows;
+		root.current.width = width * dPR;
+		root.current.height = height * dPR;
+		root.current.style.width = `${width}px`;
+		root.current.style.height = `${height}px`;
+		const ctx = root.current.getContext('2d');
+		ctx.translate(0.5, 0.5);
+		ctx.scale(dPR, dPR);
+		
+		
+		// Render canvas
+		wires.sort((a, b) => {
+			a = state.research.value.includes(a.to.tech);
+			b = state.research.value.includes(b.to.tech);
+			if(a && b) return 0;
+			if(a) return 1;
+			if(b) return -1;
+			return 0;
+		});
+		
+		for(let wire of wires)
+		{
+			const isActive = state.research.value.includes(wire.to.tech);
+			const isHovered = hoveredTech.value.has(wire.to.tech);
+			
+			ctx.fillStyle = ctx.strokeStyle =
+				// isHovered && isActive? CSSVariables.techLinkResearchedHovered: 
+				isActive? CSSVariables.techLinkResearched:
+				isHovered? CSSVariables.techLinkHovered:
+				CSSVariables.techLinkUnavailable;
+			ctx.lineWidth = wire.from.isMain && wire.to.isMain? 10.0 : 2.0;
+			
+			if(wire.from.isMain && wire.to.isMain)
+			{
+				ctx.beginPath();
+				ctx.moveTo(wire.fx, wire.fy);
+				ctx.lineTo(wire.vx, wire.fy);
+				ctx.lineTo(wire.vx, wire.ty);
+				ctx.lineTo(wire.tx, wire.ty);
+				ctx.stroke();
+				
+				ctx.fillStyle = isActive? 'lch(20 0 0)' : 'lch(55 0 0)';
+				ctx.font = '600 8px/14px Saira, sans-serif';
+				ctx.fontStretch = 'condensed'; // '110%';
+				ctx.fillText('Main quest', wire.fx + 6, wire.fy + 2.5);
+			}
+			
+			else
+			{
+				const arrow = {
+					width: 8,
+					height: 3,
+					offset: isActive? -3 : 0,
+				};
+				ctx.beginPath();
+				ctx.moveTo(wire.fx, wire.fy);
+				ctx.lineTo(wire.vx, wire.fy);
+				ctx.lineTo(wire.vx, wire.ty);
+				ctx.lineTo(wire.tx - arrow.width + arrow.offset, wire.ty);
+				ctx.stroke();
+				
+				ctx.beginPath();
+				ctx.moveTo(wire.tx + arrow.offset, wire.ty);
+				ctx.lineTo(wire.tx + arrow.offset - arrow.width, wire.ty - arrow.height);
+				ctx.lineTo(wire.tx + arrow.offset - arrow.width, wire.ty + arrow.height);
+				ctx.closePath();
+				ctx.fill();
+			}
+		}
+		
+		
+		
+		
+		/*
+		for(let tech of techs)
+		{
+			if(!tech.postTechs) continue;
+			let [x, y] = getTilePos(tech);
+			
+			const hasPostTechs = !tech.postTechs || tech.postTechs.every(id => state.research.value.includes(TechsByID.get(id)));
+			// const hasImplicitPreTechs = !tech.preTechsImplicit || tech.preTechsImplicit.every(id => state.research.value.includes(TechsByID.get(id)));
+			const isMain = tech.y === mainLinePosition;
+			let postTechs = tech.postTechs.map(id => TechsByID.get(id));
+			const inLineIndex = postTechs.findIndex(postTech => postTech.y === tech.y);
+			const inLineOffset = inLineIndex !== -1? inLineIndex * -step : 0;
+			
+			for(let iter = 0; iter < postTechs.length; ++iter)
+			{
+				let postTech = postTechs[iter];
+				let [px, py] = getTilePos(postTech);
+				
+				const isActive = state.research.value.includes(postTech);
+				const isBelow = tech.y < postTech.y;
+				const isAbove = tech.y > postTech.y;
+				const inLine = tech.y === postTech.y;
+				const isHovered = hoveredTech.value.has(postTech);
+				
+				// Line drawing styles
+				ctx.strokeStyle = isHovered && isActive? CSSVariables.techLinkResearchedHovered: 
+									isHovered? CSSVariables.techLinkHovered:
+									isActive? CSSVariables.techLinkResearched:
+									CSSVariables.techLinkUnavailable;
+				ctx.lineWidth = isMain && inLine? 10.0 : 1.0;
+				
+				// Setup tile input and output port origins
+				let cx = x + tile.width;
+				let cy = y + 20;
+				py += 20;
+				
+				if(isMain && isAbove) { cy -= 4; py -= 4; }
+				if(isMain && isBelow) { cy += 4; py += 4; }
+				
+				let ox = Math.abs(inLineIndex - iter) * -step;
+				let oy = iter * step + inLineOffset;
+				
+				
+				// Draw
+				ctx.beginPath();
+				ctx.moveTo(cx, cy + oy);
+				ctx.lineTo(cx + 35 + ox, cy + oy);
+				ctx.lineTo(cx + 35 + ox, py);
+				ctx.lineTo(px - 25, py);
+				ctx.lineTo(px, py);
+				ctx.stroke();
+			}
+		}
+		*/
+	}, [state.research.value, hoveredTech.value]);
 	
-	
-	const [hovered, setHovered] = useState(null);
-	const hoveredTech = useMemo(() => hovered? hoverResearch(hovered) : new Set(), [hovered]);
-	
-	const techs = Techs.filter(tech => tech.id < 2000);
-	const mainLinePosition = techs.find(tech => tech.isMain).y;
-	
-	let techsX = techs.map(tech => tech.x);
-	let techsY = techs.map(tech => tech.y);
-	const columns = Math.max(...techsX);
-	const rows = Math.max(...techsY);
+	return <canvas ref={root}/>
+}
+
+export default function Research(props) {
+	const [techs, columns, rows] = useMemo(() => {
+		const techs = Techs.filter(tech => tech.id < 2000);
+		let techsX = techs.map(tech => tech.x);
+		let techsY = techs.map(tech => tech.y);
+		const columns = Math.max(...techsX);
+		const rows = Math.max(...techsY);
+		return [techs, columns, rows];
+	}, []);
 	
 	return (
-		<main
-			class={classNames('page research', { 'is-dragging': isDragging })}
-			onMouseDown={onMouseDownScrollDrag}
-			onMouseMove={isMouseDown? onMouseMoveScrollDrag : null}
-			onMouseUp={isMouseDown? onMouseUpScrollDrag : null}
-			onScroll={saveScroll}
-			ref={root}
+		<ScrollableGrid
+			tag="main"
+			name="research"
+			class={classNames('page research')}
 		>
 			<div
-				class="canvas"
+				class="grid"
 				style={{
-					gridTemplateColumns: `repeat(${columns}, 100px)`,
-					gridTemplateRows: `repeat(${rows}, 60px)`,
+					'--columns': columns,
+					'--rows': rows,
 				}}
 			>
-				<p class="about">
-					Select your research progress so far, this tool will then only show recipes available to you.
-					{state.research.value.length? <button class="reset" onClick={resetResearch}>Reset research</button> : <><br/><br/>With nothing selected, all recipes are available.</>}
-				</p>
-				{[/*
-					6000,
-					6001,
-					6002,
-					6003,
-					6004,
-					6005,
-					6006,
-				*/].map(epoch => {
-					const epochColours = new Map([
-						[6000, 'var(--jello-none)'],
-						[6001, 'var(--jello-blue)'],
-						[6002, 'var(--jello-red)'],
-						[6003, 'var(--jello-yellow)'],
-						[6004, 'var(--jello-purple)'],
-						[6005, 'var(--jello-green)'],
-						[6006, 'var(--jello-white)'],
-					])
-					const tileWidth = 100;
-					const tileHeight = 60;
-					const gapWidth = 60;
-					const gapHeight = 40;
-					const canvasWidth = ((columns * (tileWidth + gapWidth)) - gapWidth) + gapWidth;
-					const canvasHeight = ((rows * (tileHeight + gapHeight)) - gapHeight) + gapHeight;
-					
-					function gridToPixel({ x, y }) { return { x: (x-1) * (tileWidth + gapWidth), y: (y-1) * (tileHeight + gapHeight) } }
-					function pixelToPath({ x, y }) { return { x: (gapWidth*0.5 + x) / canvasWidth, y: (gapHeight*0.5 + y) / canvasHeight } }
-					function pathToPolygon({ x, y }) { return `${x * 100}% ${y * 100}%` }
-					function posToIndex({ x, y }) { return x + y*100 }
-					
-					let collisions = Techs.filter(tech => tech.id < 2000).reduce((accumulator, current) => {
-						accumulator.set(posToIndex(current), current);
-						return accumulator;
-					}, new Map);
-					
-					let shape = [];
-					
-					/*
-					let points = getEpochTechs(epoch)
-					.map(({ x, y }) => ({ x, y }))
-					.sort((a, b) => a.y < b.y? -1 : a.y > b.y? 1 : 0)
-					.sort((a, b) => a.x < b.x? -1 : a.x > b.x? 1 : 0)
-					.reduce((accumulator, current) => {
-						let column = accumulator.find(c => c.x === current.x);
-						if(!column) accumulator.push(column = { x: current.x, rows: [] });
-						column.rows.push(current.y);
-						return accumulator;
-					}, [])
-					.map(({ x, rows }) => {
-						let regions = rows.reduce((regions, y, i, rows) => {
-							let region = regions[regions.length - 1];
-							
-							if(!region)
-								regions.push(region = [y]);
-							
-							else
-							{
-								for(let testY = region[region.length - 1] + 1; testY < y; ++testY)
-								{
-									if(collisions.has(posToIndex({ x, y: testY })))
-									{
-										regions.push(region = []);
-										break;
-									}
-								}
-								
-								region.push(y);
-							}
-							
-							return regions;
-						}, []);
-						
-						return regions.map(region => {
-							if(region.length === 1) return [{ x, y: region[0] }];
-							return [
-								{ x, y: region[0] },
-								{ x, y: region[region.length - 1] }
-							];
-						});
-					});
-					
-					let shape = points.flatMap((column, index, columns) => {
-						let hasNextColumn = index < columns.length - 1;
-						let hasPrevColumn = index > 0;
-						return column.flatMap(rows => {
-							let start, end;
-							if(rows.length === 1)
-							{
-								start = end = rows.map(gridToPixel)[0];
-							}
-							
-							else
-							{
-								[start, end] = rows.map(gridToPixel);
-							}
-							
-							let topEdge = gapHeight*0.7;
-							let leftEdge = hasPrevColumn? gapWidth*0.5 : gapWidth*0.5;
-							let rightEdge = tileWidth + (hasNextColumn? gapWidth*0.5 : gapWidth*0.5);
-							let bottomEdge = tileHeight + gapHeight*0.3;
-							return [
-								{ x: start.x - leftEdge, y: start.y - topEdge },
-								{ x: start.x + rightEdge, y: start.y - topEdge },
-								{ x: end.x + rightEdge, y: end.y + bottomEdge },
-								{ x: end.x - leftEdge, y: end.y + bottomEdge },
-								{ x: start.x - leftEdge, y: start.y - topEdge },
-								{ x: 0, y: 0 },
-							];
-						})
-					}).map(pixelToPath);*/
-					
-					return (
-						<div
-							class="epoch"
-							style={{
-								inset: `${gapHeight*-0.5}px ${gapWidth*-0.5}px`,
-								width: `${canvasWidth}px`,
-								height: `${canvasHeight}px`,
-								clipPath: `polygon(${shape.map(pathToPolygon).join(', ')})`,
-								'--tint': epochColours.get(epoch),
-							}}
-							// style={{ gridArea: `${tech.y} / ${tech.x}` }}
-						/>
-					);
-				})}
-				{techs.map(tech => {
-					if(!tech.preTechs) return [];
-					
-					const isResearched = state.research.value.includes(tech);
-					const hasPreTechs = !tech.preTechs || tech.preTechs.every(id => state.research.value.includes(Techs.find(t => t.id === id)));
-					const hasImplicitPreTechs = !tech.preTechsImplicit || tech.preTechsImplicit.every(id => state.research.value.includes(Techs.find(t => t.id === id)));
-					
-					let links = tech.preTechs.map((id, index) => {
-						const preTech = Techs.find(t => t.id === id);
-						const hasPreRequisite = state.research.value.includes(preTech);
-						
-						return {
-							toIndex: index,
-							tech,
-							preTech,
-							isActive: hasPreRequisite && hasPreTechs && hasImplicitPreTechs,
-							isBelow: preTech.y < tech.y,
-							isAbove: preTech.y > tech.y,
-							inLine: preTech.y === tech.y,
-							aboveMain: preTech.y < mainLinePosition,
-							belowMain: preTech.y > mainLinePosition,
-						};
-					});
-					
-					links = links.sort((a, b) => a.preTech.y - b.preTech.y);
-					links.forEach((link, index) => link.toIndex = index);
-					
-					const inMainLine = links.findIndex(link => link.inLine && link.tech.isMain);
-					if(inMainLine !== -1 && links.length > 1)
-					{
-						const inMainLinePos = links[inMainLine].toIndex;
-						for(let link of links) link.toIndex -= inMainLinePos;
-					}
-					
-					return links;
-				})
-				.flat()
-				.sort((a, b) => a.isActive === b.isActive? 0 : a.isActive? 1 : -1)
-				.map(link => (
-					<div
-						key={`${link.preTech.id}-${link.tech.id}`}
-						class={classNames('link', {
-							'is-active': link.isActive,
-							'is-main': link.inLine && link.tech.isMain,
-							'is-below': link.isBelow,
-							'is-above': link.isAbove,
-							'in-line': link.inLine,
-							'above-main': link.aboveMain,
-							'below-main': link.belowMain,
-							'from-main': link.preTech.isMain,
-							'to-main': link.tech.isMain,
-							'hovered': hoveredTech.has(link.tech),
-						})}
-						
-						style={{
-							gridRowStart: link.isAbove? link.preTech.y + 1 : link.preTech.y,
-							gridRowEnd: link.isBelow? link.tech.y + 1 : link.tech.y,
-							gridColumnStart: link.preTech.x,
-							gridColumnEnd: link.tech.x + 1,
-							'--to': link.toIndex,
-						}}
-					>
-						{link.inLine? (
-							<div class="line">
-								{!link.tech.isMain && (
-									<>
-										<div class="base"/>
-										<div class="arrow"/>
-									</>
-								)}
-							</div>
-						) : (
-							<div class="before">
-								{!link.preTech.isMain && <div class="base"/>}
-							</div>
-						)}
-						{((link.isBelow && !(link.aboveMain && link.tech.isMain)) || (link.isAbove && !(link.belowMain && link.tech.isMain))) && (
-							<div class="after">
-								<div class="arrow"/>
-							</div>
-						)}
-					</div>
-				))}
-				{techs.map(tech => {
-					const isResearched = state.research.value.includes(tech);
-					const hasPreTechs = !tech.preTechs || tech.preTechs.every(id => state.research.value.includes(Techs.find(t => t.id === id)));
-					const hasImplicitPreTechs = !tech.preTechsImplicit || tech.preTechsImplicit.every(id => state.research.value.includes(Techs.find(t => t.id === id)));
-					
-					return (
-						<div
-							key={tech.id}
-							class={classNames('tech', {
-								'is-researched': isResearched,
-								'can-research': hasPreTechs && hasImplicitPreTechs,
-								'hovered': hoveredTech.has(tech),
-							})}
-							data-id={tech.id}
-							style={{ gridArea: `${tech.y} / ${tech.x}` }}
-							// onClick={event => onResearch(event, tech)}
-							onClick={!isDragging? (event => onResearch(event, tech)) : null}
-							onPointerEnter={event => setHovered(tech)}
-							onPointerLeave={event => setHovered(null)}
-						>
-							<div class="icon" data-icon={`tech.${tech.id}`}/>
-							<span class="name">{tech.name}</span>
-						</div>
-					);
-				})}
+				<Wires techs={techs} columns={columns} rows={rows}/>
+				<Tiles techs={techs}/>
 			</div>
-		</main>
+		</ScrollableGrid>
 	);
 }

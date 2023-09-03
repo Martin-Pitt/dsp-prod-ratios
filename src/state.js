@@ -2,7 +2,7 @@ import { signal, effect, computed } from '@preact/signals';
 import {
 	Items, ItemsUnlocked,
 	Recipes, RecipesUnlocked,
-	Techs,
+	TechsByID,
 	locale,
 } from './lib/data.js';
 import { persistentSignal, temporarySignal } from './lib/persistent-signal.js';
@@ -24,7 +24,7 @@ const state = {
 	timeScale: persistentSignal('timeScale', 'minute'),
 	
 	research: persistentSignal('research', [], {
-		restore: array => array.map(id => Techs.find(tech => tech.id === id)),
+		restore: array => array.map(id => TechsByID.get(id)),
 		persist: array => array.map(tech => tech.id)
 	}),
 	

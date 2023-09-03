@@ -70,6 +70,12 @@ export const Techs = translate(JSONRecurse(undefined, techs));
 export const Recipes = translate(JSONRecurse(undefined, recipes));
 export const Items = translate(JSONRecurse(undefined, items));
 
+// Quick lookups
+export const TechsByID = new Map(Techs.map(tech => [tech.id, tech]));
+export const RecipesByID = new Map(Recipes.map(recipe => [recipe.id, recipe]));
+export const ItemsByID = new Map(Items.map(item => [item.id, item]));
+
+
 // Mark all tech part of main quest
 for(let tech of Techs) if(tech.id < 2000 && tech.position[1] === 1) tech.isMain = true;
 
@@ -99,15 +105,33 @@ for(let index = 0; index < positions.y.length; ++index)
 	}
 }
 
-
 let topResearch = Math.min(...Techs.filter(tech => tech.id < 2000).map(tech => tech.y));
 let topUpgrades = Math.min(...Techs.filter(tech => tech.id > 2000).map(tech => tech.y));
 for(let tech of Techs) tech.y = 1 + tech.y - (tech.id < 2000? topResearch : topUpgrades);
 
+// Instead of preTechs lets have postTechs, makes some things easier, e.g. rendering lines in research
+for(let tech of Techs)
+{
+	let postTechs = [];
+	for(let t of Techs)
+	{
+		if(t === tech || !t.preTechs) continue;
+		if(t.preTechs.includes(tech.id)) postTechs.push(t.id);
+	}
+	if(postTechs.length)
+	{
+		// postTechs.sort((a, b) => TechsByID.get(a).y - TechsByID.get(b).y);
+		postTechs.sort((a, b) => {
+			let ay = TechsByID.get(a).y;
+			let by = TechsByID.get(b).y;
+			if(ay > by) return 1;
+			if(ay < by) return -1;
+			return 0;
+		});
+		tech.postTechs = postTechs;
+	}
+}
 
-
-
-// Techs.map(({ name, x, y }) => ({ name, x, y }));
 
 
 

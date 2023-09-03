@@ -12,14 +12,16 @@
 		cursor: var(--cursor-grab);
 	}
 	
-	main.research .canvas {
+	main.research .grid {
 		display: inline-grid;
-		grid-auto-columns: 100px;
-		grid-auto-rows: 60px;
-		grid-gap: 40px var(--horizontal-gap);
-		/* padding: 40px 20px 20px 20px; */
+		grid-template-columns: repeat(var(--columns), 100px);
+		grid-template-rows: repeat(var(--rows), 60px);
+		grid-gap: 40px 60px;
 		margin: 500px;
-		--horizontal-gap: 60px;
+	}
+	
+	main.research canvas {
+		z-index: -3;
 	}
 	
 	main.research.is-dragging {
@@ -31,68 +33,17 @@
 		pointer-events: none;
 	}
 	
-	main.research .about {
-		grid-column: 1 / 3;
-		grid-row: 2 / 5;
-		height: fit-content;
-		/* outline: 2px dashed lch(100 0 0 / 0.2); */
-		/* padding: 4px 10px; */
-	}
-	
-	main.research .reset {
-		display: block;
-		margin-top: 10px;
-		padding: 6px 10px;
-		border: 1px solid var(--neon-red);
-	}
-	
-	main.research .epoch {
-		position: relative;
-		grid-area: 1 / 1 / -1 / -1;
-		/* background: var(--tint); */
-		/* background: radial-gradient(16px at center, var(--tint) 2px, lch(0 0 0 / 0.0) 3px) center / 16px 16px; */
-		/* background: repeating-radial-gradient(16px at center, var(--tint) 2px, lch(0 0 0 / 0.0) 6px) center / 16px 16px; */
-		/* opacity: 0.1; */
-		
-		background-image:
-			repeating-linear-gradient(var(--angle), var(--tint), var(--tint) 4px, transparent 4px, transparent 7px),
-			repeating-linear-gradient(var(--angle), var(--tint), var(--tint) 96px, transparent 112px, transparent 128px, var(--tint) 144px, var(--tint) 240px);
-		/* background-blend-mode: difference; */
-		pointer-events: none;
-		opacity: 0.1;
-		--tint: lch(100 0 0 / 0.5);
-		--angle: 0deg;
-	}
-	
-	main.research .epoch:nth-of-type(1) { --angle: 5deg }
-	main.research .epoch:nth-of-type(2) { --angle: -40deg }
-	main.research .epoch:nth-of-type(3) { --angle: 20deg }
-	main.research .epoch:nth-of-type(4) { --angle: -60deg }
-	main.research .epoch:nth-of-type(5) { --angle: 30deg }
-	main.research .epoch:nth-of-type(6) { --angle: -45deg }
-	
-	main.research .epoch:nth-of-type(1) { --angle: 90deg }
-	main.research .epoch:nth-of-type(2) { --angle: -80deg }
-	main.research .epoch:nth-of-type(3) { --angle: 70deg }
-	main.research .epoch:nth-of-type(4) { --angle: -80deg }
-	main.research .epoch:nth-of-type(5) { --angle: 110deg }
-	main.research .epoch:nth-of-type(6) { --angle: -95deg }
-	
-	
 	main.research .tech {
+		position: relative;
+		cursor: var(--cursor-pointer);
+	}
+	
+	/* main.research .tech {
 		position: relative;
 		width: 100px;
 		height: 60px;
 		background-color: var(--tech-unavailable);
 		cursor: var(--cursor-pointer);
-		
-		/* border-style: solid;
-		border-width: 8px 25px 10px 8px;
-		border-image-source: url('../../images/textures/window-content-5.avif');
-		border-image-slice: 8 25 10 8 fill;
-		border-image-width: 8px 25px 10px 8px;
-		border-image-outset: 0px;
-		border-image-repeat: stretch; */
 	}
 	
 	main.research .tech.hovered {
@@ -110,7 +61,7 @@
 	main.research .tech.is-researched {
 		background-color: var(--tech-researched);
 		outline: 3px solid var(--tech-researched-border);
-	}
+	} */
 	
 	main.research .tech .name {
 		position: absolute;
@@ -132,236 +83,79 @@
 		margin: auto;
 	}
 	
-	main.research .link {
-		position: relative;
-		margin-left: 100px;
-		margin-right: 100px;
-		color: var(--tech-unavailable);
-		visibility: hidden;
-		pointer-events: none;
-		--line-thickness: 2px;
-		--base-thickness: 10px;
-		--arrow-thickness: 8px;
-		--arrow-aspect: 1.4;
-	}
 	
-	main.research .link.hovered:not(.is-active) {
-		color: var(--tech-hovered);
-		z-index: 1;
-	}
-	
-	main.research .link.is-active {
-		color: var(--tech-link);
-	}
-	
-	
-	main.research .link.in-line .line,
-	main.research .link.is-above .before,
-	main.research .link.is-above .after,
-	main.research .link.is-below .before,
-	main.research .link.is-below .after {
-		position: absolute;
-		content: '';
-		visibility: initial;
-	}
-	
-	main.research .link.is-above .before,
-	main.research .link.is-below .before {
-		top: calc(30px - var(--line-thickness)*0.5);
-		left: 0;
-		width: calc(var(--horizontal-gap)*0.5 - 2px);
-		bottom: calc(30px - var(--line-thickness)*0.5);
-	}
-	
-	main.research .link.is-above .after,
-	main.research .link.is-below .after {
-		top: calc(30px - var(--line-thickness)*0.5);
-		left: calc(var(--horizontal-gap)*0.5 - 2px);
-		right: 0;
-		bottom: calc(30px - var(--line-thickness)*0.5);
-	}
-	
-	main.research .link.in-line .line {
-		top: calc(30px - var(--line-thickness)*0.5);
-		left: 0;
-		right: 0;
-		bottom: calc(30px - var(--line-thickness)*0.5);
-		border-top: var(--line-thickness) solid;
-	}
-	
-	main.research .link.in-line.is-main .line {
-		top: calc(30px - 8px);
-		bottom: calc(30px - 8px);
-		border-top: 16px solid;
-		/* opacity: 0.4; */
-	}
-	
-	main.research .link.in-line.is-main .line::before {
-		position: absolute;
-		left: 6px;
-		bottom: 0;
-		content: 'Main quest';
-		color: lch(20 0 0);
-		font-weight: 600;
-		font-size: 8px;
-		line-height: 14px;
-		font-stretch: 110%;
-		white-space: nowrap;
-	}
-	main.research .link.in-line.is-main:not(.is-active) .line::before {
-		color: lch(60 0 0);
-		font-weight: 400;
-	}
-	
-	main.research .link.above-main {}
-	main.research .link.below-main {}
-	
-	
-	main.research .link.is-above .before,
-	main.research .link.is-below .before {
-		border-right: var(--line-thickness) solid;
-	}
-	
-	main.research .link.is-above:not(.from-main) .before,
-	main.research .link.is-below .after {
-		border-bottom: var(--line-thickness) solid;
-	}
-	
-	main.research .link.is-above .after,
-	main.research .link.is-below:not(.from-main) .before {
-		border-top: var(--line-thickness) solid;
-	}
-	
-	
-	
-	main.research .link.is-above:not(.to-main) .before,
-	main.research .link.is-above .after {
-		top: calc((30px - var(--line-thickness)*0.5) + var(--to, 0) * 12px);
-	}
-	
-	main.research .link.is-below:not(.to-main) .before,
-	main.research .link.is-below .after {
-		bottom: calc((30px - var(--line-thickness)*0.5) - var(--to, 0) * 12px);
-	}
-	
-	main.research .link.is-below.from-main .before,
-	main.research .link.is-below.from-main .after {
-		top: calc(30px + 8px);
-	}
-	
-	main.research .link.is-above.from-main .before,
-	main.research .link.is-above.from-main .after {
-		bottom: calc(30px + 8px);
-	}
-	
-	main.research .link.is-above.below-main.to-main .before {
-		top: calc(30px + 8px);
-	}
-	
-	main.research .link.is-below.to-main .before {
-		bottom: calc(30px + 8px);
-	}
-	
-	
-	
-	
-	
-	
-	/* main.research .link.in-line:not(.is-main) .line::before {
-		top: -10px;
-		left: 0;
-		height: 16px;
-		width: 10px;
-		background: currentColor;
-		clip-path: polygon(
-			0% 0%,
-			50% 0%,
-			100% 50%,
-			50% 100%,
-			0% 100%
-		);
-	}
-	
-	main.research .link.in-line:not(.is-main) .line::after {
-		top: -7px;
-		left: 100%;
-		height: 10px;
-		width: 12px;
-		background: currentColor;
-		clip-path: polygon(
-			0% 0%,
-			100% 50%,
-			0% 100%
-		);
+	/* main.research .tile {
+		width: 100px;
+		height: 60px;
+		background-color: var(--tech-unavailable);
 	} */
 	
 	
-	
-	
-	
-	main.research .link.in-line:not(.is-main) .line,
-	main.research .link.is-above .after,
-	main.research .link.is-below .after {
-		right: calc(var(--arrow-thickness) * var(--arrow-aspect));
+	main.research .tech .tile {
+		position: relative;
+		width: 100px;
+		height: 60px;
+		cursor: var(--cursor-pointer);
+		--clip-path: polygon(
+			0 6px,
+			6px 0,
+			100% 0,
+			100% calc(100% - 6px),
+			calc(100% - 3px) calc(100% - 3px),
+			calc(100% - 12px) calc(100% - 3px),
+			calc(100% - 15px) 100%,
+			0 100%
+		);
 	}
 	
-	
-	main.research .link .base,
-	main.research .link .arrow {
+	main.research .tile::before {
 		position: absolute;
-		background: currentColor;
+		inset: -2px;
+		z-index: -2;
+		content: '';
+		background-color: var(--tech-hovered);
+		clip-path: var(--clip-path);
+		opacity: 0;
+		/* transition: opacity 120ms, inset 300ms; */
+		transition: opacity 140ms;
+		pointer-events: none;
 	}
 	
-	main.research .link .base {
-		left: 0;
-		height: var(--base-thickness);
-		width: calc(var(--base-thickness)*0.75);
-		clip-path: polygon(
-			0% 0%,
-			50% 0%,
-			100% 50%,
-			50% 100%,
-			0% 100%
-		);
+	main.research .tech.hovered .tile::before,
+	main.research .tech:hover .tile::before {
+		opacity: 1;
+		transition-duration: 60ms;
 	}
 	
-	main.research .link.in-line .base,
-	main.research .link.is-below .base {
-		top: calc(var(--base-thickness)*-0.5 - var(--line-thickness)*0.5);
-	}
-	main.research .link.is-above .base {
-		bottom: calc(var(--base-thickness)*-0.5 - var(--line-thickness)*0.5);
+	main.research .tech.is-researched .tile::before {
+		inset: -3px;
+		background-color: var(--tech-researched-border);
+		opacity: 1;
 	}
 	
-	main.research .link .arrow {
-		left: 100%;
-		height: var(--arrow-thickness);
-		width: calc(var(--arrow-thickness) * var(--arrow-aspect));
-		clip-path: polygon(
-			0% 0%,
-			100% 50%,
-			0% 100%
-		);
+	main.research .tile::after {
+		position: absolute;
+		inset: 0px;
+		z-index: -1;
+		content: '';
+		background-color: var(--tech-unavailable);
+		clip-path: var(--clip-path);
 	}
 	
-	main.research .link.in-line .arrow,
-	main.research .link.is-above .arrow {
-		top: calc(var(--arrow-thickness)*-0.5 - var(--line-thickness)*0.5);
+	main.research .tech.can-research .tile::after {
+		background-color: var(--tech-available);
 	}
 	
-	main.research .link.is-below .arrow {
-		bottom: calc(var(--arrow-thickness)*-0.5 - var(--line-thickness)*0.5);
+	main.research .tech.is-researched .tile:after {
+		background-color: var(--tech-researched);
 	}
 	
 	
 	
 	
 	
-	/* main.research .link:not(.in-line).from-main .before { border-right: var(--line-thickness) dotted white; }
-	main.research .link:not(.in-line).from-main .after { border-left: var(--line-thickness) dotted white; }
-	main.research .link.is-above.from-main .before,
-	main.research .link.is-below.from-main .after{ border-bottom: var(--line-thickness) dotted white; }
-	main.research .link.is-above.from-main .after,
-	main.research .link.is-below.from-main .before { border-top: var(--line-thickness) dotted white; } */
 	
+	/* main.research .grid { grid-template-rows: repeat(var(--rows), minmax(60px, auto)) }
+	main.research .tech { transition: width 200ms, height 200ms }
+	main.research .tech:hover { width: 140px; height: 140px; } */
 }

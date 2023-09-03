@@ -2,6 +2,7 @@ import { useState, useEffect } from 'preact/hooks';
 import { Router } from 'preact-router';
 import {
 	Meta, Techs, Recipes, Items, Strings,
+	TechsByID, RecipesByID, ItemsByID,
 	AssemblerProductionSpeed,
 	SmelterProductionSpeed,
 	ChemicalProductionSpeed,
@@ -22,16 +23,19 @@ import Header from './components/header.jsx';
 import Intro from './pages/intro.jsx';
 import Calculator from './pages/calculator.jsx';
 import Research from './pages/research.jsx';
+import ResearchOld from './pages/research-old.jsx';
 import Reference from './pages/reference.jsx';
 import Settings from './pages/settings.jsx';
 import Tips from './pages/tips.jsx';
 import Community from './pages/community.jsx';
+import CSSVariables from './css/variables.js';
 
 
 // Debugging & DevTools fun
 console.log('Hey there! Want to play with the internal data? These are exposed on `window.…` for you to play with');
 const Debuggables = {
 	Meta, Techs, Recipes, Items, Strings,
+	TechsByID, RecipesByID, ItemsByID,
 	SolverTree, RecipeTree, CalcTree,
 	AssemblerProductionSpeed,
 	SmelterProductionSpeed,
@@ -45,6 +49,7 @@ const Debuggables = {
 	locale,
 	internalLocale,
 	state,
+	CSSVariables,
 };
 Object.assign(window, Debuggables);
 console.log(...Object.keys(Debuggables));
@@ -158,6 +163,13 @@ export function App(props) {
 					<ViewTransitionPage
 						path="/research"
 						element={<Research/>}
+						title="Research | DSP Ratios"
+						description="Research tree of Dyson Sphere Program, finetune the calculator to your current tech progress"
+						canonical="https://dsp-ratios.com/research"
+					/>
+					<ViewTransitionPage
+						path="/research-old"
+						element={<ResearchOld/>}
 						title="Research | DSP Ratios"
 						description="Research tree of Dyson Sphere Program, finetune the calculator to your current tech progress"
 						canonical="https://dsp-ratios.com/research"

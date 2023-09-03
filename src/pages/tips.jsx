@@ -40,6 +40,33 @@ export default function Tips(props) {
 					Getting lost? You can misuse <Item id={2030} named plural/> as beacons (see below).
 					Use <Item id={1131} named plural/> to paint lines or zones that can be seen from afar or when quickly popping into orbit.
 				</li>
+				<li>
+					How you play the game is up to you! But for a general outline of what game progression can be like:
+					<ul>
+						<li>
+							Beginning — Belt Spaghetti, Early Mall<br/>
+							Your belts are a mess, factories spot the landscape as you deal with the terrain. It's a good idea to start an early mall — a factory complex that slowly produces the essential or all the buildings for you
+						</li>
+						<li>
+							Mid Game — Planetary Logistics Station, Big Mall, Modularising Factory<br/>
+							Everything changes when you unlock the Planetary Logistics Station. You want to unlock this as soon as possible. This is now when you can remove the old factory and start building everything with modules, with a PLS's for input and output.
+						</li>
+						<li>
+							Late Game — PLS, Interstellar Logistics Station, Orbital Collectors, Heavy blueprint usage<br/>
+							As you expand across planets and building an interstellar empire, you will find yourself designing your own blueprints.
+						</li>
+						<li>
+							End Game — 'Mission Complete'
+						</li>
+					</ul>
+					Ideally you want to push straight into unlocking and building Planetary Logistics Station as early as possible, as it will significantly ease factory design &amp; logistics.
+				</li>
+				<li>
+					The belt bus layout does not work well in Dyson Sphere Program, compared to Factorio. You will want to use PLS/ILS.
+				</li>
+				<li class={classNames({ 'is-locked': isLockedItem(2103) })}>
+					Instead of using several <Item id={2020} named plural/>, you can use a single <Item id={2103} named/>{isLockedItem(2104)? null : <> or <Item id={2104} named/></>} set to storage to act as big <Item id={2020} named/> with multiple outputs. This can save a lot of space compared to complex belt layouts and cut down on buildings.
+				</li>
 			</ul>
 			<h3>
 				Performance

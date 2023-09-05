@@ -31,6 +31,12 @@ export default function Tips(props) {
 			</h3>
 			<ul>
 				<li>
+					It is essential to automate all your buildings as soon as they are unlocked. Get away from handcrafting, DSP is more focused on automation.
+				</li>
+				<li>
+					Aim to produce at least 1 per second of each research matrix.
+				</li>
+				<li>
 					Fire Ice is the most important resource. Most commonly you will find gas giants that produce Fire Ice, or you can find Fire Ice Veins on some planets.
 				</li>
 				<li>

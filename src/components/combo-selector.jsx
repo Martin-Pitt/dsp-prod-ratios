@@ -348,7 +348,13 @@ export default function ComboSelector(props) {
 										}
 										
 										return (
-											<label style={`grid-row: ${index + 1}/${index + 2}`}>
+											<label
+												class={classNames({
+													'is-selected': item.id === state.preferred[name].value,
+													'is-disabled': !itemsUnlocked.has(item.id),
+												})}
+												style={`grid-row: ${index + 1}/${index + 2}`}
+											>
 												<input
 													type="radio"
 													name={name}
@@ -400,7 +406,10 @@ export default function ComboSelector(props) {
 											{item.name}
 										</span>
 										{item.miningFrom && (
-											<label style={{ gridArea: `${row} / ${column + 1} / ${row + 1} / ${column + 2}` }}>
+											<label
+												class={classNames({ 'is-selected': item.id === state.preferred[item.id].value })}
+												style={{ gridArea: `${row} / ${column + 1} / ${row + 1} / ${column + 2}` }}
+											>
 												{[1120, 1121].includes(item.id)? <Tech id={1606}/> : <Item item={item} data-lvl={0}/>}
 												<input
 													type="radio"
@@ -416,7 +425,13 @@ export default function ComboSelector(props) {
 										{recipes
 										.filter(recipe => state.showHiddenUpgrades.value || recipesUnlocked.has(recipe.id))
 										.map((recipe, index) =>
-											<label style={{ gridArea: `${row} / ${column + index + (item.miningFrom? 2 : 1)} / ${row + 1} / ${column + index + (item.miningFrom? 2 : 1)}` }}>
+											<label
+												class={classNames({
+													'is-selected': recipe.id === state.preferred[item.id].value,
+													'is-disabled': !recipesUnlocked.has(recipe.id),
+												})}
+												style={{ gridArea: `${row} / ${column + index + (item.miningFrom? 2 : 1)} / ${row + 1} / ${column + index + (item.miningFrom? 2 : 1)}` }}
+											>
 												{recipe.id === 40? <Tech id={1142}/> : <Recipe recipe={recipe}/>}
 												<input
 													type="radio"

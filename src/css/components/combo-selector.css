@@ -97,6 +97,14 @@
 		}
 	}
 	
+	.combo-selector select {
+		padding: 0 4px;
+	}
+	
+	.combo-selector select:hover {
+		background: lch(0 0 0 / 0.1);
+	}
+	
 	.combo-selector .steppers {
 		display: inline-flex;
 		flex-flow: column nowrap;
@@ -139,6 +147,10 @@
 	
 	.combo-selector .specific input {
 		color: var(--neon-green);
+	}
+	
+	.combo-selector .specific .text {
+		white-space: nowrap;;
 	}
 	
 	@media (max-width: 640px) {
@@ -245,10 +257,10 @@
 		align-self: center;
 	}
 	
-	.combo-selector .preferred:has(.is-used) .name.is-used {
+	/* .combo-selector .preferred:has(.is-used) .name.is-used {
 		color: var(--neon-yellow);
 		filter: drop-shadow(0 0 3px currentColor);
-	}
+	} */
 	
 	/* .combo-selector .preferred:has(.is-used) .name:not(.is-used) {
 		opacity: 0.6;
@@ -280,12 +292,8 @@
 		padding: 0px 10px 10px 0px;
 	}
 	
-	.combo-selector .preferred label:has(:checked) {
-		/* background-color: var(--neon-blue); */
-	}
-	
 	.combo-selector .preferred label:hover::before,
-	.combo-selector .preferred label:has(:checked)::before {
+	.combo-selector .preferred label.is-selected::before {
 		position: absolute;
 		inset: 0;
 		content: '';
@@ -298,29 +306,29 @@
 		opacity: 0.4;
 	}
 	
-	.combo-selector .preferred label:has(:checked)::before {
+	.combo-selector .preferred label.is-selected::before {
 		opacity: 1;
 	}
 	
-	.combo-selector .preferred label:has(:disabled) {
+	.combo-selector .preferred label.is-disabled {
 		filter: grayscale();
 	}
 	
-	.combo-selector .preferred label:has(:disabled)::before {
+	.combo-selector .preferred label.is-disabled::before {
 		display: none;
 	}
 
-	.combo-selector .preferred label:has(:disabled) input {
+	.combo-selector .preferred label.is-disabled input {
 		cursor: var(--cursor-default);
 	}
 	
-	.combo-selector .preferred label:has(:disabled) .icon {
+	.combo-selector .preferred label.is-disabled .icon {
 		filter: contrast(0) brightness(0);
 		opacity: 0.2;
 		cursor: var(--cursor-default);
 	}
 	
-	.combo-selector .preferred label:has(:disabled):hover {
+	.combo-selector .preferred label.is-disabled:hover {
 		background: none;
 	}
 	

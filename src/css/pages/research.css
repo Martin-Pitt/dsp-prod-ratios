@@ -13,6 +13,7 @@
 	}
 	
 	main.research .grid {
+		isolation: isolate;
 		display: inline-grid;
 		grid-template-columns: repeat(var(--columns), 100px);
 		grid-template-rows: repeat(var(--rows), 60px);

@@ -97,14 +97,6 @@
 		}
 	}
 	
-	.combo-selector select {
-		padding: 0 4px;
-	}
-	
-	.combo-selector select:hover {
-		background: lch(0 0 0 / 0.1);
-	}
-	
 	.combo-selector .steppers {
 		display: inline-flex;
 		flex-flow: column nowrap;
@@ -224,12 +216,15 @@
 		display: inline-block;
 		aspect-ratio: 1;
 		width: 20px;
-		background: url('../../images/noun-triangle-down-851964.svg') top left / 100% auto no-repeat;
+		margin-left: 0.2em;
+		background: url('../../images/noun-triangle-down-851964.svg') 50% 40% / 80% auto no-repeat;
+		background-image: url('../../images/textures/drone-down.svg');
 		vertical-align: middle;
 	}
 	
 	.combo-selector details[open] summary::after {
 		background-image: url('../../images/noun-triangle-up-851966.svg');
+		background-image: url('../../images/textures/drone-up.svg');
 	}
 	
 	.combo-selector .preferred .note {

@@ -3,6 +3,21 @@
 		background: black;
 	}
 	
+	select {
+		background: url('../images/textures/drone-down.svg') calc(100% - 2px) 50% / 1em 1em no-repeat;
+		-moz-appearance: none; 
+		-webkit-appearance: none; 
+		appearance: none;
+		padding: 0.2em calc(0.2em + 1em) 0.2em 0.2em;
+		/* height: 30px; 
+		width: 100px;
+		padding: 5px; */
+	}
+	
+	select:hover {
+		background-color: lch(0 0 0 / 0.1);
+	}
+	
 	#app {
 		display: grid;
 		grid-template-rows: auto minmax(auto, 1fr);

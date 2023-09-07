@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <clipPath id="clip-Drone">
+      <rect width="80" height="80"/>
+    </clipPath>
+  </defs>
+  <g id="Drone" clip-path="url(#clip-Drone)">
+    <path id="Path_2" data-name="Path 2" d="M40,14,78,54,68,64,60,54l-6,7H46l-6-9-6,9H26l-6-7L12,64,2,54Z" fill="#fff"/>
+  </g>
+</svg>

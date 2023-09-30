@@ -78,6 +78,15 @@ function getEpochTechs(epoch) {
 	);
 }
 
+function getTechEpoch(tech) {
+	if(tech.id >= 2000) return null;
+	let matrices = tech.items?.filter(item => item >= 6000 && item <= 6099 /* NOTE: Not clear how far ID range for matrixes go */)
+	return (matrices && matrices[matrices.length - 1]) || 6000;
+}
+
+function toggleShowEpoch() {
+	state.showMatrixEpoch.value = !state.showMatrixEpoch.value;
+}
 
 
 
@@ -91,6 +100,7 @@ function Tile(props) {
 	const isResearched = state.research.value.includes(tech);
 	const hasPreTechs = !tech.preTechs || tech.preTechs.every(id => state.research.value.includes(TechsByID.get(id)));
 	const hasImplicitPreTechs = !tech.preTechsImplicit || tech.preTechsImplicit.every(id => state.research.value.includes(TechsByID.get(id)));
+	const epoch = state.showMatrixEpoch.value? getTechEpoch(tech) : undefined;
 	
 	return (
 		<div
@@ -102,13 +112,15 @@ function Tile(props) {
 			})}
 			data-id={tech.id}
 			style={{ gridArea: `${tech.y} / ${tech.x}` }}
+			data-epoch={epoch}
 			onClick={event => onResearch(event, tech)}
 			onPointerEnter={event => hovered.value = tech}
 			onPointerLeave={event => hovered.value = null}
 		>
 			<span class="name">{tech.name}</span>
 			<div class="tile">
-				<div class="icon" data-icon={`tech.${tech.id}`}/>
+				<div class="icon tech" data-icon={`tech.${tech.id}`}/>
+				{/* {epoch && epoch > 6000? <div class="icon epoch" data-icon={`item.${epoch}`}/> : null} */}
 			</div>
 		</div>
 	);
@@ -441,7 +453,14 @@ export default function Research(props) {
 			>
 				<p class="about">
 					Select your research progress so far, this tool will then only show recipes available to you.
-					{state.research.value.length? <button class="reset" onClick={resetResearch}>Reset research</button> : <><br/><br/>With nothing selected, all recipes are available.</>}
+					{state.research.value.length?
+						<button class="reset" onClick={resetResearch}>Reset research</button> :
+						<><br/><br/>With nothing selected, all recipes are available.</>
+					}<br/>
+					<br/>
+					<label>
+						Show matrix epoch: <input type="checkbox" checked={state.showMatrixEpoch.value} onClick={toggleShowEpoch}/>
+					</label>
 				</p>
 				<Wires techs={techs} columns={columns} rows={rows}/>
 				<Tiles techs={techs}/>

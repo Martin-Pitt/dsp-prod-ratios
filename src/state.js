@@ -59,7 +59,8 @@ const state = {
 	
 	recipesUsed: signal(new Set()),
 	typesUsed: signal(new Set()),
-	showHiddenUpgrades: signal(false),
+	showHiddenUpgrades: temporarySignal(false),
+	showMatrixEpoch: temporarySignal(false),
 	
 	recipesUnlocked: computed(() => RecipesUnlocked(state.research.value)),
 	itemsUnlocked: computed(() => ItemsUnlocked(state.research.value)),

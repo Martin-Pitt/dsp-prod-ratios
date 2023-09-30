@@ -100,7 +100,7 @@ localStorage.setItem('last-visit', new Date());
 	}
 	if(paragraphs.length)
 	{
-		content.item.snippet = snippet.join('<br>').replaceAll(/(<\/?)iframe/g, '$1not-iframe');
+		content.item.snippet = snippet.join('<br>'); // .replaceAll(/(<\/?)iframe/g, '$1not-iframe');
 	}
 	
 	// Mark as new if so

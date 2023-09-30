@@ -287,7 +287,7 @@ export default function ComboSelector(props) {
 				</label>
 				
 				{hasProliferators && (
-					<label class={classNames('proliferator', `is-${state.proliferator.value?.split('.')[0] /*.replace(/\./g, '-')*/}`)} data-new>
+					<label class={classNames('proliferator', `is-${state.proliferator.value?.split('.')[0] /*.replace(/\./g, '-')*/}`)}>
 						<span title={`Highest unlocked tier will be used: ${Items.find(item => item.id === unlockedProliferators[unlockedProliferators.length - 1]).name}`}>
 							Proliferator:
 						</span>

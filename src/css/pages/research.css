@@ -221,6 +221,37 @@
 	}
 	
 	
+	main.research .zoom {
+		position: absolute;
+		bottom: 10px;
+		left: 0;
+		right: 0;
+		width: fit-content;
+		padding: 0;
+		background-color: black;
+		/* border-radius: 6px; */
+		border: 1px solid;
+		margin: 0 auto;
+	}
+	
+	main.research .zoom button {
+		width: 3em;
+		height: 2em;
+		/* border: 1px solid; */
+		font-weight: bold;
+	}
+	
+	main.research .zoom button:hover {
+		background-color: lch(100 0 0 / 0.3);
+	}
+	
+	main.research .zoom output {
+		display: inline-block;
+		width: 2.5em;
+		margin: 0 0.2em;
+		text-align: center;
+	}
+	
 	
 	
 	/* main.research .grid { grid-template-rows: repeat(var(--rows), minmax(60px, auto)) }

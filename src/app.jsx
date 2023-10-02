@@ -2,7 +2,7 @@ import { useState, useEffect } from 'preact/hooks';
 import { Router } from 'preact-router';
 import {
 	Meta, Techs, Recipes, Items, Strings,
-	TechsByID, RecipesByID, ItemsByID,
+	TechsByID, RecipesByID, ItemsByID, EpochsByTech,
 	AssemblerProductionSpeed,
 	SmelterProductionSpeed,
 	ChemicalProductionSpeed,
@@ -35,7 +35,7 @@ import CSSVariables from './css/variables.js';
 console.log('Hey there! Want to play with the internal data? These are exposed on `window.…` for you to play with');
 const Debuggables = {
 	Meta, Techs, Recipes, Items, Strings,
-	TechsByID, RecipesByID, ItemsByID,
+	TechsByID, RecipesByID, ItemsByID, EpochsByTech,
 	SolverTree, RecipeTree, CalcTree,
 	AssemblerProductionSpeed,
 	SmelterProductionSpeed,

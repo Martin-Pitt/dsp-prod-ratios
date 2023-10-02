@@ -1,7 +1,9 @@
 @layer pages {
 	main.research {
-		overflow: scroll;
 		padding: 0;
+	}
+	
+	main.research.scrollable-grid {
 		background:
 			url('../../images/textures/dot-grid.avif') 0 0 / 20px repeat,
 			url('../../images/textures/vignette.avif') center / cover no-repeat
@@ -9,7 +11,14 @@
 		background-blend-mode: overlay, normal;
 		background-attachment: local, fixed;
 		background-color: lch(17 0 0);
-		cursor: var(--cursor-grab);
+	}
+	
+	main.research.pannable-grid {
+		background:
+			url('../../images/textures/vignette.avif') center / cover no-repeat
+		;
+		background-attachment: fixed;
+		background-color: lch(17 0 0);
 	}
 	
 	main.research .grid {
@@ -19,6 +28,30 @@
 		grid-template-rows: repeat(var(--rows), 60px);
 		grid-gap: 40px 60px;
 		margin: 500px;
+		visibility: hidden;
+	}
+	
+	main.research.pannable-grid .grid {
+		/* background: url('../../images/textures/dot-grid.avif') 0 0 / 20px repeat; */
+		background:
+			radial-gradient(3px at 4px 4px, lch(100 0 0 / 0.05) 1px, lch(100 0 0 / 0) 2px) -14px -14px / 20px 20px,
+			
+			radial-gradient(3px at 4px 4px, lch(100 0 0 / 0.05) 2px, lch(100 0 0 / 0) 2.5px) -14px -34px / 160px 100px,
+			radial-gradient(3px at 4px 4px, lch(100 0 0 / 0.05) 2px, lch(100 0 0 / 0) 2.5px) -54px -34px / 160px 100px,
+			
+			radial-gradient(3px at 4px 4px, lch(100 0 0 / 0.05) 2px, lch(100 0 0 / 0) 2.5px) -14px -14px / 160px 100px,
+			radial-gradient(3px at 4px 4px, lch(100 0 0 / 0.05) 2px, lch(100 0 0 / 0) 2.5px) -54px -14px / 160px 100px
+			
+			/* radial-gradient(3px at 4px 4px, lch(100 0 0 / 0.2) 2px, lch(100 0 0 / 0) 2.5px) -24px -24px / 160px 100px,
+			radial-gradient(3px at 4px 4px, lch(100 0 0 / 0.2) 2px, lch(100 0 0 / 0) 2.5px) -24px -84px / 160px 100px,
+			radial-gradient(3px at 4px 4px, lch(100 0 0 / 0.2) 2px, lch(100 0 0 / 0) 2.5px) -144px -24px / 160px 100px,
+			radial-gradient(3px at 4px 4px, lch(100 0 0 / 0.2) 2px, lch(100 0 0 / 0) 2.5px) -144px -84px / 160px 100px */
+		;
+		visibility: initial;
+	}
+	
+	main.research .grid > * {
+		visibility: initial;
 	}
 	
 	main.research canvas {
@@ -26,12 +59,7 @@
 		z-index: -3;
 	}
 	
-	main.research.is-dragging {
-		cursor: var(--cursor-grabbing);
-		user-select: none;
-	}
-	
-	main.research.is-dragging > * {
+	main.research.is-dragging .grid > * {
 		pointer-events: none;
 	}
 	
@@ -211,6 +239,7 @@
 		grid-column: 1 / 3;
 		grid-row: 1 / 4;
 		height: fit-content;
+		user-select: none;
 	}
 	
 	main.research .reset {

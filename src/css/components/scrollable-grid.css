@@ -1,0 +1,11 @@
+@layer components {
+	.scrollable-grid {
+		overflow: scroll;
+		touch-action: pan-x pan-y;
+		cursor: var(--cursor-grab);
+	}
+	
+	.scrollable-grid.is-dragging {
+		cursor: var(--cursor-grabbing);
+	}
+}

@@ -1,10 +1,11 @@
 import { useState, useCallback, useMemo, useRef, useEffect } from 'preact/hooks';
 import { signal, computed } from '@preact/signals';
 import classNames from 'classnames';
-import { Recipes, Techs, TechsByID } from '../lib/data.js';
+import { Recipes, Techs, TechsByID, EpochsByTech } from '../lib/data.js';
 import state from '../state.js';
 import CSSVariables from '../css/variables.js';
 import ScrollableGrid from '../components/scrollable-grid.jsx';
+import PannableGrid from '../components/pannable-grid.jsx';
 
 
 
@@ -60,6 +61,7 @@ function toggleResearch(tech) {
 }
 
 function onResearch(event, tech) {
+	if(event.defaultPrevented) return;
 	event.preventDefault();
 	toggleResearch(tech);
 }
@@ -78,14 +80,12 @@ function getEpochTechs(epoch) {
 	);
 }
 
-function getTechEpoch(tech) {
-	if(tech.id >= 2000) return null;
-	let matrices = tech.items?.filter(item => item >= 6000 && item <= 6099 /* NOTE: Not clear how far ID range for matrixes go */)
-	return (matrices && matrices[matrices.length - 1]) || 6000;
-}
-
 function toggleShowEpoch() {
 	state.showMatrixEpoch.value = !state.showMatrixEpoch.value;
+}
+
+function toggleNativeScroll() {
+	state.nativeScroll.value = !state.nativeScroll.value;
 }
 
 
@@ -100,7 +100,7 @@ function Tile(props) {
 	const isResearched = state.research.value.includes(tech);
 	const hasPreTechs = !tech.preTechs || tech.preTechs.every(id => state.research.value.includes(TechsByID.get(id)));
 	const hasImplicitPreTechs = !tech.preTechsImplicit || tech.preTechsImplicit.every(id => state.research.value.includes(TechsByID.get(id)));
-	const epoch = state.showMatrixEpoch.value? getTechEpoch(tech) : undefined;
+	const epoch = state.showMatrixEpoch.value? EpochsByTech.get(tech.id) : undefined;
 	
 	return (
 		<div
@@ -114,8 +114,16 @@ function Tile(props) {
 			style={{ gridArea: `${tech.y} / ${tech.x}` }}
 			data-epoch={epoch}
 			onClick={event => onResearch(event, tech)}
-			onPointerEnter={event => hovered.value = tech}
-			onPointerLeave={event => hovered.value = null}
+			// onPointerEnter={event => hovered.value = tech}
+			// onPointerLeave={event => hovered.value = null}
+			onPointerEnter={event => {
+				if(event.pointerType !== 'touch')
+					hovered.value = tech;
+			}}
+			onPointerLeave={event => {
+				if(event.pointerType !== 'touch')
+					hovered.value = null;
+			}}
 		>
 			<span class="name">{tech.name}</span>
 			<div class="tile">
@@ -438,8 +446,10 @@ export default function Research(props) {
 		return [techs, columns, rows];
 	}, []);
 	
+	const Grid = state.nativeScroll.value? ScrollableGrid : PannableGrid;
+	
 	return (
-		<ScrollableGrid
+		<Grid
 			tag="main"
 			name="research"
 			class={classNames('page research')}
@@ -458,6 +468,9 @@ export default function Research(props) {
 						<><br/><br/>With nothing selected, all recipes are available.</>
 					}<br/>
 					<br/>
+					<label title="In case the map-like controls don't work, then you can switch to native browser scrolling">
+						Native scrolling: <input type="checkbox" checked={state.nativeScroll.value} onClick={toggleNativeScroll}/>
+					</label><br/>
 					<label>
 						Show matrix epoch: <input type="checkbox" checked={state.showMatrixEpoch.value} onClick={toggleShowEpoch}/>
 					</label>
@@ -465,6 +478,6 @@ export default function Research(props) {
 				<Wires techs={techs} columns={columns} rows={rows}/>
 				<Tiles techs={techs}/>
 			</div>
-		</ScrollableGrid>
+		</Grid>
 	);
 }

@@ -1,5 +1,8 @@
+import classNames from 'classnames';
 import { useState, useEffect, useCallback, useRef } from 'preact/hooks';
 
+
+const HasZoomSupport = CSS.supports('zoom', 1.0);
 const ZoomLevels = [4, 3, 2, 1.5, 1.25, 1, 1/1.25, 1/1.5, 1/2, 1/3, 1/4]
 const DefaultZoomLevel = ZoomLevels.findIndex(level => level === 1);
 
@@ -112,22 +115,38 @@ export default function ScrollableGrid(props) {
 		});
 	}, []);
 	
+	// Attempt to fix issue of cursor not changing to grabbing icon by triggering reflow(s)
+	// This is not foolproof but it seems to increase the chance
+	useEffect(() => {
+		if(isDragging)
+		{
+			root.current.offsetWidth;
+			setTimeout(() => root.current.offsetWidth, 50);
+			setTimeout(() => root.current.offsetWidth, 200);
+			setTimeout(() => root.current.offsetWidth, 500);
+		}
+	}, [isDragging]);
 	
 	return (
 		<Tag
-			class={props.class}
+			class={classNames('scrollable-grid', { 'is-dragging': isDragging }, props.class)}
 			onMouseDown={onMouseDownScrollDrag}
 			onMouseMove={isMouseDown? onMouseMoveScrollDrag : null}
 			onMouseUp={isMouseDown? onMouseUpScrollDrag : null}
 			onScroll={saveScroll}
 			ref={root}
 		>
-			<div style={{zoom}}>{props.children}</div>
-			<div class="zoom">
+			{/* <div style={{zoom}}>{props.children}</div> */}
+			<div style={{
+				zoom,
+				// transform: `scale(${zoom})`,
+				// transformOrigin: 'top left',
+			}}>{props.children}</div>
+			{HasZoomSupport && <div class="zoom">
 				<button title="Make research smaller" onClick={zoomOut}>-</button>
 				<output>{(Math.round(zoom * 1000) / 10)}%</output>
 				<button title="Make research bigger" onClick={zoomIn}>+</button>
-			</div>
+			</div>}
 		</Tag>
 	);
 }

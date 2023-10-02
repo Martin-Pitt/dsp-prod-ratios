@@ -1,0 +1,25 @@
+@layer components {
+	.pannable-grid {
+		overflow: hidden;
+		touch-action: none;
+		cursor: var(--cursor-grab);
+		user-select: none;
+	}
+	
+	.pannable-grid.is-dragging {
+		cursor: var(--cursor-grabbing);
+		user-select: none;
+		pointer-events: none;
+	}
+	
+	.pannable-grid .pan {
+		display: inline-block;
+		will-change: transform;
+		visibility: hidden;
+		/* outline: 1px dashed red; */
+	}
+	
+	.pannable-grid .pan > * {
+		visibility: initial;
+	}
+}

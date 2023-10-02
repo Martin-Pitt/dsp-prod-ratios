@@ -1,0 +1,122 @@
+@layer pages {
+	main.tips {
+		background-color: lch(50 21.33 249.3 / 0.77);
+		background-color: lch(39 16.84 247.12);
+		background-image: radial-gradient(
+			200% 120% at bottom center,
+			lch(50 21.33 249.3),
+			lch(34 16.84 247.12)
+		);
+		background-attachment: fixed;
+		padding: 30px;
+	}
+	
+	main.tips .page-content {
+		max-width: calc(400px + (10px + 2vw) + 400px);
+		margin: 0 auto;
+	}
+	
+	main.tips .page-content > :first-child {
+		margin-top: 5vh;
+	}
+	
+	main.tips .page-content > :last-child {
+		margin-bottom: 5vh;
+	}
+	
+	main.tips .page-content > * + * {
+		margin-top: calc(10px + 2vw);
+	}
+	
+	
+	main.tips h2 {}
+	main.tips h3 {}
+	
+	main.tips p {}
+	
+	main.tips .link {
+		color: inherit;
+	}
+	
+	main.tips .external-link::after {
+		content: '';
+		display: inline-block;
+		width: 0.7em;
+		aspect-ratio: 1;
+		background: url('../../images/noun-share-3066982-FFFFFF.svg') center / 100% auto no-repeat;
+		margin-left: 0.15em;
+		vertical-align: 15%;
+	}
+	
+	main.tips ul {
+		display: grid;
+		grid-auto-flow: row;
+		grid-gap: 15px;
+	}
+	main.tips ul > li {
+		position: relative;
+		padding-left: 1em;
+		/* display: inline; */
+		/* width: fit-content; */
+	}
+	
+	main.tips ul > li::before {
+		/* position: absolute; */
+		/* top: 0.5lh; */
+		left: 0;
+		content: '';
+		display: inline-block;
+		width: 0.5em;
+		height: 0.5em;
+		border-radius: 50%;
+		margin-right: 0.5em;
+		margin-left: -1em;
+		background-color: currentColor;
+		vertical-align: 0%;
+	}
+	
+	main.tips ul ul {
+		margin: 0.5em 0;
+	}
+	
+	main.tips ul ul > li::before {
+		border-radius: 0;
+		width: 0.6em;
+		height: 0.2em;
+		margin-right: 0.4em;
+		vertical-align: 12%;
+	}
+	
+	
+	
+	main.tips .is-locked {
+		display: none;
+	}
+	
+	/* main.tips .is-locked {
+		opacity: 0.1;
+	}
+	
+	main.tips li.is-locked span,
+	main.tips li:not(.is-locked) span.is-locked,
+	main.tips h3.is-locked span,
+	main.tips h3:not(.is-locked) span.is-locked {
+		border-radius: 16px;
+		background-color: lch(100 0 0);
+		color: transparent;
+	}
+	
+	main.tips .is-locked .icon {
+		opacity: 0;
+	} */
+	
+	
+	
+	main.tips .per {
+		color: var(--neon-green);
+	}
+	
+	main.tips .quantity {
+		color: var(--neon-blue);
+	}
+}

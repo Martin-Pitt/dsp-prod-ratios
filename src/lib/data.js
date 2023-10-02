@@ -74,6 +74,20 @@ export const Items = translate(JSONRecurse(undefined, items));
 export const TechsByID = new Map(Techs.map(tech => [tech.id, tech]));
 export const RecipesByID = new Map(Recipes.map(recipe => [recipe.id, recipe]));
 export const ItemsByID = new Map(Items.map(item => [item.id, item]));
+export const EpochsByTech = new Map(Techs.filter(tech => tech.id < 2000)
+	.map(tech => {
+		function check(tech, topEpoch = 0) {
+			let matrices = tech.items?.filter(item => item >= 6000 && item <= 6099);
+			let epoch = matrices?.[matrices.length - 1] || 6000;
+			if(epoch > topEpoch) topEpoch = epoch;
+			if(tech.preTechs) for(let preTech of tech.preTechs) topEpoch = check(TechsByID.get(preTech), topEpoch);
+			if(tech.preTechsImplicit) for(let preTech of tech.preTechsImplicit) topEpoch = check(TechsByID.get(preTech), topEpoch);
+			return topEpoch;
+		}
+		
+		return [tech.id, check(tech)];
+	})
+);
 
 
 // Mark all tech part of main quest

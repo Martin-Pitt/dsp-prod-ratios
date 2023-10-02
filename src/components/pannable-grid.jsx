@@ -93,8 +93,17 @@ export default function PannableGrid(props) {
 			// Trackpad pinch-zoom
 			if (event.ctrlKey)
 			{
-				var s = Math.exp(-event.deltaY/100);
-				z *= s;
+				let s = Math.exp(-event.deltaY/100);
+				// z *= s;
+				
+				let newZoom = Math.max(ZoomLevels[ZoomLevels.length - 1], Math.min(ZoomLevels[0], z * s));
+				s = newZoom / z;
+				
+				let dx = event.pageX - root.offsetWidth/2;
+				let dy = event.pageY - root.offsetHeight/2;
+				x += dx/(newZoom*s) - dx/newZoom;
+				y += dy/(newZoom*s) - dy/newZoom;
+				z = newZoom;
 			}
 			
 			// Otherwise, handle trackpad panning
@@ -145,299 +154,24 @@ export default function PannableGrid(props) {
 		}
 		
 		// Multi-touch
-		/*
-		let pointerState = 'none';
-		let pointers = [];
-		let pointerPositions = {};
-		let panHasMoved = false;
-		let panStart = { x: 0, y: 0 };
-		let panEnd = { x: 0, y: 0 };
-		let panDelta = { x: 0, y: 0 };
-		let zoomHasMoved = false;
-		let zoomStart = { y: 0 };
-		let zoomEnd = { y: 0 };
-		let zoomDelta = { y: 0 };
-		
-		function addPointer(event) {
-			pointers.push(event);
-		}
-		
-		function removePointer(event) {
-			delete pointerPositions[event.pointerId];
-			let iter = pointers.length;
-			while(iter --> 0)
-			{
-				if(pointers[iter].pointerId === event.pointerId) pointers.splice(iter, 1);
-			}
-		}
-		
-		function trackPointer(event) {
-			let position = pointerPositions[event.pointerId];
-			if(!position) position = pointerPositions[event.pointerId] = { x: 0, y: 0 };
-			position.x = event.pageX;
-			position.y = event.pageY;
-		}
-		
-		function getSecondPointerPosition( event ) {
-			const pointer = (event.pointerId === pointers[0].pointerId) ? pointers[1] : pointers[0];
-			return pointerPositions[pointer.pointerId];
-		}
-		
-		function onPointerDown(event) {
-			event.preventDefault();
-			
-			if(pointers.length === 0)
-			{
-				panHasMoved = zoomHasMoved = false;
-				root.setPointerCapture(event.pointerId);
-				root.addEventListener('pointermove', onPointerMove);
-				root.addEventListener('pointerup', onPointerUp);
-			}
-			
-			addPointer(event);
-			
-			switch(event.pointerType)
-			{
-				case 'touch':
-					onTouchStart(event);
-					break;
-				default:
-					onMouseDown(event);
-			}
-		}
-		
-		function onPointerMove(event) {
-			switch(event.pointerType)
-			{
-				case 'touch':
-					onTouchMove(event);
-					break;
-				default:
-					onMouseMove(event);
-			}
-		}
-		
-		function onPointerUp(event) {
-			event.preventDefault();
-			
-			removePointer(event);
-			
-			if(pointers.length === 0)
-			{
-				root.releasePointerCapture(event.pointerId);
-				root.removeEventListener('pointermove', onPointerMove);
-				root.removeEventListener('pointerup', onPointerUp);
-			}
-			
-			props.onEnd?.();
-			
-			switch(pointerState)
-			{
-				case 'pan':
-					if(!panHasMoved)
-					{
-						let hit = document.elementFromPoint(event.clientX, event.clientY);
-						let click = new MouseEvent('click', {
-							bubbles: true,
-							cancelable: true,
-							clientX: event.clientX,
-							clientY: event.clientY,
-						});
-						hit.dispatchEvent(click);
-						props.onTap?.(event);
-					}
-					break;
-				case 'zoom':
-					if(!zoomHasMoved)
-					{
-						let hit = document.elementFromPoint(event.clientX, event.clientY);
-						let click = new MouseEvent('click', {
-							bubbles: true,
-							cancelable: true,
-							clientX: event.clientX,
-							clientY: event.clientY,
-						});
-						hit.dispatchEvent(click);
-						props.onTap?.(event);
-					}
-					break;
-			}
-			
-			pointerState = 'none';
-			// zoom.firstChild.nodeValue = pointerState;
-		}
-		
-		function onTouchStart(event) {
-			trackPointer(event);
-			
-			switch(pointers.length) {
-				case 1:
-					pointerState = 'pan';
-					// zoom.firstChild.nodeValue = pointerState;
-					handleTouchStartPan();
-					break;
-				case 2:
-					pointerState = 'zoom';
-					// zoom.firstChild.nodeValue = pointerState;
-					handleTouchStartZoom();
-					break;
-				default:
-					pointerState = 'none';
-					// zoom.firstChild.nodeValue = pointerState;
-			}
-			
-			if(state !== 'none') props.onStart?.();
-		}
-		function onTouchMove(event) {
-			trackPointer(event);
-			
-			switch(pointerState) {
-				case 'pan':
-					handleTouchMovePan(event);
-					break;
-				case 'zoom':
-					handleTouchMoveZoom(event);
-					break;
-				default:
-					pointerState = 'none';
-					// zoom.firstChild.nodeValue = pointerState;
-			}
-		}
-		
-		function onMouseDown(event) {
-			switch(event.button) {
-				case 0:
-					pointerState = 'pan';
-					// zoom.firstChild.nodeValue = pointerState;
-					handleMouseDownPan(event);
-					break;
-				default:
-					pointerState = 'none';
-					// zoom.firstChild.nodeValue = pointerState;
-			}
-			
-			if(state !== 'none') props.onStart?.();
-		}
-		function onMouseMove(event) {
-			switch(pointerState) {
-				case 'pan':
-					handleMouseMovePan(event);
-					break;
-			}
-		}
-		
-		function handleTouchStartPan() {
-			if(pointers.length === 1)
-			{
-				panStart.x = pointers[0].pageX;
-				panStart.y = pointers[0].pageY;
-			}
-			else
-			{
-				panStart.x = (pointers[0].pageX + pointers[1].pageX) * 0.5;
-				panStart.y = (pointers[0].pageY + pointers[1].pageY) * 0.5;
-			}
-		}
-		function handleTouchMovePan(event) {
-			if(pointers.length === 1)
-			{
-				panEnd.x = event.pageX;
-				panEnd.y = event.pageY;
-			}
-			else
-			{
-				let position = getSecondPointerPosition(event);
-				panEnd.x = (event.pageX + position.x) * 0.5;
-				panEnd.y = (event.pageY + position.y) * 0.5;
-			}
-			
-			panDelta.x = panEnd.x - panStart.x;
-			panDelta.y = panEnd.y - panStart.y;
-			
-			x += panDelta.x / z;
-			y += panDelta.y / z;
-			
-			updateTransform();
-			
-			panStart.x = panEnd.x;
-			panStart.y = panEnd.y;
-			
-			if(Math.abs(panDelta.x) > 1.5 || Math.abs(panDelta.y) > 1.5)
-				panHasMoved = true;
-		}
-		
-		function handleTouchStartZoom() {
-			zoomStart.y = Math.abs(pointers[0].pageY - pointers[1].pageY);
-			zoom.firstChild.nodeValue = `${zoomStart.y.toFixed(1)}`;
-			
-			// if(pointers.length === 1)
-			// {
-			// 	zoomStart.y = pointers[0].pageY;
-			// }
-			
-			// else
-			// {
-			// 	zoomStart.y = (pointers[0].pageY + pointers[1].pageY) * 0.5;
-			// }
-		}
-		function handleTouchMoveZoom(event) {
-			const position = getSecondPointerPosition(event);
-			
-			
-			zoomEnd.y = Math.abs(event.pageY - position.y);
-			zoomDelta.y = zoomEnd.y / zoomStart.y;
-			// zoom.firstChild.nodeValue = `${zoomEnd.y.toFixed(2)} / ${zoomStart.y.toFixed(2)}`;
-			
-			z *= zoomDelta.y;
-			updateTransform();
-			
-			zoomStart.y = zoomEnd.y;
-			
-			if(Math.abs(zoomDelta.y - 1) > 0.005)
-				zoomHasMoved = true;
-		}
-		
-		function handleMouseDownPan(event) {
-			panStart.x = event.clientX;
-			panStart.y = event.clientY;
-		}
-		function handleMouseMovePan(event) {
-			panEnd.x = event.clientX;
-			panEnd.y = event.clientY;
-			
-			panDelta.x = panEnd.x - panStart.x;
-			panDelta.y = panEnd.y - panStart.y;
-			
-			x += panDelta.x / z;
-			y += panDelta.y / z;
-			
-			updateTransform();
-			
-			panStart.x = panEnd.x;
-			panStart.y = panEnd.y;
-			
-			if(Math.abs(panDelta.x) > 1.5 || Math.abs(panDelta.y) > 1.5)
-				panHasMoved = true;
-		}
-		*/
-		
 		let pointerState = 'none';
 		let pointers = [];
 		let panStart = { x: 0, y: 0, z: 0 };
 		let panEnd = { x: 0, y: 0, z: 0 };
 		let panDelta = { x: 0, y: 0, z: 0 };
 		let panHasMoved = false;
+		let mouse = { x: 0, y: 0, at: 0 };
 		
 		function onPointerDown(event) {
-			// console.log('[onPointerDown]', event.pointerId, event.pointerType);
 			event.preventDefault();
+			event.stopImmediatePropagation();
 			
 			if(pointers.length === 0)
 			{
 				panHasMoved = false;
 				root.setPointerCapture(event.pointerId);
-				root.addEventListener('pointermove', onPointerMove);
-				root.addEventListener('pointerup', onPointerUp);
+				root.addEventListener('pointermove', onPointerMove, { capture: true });
+				root.addEventListener('pointerup', onPointerUp, { capture: true });
 			}
 			
 			pointers.push({
@@ -454,7 +188,9 @@ export default function PannableGrid(props) {
 		}
 		
 		function onPointerMove(event) {
-			// console.log('[onPointerMove]');
+			event.preventDefault();
+			event.stopImmediatePropagation();
+			
 			let pointer = pointers.find(p => p.identifier === event.pointerId);
 			if(pointer)
 			{
@@ -470,7 +206,9 @@ export default function PannableGrid(props) {
 		}
 		
 		function onPointerUp(event) {
-			// console.log('[onPointerUp]', event.pointerId, event.pointerType);
+			event.preventDefault();
+			event.stopImmediatePropagation();
+			
 			let index = pointers.findIndex(p => p.identifier === event.pointerId);
 			let pointer = pointers[index];
 			if(pointer)
@@ -486,14 +224,19 @@ export default function PannableGrid(props) {
 					if(!panHasMoved)
 					{
 						let hit = document.elementFromPoint(event.clientX, event.clientY);
-						let click = new MouseEvent('click', {
-							bubbles: true,
-							cancelable: true,
-							clientX: event.clientX,
-							clientY: event.clientY,
+						// let click = new MouseEvent('click', {
+						// 	bubbles: true,
+						// 	cancelable: true,
+						// 	clientX: event.clientX,
+						// 	clientY: event.clientY,
+						// });
+						// hit.dispatchEvent(click);
+						// hit.click();
+						props.onTap?.({
+							type: 'tap',
+							timeStamp: performance.now(),
+							target: hit,
 						});
-						hit.dispatchEvent(click);
-						props.onTap?.(event);
 					}
 					break;
 			}
@@ -503,8 +246,8 @@ export default function PannableGrid(props) {
 			if(!pointers.length)
 			{
 				root.releasePointerCapture(event.pointerId);
-				root.removeEventListener('pointermove', onPointerMove);
-				root.removeEventListener('pointerup', onPointerUp);
+				root.removeEventListener('pointermove', onPointerMove, { capture: true });
+				root.removeEventListener('pointerup', onPointerUp, { capture: true });
 				pointerState = 'none';
 			}
 			
@@ -519,7 +262,6 @@ export default function PannableGrid(props) {
 		}
 		
 		function onTouchStart(event) {
-			// console.log('[onTouchStart]');
 			switch(pointers.length) {
 				case 1:
 				case 2:
@@ -534,7 +276,6 @@ export default function PannableGrid(props) {
 		}
 		
 		function onTouchMove(event) {
-			// console.log('[onTouchMove]');
 			switch(pointerState)
 			{
 				case 'pan': handleTouchMovePan(event); break;
@@ -542,7 +283,6 @@ export default function PannableGrid(props) {
 		}
 		
 		function onMouseDown(event) {
-			// console.log('[onMouseDown]');
 			switch(event.button)
 			{
 				case 0: pointerState = 'pan'; break;
@@ -555,7 +295,6 @@ export default function PannableGrid(props) {
 		}
 		
 		function onMouseMove(event) {
-			// console.log('[onMouseMove]');
 			switch(pointerState)
 			{
 				case 'pan': handleMouseMovePan(event); break;
@@ -564,13 +303,11 @@ export default function PannableGrid(props) {
 		
 		
 		function handleMouseDownPan(event) {
-			// console.log('[handleMouseDownPan]');
 			panStart.x = event.clientX;
 			panStart.y = event.clientY;
 		}
 		
 		function handleMouseMovePan(event) {
-			// console.log('[handleMouseMovePan]');
 			panEnd.x = event.clientX;
 			panEnd.y = event.clientY;
 			
@@ -590,7 +327,6 @@ export default function PannableGrid(props) {
 		}
 		
 		function handleTouchStartPan(event) {
-			// console.log('[handleTouchStartPan]');
 			switch(pointers.length)
 			{
 				case 1:
@@ -609,7 +345,6 @@ export default function PannableGrid(props) {
 		}
 		
 		function handleTouchMovePan(event) {
-			// console.log('[handleTouchMovePan]');
 			switch(pointers.length)
 			{
 				case 1:
@@ -688,7 +423,26 @@ export default function PannableGrid(props) {
 		}
 		
 		function onClick(event) {
-			if(event instanceof PointerEvent) event.preventDefault();
+			// if(event instanceof PointerEvent && event.pointerType === '')
+			// {
+			// 	event.preventDefault();
+			// 	event.stopImmediatePropagation();
+			// }
+			
+			console.log('[onClick]', {
+				time: Math.round(event.timeStamp),
+				prev: event.defaultPrevented,
+				type: event instanceof PointerEvent? `PointerEvent.${event.pointerType}` : 'MouseEvent',
+				target: event.target,
+				event,
+			});
+		}
+		
+		
+		function onMouseTrack(event) {
+			mouse.at = event.timeStamp;
+			mouse.x = event.screenX;
+			mouse.y = event.screenY;
 		}
 		
 		
@@ -697,11 +451,12 @@ export default function PannableGrid(props) {
 		document.addEventListener('gesturestart', onGesture);
 		document.addEventListener('gesturechange', onGesture);
 		document.addEventListener('gestureend', onGesture);
-		root.addEventListener('pointerdown', onPointerDown);
-		root.addEventListener('pointercancel', onPointerUp);
+		root.addEventListener('pointerdown', onPointerDown, { capture: true });
+		root.addEventListener('pointercancel', onPointerUp, { capture: true });
 		root.addEventListener('click', onClick, { capture: true });
 		zoomOut.addEventListener('click', handleZoomOut);
 		zoomIn.addEventListener('click', handleZoomIn);
+		root.addEventListener('mousemove', onMouseTrack);
 		
 		updateTransform();
 		
@@ -711,8 +466,8 @@ export default function PannableGrid(props) {
 			document.removeEventListener('gesturestart', onGesture);
 			document.removeEventListener('gesturechange', onGesture);
 			document.removeEventListener('gestureend', onGesture);
-			root.removeEventListener('pointerdown', onPointerDown);
-			root.removeEventListener('pointercancel', onPointerUp);
+			root.removeEventListener('pointerdown', onPointerDown, { capture: true });
+			root.removeEventListener('pointercancel', onPointerUp, { capture: true });
 			root.removeEventListener('click', onClick, { capture: true });
 			zoomOut.removeEventListener('click', handleZoomOut);
 			zoomIn.removeEventListener('click', handleZoomIn);

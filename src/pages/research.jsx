@@ -60,24 +60,12 @@ function toggleResearch(tech) {
 	else pinResearch(tech);
 }
 
-function onResearch(event, tech) {
-	if(event.defaultPrevented) return;
-	event.preventDefault();
+function onResearch(tech) {
 	toggleResearch(tech);
 }
 
 function resetResearch() {
 	state.research.value = [];
-}
-
-function getEpochTechs(epoch) {
-	return Techs.filter(tech =>
-		tech.id < 2000 &&
-		tech.items?.every(item => item <= epoch) &&
-		(epoch === 6000? true :
-			tech.items.some(item => item === epoch)
-		)
-	);
 }
 
 function toggleShowEpoch() {
@@ -113,7 +101,11 @@ function Tile(props) {
 			data-id={tech.id}
 			style={{ gridArea: `${tech.y} / ${tech.x}` }}
 			data-epoch={epoch}
-			onClick={event => onResearch(event, tech)}
+			onClick={state.nativeScroll.value? event => {
+				if(event.defaultPrevented) return;
+				event.preventDefault();
+				onResearch(tech);
+			 } : undefined}
 			// onPointerEnter={event => hovered.value = tech}
 			// onPointerLeave={event => hovered.value = null}
 			onPointerEnter={event => {
@@ -453,6 +445,12 @@ export default function Research(props) {
 			tag="main"
 			name="research"
 			class={classNames('page research')}
+			onTap={!state.nativeScroll.value? event => {
+				let tile = event.target.closest('.tech[data-id]');
+				if(!tile) return;
+				let tech = TechsByID.get(+tile.dataset.id);
+				onResearch(tech);
+			} : undefined}
 		>
 			<div
 				class="grid"

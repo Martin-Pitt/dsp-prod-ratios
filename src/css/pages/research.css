@@ -41,14 +41,13 @@
 			
 			radial-gradient(3px at 4px 4px, lch(100 0 0 / 0.05) 2px, lch(100 0 0 / 0) 2.5px) -14px -14px / 160px 100px,
 			radial-gradient(3px at 4px 4px, lch(100 0 0 / 0.05) 2px, lch(100 0 0 / 0) 2.5px) -54px -14px / 160px 100px
-			
-			/* radial-gradient(3px at 4px 4px, lch(100 0 0 / 0.2) 2px, lch(100 0 0 / 0) 2.5px) -24px -24px / 160px 100px,
-			radial-gradient(3px at 4px 4px, lch(100 0 0 / 0.2) 2px, lch(100 0 0 / 0) 2.5px) -24px -84px / 160px 100px,
-			radial-gradient(3px at 4px 4px, lch(100 0 0 / 0.2) 2px, lch(100 0 0 / 0) 2.5px) -144px -24px / 160px 100px,
-			radial-gradient(3px at 4px 4px, lch(100 0 0 / 0.2) 2px, lch(100 0 0 / 0) 2.5px) -144px -84px / 160px 100px */
 		;
 		visibility: initial;
 	}
+	
+	/* main.research.is-dragging .grid > * {
+		pointer-events: none;
+	} */
 	
 	main.research .grid > * {
 		visibility: initial;
@@ -59,44 +58,11 @@
 		z-index: -3;
 	}
 	
-	main.research.is-dragging .grid > * {
-		pointer-events: none;
-	}
-	
 	main.research .tech {
 		position: relative;
 		cursor: var(--cursor-pointer);
 	}
 	
-	/* main.research .tech {
-		position: relative;
-		width: 100px;
-		height: 60px;
-		background-color: var(--tech-unavailable);
-		cursor: var(--cursor-pointer);
-	}
-	
-	main.research .tech.hovered {
-		outline: 1px solid var(--tech-hovered);
-	}
-	
-	main.research .tech:hover {
-		outline: 3px solid var(--tech-hovered);
-	}
-	
-	main.research .tech.can-research {
-		background-color: var(--tech-available);
-	}
-	
-	main.research .tech.is-researched {
-		background-color: var(--tech-researched);
-		outline: 3px solid var(--tech-researched-border);
-	} */
-	
-	/* main.research .tech[data-epoch] {}
-	main.research .tech[data-epoch] .tile::after {
-		box-shadow: inset 0 0 0 3px var(--epoch);
-	} */
 	main.research .tech[data-epoch] {}
 	/* main.research .tech[data-epoch]::after {
 		position: absolute;
@@ -240,6 +206,15 @@
 		grid-row: 1 / 4;
 		height: fit-content;
 		user-select: none;
+	}
+	
+	main.research .about label {
+		display: inline-block;
+		padding: 4px;
+	}
+	
+	main.research .about input[type="checkbox"] {
+		margin-left: 0.3em;
 	}
 	
 	main.research .reset {

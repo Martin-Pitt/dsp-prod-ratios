@@ -9,7 +9,7 @@
 	.pannable-grid.is-dragging {
 		cursor: var(--cursor-grabbing);
 		user-select: none;
-		pointer-events: none;
+		/* pointer-events: none; */
 	}
 	
 	.pannable-grid .pan {

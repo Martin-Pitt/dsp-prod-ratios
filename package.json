@@ -9,7 +9,7 @@
 	"dependencies": {
 		"@preact/signals": "^1.2.1",
 		"classnames": "^2.3.2",
-		"preact": "^10.17.1",
+		"preact": "^10.18.2",
 		"preact-router": "^4.1.2"
 	},
 	"devDependencies": {

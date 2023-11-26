@@ -19,6 +19,10 @@
 		background-color: lch(0 0 0 / 0.1);
 	}
 	
+	select * {
+		color: black !important;
+	}
+	
 	#app {
 		display: grid;
 		grid-template-rows: auto minmax(auto, 1fr);

@@ -1,5 +1,6 @@
 @layer pages {
 	main.calculator {
 		background-color: lch(36 73.45 304.48);
+		--back-color: lch(36 73.45 304.48);
 	}
 }

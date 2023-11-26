@@ -5,6 +5,7 @@
 	
 	select {
 		background: url('../images/textures/drone-down.svg') calc(100% - 2px) 50% / 1em 1em no-repeat;
+		background-color: var(--back-color);
 		-moz-appearance: none; 
 		-webkit-appearance: none; 
 		appearance: none;

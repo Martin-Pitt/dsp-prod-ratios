@@ -1,6 +1,7 @@
 @layer pages {
 	main.research {
 		padding: 0;
+		--back-color: lch(17 0 0);
 	}
 	
 	main.research.scrollable-grid {

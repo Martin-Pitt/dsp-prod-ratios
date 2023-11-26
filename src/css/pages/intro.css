@@ -1,7 +1,6 @@
 @layer pages {
 	main.intro {
 		background-color: lch(39 16.84 247.12);
-		--back-color: lch(39 16.84 247.12);
 		background-image: radial-gradient(
 			200% 120% at bottom center,
 			lch(50 21.33 249.3),

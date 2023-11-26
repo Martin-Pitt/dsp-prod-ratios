@@ -126,7 +126,6 @@
 	.solver .proliferator .icon[data-count]::before,
 	.solver .proliferator .icon[data-count] select {
 		font-size: 0.9em;
-		filter: none;
 	}
 	
 	.solver .logistics {}

@@ -7,7 +7,7 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
-		"@preact/signals": "^1.2.1",
+		"@preact/signals": "^1.2.2",
 		"classnames": "^2.3.2",
 		"preact": "^10.19.2",
 		"preact-router": "^4.1.2"

@@ -156,7 +156,7 @@ export const SmelterProductionSpeed = new Map([[2302, 1], [2315, 2], [2319, 3]])
 export const ChemicalProductionSpeed = new Map([[2309, 1], [2317, 2]]);
 export const BeltTransportSpeed = new Map([[2001, 6*60], [2002, 12*60], [2003, 30*60]]);
 export const ResearchSpeed = new Map([[2901, 1], [2902, 3]]);
-export const MiningSpeed = new Map([])
+export const MiningSpeed = new Map([2301, 30], [2316, 60]);
 export const StringFromTypes = new Map(
     Object.entries({
         // Item Types

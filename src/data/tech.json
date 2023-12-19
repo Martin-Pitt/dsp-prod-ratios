@@ -3,6 +3,7 @@
 		"id": 1,
 		"name": "T戴森球计划",
 		"description": "戴森球计划描述",
+		"published": true,
 		"hashNeeded": {
 			"type": "BigInt",
 			"value": "1"
@@ -17,6 +18,7 @@
 		"name": "T电磁学",
 		"description": "电磁学描述",
 		"conclusion": "电磁学结果",
+		"published": true,
 		"preTechs": [
 			1
 		],
@@ -61,6 +63,7 @@
 		"name": "T电磁矩阵",
 		"description": "电磁矩阵描述",
 		"conclusion": "电磁矩阵结果",
+		"published": true,
 		"preTechs": [
 			1001
 		],
@@ -102,6 +105,7 @@
 		"name": "T高效电浆控制",
 		"description": "高效电浆控制描述",
 		"conclusion": "高效电浆控制结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1001
@@ -137,6 +141,7 @@
 		"name": "T等离子萃取精炼",
 		"description": "等离子萃取精炼描述",
 		"conclusion": "等离子萃取精炼结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1120,
@@ -167,6 +172,7 @@
 		"name": "TX射线裂解",
 		"description": "X射线裂解描述",
 		"conclusion": "X射线裂解结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1121,
@@ -197,6 +203,7 @@
 		"name": "T重整精炼",
 		"description": "重整精炼描述",
 		"conclusion": "重整精炼结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1103
@@ -226,6 +233,7 @@
 		"name": "T能量矩阵",
 		"description": "能量矩阵描述",
 		"conclusion": "能量矩阵结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1102
@@ -253,6 +261,7 @@
 		"name": "T氢燃料棒",
 		"description": "氢燃料棒描述",
 		"conclusion": "氢燃料棒结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1111
@@ -280,6 +289,7 @@
 		"name": "T推进器",
 		"description": "推进器描述",
 		"conclusion": "推进器结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1112
@@ -307,6 +317,7 @@
 		"name": "T加力推进器",
 		"description": "加力推进器描述",
 		"conclusion": "加力推进器结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1113
@@ -334,6 +345,7 @@
 		"name": "T流体储存封装",
 		"description": "流体储存封装描述",
 		"conclusion": "流体储存封装结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1001
@@ -368,6 +380,7 @@
 		"name": "T基础化工",
 		"description": "基础化工描述",
 		"conclusion": "基础化工结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1120,
@@ -398,6 +411,7 @@
 		"name": "T高分子化工",
 		"description": "高分子化工描述",
 		"conclusion": "高分子化工结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1121
@@ -428,6 +442,7 @@
 		"name": "T高强度晶体",
 		"description": "高强度晶体描述",
 		"conclusion": "高强度晶体结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1122
@@ -457,6 +472,7 @@
 		"name": "T结构矩阵",
 		"description": "结构矩阵描述",
 		"conclusion": "结构矩阵结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1123
@@ -486,6 +502,7 @@
 		"name": "T卡西米尔晶体",
 		"description": "卡西米尔晶体描述",
 		"conclusion": "卡西米尔晶体结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1124
@@ -518,6 +535,7 @@
 		"name": "T高强度玻璃",
 		"description": "高强度玻璃描述",
 		"conclusion": "高强度玻璃结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1132
@@ -547,6 +565,7 @@
 		"name": "T应用型超导体",
 		"description": "应用型超导体描述",
 		"conclusion": "应用型超导体结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1121
@@ -575,6 +594,7 @@
 		"name": "T高强度材料",
 		"description": "高强度材料描述",
 		"conclusion": "高强度材料结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1131
@@ -605,6 +625,7 @@
 		"name": "T粒子可控技术",
 		"description": "粒子可控技术描述",
 		"conclusion": "粒子可控技术结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1132
@@ -637,6 +658,7 @@
 		"name": "T重氢分馏",
 		"description": "重氢分馏描述",
 		"conclusion": "重氢分馏结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1412,
@@ -668,6 +690,7 @@
 		"name": "T波函数干扰",
 		"description": "波函数干扰描述",
 		"conclusion": "波函数干扰结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1126,
@@ -700,6 +723,7 @@
 		"name": "T微型粒子对撞机",
 		"description": "微型粒子对撞机描述",
 		"conclusion": "微型粒子对撞机结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1124
@@ -724,7 +748,7 @@
 		],
 		"position": [
 			37,
-			-27
+			-31
 		]
 	},
 	{
@@ -732,6 +756,7 @@
 		"name": "T奇异物质",
 		"description": "奇异物质描述",
 		"conclusion": "奇异物质结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1142
@@ -755,7 +780,7 @@
 		],
 		"position": [
 			41,
-			-27
+			-31
 		]
 	},
 	{
@@ -763,6 +788,7 @@
 		"name": "T人造恒星",
 		"description": "人造恒星描述",
 		"conclusion": "人造恒星结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1145
@@ -798,6 +824,7 @@
 		"name": "T可控湮灭反应",
 		"description": "可控湮灭反应描述",
 		"conclusion": "可控湮灭反应结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1506
@@ -828,6 +855,7 @@
 		"name": "T增产剂 Mk.I",
 		"description": "增产剂 Mk.I描述",
 		"conclusion": "增产剂 Mk.I结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1311,
@@ -857,6 +885,7 @@
 		"name": "T增产剂 Mk.II",
 		"description": "增产剂 Mk.II描述",
 		"conclusion": "增产剂 Mk.II结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1302,
@@ -887,6 +916,7 @@
 		"name": "T增产剂 Mk.III",
 		"description": "增产剂 Mk.III描述",
 		"conclusion": "增产剂 Mk.III结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1152,
@@ -919,6 +949,7 @@
 		"name": "T基础制造工艺",
 		"description": "基础制造工艺描述",
 		"conclusion": "基础制造工艺结果",
+		"published": true,
 		"preTechs": [
 			1001
 		],
@@ -959,6 +990,7 @@
 		"name": "T高速制造工艺",
 		"description": "高速制造工艺描述",
 		"conclusion": "高速制造工艺结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1201,
@@ -979,6 +1011,24 @@
 		"unlockRecipes": [
 			46
 		],
+		"unlockFunctions": [
+			7
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					224,
+					63
+				]
+			}
+		],
 		"position": [
 			29,
 			-3
@@ -989,6 +1039,7 @@
 		"name": "T量子打印技术",
 		"description": "量子打印技术描述",
 		"conclusion": "量子打印技术结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1202,
@@ -1013,6 +1064,24 @@
 		"unlockRecipes": [
 			47
 		],
+		"unlockFunctions": [
+			7
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					224,
+					63
+				]
+			}
+		],
 		"position": [
 			49,
 			-3
@@ -1023,6 +1092,7 @@
 		"name": "T处理器",
 		"description": "处理器描述",
 		"conclusion": "处理器结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1311
@@ -1050,6 +1120,7 @@
 		"name": "T量子芯片",
 		"description": "量子芯片描述",
 		"conclusion": "量子芯片结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1312,
@@ -1082,6 +1153,7 @@
 		"name": "T大型采矿机",
 		"description": "大型采矿机描述",
 		"conclusion": "大型采矿机结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1303
@@ -1117,6 +1189,7 @@
 		"name": "T高级化工",
 		"description": "高级化工描述",
 		"conclusion": "高级化工结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1303,
@@ -1143,7 +1216,7 @@
 		],
 		"position": [
 			49,
-			-27
+			-31
 		]
 	},
 	{
@@ -1151,6 +1224,7 @@
 		"name": "T半导体材料",
 		"description": "半导体材料描述",
 		"conclusion": "半导体材料结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1201
@@ -1178,6 +1252,7 @@
 		"name": "T信息矩阵",
 		"description": "信息矩阵描述",
 		"conclusion": "信息矩阵结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1302,
@@ -1208,6 +1283,7 @@
 		"name": "T自动化冶金",
 		"description": "自动化冶金描述",
 		"conclusion": "自动化冶金结果",
+		"published": true,
 		"preTechs": [
 			1001
 		],
@@ -1249,6 +1325,7 @@
 		"name": "T冶炼提纯",
 		"description": "冶炼提纯描述",
 		"conclusion": "冶炼提纯结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1401
@@ -1278,6 +1355,7 @@
 		"name": "T晶体冶炼",
 		"description": "晶体冶炼描述",
 		"conclusion": "晶体冶炼结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1402
@@ -1309,6 +1387,7 @@
 		"name": "T钢材冶炼",
 		"description": "钢材冶炼描述",
 		"conclusion": "钢材冶炼结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1401
@@ -1326,6 +1405,24 @@
 		"unlockRecipes": [
 			63
 		],
+		"unlockFunctions": [
+			37
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					54,
+					161,
+					64
+				]
+			}
+		],
 		"position": [
 			17,
 			13
@@ -1336,6 +1433,7 @@
 		"name": "T火力发电",
 		"description": "火力发电描述",
 		"conclusion": "火力发电结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1201
@@ -1369,6 +1467,7 @@
 		"name": "T钛矿冶炼",
 		"description": "钛矿冶炼描述",
 		"conclusion": "钛矿冶炼结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1411
@@ -1398,6 +1497,7 @@
 		"name": "T高强度钛合金",
 		"description": "高强度钛合金描述",
 		"conclusion": "高强度钛合金结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1413
@@ -1429,6 +1529,7 @@
 		"name": "T移山填海工程",
 		"description": "移山填海工程描述",
 		"conclusion": "移山填海工程结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1411
@@ -1456,6 +1557,7 @@
 		"name": "T微型核聚变发电",
 		"description": "微型核聚变发电描述",
 		"conclusion": "微型核聚变发电结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1134
@@ -1491,6 +1593,7 @@
 		"name": "T位面冶金",
 		"description": "位面冶金描述",
 		"conclusion": "位面冶金结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1141
@@ -1527,6 +1630,7 @@
 		"name": "T太阳能收集",
 		"description": "太阳能收集描述",
 		"conclusion": "太阳能收集结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1402,
@@ -1562,6 +1666,7 @@
 		"name": "T光子变频",
 		"description": "光子变频描述",
 		"conclusion": "光子变频结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1501
@@ -1592,6 +1697,7 @@
 		"name": "T太阳帆轨道系统",
 		"description": "太阳帆轨道系统描述",
 		"conclusion": "太阳帆轨道系统结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1502
@@ -1625,6 +1731,7 @@
 		"name": "T射线接收站",
 		"description": "射线接收站描述",
 		"conclusion": "射线接收站结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1503
@@ -1654,6 +1761,7 @@
 		"name": "T行星电离层利用",
 		"description": "行星电离层利用描述",
 		"conclusion": "行星电离层利用结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1504
@@ -1677,6 +1785,24 @@
 			"type": "BigInt",
 			"value": "360000"
 		},
+		"unlockFunctions": [
+			8
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			}
+		],
 		"position": [
 			49,
 			1
@@ -1687,6 +1813,7 @@
 		"name": "T狄拉克逆变机制",
 		"description": "狄拉克逆变机制描述",
 		"conclusion": "狄拉克逆变机制结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1505
@@ -1722,6 +1849,7 @@
 		"name": "T宇宙矩阵",
 		"description": "宇宙矩阵描述",
 		"conclusion": "宇宙矩阵结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1506
@@ -1757,6 +1885,7 @@
 		"name": "T任务完成",
 		"description": "任务完成描述",
 		"conclusion": "任务完成结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1507
@@ -1771,6 +1900,24 @@
 			"type": "BigInt",
 			"value": "3600000"
 		},
+		"unlockFunctions": [
+			99
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			}
+		],
 		"position": [
 			69,
 			1
@@ -1781,6 +1928,7 @@
 		"name": "T能量储存",
 		"description": "能量储存描述",
 		"conclusion": "能量储存结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1403,
@@ -1814,6 +1962,7 @@
 		"name": "T星际电力运输",
 		"description": "星际电力运输描述",
 		"conclusion": "星际电力运输结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1414,
@@ -1846,6 +1995,7 @@
 		"name": "T地热开采",
 		"description": "地热开采描述",
 		"conclusion": "地热开采结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1502
@@ -1878,6 +2028,7 @@
 		"name": "T高强度轻质结构",
 		"description": "高强度轻质结构描述",
 		"conclusion": "高强度轻质结构结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1503
@@ -1911,6 +2062,7 @@
 		"name": "T垂直发射井",
 		"description": "垂直发射井描述",
 		"conclusion": "垂直发射井结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1521
@@ -1948,6 +2100,7 @@
 		"name": "T戴森球应力系统",
 		"description": "戴森球应力系统描述",
 		"conclusion": "戴森球应力系统结果",
+		"published": true,
 		"level": 1,
 		"maxLevel": 6,
 		"levelCoef1": 180000,
@@ -1973,6 +2126,24 @@
 			"type": "BigInt",
 			"value": "180000"
 		},
+		"unlockFunctions": [
+			26
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					46,
+					64
+				]
+			}
+		],
 		"position": [
 			49,
 			5
@@ -1983,6 +2154,7 @@
 		"name": "T基础物流系统",
 		"description": "基础物流系统描述",
 		"conclusion": "基础物流系统结果",
+		"published": true,
 		"preTechs": [
 			1001
 		],
@@ -2027,6 +2199,7 @@
 		"name": "T改良物流系统",
 		"description": "改良物流系统描述",
 		"conclusion": "改良物流系统结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1601
@@ -2066,6 +2239,7 @@
 		"name": "T高效物流系统",
 		"description": "高效物流系统描述",
 		"conclusion": "高效物流系统结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1602
@@ -2100,6 +2274,7 @@
 		"name": "T行星物流系统",
 		"description": "行星物流系统描述",
 		"conclusion": "行星物流系统结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1603
@@ -2135,6 +2310,7 @@
 		"name": "T星际物流系统",
 		"description": "星际物流系统描述",
 		"conclusion": "星际物流系统结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1604,
@@ -2171,6 +2347,7 @@
 		"name": "T气态行星开采",
 		"description": "气态行星开采描述",
 		"conclusion": "气态行星开采结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1605,
@@ -2203,6 +2380,7 @@
 		"name": "T集装物流系统",
 		"description": "集装物流系统描述",
 		"conclusion": "集装物流系统结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1603
@@ -2237,6 +2415,7 @@
 		"name": "T配送物流系统",
 		"description": "配送物流系统描述",
 		"conclusion": "配送物流系统结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1602
@@ -2260,6 +2439,24 @@
 			122,
 			123
 		],
+		"unlockFunctions": [
+			32
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			}
+		],
 		"position": [
 			25,
 			17
@@ -2270,6 +2467,7 @@
 		"name": "T电磁驱动",
 		"description": "电磁驱动描述",
 		"conclusion": "电磁驱动结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1001
@@ -2297,6 +2495,7 @@
 		"name": "T磁悬浮技术",
 		"description": "磁悬浮技术描述",
 		"conclusion": "磁悬浮技术结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1701
@@ -2326,6 +2525,7 @@
 		"name": "T粒子磁力阱",
 		"description": "粒子磁力阱描述",
 		"conclusion": "粒子磁力阱结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1702
@@ -2356,6 +2556,7 @@
 		"name": "T引力波折射",
 		"description": "引力波折射描述",
 		"conclusion": "引力波折射结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1143,
@@ -2389,6 +2590,7 @@
 		"name": "T引力矩阵",
 		"description": "引力矩阵描述",
 		"conclusion": "引力矩阵结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1303,
@@ -2414,7 +2616,7 @@
 		],
 		"position": [
 			49,
-			-31
+			-35
 		]
 	},
 	{
@@ -2422,6 +2624,7 @@
 		"name": "T超级磁场发生器",
 		"description": "超级磁场发生器描述",
 		"conclusion": "超级磁场发生器结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1702
@@ -2451,6 +2654,7 @@
 		"name": "T卫星配电系统",
 		"description": "卫星配电系统描述",
 		"conclusion": "卫星配电系统结果",
+		"published": true,
 		"isLabTech": true,
 		"preTechs": [
 			1711
@@ -2481,10 +2685,978 @@
 		]
 	},
 	{
+		"id": 1801,
+		"name": "T武器系统",
+		"description": "武器系统描述",
+		"conclusion": "武器系统结果",
+		"published": true,
+		"isLabTech": true,
+		"preTechs": [
+			1001
+		],
+		"preTechsImplicit": [
+			1401
+		],
+		"items": [
+			6001
+		],
+		"itemPoints": [
+			10
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "7200"
+		},
+		"unlockRecipes": [
+			125,
+			136
+		],
+		"addItems": [
+			1601
+		],
+		"addItemCounts": [
+			10
+		],
+		"position": [
+			13,
+			-47
+		]
+	},
+	{
+		"id": 1802,
+		"name": "T燃烧单元",
+		"description": "燃烧单元描述",
+		"conclusion": "燃烧单元结果",
+		"published": true,
+		"isLabTech": true,
+		"preTechs": [
+			1401
+		],
+		"items": [
+			6001
+		],
+		"itemPoints": [
+			20
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "21600"
+		},
+		"unlockRecipes": [
+			133
+		],
+		"position": [
+			17,
+			9
+		]
+	},
+	{
+		"id": 1803,
+		"name": "T爆破单元",
+		"description": "爆破单元描述",
+		"conclusion": "爆破单元结果",
+		"published": true,
+		"isLabTech": true,
+		"preTechs": [
+			1123
+		],
+		"items": [
+			6001,
+			6002
+		],
+		"itemPoints": [
+			20,
+			10
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "72000"
+		},
+		"unlockRecipes": [
+			134
+		],
+		"position": [
+			33,
+			-27
+		]
+	},
+	{
+		"id": 1804,
+		"name": "T晶石爆破单元",
+		"description": "晶石爆破单元描述",
+		"conclusion": "晶石爆破单元结果",
+		"published": true,
+		"isLabTech": true,
+		"preTechs": [
+			1125
+		],
+		"items": [
+			6001,
+			6002,
+			6003,
+			6004
+		],
+		"itemPoints": [
+			10,
+			10,
+			10,
+			5
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "216000"
+		},
+		"unlockRecipes": [
+			135
+		],
+		"position": [
+			41,
+			-27
+		]
+	},
+	{
+		"id": 1805,
+		"name": "T动力引擎",
+		"description": "动力引擎描述",
+		"conclusion": "动力引擎结果",
+		"published": true,
+		"isLabTech": true,
+		"preTechs": [
+			1001
+		],
+		"items": [
+			6001
+		],
+		"itemPoints": [
+			10
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "7200"
+		},
+		"unlockRecipes": [
+			105
+		],
+		"position": [
+			13,
+			-43
+		]
+	},
+	{
+		"id": 1806,
+		"name": "T导弹防御塔",
+		"description": "导弹防御塔描述",
+		"conclusion": "导弹防御塔结果",
+		"published": true,
+		"isLabTech": true,
+		"preTechs": [
+			1805,
+			1801
+		],
+		"preTechsImplicit": [
+			1802
+		],
+		"items": [
+			6001
+		],
+		"itemPoints": [
+			10
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "54000"
+		},
+		"unlockRecipes": [
+			129,
+			144
+		],
+		"position": [
+			21,
+			-47
+		]
+	},
+	{
+		"id": 1807,
+		"name": "T聚爆加农炮",
+		"description": "聚爆加农炮描述",
+		"conclusion": "聚爆加农炮结果",
+		"published": true,
+		"isLabTech": true,
+		"preTechs": [
+			1806
+		],
+		"preTechsImplicit": [
+			1702
+		],
+		"items": [
+			6001,
+			6002
+		],
+		"itemPoints": [
+			10,
+			10
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "108000"
+		},
+		"unlockRecipes": [
+			127,
+			139
+		],
+		"position": [
+			25,
+			-47
+		]
+	},
+	{
+		"id": 1808,
+		"name": "T信号塔",
+		"description": "信号塔描述",
+		"conclusion": "信号塔结果",
+		"published": true,
+		"isLabTech": true,
+		"preTechs": [
+			1806
+		],
+		"preTechsImplicit": [
+			1101
+		],
+		"items": [
+			6001,
+			6002
+		],
+		"itemPoints": [
+			20,
+			20
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "72000"
+		},
+		"unlockRecipes": [
+			131
+		],
+		"position": [
+			25,
+			-43
+		]
+	},
+	{
+		"id": 1809,
+		"name": "T行星防御系统",
+		"description": "行星防御系统描述",
+		"conclusion": "行星防御系统结果",
+		"published": true,
+		"isLabTech": true,
+		"preTechs": [
+			1807
+		],
+		"preTechsImplicit": [
+			1703
+		],
+		"items": [
+			6001,
+			6002
+		],
+		"itemPoints": [
+			12,
+			12
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "180000"
+		},
+		"unlockRecipes": [
+			126,
+			132
+		],
+		"position": [
+			33,
+			-47
+		]
+	},
+	{
+		"id": 1811,
+		"name": "T磁化电浆炮",
+		"description": "磁化电浆炮描述",
+		"conclusion": "磁化电浆炮结果",
+		"published": true,
+		"isLabTech": true,
+		"preTechs": [
+			1809
+		],
+		"preTechsImplicit": [
+			1126
+		],
+		"items": [
+			6001,
+			6002,
+			6003,
+			6004
+		],
+		"itemPoints": [
+			12,
+			12,
+			12,
+			6
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "300000"
+		},
+		"unlockRecipes": [
+			128,
+			142
+		],
+		"position": [
+			41,
+			-47
+		]
+	},
+	{
+		"id": 1812,
+		"name": "T钛化弹箱",
+		"description": "钛化弹箱描述",
+		"conclusion": "钛化弹箱结果",
+		"published": true,
+		"isLabTech": true,
+		"preTechs": [
+			1801
+		],
+		"preTechsImplicit": [
+			1413
+		],
+		"items": [
+			6001,
+			6002
+		],
+		"itemPoints": [
+			12,
+			12
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "180000"
+		},
+		"unlockRecipes": [
+			137
+		],
+		"position": [
+			29,
+			-51
+		]
+	},
+	{
+		"id": 1813,
+		"name": "T超合金弹箱",
+		"description": "超合金弹箱描述",
+		"conclusion": "超合金弹箱结果",
+		"published": true,
+		"isLabTech": true,
+		"preTechs": [
+			1812
+		],
+		"preTechsImplicit": [
+			1414
+		],
+		"items": [
+			6001,
+			6002,
+			6003
+		],
+		"itemPoints": [
+			10,
+			10,
+			5
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "216000"
+		},
+		"unlockRecipes": [
+			138
+		],
+		"position": [
+			33,
+			-51
+		]
+	},
+	{
+		"id": 1814,
+		"name": "T高爆炮弹组",
+		"description": "高爆炮弹组描述",
+		"conclusion": "高爆炮弹组结果",
+		"published": true,
+		"isLabTech": true,
+		"preTechs": [
+			1807
+		],
+		"preTechsImplicit": [
+			1413
+		],
+		"items": [
+			6001,
+			6002
+		],
+		"itemPoints": [
+			10,
+			10
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "144000"
+		},
+		"unlockRecipes": [
+			140
+		],
+		"position": [
+			33,
+			-43
+		]
+	},
+	{
+		"id": 1815,
+		"name": "T超音速导弹组",
+		"description": "超音速导弹组描述",
+		"conclusion": "超音速导弹组结果",
+		"published": true,
+		"isLabTech": true,
+		"preTechs": [
+			1814
+		],
+		"preTechsImplicit": [
+			1113
+		],
+		"items": [
+			6001,
+			6002,
+			6003
+		],
+		"itemPoints": [
+			12,
+			12,
+			3
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "240000"
+		},
+		"unlockRecipes": [
+			145
+		],
+		"position": [
+			37,
+			-43
+		]
+	},
+	{
+		"id": 1816,
+		"name": "T晶石炮弹组",
+		"description": "晶石炮弹组描述",
+		"conclusion": "晶石炮弹组结果",
+		"published": true,
+		"isLabTech": true,
+		"preTechs": [
+			1815
+		],
+		"preTechsImplicit": [
+			1414
+		],
+		"items": [
+			6001,
+			6002,
+			6003,
+			6004
+		],
+		"itemPoints": [
+			10,
+			10,
+			10,
+			10
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "288000"
+		},
+		"unlockRecipes": [
+			141
+		],
+		"position": [
+			41,
+			-43
+		]
+	},
+	{
+		"id": 1817,
+		"name": "T引力导弹组",
+		"description": "引力导弹组描述",
+		"conclusion": "引力导弹组结果",
+		"published": true,
+		"isLabTech": true,
+		"preTechs": [
+			1816
+		],
+		"preTechsImplicit": [
+			1143
+		],
+		"items": [
+			6001,
+			6002,
+			6003,
+			6004,
+			6005
+		],
+		"itemPoints": [
+			10,
+			10,
+			10,
+			10,
+			10
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "360000"
+		},
+		"unlockRecipes": [
+			146
+		],
+		"position": [
+			49,
+			-43
+		]
+	},
+	{
+		"id": 1818,
+		"name": "T反物质胶囊",
+		"description": "反物质胶囊描述",
+		"conclusion": "反物质胶囊结果",
+		"published": true,
+		"isLabTech": true,
+		"preTechs": [
+			1145,
+			1811
+		],
+		"items": [
+			6001,
+			6002,
+			6003,
+			6004,
+			6005
+		],
+		"itemPoints": [
+			20,
+			20,
+			20,
+			20,
+			20
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "540000"
+		},
+		"unlockRecipes": [
+			143
+		],
+		"position": [
+			61,
+			-47
+		]
+	},
+	{
+		"id": 1819,
+		"name": "T地面战斗机-E型",
+		"description": "地面战斗机-E型描述",
+		"conclusion": "地面战斗机-E型结果",
+		"published": true,
+		"isLabTech": true,
+		"preTechs": [
+			1826
+		],
+		"preTechsImplicit": [
+			1101
+		],
+		"items": [
+			6001
+		],
+		"itemPoints": [
+			10
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "72000"
+		},
+		"unlockRecipes": [
+			147
+		],
+		"unlockFunctions": [
+			77,
+			78
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					16,
+					64
+				]
+			}
+		],
+		"position": [
+			21,
+			-55
+		]
+	},
+	{
+		"id": 1820,
+		"name": "T地面战斗机-A型",
+		"description": "地面战斗机-A型描述",
+		"conclusion": "地面战斗机-A型结果",
+		"published": true,
+		"isLabTech": true,
+		"preTechs": [
+			1819
+		],
+		"preTechsImplicit": [
+			1502
+		],
+		"items": [
+			6001,
+			6002
+		],
+		"itemPoints": [
+			10,
+			10
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "144000"
+		},
+		"unlockRecipes": [
+			148
+		],
+		"position": [
+			25,
+			-55
+		]
+	},
+	{
+		"id": 1821,
+		"name": "T地面战斗机-F型",
+		"description": "地面战斗机-F型描述",
+		"conclusion": "地面战斗机-F型结果",
+		"published": true,
+		"isLabTech": true,
+		"preTechs": [
+			1819
+		],
+		"preTechsImplicit": [
+			1703
+		],
+		"items": [
+			6001,
+			6002,
+			6003
+		],
+		"itemPoints": [
+			10,
+			10,
+			10
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "180000"
+		},
+		"unlockRecipes": [
+			149
+		],
+		"position": [
+			33,
+			-59
+		]
+	},
+	{
+		"id": 1822,
+		"name": "T太空战斗机-A型",
+		"description": "太空战斗机-A型描述",
+		"conclusion": "太空战斗机-A型结果",
+		"published": true,
+		"isLabTech": true,
+		"preTechs": [
+			1809,
+			1820
+		],
+		"items": [
+			6001,
+			6002,
+			6003,
+			6004
+		],
+		"itemPoints": [
+			10,
+			10,
+			10,
+			10
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "216000"
+		},
+		"unlockRecipes": [
+			150
+		],
+		"unlockFunctions": [
+			79,
+			80
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					16,
+					64
+				]
+			}
+		],
+		"position": [
+			41,
+			-55
+		]
+	},
+	{
+		"id": 1823,
+		"name": "T太空战斗机-F型",
+		"description": "太空战斗机-F型描述",
+		"conclusion": "太空战斗机-F型结果",
+		"published": true,
+		"isLabTech": true,
+		"preTechs": [
+			1822,
+			1821
+		],
+		"items": [
+			6001,
+			6002,
+			6003,
+			6004,
+			6005
+		],
+		"itemPoints": [
+			10,
+			10,
+			10,
+			10,
+			10
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "288000"
+		},
+		"unlockRecipes": [
+			151
+		],
+		"position": [
+			49,
+			-59
+		]
+	},
+	{
+		"id": 1826,
+		"name": "T战场分析基站",
+		"description": "战场分析基站描述",
+		"conclusion": "战场分析基站结果",
+		"published": true,
+		"isLabTech": true,
+		"preTechs": [
+			1801,
+			1805
+		],
+		"items": [
+			6001
+		],
+		"itemPoints": [
+			10
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "36000"
+		},
+		"unlockRecipes": [
+			152
+		],
+		"position": [
+			17,
+			-55
+		]
+	},
+	{
+		"id": 1901,
+		"name": "T数字模拟计算",
+		"description": "数字模拟计算描述",
+		"conclusion": "数字模拟计算结果",
+		"published": true,
+		"isHiddenTech": true,
+		"preItem": [
+			5202
+		],
+		"preTechs": [
+			1312
+		],
+		"items": [
+			5201
+		],
+		"itemPoints": [
+			120
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "24000"
+		},
+		"unlockRecipes": [
+			153
+		],
+		"position": [
+			45,
+			-7
+		]
+	},
+	{
+		"id": 1902,
+		"name": "T物质重组技术",
+		"description": "物质重组技术描述",
+		"conclusion": "物质重组技术结果",
+		"published": true,
+		"isHiddenTech": true,
+		"preItem": [
+			5203
+		],
+		"preTechs": [
+			1203
+		],
+		"items": [
+			5201
+		],
+		"itemPoints": [
+			120
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "18000"
+		},
+		"unlockRecipes": [
+			154
+		],
+		"position": [
+			53,
+			-3
+		]
+	},
+	{
+		"id": 1903,
+		"name": "T负熵递归",
+		"description": "负熵递归描述",
+		"conclusion": "负熵递归结果",
+		"published": true,
+		"isHiddenTech": true,
+		"preItem": [
+			5204
+		],
+		"preTechs": [
+			1417
+		],
+		"items": [
+			5201
+		],
+		"itemPoints": [
+			120
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "36000"
+		},
+		"unlockRecipes": [
+			155
+		],
+		"position": [
+			49,
+			-23
+		]
+	},
+	{
+		"id": 1904,
+		"name": "T金色燃料棒",
+		"description": "金色燃料棒描述",
+		"conclusion": "金色燃料棒结果",
+		"published": true,
+		"isHiddenTech": true,
+		"preItem": [
+			5205
+		],
+		"preTechs": [
+			1145
+		],
+		"items": [
+			5201
+		],
+		"itemPoints": [
+			120
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "60000"
+		},
+		"unlockRecipes": [
+			156
+		],
+		"position": [
+			61,
+			-7
+		]
+	},
+	{
 		"id": 2101,
 		"name": "T机甲核心",
 		"description": "机甲核心描述",
 		"conclusion": "机甲核心结果",
+		"published": true,
 		"level": 1,
 		"maxLevel": 1,
 		"items": [
@@ -2505,16 +3677,63 @@
 			"type": "BigInt",
 			"value": "3600"
 		},
+		"unlockFunctions": [
+			6,
+			81,
+			82
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					208,
+					18,
+					147,
+					65
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					76,
+					221,
+					64
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			}
+		],
 		"position": [
 			9,
-			25
+			29
 		]
 	},
 	{
 		"id": 2102,
 		"name": "T机甲核心",
-		"description": "机甲核心描述2",
+		"description": "机甲核心描述",
 		"conclusion": "机甲核心结果",
+		"published": true,
 		"level": 2,
 		"maxLevel": 2,
 		"isLabTech": true,
@@ -2533,16 +3752,77 @@
 			"type": "BigInt",
 			"value": "36000"
 		},
+		"unlockFunctions": [
+			6,
+			81,
+			82,
+			83
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					132,
+					215,
+					167,
+					65
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					76,
+					221,
+					64
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					105,
+					64
+				]
+			}
+		],
 		"position": [
 			13,
-			25
+			29
 		]
 	},
 	{
 		"id": 2103,
 		"name": "T机甲核心",
-		"description": "机甲核心描述2",
+		"description": "机甲核心描述",
 		"conclusion": "机甲核心结果",
+		"published": true,
 		"level": 3,
 		"maxLevel": 3,
 		"isLabTech": true,
@@ -2563,16 +3843,77 @@
 			"type": "BigInt",
 			"value": "108000"
 		},
+		"unlockFunctions": [
+			6,
+			81,
+			82,
+			83
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					132,
+					215,
+					183,
+					65
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					76,
+					221,
+					64
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					105,
+					64
+				]
+			}
+		],
 		"position": [
 			17,
-			25
+			29
 		]
 	},
 	{
 		"id": 2104,
 		"name": "T机甲核心",
-		"description": "机甲核心描述2",
+		"description": "机甲核心描述",
 		"conclusion": "机甲核心结果",
+		"published": true,
 		"level": 4,
 		"maxLevel": 4,
 		"isLabTech": true,
@@ -2595,16 +3936,77 @@
 			"type": "BigInt",
 			"value": "300000"
 		},
+		"unlockFunctions": [
+			6,
+			81,
+			82,
+			83
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					132,
+					215,
+					199,
+					65
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					76,
+					221,
+					64
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					105,
+					64
+				]
+			}
+		],
 		"position": [
 			21,
-			25
+			29
 		]
 	},
 	{
 		"id": 2105,
 		"name": "T机甲核心",
-		"description": "机甲核心描述2",
+		"description": "机甲核心描述",
 		"conclusion": "机甲核心结果",
+		"published": true,
 		"level": 5,
 		"maxLevel": 5,
 		"isLabTech": true,
@@ -2629,16 +4031,77 @@
 			"type": "BigInt",
 			"value": "1440000"
 		},
+		"unlockFunctions": [
+			6,
+			81,
+			82,
+			83
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					132,
+					215,
+					215,
+					65
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					76,
+					221,
+					64
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					105,
+					64
+				]
+			}
+		],
 		"position": [
 			25,
-			25
+			29
 		]
 	},
 	{
 		"id": 2106,
 		"name": "T机甲核心",
 		"description": "机甲核心描述2",
-		"conclusion": "机甲核心结果",
+		"conclusion": "机甲核心结果2",
+		"published": true,
 		"level": 6,
 		"maxLevel": 10000,
 		"levelCoef1": -8100000,
@@ -2657,9 +4120,55 @@
 			"type": "BigInt",
 			"value": "18000000"
 		},
+		"unlockFunctions": [
+			6,
+			81,
+			83
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					163,
+					225,
+					225,
+					65
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					136,
+					211,
+					64
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					105,
+					64
+				]
+			}
+		],
 		"position": [
 			29,
-			25
+			29
 		]
 	},
 	{
@@ -2667,6 +4176,7 @@
 		"name": "T机械骨骼",
 		"description": "机械骨骼描述",
 		"conclusion": "机械骨骼结果",
+		"published": true,
 		"level": 1,
 		"maxLevel": 1,
 		"preTechsImplicit": [
@@ -2688,9 +4198,27 @@
 			"type": "BigInt",
 			"value": "7200"
 		},
+		"unlockFunctions": [
+			3
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			}
+		],
 		"position": [
 			9,
-			21
+			25
 		]
 	},
 	{
@@ -2698,6 +4226,7 @@
 		"name": "T机械骨骼",
 		"description": "机械骨骼描述2",
 		"conclusion": "机械骨骼结果",
+		"published": true,
 		"level": 2,
 		"maxLevel": 2,
 		"isLabTech": true,
@@ -2719,9 +4248,27 @@
 			"type": "BigInt",
 			"value": "36000"
 		},
+		"unlockFunctions": [
+			3
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			}
+		],
 		"position": [
 			13,
-			21
+			25
 		]
 	},
 	{
@@ -2729,6 +4276,7 @@
 		"name": "T机械骨骼",
 		"description": "机械骨骼描述2",
 		"conclusion": "机械骨骼结果",
+		"published": true,
 		"level": 3,
 		"maxLevel": 3,
 		"isLabTech": true,
@@ -2750,9 +4298,27 @@
 			"type": "BigInt",
 			"value": "72000"
 		},
+		"unlockFunctions": [
+			3
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			}
+		],
 		"position": [
 			17,
-			21
+			25
 		]
 	},
 	{
@@ -2760,6 +4326,7 @@
 		"name": "T机械骨骼",
 		"description": "机械骨骼描述2",
 		"conclusion": "机械骨骼结果",
+		"published": true,
 		"level": 4,
 		"maxLevel": 4,
 		"isLabTech": true,
@@ -2783,9 +4350,27 @@
 			"type": "BigInt",
 			"value": "180000"
 		},
+		"unlockFunctions": [
+			3
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			}
+		],
 		"position": [
 			21,
-			21
+			25
 		]
 	},
 	{
@@ -2793,6 +4378,7 @@
 		"name": "T机械骨骼",
 		"description": "机械骨骼描述2",
 		"conclusion": "机械骨骼结果",
+		"published": true,
 		"level": 5,
 		"maxLevel": 5,
 		"isLabTech": true,
@@ -2816,9 +4402,27 @@
 			"type": "BigInt",
 			"value": "240000"
 		},
+		"unlockFunctions": [
+			3
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			}
+		],
 		"position": [
 			25,
-			21
+			25
 		]
 	},
 	{
@@ -2826,6 +4430,7 @@
 		"name": "T机械骨骼",
 		"description": "机械骨骼描述2",
 		"conclusion": "机械骨骼结果",
+		"published": true,
 		"level": 6,
 		"maxLevel": 6,
 		"isLabTech": true,
@@ -2851,9 +4456,27 @@
 			"type": "BigInt",
 			"value": "300000"
 		},
+		"unlockFunctions": [
+			3
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			}
+		],
 		"position": [
 			29,
-			21
+			25
 		]
 	},
 	{
@@ -2861,6 +4484,7 @@
 		"name": "T机械骨骼",
 		"description": "机械骨骼描述2",
 		"conclusion": "机械骨骼结果",
+		"published": true,
 		"level": 7,
 		"maxLevel": 7,
 		"isLabTech": true,
@@ -2886,9 +4510,27 @@
 			"type": "BigInt",
 			"value": "360000"
 		},
+		"unlockFunctions": [
+			3
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			}
+		],
 		"position": [
 			33,
-			21
+			25
 		]
 	},
 	{
@@ -2896,6 +4538,7 @@
 		"name": "T机械骨骼",
 		"description": "机械骨骼描述2",
 		"conclusion": "机械骨骼结果",
+		"published": true,
 		"level": 8,
 		"maxLevel": 8,
 		"isLabTech": true,
@@ -2923,9 +4566,27 @@
 			"type": "BigInt",
 			"value": "1200000"
 		},
+		"unlockFunctions": [
+			3
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			}
+		],
 		"position": [
 			37,
-			21
+			25
 		]
 	},
 	{
@@ -2933,6 +4594,7 @@
 		"name": "T机舱容量",
 		"description": "机舱容量描述",
 		"conclusion": "机舱容量结果",
+		"published": true,
 		"level": 1,
 		"maxLevel": 1,
 		"preTechsImplicit": [
@@ -2956,9 +4618,27 @@
 			"type": "BigInt",
 			"value": "7200"
 		},
+		"unlockFunctions": [
+			5
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			}
+		],
 		"position": [
 			9,
-			17
+			21
 		]
 	},
 	{
@@ -2966,6 +4646,7 @@
 		"name": "T机舱容量",
 		"description": "机舱容量描述",
 		"conclusion": "机舱容量结果",
+		"published": true,
 		"level": 2,
 		"maxLevel": 2,
 		"isLabTech": true,
@@ -2987,9 +4668,27 @@
 			"type": "BigInt",
 			"value": "36000"
 		},
+		"unlockFunctions": [
+			5
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			}
+		],
 		"position": [
 			13,
-			17
+			21
 		]
 	},
 	{
@@ -2997,6 +4696,7 @@
 		"name": "T机舱容量",
 		"description": "机舱容量描述",
 		"conclusion": "机舱容量结果",
+		"published": true,
 		"level": 3,
 		"maxLevel": 3,
 		"isLabTech": true,
@@ -3020,9 +4720,41 @@
 			"type": "BigInt",
 			"value": "72000"
 		},
+		"unlockFunctions": [
+			5,
+			33
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			}
+		],
 		"position": [
 			17,
-			17
+			21
 		]
 	},
 	{
@@ -3030,6 +4762,7 @@
 		"name": "T机舱容量",
 		"description": "机舱容量描述2",
 		"conclusion": "机舱容量结果",
+		"published": true,
 		"level": 4,
 		"maxLevel": 4,
 		"isLabTech": true,
@@ -3053,9 +4786,55 @@
 			"type": "BigInt",
 			"value": "180000"
 		},
+		"unlockFunctions": [
+			5,
+			32,
+			33
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			}
+		],
 		"position": [
 			21,
-			17
+			21
 		]
 	},
 	{
@@ -3063,6 +4842,7 @@
 		"name": "T机舱容量",
 		"description": "机舱容量描述2",
 		"conclusion": "机舱容量结果",
+		"published": true,
 		"level": 5,
 		"maxLevel": 5,
 		"isLabTech": true,
@@ -3086,9 +4866,41 @@
 			"type": "BigInt",
 			"value": "240000"
 		},
+		"unlockFunctions": [
+			5,
+			33
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			}
+		],
 		"position": [
 			25,
-			17
+			21
 		]
 	},
 	{
@@ -3096,6 +4908,7 @@
 		"name": "T机舱容量",
 		"description": "机舱容量描述2",
 		"conclusion": "机舱容量结果",
+		"published": true,
 		"level": 6,
 		"maxLevel": 6,
 		"isLabTech": true,
@@ -3123,9 +4936,41 @@
 			"type": "BigInt",
 			"value": "600000"
 		},
+		"unlockFunctions": [
+			5,
+			33
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			}
+		],
 		"position": [
 			29,
-			17
+			21
 		]
 	},
 	{
@@ -3133,6 +4978,7 @@
 		"name": "T通讯控制",
 		"description": "通讯控制描述",
 		"conclusion": "通讯控制结果1",
+		"published": true,
 		"level": 1,
 		"maxLevel": 1,
 		"isLabTech": true,
@@ -3149,9 +4995,27 @@
 			"type": "BigInt",
 			"value": "9000"
 		},
+		"unlockFunctions": [
+			1
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			}
+		],
 		"position": [
 			9,
-			13
+			17
 		]
 	},
 	{
@@ -3159,6 +5023,7 @@
 		"name": "T通讯控制",
 		"description": "通讯控制描述2",
 		"conclusion": "通讯控制结果2",
+		"published": true,
 		"level": 2,
 		"maxLevel": 2,
 		"isLabTech": true,
@@ -3180,9 +5045,27 @@
 			"type": "BigInt",
 			"value": "36000"
 		},
+		"unlockFunctions": [
+			1
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			}
+		],
 		"position": [
 			13,
-			13
+			17
 		]
 	},
 	{
@@ -3190,6 +5073,7 @@
 		"name": "T通讯控制",
 		"description": "通讯控制描述3",
 		"conclusion": "通讯控制结果3",
+		"published": true,
 		"level": 3,
 		"maxLevel": 3,
 		"isLabTech": true,
@@ -3211,9 +5095,27 @@
 			"type": "BigInt",
 			"value": "72000"
 		},
+		"unlockFunctions": [
+			9
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			}
+		],
 		"position": [
 			17,
-			13
+			17
 		]
 	},
 	{
@@ -3221,6 +5123,7 @@
 		"name": "T通讯控制",
 		"description": "通讯控制描述2",
 		"conclusion": "通讯控制结果4",
+		"published": true,
 		"level": 4,
 		"maxLevel": 4,
 		"isLabTech": true,
@@ -3244,9 +5147,27 @@
 			"type": "BigInt",
 			"value": "180000"
 		},
+		"unlockFunctions": [
+			1
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					8,
+					64
+				]
+			}
+		],
 		"position": [
 			21,
-			13
+			17
 		]
 	},
 	{
@@ -3254,6 +5175,7 @@
 		"name": "T通讯控制",
 		"description": "通讯控制描述2",
 		"conclusion": "通讯控制结果5",
+		"published": true,
 		"level": 5,
 		"maxLevel": 5,
 		"isLabTech": true,
@@ -3279,9 +5201,27 @@
 			"type": "BigInt",
 			"value": "300000"
 		},
+		"unlockFunctions": [
+			1
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					8,
+					64
+				]
+			}
+		],
 		"position": [
 			25,
-			13
+			17
 		]
 	},
 	{
@@ -3289,6 +5229,7 @@
 		"name": "T通讯控制",
 		"description": "通讯控制描述3",
 		"conclusion": "通讯控制结果6",
+		"published": true,
 		"level": 6,
 		"maxLevel": 6,
 		"isLabTech": true,
@@ -3316,9 +5257,27 @@
 			"type": "BigInt",
 			"value": "1440000"
 		},
+		"unlockFunctions": [
+			9
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			}
+		],
 		"position": [
 			29,
-			13
+			17
 		]
 	},
 	{
@@ -3326,6 +5285,7 @@
 		"name": "T通讯控制",
 		"description": "通讯控制描述2",
 		"conclusion": "通讯控制结果7",
+		"published": true,
 		"level": 7,
 		"maxLevel": 10000,
 		"levelCoef1": -21600000,
@@ -3347,9 +5307,27 @@
 			"type": "BigInt",
 			"value": "64800000"
 		},
+		"unlockFunctions": [
+			1
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					8,
+					64
+				]
+			}
+		],
 		"position": [
 			33,
-			13
+			17
 		]
 	},
 	{
@@ -3357,6 +5335,7 @@
 		"name": "T能量回路",
 		"description": "能量回路描述",
 		"conclusion": "能量回路结果",
+		"published": true,
 		"level": 1,
 		"maxLevel": 1,
 		"preTechsImplicit": [
@@ -3382,6 +5361,24 @@
 			"type": "BigInt",
 			"value": "7200"
 		},
+		"unlockFunctions": [
+			2
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					106,
+					8,
+					65
+				]
+			}
+		],
 		"position": [
 			9,
 			5
@@ -3392,6 +5389,7 @@
 		"name": "T能量回路",
 		"description": "能量回路描述",
 		"conclusion": "能量回路结果",
+		"published": true,
 		"level": 2,
 		"maxLevel": 2,
 		"isLabTech": true,
@@ -3413,6 +5411,24 @@
 			"type": "BigInt",
 			"value": "72000"
 		},
+		"unlockFunctions": [
+			2
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					106,
+					8,
+					65
+				]
+			}
+		],
 		"position": [
 			13,
 			5
@@ -3423,6 +5439,7 @@
 		"name": "T能量回路",
 		"description": "能量回路描述",
 		"conclusion": "能量回路结果",
+		"published": true,
 		"level": 3,
 		"maxLevel": 3,
 		"isLabTech": true,
@@ -3446,6 +5463,24 @@
 			"type": "BigInt",
 			"value": "216000"
 		},
+		"unlockFunctions": [
+			2
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					106,
+					8,
+					65
+				]
+			}
+		],
 		"position": [
 			17,
 			5
@@ -3456,6 +5491,7 @@
 		"name": "T能量回路",
 		"description": "能量回路描述",
 		"conclusion": "能量回路结果",
+		"published": true,
 		"level": 4,
 		"maxLevel": 4,
 		"isLabTech": true,
@@ -3479,6 +5515,24 @@
 			"type": "BigInt",
 			"value": "600000"
 		},
+		"unlockFunctions": [
+			2
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					106,
+					8,
+					65
+				]
+			}
+		],
 		"position": [
 			21,
 			5
@@ -3489,6 +5543,7 @@
 		"name": "T能量回路",
 		"description": "能量回路描述",
 		"conclusion": "能量回路结果",
+		"published": true,
 		"level": 5,
 		"maxLevel": 5,
 		"isLabTech": true,
@@ -3516,6 +5571,24 @@
 			"type": "BigInt",
 			"value": "2700000"
 		},
+		"unlockFunctions": [
+			2
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					106,
+					40,
+					65
+				]
+			}
+		],
 		"position": [
 			25,
 			5
@@ -3526,6 +5599,7 @@
 		"name": "T能量回路",
 		"description": "能量回路描述",
 		"conclusion": "能量回路结果",
+		"published": true,
 		"level": 6,
 		"maxLevel": 10000,
 		"levelCoef1": -16200000,
@@ -3547,6 +5621,24 @@
 			"type": "BigInt",
 			"value": "36000000"
 		},
+		"unlockFunctions": [
+			2
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					128,
+					132,
+					46,
+					65
+				]
+			}
+		],
 		"position": [
 			29,
 			5
@@ -3557,6 +5649,7 @@
 		"name": "T无人机引擎",
 		"description": "无人机引擎描述",
 		"conclusion": "无人机引擎结果",
+		"published": true,
 		"level": 1,
 		"maxLevel": 1,
 		"isLabTech": true,
@@ -3573,6 +5666,24 @@
 			"type": "BigInt",
 			"value": "18000"
 		},
+		"unlockFunctions": [
+			10
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			}
+		],
 		"position": [
 			9,
 			1
@@ -3583,6 +5694,7 @@
 		"name": "T无人机引擎",
 		"description": "无人机引擎描述2",
 		"conclusion": "无人机引擎结果",
+		"published": true,
 		"level": 2,
 		"maxLevel": 2,
 		"isLabTech": true,
@@ -3604,6 +5716,24 @@
 			"type": "BigInt",
 			"value": "72000"
 		},
+		"unlockFunctions": [
+			10
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			}
+		],
 		"position": [
 			13,
 			1
@@ -3614,6 +5744,7 @@
 		"name": "T无人机引擎",
 		"description": "无人机引擎描述2",
 		"conclusion": "无人机引擎结果",
+		"published": true,
 		"level": 3,
 		"maxLevel": 3,
 		"isLabTech": true,
@@ -3637,6 +5768,24 @@
 			"type": "BigInt",
 			"value": "144000"
 		},
+		"unlockFunctions": [
+			10
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			}
+		],
 		"position": [
 			17,
 			1
@@ -3647,6 +5796,7 @@
 		"name": "T无人机引擎",
 		"description": "无人机引擎描述2",
 		"conclusion": "无人机引擎结果",
+		"published": true,
 		"level": 4,
 		"maxLevel": 4,
 		"isLabTech": true,
@@ -3672,6 +5822,24 @@
 			"type": "BigInt",
 			"value": "360000"
 		},
+		"unlockFunctions": [
+			10
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					8,
+					64
+				]
+			}
+		],
 		"position": [
 			21,
 			1
@@ -3682,6 +5850,7 @@
 		"name": "T无人机引擎",
 		"description": "无人机引擎描述2",
 		"conclusion": "无人机引擎结果",
+		"published": true,
 		"level": 5,
 		"maxLevel": 5,
 		"isLabTech": true,
@@ -3709,6 +5878,24 @@
 			"type": "BigInt",
 			"value": "1440000"
 		},
+		"unlockFunctions": [
+			10
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					8,
+					64
+				]
+			}
+		],
 		"position": [
 			25,
 			1
@@ -3719,6 +5906,7 @@
 		"name": "T无人机引擎",
 		"description": "无人机引擎描述2",
 		"conclusion": "无人机引擎结果",
+		"published": true,
 		"level": 6,
 		"maxLevel": 24,
 		"levelCoef1": -18000000,
@@ -3740,6 +5928,24 @@
 			"type": "BigInt",
 			"value": "45000000"
 		},
+		"unlockFunctions": [
+			10
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					8,
+					64
+				]
+			}
+		],
 		"position": [
 			29,
 			1
@@ -3750,6 +5956,7 @@
 		"name": "T批量建造",
 		"description": "批量建造描述",
 		"conclusion": "批量建造结果",
+		"published": true,
 		"level": 1,
 		"maxLevel": 1,
 		"preTechsImplicit": [
@@ -3771,6 +5978,24 @@
 			"type": "BigInt",
 			"value": "12000"
 		},
+		"unlockFunctions": [
+			28
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					192,
+					98,
+					64
+				]
+			}
+		],
 		"position": [
 			9,
 			9
@@ -3781,6 +6006,7 @@
 		"name": "T批量建造",
 		"description": "批量建造描述2",
 		"conclusion": "批量建造结果2",
+		"published": true,
 		"level": 2,
 		"maxLevel": 2,
 		"isLabTech": true,
@@ -3800,6 +6026,24 @@
 			"type": "BigInt",
 			"value": "36000"
 		},
+		"unlockFunctions": [
+			28
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					192,
+					114,
+					64
+				]
+			}
+		],
 		"position": [
 			13,
 			9
@@ -3810,6 +6054,7 @@
 		"name": "T批量建造",
 		"description": "批量建造描述2",
 		"conclusion": "批量建造结果2",
+		"published": true,
 		"level": 3,
 		"maxLevel": 3,
 		"isLabTech": true,
@@ -3831,6 +6076,24 @@
 			"type": "BigInt",
 			"value": "60000"
 		},
+		"unlockFunctions": [
+			28
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					32,
+					140,
+					64
+				]
+			}
+		],
 		"position": [
 			17,
 			9
@@ -3841,6 +6104,7 @@
 		"name": "T批量建造",
 		"description": "批量建造描述2",
 		"conclusion": "批量建造结果2",
+		"published": true,
 		"level": 4,
 		"maxLevel": 4,
 		"isLabTech": true,
@@ -3864,6 +6128,24 @@
 			"type": "BigInt",
 			"value": "192000"
 		},
+		"unlockFunctions": [
+			28
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					32,
+					172,
+					64
+				]
+			}
+		],
 		"position": [
 			21,
 			9
@@ -3874,6 +6156,7 @@
 		"name": "T批量建造",
 		"description": "批量建造描述5",
 		"conclusion": "批量建造结果5",
+		"published": true,
 		"level": 5,
 		"maxLevel": 5,
 		"isLabTech": true,
@@ -3899,9 +6182,476 @@
 			"type": "BigInt",
 			"value": "240000"
 		},
+		"unlockFunctions": [
+			28
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					48,
+					65
+				]
+			}
+		],
 		"position": [
 			25,
 			9
+		]
+	},
+	{
+		"id": 2801,
+		"name": "T能量护盾",
+		"description": "解锁能量护盾描述",
+		"conclusion": "解锁能量护盾结果",
+		"published": true,
+		"level": 1,
+		"maxLevel": 1,
+		"isLabTech": true,
+		"preTechsImplicit": [
+			1001
+		],
+		"items": [
+			6001
+		],
+		"itemPoints": [
+			40
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "9000"
+		},
+		"unlockFunctions": [
+			75,
+			65,
+			66
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					132,
+					215,
+					151,
+					65
+				]
+			}
+		],
+		"position": [
+			9,
+			-7
+		]
+	},
+	{
+		"id": 2802,
+		"name": "T能量护盾",
+		"description": "能量护盾描述",
+		"conclusion": "能量护盾结果",
+		"published": true,
+		"level": 2,
+		"maxLevel": 2,
+		"isLabTech": true,
+		"preTechs": [
+			2801
+		],
+		"preTechsImplicit": [
+			2102
+		],
+		"items": [
+			6001,
+			6002
+		],
+		"itemPoints": [
+			10,
+			10
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "36000"
+		},
+		"unlockFunctions": [
+			65,
+			66
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					224,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					132,
+					215,
+					167,
+					65
+				]
+			}
+		],
+		"position": [
+			13,
+			-7
+		]
+	},
+	{
+		"id": 2803,
+		"name": "T能量护盾",
+		"description": "能量护盾描述",
+		"conclusion": "能量护盾结果",
+		"published": true,
+		"level": 3,
+		"maxLevel": 3,
+		"isLabTech": true,
+		"preTechs": [
+			2802
+		],
+		"preTechsImplicit": [
+			2103
+		],
+		"items": [
+			6001,
+			6002,
+			6003
+		],
+		"itemPoints": [
+			5,
+			5,
+			5
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "144000"
+		},
+		"unlockFunctions": [
+			65,
+			66
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					224,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					132,
+					215,
+					167,
+					65
+				]
+			}
+		],
+		"position": [
+			17,
+			-7
+		]
+	},
+	{
+		"id": 2804,
+		"name": "T能量护盾",
+		"description": "能量护盾描述",
+		"conclusion": "能量护盾结果",
+		"published": true,
+		"level": 4,
+		"maxLevel": 4,
+		"isLabTech": true,
+		"preTechs": [
+			2803
+		],
+		"items": [
+			6001,
+			6002,
+			6003,
+			6004
+		],
+		"itemPoints": [
+			6,
+			6,
+			6,
+			6
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "360000"
+		},
+		"unlockFunctions": [
+			65,
+			66
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					132,
+					215,
+					167,
+					65
+				]
+			}
+		],
+		"position": [
+			21,
+			-7
+		]
+	},
+	{
+		"id": 2805,
+		"name": "T能量护盾",
+		"description": "能量护盾描述",
+		"conclusion": "能量护盾结果",
+		"published": true,
+		"level": 5,
+		"maxLevel": 5,
+		"isLabTech": true,
+		"preTechs": [
+			2804
+		],
+		"preTechsImplicit": [
+			2104
+		],
+		"items": [
+			6001,
+			6002,
+			6003,
+			6004,
+			6005
+		],
+		"itemPoints": [
+			5,
+			5,
+			5,
+			5,
+			5
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "720000"
+		},
+		"unlockFunctions": [
+			65,
+			66
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					163,
+					225,
+					177,
+					65
+				]
+			}
+		],
+		"position": [
+			25,
+			-7
+		]
+	},
+	{
+		"id": 2806,
+		"name": "T能量护盾",
+		"description": "能量护盾描述",
+		"conclusion": "能量护盾结果",
+		"published": true,
+		"level": 6,
+		"maxLevel": 25,
+		"levelCoef1": -8100000,
+		"levelCoef2": 900000,
+		"isLabTech": true,
+		"preTechs": [
+			2805
+		],
+		"preTechsImplicit": [
+			2105
+		],
+		"items": [
+			6006
+		],
+		"itemPoints": [
+			4
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "18000000"
+		},
+		"unlockFunctions": [
+			65,
+			66
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					101,
+					205,
+					189,
+					65
+				]
+			}
+		],
+		"position": [
+			29,
+			-7
+		]
+	},
+	{
+		"id": 2807,
+		"name": "T能量护盾",
+		"description": "能量护盾描述7",
+		"conclusion": "能量护盾结果7",
+		"published": true,
+		"level": 26,
+		"maxLevel": 10000,
+		"levelCoef1": -8100000,
+		"levelCoef2": 900000,
+		"isLabTech": true,
+		"preTechs": [
+			2806
+		],
+		"items": [
+			6006
+		],
+		"itemPoints": [
+			4
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "18000000"
+		},
+		"unlockFunctions": [
+			66
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					101,
+					205,
+					189,
+					65
+				]
+			}
+		],
+		"position": [
+			33,
+			-7
 		]
 	},
 	{
@@ -3909,6 +6659,7 @@
 		"name": "T驱动引擎",
 		"description": "驱动引擎描述",
 		"conclusion": "驱动引擎结果1",
+		"published": true,
 		"level": 1,
 		"maxLevel": 1,
 		"preTechsImplicit": [
@@ -3916,11 +6667,11 @@
 		],
 		"items": [
 			1006,
-			1202
+			1407
 		],
 		"itemPoints": [
-			50,
-			20
+			30,
+			10
 		],
 		"propertyOverrideItems": [
 			6001
@@ -3930,8 +6681,26 @@
 		],
 		"hashNeeded": {
 			"type": "BigInt",
-			"value": "10800"
+			"value": "18000"
 		},
+		"unlockFunctions": [
+			4
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			}
+		],
 		"position": [
 			9,
 			-3
@@ -3942,6 +6711,7 @@
 		"name": "T驱动引擎",
 		"description": "驱动引擎描述2",
 		"conclusion": "驱动引擎结果2",
+		"published": true,
 		"level": 2,
 		"maxLevel": 2,
 		"isLabTech": true,
@@ -3963,6 +6733,24 @@
 			"type": "BigInt",
 			"value": "36000"
 		},
+		"unlockFunctions": [
+			4
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			}
+		],
 		"position": [
 			13,
 			-3
@@ -3973,6 +6761,7 @@
 		"name": "T驱动引擎",
 		"description": "驱动引擎描述3",
 		"conclusion": "驱动引擎结果3",
+		"published": true,
 		"level": 3,
 		"maxLevel": 3,
 		"isLabTech": true,
@@ -3996,6 +6785,24 @@
 			"type": "BigInt",
 			"value": "180000"
 		},
+		"unlockFunctions": [
+			11
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					64,
+					143,
+					64
+				]
+			}
+		],
 		"position": [
 			17,
 			-3
@@ -4006,6 +6813,7 @@
 		"name": "T驱动引擎",
 		"description": "驱动引擎描述4",
 		"conclusion": "驱动引擎结果4",
+		"published": true,
 		"level": 4,
 		"maxLevel": 4,
 		"isLabTech": true,
@@ -4030,6 +6838,24 @@
 			"type": "BigInt",
 			"value": "720000"
 		},
+		"unlockFunctions": [
+			4
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					8,
+					64
+				]
+			}
+		],
 		"position": [
 			21,
 			-3
@@ -4040,6 +6866,7 @@
 		"name": "T驱动引擎",
 		"description": "驱动引擎描述5",
 		"conclusion": "驱动引擎结果5",
+		"published": true,
 		"level": 5,
 		"maxLevel": 5,
 		"isLabTech": true,
@@ -4062,6 +6889,24 @@
 			"type": "BigInt",
 			"value": "1080000"
 		},
+		"unlockFunctions": [
+			27
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					8,
+					64
+				]
+			}
+		],
 		"position": [
 			25,
 			-3
@@ -4072,6 +6917,7 @@
 		"name": "T驱动引擎",
 		"description": "驱动引擎描述5",
 		"conclusion": "驱动引擎结果5",
+		"published": true,
 		"level": 6,
 		"maxLevel": 100,
 		"levelCoef1": -1800000,
@@ -4086,9 +6932,317 @@
 		"itemPoints": [
 			10
 		],
+		"unlockFunctions": [
+			27
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					8,
+					64
+				]
+			}
+		],
 		"position": [
 			29,
 			-3
+		]
+	},
+	{
+		"id": 2951,
+		"name": "T自动重建",
+		"description": "自动重建描述",
+		"conclusion": "自动重建结果",
+		"published": true,
+		"level": 1,
+		"maxLevel": 1,
+		"isLabTech": true,
+		"preTechsImplicit": [
+			2101
+		],
+		"items": [
+			6001
+		],
+		"itemPoints": [
+			40
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "18000"
+		},
+		"unlockFunctions": [
+			76
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			}
+		],
+		"position": [
+			9,
+			13
+		]
+	},
+	{
+		"id": 2952,
+		"name": "T自动重建",
+		"description": "自动重建描述",
+		"conclusion": "自动重建结果",
+		"published": true,
+		"level": 2,
+		"maxLevel": 2,
+		"isLabTech": true,
+		"preTechs": [
+			2951
+		],
+		"items": [
+			6001,
+			6002
+		],
+		"itemPoints": [
+			20,
+			20
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "72000"
+		},
+		"unlockFunctions": [
+			76
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					8,
+					64
+				]
+			}
+		],
+		"position": [
+			13,
+			13
+		]
+	},
+	{
+		"id": 2953,
+		"name": "T自动重建",
+		"description": "自动重建描述",
+		"conclusion": "自动重建结果",
+		"published": true,
+		"level": 3,
+		"maxLevel": 3,
+		"isLabTech": true,
+		"preTechs": [
+			2952
+		],
+		"items": [
+			6001,
+			6002,
+			6003
+		],
+		"itemPoints": [
+			20,
+			20,
+			20
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "144000"
+		},
+		"unlockFunctions": [
+			76
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					24,
+					64
+				]
+			}
+		],
+		"position": [
+			17,
+			13
+		]
+	},
+	{
+		"id": 2954,
+		"name": "T自动重建",
+		"description": "自动重建描述",
+		"conclusion": "自动重建结果",
+		"published": true,
+		"level": 4,
+		"maxLevel": 4,
+		"isLabTech": true,
+		"preTechs": [
+			2953
+		],
+		"items": [
+			6001,
+			6002,
+			6003,
+			6004
+		],
+		"itemPoints": [
+			12,
+			12,
+			12,
+			12
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "360000"
+		},
+		"unlockFunctions": [
+			76
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					46,
+					64
+				]
+			}
+		],
+		"position": [
+			21,
+			13
+		]
+	},
+	{
+		"id": 2955,
+		"name": "T自动重建",
+		"description": "自动重建描述",
+		"conclusion": "自动重建结果",
+		"published": true,
+		"level": 5,
+		"maxLevel": 5,
+		"isLabTech": true,
+		"preTechs": [
+			2954
+		],
+		"items": [
+			6001,
+			6002,
+			6003,
+			6004,
+			6005
+		],
+		"itemPoints": [
+			8,
+			8,
+			8,
+			8,
+			8
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "720000"
+		},
+		"unlockFunctions": [
+			76
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					62,
+					64
+				]
+			}
+		],
+		"position": [
+			25,
+			13
+		]
+	},
+	{
+		"id": 2956,
+		"name": "T自动重建",
+		"description": "自动重建描述6",
+		"conclusion": "自动重建结果6",
+		"published": true,
+		"level": 6,
+		"maxLevel": 6,
+		"isLabTech": true,
+		"preTechs": [
+			2955
+		],
+		"items": [
+			6006
+		],
+		"itemPoints": [
+			8
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "1440000"
+		},
+		"unlockFunctions": [
+			76
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					128,
+					135,
+					195,
+					64
+				]
+			}
+		],
+		"position": [
+			29,
+			13
 		]
 	},
 	{
@@ -4096,6 +7250,7 @@
 		"name": "T太阳帆寿命",
 		"description": "太阳帆寿命描述",
 		"conclusion": "太阳帆寿命结果",
+		"published": true,
 		"level": 1,
 		"maxLevel": 1,
 		"isLabTech": true,
@@ -4116,9 +7271,27 @@
 			"type": "BigInt",
 			"value": "36000"
 		},
+		"unlockFunctions": [
+			12
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					192,
+					114,
+					64
+				]
+			}
+		],
 		"position": [
 			9,
-			-11
+			-15
 		]
 	},
 	{
@@ -4126,6 +7299,7 @@
 		"name": "T太阳帆寿命",
 		"description": "太阳帆寿命描述",
 		"conclusion": "太阳帆寿命结果",
+		"published": true,
 		"level": 2,
 		"maxLevel": 2,
 		"isLabTech": true,
@@ -4146,9 +7320,27 @@
 			"type": "BigInt",
 			"value": "108000"
 		},
+		"unlockFunctions": [
+			12
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					192,
+					114,
+					64
+				]
+			}
+		],
 		"position": [
 			13,
-			-11
+			-15
 		]
 	},
 	{
@@ -4156,6 +7348,7 @@
 		"name": "T太阳帆寿命",
 		"description": "太阳帆寿命描述",
 		"conclusion": "太阳帆寿命结果",
+		"published": true,
 		"level": 3,
 		"maxLevel": 3,
 		"isLabTech": true,
@@ -4176,9 +7369,27 @@
 			"type": "BigInt",
 			"value": "144000"
 		},
+		"unlockFunctions": [
+			12
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					192,
+					130,
+					64
+				]
+			}
+		],
 		"position": [
 			17,
-			-11
+			-15
 		]
 	},
 	{
@@ -4186,6 +7397,7 @@
 		"name": "T太阳帆寿命",
 		"description": "太阳帆寿命描述",
 		"conclusion": "太阳帆寿命结果",
+		"published": true,
 		"level": 4,
 		"maxLevel": 4,
 		"isLabTech": true,
@@ -4208,9 +7420,27 @@
 			"type": "BigInt",
 			"value": "300000"
 		},
+		"unlockFunctions": [
+			12
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					192,
+					130,
+					64
+				]
+			}
+		],
 		"position": [
 			21,
-			-11
+			-15
 		]
 	},
 	{
@@ -4218,6 +7448,7 @@
 		"name": "T太阳帆寿命",
 		"description": "太阳帆寿命描述",
 		"conclusion": "太阳帆寿命结果",
+		"published": true,
 		"level": 5,
 		"maxLevel": 5,
 		"isLabTech": true,
@@ -4240,9 +7471,27 @@
 			"type": "BigInt",
 			"value": "480000"
 		},
+		"unlockFunctions": [
+			12
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					32,
+					140,
+					64
+				]
+			}
+		],
 		"position": [
 			25,
-			-11
+			-15
 		]
 	},
 	{
@@ -4250,6 +7499,7 @@
 		"name": "T太阳帆寿命",
 		"description": "太阳帆寿命描述",
 		"conclusion": "太阳帆寿命结果",
+		"published": true,
 		"level": 6,
 		"maxLevel": 6,
 		"isLabTech": true,
@@ -4272,9 +7522,27 @@
 			"type": "BigInt",
 			"value": "1200000"
 		},
+		"unlockFunctions": [
+			12
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					32,
+					140,
+					64
+				]
+			}
+		],
 		"position": [
 			29,
-			-11
+			-15
 		]
 	},
 	{
@@ -4282,6 +7550,7 @@
 		"name": "T射线传输效率",
 		"description": "射线传输效率描述",
 		"conclusion": "射线传输效率结果",
+		"published": true,
 		"level": 1,
 		"maxLevel": 1,
 		"isLabTech": true,
@@ -4302,9 +7571,27 @@
 			"type": "BigInt",
 			"value": "54000"
 		},
+		"unlockFunctions": [
+			13
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					205,
+					204,
+					204,
+					204,
+					204,
+					204,
+					236,
+					63
+				]
+			}
+		],
 		"position": [
 			9,
-			-15
+			-19
 		]
 	},
 	{
@@ -4312,6 +7599,7 @@
 		"name": "T射线传输效率",
 		"description": "射线传输效率描述",
 		"conclusion": "射线传输效率结果",
+		"published": true,
 		"level": 2,
 		"maxLevel": 2,
 		"isLabTech": true,
@@ -4332,9 +7620,27 @@
 			"type": "BigInt",
 			"value": "144000"
 		},
+		"unlockFunctions": [
+			13
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					205,
+					204,
+					204,
+					204,
+					204,
+					204,
+					236,
+					63
+				]
+			}
+		],
 		"position": [
 			13,
-			-15
+			-19
 		]
 	},
 	{
@@ -4342,6 +7648,7 @@
 		"name": "T射线传输效率",
 		"description": "射线传输效率描述",
 		"conclusion": "射线传输效率结果",
+		"published": true,
 		"level": 3,
 		"maxLevel": 3,
 		"isLabTech": true,
@@ -4362,9 +7669,27 @@
 			"type": "BigInt",
 			"value": "180000"
 		},
+		"unlockFunctions": [
+			13
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					205,
+					204,
+					204,
+					204,
+					204,
+					204,
+					236,
+					63
+				]
+			}
+		],
 		"position": [
 			17,
-			-15
+			-19
 		]
 	},
 	{
@@ -4372,6 +7697,7 @@
 		"name": "T射线传输效率",
 		"description": "射线传输效率描述",
 		"conclusion": "射线传输效率结果",
+		"published": true,
 		"level": 4,
 		"maxLevel": 4,
 		"isLabTech": true,
@@ -4394,9 +7720,27 @@
 			"type": "BigInt",
 			"value": "360000"
 		},
+		"unlockFunctions": [
+			13
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					205,
+					204,
+					204,
+					204,
+					204,
+					204,
+					236,
+					63
+				]
+			}
+		],
 		"position": [
 			21,
-			-15
+			-19
 		]
 	},
 	{
@@ -4404,6 +7748,7 @@
 		"name": "T射线传输效率",
 		"description": "射线传输效率描述",
 		"conclusion": "射线传输效率结果",
+		"published": true,
 		"level": 5,
 		"maxLevel": 5,
 		"isLabTech": true,
@@ -4426,9 +7771,27 @@
 			"type": "BigInt",
 			"value": "420000"
 		},
+		"unlockFunctions": [
+			13
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					205,
+					204,
+					204,
+					204,
+					204,
+					204,
+					236,
+					63
+				]
+			}
+		],
 		"position": [
 			25,
-			-15
+			-19
 		]
 	},
 	{
@@ -4436,6 +7799,7 @@
 		"name": "T射线传输效率",
 		"description": "射线传输效率描述",
 		"conclusion": "射线传输效率结果",
+		"published": true,
 		"level": 6,
 		"maxLevel": 6,
 		"isLabTech": true,
@@ -4460,9 +7824,27 @@
 			"type": "BigInt",
 			"value": "480000"
 		},
+		"unlockFunctions": [
+			13
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					205,
+					204,
+					204,
+					204,
+					204,
+					204,
+					236,
+					63
+				]
+			}
+		],
 		"position": [
 			29,
-			-15
+			-19
 		]
 	},
 	{
@@ -4470,6 +7852,7 @@
 		"name": "T射线传输效率",
 		"description": "射线传输效率描述",
 		"conclusion": "射线传输效率结果",
+		"published": true,
 		"level": 7,
 		"maxLevel": 7,
 		"isLabTech": true,
@@ -4494,9 +7877,27 @@
 			"type": "BigInt",
 			"value": "1620000"
 		},
+		"unlockFunctions": [
+			13
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					51,
+					51,
+					51,
+					51,
+					51,
+					51,
+					235,
+					63
+				]
+			}
+		],
 		"position": [
 			33,
-			-15
+			-19
 		]
 	},
 	{
@@ -4504,6 +7905,7 @@
 		"name": "T射线传输效率",
 		"description": "射线传输效率描述",
 		"conclusion": "射线传输效率结果",
+		"published": true,
 		"level": 8,
 		"maxLevel": 10000,
 		"levelCoef1": 1800000,
@@ -4521,9 +7923,27 @@
 			"type": "BigInt",
 			"value": "-12600000"
 		},
+		"unlockFunctions": [
+			13
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					51,
+					51,
+					51,
+					51,
+					51,
+					51,
+					235,
+					63
+				]
+			}
+		],
 		"position": [
 			37,
-			-15
+			-19
 		]
 	},
 	{
@@ -4531,6 +7951,7 @@
 		"name": "T分拣器货物叠加",
 		"description": "分拣器货物叠加描述",
 		"conclusion": "分拣器货物叠加结果",
+		"published": true,
 		"level": 1,
 		"maxLevel": 1,
 		"isLabTech": true,
@@ -4551,9 +7972,27 @@
 			"type": "BigInt",
 			"value": "36000"
 		},
+		"unlockFunctions": [
+			14
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			}
+		],
 		"position": [
 			9,
-			-23
+			-27
 		]
 	},
 	{
@@ -4561,6 +8000,7 @@
 		"name": "T分拣器货物叠加",
 		"description": "分拣器货物叠加描述",
 		"conclusion": "分拣器货物叠加结果",
+		"published": true,
 		"level": 2,
 		"maxLevel": 2,
 		"isLabTech": true,
@@ -4581,9 +8021,27 @@
 			"type": "BigInt",
 			"value": "108000"
 		},
+		"unlockFunctions": [
+			14
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					8,
+					64
+				]
+			}
+		],
 		"position": [
 			13,
-			-23
+			-27
 		]
 	},
 	{
@@ -4591,6 +8049,7 @@
 		"name": "T分拣器货物叠加",
 		"description": "分拣器货物叠加描述",
 		"conclusion": "分拣器货物叠加结果",
+		"published": true,
 		"level": 3,
 		"maxLevel": 3,
 		"isLabTech": true,
@@ -4611,9 +8070,27 @@
 			"type": "BigInt",
 			"value": "144000"
 		},
+		"unlockFunctions": [
+			14
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					16,
+					64
+				]
+			}
+		],
 		"position": [
 			17,
-			-23
+			-27
 		]
 	},
 	{
@@ -4621,6 +8098,7 @@
 		"name": "T分拣器货物叠加",
 		"description": "分拣器货物叠加描述",
 		"conclusion": "分拣器货物叠加结果",
+		"published": true,
 		"level": 4,
 		"maxLevel": 4,
 		"isLabTech": true,
@@ -4641,9 +8119,27 @@
 			"type": "BigInt",
 			"value": "300000"
 		},
+		"unlockFunctions": [
+			14
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					20,
+					64
+				]
+			}
+		],
 		"position": [
 			21,
-			-23
+			-27
 		]
 	},
 	{
@@ -4651,6 +8147,7 @@
 		"name": "T分拣器货物叠加",
 		"description": "分拣器货物叠加描述",
 		"conclusion": "分拣器货物叠加结果",
+		"published": true,
 		"level": 5,
 		"maxLevel": 5,
 		"isLabTech": true,
@@ -4671,9 +8168,27 @@
 			"type": "BigInt",
 			"value": "900000"
 		},
+		"unlockFunctions": [
+			14
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					24,
+					64
+				]
+			}
+		],
 		"position": [
 			25,
-			-23
+			-27
 		]
 	},
 	{
@@ -4681,6 +8196,7 @@
 		"name": "T配送范围",
 		"description": "配送范围描述",
 		"conclusion": "配送范围结果",
+		"published": true,
 		"level": 1,
 		"maxLevel": 1,
 		"isLabTech": true,
@@ -4699,9 +8215,27 @@
 			"type": "BigInt",
 			"value": "36000"
 		},
+		"unlockFunctions": [
+			36
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					52,
+					64
+				]
+			}
+		],
 		"position": [
 			9,
-			-27
+			-31
 		]
 	},
 	{
@@ -4709,6 +8243,7 @@
 		"name": "T配送范围",
 		"description": "配送范围描述",
 		"conclusion": "配送范围结果",
+		"published": true,
 		"level": 2,
 		"maxLevel": 2,
 		"isLabTech": true,
@@ -4729,9 +8264,27 @@
 			"type": "BigInt",
 			"value": "108000"
 		},
+		"unlockFunctions": [
+			36
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					52,
+					64
+				]
+			}
+		],
 		"position": [
 			13,
-			-27
+			-31
 		]
 	},
 	{
@@ -4739,6 +8292,7 @@
 		"name": "T配送范围",
 		"description": "配送范围描述",
 		"conclusion": "配送范围结果",
+		"published": true,
 		"level": 3,
 		"maxLevel": 3,
 		"isLabTech": true,
@@ -4759,9 +8313,27 @@
 			"type": "BigInt",
 			"value": "144000"
 		},
+		"unlockFunctions": [
+			36
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					62,
+					64
+				]
+			}
+		],
 		"position": [
 			17,
-			-27
+			-31
 		]
 	},
 	{
@@ -4769,6 +8341,7 @@
 		"name": "T配送范围",
 		"description": "配送范围描述",
 		"conclusion": "配送范围结果",
+		"published": true,
 		"level": 4,
 		"maxLevel": 4,
 		"isLabTech": true,
@@ -4791,9 +8364,27 @@
 			"type": "BigInt",
 			"value": "180000"
 		},
+		"unlockFunctions": [
+			36
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					62,
+					64
+				]
+			}
+		],
 		"position": [
 			21,
-			-27
+			-31
 		]
 	},
 	{
@@ -4801,6 +8392,7 @@
 		"name": "T配送范围",
 		"description": "配送范围描述",
 		"conclusion": "配送范围结果",
+		"published": true,
 		"level": 5,
 		"maxLevel": 5,
 		"isLabTech": true,
@@ -4825,9 +8417,27 @@
 			"type": "BigInt",
 			"value": "360000"
 		},
+		"unlockFunctions": [
+			36
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					68,
+					64
+				]
+			}
+		],
 		"position": [
 			25,
-			-27
+			-31
 		]
 	},
 	{
@@ -4835,6 +8445,7 @@
 		"name": "T运输船引擎",
 		"description": "运输船引擎描述",
 		"conclusion": "运输船引擎结果1",
+		"published": true,
 		"level": 1,
 		"maxLevel": 1,
 		"isLabTech": true,
@@ -4855,9 +8466,41 @@
 			"type": "BigInt",
 			"value": "36000"
 		},
+		"unlockFunctions": [
+			15,
+			34
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					201,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					185,
+					63
+				]
+			}
+		],
 		"position": [
 			9,
-			-31
+			-35
 		]
 	},
 	{
@@ -4865,6 +8508,7 @@
 		"name": "T运输船引擎",
 		"description": "运输船引擎描述",
 		"conclusion": "运输船引擎结果2",
+		"published": true,
 		"level": 2,
 		"maxLevel": 2,
 		"isLabTech": true,
@@ -4885,9 +8529,41 @@
 			"type": "BigInt",
 			"value": "108000"
 		},
+		"unlockFunctions": [
+			15,
+			34
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					201,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					185,
+					63
+				]
+			}
+		],
 		"position": [
 			13,
-			-31
+			-35
 		]
 	},
 	{
@@ -4895,6 +8571,7 @@
 		"name": "T运输船引擎",
 		"description": "运输船引擎描述2",
 		"conclusion": "运输船引擎结果3",
+		"published": true,
 		"level": 3,
 		"maxLevel": 3,
 		"isLabTech": true,
@@ -4918,9 +8595,55 @@
 			"type": "BigInt",
 			"value": "144000"
 		},
+		"unlockFunctions": [
+			15,
+			34,
+			16
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					51,
+					51,
+					51,
+					51,
+					51,
+					51,
+					211,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					51,
+					51,
+					51,
+					51,
+					51,
+					51,
+					195,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					224,
+					63
+				]
+			}
+		],
 		"position": [
 			17,
-			-31
+			-35
 		]
 	},
 	{
@@ -4928,6 +8651,7 @@
 		"name": "T运输船引擎",
 		"description": "运输船引擎描述3",
 		"conclusion": "运输船引擎结果4",
+		"published": true,
 		"level": 4,
 		"maxLevel": 4,
 		"isLabTech": true,
@@ -4953,9 +8677,69 @@
 			"type": "BigInt",
 			"value": "300000"
 		},
+		"unlockFunctions": [
+			15,
+			34,
+			16,
+			17
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					51,
+					51,
+					51,
+					51,
+					51,
+					51,
+					211,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					51,
+					51,
+					51,
+					51,
+					51,
+					51,
+					195,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					224,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			}
+		],
 		"position": [
 			21,
-			-31
+			-35
 		]
 	},
 	{
@@ -4963,6 +8747,7 @@
 		"name": "T运输船引擎",
 		"description": "运输船引擎描述2",
 		"conclusion": "运输船引擎结果5",
+		"published": true,
 		"level": 5,
 		"maxLevel": 5,
 		"isLabTech": true,
@@ -4987,9 +8772,55 @@
 			"type": "BigInt",
 			"value": "360000"
 		},
+		"unlockFunctions": [
+			15,
+			34,
+			16
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					217,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					51,
+					51,
+					51,
+					51,
+					51,
+					51,
+					195,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					224,
+					63
+				]
+			}
+		],
 		"position": [
 			25,
-			-31
+			-35
 		]
 	},
 	{
@@ -4997,6 +8828,7 @@
 		"name": "T运输船引擎",
 		"description": "运输船引擎描述2",
 		"conclusion": "运输船引擎结果6",
+		"published": true,
 		"level": 6,
 		"maxLevel": 6,
 		"isLabTech": true,
@@ -5021,9 +8853,55 @@
 			"type": "BigInt",
 			"value": "1440000"
 		},
+		"unlockFunctions": [
+			15,
+			34,
+			16
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					217,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					51,
+					51,
+					51,
+					51,
+					51,
+					51,
+					195,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					224,
+					63
+				]
+			}
+		],
 		"position": [
 			29,
-			-31
+			-35
 		]
 	},
 	{
@@ -5031,6 +8909,7 @@
 		"name": "T运输船引擎",
 		"description": "运输船引擎描述2",
 		"conclusion": "运输船引擎结果7",
+		"published": true,
 		"level": 7,
 		"maxLevel": 10000,
 		"levelCoef1": -21600000,
@@ -5049,9 +8928,55 @@
 			"type": "BigInt",
 			"value": "64800000"
 		},
+		"unlockFunctions": [
+			15,
+			34,
+			16
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					224,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					201,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					224,
+					63
+				]
+			}
+		],
 		"position": [
 			33,
-			-31
+			-35
 		]
 	},
 	{
@@ -5059,6 +8984,7 @@
 		"name": "T运输机舱扩容",
 		"description": "运输机舱扩容描述",
 		"conclusion": "运输机舱扩容结果1",
+		"published": true,
 		"level": 1,
 		"maxLevel": 1,
 		"isLabTech": true,
@@ -5079,9 +9005,41 @@
 			"type": "BigInt",
 			"value": "36000"
 		},
+		"unlockFunctions": [
+			35,
+			18
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					20,
+					64
+				]
+			}
+		],
 		"position": [
 			9,
-			-35
+			-39
 		]
 	},
 	{
@@ -5089,6 +9047,7 @@
 		"name": "T运输机舱扩容",
 		"description": "运输机舱扩容描述2",
 		"conclusion": "运输机舱扩容结果2",
+		"published": true,
 		"level": 2,
 		"maxLevel": 2,
 		"isLabTech": true,
@@ -5109,9 +9068,41 @@
 			"type": "BigInt",
 			"value": "108000"
 		},
+		"unlockFunctions": [
+			35,
+			18
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					20,
+					64
+				]
+			}
+		],
 		"position": [
 			13,
-			-35
+			-39
 		]
 	},
 	{
@@ -5119,6 +9110,7 @@
 		"name": "T运输机舱扩容",
 		"description": "运输机舱扩容描述3",
 		"conclusion": "运输机舱扩容结果3",
+		"published": true,
 		"level": 3,
 		"maxLevel": 3,
 		"isLabTech": true,
@@ -5142,9 +9134,55 @@
 			"type": "BigInt",
 			"value": "144000"
 		},
+		"unlockFunctions": [
+			35,
+			18,
+			19
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					20,
+					64
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					89,
+					64
+				]
+			}
+		],
 		"position": [
 			17,
-			-35
+			-39
 		]
 	},
 	{
@@ -5152,6 +9190,7 @@
 		"name": "T运输机舱扩容",
 		"description": "运输机舱扩容描述4",
 		"conclusion": "运输机舱扩容结果4",
+		"published": true,
 		"level": 4,
 		"maxLevel": 4,
 		"isLabTech": true,
@@ -5172,9 +9211,55 @@
 			"type": "BigInt",
 			"value": "300000"
 		},
+		"unlockFunctions": [
+			35,
+			18,
+			19
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					36,
+					64
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					89,
+					64
+				]
+			}
+		],
 		"position": [
 			21,
-			-35
+			-39
 		]
 	},
 	{
@@ -5182,6 +9267,7 @@
 		"name": "T运输机舱扩容",
 		"description": "运输机舱扩容描述4",
 		"conclusion": "运输机舱扩容结果5",
+		"published": true,
 		"level": 5,
 		"maxLevel": 5,
 		"isLabTech": true,
@@ -5204,9 +9290,55 @@
 			"type": "BigInt",
 			"value": "720000"
 		},
+		"unlockFunctions": [
+			35,
+			18,
+			19
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					36,
+					64
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					89,
+					64
+				]
+			}
+		],
 		"position": [
 			25,
-			-35
+			-39
 		]
 	},
 	{
@@ -5214,6 +9346,7 @@
 		"name": "T运输机舱扩容",
 		"description": "运输机舱扩容描述4",
 		"conclusion": "运输机舱扩容结果5",
+		"published": true,
 		"level": 6,
 		"maxLevel": 6,
 		"isLabTech": true,
@@ -5236,9 +9369,55 @@
 			"type": "BigInt",
 			"value": "960000"
 		},
+		"unlockFunctions": [
+			35,
+			18,
+			19
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					36,
+					64
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					89,
+					64
+				]
+			}
+		],
 		"position": [
 			29,
-			-35
+			-39
 		]
 	},
 	{
@@ -5246,6 +9425,7 @@
 		"name": "T运输机舱扩容",
 		"description": "运输机舱扩容描述4",
 		"conclusion": "运输机舱扩容结果5",
+		"published": true,
 		"level": 7,
 		"maxLevel": 7,
 		"isLabTech": true,
@@ -5270,9 +9450,55 @@
 			"type": "BigInt",
 			"value": "2400000"
 		},
+		"unlockFunctions": [
+			35,
+			18,
+			19
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					36,
+					64
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					105,
+					64
+				]
+			}
+		],
 		"position": [
 			33,
-			-35
+			-39
 		]
 	},
 	{
@@ -5280,6 +9506,7 @@
 		"name": "T运输机舱扩容",
 		"description": "运输机舱扩容描述4",
 		"conclusion": "运输机舱扩容结果5",
+		"published": true,
 		"level": 8,
 		"maxLevel": 8,
 		"isLabTech": true,
@@ -5304,9 +9531,41 @@
 			"type": "BigInt",
 			"value": "4800000"
 		},
+		"unlockFunctions": [
+			18,
+			19
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					52,
+					64
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					105,
+					64
+				]
+			}
+		],
 		"position": [
 			37,
-			-35
+			-39
 		]
 	},
 	{
@@ -5314,6 +9573,7 @@
 		"name": "T运输机舱扩容",
 		"description": "运输机舱扩容描述5",
 		"conclusion": "运输机舱扩容结果6",
+		"published": true,
 		"level": 9,
 		"maxLevel": 11,
 		"levelCoef1": 2400000,
@@ -5331,9 +9591,69 @@
 			"type": "BigInt",
 			"value": "-14400000"
 		},
+		"unlockFunctions": [
+			18,
+			19,
+			30,
+			31
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					52,
+					64
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					105,
+					64
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					64,
+					143,
+					64
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					64,
+					159,
+					64
+				]
+			}
+		],
 		"position": [
 			41,
-			-35
+			-39
 		]
 	},
 	{
@@ -5341,6 +9661,7 @@
 		"name": "T运输机舱扩容",
 		"description": "运输机舱扩容描述5",
 		"conclusion": "运输机舱扩容结果6",
+		"published": true,
 		"level": 12,
 		"maxLevel": 13,
 		"levelCoef1": 4800000,
@@ -5358,9 +9679,69 @@
 			"type": "BigInt",
 			"value": "-43200000"
 		},
+		"unlockFunctions": [
+			18,
+			19,
+			30,
+			31
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					52,
+					64
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					105,
+					64
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					64,
+					143,
+					64
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					64,
+					159,
+					64
+				]
+			}
+		],
 		"position": [
 			45,
-			-35
+			-39
 		]
 	},
 	{
@@ -5368,6 +9749,7 @@
 		"name": "T运输站集装物流",
 		"description": "运输站集装物流描述1",
 		"conclusion": "运输站集装物流结果1",
+		"published": true,
 		"level": 1,
 		"maxLevel": 1,
 		"isLabTech": true,
@@ -5384,9 +9766,27 @@
 			"type": "BigInt",
 			"value": "9600000"
 		},
+		"unlockFunctions": [
+			29
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			}
+		],
 		"position": [
 			37,
-			-31
+			-35
 		]
 	},
 	{
@@ -5394,6 +9794,7 @@
 		"name": "T运输站集装物流",
 		"description": "运输站集装物流描述2",
 		"conclusion": "运输站集装物流结果2",
+		"published": true,
 		"level": 2,
 		"maxLevel": 2,
 		"isLabTech": true,
@@ -5414,9 +9815,27 @@
 			"type": "BigInt",
 			"value": "28800000"
 		},
+		"unlockFunctions": [
+			29
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			}
+		],
 		"position": [
 			41,
-			-31
+			-35
 		]
 	},
 	{
@@ -5424,6 +9843,7 @@
 		"name": "T运输站集装物流",
 		"description": "运输站集装物流描述2",
 		"conclusion": "运输站集装物流结果2",
+		"published": true,
 		"level": 3,
 		"maxLevel": 3,
 		"isLabTech": true,
@@ -5444,9 +9864,27 @@
 			"type": "BigInt",
 			"value": "43200000"
 		},
+		"unlockFunctions": [
+			29
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			}
+		],
 		"position": [
 			45,
-			-31
+			-35
 		]
 	},
 	{
@@ -5454,6 +9892,7 @@
 		"name": "T矿物利用",
 		"description": "矿物利用描述",
 		"conclusion": "矿物利用结果",
+		"published": true,
 		"level": 1,
 		"maxLevel": 1,
 		"isLabTech": true,
@@ -5472,9 +9911,41 @@
 			"type": "BigInt",
 			"value": "36000"
 		},
+		"unlockFunctions": [
+			20,
+			21
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					20,
+					174,
+					71,
+					225,
+					122,
+					20,
+					238,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					185,
+					63
+				]
+			}
+		],
 		"position": [
 			9,
-			-39
+			-43
 		]
 	},
 	{
@@ -5482,6 +9953,7 @@
 		"name": "T矿物利用",
 		"description": "矿物利用描述2",
 		"conclusion": "矿物利用结果",
+		"published": true,
 		"level": 2,
 		"maxLevel": 2,
 		"isLabTech": true,
@@ -5502,9 +9974,41 @@
 			"type": "BigInt",
 			"value": "180000"
 		},
+		"unlockFunctions": [
+			20,
+			21
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					20,
+					174,
+					71,
+					225,
+					122,
+					20,
+					238,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					185,
+					63
+				]
+			}
+		],
 		"position": [
 			13,
-			-39
+			-43
 		]
 	},
 	{
@@ -5512,6 +10016,7 @@
 		"name": "T矿物利用",
 		"description": "矿物利用描述2",
 		"conclusion": "矿物利用结果",
+		"published": true,
 		"level": 3,
 		"maxLevel": 3,
 		"isLabTech": true,
@@ -5534,9 +10039,41 @@
 			"type": "BigInt",
 			"value": "180000"
 		},
+		"unlockFunctions": [
+			20,
+			21
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					20,
+					174,
+					71,
+					225,
+					122,
+					20,
+					238,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					185,
+					63
+				]
+			}
+		],
 		"position": [
 			17,
-			-39
+			-43
 		]
 	},
 	{
@@ -5544,6 +10081,7 @@
 		"name": "T矿物利用",
 		"description": "矿物利用描述2",
 		"conclusion": "矿物利用结果",
+		"published": true,
 		"level": 4,
 		"maxLevel": 4,
 		"isLabTech": true,
@@ -5566,9 +10104,41 @@
 			"type": "BigInt",
 			"value": "480000"
 		},
+		"unlockFunctions": [
+			20,
+			21
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					20,
+					174,
+					71,
+					225,
+					122,
+					20,
+					238,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					185,
+					63
+				]
+			}
+		],
 		"position": [
 			21,
-			-39
+			-43
 		]
 	},
 	{
@@ -5576,6 +10146,7 @@
 		"name": "T矿物利用",
 		"description": "矿物利用描述2",
 		"conclusion": "矿物利用结果",
+		"published": true,
 		"level": 5,
 		"maxLevel": 5,
 		"isLabTech": true,
@@ -5600,9 +10171,41 @@
 			"type": "BigInt",
 			"value": "1800000"
 		},
+		"unlockFunctions": [
+			20,
+			21
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					20,
+					174,
+					71,
+					225,
+					122,
+					20,
+					238,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					185,
+					63
+				]
+			}
+		],
 		"position": [
 			25,
-			-39
+			-43
 		]
 	},
 	{
@@ -5610,6 +10213,7 @@
 		"name": "T矿物利用",
 		"description": "矿物利用描述2",
 		"conclusion": "矿物利用结果",
+		"published": true,
 		"level": 6,
 		"maxLevel": 10000,
 		"levelCoef1": 3600000,
@@ -5627,9 +10231,41 @@
 			"type": "BigInt",
 			"value": "-18000000"
 		},
+		"unlockFunctions": [
+			20,
+			21
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					20,
+					174,
+					71,
+					225,
+					122,
+					20,
+					238,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					185,
+					63
+				]
+			}
+		],
 		"position": [
 			29,
-			-39
+			-43
 		]
 	},
 	{
@@ -5637,6 +10273,7 @@
 		"name": "T垂直建造",
 		"description": "垂直建造描述",
 		"conclusion": "垂直建造结果",
+		"published": true,
 		"level": 1,
 		"maxLevel": 1,
 		"isLabTech": true,
@@ -5653,9 +10290,41 @@
 			"type": "BigInt",
 			"value": "36000"
 		},
+		"unlockFunctions": [
+			24,
+			25
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			}
+		],
 		"position": [
 			9,
-			-19
+			-23
 		]
 	},
 	{
@@ -5663,6 +10332,7 @@
 		"name": "T垂直建造",
 		"description": "垂直建造描述",
 		"conclusion": "垂直建造结果",
+		"published": true,
 		"level": 2,
 		"maxLevel": 2,
 		"isLabTech": true,
@@ -5679,9 +10349,41 @@
 			"type": "BigInt",
 			"value": "108000"
 		},
+		"unlockFunctions": [
+			24,
+			25
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			}
+		],
 		"position": [
 			13,
-			-19
+			-23
 		]
 	},
 	{
@@ -5689,6 +10391,7 @@
 		"name": "T垂直建造",
 		"description": "垂直建造描述",
 		"conclusion": "垂直建造结果",
+		"published": true,
 		"level": 3,
 		"maxLevel": 3,
 		"isLabTech": true,
@@ -5707,9 +10410,41 @@
 			"type": "BigInt",
 			"value": "144000"
 		},
+		"unlockFunctions": [
+			24,
+			25
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			}
+		],
 		"position": [
 			17,
-			-19
+			-23
 		]
 	},
 	{
@@ -5717,6 +10452,7 @@
 		"name": "T垂直建造",
 		"description": "垂直建造描述",
 		"conclusion": "垂直建造结果",
+		"published": true,
 		"level": 4,
 		"maxLevel": 4,
 		"isLabTech": true,
@@ -5737,9 +10473,41 @@
 			"type": "BigInt",
 			"value": "300000"
 		},
+		"unlockFunctions": [
+			24,
+			25
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			}
+		],
 		"position": [
 			21,
-			-19
+			-23
 		]
 	},
 	{
@@ -5747,6 +10515,7 @@
 		"name": "T垂直建造",
 		"description": "垂直建造描述",
 		"conclusion": "垂直建造结果",
+		"published": true,
 		"level": 5,
 		"maxLevel": 5,
 		"isLabTech": true,
@@ -5767,9 +10536,41 @@
 			"type": "BigInt",
 			"value": "480000"
 		},
+		"unlockFunctions": [
+			24,
+			25
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			}
+		],
 		"position": [
 			25,
-			-19
+			-23
 		]
 	},
 	{
@@ -5777,6 +10578,7 @@
 		"name": "T垂直建造",
 		"description": "垂直建造描述",
 		"conclusion": "垂直建造结果",
+		"published": true,
 		"level": 6,
 		"maxLevel": 6,
 		"isLabTech": true,
@@ -5799,9 +10601,41 @@
 			"type": "BigInt",
 			"value": "1200000"
 		},
+		"unlockFunctions": [
+			24,
+			25
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			}
+		],
 		"position": [
 			29,
-			-19
+			-23
 		]
 	},
 	{
@@ -5809,6 +10643,7 @@
 		"name": "T研究速度",
 		"description": "研究速度描述",
 		"conclusion": "研究速度结果",
+		"published": true,
 		"level": 1,
 		"maxLevel": 1,
 		"isLabTech": true,
@@ -5825,9 +10660,27 @@
 			"type": "BigInt",
 			"value": "600000"
 		},
+		"unlockFunctions": [
+			22
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			}
+		],
 		"position": [
 			9,
-			-43
+			-47
 		]
 	},
 	{
@@ -5835,6 +10688,7 @@
 		"name": "T研究速度",
 		"description": "研究速度描述",
 		"conclusion": "研究速度结果",
+		"published": true,
 		"level": 2,
 		"maxLevel": 2,
 		"isLabTech": true,
@@ -5851,9 +10705,27 @@
 			"type": "BigInt",
 			"value": "1200000"
 		},
+		"unlockFunctions": [
+			22
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			}
+		],
 		"position": [
 			13,
-			-43
+			-47
 		]
 	},
 	{
@@ -5861,6 +10733,7 @@
 		"name": "T研究速度",
 		"description": "研究速度描述",
 		"conclusion": "研究速度结果",
+		"published": true,
 		"level": 3,
 		"maxLevel": 3,
 		"isLabTech": true,
@@ -5877,9 +10750,27 @@
 			"type": "BigInt",
 			"value": "2400000"
 		},
+		"unlockFunctions": [
+			22
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			}
+		],
 		"position": [
 			17,
-			-43
+			-47
 		]
 	},
 	{
@@ -5887,6 +10778,7 @@
 		"name": "T研究速度",
 		"description": "研究速度描述",
 		"conclusion": "研究速度结果",
+		"published": true,
 		"level": 4,
 		"maxLevel": 10000,
 		"levelCoef1": 14400000,
@@ -5904,9 +10796,27 @@
 			"type": "BigInt",
 			"value": "-43200000"
 		},
+		"unlockFunctions": [
+			22
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			}
+		],
 		"position": [
 			21,
-			-43
+			-47
 		]
 	},
 	{
@@ -5914,6 +10824,7 @@
 		"name": "T宇宙探索",
 		"description": "宇宙探索描述1",
 		"conclusion": "宇宙探索结果1",
+		"published": true,
 		"level": 1,
 		"maxLevel": 1,
 		"isLabTech": true,
@@ -5927,9 +10838,27 @@
 			"type": "BigInt",
 			"value": "1800"
 		},
+		"unlockFunctions": [
+			23
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			}
+		],
 		"position": [
 			9,
-			33
+			37
 		]
 	},
 	{
@@ -5937,6 +10866,7 @@
 		"name": "T宇宙探索",
 		"description": "宇宙探索描述2",
 		"conclusion": "宇宙探索结果2",
+		"published": true,
 		"level": 2,
 		"maxLevel": 2,
 		"isLabTech": true,
@@ -5953,9 +10883,27 @@
 			"type": "BigInt",
 			"value": "36000"
 		},
+		"unlockFunctions": [
+			23
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			}
+		],
 		"position": [
 			13,
-			33
+			37
 		]
 	},
 	{
@@ -5963,6 +10911,7 @@
 		"name": "T宇宙探索",
 		"description": "宇宙探索描述3",
 		"conclusion": "宇宙探索结果3",
+		"published": true,
 		"level": 3,
 		"maxLevel": 3,
 		"isLabTech": true,
@@ -5986,9 +10935,27 @@
 			"type": "BigInt",
 			"value": "300000"
 		},
+		"unlockFunctions": [
+			23
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					8,
+					64
+				]
+			}
+		],
 		"position": [
 			17,
-			33
+			37
 		]
 	},
 	{
@@ -5996,6 +10963,7 @@
 		"name": "T宇宙探索",
 		"description": "宇宙探索描述4",
 		"conclusion": "宇宙探索结果4",
+		"published": true,
 		"level": 4,
 		"maxLevel": 4,
 		"isLabTech": true,
@@ -6018,9 +10986,2703 @@
 			"type": "BigInt",
 			"value": "1200000"
 		},
+		"unlockFunctions": [
+			23
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					16,
+					64
+				]
+			}
+		],
 		"position": [
 			21,
-			33
+			37
+		]
+	},
+	{
+		"id": 5001,
+		"name": "T动能武器伤害",
+		"description": "动能武器伤害描述",
+		"conclusion": "动能武器伤害结果",
+		"published": true,
+		"level": 1,
+		"maxLevel": 1,
+		"isLabTech": true,
+		"preTechsImplicit": [
+			1801
+		],
+		"items": [
+			6001
+		],
+		"itemPoints": [
+			40
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "9000"
+		},
+		"unlockFunctions": [
+			61
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					185,
+					63
+				]
+			}
+		],
+		"position": [
+			9,
+			-55
+		]
+	},
+	{
+		"id": 5002,
+		"name": "T动能武器伤害",
+		"description": "动能武器伤害描述",
+		"conclusion": "动能武器伤害结果",
+		"published": true,
+		"level": 2,
+		"maxLevel": 2,
+		"isLabTech": true,
+		"preTechs": [
+			5001
+		],
+		"items": [
+			6001,
+			6002
+		],
+		"itemPoints": [
+			10,
+			10
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "36000"
+		},
+		"unlockFunctions": [
+			61
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					185,
+					63
+				]
+			}
+		],
+		"position": [
+			13,
+			-55
+		]
+	},
+	{
+		"id": 5003,
+		"name": "T动能武器伤害",
+		"description": "动能武器伤害描述",
+		"conclusion": "动能武器伤害结果",
+		"published": true,
+		"level": 3,
+		"maxLevel": 3,
+		"isLabTech": true,
+		"preTechs": [
+			5002
+		],
+		"items": [
+			6001,
+			6002,
+			6003
+		],
+		"itemPoints": [
+			5,
+			5,
+			5
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "144000"
+		},
+		"unlockFunctions": [
+			61
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					201,
+					63
+				]
+			}
+		],
+		"position": [
+			17,
+			-55
+		]
+	},
+	{
+		"id": 5004,
+		"name": "T动能武器伤害",
+		"description": "动能武器伤害描述",
+		"conclusion": "动能武器伤害结果",
+		"published": true,
+		"level": 4,
+		"maxLevel": 4,
+		"isLabTech": true,
+		"preTechs": [
+			5003
+		],
+		"items": [
+			6001,
+			6002,
+			6003,
+			6004
+		],
+		"itemPoints": [
+			6,
+			6,
+			6,
+			6
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "360000"
+		},
+		"unlockFunctions": [
+			61
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					51,
+					51,
+					51,
+					51,
+					51,
+					51,
+					211,
+					63
+				]
+			}
+		],
+		"position": [
+			21,
+			-55
+		]
+	},
+	{
+		"id": 5005,
+		"name": "T动能武器伤害",
+		"description": "动能武器伤害描述",
+		"conclusion": "动能武器伤害结果",
+		"published": true,
+		"level": 5,
+		"maxLevel": 5,
+		"isLabTech": true,
+		"preTechs": [
+			5004
+		],
+		"items": [
+			6001,
+			6002,
+			6003,
+			6004,
+			6005
+		],
+		"itemPoints": [
+			5,
+			5,
+			5,
+			5,
+			5
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "720000"
+		},
+		"unlockFunctions": [
+			61
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					51,
+					51,
+					51,
+					51,
+					51,
+					51,
+					211,
+					63
+				]
+			}
+		],
+		"position": [
+			25,
+			-55
+		]
+	},
+	{
+		"id": 5006,
+		"name": "T动能武器伤害",
+		"description": "动能武器伤害描述",
+		"conclusion": "动能武器伤害结果",
+		"published": true,
+		"level": 6,
+		"maxLevel": 10000,
+		"levelCoef1": -16200000,
+		"levelCoef2": 1800000,
+		"isLabTech": true,
+		"preTechs": [
+			5005
+		],
+		"items": [
+			6006
+		],
+		"itemPoints": [
+			8
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "36000000"
+		},
+		"unlockFunctions": [
+			61
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					51,
+					51,
+					51,
+					51,
+					51,
+					51,
+					211,
+					63
+				]
+			}
+		],
+		"position": [
+			29,
+			-55
+		]
+	},
+	{
+		"id": 5101,
+		"name": "T能量武器伤害",
+		"description": "能量武器伤害描述",
+		"conclusion": "能量武器伤害结果",
+		"published": true,
+		"level": 1,
+		"maxLevel": 1,
+		"isLabTech": true,
+		"preTechsImplicit": [
+			1801
+		],
+		"items": [
+			6001
+		],
+		"itemPoints": [
+			10
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "36000"
+		},
+		"unlockFunctions": [
+			62
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					185,
+					63
+				]
+			}
+		],
+		"position": [
+			9,
+			-59
+		]
+	},
+	{
+		"id": 5102,
+		"name": "T能量武器伤害",
+		"description": "能量武器伤害描述",
+		"conclusion": "能量武器伤害结果",
+		"published": true,
+		"level": 2,
+		"maxLevel": 2,
+		"isLabTech": true,
+		"preTechs": [
+			5101
+		],
+		"items": [
+			6001,
+			6002
+		],
+		"itemPoints": [
+			10,
+			10
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "72000"
+		},
+		"unlockFunctions": [
+			62
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					185,
+					63
+				]
+			}
+		],
+		"position": [
+			13,
+			-59
+		]
+	},
+	{
+		"id": 5103,
+		"name": "T能量武器伤害",
+		"description": "能量武器伤害描述",
+		"conclusion": "能量武器伤害结果",
+		"published": true,
+		"level": 3,
+		"maxLevel": 3,
+		"isLabTech": true,
+		"preTechs": [
+			5102
+		],
+		"items": [
+			6001,
+			6002,
+			6003
+		],
+		"itemPoints": [
+			5,
+			5,
+			5
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "144000"
+		},
+		"unlockFunctions": [
+			62
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					201,
+					63
+				]
+			}
+		],
+		"position": [
+			17,
+			-59
+		]
+	},
+	{
+		"id": 5104,
+		"name": "T能量武器伤害",
+		"description": "能量武器伤害描述",
+		"conclusion": "能量武器伤害结果",
+		"published": true,
+		"level": 4,
+		"maxLevel": 4,
+		"isLabTech": true,
+		"preTechs": [
+			5103
+		],
+		"items": [
+			6001,
+			6002,
+			6003,
+			6004
+		],
+		"itemPoints": [
+			6,
+			6,
+			6,
+			6
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "360000"
+		},
+		"unlockFunctions": [
+			62
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					51,
+					51,
+					51,
+					51,
+					51,
+					51,
+					211,
+					63
+				]
+			}
+		],
+		"position": [
+			21,
+			-59
+		]
+	},
+	{
+		"id": 5105,
+		"name": "T能量武器伤害",
+		"description": "能量武器伤害描述",
+		"conclusion": "能量武器伤害结果",
+		"published": true,
+		"level": 5,
+		"maxLevel": 5,
+		"isLabTech": true,
+		"preTechs": [
+			5104
+		],
+		"items": [
+			6001,
+			6002,
+			6003,
+			6004,
+			6005
+		],
+		"itemPoints": [
+			5,
+			5,
+			5,
+			5,
+			5
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "720000"
+		},
+		"unlockFunctions": [
+			62
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					51,
+					51,
+					51,
+					51,
+					51,
+					51,
+					211,
+					63
+				]
+			}
+		],
+		"position": [
+			25,
+			-59
+		]
+	},
+	{
+		"id": 5106,
+		"name": "T能量武器伤害",
+		"description": "能量武器伤害描述",
+		"conclusion": "能量武器伤害结果",
+		"published": true,
+		"level": 6,
+		"maxLevel": 10000,
+		"levelCoef1": -16200000,
+		"levelCoef2": 1800000,
+		"isLabTech": true,
+		"preTechs": [
+			5105
+		],
+		"items": [
+			6006
+		],
+		"itemPoints": [
+			8
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "36000000"
+		},
+		"unlockFunctions": [
+			62
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					51,
+					51,
+					51,
+					51,
+					51,
+					51,
+					211,
+					63
+				]
+			}
+		],
+		"position": [
+			29,
+			-59
+		]
+	},
+	{
+		"id": 5201,
+		"name": "T爆炸武器伤害",
+		"description": "爆炸武器伤害描述",
+		"conclusion": "爆炸武器伤害结果",
+		"published": true,
+		"level": 1,
+		"maxLevel": 1,
+		"isLabTech": true,
+		"preTechsImplicit": [
+			1802
+		],
+		"items": [
+			6001
+		],
+		"itemPoints": [
+			10
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "36000"
+		},
+		"unlockFunctions": [
+			63
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					185,
+					63
+				]
+			}
+		],
+		"position": [
+			9,
+			-63
+		]
+	},
+	{
+		"id": 5202,
+		"name": "T爆炸武器伤害",
+		"description": "爆炸武器伤害描述",
+		"conclusion": "爆炸武器伤害结果",
+		"published": true,
+		"level": 2,
+		"maxLevel": 2,
+		"isLabTech": true,
+		"preTechs": [
+			5201
+		],
+		"items": [
+			6001,
+			6002
+		],
+		"itemPoints": [
+			10,
+			10
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "72000"
+		},
+		"unlockFunctions": [
+			63
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					185,
+					63
+				]
+			}
+		],
+		"position": [
+			13,
+			-63
+		]
+	},
+	{
+		"id": 5203,
+		"name": "T爆炸武器伤害",
+		"description": "爆炸武器伤害描述",
+		"conclusion": "爆炸武器伤害结果",
+		"published": true,
+		"level": 3,
+		"maxLevel": 3,
+		"isLabTech": true,
+		"preTechs": [
+			5202
+		],
+		"items": [
+			6001,
+			6002,
+			6003
+		],
+		"itemPoints": [
+			5,
+			5,
+			5
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "144000"
+		},
+		"unlockFunctions": [
+			63
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					201,
+					63
+				]
+			}
+		],
+		"position": [
+			17,
+			-63
+		]
+	},
+	{
+		"id": 5204,
+		"name": "T爆炸武器伤害",
+		"description": "爆炸武器伤害描述",
+		"conclusion": "爆炸武器伤害结果",
+		"published": true,
+		"level": 4,
+		"maxLevel": 4,
+		"isLabTech": true,
+		"preTechs": [
+			5203
+		],
+		"items": [
+			6001,
+			6002,
+			6003,
+			6004
+		],
+		"itemPoints": [
+			6,
+			6,
+			6,
+			6
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "360000"
+		},
+		"unlockFunctions": [
+			63
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					51,
+					51,
+					51,
+					51,
+					51,
+					51,
+					211,
+					63
+				]
+			}
+		],
+		"position": [
+			21,
+			-63
+		]
+	},
+	{
+		"id": 5205,
+		"name": "T爆炸武器伤害",
+		"description": "爆炸武器伤害描述",
+		"conclusion": "爆炸武器伤害结果",
+		"published": true,
+		"level": 5,
+		"maxLevel": 5,
+		"isLabTech": true,
+		"preTechs": [
+			5204
+		],
+		"items": [
+			6001,
+			6002,
+			6003,
+			6004,
+			6005
+		],
+		"itemPoints": [
+			5,
+			5,
+			5,
+			5,
+			5
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "720000"
+		},
+		"unlockFunctions": [
+			63
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					51,
+					51,
+					51,
+					51,
+					51,
+					51,
+					211,
+					63
+				]
+			}
+		],
+		"position": [
+			25,
+			-63
+		]
+	},
+	{
+		"id": 5206,
+		"name": "T爆炸武器伤害",
+		"description": "爆炸武器伤害描述",
+		"conclusion": "爆炸武器伤害结果",
+		"published": true,
+		"level": 6,
+		"maxLevel": 10000,
+		"levelCoef1": -16200000,
+		"levelCoef2": 1800000,
+		"isLabTech": true,
+		"preTechs": [
+			5205
+		],
+		"items": [
+			6006
+		],
+		"itemPoints": [
+			8
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "36000000"
+		},
+		"unlockFunctions": [
+			63
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					51,
+					51,
+					51,
+					51,
+					51,
+					51,
+					211,
+					63
+				]
+			}
+		],
+		"position": [
+			29,
+			-63
+		]
+	},
+	{
+		"id": 5301,
+		"name": "T战斗无人机伤害",
+		"description": "战斗无人机伤害描述",
+		"conclusion": "战斗无人机伤害结果",
+		"published": true,
+		"level": 1,
+		"maxLevel": 1,
+		"isLabTech": true,
+		"preTechsImplicit": [
+			1819
+		],
+		"items": [
+			6001,
+			6002
+		],
+		"itemPoints": [
+			10,
+			10
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "72000"
+		},
+		"unlockFunctions": [
+			67
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					185,
+					63
+				]
+			}
+		],
+		"position": [
+			9,
+			-67
+		]
+	},
+	{
+		"id": 5302,
+		"name": "T战斗无人机伤害",
+		"description": "战斗无人机伤害描述",
+		"conclusion": "战斗无人机伤害结果",
+		"published": true,
+		"level": 2,
+		"maxLevel": 2,
+		"isLabTech": true,
+		"preTechs": [
+			5301
+		],
+		"items": [
+			6001,
+			6002,
+			6003
+		],
+		"itemPoints": [
+			5,
+			5,
+			5
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "144000"
+		},
+		"unlockFunctions": [
+			67
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					185,
+					63
+				]
+			}
+		],
+		"position": [
+			13,
+			-67
+		]
+	},
+	{
+		"id": 5303,
+		"name": "T战斗无人机伤害",
+		"description": "战斗无人机伤害描述",
+		"conclusion": "战斗无人机伤害结果",
+		"published": true,
+		"level": 3,
+		"maxLevel": 3,
+		"isLabTech": true,
+		"preTechs": [
+			5302
+		],
+		"items": [
+			6001,
+			6002,
+			6003,
+			6004
+		],
+		"itemPoints": [
+			6,
+			6,
+			6,
+			6
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "360000"
+		},
+		"unlockFunctions": [
+			67,
+			71
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					51,
+					51,
+					51,
+					51,
+					51,
+					51,
+					211,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					224,
+					63
+				]
+			}
+		],
+		"position": [
+			17,
+			-67
+		]
+	},
+	{
+		"id": 5304,
+		"name": "T战斗无人机伤害",
+		"description": "战斗无人机伤害描述",
+		"conclusion": "战斗无人机伤害结果",
+		"published": true,
+		"level": 4,
+		"maxLevel": 4,
+		"isLabTech": true,
+		"preTechs": [
+			5303
+		],
+		"items": [
+			6001,
+			6002,
+			6003,
+			6004,
+			6005
+		],
+		"itemPoints": [
+			5,
+			5,
+			5,
+			5,
+			5
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "720000"
+		},
+		"unlockFunctions": [
+			67,
+			71
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					224,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					224,
+					63
+				]
+			}
+		],
+		"position": [
+			21,
+			-67
+		]
+	},
+	{
+		"id": 5305,
+		"name": "T战斗无人机伤害",
+		"description": "战斗无人机伤害描述",
+		"conclusion": "战斗无人机伤害结果",
+		"published": true,
+		"level": 5,
+		"maxLevel": 10000,
+		"levelCoef1": -16200000,
+		"levelCoef2": 1800000,
+		"isLabTech": true,
+		"preTechs": [
+			5304
+		],
+		"items": [
+			6006
+		],
+		"itemPoints": [
+			8
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "39600000"
+		},
+		"unlockFunctions": [
+			67,
+			71
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					224,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					224,
+					63
+				]
+			}
+		],
+		"position": [
+			25,
+			-67
+		]
+	},
+	{
+		"id": 5401,
+		"name": "T战斗无人机攻击速度",
+		"description": "战斗无人机攻击速度描述",
+		"conclusion": "战斗无人机攻击速度结果",
+		"published": true,
+		"level": 1,
+		"maxLevel": 1,
+		"isLabTech": true,
+		"preTechsImplicit": [
+			1819
+		],
+		"items": [
+			6001,
+			6002
+		],
+		"itemPoints": [
+			10,
+			10
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "72000"
+		},
+		"unlockFunctions": [
+			68
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					185,
+					63
+				]
+			}
+		],
+		"position": [
+			9,
+			-71
+		]
+	},
+	{
+		"id": 5402,
+		"name": "T战斗无人机攻击速度",
+		"description": "战斗无人机攻击速度描述",
+		"conclusion": "战斗无人机攻击速度结果",
+		"published": true,
+		"level": 2,
+		"maxLevel": 2,
+		"isLabTech": true,
+		"preTechs": [
+			5401
+		],
+		"items": [
+			6001,
+			6002,
+			6003
+		],
+		"itemPoints": [
+			5,
+			5,
+			5
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "144000"
+		},
+		"unlockFunctions": [
+			68
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					185,
+					63
+				]
+			}
+		],
+		"position": [
+			13,
+			-71
+		]
+	},
+	{
+		"id": 5403,
+		"name": "T战斗无人机攻击速度",
+		"description": "战斗无人机攻击速度描述",
+		"conclusion": "战斗无人机攻击速度结果",
+		"published": true,
+		"level": 3,
+		"maxLevel": 3,
+		"isLabTech": true,
+		"preTechs": [
+			5402
+		],
+		"items": [
+			6001,
+			6002,
+			6003,
+			6004
+		],
+		"itemPoints": [
+			6,
+			6,
+			6,
+			6
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "300000"
+		},
+		"unlockFunctions": [
+			68,
+			72
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					201,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					51,
+					51,
+					51,
+					51,
+					51,
+					51,
+					211,
+					63
+				]
+			}
+		],
+		"position": [
+			17,
+			-71
+		]
+	},
+	{
+		"id": 5404,
+		"name": "T战斗无人机攻击速度",
+		"description": "战斗无人机攻击速度描述",
+		"conclusion": "战斗无人机攻击速度结果",
+		"published": true,
+		"level": 4,
+		"maxLevel": 4,
+		"isLabTech": true,
+		"preTechs": [
+			5403
+		],
+		"items": [
+			6001,
+			6002,
+			6003,
+			6004,
+			6005
+		],
+		"itemPoints": [
+			10,
+			10,
+			10,
+			10,
+			10
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "360000"
+		},
+		"unlockFunctions": [
+			68,
+			72
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					201,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					51,
+					51,
+					51,
+					51,
+					51,
+					51,
+					211,
+					63
+				]
+			}
+		],
+		"position": [
+			21,
+			-71
+		]
+	},
+	{
+		"id": 5405,
+		"name": "T战斗无人机攻击速度",
+		"description": "战斗无人机攻击速度描述",
+		"conclusion": "战斗无人机攻击速度结果",
+		"published": true,
+		"level": 5,
+		"maxLevel": 5,
+		"isLabTech": true,
+		"preTechs": [
+			5404
+		],
+		"items": [
+			6006
+		],
+		"itemPoints": [
+			4
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "1440000"
+		},
+		"unlockFunctions": [
+			68,
+			72
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					217,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					217,
+					63
+				]
+			}
+		],
+		"position": [
+			25,
+			-71
+		]
+	},
+	{
+		"id": 5601,
+		"name": "T战斗无人机耐久",
+		"description": "战斗无人机耐久描述",
+		"conclusion": "战斗无人机耐久结果",
+		"published": true,
+		"level": 1,
+		"maxLevel": 1,
+		"isLabTech": true,
+		"preTechsImplicit": [
+			1819
+		],
+		"items": [
+			6001,
+			6002
+		],
+		"itemPoints": [
+			10,
+			10
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "72000"
+		},
+		"unlockFunctions": [
+			69
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					185,
+					63
+				]
+			}
+		],
+		"position": [
+			9,
+			-75
+		]
+	},
+	{
+		"id": 5602,
+		"name": "T战斗无人机耐久",
+		"description": "战斗无人机耐久描述",
+		"conclusion": "战斗无人机耐久结果",
+		"published": true,
+		"level": 2,
+		"maxLevel": 2,
+		"isLabTech": true,
+		"preTechs": [
+			5601
+		],
+		"items": [
+			6001,
+			6002,
+			6003
+		],
+		"itemPoints": [
+			5,
+			5,
+			5
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "144000"
+		},
+		"unlockFunctions": [
+			69
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					185,
+					63
+				]
+			}
+		],
+		"position": [
+			13,
+			-75
+		]
+	},
+	{
+		"id": 5603,
+		"name": "T战斗无人机耐久",
+		"description": "战斗无人机耐久描述",
+		"conclusion": "战斗无人机耐久结果",
+		"published": true,
+		"level": 3,
+		"maxLevel": 3,
+		"isLabTech": true,
+		"preTechs": [
+			5602
+		],
+		"items": [
+			6001,
+			6002,
+			6003,
+			6004
+		],
+		"itemPoints": [
+			6,
+			6,
+			6,
+			6
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "300000"
+		},
+		"unlockFunctions": [
+			69,
+			73
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					201,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					51,
+					51,
+					51,
+					51,
+					51,
+					51,
+					211,
+					63
+				]
+			}
+		],
+		"position": [
+			17,
+			-75
+		]
+	},
+	{
+		"id": 5604,
+		"name": "T战斗无人机耐久",
+		"description": "战斗无人机耐久描述",
+		"conclusion": "战斗无人机耐久结果",
+		"published": true,
+		"level": 4,
+		"maxLevel": 4,
+		"isLabTech": true,
+		"preTechs": [
+			5603
+		],
+		"items": [
+			6001,
+			6002,
+			6003,
+			6004,
+			6005
+		],
+		"itemPoints": [
+			10,
+			10,
+			10,
+			10,
+			10
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "360000"
+		},
+		"unlockFunctions": [
+			69,
+			73
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					201,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					51,
+					51,
+					51,
+					51,
+					51,
+					51,
+					211,
+					63
+				]
+			}
+		],
+		"position": [
+			21,
+			-75
+		]
+	},
+	{
+		"id": 5605,
+		"name": "T战斗无人机耐久",
+		"description": "战斗无人机耐久描述",
+		"conclusion": "战斗无人机耐久结果",
+		"published": true,
+		"level": 5,
+		"maxLevel": 5,
+		"isLabTech": true,
+		"preTechs": [
+			5604
+		],
+		"items": [
+			6006
+		],
+		"itemPoints": [
+			4
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "1440000"
+		},
+		"unlockFunctions": [
+			69,
+			73
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					217,
+					63
+				]
+			},
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					217,
+					63
+				]
+			}
+		],
+		"position": [
+			25,
+			-75
+		]
+	},
+	{
+		"id": 5701,
+		"name": "T行星护盾",
+		"description": "行星护盾描述",
+		"conclusion": "行星护盾结果",
+		"published": true,
+		"level": 1,
+		"maxLevel": 1,
+		"isLabTech": true,
+		"preTechsImplicit": [
+			1809
+		],
+		"items": [
+			6001,
+			6002,
+			6003
+		],
+		"itemPoints": [
+			5,
+			5,
+			5
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "144000"
+		},
+		"unlockFunctions": [
+			74
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					185,
+					63
+				]
+			}
+		],
+		"position": [
+			9,
+			-87
+		]
+	},
+	{
+		"id": 5702,
+		"name": "T行星护盾",
+		"description": "行星护盾描述",
+		"conclusion": "行星护盾结果",
+		"published": true,
+		"level": 2,
+		"maxLevel": 2,
+		"isLabTech": true,
+		"preTechs": [
+			5701
+		],
+		"items": [
+			6001,
+			6002,
+			6003
+		],
+		"itemPoints": [
+			5,
+			5,
+			5
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "288000"
+		},
+		"unlockFunctions": [
+			74
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					51,
+					51,
+					51,
+					51,
+					51,
+					51,
+					195,
+					63
+				]
+			}
+		],
+		"position": [
+			13,
+			-87
+		]
+	},
+	{
+		"id": 5703,
+		"name": "T行星护盾",
+		"description": "行星护盾描述",
+		"conclusion": "行星护盾结果",
+		"published": true,
+		"level": 3,
+		"maxLevel": 3,
+		"isLabTech": true,
+		"preTechs": [
+			5702
+		],
+		"items": [
+			6001,
+			6002,
+			6003,
+			6004
+		],
+		"itemPoints": [
+			6,
+			6,
+			6,
+			6
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "300000"
+		},
+		"unlockFunctions": [
+			74
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					154,
+					153,
+					153,
+					153,
+					153,
+					153,
+					201,
+					63
+				]
+			}
+		],
+		"position": [
+			17,
+			-87
+		]
+	},
+	{
+		"id": 5704,
+		"name": "T行星护盾",
+		"description": "行星护盾描述",
+		"conclusion": "行星护盾结果",
+		"published": true,
+		"level": 4,
+		"maxLevel": 4,
+		"isLabTech": true,
+		"preTechs": [
+			5703
+		],
+		"items": [
+			6001,
+			6002,
+			6003,
+			6004,
+			6005
+		],
+		"itemPoints": [
+			10,
+			10,
+			10,
+			10,
+			10
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "360000"
+		},
+		"unlockFunctions": [
+			74
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					208,
+					63
+				]
+			}
+		],
+		"position": [
+			21,
+			-87
+		]
+	},
+	{
+		"id": 5705,
+		"name": "T行星护盾",
+		"description": "行星护盾描述",
+		"conclusion": "行星护盾结果",
+		"published": true,
+		"level": 5,
+		"maxLevel": 5,
+		"isLabTech": true,
+		"preTechs": [
+			5704
+		],
+		"items": [
+			6006
+		],
+		"itemPoints": [
+			4
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "1440000"
+		},
+		"unlockFunctions": [
+			74
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					51,
+					51,
+					51,
+					51,
+					51,
+					51,
+					211,
+					63
+				]
+			}
+		],
+		"position": [
+			25,
+			-87
+		]
+	},
+	{
+		"id": 5801,
+		"name": "T地面编队扩容",
+		"description": "地面编队扩容描述2",
+		"conclusion": "地面编队扩容结果2",
+		"published": true,
+		"level": 1,
+		"maxLevel": 1,
+		"isLabTech": true,
+		"preTechsImplicit": [
+			1819
+		],
+		"items": [
+			6001,
+			6002
+		],
+		"itemPoints": [
+			20,
+			20
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "36000"
+		},
+		"unlockFunctions": [
+			78
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			}
+		],
+		"position": [
+			9,
+			-79
+		]
+	},
+	{
+		"id": 5802,
+		"name": "T地面编队扩容",
+		"description": "地面编队扩容描述2",
+		"conclusion": "地面编队扩容结果2",
+		"published": true,
+		"level": 2,
+		"maxLevel": 2,
+		"isLabTech": true,
+		"preTechs": [
+			5801
+		],
+		"items": [
+			6001,
+			6002,
+			6003
+		],
+		"itemPoints": [
+			20,
+			20,
+			20
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "108000"
+		},
+		"unlockFunctions": [
+			78
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			}
+		],
+		"position": [
+			13,
+			-79
+		]
+	},
+	{
+		"id": 5803,
+		"name": "T地面编队扩容",
+		"description": "地面编队扩容描述1",
+		"conclusion": "地面编队扩容结果1",
+		"published": true,
+		"level": 3,
+		"maxLevel": 3,
+		"isLabTech": true,
+		"preTechs": [
+			5802
+		],
+		"items": [
+			6001,
+			6002,
+			6003,
+			6004
+		],
+		"itemPoints": [
+			20,
+			20,
+			20,
+			20
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "288000"
+		},
+		"unlockFunctions": [
+			77
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			}
+		],
+		"position": [
+			17,
+			-79
+		]
+	},
+	{
+		"id": 5804,
+		"name": "T地面编队扩容",
+		"description": "地面编队扩容描述2",
+		"conclusion": "地面编队扩容结果2",
+		"published": true,
+		"level": 4,
+		"maxLevel": 4,
+		"isLabTech": true,
+		"preTechs": [
+			5803
+		],
+		"items": [
+			6001,
+			6002,
+			6003,
+			6004
+		],
+		"itemPoints": [
+			20,
+			20,
+			20,
+			20
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "432000"
+		},
+		"unlockFunctions": [
+			78
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					16,
+					64
+				]
+			}
+		],
+		"position": [
+			21,
+			-79
+		]
+	},
+	{
+		"id": 5805,
+		"name": "T地面编队扩容",
+		"description": "地面编队扩容描述1",
+		"conclusion": "地面编队扩容结果1",
+		"published": true,
+		"level": 5,
+		"maxLevel": 5,
+		"isLabTech": true,
+		"preTechs": [
+			5804
+		],
+		"items": [
+			6001,
+			6002,
+			6003,
+			6004,
+			6005
+		],
+		"itemPoints": [
+			20,
+			20,
+			20,
+			20,
+			20
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "720000"
+		},
+		"unlockFunctions": [
+			77
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			}
+		],
+		"position": [
+			25,
+			-79
+		]
+	},
+	{
+		"id": 5806,
+		"name": "T地面编队扩容",
+		"description": "地面编队扩容描述1",
+		"conclusion": "地面编队扩容结果1",
+		"published": true,
+		"level": 6,
+		"maxLevel": 6,
+		"isLabTech": true,
+		"preTechs": [
+			5805
+		],
+		"items": [
+			6006
+		],
+		"itemPoints": [
+			20
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "1080000"
+		},
+		"unlockFunctions": [
+			77
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			}
+		],
+		"position": [
+			29,
+			-79
+		]
+	},
+	{
+		"id": 5807,
+		"name": "T地面编队扩容",
+		"description": "地面编队扩容描述1",
+		"conclusion": "地面编队扩容结果1",
+		"published": true,
+		"level": 7,
+		"maxLevel": 7,
+		"isLabTech": true,
+		"preTechs": [
+			5806
+		],
+		"items": [
+			6006
+		],
+		"itemPoints": [
+			20
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "1440000"
+		},
+		"unlockFunctions": [
+			77
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			}
+		],
+		"position": [
+			33,
+			-79
+		]
+	},
+	{
+		"id": 5901,
+		"name": "T太空编队扩容",
+		"description": "太空编队扩容描述2",
+		"conclusion": "太空编队扩容结果2",
+		"published": true,
+		"level": 1,
+		"maxLevel": 1,
+		"isLabTech": true,
+		"preTechsImplicit": [
+			1822
+		],
+		"items": [
+			6001,
+			6002,
+			6003,
+			6004
+		],
+		"itemPoints": [
+			5,
+			5,
+			5,
+			5
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "144000"
+		},
+		"unlockFunctions": [
+			80
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					16,
+					64
+				]
+			}
+		],
+		"position": [
+			9,
+			-83
+		]
+	},
+	{
+		"id": 5902,
+		"name": "T太空编队扩容",
+		"description": "太空编队扩容描述2",
+		"conclusion": "太空编队扩容结果2",
+		"published": true,
+		"level": 2,
+		"maxLevel": 2,
+		"isLabTech": true,
+		"preTechs": [
+			5901
+		],
+		"items": [
+			6001,
+			6002,
+			6003,
+			6004
+		],
+		"itemPoints": [
+			10,
+			10,
+			10,
+			10
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "288000"
+		},
+		"unlockFunctions": [
+			80
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					16,
+					64
+				]
+			}
+		],
+		"position": [
+			13,
+			-83
+		]
+	},
+	{
+		"id": 5903,
+		"name": "T太空编队扩容",
+		"description": "太空编队扩容描述1",
+		"conclusion": "太空编队扩容结果1",
+		"published": true,
+		"level": 3,
+		"maxLevel": 3,
+		"isLabTech": true,
+		"preTechs": [
+			5902
+		],
+		"items": [
+			6001,
+			6002,
+			6003,
+			6004
+		],
+		"itemPoints": [
+			15,
+			15,
+			15,
+			15
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "432000"
+		},
+		"unlockFunctions": [
+			79
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			}
+		],
+		"position": [
+			17,
+			-83
+		]
+	},
+	{
+		"id": 5904,
+		"name": "T太空编队扩容",
+		"description": "太空编队扩容描述1",
+		"conclusion": "太空编队扩容结果1",
+		"published": true,
+		"level": 4,
+		"maxLevel": 4,
+		"isLabTech": true,
+		"preTechs": [
+			5903
+		],
+		"items": [
+			6001,
+			6002,
+			6003,
+			6004,
+			6005
+		],
+		"itemPoints": [
+			20,
+			20,
+			20,
+			20,
+			20
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "720000"
+		},
+		"unlockFunctions": [
+			79
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			}
+		],
+		"position": [
+			21,
+			-83
+		]
+	},
+	{
+		"id": 5905,
+		"name": "T太空编队扩容",
+		"description": "太空编队扩容描述1",
+		"conclusion": "太空编队扩容结果1",
+		"published": true,
+		"level": 5,
+		"maxLevel": 5,
+		"isLabTech": true,
+		"preTechs": [
+			5904
+		],
+		"items": [
+			6001,
+			6002,
+			6003,
+			6004,
+			6005
+		],
+		"itemPoints": [
+			20,
+			20,
+			20,
+			20,
+			20
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "1080000"
+		},
+		"unlockFunctions": [
+			79
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					240,
+					63
+				]
+			}
+		],
+		"position": [
+			25,
+			-83
+		]
+	},
+	{
+		"id": 5906,
+		"name": "T太空编队扩容",
+		"description": "太空编队扩容描述1",
+		"conclusion": "太空编队扩容结果1",
+		"published": true,
+		"level": 6,
+		"maxLevel": 6,
+		"isLabTech": true,
+		"preTechs": [
+			5905
+		],
+		"items": [
+			6006
+		],
+		"itemPoints": [
+			20
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "1440000"
+		},
+		"unlockFunctions": [
+			79
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			}
+		],
+		"position": [
+			29,
+			-83
+		]
+	},
+	{
+		"id": 5907,
+		"name": "T太空编队扩容",
+		"description": "太空编队扩容描述1",
+		"conclusion": "太空编队扩容结果1",
+		"published": true,
+		"level": 7,
+		"maxLevel": 7,
+		"isLabTech": true,
+		"preTechs": [
+			5906
+		],
+		"items": [
+			6006
+		],
+		"itemPoints": [
+			20
+		],
+		"hashNeeded": {
+			"type": "BigInt",
+			"value": "2160000"
+		},
+		"unlockFunctions": [
+			79
+		],
+		"unlockValues": [
+			{
+				"type": "Buffer",
+				"data": [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					64
+				]
+			}
+		],
+		"position": [
+			33,
+			-83
 		]
 	}
 ]

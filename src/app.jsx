@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'preact/hooks';
 import { Router } from 'preact-router';
 import {
-	Meta, Techs, Recipes, Items, Strings,
+	Meta, Techs, Recipes, Items, Locale,
 	TechsByID, RecipesByID, ItemsByID, EpochsByTech,
 	AssemblerProductionSpeed,
 	SmelterProductionSpeed,
@@ -12,7 +12,6 @@ import {
 	RecipesUnlocked,
 	ItemsUnlocked,
 	StringFromTypes,
-	locale, internalLocale,
 } from './lib/data.js';
 import state from './state.js';
 import { SolverTree, RecipeTree, CalcTree } from './lib/solver.js';
@@ -34,7 +33,7 @@ import CSSVariables from './css/variables.js';
 // Debugging & DevTools fun
 console.log('Hey there! Want to play with the internal data? These are exposed on `window.…` for you to play with');
 const Debuggables = {
-	Meta, Techs, Recipes, Items, Strings,
+	Meta, Techs, Recipes, Items, Locale,
 	TechsByID, RecipesByID, ItemsByID, EpochsByTech,
 	SolverTree, RecipeTree, CalcTree,
 	AssemblerProductionSpeed,
@@ -46,8 +45,6 @@ const Debuggables = {
 	RecipesUnlocked,
 	ItemsUnlocked,
 	StringFromTypes,
-	locale,
-	internalLocale,
 	state,
 	CSSVariables,
 };

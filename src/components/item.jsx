@@ -1,4 +1,4 @@
-import { Items, locale } from '../lib/data';
+import { Items, Locale } from '../lib/data';
 
 
 export default function Item(props) {
@@ -7,13 +7,13 @@ export default function Item(props) {
 	if(proliferated && !points) points = state.proliferatorPoints.value;
 	
 	if(props.name) return (
-		<span class="item named" lang={locale} {...other}>
+		<span class="item named" lang={Locale.locale} {...other}>
 			<span class="name">{item.name}{props.plural? 's' : '' /* TODO: Localisation support needed here */}</span>
 		</span>
 	);
 	
 	else if(props.named) return (
-		<span class="item named" lang={locale} {...other}>
+		<span class="item named" lang={Locale.locale} {...other}>
 			<span
 				class="icon"
 				data-icon={`item.${item.id}`}
@@ -36,7 +36,7 @@ export default function Item(props) {
 			data-icon={`item.${item.id}`}
 			data-count={count} data-per={per}
 			title={item.name}
-			lang={locale}
+			lang={Locale.locale}
 			{...other}
 		>
 			{proliferated && (

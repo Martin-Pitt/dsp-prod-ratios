@@ -6,7 +6,12 @@
 		"miningFrom": "铁矿脉",
 		"stackSize": 100,
 		"gridIndex": 1101,
+		"unlockKey": -1,
 		"produce": true,
+		"descFields": [
+			0,
+			40
+		],
 		"description": "I铁矿"
 	},
 	{
@@ -16,7 +21,12 @@
 		"miningFrom": "铜矿脉",
 		"stackSize": 100,
 		"gridIndex": 1102,
+		"unlockKey": -1,
 		"produce": true,
+		"descFields": [
+			0,
+			40
+		],
 		"description": "I铜矿"
 	},
 	{
@@ -26,7 +36,13 @@
 		"miningFrom": "硅矿脉",
 		"stackSize": 100,
 		"gridIndex": 1105,
+		"unlockKey": 6001,
 		"produce": true,
+		"descFields": [
+			0,
+			1,
+			40
+		],
 		"description": "I硅石"
 	},
 	{
@@ -36,7 +52,12 @@
 		"miningFrom": "钛矿脉",
 		"stackSize": 100,
 		"gridIndex": 1106,
+		"unlockKey": 6002,
 		"produce": true,
+		"descFields": [
+			0,
+			40
+		],
 		"description": "I钛石"
 	},
 	{
@@ -46,7 +67,12 @@
 		"miningFrom": "石矿脉",
 		"stackSize": 100,
 		"gridIndex": 1103,
+		"unlockKey": -1,
 		"produce": true,
+		"descFields": [
+			0,
+			40
+		],
 		"description": "I石矿"
 	},
 	{
@@ -61,7 +87,15 @@
 		},
 		"fuelType": 1,
 		"gridIndex": 1104,
+		"unlockKey": -1,
 		"produce": true,
+		"descFields": [
+			2,
+			3,
+			31,
+			0,
+			40
+		],
 		"description": "I煤矿"
 	},
 	{
@@ -76,9 +110,23 @@
 		},
 		"reactorInc": -0.10000000149011612,
 		"fuelType": 1,
-		"gridIndex": 1612,
+		"gridIndex": 1714,
+		"unlockKey": -1,
 		"produce": true,
 		"mechaMaterialId": 7,
+		"enemyDropRange": [
+			0,
+			0.004999999888241291
+		],
+		"enemyDropCount": 5,
+		"enemyDropMask": 2097695762,
+		"descFields": [
+			2,
+			3,
+			31,
+			0,
+			40
+		],
 		"description": "I木材"
 	},
 	{
@@ -93,8 +141,22 @@
 		},
 		"reactorInc": -0.30000001192092896,
 		"fuelType": 1,
-		"gridIndex": 1712,
+		"gridIndex": 1814,
+		"unlockKey": -1,
 		"produce": true,
+		"enemyDropRange": [
+			0.004999999888241291,
+			0.004999999888241291
+		],
+		"enemyDropCount": 5,
+		"enemyDropMask": 2097695762,
+		"descFields": [
+			2,
+			3,
+			31,
+			0,
+			40
+		],
 		"description": "I植物燃料"
 	},
 	{
@@ -109,8 +171,16 @@
 		},
 		"reactorInc": 0.4000000059604645,
 		"fuelType": 1,
-		"gridIndex": 1307,
+		"gridIndex": 1614,
+		"unlockKey": 1120,
 		"produce": true,
+		"descFields": [
+			2,
+			3,
+			31,
+			0,
+			40
+		],
 		"description": "I可燃冰"
 	},
 	{
@@ -119,8 +189,13 @@
 		"type": "RESOURCE",
 		"miningFrom": "金伯利矿（珍奇）",
 		"stackSize": 50,
-		"gridIndex": 1112,
+		"gridIndex": 1114,
+		"unlockKey": 1112,
 		"produce": true,
+		"descFields": [
+			0,
+			40
+		],
 		"description": "I金伯利矿石"
 	},
 	{
@@ -129,8 +204,13 @@
 		"type": "RESOURCE",
 		"miningFrom": "分形硅矿（珍奇）",
 		"stackSize": 50,
-		"gridIndex": 1212,
+		"gridIndex": 1214,
+		"unlockKey": 1105,
 		"produce": true,
+		"descFields": [
+			0,
+			40
+		],
 		"description": "I分形硅石"
 	},
 	{
@@ -139,8 +219,20 @@
 		"type": "RESOURCE",
 		"miningFrom": "光栅石矿（珍奇）",
 		"stackSize": 50,
-		"gridIndex": 1312,
+		"gridIndex": 1314,
+		"unlockKey": 6002,
 		"produce": true,
+		"enemyDropLevel": 5,
+		"enemyDropRange": [
+			0.009999999776482582,
+			0.00800000037997961
+		],
+		"enemyDropCount": 4,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			0,
+			40
+		],
 		"description": "I光栅石"
 	},
 	{
@@ -149,8 +241,13 @@
 		"type": "RESOURCE",
 		"miningFrom": "刺笋矿脉（珍奇）",
 		"stackSize": 50,
-		"gridIndex": 1412,
+		"gridIndex": 1414,
+		"unlockKey": 6002,
 		"produce": true,
+		"descFields": [
+			0,
+			40
+		],
 		"description": "I刺笋结晶"
 	},
 	{
@@ -159,9 +256,21 @@
 		"type": "RESOURCE",
 		"miningFrom": "单极磁矿（珍奇）",
 		"stackSize": 50,
-		"gridIndex": 1512,
+		"gridIndex": 1514,
+		"unlockKey": 1206,
 		"produce": true,
 		"mechaMaterialId": 23,
+		"enemyDropLevel": 8,
+		"enemyDropRange": [
+			0.017999999225139618,
+			0.004999999888241291
+		],
+		"enemyDropCount": 4,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			0,
+			40
+		],
 		"description": "I单极磁石"
 	},
 	{
@@ -172,6 +281,16 @@
 		"gridIndex": 1201,
 		"produce": true,
 		"mechaMaterialId": 1,
+		"enemyDropRange": [
+			0.023000000044703484,
+			0.009999999776482582
+		],
+		"enemyDropCount": 3,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I铁块"
 	},
 	{
@@ -182,6 +301,16 @@
 		"gridIndex": 1202,
 		"produce": true,
 		"mechaMaterialId": 2,
+		"enemyDropRange": [
+			0.032999999821186066,
+			0.009999999776482582
+		],
+		"enemyDropCount": 3,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I铜块"
 	},
 	{
@@ -192,6 +321,17 @@
 		"gridIndex": 1205,
 		"produce": true,
 		"mechaMaterialId": 3,
+		"enemyDropLevel": 1,
+		"enemyDropRange": [
+			0.0430000014603138,
+			0.00800000037997961
+		],
+		"enemyDropCount": 3,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I高纯硅块"
 	},
 	{
@@ -202,6 +342,17 @@
 		"gridIndex": 1206,
 		"produce": true,
 		"mechaMaterialId": 4,
+		"enemyDropLevel": 1,
+		"enemyDropRange": [
+			0.050999999046325684,
+			0.00800000037997961
+		],
+		"enemyDropCount": 3,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I钛块"
 	},
 	{
@@ -212,6 +363,16 @@
 		"gridIndex": 1203,
 		"produce": true,
 		"mechaMaterialId": 8,
+		"enemyDropRange": [
+			0.05900000035762787,
+			0.009999999776482582
+		],
+		"enemyDropCount": 3,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I石材"
 	},
 	{
@@ -228,6 +389,20 @@
 		"gridIndex": 1204,
 		"produce": true,
 		"mechaMaterialId": 10,
+		"enemyDropLevel": 1,
+		"enemyDropRange": [
+			0.0689999982714653,
+			0.009999999776482582
+		],
+		"enemyDropCount": 3,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			2,
+			3,
+			31,
+			1,
+			40
+		],
 		"description": "I高能石墨"
 	},
 	{
@@ -238,6 +413,17 @@
 		"gridIndex": 1401,
 		"produce": true,
 		"mechaMaterialId": 5,
+		"enemyDropLevel": 1,
+		"enemyDropRange": [
+			0.07900000363588333,
+			0.009999999776482582
+		],
+		"enemyDropCount": 3,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I钢材"
 	},
 	{
@@ -248,6 +434,17 @@
 		"gridIndex": 1306,
 		"produce": true,
 		"mechaMaterialId": 6,
+		"enemyDropLevel": 4,
+		"enemyDropRange": [
+			0.08900000154972076,
+			0.00800000037997961
+		],
+		"enemyDropCount": 3,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I钛合金"
 	},
 	{
@@ -258,6 +455,17 @@
 		"gridIndex": 1303,
 		"produce": true,
 		"mechaMaterialId": 13,
+		"enemyDropLevel": 1,
+		"enemyDropRange": [
+			0.09700000286102295,
+			0.009999999776482582
+		],
+		"enemyDropCount": 3,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I玻璃"
 	},
 	{
@@ -265,9 +473,20 @@
 		"name": "钛化玻璃",
 		"type": "MATERIAL",
 		"stackSize": 100,
-		"gridIndex": 1609,
+		"gridIndex": 1509,
 		"produce": true,
 		"mechaMaterialId": 14,
+		"enemyDropLevel": 4,
+		"enemyDropRange": [
+			0.10700000077486038,
+			0.00800000037997961
+		],
+		"enemyDropCount": 3,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I钛化玻璃"
 	},
 	{
@@ -278,6 +497,17 @@
 		"gridIndex": 1403,
 		"produce": true,
 		"mechaMaterialId": 19,
+		"enemyDropLevel": 1,
+		"enemyDropRange": [
+			0.11500000208616257,
+			0.009999999776482582
+		],
+		"enemyDropCount": 2,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I棱镜"
 	},
 	{
@@ -294,6 +524,20 @@
 		"gridIndex": 1304,
 		"produce": true,
 		"mechaMaterialId": 15,
+		"enemyDropLevel": 2,
+		"enemyDropRange": [
+			0.125,
+			0.00800000037997961
+		],
+		"enemyDropCount": 2,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			2,
+			3,
+			31,
+			1,
+			40
+		],
 		"description": "I金刚石"
 	},
 	{
@@ -304,6 +548,17 @@
 		"gridIndex": 1305,
 		"produce": true,
 		"mechaMaterialId": 16,
+		"enemyDropLevel": 3,
+		"enemyDropRange": [
+			0.13300000131130219,
+			0.00800000037997961
+		],
+		"enemyDropCount": 2,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I晶格硅"
 	},
 	{
@@ -313,6 +568,17 @@
 		"stackSize": 200,
 		"gridIndex": 1501,
 		"produce": true,
+		"enemyDropLevel": 1,
+		"enemyDropRange": [
+			0.14100000262260437,
+			0.009999999776482582
+		],
+		"enemyDropCount": 3,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I齿轮"
 	},
 	{
@@ -323,6 +589,16 @@
 		"gridIndex": 1301,
 		"produce": true,
 		"mechaMaterialId": 22,
+		"enemyDropRange": [
+			0.1509999930858612,
+			0.009999999776482582
+		],
+		"enemyDropCount": 3,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I磁铁"
 	},
 	{
@@ -332,6 +608,17 @@
 		"stackSize": 200,
 		"gridIndex": 1302,
 		"produce": true,
+		"enemyDropLevel": 1,
+		"enemyDropRange": [
+			0.16099999845027924,
+			0.009999999776482582
+		],
+		"enemyDropCount": 3,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I磁线圈"
 	},
 	{
@@ -341,6 +628,17 @@
 		"stackSize": 100,
 		"gridIndex": 1404,
 		"produce": true,
+		"enemyDropLevel": 2,
+		"enemyDropRange": [
+			0.17100000381469727,
+			0.00800000037997961
+		],
+		"enemyDropCount": 2,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I电动机"
 	},
 	{
@@ -350,6 +648,17 @@
 		"stackSize": 100,
 		"gridIndex": 1504,
 		"produce": true,
+		"enemyDropLevel": 3,
+		"enemyDropRange": [
+			0.17900000512599945,
+			0.00800000037997961
+		],
+		"enemyDropCount": 1.5,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I电磁涡轮"
 	},
 	{
@@ -359,6 +668,17 @@
 		"stackSize": 100,
 		"gridIndex": 1604,
 		"produce": true,
+		"enemyDropLevel": 4,
+		"enemyDropRange": [
+			0.18700000643730164,
+			0.00800000037997961
+		],
+		"enemyDropCount": 1,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I超级磁场环"
 	},
 	{
@@ -366,8 +686,19 @@
 		"name": "粒子容器",
 		"type": "COMPONENT",
 		"stackSize": 100,
-		"gridIndex": 1603,
+		"gridIndex": 1113,
 		"produce": true,
+		"enemyDropLevel": 5,
+		"enemyDropRange": [
+			0.19499999284744263,
+			0.00800000037997961
+		],
+		"enemyDropCount": 1,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I粒子容器"
 	},
 	{
@@ -377,6 +708,17 @@
 		"stackSize": 100,
 		"gridIndex": 1408,
 		"produce": true,
+		"enemyDropLevel": 6,
+		"enemyDropRange": [
+			0.2029999941587448,
+			0.00800000037997961
+		],
+		"enemyDropCount": 1,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I奇异物质"
 	},
 	{
@@ -386,6 +728,17 @@
 		"stackSize": 200,
 		"gridIndex": 1402,
 		"produce": true,
+		"enemyDropLevel": 1,
+		"enemyDropRange": [
+			0.210999995470047,
+			0.009999999776482582
+		],
+		"enemyDropCount": 3,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I电路板"
 	},
 	{
@@ -395,6 +748,17 @@
 		"stackSize": 200,
 		"gridIndex": 1505,
 		"produce": true,
+		"enemyDropLevel": 3,
+		"enemyDropRange": [
+			0.22100000083446503,
+			0.00800000037997961
+		],
+		"enemyDropCount": 2,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I处理器"
 	},
 	{
@@ -402,8 +766,19 @@
 		"name": "量子芯片",
 		"type": "COMPONENT",
 		"stackSize": 200,
-		"gridIndex": 1611,
+		"gridIndex": 1511,
 		"produce": true,
+		"enemyDropLevel": 7,
+		"enemyDropRange": [
+			0.2290000021457672,
+			0.004999999888241291
+		],
+		"enemyDropCount": 1,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I量子芯片"
 	},
 	{
@@ -413,6 +788,17 @@
 		"stackSize": 200,
 		"gridIndex": 1405,
 		"produce": true,
+		"enemyDropLevel": 2,
+		"enemyDropRange": [
+			0.23399999737739563,
+			0.00800000037997961
+		],
+		"enemyDropCount": 2,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I微晶元件"
 	},
 	{
@@ -420,8 +806,19 @@
 		"name": "位面过滤器",
 		"type": "COMPONENT",
 		"stackSize": 200,
-		"gridIndex": 1610,
+		"gridIndex": 1510,
 		"produce": true,
+		"enemyDropLevel": 6,
+		"enemyDropRange": [
+			0.24199999868869781,
+			0.00800000037997961
+		],
+		"enemyDropCount": 2,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I位面过滤器"
 	},
 	{
@@ -431,6 +828,17 @@
 		"stackSize": 200,
 		"gridIndex": 1411,
 		"produce": true,
+		"enemyDropLevel": 5,
+		"enemyDropRange": [
+			0.25,
+			0.00800000037997961
+		],
+		"enemyDropCount": 2,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I粒子宽带"
 	},
 	{
@@ -440,6 +848,17 @@
 		"stackSize": 200,
 		"gridIndex": 1502,
 		"produce": true,
+		"enemyDropLevel": 2,
+		"enemyDropRange": [
+			0.257999986410141,
+			0.00800000037997961
+		],
+		"enemyDropCount": 2,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I电浆激发器"
 	},
 	{
@@ -449,6 +868,17 @@
 		"stackSize": 200,
 		"gridIndex": 1503,
 		"produce": true,
+		"enemyDropLevel": 3,
+		"enemyDropRange": [
+			0.26600000262260437,
+			0.00800000037997961
+		],
+		"enemyDropCount": 2,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I光子合并器"
 	},
 	{
@@ -456,8 +886,13 @@
 		"name": "太阳帆",
 		"type": "PRODUCT",
 		"stackSize": 200,
-		"gridIndex": 1708,
+		"gridIndex": 1808,
 		"produce": true,
+		"descFields": [
+			36,
+			1,
+			40
+		],
 		"description": "I太阳帆"
 	},
 	{
@@ -468,7 +903,12 @@
 		"stackSize": 20,
 		"isFluid": true,
 		"gridIndex": 1107,
+		"unlockKey": 2306,
 		"produce": true,
+		"descFields": [
+			0,
+			40
+		],
 		"description": "I水"
 	},
 	{
@@ -485,7 +925,15 @@
 		"reactorInc": 0.20000000298023224,
 		"fuelType": 1,
 		"gridIndex": 1108,
+		"unlockKey": 2307,
 		"produce": true,
+		"descFields": [
+			2,
+			3,
+			31,
+			0,
+			40
+		],
 		"description": "I原油"
 	},
 	{
@@ -502,6 +950,13 @@
 		"fuelType": 1,
 		"gridIndex": 1208,
 		"produce": true,
+		"descFields": [
+			2,
+			3,
+			31,
+			1,
+			40
+		],
 		"description": "I精炼油"
 	},
 	{
@@ -513,6 +968,11 @@
 		"isFluid": true,
 		"gridIndex": 1207,
 		"produce": true,
+		"descFields": [
+			1,
+			0,
+			40
+		],
 		"description": "I硫酸"
 	},
 	{
@@ -530,6 +990,21 @@
 		"fuelType": 1,
 		"gridIndex": 1109,
 		"produce": true,
+		"enemyDropLevel": 3,
+		"enemyDropRange": [
+			0.27399998903274536,
+			0.00800000037997961
+		],
+		"enemyDropCount": 4,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			2,
+			3,
+			31,
+			1,
+			0,
+			40
+		],
 		"description": "I氢"
 	},
 	{
@@ -547,8 +1022,24 @@
 		"reactorInc": 1,
 		"fuelType": 1,
 		"gridIndex": 1110,
+		"unlockKey": 1120,
 		"preTechOverride": 1134,
 		"produce": true,
+		"enemyDropLevel": 5,
+		"enemyDropRange": [
+			0.28200000524520874,
+			0.00800000037997961
+		],
+		"enemyDropCount": 2,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			2,
+			3,
+			31,
+			1,
+			0,
+			40
+		],
 		"description": "I重氢"
 	},
 	{
@@ -562,6 +1053,18 @@
 		},
 		"gridIndex": 1111,
 		"produce": true,
+		"enemyDropLevel": 7,
+		"enemyDropRange": [
+			0.28999999165534973,
+			0.00800000037997961
+		],
+		"enemyDropCount": 1,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			37,
+			1,
+			40
+		],
 		"description": "I反物质"
 	},
 	{
@@ -574,8 +1077,14 @@
 			"type": "BigInt",
 			"value": "1200000000"
 		},
-		"gridIndex": 1602,
+		"gridIndex": 1213,
+		"unlockKey": 1122,
 		"preTechOverride": 1506,
+		"descFields": [
+			37,
+			1,
+			40
+		],
 		"description": "I临界光子"
 	},
 	{
@@ -591,6 +1100,20 @@
 		"fuelType": 1,
 		"gridIndex": 1209,
 		"produce": true,
+		"enemyDropLevel": 4,
+		"enemyDropRange": [
+			0.2980000078678131,
+			0.004999999888241291
+		],
+		"enemyDropCount": 0.25,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			2,
+			3,
+			31,
+			1,
+			40
+		],
 		"description": "I氢燃料棒"
 	},
 	{
@@ -606,6 +1129,20 @@
 		"fuelType": 2,
 		"gridIndex": 1210,
 		"produce": true,
+		"enemyDropLevel": 6,
+		"enemyDropRange": [
+			0.30300000309944153,
+			0.004999999888241291
+		],
+		"enemyDropCount": 0.25,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			2,
+			3,
+			31,
+			1,
+			40
+		],
 		"description": "I氘核燃料棒"
 	},
 	{
@@ -620,7 +1157,42 @@
 		"reactorInc": 5,
 		"fuelType": 4,
 		"gridIndex": 1211,
+		"enemyDropLevel": 8,
+		"enemyDropRange": [
+			0.30799999833106995,
+			0.004999999888241291
+		],
+		"enemyDropCount": 0.25,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			2,
+			3,
+			31,
+			1,
+			40
+		],
 		"description": "I反物质燃料棒"
+	},
+	{
+		"id": 1804,
+		"name": "金色燃料棒",
+		"type": "PRODUCT",
+		"stackSize": 50,
+		"heatValue": {
+			"type": "BigInt",
+			"value": "72000000000"
+		},
+		"reactorInc": 11,
+		"fuelType": 4,
+		"gridIndex": 1212,
+		"descFields": [
+			2,
+			3,
+			31,
+			1,
+			40
+		],
+		"description": "I金色燃料棒"
 	},
 	{
 		"id": 1115,
@@ -630,6 +1202,17 @@
 		"gridIndex": 1308,
 		"produce": true,
 		"mechaMaterialId": 9,
+		"enemyDropLevel": 2,
+		"enemyDropRange": [
+			0.31299999356269836,
+			0.00800000037997961
+		],
+		"enemyDropCount": 1.5,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I塑料"
 	},
 	{
@@ -646,6 +1229,20 @@
 		"gridIndex": 1310,
 		"produce": true,
 		"mechaMaterialId": 11,
+		"enemyDropLevel": 3,
+		"enemyDropRange": [
+			0.32100000977516174,
+			0.00800000037997961
+		],
+		"enemyDropCount": 2,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			2,
+			3,
+			31,
+			1,
+			40
+		],
 		"description": "I石墨烯"
 	},
 	{
@@ -662,6 +1259,20 @@
 		"gridIndex": 1410,
 		"produce": true,
 		"mechaMaterialId": 12,
+		"enemyDropLevel": 4,
+		"enemyDropRange": [
+			0.32899999618530273,
+			0.00800000037997961
+		],
+		"enemyDropCount": 1.5,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			2,
+			3,
+			31,
+			1,
+			40
+		],
 		"description": "I碳纳米管"
 	},
 	{
@@ -679,6 +1290,14 @@
 		"gridIndex": 1309,
 		"produce": true,
 		"mechaMaterialId": 17,
+		"descFields": [
+			2,
+			3,
+			31,
+			1,
+			0,
+			40
+		],
 		"description": "I有机晶体"
 	},
 	{
@@ -689,6 +1308,17 @@
 		"gridIndex": 1409,
 		"produce": true,
 		"mechaMaterialId": 20,
+		"enemyDropLevel": 3,
+		"enemyDropRange": [
+			0.3370000123977661,
+			0.00800000037997961
+		],
+		"enemyDropCount": 1.5,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I钛晶石"
 	},
 	{
@@ -696,10 +1326,108 @@
 		"name": "卡西米尔晶体",
 		"type": "MATERIAL",
 		"stackSize": 100,
-		"gridIndex": 1407,
+		"gridIndex": 1508,
 		"produce": true,
 		"mechaMaterialId": 18,
+		"enemyDropLevel": 5,
+		"enemyDropRange": [
+			0.3449999988079071,
+			0.00800000037997961
+		],
+		"enemyDropCount": 1.5,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I卡西米尔晶体"
+	},
+	{
+		"id": 1128,
+		"name": "燃烧单元",
+		"type": "COMPONENT",
+		"stackSize": 100,
+		"heatValue": {
+			"type": "BigInt",
+			"value": "9720000"
+		},
+		"reactorInc": 0.800000011920929,
+		"fuelType": 1,
+		"gridIndex": 1307,
+		"produce": true,
+		"enemyDropLevel": 2,
+		"enemyDropRange": [
+			0.3529999852180481,
+			0.003000000026077032
+		],
+		"enemyDropCount": 1,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			2,
+			3,
+			31,
+			1,
+			40
+		],
+		"description": "I燃烧单元"
+	},
+	{
+		"id": 1129,
+		"name": "爆破单元",
+		"type": "COMPONENT",
+		"stackSize": 100,
+		"heatValue": {
+			"type": "BigInt",
+			"value": "21600000"
+		},
+		"reactorInc": 1.2000000476837158,
+		"fuelType": 1,
+		"gridIndex": 1407,
+		"produce": true,
+		"enemyDropLevel": 4,
+		"enemyDropRange": [
+			0.35600000619888306,
+			0.003000000026077032
+		],
+		"enemyDropCount": 1,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			2,
+			3,
+			31,
+			1,
+			40
+		],
+		"description": "I爆破单元"
+	},
+	{
+		"id": 1130,
+		"name": "晶石爆破单元",
+		"type": "COMPONENT",
+		"stackSize": 100,
+		"heatValue": {
+			"type": "BigInt",
+			"value": "54000000"
+		},
+		"reactorInc": 2,
+		"fuelType": 1,
+		"gridIndex": 1507,
+		"produce": true,
+		"enemyDropLevel": 6,
+		"enemyDropRange": [
+			0.35899999737739563,
+			0.003000000026077032
+		],
+		"enemyDropCount": 1,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			2,
+			3,
+			31,
+			1,
+			40
+		],
+		"description": "I晶石爆破单元"
 	},
 	{
 		"id": 1209,
@@ -709,6 +1437,17 @@
 		"gridIndex": 1605,
 		"produce": true,
 		"mechaMaterialId": 21,
+		"enemyDropLevel": 7,
+		"enemyDropRange": [
+			0.3619999885559082,
+			0.004999999888241291
+		],
+		"enemyDropCount": 1,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I引力透镜"
 	},
 	{
@@ -716,8 +1455,19 @@
 		"name": "空间翘曲器",
 		"type": "COMPONENT",
 		"stackSize": 100,
-		"gridIndex": 1608,
+		"gridIndex": 1812,
 		"produce": true,
+		"enemyDropLevel": 7,
+		"enemyDropRange": [
+			0.367000013589859,
+			0.00800000037997961
+		],
+		"enemyDropCount": 1,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I空间翘曲器"
 	},
 	{
@@ -727,14 +1477,57 @@
 		"stackSize": 20,
 		"gridIndex": 1311,
 		"produce": true,
+		"enemyDropLevel": 7,
+		"enemyDropRange": [
+			0.375,
+			0.00800000037997961
+		],
+		"enemyDropCount": 1,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I湮灭约束球"
+	},
+	{
+		"id": 1407,
+		"name": "动力引擎",
+		"type": "COMPONENT",
+		"stackSize": 200,
+		"gridIndex": 1601,
+		"produce": true,
+		"enemyDropLevel": 1,
+		"enemyDropRange": [
+			0.382999986410141,
+			0.009999999776482582
+		],
+		"enemyDropCount": 1,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
+		"description": "I动力引擎"
 	},
 	{
 		"id": 1405,
 		"name": "推进器2",
 		"type": "COMPONENT",
 		"stackSize": 200,
-		"gridIndex": 1507,
+		"gridIndex": 1602,
+		"produce": true,
+		"enemyDropLevel": 3,
+		"enemyDropRange": [
+			0.3930000066757202,
+			0.00800000037997961
+		],
+		"enemyDropCount": 1,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I推进器"
 	},
 	{
@@ -742,7 +1535,19 @@
 		"name": "加力推进器",
 		"type": "COMPONENT",
 		"stackSize": 100,
-		"gridIndex": 1508,
+		"gridIndex": 1603,
+		"produce": true,
+		"enemyDropLevel": 5,
+		"enemyDropRange": [
+			0.4009999930858612,
+			0.00800000037997961
+		],
+		"enemyDropCount": 1,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I加力推进器"
 	},
 	{
@@ -751,7 +1556,16 @@
 		"type": "LOGISTICS",
 		"stackSize": 200,
 		"isEntity": true,
-		"gridIndex": 1509,
+		"modelIndex": 372,
+		"modelCount": 1,
+		"hpMax": 200,
+		"gridIndex": 1701,
+		"descFields": [
+			45,
+			46,
+			1,
+			40
+		],
 		"description": "I配送运输机"
 	},
 	{
@@ -760,7 +1574,16 @@
 		"type": "LOGISTICS",
 		"stackSize": 200,
 		"isEntity": true,
-		"gridIndex": 1510,
+		"modelIndex": 47,
+		"modelCount": 1,
+		"hpMax": 300,
+		"gridIndex": 1702,
+		"descFields": [
+			25,
+			27,
+			1,
+			40
+		],
 		"description": "I物流运输机"
 	},
 	{
@@ -769,7 +1592,15 @@
 		"type": "LOGISTICS",
 		"stackSize": 50,
 		"isEntity": true,
-		"gridIndex": 1511,
+		"modelIndex": 48,
+		"modelCount": 1,
+		"hpMax": 800,
+		"gridIndex": 1703,
+		"descFields": [
+			26,
+			1,
+			40
+		],
 		"description": "I星际物流运输船"
 	},
 	{
@@ -777,9 +1608,13 @@
 		"name": "框架材料",
 		"type": "MATERIAL",
 		"stackSize": 100,
-		"gridIndex": 1709,
+		"gridIndex": 1809,
 		"produce": true,
 		"mechaMaterialId": 24,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I框架材料"
 	},
 	{
@@ -787,8 +1622,12 @@
 		"name": "戴森球组件",
 		"type": "COMPONENT",
 		"stackSize": 100,
-		"gridIndex": 1710,
+		"gridIndex": 1810,
 		"produce": true,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I戴森球组件"
 	},
 	{
@@ -797,7 +1636,12 @@
 		"type": "PRODUCT",
 		"stackSize": 20,
 		"isEntity": true,
-		"gridIndex": 1711,
+		"modelIndex": 75,
+		"gridIndex": 1811,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I小型运载火箭"
 	},
 	{
@@ -806,8 +1650,21 @@
 		"type": "COMPONENT",
 		"stackSize": 1000,
 		"canBuild": true,
-		"gridIndex": 1601,
+		"buildIndex": 901,
+		"buildMode": 4,
+		"gridIndex": 1704,
 		"produce": true,
+		"enemyDropLevel": 2,
+		"enemyDropRange": [
+			0.4090000092983246,
+			0.00800000037997961
+		],
+		"enemyDropCount": 10,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I地基"
 	},
 	{
@@ -815,9 +1672,27 @@
 		"name": "增产剂 Mk.I",
 		"type": "MATERIAL",
 		"stackSize": 200,
+		"hpMax": 12,
 		"ability": 1,
+		"heatValue": {
+			"type": "BigInt",
+			"value": "3240000"
+		},
+		"reactorInc": 0.30000001192092896,
+		"fuelType": 1,
 		"gridIndex": 1406,
 		"produce": true,
+		"descFields": [
+			29,
+			41,
+			42,
+			43,
+			2,
+			3,
+			31,
+			1,
+			40
+		],
 		"description": "I增产剂 Mk.I"
 	},
 	{
@@ -825,9 +1700,27 @@
 		"name": "增产剂 Mk.II",
 		"type": "MATERIAL",
 		"stackSize": 200,
+		"hpMax": 24,
 		"ability": 2,
+		"heatValue": {
+			"type": "BigInt",
+			"value": "8856000"
+		},
+		"reactorInc": 0.6000000238418579,
+		"fuelType": 1,
 		"gridIndex": 1506,
 		"produce": true,
+		"descFields": [
+			29,
+			41,
+			42,
+			43,
+			2,
+			3,
+			31,
+			1,
+			40
+		],
 		"description": "I增产剂 Mk.II"
 	},
 	{
@@ -835,15 +1728,527 @@
 		"name": "增产剂 Mk.III",
 		"type": "MATERIAL",
 		"stackSize": 200,
+		"hpMax": 60,
 		"ability": 4,
+		"heatValue": {
+			"type": "BigInt",
+			"value": "21255000"
+		},
+		"reactorInc": 1.5,
+		"fuelType": 1,
 		"gridIndex": 1606,
 		"produce": true,
+		"descFields": [
+			29,
+			41,
+			42,
+			43,
+			2,
+			3,
+			31,
+			1,
+			40
+		],
 		"description": "I增产剂 Mk.III"
+	},
+	{
+		"id": 1601,
+		"name": "机枪弹箱",
+		"type": "PRODUCT",
+		"stackSize": 100,
+		"hpMax": 20,
+		"ability": 700,
+		"ammoType": "BULLET",
+		"gridIndex": 1312,
+		"produce": true,
+		"descFields": [
+			48,
+			55,
+			52,
+			47,
+			1,
+			40
+		],
+		"description": "I机枪弹箱"
+	},
+	{
+		"id": 1602,
+		"name": "钛化弹箱",
+		"type": "PRODUCT",
+		"stackSize": 100,
+		"hpMax": 20,
+		"ability": 1300,
+		"ammoType": "BULLET",
+		"gridIndex": 1412,
+		"produce": true,
+		"descFields": [
+			48,
+			55,
+			52,
+			47,
+			1,
+			40
+		],
+		"description": "I钛化弹箱"
+	},
+	{
+		"id": 1603,
+		"name": "超合金弹箱",
+		"type": "PRODUCT",
+		"stackSize": 100,
+		"hpMax": 20,
+		"ability": 3200,
+		"ammoType": "BULLET",
+		"gridIndex": 1512,
+		"produce": true,
+		"descFields": [
+			48,
+			55,
+			52,
+			47,
+			1,
+			40
+		],
+		"description": "I超合金弹箱"
+	},
+	{
+		"id": 1604,
+		"name": "炮弹组",
+		"type": "PRODUCT",
+		"stackSize": 100,
+		"hpMax": 12,
+		"ability": 4500,
+		"ammoType": "CANNON",
+		"gridIndex": 1613,
+		"produce": true,
+		"descFields": [
+			48,
+			55,
+			52,
+			61,
+			47,
+			1,
+			40
+		],
+		"description": "I炮弹组"
+	},
+	{
+		"id": 1605,
+		"name": "高爆炮弹组",
+		"type": "PRODUCT",
+		"stackSize": 100,
+		"hpMax": 12,
+		"ability": 10000,
+		"ammoType": "CANNON",
+		"gridIndex": 1713,
+		"produce": true,
+		"descFields": [
+			48,
+			55,
+			52,
+			61,
+			47,
+			1,
+			40
+		],
+		"description": "I高爆炮弹组"
+	},
+	{
+		"id": 1606,
+		"name": "晶石炮弹组",
+		"type": "PRODUCT",
+		"stackSize": 100,
+		"hpMax": 12,
+		"ability": 22000,
+		"ammoType": "CANNON",
+		"gridIndex": 1813,
+		"produce": true,
+		"descFields": [
+			48,
+			55,
+			52,
+			61,
+			47,
+			1,
+			40
+		],
+		"description": "I晶石炮弹组"
+	},
+	{
+		"id": 1607,
+		"name": "等离子胶囊",
+		"type": "PRODUCT",
+		"stackSize": 100,
+		"hpMax": 10,
+		"ability": 30000,
+		"ammoType": "PLASMA",
+		"gridIndex": 1612,
+		"produce": true,
+		"descFields": [
+			48,
+			55,
+			52,
+			61,
+			47,
+			1,
+			40
+		],
+		"description": "I等离子胶囊"
+	},
+	{
+		"id": 1608,
+		"name": "反物质胶囊",
+		"type": "PRODUCT",
+		"stackSize": 100,
+		"hpMax": 10,
+		"ability": 150000,
+		"ammoType": "PLASMA",
+		"gridIndex": 1712,
+		"produce": true,
+		"descFields": [
+			48,
+			55,
+			52,
+			61,
+			47,
+			1,
+			40
+		],
+		"description": "I反物质胶囊"
+	},
+	{
+		"id": 1609,
+		"name": "导弹组",
+		"type": "PRODUCT",
+		"stackSize": 100,
+		"modelIndex": 432,
+		"hpMax": 24,
+		"ability": 2100,
+		"ammoType": "MISSILE",
+		"gridIndex": 1313,
+		"produce": true,
+		"descFields": [
+			48,
+			55,
+			52,
+			61,
+			47,
+			1,
+			40
+		],
+		"description": "I导弹组"
+	},
+	{
+		"id": 1610,
+		"name": "超音速导弹组",
+		"type": "PRODUCT",
+		"stackSize": 100,
+		"modelIndex": 433,
+		"hpMax": 24,
+		"ability": 5400,
+		"ammoType": "MISSILE",
+		"gridIndex": 1413,
+		"produce": true,
+		"descFields": [
+			48,
+			55,
+			52,
+			61,
+			47,
+			1,
+			40
+		],
+		"description": "I超音速导弹组"
+	},
+	{
+		"id": 1611,
+		"name": "引力导弹组",
+		"type": "PRODUCT",
+		"stackSize": 100,
+		"modelIndex": 434,
+		"hpMax": 24,
+		"ability": 12000,
+		"ammoType": "MISSILE",
+		"gridIndex": 1513,
+		"produce": true,
+		"descFields": [
+			48,
+			55,
+			52,
+			61,
+			47,
+			1,
+			40
+		],
+		"description": "I引力导弹组"
+	},
+	{
+		"id": 5101,
+		"name": "地面战斗机-E型",
+		"type": "PRODUCT",
+		"stackSize": 100,
+		"isEntity": true,
+		"modelIndex": 448,
+		"modelCount": 1,
+		"hpMax": 1500,
+		"craftType": 1,
+		"gridIndex": 1607,
+		"produce": true,
+		"descFields": [
+			53,
+			48,
+			55,
+			49,
+			60,
+			59,
+			1,
+			40
+		],
+		"description": "I地面战斗机-E型"
+	},
+	{
+		"id": 5102,
+		"name": "地面战斗机-A型",
+		"type": "PRODUCT",
+		"stackSize": 100,
+		"isEntity": true,
+		"modelIndex": 449,
+		"modelCount": 1,
+		"hpMax": 1500,
+		"craftType": 1,
+		"gridIndex": 1608,
+		"descFields": [
+			53,
+			48,
+			55,
+			49,
+			60,
+			59,
+			1,
+			40
+		],
+		"description": "I地面战斗机-A型"
+	},
+	{
+		"id": 5103,
+		"name": "地面战斗机-F型",
+		"type": "PRODUCT",
+		"stackSize": 100,
+		"isEntity": true,
+		"modelIndex": 450,
+		"modelCount": 1,
+		"hpMax": 1500,
+		"craftType": 1,
+		"gridIndex": 1609,
+		"descFields": [
+			53,
+			48,
+			55,
+			49,
+			60,
+			59,
+			1,
+			40
+		],
+		"description": "I地面战斗机-F型"
+	},
+	{
+		"id": 5111,
+		"name": "太空战斗机-A型",
+		"type": "PRODUCT",
+		"stackSize": 50,
+		"isEntity": true,
+		"modelIndex": 451,
+		"modelCount": 1,
+		"hpMax": 8000,
+		"craftType": 3,
+		"gridIndex": 1610,
+		"descFields": [
+			53,
+			48,
+			55,
+			49,
+			60,
+			59,
+			1,
+			40
+		],
+		"description": "I太空战斗机-A型"
+	},
+	{
+		"id": 5112,
+		"name": "太空战斗机-F型",
+		"type": "PRODUCT",
+		"stackSize": 50,
+		"isEntity": true,
+		"modelIndex": 452,
+		"modelCount": 1,
+		"hpMax": 8000,
+		"craftType": 7,
+		"gridIndex": 1611,
+		"descFields": [
+			53,
+			55,
+			62,
+			63,
+			64,
+			65,
+			66,
+			67,
+			59,
+			1,
+			40
+		],
+		"description": "I太空战斗机-F型"
+	},
+	{
+		"id": 5201,
+		"name": "存储单元",
+		"type": "DARKFOG",
+		"miningFrom": "黑雾残骸",
+		"stackSize": 200,
+		"gridIndex": 1807,
+		"unlockKey": -2,
+		"produce": true,
+		"enemyDropLevel": 4,
+		"enemyDropRange": [
+			0.4169999957084656,
+			0.011500000022351742
+		],
+		"enemyDropCount": 3,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			0,
+			40
+		],
+		"description": "I存储单元"
+	},
+	{
+		"id": 5202,
+		"name": "硅基神经元",
+		"type": "DARKFOG",
+		"miningFrom": "黑雾残骸",
+		"stackSize": 100,
+		"gridIndex": 1709,
+		"unlockKey": -2,
+		"produce": true,
+		"enemyDropLevel": 6,
+		"enemyDropRange": [
+			0.4284999966621399,
+			0.008500000461935997
+		],
+		"enemyDropCount": 2,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			0,
+			40
+		],
+		"description": "I硅基神经元"
+	},
+	{
+		"id": 5203,
+		"name": "物质重组器",
+		"type": "DARKFOG",
+		"miningFrom": "黑雾残骸",
+		"stackSize": 100,
+		"gridIndex": 1711,
+		"unlockKey": -2,
+		"produce": true,
+		"enemyDropLevel": 5,
+		"enemyDropRange": [
+			0.43700000643730164,
+			0.00800000037997961
+		],
+		"enemyDropCount": 2,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			0,
+			40
+		],
+		"description": "I物质重组器"
+	},
+	{
+		"id": 5204,
+		"name": "负熵奇点",
+		"type": "DARKFOG",
+		"miningFrom": "黑雾残骸",
+		"stackSize": 50,
+		"gridIndex": 1710,
+		"unlockKey": -2,
+		"produce": true,
+		"enemyDropLevel": 7,
+		"enemyDropRange": [
+			0.4449999928474426,
+			0.006000000052154064
+		],
+		"enemyDropCount": 2,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			0,
+			40
+		],
+		"description": "I负熵奇点"
+	},
+	{
+		"id": 5205,
+		"name": "虚粒子",
+		"type": "DARKFOG",
+		"miningFrom": "黑雾残骸",
+		"stackSize": 50,
+		"gridIndex": 1112,
+		"unlockKey": -2,
+		"produce": true,
+		"enemyDropLevel": 8,
+		"enemyDropRange": [
+			0.45100000500679016,
+			0.009999999776482582
+		],
+		"enemyDropCount": 4,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			0,
+			40
+		],
+		"description": "I共振粒子"
+	},
+	{
+		"id": 5206,
+		"name": "能量碎片",
+		"type": "DARKFOG",
+		"miningFrom": "黑雾残骸",
+		"stackSize": 100,
+		"ability": 50,
+		"heatValue": {
+			"type": "BigInt",
+			"value": "3600000"
+		},
+		"reactorInc": 0.20000000298023224,
+		"fuelType": 1,
+		"gridIndex": 1708,
+		"unlockKey": -2,
+		"produce": true,
+		"enemyDropLevel": 1,
+		"enemyDropRange": [
+			0.460999995470047,
+			0.014399999752640724
+		],
+		"enemyDropCount": 6,
+		"enemyDropMask": 2147483647,
+		"descFields": [
+			2,
+			3,
+			31,
+			54,
+			0,
+			40
+		],
+		"description": "I能量碎片"
 	},
 	{
 		"id": 2001,
 		"name": "低速传送带",
 		"type": "LOGISTICS",
+		"subId": 1,
 		"stackSize": 300,
 		"grade": 1,
 		"upgrades": [
@@ -853,13 +2258,25 @@
 		],
 		"isEntity": true,
 		"canBuild": true,
+		"modelIndex": 35,
+		"modelCount": 1,
+		"hpMax": 300,
+		"buildIndex": 301,
+		"buildMode": 2,
 		"gridIndex": 2201,
+		"descFields": [
+			53,
+			15,
+			1,
+			40
+		],
 		"description": "I低速传送带"
 	},
 	{
 		"id": 2002,
 		"name": "高速传送带",
 		"type": "LOGISTICS",
+		"subId": 2,
 		"stackSize": 300,
 		"grade": 2,
 		"upgrades": [
@@ -869,13 +2286,25 @@
 		],
 		"isEntity": true,
 		"canBuild": true,
+		"modelIndex": 36,
+		"modelCount": 1,
+		"hpMax": 300,
+		"buildIndex": 302,
+		"buildMode": 2,
 		"gridIndex": 2202,
+		"descFields": [
+			53,
+			15,
+			1,
+			40
+		],
 		"description": "I高速传送带"
 	},
 	{
 		"id": 2003,
 		"name": "极速传送带",
 		"type": "LOGISTICS",
+		"subId": 3,
 		"stackSize": 300,
 		"grade": 3,
 		"upgrades": [
@@ -885,13 +2314,25 @@
 		],
 		"isEntity": true,
 		"canBuild": true,
+		"modelIndex": 37,
+		"modelCount": 1,
+		"hpMax": 300,
+		"buildIndex": 303,
+		"buildMode": 2,
 		"gridIndex": 2203,
+		"descFields": [
+			53,
+			15,
+			1,
+			40
+		],
 		"description": "I极速传送带"
 	},
 	{
 		"id": 2011,
 		"name": "低速分拣器",
 		"type": "LOGISTICS",
+		"subId": 1,
 		"stackSize": 200,
 		"grade": 1,
 		"upgrades": [
@@ -901,13 +2342,28 @@
 		],
 		"isEntity": true,
 		"canBuild": true,
+		"modelIndex": 41,
+		"modelCount": 1,
+		"hpMax": 300,
+		"buildIndex": 304,
+		"buildMode": 3,
 		"gridIndex": 2301,
+		"descFields": [
+			53,
+			20,
+			21,
+			11,
+			12,
+			1,
+			40
+		],
 		"description": "I低速分拣器"
 	},
 	{
 		"id": 2012,
 		"name": "高速分拣器",
 		"type": "LOGISTICS",
+		"subId": 2,
 		"stackSize": 200,
 		"grade": 2,
 		"upgrades": [
@@ -917,13 +2373,28 @@
 		],
 		"isEntity": true,
 		"canBuild": true,
+		"modelIndex": 42,
+		"modelCount": 1,
+		"hpMax": 300,
+		"buildIndex": 305,
+		"buildMode": 3,
 		"gridIndex": 2302,
+		"descFields": [
+			53,
+			20,
+			21,
+			11,
+			12,
+			1,
+			40
+		],
 		"description": "I高速分拣器"
 	},
 	{
 		"id": 2013,
 		"name": "极速分拣器",
 		"type": "LOGISTICS",
+		"subId": 3,
 		"stackSize": 200,
 		"grade": 3,
 		"upgrades": [
@@ -933,7 +2404,21 @@
 		],
 		"isEntity": true,
 		"canBuild": true,
+		"modelIndex": 43,
+		"modelCount": 1,
+		"hpMax": 300,
+		"buildIndex": 306,
+		"buildMode": 3,
 		"gridIndex": 2303,
+		"descFields": [
+			53,
+			20,
+			21,
+			11,
+			12,
+			1,
+			40
+		],
 		"description": "I极速分拣器"
 	},
 	{
@@ -943,7 +2428,18 @@
 		"stackSize": 50,
 		"isEntity": true,
 		"canBuild": true,
+		"modelIndex": 38,
+		"modelCount": 3,
+		"hpMax": 500,
+		"buildIndex": 307,
+		"buildMode": 1,
 		"gridIndex": 2204,
+		"descFields": [
+			53,
+			16,
+			1,
+			40
+		],
 		"description": "I四向分流器"
 	},
 	{
@@ -953,7 +2449,19 @@
 		"stackSize": 50,
 		"isEntity": true,
 		"canBuild": true,
+		"modelIndex": 257,
+		"modelCount": 1,
+		"hpMax": 500,
+		"buildIndex": 308,
+		"buildMode": 1,
 		"gridIndex": 2205,
+		"descFields": [
+			53,
+			11,
+			12,
+			1,
+			40
+		],
 		"description": "I自动集装机"
 	},
 	{
@@ -963,7 +2471,19 @@
 		"stackSize": 100,
 		"isEntity": true,
 		"canBuild": true,
-		"gridIndex": 2304,
+		"modelIndex": 208,
+		"modelCount": 1,
+		"hpMax": 300,
+		"buildIndex": 309,
+		"buildMode": 5,
+		"gridIndex": 2206,
+		"descFields": [
+			53,
+			11,
+			12,
+			1,
+			40
+		],
 		"description": "I流速监测器"
 	},
 	{
@@ -973,7 +2493,19 @@
 		"stackSize": 50,
 		"isEntity": true,
 		"canBuild": true,
-		"gridIndex": 2407,
+		"modelIndex": 120,
+		"modelCount": 1,
+		"hpMax": 800,
+		"buildIndex": 310,
+		"buildMode": 5,
+		"gridIndex": 2207,
+		"descFields": [
+			53,
+			11,
+			12,
+			1,
+			40
+		],
 		"description": "I喷涂机"
 	},
 	{
@@ -983,27 +2515,67 @@
 		"stackSize": 50,
 		"isEntity": true,
 		"canBuild": true,
-		"gridIndex": 2209,
+		"modelIndex": 371,
+		"modelCount": 1,
+		"hpMax": 1200,
+		"buildIndex": 601,
+		"buildMode": 5,
+		"gridIndex": 2211,
+		"descFields": [
+			53,
+			38,
+			12,
+			10,
+			44,
+			1,
+			40
+		],
 		"description": "I物流配送器"
 	},
 	{
 		"id": 2101,
 		"name": "小型储物仓",
 		"type": "LOGISTICS",
+		"subId": 1,
 		"stackSize": 50,
 		"isEntity": true,
 		"canBuild": true,
-		"gridIndex": 2206,
+		"modelIndex": 51,
+		"modelCount": 1,
+		"hpMax": 800,
+		"buildIndex": 401,
+		"buildMode": 1,
+		"gridIndex": 2208,
+		"dropRate": 0.5,
+		"descFields": [
+			53,
+			17,
+			1,
+			40
+		],
 		"description": "I小型储物仓"
 	},
 	{
 		"id": 2102,
 		"name": "大型储物仓",
 		"type": "LOGISTICS",
+		"subId": 2,
 		"stackSize": 50,
 		"isEntity": true,
 		"canBuild": true,
-		"gridIndex": 2207,
+		"modelIndex": 52,
+		"modelCount": 1,
+		"hpMax": 1600,
+		"buildIndex": 402,
+		"buildMode": 1,
+		"gridIndex": 2209,
+		"dropRate": 0.5,
+		"descFields": [
+			53,
+			17,
+			1,
+			40
+		],
 		"description": "I大型储物仓"
 	},
 	{
@@ -1013,7 +2585,18 @@
 		"stackSize": 50,
 		"isEntity": true,
 		"canBuild": true,
-		"gridIndex": 2208,
+		"modelIndex": 121,
+		"modelCount": 1,
+		"hpMax": 1200,
+		"buildIndex": 403,
+		"buildMode": 1,
+		"gridIndex": 2210,
+		"descFields": [
+			53,
+			30,
+			1,
+			40
+		],
 		"description": "I储液罐"
 	},
 	{
@@ -1025,11 +2608,25 @@
 		"upgrades": [
 			2303,
 			2304,
-			2305
+			2305,
+			2318
 		],
 		"isEntity": true,
 		"canBuild": true,
-		"gridIndex": 2401,
+		"modelIndex": 65,
+		"modelCount": 1,
+		"hpMax": 1000,
+		"buildIndex": 503,
+		"buildMode": 1,
+		"gridIndex": 2404,
+		"descFields": [
+			53,
+			22,
+			11,
+			12,
+			1,
+			40
+		],
 		"description": "I制造台 Mk.I"
 	},
 	{
@@ -1041,11 +2638,25 @@
 		"upgrades": [
 			2303,
 			2304,
-			2305
+			2305,
+			2318
 		],
 		"isEntity": true,
 		"canBuild": true,
-		"gridIndex": 2402,
+		"modelIndex": 66,
+		"modelCount": 1,
+		"hpMax": 1000,
+		"buildIndex": 504,
+		"buildMode": 1,
+		"gridIndex": 2405,
+		"descFields": [
+			53,
+			22,
+			11,
+			12,
+			1,
+			40
+		],
 		"description": "I制造台 Mk.II"
 	},
 	{
@@ -1057,101 +2668,272 @@
 		"upgrades": [
 			2303,
 			2304,
-			2305
+			2305,
+			2318
 		],
 		"isEntity": true,
 		"canBuild": true,
-		"gridIndex": 2403,
+		"modelIndex": 67,
+		"modelCount": 1,
+		"hpMax": 1000,
+		"buildIndex": 505,
+		"buildMode": 1,
+		"gridIndex": 2406,
+		"descFields": [
+			53,
+			22,
+			11,
+			12,
+			1,
+			40
+		],
 		"description": "I制造台 Mk.III"
+	},
+	{
+		"id": 2318,
+		"name": "制造台 Mk.IV",
+		"type": "PRODUCTION",
+		"stackSize": 50,
+		"grade": 4,
+		"upgrades": [
+			2303,
+			2304,
+			2305,
+			2318
+		],
+		"isEntity": true,
+		"canBuild": true,
+		"modelIndex": 456,
+		"modelCount": 1,
+		"hpMax": 3000,
+		"buildIndex": 808,
+		"buildMode": 1,
+		"gridIndex": 2407,
+		"descFields": [
+			53,
+			22,
+			11,
+			12,
+			1,
+			40
+		],
+		"description": "I制造台 Mk.IV"
 	},
 	{
 		"id": 2201,
 		"name": "电力感应塔",
 		"type": "LOGISTICS",
+		"subId": 1,
 		"stackSize": 100,
 		"isEntity": true,
 		"canBuild": true,
+		"modelIndex": 44,
+		"modelCount": 1,
+		"hpMax": 500,
+		"buildIndex": 101,
+		"buildMode": 1,
 		"gridIndex": 2101,
+		"descFields": [
+			53,
+			13,
+			14,
+			1,
+			40
+		],
 		"description": "I电力感应塔"
 	},
 	{
 		"id": 2202,
 		"name": "无线输电塔",
 		"type": "LOGISTICS",
+		"subId": 2,
 		"stackSize": 100,
 		"isEntity": true,
 		"canBuild": true,
+		"modelIndex": 71,
+		"modelCount": 1,
+		"hpMax": 600,
+		"buildIndex": 102,
+		"buildMode": 1,
 		"gridIndex": 2102,
+		"descFields": [
+			53,
+			13,
+			14,
+			11,
+			12,
+			1,
+			40
+		],
 		"description": "I无线输电塔"
 	},
 	{
 		"id": 2212,
 		"name": "卫星配电站",
 		"type": "LOGISTICS",
+		"subId": 3,
 		"stackSize": 30,
 		"isEntity": true,
 		"canBuild": true,
+		"modelIndex": 68,
+		"modelCount": 1,
+		"hpMax": 800,
+		"buildIndex": 103,
+		"buildMode": 1,
 		"gridIndex": 2103,
+		"descFields": [
+			53,
+			13,
+			14,
+			12,
+			1,
+			40
+		],
 		"description": "I卫星配电站"
 	},
 	{
 		"id": 2203,
 		"name": "风力涡轮机",
 		"type": "PRODUCTION",
+		"subId": 4,
 		"stackSize": 50,
 		"isEntity": true,
 		"canBuild": true,
+		"modelIndex": 53,
+		"modelCount": 1,
+		"hpMax": 800,
+		"buildIndex": 104,
+		"buildMode": 1,
 		"gridIndex": 2104,
+		"descFields": [
+			53,
+			4,
+			5,
+			13,
+			14,
+			1,
+			40
+		],
 		"description": "I风力涡轮机"
 	},
 	{
 		"id": 2204,
 		"name": "火力发电厂",
 		"type": "PRODUCTION",
+		"subId": 5,
 		"stackSize": 50,
 		"isEntity": true,
 		"canBuild": true,
+		"modelIndex": 54,
+		"modelCount": 1,
+		"hpMax": 2000,
+		"buildIndex": 105,
+		"buildMode": 1,
 		"gridIndex": 2105,
+		"descFields": [
+			53,
+			4,
+			5,
+			6,
+			1,
+			40
+		],
 		"description": "I火力发电厂"
 	},
 	{
 		"id": 2211,
 		"name": "微型聚变发电站",
 		"type": "PRODUCTION",
+		"subId": 6,
 		"stackSize": 50,
 		"isEntity": true,
 		"canBuild": true,
+		"modelIndex": 118,
+		"modelCount": 1,
+		"hpMax": 2000,
+		"buildIndex": 108,
+		"buildMode": 1,
 		"gridIndex": 2108,
+		"descFields": [
+			53,
+			4,
+			5,
+			1,
+			40
+		],
 		"description": "I微型聚变发电站"
 	},
 	{
 		"id": 2213,
 		"name": "地热发电站",
 		"type": "PRODUCTION",
+		"subId": 12,
 		"stackSize": 50,
 		"isEntity": true,
 		"canBuild": true,
+		"modelIndex": 255,
+		"modelCount": 1,
+		"hpMax": 2000,
+		"buildIndex": 107,
+		"buildMode": 1,
 		"gridIndex": 2107,
+		"descFields": [
+			53,
+			4,
+			39,
+			1,
+			40
+		],
 		"description": "I地热发电站"
 	},
 	{
 		"id": 2301,
 		"name": "采矿机",
 		"type": "PRODUCTION",
+		"subId": 1,
 		"stackSize": 50,
 		"isEntity": true,
 		"canBuild": true,
-		"gridIndex": 2305,
+		"modelIndex": 57,
+		"modelCount": 1,
+		"hpMax": 1200,
+		"buildIndex": 201,
+		"buildMode": 1,
+		"gridIndex": 2304,
+		"descFields": [
+			53,
+			18,
+			19,
+			11,
+			12,
+			1,
+			40
+		],
 		"description": "I采矿机"
 	},
 	{
 		"id": 2316,
 		"name": "大型采矿机",
 		"type": "PRODUCTION",
+		"subId": 2,
 		"stackSize": 30,
 		"isEntity": true,
 		"canBuild": true,
-		"gridIndex": 2306,
+		"modelIndex": 256,
+		"modelCount": 1,
+		"hpMax": 2000,
+		"buildIndex": 202,
+		"buildMode": 1,
+		"gridIndex": 2305,
+		"descFields": [
+			53,
+			18,
+			19,
+			11,
+			12,
+			1,
+			40
+		],
 		"description": "I大型采矿机"
 	},
 	{
@@ -1161,7 +2943,21 @@
 		"stackSize": 30,
 		"isEntity": true,
 		"canBuild": true,
-		"gridIndex": 2307,
+		"modelIndex": 60,
+		"modelCount": 1,
+		"hpMax": 1000,
+		"buildIndex": 203,
+		"buildMode": 1,
+		"gridIndex": 2306,
+		"descFields": [
+			53,
+			18,
+			19,
+			11,
+			12,
+			1,
+			40
+		],
 		"description": "I抽水站"
 	},
 	{
@@ -1172,11 +2968,25 @@
 		"grade": 1,
 		"upgrades": [
 			2302,
-			2315
+			2315,
+			2319
 		],
 		"isEntity": true,
 		"canBuild": true,
-		"gridIndex": 2404,
+		"modelIndex": 62,
+		"modelCount": 1,
+		"hpMax": 1000,
+		"buildIndex": 501,
+		"buildMode": 1,
+		"gridIndex": 2401,
+		"descFields": [
+			53,
+			22,
+			11,
+			12,
+			1,
+			40
+		],
 		"description": "I电弧熔炉"
 	},
 	{
@@ -1187,12 +2997,55 @@
 		"grade": 2,
 		"upgrades": [
 			2302,
-			2315
+			2315,
+			2319
 		],
 		"isEntity": true,
 		"canBuild": true,
-		"gridIndex": 2405,
+		"modelIndex": 194,
+		"modelCount": 1,
+		"hpMax": 1500,
+		"buildIndex": 502,
+		"buildMode": 1,
+		"gridIndex": 2402,
+		"descFields": [
+			53,
+			22,
+			11,
+			12,
+			1,
+			40
+		],
 		"description": "I位面熔炉"
+	},
+	{
+		"id": 2319,
+		"name": "熔炉 Mk.III",
+		"type": "PRODUCTION",
+		"stackSize": 50,
+		"grade": 3,
+		"upgrades": [
+			2302,
+			2315,
+			2319
+		],
+		"isEntity": true,
+		"canBuild": true,
+		"modelIndex": 457,
+		"modelCount": 1,
+		"hpMax": 3000,
+		"buildIndex": 807,
+		"buildMode": 1,
+		"gridIndex": 2403,
+		"descFields": [
+			53,
+			22,
+			11,
+			12,
+			1,
+			40
+		],
+		"description": "I熔炉 Mk.III"
 	},
 	{
 		"id": 2307,
@@ -1201,7 +3054,21 @@
 		"stackSize": 20,
 		"isEntity": true,
 		"canBuild": true,
-		"gridIndex": 2308,
+		"modelIndex": 61,
+		"modelCount": 1,
+		"hpMax": 2000,
+		"buildIndex": 204,
+		"buildMode": 1,
+		"gridIndex": 2307,
+		"descFields": [
+			53,
+			18,
+			19,
+			11,
+			12,
+			1,
+			40
+		],
 		"description": "I原油萃取站"
 	},
 	{
@@ -1211,7 +3078,20 @@
 		"stackSize": 30,
 		"isEntity": true,
 		"canBuild": true,
-		"gridIndex": 2309,
+		"modelIndex": 63,
+		"modelCount": 1,
+		"hpMax": 1800,
+		"buildIndex": 506,
+		"buildMode": 1,
+		"gridIndex": 2308,
+		"descFields": [
+			53,
+			22,
+			11,
+			12,
+			1,
+			40
+		],
 		"description": "I原油精炼厂"
 	},
 	{
@@ -1226,7 +3106,20 @@
 		],
 		"isEntity": true,
 		"canBuild": true,
-		"gridIndex": 2409,
+		"modelIndex": 64,
+		"modelCount": 1,
+		"hpMax": 1200,
+		"buildIndex": 508,
+		"buildMode": 1,
+		"gridIndex": 2310,
+		"descFields": [
+			53,
+			22,
+			11,
+			12,
+			1,
+			40
+		],
 		"description": "I化工厂"
 	},
 	{
@@ -1241,7 +3134,20 @@
 		],
 		"isEntity": true,
 		"canBuild": true,
-		"gridIndex": 2410,
+		"modelIndex": 376,
+		"modelCount": 1,
+		"hpMax": 1200,
+		"buildIndex": 509,
+		"buildMode": 1,
+		"gridIndex": 2311,
+		"descFields": [
+			53,
+			22,
+			11,
+			12,
+			1,
+			40
+		],
 		"description": "I化工厂 Mk.II"
 	},
 	{
@@ -1251,45 +3157,101 @@
 		"stackSize": 30,
 		"isEntity": true,
 		"canBuild": true,
-		"gridIndex": 2408,
+		"modelIndex": 119,
+		"modelCount": 1,
+		"hpMax": 1200,
+		"buildIndex": 507,
+		"buildMode": 1,
+		"gridIndex": 2309,
+		"descFields": [
+			53,
+			11,
+			12,
+			1,
+			40
+		],
 		"description": "I分馏塔"
 	},
 	{
 		"id": 2205,
 		"name": "太阳能板",
 		"type": "PRODUCTION",
+		"subId": 7,
 		"stackSize": 50,
 		"isEntity": true,
 		"canBuild": true,
+		"modelIndex": 55,
+		"modelCount": 1,
+		"hpMax": 1000,
+		"buildIndex": 106,
+		"buildMode": 1,
 		"gridIndex": 2106,
+		"descFields": [
+			53,
+			4,
+			39,
+			1,
+			40
+		],
 		"description": "I太阳能板"
 	},
 	{
 		"id": 2206,
 		"name": "蓄电器",
 		"type": "LOGISTICS",
+		"subId": 8,
 		"stackSize": 50,
 		"isEntity": true,
 		"canBuild": true,
-		"gridIndex": 2411,
+		"modelIndex": 46,
+		"modelCount": 1,
+		"hpMax": 1200,
+		"buildIndex": 109,
+		"buildMode": 1,
+		"gridIndex": 2110,
+		"descFields": [
+			53,
+			8,
+			9,
+			10,
+			1,
+			40
+		],
 		"description": "I蓄电器"
 	},
 	{
 		"id": 2207,
 		"name": "蓄电器（满）",
 		"type": "LOGISTICS",
+		"subId": 8,
 		"produceFrom": "能量枢纽",
 		"stackSize": 50,
 		"isEntity": true,
 		"canBuild": true,
+		"modelIndex": 46,
+		"modelCount": 1,
+		"hpMax": 1200,
 		"heatValue": {
 			"type": "BigInt",
-			"value": "270000000"
+			"value": "540000000"
 		},
 		"reactorInc": 1,
 		"fuelType": 8,
-		"gridIndex": 2412,
+		"buildMode": 1,
+		"gridIndex": 2111,
+		"unlockKey": 2206,
 		"preTechOverride": 1511,
+		"descFields": [
+			53,
+			2,
+			3,
+			31,
+			8,
+			9,
+			10,
+			1,
+			40
+		],
 		"description": "I蓄电器（满）"
 	},
 	{
@@ -1299,17 +3261,43 @@
 		"stackSize": 30,
 		"isEntity": true,
 		"canBuild": true,
-		"gridIndex": 2311,
+		"modelIndex": 72,
+		"modelCount": 1,
+		"hpMax": 2000,
+		"buildIndex": 802,
+		"buildMode": 1,
+		"gridIndex": 2410,
+		"descFields": [
+			53,
+			34,
+			11,
+			12,
+			1,
+			40
+		],
 		"description": "I电磁轨道弹射器"
 	},
 	{
 		"id": 2208,
 		"name": "射线接收站",
 		"type": "PRODUCTION",
+		"subId": 9,
 		"stackSize": 20,
 		"isEntity": true,
 		"canBuild": true,
-		"gridIndex": 2110,
+		"modelIndex": 73,
+		"modelCount": 1,
+		"hpMax": 3000,
+		"buildIndex": 803,
+		"buildMode": 1,
+		"gridIndex": 2112,
+		"descFields": [
+			53,
+			4,
+			39,
+			1,
+			40
+		],
 		"description": "I射线接收站"
 	},
 	{
@@ -1319,17 +3307,44 @@
 		"stackSize": 10,
 		"isEntity": true,
 		"canBuild": true,
-		"gridIndex": 2312,
+		"modelIndex": 74,
+		"modelCount": 1,
+		"hpMax": 8000,
+		"buildIndex": 804,
+		"buildMode": 1,
+		"gridIndex": 2411,
+		"descFields": [
+			53,
+			35,
+			11,
+			12,
+			1,
+			40
+		],
 		"description": "I垂直发射井"
 	},
 	{
 		"id": 2209,
 		"name": "能量枢纽",
 		"type": "LOGISTICS",
+		"subId": 10,
 		"stackSize": 20,
 		"isEntity": true,
 		"canBuild": true,
+		"modelIndex": 45,
+		"modelCount": 1,
+		"hpMax": 3000,
+		"buildIndex": 605,
+		"buildMode": 1,
 		"gridIndex": 2109,
+		"descFields": [
+			53,
+			8,
+			9,
+			10,
+			1,
+			40
+		],
 		"description": "I能量枢纽"
 	},
 	{
@@ -1339,17 +3354,44 @@
 		"stackSize": 20,
 		"isEntity": true,
 		"canBuild": true,
-		"gridIndex": 2310,
+		"modelIndex": 69,
+		"modelCount": 1,
+		"hpMax": 3000,
+		"buildIndex": 510,
+		"buildMode": 1,
+		"gridIndex": 2312,
+		"descFields": [
+			53,
+			22,
+			11,
+			12,
+			1,
+			40
+		],
 		"description": "I微型粒子对撞机"
 	},
 	{
 		"id": 2210,
 		"name": "人造恒星",
 		"type": "PRODUCTION",
+		"subId": 11,
 		"stackSize": 20,
 		"isEntity": true,
 		"canBuild": true,
-		"gridIndex": 2111,
+		"modelIndex": 56,
+		"modelCount": 1,
+		"hpMax": 2000,
+		"buildIndex": 805,
+		"buildMode": 1,
+		"gridIndex": 2113,
+		"descFields": [
+			53,
+			4,
+			5,
+			6,
+			1,
+			40
+		],
 		"description": "I人造恒星"
 	},
 	{
@@ -1359,7 +3401,22 @@
 		"stackSize": 10,
 		"isEntity": true,
 		"canBuild": true,
-		"gridIndex": 2210,
+		"modelIndex": 49,
+		"modelCount": 1,
+		"hpMax": 5000,
+		"buildIndex": 602,
+		"buildMode": 1,
+		"gridIndex": 2212,
+		"dropRate": 0.5,
+		"descFields": [
+			53,
+			24,
+			38,
+			12,
+			10,
+			1,
+			40
+		],
 		"description": "I物流运输站"
 	},
 	{
@@ -1369,7 +3426,22 @@
 		"stackSize": 10,
 		"isEntity": true,
 		"canBuild": true,
-		"gridIndex": 2211,
+		"modelIndex": 50,
+		"modelCount": 1,
+		"hpMax": 8000,
+		"buildIndex": 603,
+		"buildMode": 1,
+		"gridIndex": 2213,
+		"dropRate": 0.5,
+		"descFields": [
+			53,
+			24,
+			38,
+			12,
+			10,
+			1,
+			40
+		],
 		"description": "I星际物流运输站"
 	},
 	{
@@ -1380,7 +3452,20 @@
 		"isEntity": true,
 		"canBuild": true,
 		"buildInGas": true,
-		"gridIndex": 2212,
+		"modelIndex": 117,
+		"modelCount": 1,
+		"hpMax": 8000,
+		"buildIndex": 604,
+		"buildMode": 1,
+		"gridIndex": 2214,
+		"descFields": [
+			53,
+			18,
+			11,
+			32,
+			1,
+			40
+		],
 		"description": "I轨道采集器"
 	},
 	{
@@ -1388,19 +3473,276 @@
 		"name": "矩阵研究站",
 		"type": "PRODUCTION",
 		"stackSize": 50,
+		"grade": 1,
+		"upgrades": [
+			2901,
+			2902
+		],
 		"isEntity": true,
 		"canBuild": true,
-		"gridIndex": 2406,
+		"modelIndex": 70,
+		"modelCount": 1,
+		"hpMax": 1200,
+		"buildIndex": 801,
+		"buildMode": 1,
+		"gridIndex": 2408,
+		"descFields": [
+			53,
+			22,
+			33,
+			11,
+			12,
+			1,
+			40
+		],
 		"description": "I矩阵研究站"
+	},
+	{
+		"id": 2902,
+		"name": "矩阵研究站 Mk.II",
+		"type": "PRODUCTION",
+		"stackSize": 50,
+		"grade": 2,
+		"upgrades": [
+			2901,
+			2902
+		],
+		"isEntity": true,
+		"canBuild": true,
+		"modelIndex": 455,
+		"modelCount": 1,
+		"hpMax": 3000,
+		"buildIndex": 806,
+		"buildMode": 1,
+		"gridIndex": 2409,
+		"descFields": [
+			53,
+			22,
+			33,
+			11,
+			12,
+			1,
+			40
+		],
+		"description": "I矩阵研究站 Mk.II"
+	},
+	{
+		"id": 3001,
+		"name": "高斯机枪塔",
+		"type": "TURRET",
+		"stackSize": 50,
+		"isEntity": true,
+		"canBuild": true,
+		"modelIndex": 374,
+		"modelCount": 1,
+		"hpMax": 3000,
+		"buildIndex": 701,
+		"buildMode": 5,
+		"gridIndex": 2501,
+		"descFields": [
+			53,
+			51,
+			56,
+			57,
+			52,
+			49,
+			11,
+			12,
+			1,
+			40
+		],
+		"description": "I高斯机枪塔"
+	},
+	{
+		"id": 3002,
+		"name": "高频激光塔",
+		"type": "TURRET",
+		"stackSize": 50,
+		"isEntity": true,
+		"canBuild": true,
+		"modelIndex": 373,
+		"modelCount": 1,
+		"hpMax": 3000,
+		"buildIndex": 704,
+		"buildMode": 1,
+		"gridIndex": 2504,
+		"descFields": [
+			53,
+			51,
+			56,
+			57,
+			50,
+			11,
+			12,
+			1,
+			40
+		],
+		"description": "I高频激光塔"
+	},
+	{
+		"id": 3003,
+		"name": "聚爆加农炮",
+		"type": "TURRET",
+		"stackSize": 50,
+		"isEntity": true,
+		"canBuild": true,
+		"modelIndex": 375,
+		"modelCount": 1,
+		"hpMax": 3000,
+		"buildIndex": 703,
+		"buildMode": 5,
+		"gridIndex": 2503,
+		"descFields": [
+			53,
+			51,
+			56,
+			57,
+			52,
+			49,
+			11,
+			12,
+			1,
+			40
+		],
+		"description": "I聚爆加农炮"
+	},
+	{
+		"id": 3004,
+		"name": "磁化电浆炮",
+		"type": "TURRET",
+		"stackSize": 50,
+		"isEntity": true,
+		"canBuild": true,
+		"modelIndex": 408,
+		"modelCount": 1,
+		"hpMax": 3000,
+		"buildIndex": 705,
+		"buildMode": 5,
+		"gridIndex": 2505,
+		"descFields": [
+			53,
+			51,
+			56,
+			58,
+			52,
+			49,
+			11,
+			12,
+			1,
+			40
+		],
+		"description": "I磁化电浆炮"
+	},
+	{
+		"id": 3005,
+		"name": "导弹防御塔",
+		"type": "TURRET",
+		"stackSize": 50,
+		"isEntity": true,
+		"canBuild": true,
+		"modelIndex": 407,
+		"modelCount": 1,
+		"hpMax": 3000,
+		"buildIndex": 702,
+		"buildMode": 5,
+		"gridIndex": 2502,
+		"descFields": [
+			53,
+			51,
+			56,
+			57,
+			58,
+			52,
+			49,
+			11,
+			12,
+			1,
+			40
+		],
+		"description": "I导弹防御塔"
+	},
+	{
+		"id": 3007,
+		"name": "信标",
+		"type": "DEFENSE",
+		"stackSize": 20,
+		"isEntity": true,
+		"canBuild": true,
+		"modelIndex": 403,
+		"modelCount": 1,
+		"hpMax": 3000,
+		"buildIndex": 707,
+		"buildMode": 1,
+		"gridIndex": 2507,
+		"descFields": [
+			53,
+			13,
+			14,
+			11,
+			12,
+			1,
+			40
+		],
+		"description": "I信标"
+	},
+	{
+		"id": 3008,
+		"name": "护盾发生器",
+		"type": "DEFENSE",
+		"stackSize": 20,
+		"isEntity": true,
+		"canBuild": true,
+		"modelIndex": 402,
+		"modelCount": 1,
+		"hpMax": 3000,
+		"buildIndex": 708,
+		"buildMode": 1,
+		"gridIndex": 2508,
+		"descFields": [
+			53,
+			11,
+			12,
+			1,
+			40
+		],
+		"description": "I护盾发生器"
+	},
+	{
+		"id": 3009,
+		"name": "战场分析基站",
+		"type": "DEFENSE",
+		"stackSize": 20,
+		"isEntity": true,
+		"canBuild": true,
+		"modelIndex": 453,
+		"modelCount": 1,
+		"hpMax": 3000,
+		"buildIndex": 706,
+		"buildMode": 1,
+		"gridIndex": 2506,
+		"dropRate": 0.5,
+		"descFields": [
+			53,
+			11,
+			12,
+			14,
+			1,
+			40
+		],
+		"description": "I战场分析基站"
 	},
 	{
 		"id": 6001,
 		"name": "电磁矩阵",
 		"type": "MATRIX",
 		"stackSize": 200,
-		"gridIndex": 1701,
+		"gridIndex": 1801,
 		"produce": true,
 		"mechaMaterialId": 25,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I电磁矩阵"
 	},
 	{
@@ -1408,9 +3750,13 @@
 		"name": "能量矩阵",
 		"type": "MATRIX",
 		"stackSize": 200,
-		"gridIndex": 1702,
+		"gridIndex": 1802,
 		"produce": true,
 		"mechaMaterialId": 26,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I能量矩阵"
 	},
 	{
@@ -1418,9 +3764,13 @@
 		"name": "结构矩阵",
 		"type": "MATRIX",
 		"stackSize": 200,
-		"gridIndex": 1703,
+		"gridIndex": 1803,
 		"produce": true,
 		"mechaMaterialId": 27,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I结构矩阵"
 	},
 	{
@@ -1428,9 +3778,13 @@
 		"name": "信息矩阵",
 		"type": "MATRIX",
 		"stackSize": 200,
-		"gridIndex": 1704,
+		"gridIndex": 1804,
 		"produce": true,
 		"mechaMaterialId": 28,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I信息矩阵"
 	},
 	{
@@ -1438,9 +3792,13 @@
 		"name": "引力矩阵",
 		"type": "MATRIX",
 		"stackSize": 200,
-		"gridIndex": 1705,
+		"gridIndex": 1805,
 		"produce": true,
 		"mechaMaterialId": 29,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I引力矩阵"
 	},
 	{
@@ -1448,9 +3806,13 @@
 		"name": "宇宙矩阵",
 		"type": "MATRIX",
 		"stackSize": 200,
-		"gridIndex": 1706,
+		"gridIndex": 1806,
 		"produce": true,
 		"mechaMaterialId": 30,
+		"descFields": [
+			1,
+			40
+		],
 		"description": "I宇宙矩阵"
 	}
 ]

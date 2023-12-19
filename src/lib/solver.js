@@ -2,7 +2,7 @@ import {
 	Techs,
 	Recipes,
 	Items,
-	Strings,
+	Locale,
 	AssemblerProductionSpeed,
 	SmelterProductionSpeed,
 	ChemicalProductionSpeed,

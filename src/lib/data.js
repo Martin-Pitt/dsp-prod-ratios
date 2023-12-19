@@ -3,7 +3,7 @@ import meta from '../data/meta.json';
 import techs from '../data/tech.json';
 import recipes from '../data/recipes.json';
 import items from '../data/items.json';
-import strings from '../data/strings.json';
+import locale from '../data/locale.json';
 
 
 function JSONRecurse(key, value, depth = 0) {
@@ -19,27 +19,36 @@ function JSONRecurse(key, value, depth = 0) {
 
 
 export const Meta = JSONRecurse(undefined, meta);
-export const Strings = JSONRecurse(undefined, strings);
+export const Locales = JSONRecurse(undefined, locale);
 
-export const locale = (() => {
+export const Locale = (() => {
 	// TODO: I'd prefer a proper 'best fit' or 'lookup' algorithm here, but also how do we prioritise navigator.languages?
-	for(const Preferred of (navigator?.languages || ['en']))
+	for(const preferred of (navigator?.languages || ['en']))
 	{
-		let preferred = Preferred.toLowerCase();
-		const match = Meta.supportedCanonicalLocales.find(Supported => {
-			let supported = Supported.toLowerCase();
-			return supported.startsWith(preferred)
-			    || preferred.startsWith(supported)
-			    || supported.split('-')[0] === preferred.split('-')[0]
+		const match = Locales.find(supported => {
+			return supported.locale.startsWith(preferred)
+			    || preferred.startsWith(supported.locale)
+			    || supported.locale.split('-')[0] === preferred.split('-')[0]
 		});
+		
 		if(match) return match;
+		
+		// Try the primary subtags
+		else
+		{
+			match = Locales.find(supported => {
+				return supported.locale.split('-')[0] === preferred.split('-')[0]
+			});
+			if(match) return match;
+		}
 	}
-	return 'en-US';
+	
+	return Locales.find(language => language.lcid === 1033) || Locales[0];
 })();
-export const internalLocale = locale.replace('-', '_').toLowerCase();
+
 const translateableKeys = ['name', 'description', 'conclusion', 'miningFrom', 'produceFrom'];
 function translate(input) {
-	if(typeof input === 'string') return Strings.get(input)[internalLocale];
+	if(typeof input === 'string') return Locale.strings[input];
 	else if(Array.isArray(input)) return input.map(translate);
 	else if(typeof input === 'object')
 	{
@@ -54,16 +63,7 @@ function translate(input) {
 	else throw new Error('Undefined behaviour for translate');
 }
 
-export function t(key) {
-	let string = Strings.get(key);
-	if(!string)
-	{
-		console.error(`Missing String '${key}'`);
-		return `[Missing String '${key}']`;
-	}
-	
-	return string[internalLocale] || string.en_us || string.zh_cn || `[Missing in String '${key}']`;
-}
+export function t(key) { return Locale.strings[key] }
 
 // TODO: Preferred language can potentially change, see 'languagechange' event
 export const Techs = translate(JSONRecurse(undefined, techs));
@@ -151,10 +151,12 @@ for(let tech of Techs)
 
 
 
-export const AssemblerProductionSpeed = new Map([[2303, 0.75], [2304, 1], [2305, 1.5]]);
-export const SmelterProductionSpeed = new Map([[2302, 1], [2315, 2]]);
+export const AssemblerProductionSpeed = new Map([[2303, 0.75], [2304, 1], [2305, 1.5], [2318, 3]]);
+export const SmelterProductionSpeed = new Map([[2302, 1], [2315, 2], [2319, 3]]);
 export const ChemicalProductionSpeed = new Map([[2309, 1], [2317, 2]]);
 export const BeltTransportSpeed = new Map([[2001, 6*60], [2002, 12*60], [2003, 30*60]]);
+export const ResearchSpeed = new Map([[2901, 1], [2902, 3]]);
+export const MiningSpeed = new Map([])
 export const StringFromTypes = new Map(
     Object.entries({
         // Item Types
@@ -175,7 +177,7 @@ export const StringFromTypes = new Map(
         'PARTICLE': '粒子对撞机',
         'FRACTIONATE': '分馏设备',
     })
-    .map(([type, key]) => [type, Strings.get(key)[internalLocale]])
+    .map(([type, key]) => [type, t(key)])
 );
 export const Proliferator = {
 	Types: {

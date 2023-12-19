@@ -3,7 +3,7 @@ import {
 	Items, ItemsUnlocked,
 	Recipes, RecipesUnlocked,
 	TechsByID,
-	locale,
+	Locale,
 } from './lib/data.js';
 import { persistentSignal, temporarySignal } from './lib/persistent-signal.js';
 
@@ -81,7 +81,7 @@ localStorage.setItem('last-visit', new Date());
 (async () => {
 	// Fetch the latest news, or cached network request if still fresh
 	let language = 'english';
-	if(locale === 'zh-CN') language = 'schinese';
+	if(Locale.locale === 'zh-CN') language = 'schinese';
 	let response = await fetch(`https://steam-news-proxy.vercel.app/api/feed?l=${language}`, { mode: 'cors', credentials: 'omit', });
 	let content = await response.json();
 	

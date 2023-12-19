@@ -201,7 +201,7 @@
 	{
 		"id": 10,
 		"name": "矩阵研究站",
-		"sid": "2406",
+		"sid": "2408",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 180,
@@ -223,7 +223,7 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2406
+		"gridIndex": 2408
 	},
 	{
 		"id": 11,
@@ -295,7 +295,7 @@
 	{
 		"id": 14,
 		"name": "原油萃取站",
-		"sid": "2308",
+		"sid": "2307",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 480,
@@ -317,12 +317,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2308
+		"gridIndex": 2307
 	},
 	{
 		"id": 15,
 		"name": "原油精炼厂",
-		"sid": "2309",
+		"sid": "2308",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 360,
@@ -344,7 +344,7 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2309
+		"gridIndex": 2308
 	},
 	{
 		"id": 16,
@@ -417,7 +417,7 @@
 	{
 		"id": 19,
 		"name": "氢燃料棒",
-		"sid": "1210",
+		"sid": "1607",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 360,
@@ -435,12 +435,12 @@
 		"resultCounts": [
 			2
 		],
-		"gridIndex": 1210
+		"gridIndex": 1607
 	},
 	{
 		"id": 20,
 		"name": "推进器",
-		"sid": "1310",
+		"sid": "1311",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 240,
@@ -458,12 +458,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1310
+		"gridIndex": 1311
 	},
 	{
 		"id": 21,
 		"name": "加力推进器",
-		"sid": "1311",
+		"sid": "1312",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 360,
@@ -481,12 +481,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1311
+		"gridIndex": 1312
 	},
 	{
 		"id": 22,
 		"name": "化工厂",
-		"sid": "2409",
+		"sid": "2310",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 300,
@@ -508,7 +508,7 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2409
+		"gridIndex": 2310
 	},
 	{
 		"id": 23,
@@ -860,7 +860,7 @@
 	{
 		"id": 38,
 		"name": "位面过滤器",
-		"sid": "1509",
+		"sid": "1611",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 720,
@@ -878,12 +878,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1509
+		"gridIndex": 1611
 	},
 	{
 		"id": 39,
 		"name": "微型粒子对撞机",
-		"sid": "2310",
+		"sid": "2312",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 900,
@@ -907,7 +907,7 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2310
+		"gridIndex": 2312
 	},
 	{
 		"id": 40,
@@ -933,7 +933,7 @@
 	{
 		"id": 41,
 		"name": "氘核燃料棒",
-		"sid": "1211",
+		"sid": "1608",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 720,
@@ -953,12 +953,12 @@
 		"resultCounts": [
 			2
 		],
-		"gridIndex": 1211
+		"gridIndex": 1608
 	},
 	{
 		"id": 42,
 		"name": "湮灭约束球",
-		"sid": "1610",
+		"sid": "1613",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 1200,
@@ -976,7 +976,7 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1610
+		"gridIndex": 1613
 	},
 	{
 		"id": 43,
@@ -1008,7 +1008,7 @@
 	{
 		"id": 44,
 		"name": "反物质燃料棒",
-		"sid": "1212",
+		"sid": "1609",
 		"type": "ASSEMBLE",
 		"timeSpend": 1440,
 		"items": [
@@ -1029,13 +1029,13 @@
 		"resultCounts": [
 			2
 		],
-		"gridIndex": 1212,
+		"gridIndex": 1609,
 		"nonProductive": true
 	},
 	{
 		"id": 45,
 		"name": "制造台 Mk.I",
-		"sid": "2401",
+		"sid": "2404",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 120,
@@ -1055,12 +1055,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2401
+		"gridIndex": 2404
 	},
 	{
 		"id": 46,
 		"name": "制造台 Mk.II",
-		"sid": "2402",
+		"sid": "2405",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 180,
@@ -1080,12 +1080,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2402
+		"gridIndex": 2405
 	},
 	{
 		"id": 47,
 		"name": "制造台 Mk.III",
-		"sid": "2403",
+		"sid": "2406",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 240,
@@ -1105,12 +1105,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2403
+		"gridIndex": 2406
 	},
 	{
 		"id": 48,
 		"name": "采矿机",
-		"sid": "2305",
+		"sid": "2304",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 180,
@@ -1132,12 +1132,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2305
+		"gridIndex": 2304
 	},
 	{
 		"id": 49,
 		"name": "抽水站",
-		"sid": "2307",
+		"sid": "2306",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 240,
@@ -1159,7 +1159,7 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2307
+		"gridIndex": 2306
 	},
 	{
 		"id": 50,
@@ -1306,7 +1306,7 @@
 	{
 		"id": 56,
 		"name": "电弧熔炉",
-		"sid": "2404",
+		"sid": "2401",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 180,
@@ -1328,7 +1328,7 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2404
+		"gridIndex": 2401
 	},
 	{
 		"id": 57,
@@ -1630,7 +1630,7 @@
 	{
 		"id": 70,
 		"name": "太阳帆",
-		"sid": "1510",
+		"sid": "1509",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 240,
@@ -1648,12 +1648,12 @@
 		"resultCounts": [
 			2
 		],
-		"gridIndex": 1510
+		"gridIndex": 1509
 	},
 	{
 		"id": 71,
 		"name": "电磁轨道弹射器",
-		"sid": "2311",
+		"sid": "2410",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 360,
@@ -1675,7 +1675,7 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2311
+		"gridIndex": 2410
 	},
 	{
 		"id": 72,
@@ -1734,7 +1734,7 @@
 	{
 		"id": 74,
 		"name": "光子物质化",
-		"sid": "1609",
+		"sid": "1612",
 		"type": "PARTICLE",
 		"explicit": true,
 		"timeSpend": 120,
@@ -1752,7 +1752,7 @@
 			2,
 			2
 		],
-		"gridIndex": 1609,
+		"gridIndex": 1612,
 		"description": "R光子物质化",
 		"nonProductive": true
 	},
@@ -1792,7 +1792,7 @@
 		"sid": "2107",
 		"type": "ASSEMBLE",
 		"handcraft": true,
-		"timeSpend": 300,
+		"timeSpend": 180,
 		"items": [
 			1101,
 			1205,
@@ -1801,7 +1801,7 @@
 		"itemCounts": [
 			6,
 			1,
-			6
+			3
 		],
 		"results": [
 			2206
@@ -1841,7 +1841,7 @@
 	{
 		"id": 78,
 		"name": "空间翘曲器",
-		"sid": "1607",
+		"sid": "1712",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 600,
@@ -1857,12 +1857,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1607
+		"gridIndex": 1712
 	},
 	{
 		"id": 79,
 		"name": "空间翘曲器（高级）",
-		"sid": "1608",
+		"sid": "1713",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"explicit": true,
@@ -1879,13 +1879,13 @@
 		"resultCounts": [
 			8
 		],
-		"gridIndex": 1608,
+		"gridIndex": 1713,
 		"description": "R空间翘曲器（高级）"
 	},
 	{
 		"id": 80,
 		"name": "框架材料",
-		"sid": "1511",
+		"sid": "1510",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 360,
@@ -1905,12 +1905,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1511
+		"gridIndex": 1510
 	},
 	{
 		"id": 81,
 		"name": "戴森球组件",
-		"sid": "1512",
+		"sid": "1511",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 480,
@@ -1930,12 +1930,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1512
+		"gridIndex": 1511
 	},
 	{
 		"id": 82,
 		"name": "垂直发射井",
-		"sid": "2312",
+		"sid": "2411",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 1800,
@@ -1957,12 +1957,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2312
+		"gridIndex": 2411
 	},
 	{
 		"id": 83,
 		"name": "小型运载火箭",
-		"sid": "1412",
+		"sid": "1512",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 360,
@@ -1982,7 +1982,7 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1412
+		"gridIndex": 1512
 	},
 	{
 		"id": 84,
@@ -2033,7 +2033,7 @@
 	{
 		"id": 86,
 		"name": "小型储物仓",
-		"sid": "2206",
+		"sid": "2208",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 120,
@@ -2051,7 +2051,7 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2206
+		"gridIndex": 2208
 	},
 	{
 		"id": 87,
@@ -2150,7 +2150,7 @@
 	{
 		"id": 91,
 		"name": "大型储物仓",
-		"sid": "2207",
+		"sid": "2209",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 240,
@@ -2168,7 +2168,7 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2207
+		"gridIndex": 2209
 	},
 	{
 		"id": 92,
@@ -2198,7 +2198,7 @@
 	{
 		"id": 93,
 		"name": "物流运输站",
-		"sid": "2210",
+		"sid": "2212",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 1200,
@@ -2220,12 +2220,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2210
+		"gridIndex": 2212
 	},
 	{
 		"id": 94,
 		"name": "物流运输机",
-		"sid": "1410",
+		"sid": "1411",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 240,
@@ -2245,12 +2245,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1410
+		"gridIndex": 1411
 	},
 	{
 		"id": 95,
 		"name": "星际物流运输站",
-		"sid": "2211",
+		"sid": "2213",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 1800,
@@ -2270,12 +2270,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2211
+		"gridIndex": 2213
 	},
 	{
 		"id": 96,
 		"name": "星际物流运输船",
-		"sid": "1411",
+		"sid": "1412",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 360,
@@ -2295,7 +2295,7 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1411
+		"gridIndex": 1412
 	},
 	{
 		"id": 97,
@@ -2468,7 +2468,7 @@
 	{
 		"id": 104,
 		"name": "奇异物质",
-		"sid": "1312",
+		"sid": "1409",
 		"type": "PARTICLE",
 		"timeSpend": 480,
 		"items": [
@@ -2487,7 +2487,7 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1312
+		"gridIndex": 1409
 	},
 	{
 		"id": 106,
@@ -2559,7 +2559,7 @@
 	{
 		"id": 109,
 		"name": "喷涂机",
-		"sid": "2407",
+		"sid": "2207",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 180,
@@ -2581,12 +2581,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2407
+		"gridIndex": 2207
 	},
 	{
 		"id": 110,
 		"name": "分馏塔",
-		"sid": "2408",
+		"sid": "2309",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 180,
@@ -2608,12 +2608,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2408
+		"gridIndex": 2309
 	},
 	{
 		"id": 111,
 		"name": "轨道采集器",
-		"sid": "2212",
+		"sid": "2214",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 1800,
@@ -2635,12 +2635,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2212
+		"gridIndex": 2214
 	},
 	{
 		"id": 112,
 		"name": "地基",
-		"sid": "1712",
+		"sid": "1714",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 60,
@@ -2658,7 +2658,7 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1712
+		"gridIndex": 1714
 	},
 	{
 		"id": 113,
@@ -2690,7 +2690,7 @@
 	{
 		"id": 114,
 		"name": "储液罐",
-		"sid": "2208",
+		"sid": "2210",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 120,
@@ -2710,7 +2710,7 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2208
+		"gridIndex": 2210
 	},
 	{
 		"id": 115,
@@ -2737,7 +2737,7 @@
 	{
 		"id": 116,
 		"name": "位面熔炉",
-		"sid": "2405",
+		"sid": "2402",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 300,
@@ -2759,12 +2759,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2405
+		"gridIndex": 2402
 	},
 	{
 		"id": 117,
 		"name": "流速器",
-		"sid": "2304",
+		"sid": "2206",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 120,
@@ -2786,7 +2786,7 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2304
+		"gridIndex": 2206
 	},
 	{
 		"id": 118,
@@ -2818,7 +2818,7 @@
 	{
 		"id": 119,
 		"name": "大型采矿机",
-		"sid": "2306",
+		"sid": "2305",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 1200,
@@ -2842,7 +2842,7 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2306
+		"gridIndex": 2305
 	},
 	{
 		"id": 120,
@@ -2901,7 +2901,7 @@
 	{
 		"id": 122,
 		"name": "物流配送器",
-		"sid": "2209",
+		"sid": "2211",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 480,
@@ -2921,18 +2921,18 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2209
+		"gridIndex": 2211
 	},
 	{
 		"id": 123,
 		"name": "配送运输机",
-		"sid": "1409",
+		"sid": "1410",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 120,
 		"items": [
 			1101,
-			1204,
+			1407,
 			1303
 		],
 		"itemCounts": [
@@ -2946,12 +2946,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1409
+		"gridIndex": 1410
 	},
 	{
 		"id": 124,
 		"name": "化工厂 Mk.II",
-		"sid": "2410",
+		"sid": "2311",
 		"type": "ASSEMBLE",
 		"handcraft": true,
 		"timeSpend": 600,
@@ -2973,6 +2973,826 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2410
+		"gridIndex": 2311
+	},
+	{
+		"id": 125,
+		"name": "高斯机枪塔",
+		"sid": "2501",
+		"type": "ASSEMBLE",
+		"handcraft": true,
+		"timeSpend": 240,
+		"items": [
+			1101,
+			1201,
+			1301,
+			1202
+		],
+		"itemCounts": [
+			8,
+			8,
+			2,
+			4
+		],
+		"results": [
+			3001
+		],
+		"resultCounts": [
+			1
+		],
+		"gridIndex": 2501
+	},
+	{
+		"id": 126,
+		"name": "高频激光塔",
+		"sid": "2505",
+		"type": "ASSEMBLE",
+		"handcraft": true,
+		"timeSpend": 360,
+		"items": [
+			1103,
+			1401,
+			1301,
+			1404
+		],
+		"itemCounts": [
+			9,
+			6,
+			6,
+			9
+		],
+		"results": [
+			3002
+		],
+		"resultCounts": [
+			1
+		],
+		"gridIndex": 2504
+	},
+	{
+		"id": 127,
+		"name": "聚爆加农炮",
+		"sid": "2503",
+		"type": "ASSEMBLE",
+		"handcraft": true,
+		"timeSpend": 300,
+		"items": [
+			1103,
+			1203,
+			1301,
+			1205
+		],
+		"itemCounts": [
+			10,
+			8,
+			10,
+			2
+		],
+		"results": [
+			3003
+		],
+		"resultCounts": [
+			1
+		],
+		"gridIndex": 2503
+	},
+	{
+		"id": 128,
+		"name": "磁化电浆炮",
+		"sid": "2507",
+		"type": "ASSEMBLE",
+		"handcraft": true,
+		"timeSpend": 600,
+		"items": [
+			1107,
+			1119,
+			1205,
+			1401,
+			1303
+		],
+		"itemCounts": [
+			20,
+			10,
+			10,
+			5,
+			5
+		],
+		"results": [
+			3004
+		],
+		"resultCounts": [
+			1
+		],
+		"gridIndex": 2505
+	},
+	{
+		"id": 129,
+		"name": "导弹防御塔",
+		"sid": "2502",
+		"type": "ASSEMBLE",
+		"handcraft": true,
+		"timeSpend": 360,
+		"items": [
+			1103,
+			1203,
+			1301,
+			1407
+		],
+		"itemCounts": [
+			8,
+			6,
+			12,
+			6
+		],
+		"results": [
+			3005
+		],
+		"resultCounts": [
+			1
+		],
+		"gridIndex": 2502
+	},
+	{
+		"id": 131,
+		"name": "信标",
+		"sid": "2504",
+		"type": "ASSEMBLE",
+		"handcraft": true,
+		"timeSpend": 360,
+		"items": [
+			2202,
+			1103,
+			1113
+		],
+		"itemCounts": [
+			2,
+			12,
+			6
+		],
+		"results": [
+			3007
+		],
+		"resultCounts": [
+			1
+		],
+		"gridIndex": 2507
+	},
+	{
+		"id": 132,
+		"name": "护盾发生器",
+		"sid": "2506",
+		"type": "ASSEMBLE",
+		"handcraft": true,
+		"timeSpend": 600,
+		"items": [
+			1103,
+			1204,
+			1205,
+			1206
+		],
+		"itemCounts": [
+			20,
+			20,
+			5,
+			5
+		],
+		"results": [
+			3008
+		],
+		"resultCounts": [
+			1
+		],
+		"gridIndex": 2508
+	},
+	{
+		"id": 133,
+		"name": "燃烧单元",
+		"sid": "1210",
+		"type": "ASSEMBLE",
+		"handcraft": true,
+		"timeSpend": 180,
+		"items": [
+			1006
+		],
+		"itemCounts": [
+			3
+		],
+		"results": [
+			1128
+		],
+		"resultCounts": [
+			1
+		],
+		"gridIndex": 1210
+	},
+	{
+		"id": 134,
+		"name": "爆破单元",
+		"sid": "1211",
+		"type": "CHEMICAL",
+		"timeSpend": 360,
+		"items": [
+			1128,
+			1115,
+			1116
+		],
+		"itemCounts": [
+			2,
+			2,
+			1
+		],
+		"results": [
+			1129
+		],
+		"resultCounts": [
+			2
+		],
+		"gridIndex": 1211
+	},
+	{
+		"id": 135,
+		"name": "晶石爆破单元",
+		"sid": "1212",
+		"type": "CHEMICAL",
+		"timeSpend": 1440,
+		"items": [
+			1129,
+			1126,
+			1113
+		],
+		"itemCounts": [
+			8,
+			1,
+			8
+		],
+		"results": [
+			1130
+		],
+		"resultCounts": [
+			8
+		],
+		"gridIndex": 1212
+	},
+	{
+		"id": 136,
+		"name": "机枪弹箱",
+		"sid": "1113",
+		"type": "ASSEMBLE",
+		"handcraft": true,
+		"timeSpend": 60,
+		"items": [
+			1104
+		],
+		"itemCounts": [
+			4
+		],
+		"results": [
+			1601
+		],
+		"resultCounts": [
+			1
+		],
+		"gridIndex": 1113
+	},
+	{
+		"id": 137,
+		"name": "钛化弹箱",
+		"sid": "1213",
+		"type": "ASSEMBLE",
+		"handcraft": true,
+		"timeSpend": 120,
+		"items": [
+			1601,
+			1106
+		],
+		"itemCounts": [
+			1,
+			2
+		],
+		"results": [
+			1602
+		],
+		"resultCounts": [
+			1
+		],
+		"gridIndex": 1213
+	},
+	{
+		"id": 138,
+		"name": "超合金弹箱",
+		"sid": "1313",
+		"type": "ASSEMBLE",
+		"handcraft": true,
+		"timeSpend": 180,
+		"items": [
+			1602,
+			1107
+		],
+		"itemCounts": [
+			1,
+			2
+		],
+		"results": [
+			1603
+		],
+		"resultCounts": [
+			1
+		],
+		"gridIndex": 1313
+	},
+	{
+		"id": 139,
+		"name": "炮弹组",
+		"sid": "1414",
+		"type": "ASSEMBLE",
+		"handcraft": true,
+		"timeSpend": 90,
+		"items": [
+			1104,
+			1128
+		],
+		"itemCounts": [
+			9,
+			2
+		],
+		"results": [
+			1604
+		],
+		"resultCounts": [
+			1
+		],
+		"gridIndex": 1414
+	},
+	{
+		"id": 140,
+		"name": "高爆炮弹组",
+		"sid": "1514",
+		"type": "ASSEMBLE",
+		"handcraft": true,
+		"timeSpend": 180,
+		"items": [
+			1604,
+			1106,
+			1129
+		],
+		"itemCounts": [
+			1,
+			6,
+			2
+		],
+		"results": [
+			1605
+		],
+		"resultCounts": [
+			1
+		],
+		"gridIndex": 1514
+	},
+	{
+		"id": 141,
+		"name": "晶石炮弹组",
+		"sid": "1614",
+		"type": "ASSEMBLE",
+		"handcraft": true,
+		"timeSpend": 360,
+		"items": [
+			1605,
+			1107,
+			1130
+		],
+		"itemCounts": [
+			1,
+			3,
+			2
+		],
+		"results": [
+			1606
+		],
+		"resultCounts": [
+			1
+		],
+		"gridIndex": 1614
+	},
+	{
+		"id": 142,
+		"name": "等离子胶囊",
+		"sid": "1413",
+		"type": "ASSEMBLE",
+		"handcraft": true,
+		"timeSpend": 120,
+		"items": [
+			1123,
+			1102,
+			1121
+		],
+		"itemCounts": [
+			1,
+			2,
+			10
+		],
+		"results": [
+			1607
+		],
+		"resultCounts": [
+			1
+		],
+		"gridIndex": 1413
+	},
+	{
+		"id": 143,
+		"name": "反物质胶囊",
+		"sid": "1513",
+		"type": "ASSEMBLE",
+		"timeSpend": 120,
+		"items": [
+			1607,
+			1206,
+			1120,
+			1122
+		],
+		"itemCounts": [
+			1,
+			1,
+			10,
+			10
+		],
+		"results": [
+			1608
+		],
+		"resultCounts": [
+			1
+		],
+		"gridIndex": 1513
+	},
+	{
+		"id": 144,
+		"name": "导弹组",
+		"sid": "1114",
+		"type": "ASSEMBLE",
+		"handcraft": true,
+		"timeSpend": 120,
+		"items": [
+			1104,
+			1301,
+			1128,
+			1407
+		],
+		"itemCounts": [
+			6,
+			3,
+			2,
+			1
+		],
+		"results": [
+			1609
+		],
+		"resultCounts": [
+			1
+		],
+		"gridIndex": 1114
+	},
+	{
+		"id": 145,
+		"name": "超音速导弹组",
+		"sid": "1214",
+		"type": "ASSEMBLE",
+		"handcraft": true,
+		"timeSpend": 240,
+		"items": [
+			1609,
+			1303,
+			1129,
+			1405
+		],
+		"itemCounts": [
+			2,
+			4,
+			4,
+			2
+		],
+		"results": [
+			1610
+		],
+		"resultCounts": [
+			2
+		],
+		"gridIndex": 1214
+	},
+	{
+		"id": 146,
+		"name": "引力导弹组",
+		"sid": "1314",
+		"type": "ASSEMBLE",
+		"handcraft": true,
+		"timeSpend": 360,
+		"items": [
+			1610,
+			1130,
+			1127
+		],
+		"itemCounts": [
+			3,
+			6,
+			3
+		],
+		"results": [
+			1611
+		],
+		"resultCounts": [
+			3
+		],
+		"gridIndex": 1314
+	},
+	{
+		"id": 147,
+		"name": "地面战斗机-E型",
+		"sid": "1707",
+		"type": "ASSEMBLE",
+		"handcraft": true,
+		"timeSpend": 120,
+		"items": [
+			1101,
+			1407,
+			1301,
+			1401
+		],
+		"itemCounts": [
+			3,
+			1,
+			2,
+			1
+		],
+		"results": [
+			5101
+		],
+		"resultCounts": [
+			1
+		],
+		"gridIndex": 1707
+	},
+	{
+		"id": 148,
+		"name": "地面战斗机-A型",
+		"sid": "1708",
+		"type": "ASSEMBLE",
+		"handcraft": true,
+		"timeSpend": 240,
+		"items": [
+			5101,
+			1204,
+			1301,
+			1404
+		],
+		"itemCounts": [
+			1,
+			1,
+			2,
+			2
+		],
+		"results": [
+			5102
+		],
+		"resultCounts": [
+			1
+		],
+		"gridIndex": 1708
+	},
+	{
+		"id": 149,
+		"name": "地面战斗机-F型",
+		"sid": "1709",
+		"type": "ASSEMBLE",
+		"handcraft": true,
+		"timeSpend": 240,
+		"items": [
+			5101,
+			1204,
+			1303,
+			1206
+		],
+		"itemCounts": [
+			1,
+			1,
+			1,
+			1
+		],
+		"results": [
+			5103
+		],
+		"resultCounts": [
+			1
+		],
+		"gridIndex": 1709
+	},
+	{
+		"id": 150,
+		"name": "太空战斗机-A型",
+		"sid": "1710",
+		"type": "ASSEMBLE",
+		"handcraft": true,
+		"timeSpend": 300,
+		"items": [
+			1107,
+			1406,
+			1303,
+			1206
+		],
+		"itemCounts": [
+			5,
+			1,
+			2,
+			3
+		],
+		"results": [
+			5111
+		],
+		"resultCounts": [
+			1
+		],
+		"gridIndex": 1710
+	},
+	{
+		"id": 151,
+		"name": "太空战斗机-F型",
+		"sid": "1711",
+		"type": "ASSEMBLE",
+		"handcraft": true,
+		"timeSpend": 480,
+		"items": [
+			1125,
+			1406,
+			1303,
+			1127
+		],
+		"itemCounts": [
+			20,
+			4,
+			4,
+			1
+		],
+		"results": [
+			5112
+		],
+		"resultCounts": [
+			1
+		],
+		"gridIndex": 1711
+	},
+	{
+		"id": 105,
+		"name": "动力引擎",
+		"sid": "1310",
+		"type": "ASSEMBLE",
+		"handcraft": true,
+		"timeSpend": 180,
+		"items": [
+			1202,
+			1104
+		],
+		"itemCounts": [
+			1,
+			2
+		],
+		"results": [
+			1407
+		],
+		"resultCounts": [
+			1
+		],
+		"gridIndex": 1310
+	},
+	{
+		"id": 152,
+		"name": "战场分析基站",
+		"sid": "2508",
+		"type": "ASSEMBLE",
+		"handcraft": true,
+		"timeSpend": 360,
+		"items": [
+			1103,
+			1301,
+			1302,
+			1407
+		],
+		"itemCounts": [
+			12,
+			18,
+			6,
+			12
+		],
+		"results": [
+			3009
+		],
+		"resultCounts": [
+			1
+		],
+		"gridIndex": 2506
+	},
+	{
+		"id": 153,
+		"name": "矩阵研究站 Mk.II",
+		"sid": "2409",
+		"type": "ASSEMBLE",
+		"handcraft": true,
+		"timeSpend": 240,
+		"items": [
+			2901,
+			5202,
+			5201,
+			1305
+		],
+		"itemCounts": [
+			1,
+			10,
+			20,
+			4
+		],
+		"results": [
+			2902
+		],
+		"resultCounts": [
+			1
+		],
+		"gridIndex": 2409
+	},
+	{
+		"id": 154,
+		"name": "制造台 Mk.IV",
+		"sid": "2407",
+		"type": "ASSEMBLE",
+		"handcraft": true,
+		"timeSpend": 300,
+		"items": [
+			2305,
+			5203,
+			5206,
+			1305
+		],
+		"itemCounts": [
+			1,
+			10,
+			30,
+			4
+		],
+		"results": [
+			2318
+		],
+		"resultCounts": [
+			1
+		],
+		"gridIndex": 2407
+	},
+	{
+		"id": 155,
+		"name": "熔炉 Mk.III",
+		"sid": "2403",
+		"type": "ASSEMBLE",
+		"handcraft": true,
+		"timeSpend": 360,
+		"items": [
+			2315,
+			5204,
+			5206,
+			1305
+		],
+		"itemCounts": [
+			1,
+			10,
+			30,
+			4
+		],
+		"results": [
+			2319
+		],
+		"resultCounts": [
+			1
+		],
+		"gridIndex": 2403
+	},
+	{
+		"id": 156,
+		"name": "金色燃料棒",
+		"sid": "1610",
+		"type": "ASSEMBLE",
+		"timeSpend": 1920,
+		"items": [
+			1803,
+			5205,
+			1127,
+			1125
+		],
+		"itemCounts": [
+			8,
+			1,
+			2,
+			1
+		],
+		"results": [
+			1804
+		],
+		"resultCounts": [
+			1
+		],
+		"gridIndex": 1610
 	}
 ]

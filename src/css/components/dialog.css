@@ -99,7 +99,7 @@
 	.recipe-grid {
 		position: relative;
 		display: grid;
-		grid-template-columns: repeat(12, 60px);
+		grid-template-columns: repeat(14, 60px);
 		grid-template-rows: repeat(7, 60px);
 		place-items: center;
 		padding: 10px;

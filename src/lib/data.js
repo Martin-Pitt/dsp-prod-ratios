@@ -25,7 +25,7 @@ export const Locale = (() => {
 	// TODO: I'd prefer a proper 'best fit' or 'lookup' algorithm here, but also how do we prioritise navigator.languages?
 	for(const preferred of (navigator?.languages || ['en']))
 	{
-		const match = Locales.find(supported => {
+		let match = Locales.find(supported => {
 			return supported.locale.startsWith(preferred)
 			    || preferred.startsWith(supported.locale)
 			    || supported.locale.split('-')[0] === preferred.split('-')[0]
@@ -34,13 +34,10 @@ export const Locale = (() => {
 		if(match) return match;
 		
 		// Try the primary subtags
-		else
-		{
-			match = Locales.find(supported => {
-				return supported.locale.split('-')[0] === preferred.split('-')[0]
-			});
-			if(match) return match;
-		}
+		match = Locales.find(supported => {
+			return supported.locale.split('-')[0] === preferred.split('-')[0]
+		});
+		if(match) return match;
 	}
 	
 	return Locales.find(language => language.lcid === 1033) || Locales[0];

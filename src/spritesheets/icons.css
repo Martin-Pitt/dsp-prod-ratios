@@ -1,3 +1,4 @@
+
 @layer icons {
 	[data-icon^="item"],
 	[data-icon^="recipe"],
@@ -493,4 +494,10 @@
 	[data-icon="tech.5905"] { background-position: 43.75% 100%; --x: 7; --y: 16; --rows: 14; }
 	[data-icon="tech.5906"] { background-position: 50% 100%; --x: 8; --y: 16; --rows: 14; }
 	[data-icon="tech.5907"] { background-position: 56.25% 100%; --x: 9; --y: 16; --rows: 14; }
+	[data-icon="tech.6001"] { background-position: 62.5% 100%; --x: 10; --y: 16; --rows: 14; }
+	[data-icon="tech.6002"] { background-position: 68.75% 100%; --x: 11; --y: 16; --rows: 14; }
+	[data-icon="tech.6003"] { background-position: 75% 100%; --x: 12; --y: 16; --rows: 14; }
+	[data-icon="tech.6004"] { background-position: 81.25% 100%; --x: 13; --y: 16; --rows: 14; }
+	[data-icon="tech.6005"] { background-position: 87.5% 100%; --x: 14; --y: 16; --rows: 14; }
+	[data-icon="tech.6006"] { background-position: 93.75% 100%; --x: 15; --y: 16; --rows: 14; }
 }

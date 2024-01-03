@@ -1,7 +1,7 @@
 [
 	{
-		"id": 1,
 		"name": "铁块",
+		"id": 1,
 		"sid": "1101",
 		"type": "SMELT",
 		"handcraft": true,
@@ -18,11 +18,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1101
+		"gridIndex": 1101,
+		"_madeFromString": "冶炼设备"
 	},
 	{
-		"id": 2,
 		"name": "磁铁",
+		"id": 2,
 		"sid": "1201",
 		"type": "SMELT",
 		"handcraft": true,
@@ -39,11 +40,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1201
+		"gridIndex": 1201,
+		"_madeFromString": "冶炼设备"
 	},
 	{
-		"id": 3,
 		"name": "铜块",
+		"id": 3,
 		"sid": "1102",
 		"type": "SMELT",
 		"handcraft": true,
@@ -60,11 +62,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1102
+		"gridIndex": 1102,
+		"_madeFromString": "冶炼设备"
 	},
 	{
-		"id": 4,
 		"name": "石材",
+		"id": 4,
 		"sid": "1105",
 		"type": "SMELT",
 		"handcraft": true,
@@ -81,11 +84,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1105
+		"gridIndex": 1105,
+		"_madeFromString": "冶炼设备"
 	},
 	{
-		"id": 5,
 		"name": "齿轮",
+		"id": 5,
 		"sid": "1401",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -102,11 +106,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1401
+		"gridIndex": 1401,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 6,
 		"name": "磁线圈",
+		"id": 6,
 		"sid": "1202",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -125,11 +130,12 @@
 		"resultCounts": [
 			2
 		],
-		"gridIndex": 1202
+		"gridIndex": 1202,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 7,
 		"name": "风力涡轮机",
+		"id": 7,
 		"sid": "2104",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -150,11 +156,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2104
+		"gridIndex": 2104,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 8,
 		"name": "电力感应塔",
+		"id": 8,
 		"sid": "2101",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -173,11 +180,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2101
+		"gridIndex": 2101,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 9,
 		"name": "电磁矩阵",
+		"id": 9,
 		"sid": "1701",
 		"type": "RESEARCH",
 		"handcraft": true,
@@ -196,11 +204,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1701
+		"gridIndex": 1701,
+		"_madeFromString": "科研设备"
 	},
 	{
-		"id": 10,
 		"name": "矩阵研究站",
+		"id": 10,
 		"sid": "2408",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -223,11 +232,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2408
+		"gridIndex": 2408,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 11,
 		"name": "棱镜",
+		"id": 11,
 		"sid": "1305",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -244,11 +254,12 @@
 		"resultCounts": [
 			2
 		],
-		"gridIndex": 1305
+		"gridIndex": 1305,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 12,
 		"name": "电浆激发器",
+		"id": 12,
 		"sid": "1501",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -267,11 +278,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1501
+		"gridIndex": 1501,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 13,
 		"name": "无线输电塔",
+		"id": 13,
 		"sid": "2102",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -290,11 +302,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2102
+		"gridIndex": 2102,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 14,
 		"name": "原油萃取站",
+		"id": 14,
 		"sid": "2307",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -317,11 +330,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2307
+		"gridIndex": 2307,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 15,
 		"name": "原油精炼厂",
+		"id": 15,
 		"sid": "2308",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -344,11 +358,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2308
+		"gridIndex": 2308,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 16,
 		"name": "等离子精炼",
+		"id": 16,
 		"sid": "1107",
 		"type": "REFINE",
 		"explicit": true,
@@ -368,11 +383,13 @@
 			2
 		],
 		"gridIndex": 1107,
-		"description": "R等离子精炼"
+		"iconPath": "Icons/ItemRecipe/plasma-refining",
+		"description": "R等离子精炼",
+		"_madeFromString": "精炼设备"
 	},
 	{
-		"id": 17,
 		"name": "高能石墨",
+		"id": 17,
 		"sid": "1106",
 		"type": "SMELT",
 		"handcraft": true,
@@ -389,11 +406,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1106
+		"gridIndex": 1106,
+		"_madeFromString": "冶炼设备"
 	},
 	{
-		"id": 18,
 		"name": "能量矩阵",
+		"id": 18,
 		"sid": "1702",
 		"type": "RESEARCH",
 		"handcraft": true,
@@ -412,11 +430,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1702
+		"gridIndex": 1702,
+		"_madeFromString": "科研设备"
 	},
 	{
-		"id": 19,
 		"name": "氢燃料棒",
+		"id": 19,
 		"sid": "1607",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -435,11 +454,12 @@
 		"resultCounts": [
 			2
 		],
-		"gridIndex": 1607
+		"gridIndex": 1607,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 20,
 		"name": "推进器",
+		"id": 20,
 		"sid": "1311",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -458,11 +478,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1311
+		"gridIndex": 1311,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 21,
 		"name": "加力推进器",
+		"id": 21,
 		"sid": "1312",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -481,11 +502,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1312
+		"gridIndex": 1312,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 22,
 		"name": "化工厂",
+		"id": 22,
 		"sid": "2310",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -508,11 +530,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2310
+		"gridIndex": 2310,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 23,
 		"name": "塑料",
+		"id": 23,
 		"sid": "1109",
 		"type": "CHEMICAL",
 		"timeSpend": 180,
@@ -530,11 +553,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1109
+		"gridIndex": 1109,
+		"_madeFromString": "化工设备"
 	},
 	{
-		"id": 24,
 		"name": "硫酸",
+		"id": 24,
 		"sid": "1406",
 		"type": "CHEMICAL",
 		"timeSpend": 360,
@@ -554,11 +578,12 @@
 		"resultCounts": [
 			4
 		],
-		"gridIndex": 1406
+		"gridIndex": 1406,
+		"_madeFromString": "化工设备"
 	},
 	{
-		"id": 25,
 		"name": "有机晶体",
+		"id": 25,
 		"sid": "1209",
 		"type": "CHEMICAL",
 		"timeSpend": 360,
@@ -578,11 +603,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1209
+		"gridIndex": 1209,
+		"_madeFromString": "化工设备"
 	},
 	{
-		"id": 26,
 		"name": "钛晶石",
+		"id": 26,
 		"sid": "1308",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -601,11 +627,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1308
+		"gridIndex": 1308,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 27,
 		"name": "结构矩阵",
+		"id": 27,
 		"sid": "1703",
 		"type": "RESEARCH",
 		"handcraft": true,
@@ -624,11 +651,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1703
+		"gridIndex": 1703,
+		"_madeFromString": "科研设备"
 	},
 	{
-		"id": 28,
 		"name": "卡西米尔晶体",
+		"id": 28,
 		"sid": "1505",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -649,11 +677,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1505
+		"gridIndex": 1505,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 29,
 		"name": "卡西米尔晶体（高效）",
+		"id": 29,
 		"sid": "1605",
 		"type": "ASSEMBLE",
 		"explicit": true,
@@ -675,11 +704,13 @@
 			1
 		],
 		"gridIndex": 1605,
-		"description": "R卡西米尔晶体（高效）"
+		"iconPath": "Icons/ItemRecipe/casimir-crystal-lv2",
+		"description": "R卡西米尔晶体（高效）",
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 30,
 		"name": "钛化玻璃",
+		"id": 30,
 		"sid": "1304",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -700,11 +731,12 @@
 		"resultCounts": [
 			2
 		],
-		"gridIndex": 1304
+		"gridIndex": 1304,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 31,
 		"name": "石墨烯",
+		"id": 31,
 		"sid": "1108",
 		"type": "CHEMICAL",
 		"timeSpend": 180,
@@ -722,11 +754,12 @@
 		"resultCounts": [
 			2
 		],
-		"gridIndex": 1108
+		"gridIndex": 1108,
+		"_madeFromString": "化工设备"
 	},
 	{
-		"id": 32,
 		"name": "石墨烯（高效）",
+		"id": 32,
 		"sid": "1208",
 		"type": "CHEMICAL",
 		"explicit": true,
@@ -746,11 +779,13 @@
 			1
 		],
 		"gridIndex": 1208,
-		"description": "R石墨烯（高效）"
+		"iconPath": "Icons/ItemRecipe/graphene-lv2",
+		"description": "R石墨烯（高效）",
+		"_madeFromString": "化工设备"
 	},
 	{
-		"id": 33,
 		"name": "碳纳米管",
+		"id": 33,
 		"sid": "1408",
 		"type": "CHEMICAL",
 		"timeSpend": 240,
@@ -768,11 +803,12 @@
 		"resultCounts": [
 			2
 		],
-		"gridIndex": 1408
+		"gridIndex": 1408,
+		"_madeFromString": "化工设备"
 	},
 	{
-		"id": 34,
 		"name": "硅石",
+		"id": 34,
 		"sid": "1403",
 		"type": "SMELT",
 		"timeSpend": 600,
@@ -788,11 +824,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1403
+		"gridIndex": 1403,
+		"_madeFromString": "冶炼设备"
 	},
 	{
-		"id": 35,
 		"name": "碳纳米管（高效）",
+		"id": 35,
 		"sid": "1508",
 		"type": "CHEMICAL",
 		"explicit": true,
@@ -810,11 +847,13 @@
 			2
 		],
 		"gridIndex": 1508,
-		"description": "R碳纳米管（高效）"
+		"iconPath": "Icons/ItemRecipe/nanotube-lv2",
+		"description": "R碳纳米管（高效）",
+		"_madeFromString": "化工设备"
 	},
 	{
-		"id": 36,
 		"name": "粒子宽带",
+		"id": 36,
 		"sid": "1503",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -835,11 +874,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1503
+		"gridIndex": 1503,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 37,
 		"name": "晶格硅",
+		"id": 37,
 		"sid": "1203",
 		"type": "SMELT",
 		"timeSpend": 120,
@@ -855,11 +895,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1203
+		"gridIndex": 1203,
+		"_madeFromString": "冶炼设备"
 	},
 	{
-		"id": 38,
 		"name": "位面过滤器",
+		"id": 38,
 		"sid": "1611",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -878,11 +919,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1611
+		"gridIndex": 1611,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 39,
 		"name": "微型粒子对撞机",
+		"id": 39,
 		"sid": "2312",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -907,11 +949,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2312
+		"gridIndex": 2312,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 40,
 		"name": "重氢",
+		"id": 40,
 		"sid": "1507",
 		"type": "PARTICLE",
 		"timeSpend": 150,
@@ -928,11 +971,12 @@
 			5
 		],
 		"gridIndex": 1507,
-		"nonProductive": true
+		"nonProductive": true,
+		"_madeFromString": "粒子对撞机"
 	},
 	{
-		"id": 41,
 		"name": "氘核燃料棒",
+		"id": 41,
 		"sid": "1608",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -953,11 +997,12 @@
 		"resultCounts": [
 			2
 		],
-		"gridIndex": 1608
+		"gridIndex": 1608,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 42,
 		"name": "湮灭约束球",
+		"id": 42,
 		"sid": "1613",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -976,11 +1021,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1613
+		"gridIndex": 1613,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 43,
 		"name": "人造恒星",
+		"id": 43,
 		"sid": "2112",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -1003,11 +1049,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2112
+		"gridIndex": 2112,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 44,
 		"name": "反物质燃料棒",
+		"id": 44,
 		"sid": "1609",
 		"type": "ASSEMBLE",
 		"timeSpend": 1440,
@@ -1030,11 +1077,12 @@
 			2
 		],
 		"gridIndex": 1609,
-		"nonProductive": true
+		"nonProductive": true,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 45,
 		"name": "制造台 Mk.I",
+		"id": 45,
 		"sid": "2404",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -1055,11 +1103,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2404
+		"gridIndex": 2404,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 46,
 		"name": "制造台 Mk.II",
+		"id": 46,
 		"sid": "2405",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -1080,11 +1129,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2405
+		"gridIndex": 2405,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 47,
 		"name": "制造台 Mk.III",
+		"id": 47,
 		"sid": "2406",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -1105,11 +1155,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2406
+		"gridIndex": 2406,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 48,
 		"name": "采矿机",
+		"id": 48,
 		"sid": "2304",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -1132,11 +1183,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2304
+		"gridIndex": 2304,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 49,
 		"name": "抽水站",
+		"id": 49,
 		"sid": "2306",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -1159,11 +1211,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2306
+		"gridIndex": 2306,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 50,
 		"name": "电路板",
+		"id": 50,
 		"sid": "1404",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -1182,11 +1235,12 @@
 		"resultCounts": [
 			2
 		],
-		"gridIndex": 1404
+		"gridIndex": 1404,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 51,
 		"name": "处理器",
+		"id": 51,
 		"sid": "1504",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -1205,11 +1259,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1504
+		"gridIndex": 1504,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 52,
 		"name": "量子芯片",
+		"id": 52,
 		"sid": "1604",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -1228,11 +1283,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1604
+		"gridIndex": 1604,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 53,
 		"name": "微晶元件",
+		"id": 53,
 		"sid": "1603",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -1251,11 +1307,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1603
+		"gridIndex": 1603,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 54,
 		"name": "有机晶体（原始）",
+		"id": 54,
 		"sid": "1309",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -1278,11 +1335,13 @@
 			1
 		],
 		"gridIndex": 1309,
-		"description": "R有机晶体（原始）"
+		"iconPath": "Icons/ItemRecipe/crystal-rubber-lv0",
+		"description": "R有机晶体（原始）",
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 55,
 		"name": "信息矩阵",
+		"id": 55,
 		"sid": "1704",
 		"type": "RESEARCH",
 		"handcraft": true,
@@ -1301,11 +1360,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1704
+		"gridIndex": 1704,
+		"_madeFromString": "科研设备"
 	},
 	{
-		"id": 56,
 		"name": "电弧熔炉",
+		"id": 56,
 		"sid": "2401",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -1328,11 +1388,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2401
+		"gridIndex": 2401,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 57,
 		"name": "玻璃",
+		"id": 57,
 		"sid": "1205",
 		"type": "SMELT",
 		"handcraft": true,
@@ -1349,11 +1410,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1205
+		"gridIndex": 1205,
+		"_madeFromString": "冶炼设备"
 	},
 	{
-		"id": 58,
 		"name": "X射线裂解",
+		"id": 58,
 		"sid": "1207",
 		"type": "REFINE",
 		"explicit": true,
@@ -1375,12 +1437,14 @@
 			1
 		],
 		"gridIndex": 1207,
+		"iconPath": "Icons/ItemRecipe/X-ray",
 		"description": "RX射线裂解",
-		"nonProductive": true
+		"nonProductive": true,
+		"_madeFromString": "精炼设备"
 	},
 	{
-		"id": 59,
 		"name": "高纯硅块",
+		"id": 59,
 		"sid": "1103",
 		"type": "SMELT",
 		"handcraft": true,
@@ -1397,11 +1461,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1103
+		"gridIndex": 1103,
+		"_madeFromString": "冶炼设备"
 	},
 	{
-		"id": 60,
 		"name": "金刚石",
+		"id": 60,
 		"sid": "1206",
 		"type": "SMELT",
 		"timeSpend": 120,
@@ -1417,11 +1482,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1206
+		"gridIndex": 1206,
+		"_madeFromString": "冶炼设备"
 	},
 	{
-		"id": 61,
 		"name": "金刚石（高效）",
+		"id": 61,
 		"sid": "1306",
 		"type": "SMELT",
 		"explicit": true,
@@ -1439,11 +1505,13 @@
 			2
 		],
 		"gridIndex": 1306,
-		"description": "R金刚石（高效）"
+		"iconPath": "Icons/ItemRecipe/diamond-lv2",
+		"description": "R金刚石（高效）",
+		"_madeFromString": "冶炼设备"
 	},
 	{
-		"id": 62,
 		"name": "晶格硅（高效）",
+		"id": 62,
 		"sid": "1303",
 		"type": "ASSEMBLE",
 		"explicit": true,
@@ -1461,11 +1529,13 @@
 			2
 		],
 		"gridIndex": 1303,
-		"description": "R晶格硅（高效）"
+		"iconPath": "Icons/ItemRecipe/silicium-high-purity-lv2",
+		"description": "R晶格硅（高效）",
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 63,
 		"name": "钢材",
+		"id": 63,
 		"sid": "1301",
 		"type": "SMELT",
 		"timeSpend": 180,
@@ -1481,11 +1551,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1301
+		"gridIndex": 1301,
+		"_madeFromString": "冶炼设备"
 	},
 	{
-		"id": 64,
 		"name": "火力发电厂",
+		"id": 64,
 		"sid": "2105",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -1508,11 +1579,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2105
+		"gridIndex": 2105,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 65,
 		"name": "钛块",
+		"id": 65,
 		"sid": "1104",
 		"type": "SMELT",
 		"handcraft": true,
@@ -1529,11 +1601,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1104
+		"gridIndex": 1104,
+		"_madeFromString": "冶炼设备"
 	},
 	{
-		"id": 66,
 		"name": "钛合金",
+		"id": 66,
 		"sid": "1204",
 		"type": "SMELT",
 		"timeSpend": 720,
@@ -1553,11 +1626,12 @@
 		"resultCounts": [
 			4
 		],
-		"gridIndex": 1204
+		"gridIndex": 1204,
+		"_madeFromString": "冶炼设备"
 	},
 	{
-		"id": 67,
 		"name": "太阳能板",
+		"id": 67,
 		"sid": "2106",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -1578,11 +1652,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2106
+		"gridIndex": 2106,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 68,
 		"name": "光子合并器",
+		"id": 68,
 		"sid": "1601",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -1601,11 +1676,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1601
+		"gridIndex": 1601,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 69,
 		"name": "光子合并器（高效）",
+		"id": 69,
 		"sid": "1602",
 		"type": "ASSEMBLE",
 		"explicit": true,
@@ -1625,11 +1701,13 @@
 			1
 		],
 		"gridIndex": 1602,
-		"description": "R光子合并器（高效）"
+		"iconPath": "Icons/ItemRecipe/photo-shifter-lv2",
+		"description": "R光子合并器（高效）",
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 70,
 		"name": "太阳帆",
+		"id": 70,
 		"sid": "1509",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -1648,11 +1726,12 @@
 		"resultCounts": [
 			2
 		],
-		"gridIndex": 1509
+		"gridIndex": 1509,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 71,
 		"name": "电磁轨道弹射器",
+		"id": 71,
 		"sid": "2410",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -1675,11 +1754,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2410
+		"gridIndex": 2410,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 72,
 		"name": "射线接收站",
+		"id": 72,
 		"sid": "2111",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -1704,11 +1784,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2111
+		"gridIndex": 2111,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 73,
 		"name": "卫星配电站",
+		"id": 73,
 		"sid": "2103",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -1729,11 +1810,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2103
+		"gridIndex": 2103,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 74,
 		"name": "光子物质化",
+		"id": 74,
 		"sid": "1612",
 		"type": "PARTICLE",
 		"explicit": true,
@@ -1753,12 +1835,14 @@
 			2
 		],
 		"gridIndex": 1612,
+		"iconPath": "Icons/ItemRecipe/photon-formula",
 		"description": "R光子物质化",
-		"nonProductive": true
+		"nonProductive": true,
+		"_madeFromString": "粒子对撞机"
 	},
 	{
-		"id": 75,
 		"name": "宇宙矩阵",
+		"id": 75,
 		"sid": "1706",
 		"type": "RESEARCH",
 		"timeSpend": 900,
@@ -1784,11 +1868,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1706
+		"gridIndex": 1706,
+		"_madeFromString": "科研设备"
 	},
 	{
-		"id": 76,
 		"name": "蓄电器",
+		"id": 76,
 		"sid": "2107",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -1809,11 +1894,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2107
+		"gridIndex": 2107,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 77,
 		"name": "能量枢纽",
+		"id": 77,
 		"sid": "2110",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -1836,11 +1922,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2110
+		"gridIndex": 2110,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 78,
 		"name": "空间翘曲器",
+		"id": 78,
 		"sid": "1712",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -1857,11 +1944,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1712
+		"gridIndex": 1712,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 79,
 		"name": "空间翘曲器（高级）",
+		"id": 79,
 		"sid": "1713",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -1880,11 +1968,13 @@
 			8
 		],
 		"gridIndex": 1713,
-		"description": "R空间翘曲器（高级）"
+		"iconPath": "Icons/ItemRecipe/space-warper-lv2",
+		"description": "R空间翘曲器（高级）",
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 80,
 		"name": "框架材料",
+		"id": 80,
 		"sid": "1510",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -1905,11 +1995,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1510
+		"gridIndex": 1510,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 81,
 		"name": "戴森球组件",
+		"id": 81,
 		"sid": "1511",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -1930,11 +2021,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1511
+		"gridIndex": 1511,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 82,
 		"name": "垂直发射井",
+		"id": 82,
 		"sid": "2411",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -1957,11 +2049,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2411
+		"gridIndex": 2411,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 83,
 		"name": "小型运载火箭",
+		"id": 83,
 		"sid": "1512",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -1982,11 +2075,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1512
+		"gridIndex": 1512,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 84,
 		"name": "低速传送带",
+		"id": 84,
 		"sid": "2201",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -2005,11 +2099,12 @@
 		"resultCounts": [
 			3
 		],
-		"gridIndex": 2201
+		"gridIndex": 2201,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 85,
 		"name": "低速分拣器",
+		"id": 85,
 		"sid": "2301",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -2028,11 +2123,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2301
+		"gridIndex": 2301,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 86,
 		"name": "小型储物仓",
+		"id": 86,
 		"sid": "2208",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -2051,11 +2147,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2208
+		"gridIndex": 2208,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 87,
 		"name": "四向分流器",
+		"id": 87,
 		"sid": "2204",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -2076,11 +2173,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2204
+		"gridIndex": 2204,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 88,
 		"name": "高速分拣器",
+		"id": 88,
 		"sid": "2302",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -2099,11 +2197,12 @@
 		"resultCounts": [
 			2
 		],
-		"gridIndex": 2302
+		"gridIndex": 2302,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 89,
 		"name": "高速传送带",
+		"id": 89,
 		"sid": "2202",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -2122,11 +2221,12 @@
 		"resultCounts": [
 			3
 		],
-		"gridIndex": 2202
+		"gridIndex": 2202,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 90,
 		"name": "极速分拣器",
+		"id": 90,
 		"sid": "2303",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -2145,11 +2245,12 @@
 		"resultCounts": [
 			2
 		],
-		"gridIndex": 2303
+		"gridIndex": 2303,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 91,
 		"name": "大型储物仓",
+		"id": 91,
 		"sid": "2209",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -2168,11 +2269,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2209
+		"gridIndex": 2209,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 92,
 		"name": "极速传送带",
+		"id": 92,
 		"sid": "2203",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -2193,11 +2295,12 @@
 		"resultCounts": [
 			3
 		],
-		"gridIndex": 2203
+		"gridIndex": 2203,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 93,
 		"name": "物流运输站",
+		"id": 93,
 		"sid": "2212",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -2220,11 +2323,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2212
+		"gridIndex": 2212,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 94,
 		"name": "物流运输机",
+		"id": 94,
 		"sid": "1411",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -2245,11 +2349,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1411
+		"gridIndex": 1411,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 95,
 		"name": "星际物流运输站",
+		"id": 95,
 		"sid": "2213",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -2270,11 +2375,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2213
+		"gridIndex": 2213,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 96,
 		"name": "星际物流运输船",
+		"id": 96,
 		"sid": "1412",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -2295,11 +2401,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1412
+		"gridIndex": 1412,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 97,
 		"name": "电动机",
+		"id": 97,
 		"sid": "1302",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -2320,11 +2427,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1302
+		"gridIndex": 1302,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 98,
 		"name": "电磁涡轮",
+		"id": 98,
 		"sid": "1402",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -2343,11 +2451,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1402
+		"gridIndex": 1402,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 99,
 		"name": "粒子容器",
+		"id": 99,
 		"sid": "1506",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -2368,11 +2477,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1506
+		"gridIndex": 1506,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 100,
 		"name": "粒子容器（高效）",
+		"id": 100,
 		"sid": "1606",
 		"type": "ASSEMBLE",
 		"explicit": true,
@@ -2392,11 +2502,13 @@
 			1
 		],
 		"gridIndex": 1606,
-		"description": "R粒子容器（高效）"
+		"iconPath": "Icons/ItemRecipe/partical-capacitor-lv2",
+		"description": "R粒子容器（高效）",
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 101,
 		"name": "引力透镜",
+		"id": 101,
 		"sid": "1405",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -2415,11 +2527,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1405
+		"gridIndex": 1405,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 102,
 		"name": "引力矩阵",
+		"id": 102,
 		"sid": "1705",
 		"type": "RESEARCH",
 		"handcraft": true,
@@ -2438,11 +2551,12 @@
 		"resultCounts": [
 			2
 		],
-		"gridIndex": 1705
+		"gridIndex": 1705,
+		"_madeFromString": "科研设备"
 	},
 	{
-		"id": 103,
 		"name": "超级磁场环",
+		"id": 103,
 		"sid": "1502",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -2463,11 +2577,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1502
+		"gridIndex": 1502,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 104,
 		"name": "奇异物质",
+		"id": 104,
 		"sid": "1409",
 		"type": "PARTICLE",
 		"timeSpend": 480,
@@ -2487,11 +2602,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1409
+		"gridIndex": 1409,
+		"_madeFromString": "粒子对撞机"
 	},
 	{
-		"id": 106,
 		"name": "增产剂 Mk.I",
+		"id": 106,
 		"sid": "1110",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -2508,11 +2624,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1110
+		"gridIndex": 1110,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 107,
 		"name": "增产剂 Mk.II",
+		"id": 107,
 		"sid": "1111",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -2531,11 +2648,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1111
+		"gridIndex": 1111,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 108,
 		"name": "增产剂 Mk.III",
+		"id": 108,
 		"sid": "1112",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -2554,11 +2672,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1112
+		"gridIndex": 1112,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 109,
 		"name": "喷涂机",
+		"id": 109,
 		"sid": "2207",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -2581,11 +2700,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2207
+		"gridIndex": 2207,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 110,
 		"name": "分馏塔",
+		"id": 110,
 		"sid": "2309",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -2608,11 +2728,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2309
+		"gridIndex": 2309,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 111,
 		"name": "轨道采集器",
+		"id": 111,
 		"sid": "2214",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -2635,11 +2756,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2214
+		"gridIndex": 2214,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 112,
 		"name": "地基",
+		"id": 112,
 		"sid": "1714",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -2658,11 +2780,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1714
+		"gridIndex": 1714,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 113,
 		"name": "微型聚变发电站",
+		"id": 113,
 		"sid": "2109",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -2685,11 +2808,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2109
+		"gridIndex": 2109,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 114,
 		"name": "储液罐",
+		"id": 114,
 		"sid": "2210",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -2710,11 +2834,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2210
+		"gridIndex": 2210,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 115,
 		"name": "重氢分馏",
+		"id": 115,
 		"sid": "1407",
 		"type": "FRACTIONATE",
 		"explicit": true,
@@ -2732,11 +2857,13 @@
 			1
 		],
 		"gridIndex": 1407,
-		"description": "R重氢分馏"
+		"iconPath": "Icons/ItemRecipe/deuterium-formula",
+		"description": "R重氢分馏",
+		"_madeFromString": "分馏设备"
 	},
 	{
-		"id": 116,
 		"name": "位面熔炉",
+		"id": 116,
 		"sid": "2402",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -2759,11 +2886,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2402
+		"gridIndex": 2402,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 117,
 		"name": "流速器",
+		"id": 117,
 		"sid": "2206",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -2786,11 +2914,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2206
+		"gridIndex": 2206,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 118,
 		"name": "地热发电站",
+		"id": 118,
 		"sid": "2108",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -2813,11 +2942,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2108
+		"gridIndex": 2108,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 119,
 		"name": "大型采矿机",
+		"id": 119,
 		"sid": "2305",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -2842,11 +2972,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2305
+		"gridIndex": 2305,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 120,
 		"name": "自动集装机",
+		"id": 120,
 		"sid": "2205",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -2869,11 +3000,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2205
+		"gridIndex": 2205,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 121,
 		"name": "重整精炼",
+		"id": 121,
 		"sid": "1307",
 		"type": "REFINE",
 		"explicit": true,
@@ -2895,12 +3027,14 @@
 			3
 		],
 		"gridIndex": 1307,
+		"iconPath": "Icons/ItemRecipe/reforming-refine",
 		"description": "R重整精炼",
-		"nonProductive": true
+		"nonProductive": true,
+		"_madeFromString": "精炼设备"
 	},
 	{
-		"id": 122,
 		"name": "物流配送器",
+		"id": 122,
 		"sid": "2211",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -2921,11 +3055,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2211
+		"gridIndex": 2211,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 123,
 		"name": "配送运输机",
+		"id": 123,
 		"sid": "1410",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -2946,11 +3081,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1410
+		"gridIndex": 1410,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 124,
 		"name": "化工厂 Mk.II",
+		"id": 124,
 		"sid": "2311",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -2973,11 +3109,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2311
+		"gridIndex": 2311,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 125,
 		"name": "高斯机枪塔",
+		"id": 125,
 		"sid": "2501",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -3000,11 +3137,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2501
+		"gridIndex": 2501,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 126,
 		"name": "高频激光塔",
+		"id": 126,
 		"sid": "2505",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -3027,11 +3165,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2504
+		"gridIndex": 2504,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 127,
 		"name": "聚爆加农炮",
+		"id": 127,
 		"sid": "2503",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -3054,11 +3193,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2503
+		"gridIndex": 2503,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 128,
 		"name": "磁化电浆炮",
+		"id": 128,
 		"sid": "2507",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -3083,11 +3223,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2505
+		"gridIndex": 2505,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 129,
 		"name": "导弹防御塔",
+		"id": 129,
 		"sid": "2502",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -3110,11 +3251,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2502
+		"gridIndex": 2502,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 131,
 		"name": "信标",
+		"id": 131,
 		"sid": "2504",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -3135,11 +3277,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2507
+		"gridIndex": 2507,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 132,
 		"name": "护盾发生器",
+		"id": 132,
 		"sid": "2506",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -3162,11 +3305,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2508
+		"gridIndex": 2508,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 133,
 		"name": "燃烧单元",
+		"id": 133,
 		"sid": "1210",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -3183,11 +3327,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1210
+		"gridIndex": 1210,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 134,
 		"name": "爆破单元",
+		"id": 134,
 		"sid": "1211",
 		"type": "CHEMICAL",
 		"timeSpend": 360,
@@ -3207,11 +3352,12 @@
 		"resultCounts": [
 			2
 		],
-		"gridIndex": 1211
+		"gridIndex": 1211,
+		"_madeFromString": "化工设备"
 	},
 	{
-		"id": 135,
 		"name": "晶石爆破单元",
+		"id": 135,
 		"sid": "1212",
 		"type": "CHEMICAL",
 		"timeSpend": 1440,
@@ -3231,11 +3377,12 @@
 		"resultCounts": [
 			8
 		],
-		"gridIndex": 1212
+		"gridIndex": 1212,
+		"_madeFromString": "化工设备"
 	},
 	{
-		"id": 136,
 		"name": "机枪弹箱",
+		"id": 136,
 		"sid": "1113",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -3252,11 +3399,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1113
+		"gridIndex": 1113,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 137,
 		"name": "钛化弹箱",
+		"id": 137,
 		"sid": "1213",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -3275,11 +3423,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1213
+		"gridIndex": 1213,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 138,
 		"name": "超合金弹箱",
+		"id": 138,
 		"sid": "1313",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -3298,11 +3447,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1313
+		"gridIndex": 1313,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 139,
 		"name": "炮弹组",
+		"id": 139,
 		"sid": "1414",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -3321,11 +3471,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1414
+		"gridIndex": 1414,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 140,
 		"name": "高爆炮弹组",
+		"id": 140,
 		"sid": "1514",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -3346,11 +3497,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1514
+		"gridIndex": 1514,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 141,
 		"name": "晶石炮弹组",
+		"id": 141,
 		"sid": "1614",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -3371,11 +3523,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1614
+		"gridIndex": 1614,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 142,
 		"name": "等离子胶囊",
+		"id": 142,
 		"sid": "1413",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -3396,11 +3549,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1413
+		"gridIndex": 1413,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 143,
 		"name": "反物质胶囊",
+		"id": 143,
 		"sid": "1513",
 		"type": "ASSEMBLE",
 		"timeSpend": 120,
@@ -3422,11 +3576,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1513
+		"gridIndex": 1513,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 144,
 		"name": "导弹组",
+		"id": 144,
 		"sid": "1114",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -3449,11 +3604,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1114
+		"gridIndex": 1114,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 145,
 		"name": "超音速导弹组",
+		"id": 145,
 		"sid": "1214",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -3476,11 +3632,12 @@
 		"resultCounts": [
 			2
 		],
-		"gridIndex": 1214
+		"gridIndex": 1214,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 146,
 		"name": "引力导弹组",
+		"id": 146,
 		"sid": "1314",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -3501,11 +3658,12 @@
 		"resultCounts": [
 			3
 		],
-		"gridIndex": 1314
+		"gridIndex": 1314,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 147,
 		"name": "地面战斗机-E型",
+		"id": 147,
 		"sid": "1707",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -3528,11 +3686,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1707
+		"gridIndex": 1707,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 148,
 		"name": "地面战斗机-A型",
+		"id": 148,
 		"sid": "1708",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -3555,11 +3714,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1708
+		"gridIndex": 1708,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 149,
 		"name": "地面战斗机-F型",
+		"id": 149,
 		"sid": "1709",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -3582,11 +3742,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1709
+		"gridIndex": 1709,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 150,
 		"name": "太空战斗机-A型",
+		"id": 150,
 		"sid": "1710",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -3609,11 +3770,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1710
+		"gridIndex": 1710,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 151,
 		"name": "太空战斗机-F型",
+		"id": 151,
 		"sid": "1711",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -3636,11 +3798,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1711
+		"gridIndex": 1711,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 105,
 		"name": "动力引擎",
+		"id": 105,
 		"sid": "1310",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -3659,11 +3822,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1310
+		"gridIndex": 1310,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 152,
 		"name": "战场分析基站",
+		"id": 152,
 		"sid": "2508",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -3686,11 +3850,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2506
+		"gridIndex": 2506,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 153,
 		"name": "矩阵研究站 Mk.II",
+		"id": 153,
 		"sid": "2409",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -3713,11 +3878,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2409
+		"gridIndex": 2409,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 154,
 		"name": "制造台 Mk.IV",
+		"id": 154,
 		"sid": "2407",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -3740,11 +3906,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2407
+		"gridIndex": 2407,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 155,
 		"name": "熔炉 Mk.III",
+		"id": 155,
 		"sid": "2403",
 		"type": "ASSEMBLE",
 		"handcraft": true,
@@ -3767,11 +3934,12 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 2403
+		"gridIndex": 2403,
+		"_madeFromString": "制造台"
 	},
 	{
-		"id": 156,
 		"name": "金色燃料棒",
+		"id": 156,
 		"sid": "1610",
 		"type": "ASSEMBLE",
 		"timeSpend": 1920,
@@ -3793,6 +3961,7 @@
 		"resultCounts": [
 			1
 		],
-		"gridIndex": 1610
+		"gridIndex": 1610,
+		"_madeFromString": "制造台"
 	}
 ]

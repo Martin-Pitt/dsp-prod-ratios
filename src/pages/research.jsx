@@ -14,6 +14,7 @@ function pinResearch(tech) {
 	if(state.research.value.includes(tech)) return;
 	if(tech.items) for(let item of tech.items) {
 		let itemRecipe = Recipes.find(recipe => recipe.results.includes(item));
+		if(!itemRecipe) continue;
 		let itemTech = Techs.find(tech => tech.unlockRecipes?.includes(itemRecipe.id));
 		if(itemTech) pinResearch(itemTech);
 	}
@@ -44,11 +45,13 @@ function unpinResearch(tech) {
 
 function hoverResearch(tech, set = new Set()) {
 	// if(state.research.value.includes(tech)) return set;
+	if(set.has(tech)) return set;
 	set.add(tech);
 	if(tech.preTechs) for(let preTech of tech.preTechs) hoverResearch(TechsByID.get(preTech), set);
 	if(tech.preTechsImplicit) for(let preTech of tech.preTechsImplicit) hoverResearch(TechsByID.get(preTech), set);
 	if(tech.items) for(let item of tech.items) {
 		let itemRecipe = Recipes.find(recipe => recipe.results.includes(item));
+		if(!itemRecipe) continue;
 		let itemTech = Techs.find(tech => tech.unlockRecipes?.includes(itemRecipe.id));
 		if(itemTech) hoverResearch(itemTech, set);
 	}

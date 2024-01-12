@@ -31,6 +31,39 @@ import CSSVariables from './css/variables.js';
 
 
 // Debugging & DevTools fun
+
+// Super cool DSP ASCII logo by TheEagerCoder from: https://github.com/TheEagerCoder/dspcalc/blob/945770548ad51fe573bb45aca135b8a0913937e4/dspcalc_v0_1.py#L349-L378C67
+console.log([
+	"                                                   __          ",
+	"                                                _,/ /          ",
+	"                                              _/,_ /           ",
+	"                     ____,-M\-----.___     _/’,/M /            ",
+	"                 _,-!!!!!!!!M\        ‘-’’’ ,/M/,/             ",
+	"              ,-’!!!!!!!!!!!|M|______     _/M/ /               ",
+	"            ,/!\M\!!!!!!!!MMMMMMMMMM‘-./’M/  ‘._               ",
+	"          ,/!!!!!\MM!!!’MMMMMMMMMMMMMMMMM,/      \             ",
+	"         /!!!!!!!!!!‘MMMMMMMMMMMMMMMMMMM/         \            ",
+	"        /!!!!!!!!!!!MMMMMMMMMMMMMMMMMM/’           ‘.          ",
+	"       /!!!!!!!!!!!MMMMMMMMMMMMMMMMM/’              ‘.         ",
+	"      /gggg!!!!!!!|MMMMMMMMMM/’   ‘’                 ‘:        ",
+	"     ;!!!!!PPPPPPPMMMMMMMMMM|                         ‘}       ",
+	"     |!!!!!!!!!!!!MMMMMMMMMMM\                         ]       ",
+	"     |!!!!!!!!!!!!!MMMMMMMMMM/ ,,                      |       ",
+	"     |!!!!!!!!!!!!,MMMMMMMMP/ /MM\                     |       ",
+	"     {!!!!!!!!!’PPP MMMMMP/ /’MMMM\                    ]       ",
+	"     {!!!!!’PPP       YM/ /’MMMMMMM\                  ;        ",
+	"      :PPP’             ,/MMMMMMMMMM|                ;         ",
+	"       \               /MMMMMMMMMMMM|               ;          ",
+	"        \            /’MMMMMMMMMMMMM;              /           ",
+	"         \         /’MMMMMMMMMMMMMM/              /            ",
+	"          ‘.     /’MMMMMMMMMMMMMM/’             /’             ",
+	"            ‘\  /MMMMMMMMMMMMMM/’            _/’               ",
+	"            /’/M/’   \MMMMMM/             _,’                  ",
+	"          ,//M/’ ,-.____             __,-’                     ",
+	"         //M/’_/’       ‘-----------’                          ",
+	"        /M__/’                                                 ",
+	"       /,/                                                     "
+].join('\n'));
 console.log('Hey there! Want to play with the internal data? These are exposed on `window.…` for you to play with');
 const Debuggables = {
 	Meta, Techs, Recipes, Items, Locale,

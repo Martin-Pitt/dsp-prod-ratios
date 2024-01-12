@@ -21,4 +21,5 @@
 @import url('./css/pages/research.css');
 @import url('./css/pages/reference.css');
 @import url('./css/pages/tips.css');
+@import url('./css/pages/community.css');
 @layer reset, skeleton, components, pages;

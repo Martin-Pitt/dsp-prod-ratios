@@ -23,7 +23,9 @@ export default function Header(props) {
 			<div class="links">
 				<NavLink class="link" href="/calculator">Calculator</NavLink>
 				<NavLink class={classNames('link', { 'has-research': state.research.value.length > 0 })} href="/research">Research</NavLink>
-				<NavLink class="link" href="/reference" data-wip>Reference</NavLink>
+				{/* <NavLink class="link" href="/reference" data-wip>Reference</NavLink> */}
+				<NavLink class="link" href="/community">Community</NavLink>
+				<NavLink class="link" href="/tips">Tips</NavLink>
 			</div>
 			<a class="github" rel="noreferrer" target="_blank" href="https://github.com/Martin-Pitt/dsp-prod-ratios">
 				<img class="icon" src={iconGithub} alt=""/>

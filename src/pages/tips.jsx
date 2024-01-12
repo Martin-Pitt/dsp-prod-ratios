@@ -22,48 +22,52 @@ export default function Tips(props) {
 				<h2>
 					Tips & Tricks
 				</h2>
-				<p>
-					{state.research.value && (
-						<label class="spoilers">
-							Hide items/buildings not researched: <input type="checkbox" checked={!state.showHiddenUpgrades.value} onInput={onHideSpoilers}/>
-						</label>
-					)}
-				</p>
+				{state.research.value.length? (<p>
+					<label class="spoilers">
+						Hide items/buildings not researched: <input type="checkbox" checked={!state.showHiddenUpgrades.value} onInput={onHideSpoilers}/>
+					</label>
+				</p>) : null}
+				
+				{/*
+					Beginner tips section?
+					https://www.reddit.com/r/Dyson_Sphere_Program/comments/18xyqe1/new_player_looking_for_advice_that_doesnt_ruin/
+				*/}
+				
 				<h3>
 					Gameplay
 				</h3>
 				<ul>
 					<li>
-						Keep in mind that the <Item id={2303} named/> production speed is <span class="quantity">{AssemblerProductionSpeed.get(2303)}x</span>
+						<Item id={2303} named/> production speed is <span class="quantity">{AssemblerProductionSpeed.get(2303)}x</span> rather than <span class="quantity">1x</span>
 					</li>
 					<li>
-						It is essential to automate all your buildings as soon as they are unlocked. Get away from handcrafting, DSP is more focused on automation.
-						An area that automates your buildings is what we call a Mall.
+						It is essential to automate the crafting of buildings as they are unlocked. An area that automates items for you is what we call a Mall.
 					</li>
 					<li>
 						Aim to produce at least <span class="per">1 per second</span> of each research matrix.
 					</li>
-					<li>
+					{/* <li>
 						<Item id={1011} named/> is an important rare resource. Most commonly you will find gas giants that produce <Item id={1011} name/>, or you can find <Item id={1011} name/> veins on some planets.
 					</li>
 					<li>
 						Second most important is <Item id={1116} named/>. You can find some planets that have <Item id={1116} name/> oceans, which you can use a Water Pump on to gather the <Item id={1116} name/>.
-					</li>
+					</li> */}
 					<li class={classNames({ 'is-locked': isLockedItem(2030, 1131) })}>
 						<span>
 							Getting lost? <span class={classNames({ 'is-locked': isLockedItem(2030) })}>You can misuse <Item id={2030} named plural/> as beacons (see below).</span>
-							<span class={classNames({ 'is-locked': isLockedItem(1131) })}>Use <Item id={1131} named plural/> to paint lines or zones that can be seen from afar or when quickly popping into orbit.</span>
+							<span class={classNames({ 'is-locked': isLockedItem(1131) })}> Use <Item id={1131} named plural/> to paint lines or zones that can be seen from afar or from orbit.</span>
 						</span>
 					</li>
 					<li>
-						How you play the game is up to you! But for a general outline of what game progression can be like:
+						How you play the game is up to you! Here are the general stages of a game:
 						<ul>
 							<li>
 								Beginning — Belt Spaghetti, Early Mall<br/>
-								Your belts are a mess, factories spot the landscape as you avoid the terrain. It's a good idea to start an early mall — a factory complex that slowly produces the essentials and all the buildings for you
+								Your belts and your factory will be a mess and that is ok. You will rebuild your factory later.
+								It's a good idea to start your mall — this is a factory complex that slowly produces all the buildings &amp; items you need.
 							</li>
 							<li>
-								Mid Game — <abbr title="Planetary Logistics Station">PLS</abbr>, Big Mall, Modularising Factory<br/>
+								Mid Game — <abbr title="Planetary Logistics Station">PLS</abbr>, Bigger Mall, Factory can be built in modules<br/>
 								Everything changes when you unlock <Tech id={1604} named/>. You want to unlock this as soon as possible. This stage is when you can remove the older factory and start rebuilding everything as modules or blocks around your logistic stations for input and output. You can then turn these modules into blueprints.
 							</li>
 							<li>
@@ -118,7 +122,7 @@ export default function Tips(props) {
 					</li>
 					<li class={classNames({ 'is-locked': isLockedItem(2312) })}>
 						<span>
-							Unfinished Dyson Shells can contribute to lag. Recommend building it one shell at a time.
+							Unfinished Dyson Shells can contribute to a lot of lag. Recommend building it one shell at a time.
 						</span>
 					</li>
 					<li class={classNames({ 'is-locked': isLockedItem(1141) })}>
@@ -136,6 +140,9 @@ export default function Tips(props) {
 						<span>
 							[Low Impact] <Item id={2012} named plural/> perform a tiny bit better than <Item id={2013} named plural/>.
 						</span>
+					</li>
+					<li>
+						There have been issues reported with the drivers of nvidia graphics cards
 					</li>
 				</ul>
 				<h3 class={classNames({ 'is-locked': isLockedItem(2030) })}>

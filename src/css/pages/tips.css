@@ -27,6 +27,10 @@
 		margin-top: calc(10px + 2vw);
 	}
 	
+	main.tips .page-content > :is(h2, h3, h4) + * {
+		margin-top: calc(5px + 1vw);
+	}
+	
 	
 	main.tips h2 {}
 	main.tips h3 {}

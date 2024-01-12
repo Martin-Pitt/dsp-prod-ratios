@@ -136,6 +136,8 @@ const RelativePaths = [
 	'/calculator',
 	'/research',
 	'/reference',
+	'/community',
+	'/tips',
 ];
 
 function ViewTransitionPage(props) {

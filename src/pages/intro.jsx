@@ -61,6 +61,18 @@ export default function Intro(props) {
 				</h3>
 				
 				<ul class="tiles">
+					{/* <li class="tile tile--translation">
+						<p>
+							Some kind of a tile to catch the users attention in their own language
+							and direct them on how to install translation for DSP?
+							
+							<Link class="link" href="/translation">Translation</Link>
+							
+							Could provide instructions for JP from their community & also other languages via Crowdin — The translation discord had some instructions for installing translations w/ the new rise of the dark fog update
+							however it seems really complicated steps to follow?
+						</p>
+					</li> */}
+					
 					<li class="tile tile--research">
 						<p>
 							<b>Started a new game?</b> Avoid spoilers by setting your current progress in&nbsp;<Link class="link" href="/research">Research</Link>

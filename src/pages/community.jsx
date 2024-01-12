@@ -95,7 +95,8 @@ export default function Community(props) {
 							href: 'https://eurydia.github.io/project-dsp-calculator/',
 						},
 						{
-							name: 'tohalukmanhakim\'s Dyson Sphere Program Helper (Veins Utilisation &amp; Logistics Carrier Engine stats)',
+							// name: 'tohalukmanhakim\'s Dyson Sphere Program Helper (Veins Utilisation &amp; Logistics Carrier Engine stats)',
+							name: 'Dyson Sphere Program Helper (VU & Logi speed calc)',
 							href: 'https://tohalukmanhakim.github.io/dyson-sphere-program-helper/',
 						},
 						{

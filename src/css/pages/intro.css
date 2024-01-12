@@ -59,6 +59,12 @@
 		max-width: 1000px;
 	}
 	
+	@media (max-width: 640px) {
+		main.intro .tiles {
+			grid-template-columns: 1fr;
+		}
+	}
+	
 	main.intro .tile {
 		position: relative;
 		z-index: 1;

@@ -75,7 +75,8 @@
 	
 	@media (max-width: 640px) {
 		.app-header .link {
-			padding: 8px 20px 10px;
+			padding: 8px calc(2vw) 10px;
+			font-size: 10px + 1vw;
 		}
 	}
 	

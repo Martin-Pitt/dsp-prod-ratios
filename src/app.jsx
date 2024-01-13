@@ -22,7 +22,6 @@ import Header from './components/header.jsx';
 import Intro from './pages/intro.jsx';
 import Calculator from './pages/calculator.jsx';
 import Research from './pages/research.jsx';
-import ResearchOld from './pages/research-old.jsx';
 import Reference from './pages/reference.jsx';
 import Settings from './pages/settings.jsx';
 import Tips from './pages/tips.jsx';
@@ -195,13 +194,6 @@ export function App(props) {
 					<ViewTransitionPage
 						path="/research"
 						element={<Research/>}
-						title="Research | DSP Ratios"
-						description="Research tree of Dyson Sphere Program, finetune the calculator to your current tech progress"
-						canonical="https://dsp-ratios.com/research"
-					/>
-					<ViewTransitionPage
-						path="/research-old"
-						element={<ResearchOld/>}
 						title="Research | DSP Ratios"
 						description="Research tree of Dyson Sphere Program, finetune the calculator to your current tech progress"
 						canonical="https://dsp-ratios.com/research"

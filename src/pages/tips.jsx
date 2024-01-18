@@ -28,6 +28,10 @@ export default function Tips(props) {
 					</label>
 				</p>) : null}
 				
+				<p>
+					Remember to <a class="link external-link" target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/16dKGU5dfRpUtI2dtEJnBiUps4ccdzQnFscYnl93Q7v8/edit#heading=h.vj0x2ei0tuq6">check out <b>DSP for Dummies</b> as well, which has it's own tips section</a>.
+				</p>
+				
 				{/*
 					Beginner tips section?
 					https://www.reddit.com/r/Dyson_Sphere_Program/comments/18xyqe1/new_player_looking_for_advice_that_doesnt_ruin/
@@ -87,6 +91,9 @@ export default function Tips(props) {
 						<span>
 							Instead of using several <Item id={2020} named plural/>, you can use a single <Item id={2103} named/>{isLockedItem(2104)? null : <> or <Item id={2104} named/></>} set to storage to act as big <Item id={2020} named/> with multiple outputs. This can save a lot of space compared to complex belt layouts and cut down on buildings.
 						</span>
+					</li>
+					<li>
+						Watch out for grid crush! Since the building grid is overlaid on a sphere, the square grid compresses towards the poles. Buildings can collide in these compressed areas which can prevent you from pasting a blueprint.
 					</li>
 				</ul>
 				<h3>

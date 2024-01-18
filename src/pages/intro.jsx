@@ -160,7 +160,7 @@ export default function Intro(props) {
 					DSP Ratios is meant to be mobile friendly, so you can use it on your phone while playing.
 				</p>
 				<p class="credits">
-					Handmade with 💜 by Nexii  |  2023<br/>
+					Handmade with 💜 by Nexii  |  2023–2024<br/>
 					<br/>
 					Data and assets from Dyson Sphere Program are the intellectual property of Youthcat Studio.<br/>
 					Additional assets obtained through The Noun Project with a Royalty-Free License.

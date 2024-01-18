@@ -68,19 +68,19 @@ export default function Tips(props) {
 							<li>
 								Beginning — Belt Spaghetti, Early Mall<br/>
 								Your belts and your factory will be a mess and that is ok. You will rebuild your factory later.
-								It's a good idea to start your mall — this is a factory complex that slowly produces all the buildings &amp; items you need.
+								It's a good idea to start your mall — this is a factory complex that slowly produces all the buildings &amp; items you need. <span class={classNames({ 'is-locked': isLockedItem(2313) })}>Start spraying <Item id={1141} named/> to help with complex products.</span>
 							</li>
 							<li>
 								Mid Game — <abbr title="Planetary Logistics Station">PLS</abbr>, Bigger Mall, Factory can be built in modules<br/>
-								Everything changes when you unlock <Tech id={1604} named/>. You want to unlock this as soon as possible. This stage is when you can remove the older factory and start rebuilding everything as modules or blocks around your logistic stations for input and output. You can then turn these modules into blueprints.
+								Everything changes when you unlock <Tech id={1604} named/>. You want to unlock this as soon as possible. This stage is when you can remove the older factory and start rebuilding everything as modules or blocks around your logistic stations for input and output. You can then turn these modules into blueprints. <span class={classNames({ 'is-locked': isLockedItem(2313) })}>Use proliferator on intermediate products.</span>
 							</li>
 							<li>
 								Late Game — PLS, <abbr title="Interstellar Logistics Station">ILS</abbr>, Orbital Collectors, Heavy blueprint usage<br/>
-								As you expand across planets and building an interstellar empire, you will find yourself designing your own blueprints.
+								As you expand across planets and building an interstellar empire, you will find yourself designing your own blueprints. <span class={classNames({ 'is-locked': isLockedItem(2313) })}>If you have proliferator to spare you can use it on raw materials as well.</span> You can start building Dyson Swarms and then Dyson Spheres.
 							</li>
 							<li>
 								End Game — <Tech id={1508} named/><br/>
-								Research deep into <Tech id={3606} named/> to extend your resources and conquer all the stars.
+								Research deep into <Tech id={3606} named/> (&ge;Lv70), to extend your rarest resources like <Item id={1016} named plural/>, and conquer the stars.
 							</li>
 						</ul>
 					</li>

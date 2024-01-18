@@ -85,6 +85,14 @@ console.log(...Object.keys(Debuggables));
 // for(let name in Debuggables) console.log(`window.${name}`, Debuggables[name]);
 
 
+if(window.plausible) plausible('pageview', {
+	props: {
+		generation: new Date(Meta.generatedAt).toISOString().substring(0, 10),
+		version: Meta.version,
+	},
+});
+
+
 
 function Page(props) {
 	// if(document.startViewTransition)

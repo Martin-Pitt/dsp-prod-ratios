@@ -87,8 +87,11 @@ console.log(...Object.keys(Debuggables));
 
 if(window.plausible) plausible('pageview', {
 	props: {
-		generation: new Date(Meta.generatedAt).toISOString().substring(0, 10),
+		// generation: new Date(Meta.generatedAt).toISOString().substring(0, 10),
 		version: Meta.version,
+		// buildAt: import.meta.env.BUILD_AT? new Date(import.meta.env.BUILD_AT).toISOString().substr(0, 16).replace('T', ' ') : 'dev'
+		// commit: import.meta.env.BUILD_COMMIT,
+		build: `${new Date(import.meta.env.BUILD_AT).toISOString().substring(0, 10)} ${import.meta.env.BUILD_COMMIT}`,
 	},
 });
 

@@ -3396,9 +3396,9 @@
 		],
 		"description": "I炮弹组",
 		"_AmmoDesc": {
-			"blastRadius0": 7,
+			"blastRadius0": 4.5,
 			"blastRadius1": 11,
-			"blastFallof": 0.20000000298023224,
+			"blastFallof": 0.5,
 			"moveAcc": 0,
 			"turnAcc": 0,
 			"hitIndex": 10,
@@ -3462,9 +3462,9 @@
 		],
 		"description": "I高爆炮弹组",
 		"_AmmoDesc": {
-			"blastRadius0": 7,
+			"blastRadius0": 6,
 			"blastRadius1": 13,
-			"blastFallof": 0.20000000298023224,
+			"blastFallof": 0.30000001192092896,
 			"moveAcc": 0,
 			"turnAcc": 0,
 			"hitIndex": 10,

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'preact/hooks';
 import { Router } from 'preact-router';
+import { JSONRecurse } from './data/reviver.js';
 import {
 	Meta, Techs, Recipes, Items, Locale,
 	TechsByID, RecipesByID, ItemsByID, EpochsByTech,
@@ -79,6 +80,7 @@ const Debuggables = {
 	StringFromTypes,
 	state,
 	CSSVariables,
+	JSONRecurse,
 };
 Object.assign(window, Debuggables);
 console.log(...Object.keys(Debuggables));

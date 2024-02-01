@@ -103,6 +103,15 @@ export default function Community(props) {
 							name: 'DSP Mall Analyzer (Beta)',
 							href: 'https://dsp-mall-analyzer-beta.netlify.app/',
 						},
+						
+						{
+							name: 'DSP Blueprint Editor',
+							href: 'https://huww98.github.io/dsp_blueprint_editor/',
+						},
+						{
+							name: 'Dyson Sphere Vertical Conveyor Blueprint Tool',
+							href: 'https://dsp.rika.link/',
+						},
 					].map(link => <Link {...link}/>)}
 				</ul>
 				

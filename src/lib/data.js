@@ -534,7 +534,7 @@ export function getItemTips(item) {
 	if(item.heatValue) category.push(t('顿号燃料'));
 	if(item.ammoType) category.push(t('顿号弹药'));
 	const props = [];
-	for(let index = 0; index < item.descFields)
+	for(let index = 0; index < item.descFields; ++index)
 	{
 		let id = item.descFields[index];
 		if(id === 40) continue;
@@ -584,7 +584,7 @@ export function getItemTips(item) {
 		props.push({
 			key: '',
 			value: t('不能手动制造'),
-		})
+		});
 	}
 	
 	if(state.itemsUnlockedSet.value.has(item.id))

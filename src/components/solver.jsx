@@ -31,7 +31,7 @@ function renderNumber(factor) {
 	let left = string.substr(0, repeats.index);
 	let right = repeats[1];
 	if(right === '0') return left.slice(0, -1);
-	return <>{left}{right}&#773;</>
+	return <>{left}<span class="repeat">{right}</span></>;
 }
 
 function renderTime(time) {

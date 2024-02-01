@@ -228,6 +228,11 @@
 		padding: 10px 20px;
 	}
 	
-	
-	
+
+	.solver .repeat {
+		text-decoration-line: overline;
+		text-decoration-style: solid;
+		text-decoration-thickness: 2px;
+		text-underline-offset: 0;
+	}
 }

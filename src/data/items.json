@@ -231,7 +231,7 @@
 			},
 			{
 				"key": "机甲功率提升",
-				"value": "-0%"
+				"value": "0%"
 			},
 			{
 				"key": "采集自",
@@ -286,7 +286,7 @@
 			},
 			{
 				"key": "机甲功率提升",
-				"value": "-0%"
+				"value": "0%"
 			},
 			{
 				"key": "采集自",
@@ -1171,7 +1171,7 @@
 		"type": "COMPONENT",
 		"stackSize": 100,
 		"iconPath": "Icons/ItemRecipe/partical-capacitor",
-		"gridIndex": 1113,
+		"gridIndex": 1605,
 		"productive": true,
 		"enemyDropLevel": 5,
 		"enemyDropRange": [
@@ -1491,7 +1491,7 @@
 		"type": "PRODUCT",
 		"stackSize": 200,
 		"iconPath": "Icons/ItemRecipe/solar-collector",
-		"gridIndex": 1808,
+		"gridIndex": 1708,
 		"productive": true,
 		"descFields": [
 			36,
@@ -1504,7 +1504,7 @@
 			{
 				"key": "使用寿命",
 				"value": [
-					"?",
+					"-",
 					"空格秒"
 				]
 			},
@@ -1526,20 +1526,33 @@
 		"stackSize": 20,
 		"isFluid": true,
 		"iconPath": "Icons/ItemRecipe/water",
+		"modelIndex": 494,
+		"bombType": "LIQUID",
 		"gridIndex": 1107,
 		"unlockKey": 2306,
 		"productive": true,
 		"descFields": [
 			0,
+			71,
 			40
 		],
 		"description": "I水",
+		"_AmmoDesc": {
+			"blastRadius0": 9,
+			"blastRadius1": 15,
+			"blastFallof": 0.5,
+			"moveAcc": 0,
+			"turnAcc": 0,
+			"hitIndex": 45,
+			"parameter0": 1
+		},
 		"_typeString": "自然资源",
 		"_descFields": [
 			{
 				"key": "采集自",
 				"value": "海洋"
 			},
+			null,
 			{
 				"key": "增产剂效果",
 				"value": "额外产出"
@@ -1853,7 +1866,7 @@
 			":type": "BigInt",
 			"value": "1200000000"
 		},
-		"gridIndex": 1213,
+		"gridIndex": 1113,
 		"unlockKey": 1122,
 		"preTechOverride": 1506,
 		"descFields": [
@@ -2268,7 +2281,7 @@
 			},
 			{
 				"key": "机甲功率提升",
-				"value": "-0%"
+				"value": "0%"
 			},
 			{
 				"key": "制造于",
@@ -2357,12 +2370,15 @@
 		"type": "COMPONENT",
 		"stackSize": 100,
 		"iconPath": "Icons/ItemRecipe/explosive",
+		"modelIndex": 489,
+		"ability": 10000,
 		"heatValue": {
 			":type": "BigInt",
 			"value": "9720000"
 		},
 		"reactorInc": 0.800000011920929,
 		"fuelType": 1,
+		"bombType": "EXPLOSIVE_UNIT",
 		"gridIndex": 1307,
 		"productive": true,
 		"enemyDropLevel": 2,
@@ -2378,9 +2394,21 @@
 			3,
 			31,
 			1,
-			40
+			40,
+			71,
+			55,
+			61
 		],
 		"description": "I燃烧单元",
+		"_AmmoDesc": {
+			"blastRadius0": 9,
+			"blastRadius1": 13,
+			"blastFallof": 0.5,
+			"moveAcc": 0,
+			"turnAcc": 0,
+			"hitIndex": 40,
+			"parameter0": 1
+		},
 		"_typeString": "组件",
 		"_fuelTypeString": "化学",
 		"_descFields": [
@@ -2403,7 +2431,13 @@
 			{
 				"key": "增产剂效果",
 				"value": "额外产出"
-			}
+			},
+			null,
+			{
+				"key": "伤害类型",
+				"value": "-"
+			},
+			null
 		]
 	},
 	{
@@ -2412,12 +2446,15 @@
 		"type": "COMPONENT",
 		"stackSize": 100,
 		"iconPath": "Icons/ItemRecipe/high-explosive",
+		"modelIndex": 490,
+		"ability": 32000,
 		"heatValue": {
 			":type": "BigInt",
 			"value": "21600000"
 		},
 		"reactorInc": 1.2000000476837158,
 		"fuelType": 1,
+		"bombType": "EXPLOSIVE_UNIT",
 		"gridIndex": 1407,
 		"productive": true,
 		"enemyDropLevel": 4,
@@ -2432,9 +2469,21 @@
 			3,
 			31,
 			1,
-			40
+			40,
+			71,
+			55,
+			61
 		],
 		"description": "I爆破单元",
+		"_AmmoDesc": {
+			"blastRadius0": 9,
+			"blastRadius1": 15,
+			"blastFallof": 0.5,
+			"moveAcc": 0,
+			"turnAcc": 0,
+			"hitIndex": 41,
+			"parameter0": 2
+		},
 		"_typeString": "组件",
 		"_fuelTypeString": "化学",
 		"_descFields": [
@@ -2457,7 +2506,13 @@
 			{
 				"key": "增产剂效果",
 				"value": "额外产出"
-			}
+			},
+			null,
+			{
+				"key": "伤害类型",
+				"value": "-"
+			},
+			null
 		]
 	},
 	{
@@ -2466,12 +2521,15 @@
 		"type": "COMPONENT",
 		"stackSize": 100,
 		"iconPath": "Icons/ItemRecipe/particle-explosive",
+		"modelIndex": 491,
+		"ability": 75000,
 		"heatValue": {
 			":type": "BigInt",
 			"value": "54000000"
 		},
 		"reactorInc": 2,
 		"fuelType": 1,
+		"bombType": "EXPLOSIVE_UNIT",
 		"gridIndex": 1507,
 		"productive": true,
 		"enemyDropLevel": 6,
@@ -2486,9 +2544,21 @@
 			3,
 			31,
 			1,
-			40
+			40,
+			71,
+			55,
+			61
 		],
 		"description": "I晶石爆破单元",
+		"_AmmoDesc": {
+			"blastRadius0": 9,
+			"blastRadius1": 17,
+			"blastFallof": 0.5,
+			"moveAcc": 0,
+			"turnAcc": 0,
+			"hitIndex": 42,
+			"parameter0": 3
+		},
 		"_typeString": "组件",
 		"_fuelTypeString": "化学",
 		"_descFields": [
@@ -2511,7 +2581,13 @@
 			{
 				"key": "增产剂效果",
 				"value": "额外产出"
-			}
+			},
+			null,
+			{
+				"key": "伤害类型",
+				"value": "-"
+			},
+			null
 		]
 	},
 	{
@@ -2520,7 +2596,7 @@
 		"type": "COMPONENT",
 		"stackSize": 100,
 		"iconPath": "Icons/ItemRecipe/gravity-lens",
-		"gridIndex": 1605,
+		"gridIndex": 1705,
 		"productive": true,
 		"mechaMaterialId": 21,
 		"enemyDropLevel": 7,
@@ -2553,7 +2629,7 @@
 		"type": "COMPONENT",
 		"stackSize": 100,
 		"iconPath": "Icons/ItemRecipe/space-warper",
-		"gridIndex": 1812,
+		"gridIndex": 1704,
 		"productive": true,
 		"enemyDropLevel": 7,
 		"enemyDropRange": [
@@ -2733,7 +2809,7 @@
 			},
 			{
 				"key": "飞行速度",
-				"value": "-"
+				"value": "- m/s"
 			},
 			{
 				"key": "制造于",
@@ -2771,7 +2847,7 @@
 			},
 			{
 				"key": "飞行速度",
-				"value": "-"
+				"value": "- m/s"
 			},
 			{
 				"key": "制造于",
@@ -2822,7 +2898,7 @@
 		"type": "MATERIAL",
 		"stackSize": 100,
 		"iconPath": "Icons/ItemRecipe/frame-material",
-		"gridIndex": 1809,
+		"gridIndex": 1709,
 		"productive": true,
 		"mechaMaterialId": 24,
 		"descFields": [
@@ -2848,7 +2924,7 @@
 		"type": "COMPONENT",
 		"stackSize": 100,
 		"iconPath": "Icons/ItemRecipe/dyson-sphere-component",
-		"gridIndex": 1810,
+		"gridIndex": 1710,
 		"productive": true,
 		"descFields": [
 			1,
@@ -2875,7 +2951,7 @@
 		"isEntity": true,
 		"iconPath": "Icons/ItemRecipe/rocket",
 		"modelIndex": 75,
-		"gridIndex": 1811,
+		"gridIndex": 1711,
 		"descFields": [
 			1,
 			40
@@ -2902,7 +2978,7 @@
 		"iconPath": "Icons/ItemRecipe/terrain-tool",
 		"buildIndex": 901,
 		"buildMode": 4,
-		"gridIndex": 1704,
+		"gridIndex": 1706,
 		"productive": true,
 		"enemyDropLevel": 2,
 		"enemyDropRange": [
@@ -2972,11 +3048,11 @@
 			},
 			{
 				"key": "喷涂加速效果",
-				"value": "+25.0%"
+				"value": "+25%"
 			},
 			{
 				"key": "额外电力消耗",
-				"value": "+30.0%"
+				"value": "+30%"
 			},
 			{
 				"key": "燃料类型",
@@ -3040,15 +3116,15 @@
 			},
 			{
 				"key": "喷涂增产效果",
-				"value": "+20.0%"
+				"value": "+20%"
 			},
 			{
 				"key": "喷涂加速效果",
-				"value": "+50.0%"
+				"value": "+50%"
 			},
 			{
 				"key": "额外电力消耗",
-				"value": "+70.0%"
+				"value": "+70%"
 			},
 			{
 				"key": "燃料类型",
@@ -3112,15 +3188,15 @@
 			},
 			{
 				"key": "喷涂增产效果",
-				"value": "+25.0%"
+				"value": "+25%"
 			},
 			{
 				"key": "喷涂加速效果",
-				"value": "+100.0%"
+				"value": "+100%"
 			},
 			{
 				"key": "额外电力消耗",
-				"value": "+150.0%"
+				"value": "+150%"
 			},
 			{
 				"key": "燃料类型",
@@ -3150,7 +3226,7 @@
 		"type": "PRODUCT",
 		"stackSize": 100,
 		"iconPath": "Icons/ItemRecipe/bullet",
-		"hpMax": 20,
+		"hpMax": 30,
 		"ability": 700,
 		"ammoType": "BULLET",
 		"gridIndex": 1312,
@@ -3168,7 +3244,7 @@
 		"_descFields": [
 			{
 				"key": "伤害",
-				"value": "7.0 hp"
+				"value": "7 hp"
 			},
 			{
 				"key": "伤害类型",
@@ -3181,7 +3257,7 @@
 			{
 				"key": "弹药数量",
 				"value": [
-					20,
+					30,
 					"弹药数量单位"
 				]
 			},
@@ -3201,8 +3277,8 @@
 		"type": "PRODUCT",
 		"stackSize": 100,
 		"iconPath": "Icons/ItemRecipe/bullet-titanium",
-		"hpMax": 20,
-		"ability": 1300,
+		"hpMax": 30,
+		"ability": 1600,
 		"ammoType": "BULLET",
 		"gridIndex": 1412,
 		"productive": true,
@@ -3219,7 +3295,7 @@
 		"_descFields": [
 			{
 				"key": "伤害",
-				"value": "13.0 hp"
+				"value": "16 hp"
 			},
 			{
 				"key": "伤害类型",
@@ -3232,7 +3308,7 @@
 			{
 				"key": "弹药数量",
 				"value": [
-					20,
+					30,
 					"弹药数量单位"
 				]
 			},
@@ -3252,8 +3328,8 @@
 		"type": "PRODUCT",
 		"stackSize": 100,
 		"iconPath": "Icons/ItemRecipe/bullet-alloy",
-		"hpMax": 20,
-		"ability": 3200,
+		"hpMax": 30,
+		"ability": 3600,
 		"ammoType": "BULLET",
 		"gridIndex": 1512,
 		"productive": true,
@@ -3270,7 +3346,7 @@
 		"_descFields": [
 			{
 				"key": "伤害",
-				"value": "32.0 hp"
+				"value": "36 hp"
 			},
 			{
 				"key": "伤害类型",
@@ -3283,7 +3359,7 @@
 			{
 				"key": "弹药数量",
 				"value": [
-					20,
+					30,
 					"弹药数量单位"
 				]
 			},
@@ -3303,10 +3379,11 @@
 		"type": "PRODUCT",
 		"stackSize": 100,
 		"iconPath": "Icons/ItemRecipe/cannonball",
+		"modelIndex": 486,
 		"hpMax": 12,
 		"ability": 4500,
 		"ammoType": "CANNON",
-		"gridIndex": 1613,
+		"gridIndex": 1513,
 		"productive": true,
 		"descFields": [
 			48,
@@ -3318,11 +3395,20 @@
 			40
 		],
 		"description": "I炮弹组",
+		"_AmmoDesc": {
+			"blastRadius0": 7,
+			"blastRadius1": 11,
+			"blastFallof": 0.20000000298023224,
+			"moveAcc": 0,
+			"turnAcc": 0,
+			"hitIndex": 10,
+			"parameter0": 0
+		},
 		"_typeString": "成品",
 		"_descFields": [
 			{
 				"key": "伤害",
-				"value": "45.0 hp"
+				"value": "45 hp"
 			},
 			{
 				"key": "伤害类型",
@@ -3359,10 +3445,11 @@
 		"type": "PRODUCT",
 		"stackSize": 100,
 		"iconPath": "Icons/ItemRecipe/cannonball-cluster",
+		"modelIndex": 487,
 		"hpMax": 12,
 		"ability": 10000,
 		"ammoType": "CANNON",
-		"gridIndex": 1713,
+		"gridIndex": 1613,
 		"productive": true,
 		"descFields": [
 			48,
@@ -3374,11 +3461,20 @@
 			40
 		],
 		"description": "I高爆炮弹组",
+		"_AmmoDesc": {
+			"blastRadius0": 7,
+			"blastRadius1": 13,
+			"blastFallof": 0.20000000298023224,
+			"moveAcc": 0,
+			"turnAcc": 0,
+			"hitIndex": 10,
+			"parameter0": 0
+		},
 		"_typeString": "成品",
 		"_descFields": [
 			{
 				"key": "伤害",
-				"value": "100.0 hp"
+				"value": "100 hp"
 			},
 			{
 				"key": "伤害类型",
@@ -3415,10 +3511,11 @@
 		"type": "PRODUCT",
 		"stackSize": 100,
 		"iconPath": "Icons/ItemRecipe/cannonball-alloy",
+		"modelIndex": 488,
 		"hpMax": 12,
 		"ability": 22000,
 		"ammoType": "CANNON",
-		"gridIndex": 1813,
+		"gridIndex": 1713,
 		"productive": true,
 		"descFields": [
 			48,
@@ -3430,11 +3527,20 @@
 			40
 		],
 		"description": "I晶石炮弹组",
+		"_AmmoDesc": {
+			"blastRadius0": 7,
+			"blastRadius1": 15,
+			"blastFallof": 0.15000000596046448,
+			"moveAcc": 0,
+			"turnAcc": 0,
+			"hitIndex": 10,
+			"parameter0": 0
+		},
 		"_typeString": "成品",
 		"_descFields": [
 			{
 				"key": "伤害",
-				"value": "220.0 hp"
+				"value": "220 hp"
 			},
 			{
 				"key": "伤害类型",
@@ -3490,7 +3596,7 @@
 		"_descFields": [
 			{
 				"key": "伤害",
-				"value": "300.0 hp"
+				"value": "300 hp"
 			},
 			{
 				"key": "伤害类型",
@@ -3546,7 +3652,7 @@
 		"_descFields": [
 			{
 				"key": "伤害",
-				"value": "1500.0 hp"
+				"value": "1500 hp"
 			},
 			{
 				"key": "伤害类型",
@@ -3587,7 +3693,7 @@
 		"hpMax": 24,
 		"ability": 2100,
 		"ammoType": "MISSILE",
-		"gridIndex": 1313,
+		"gridIndex": 1213,
 		"productive": true,
 		"descFields": [
 			48,
@@ -3605,13 +3711,14 @@
 			"blastFallof": 1.100000023841858,
 			"moveAcc": 1,
 			"turnAcc": 1,
-			"hitIndex": 12
+			"hitIndex": 12,
+			"parameter0": 0
 		},
 		"_typeString": "成品",
 		"_descFields": [
 			{
 				"key": "伤害",
-				"value": "21.0 hp"
+				"value": "21 hp"
 			},
 			{
 				"key": "伤害类型",
@@ -3652,7 +3759,7 @@
 		"hpMax": 24,
 		"ability": 5400,
 		"ammoType": "MISSILE",
-		"gridIndex": 1413,
+		"gridIndex": 1313,
 		"productive": true,
 		"descFields": [
 			48,
@@ -3670,13 +3777,14 @@
 			"blastFallof": 0.8500000238418579,
 			"moveAcc": 3,
 			"turnAcc": 3,
-			"hitIndex": 12
+			"hitIndex": 12,
+			"parameter0": 0
 		},
 		"_typeString": "成品",
 		"_descFields": [
 			{
 				"key": "伤害",
-				"value": "54.0 hp"
+				"value": "54 hp"
 			},
 			{
 				"key": "伤害类型",
@@ -3717,7 +3825,7 @@
 		"hpMax": 24,
 		"ability": 12000,
 		"ammoType": "MISSILE",
-		"gridIndex": 1513,
+		"gridIndex": 1413,
 		"productive": true,
 		"descFields": [
 			48,
@@ -3735,13 +3843,14 @@
 			"blastFallof": 0.75,
 			"moveAcc": 5,
 			"turnAcc": 5,
-			"hitIndex": 12
+			"hitIndex": 12,
+			"parameter0": 0
 		},
 		"_typeString": "成品",
 		"_descFields": [
 			{
 				"key": "伤害",
-				"value": "120.0 hp"
+				"value": "120 hp"
 			},
 			{
 				"key": "伤害类型",
@@ -3773,6 +3882,108 @@
 		]
 	},
 	{
+		"name": "电磁干扰胶囊",
+		"id": 1612,
+		"type": "PRODUCT",
+		"stackSize": 100,
+		"iconPath": "Icons/ItemRecipe/em-disturb",
+		"modelIndex": 492,
+		"hpMax": 60,
+		"ability": 50,
+		"bombType": "EMCAPSULE",
+		"gridIndex": 1812,
+		"productive": true,
+		"descFields": [
+			68,
+			69,
+			70,
+			52,
+			1,
+			40,
+			71
+		],
+		"description": "I电磁干扰胶囊",
+		"_AmmoDesc": {
+			"blastRadius0": 15,
+			"blastRadius1": 25,
+			"blastFallof": 0.5,
+			"moveAcc": 0,
+			"turnAcc": 0,
+			"hitIndex": 43,
+			"parameter0": 1
+		},
+		"_typeString": "成品",
+		"_descFields": [
+			null,
+			null,
+			null,
+			{
+				"key": "弹药类型",
+				"value": "-"
+			},
+			{
+				"key": "制造于",
+				"value": "制造台"
+			},
+			{
+				"key": "增产剂效果",
+				"value": "额外产出"
+			},
+			null
+		]
+	},
+	{
+		"name": "电磁压制胶囊",
+		"id": 1613,
+		"type": "PRODUCT",
+		"stackSize": 100,
+		"iconPath": "Icons/ItemRecipe/em-suppress",
+		"modelIndex": 493,
+		"hpMax": 60,
+		"ability": 80,
+		"bombType": "EMCAPSULE",
+		"gridIndex": 1813,
+		"productive": true,
+		"descFields": [
+			68,
+			69,
+			70,
+			52,
+			1,
+			40,
+			71
+		],
+		"description": "I电磁压制胶囊",
+		"_AmmoDesc": {
+			"blastRadius0": 16,
+			"blastRadius1": 28,
+			"blastFallof": 0.5,
+			"moveAcc": 0,
+			"turnAcc": 0,
+			"hitIndex": 44,
+			"parameter0": 2
+		},
+		"_typeString": "成品",
+		"_descFields": [
+			null,
+			null,
+			null,
+			{
+				"key": "弹药类型",
+				"value": "-"
+			},
+			{
+				"key": "制造于",
+				"value": "制造台"
+			},
+			{
+				"key": "增产剂效果",
+				"value": "额外产出"
+			},
+			null
+		]
+	},
+	{
 		"name": "地面战斗机-E型",
 		"id": 5101,
 		"type": "PRODUCT",
@@ -3798,7 +4009,10 @@
 		"description": "I地面战斗机-E型",
 		"_typeString": "成品",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "15 hp"
+			},
 			null,
 			{
 				"key": "伤害类型",
@@ -3848,7 +4062,10 @@
 		"description": "I地面战斗机-A型",
 		"_typeString": "成品",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "15 hp"
+			},
 			null,
 			{
 				"key": "伤害类型",
@@ -3898,7 +4115,10 @@
 		"description": "I地面战斗机-F型",
 		"_typeString": "成品",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "15 hp"
+			},
 			null,
 			{
 				"key": "伤害类型",
@@ -3975,7 +4195,10 @@
 		},
 		"_typeString": "成品",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "80 hp"
+			},
 			null,
 			{
 				"key": "伤害类型",
@@ -4057,7 +4280,10 @@
 		},
 		"_typeString": "成品",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "80 hp"
+			},
 			{
 				"key": "伤害类型",
 				"value": "-"
@@ -4123,7 +4349,7 @@
 		"miningFrom": "黑雾残骸",
 		"stackSize": 100,
 		"iconPath": "Icons/ItemRecipe/silicon-neuron",
-		"gridIndex": 1709,
+		"gridIndex": 1809,
 		"unlockKey": -2,
 		"productive": true,
 		"enemyDropLevel": 6,
@@ -4157,7 +4383,7 @@
 		"miningFrom": "黑雾残骸",
 		"stackSize": 100,
 		"iconPath": "Icons/ItemRecipe/reassembler",
-		"gridIndex": 1711,
+		"gridIndex": 1811,
 		"unlockKey": -2,
 		"productive": true,
 		"enemyDropLevel": 5,
@@ -4191,7 +4417,7 @@
 		"miningFrom": "黑雾残骸",
 		"stackSize": 50,
 		"iconPath": "Icons/ItemRecipe/negentropy",
-		"gridIndex": 1710,
+		"gridIndex": 1810,
 		"unlockKey": -2,
 		"productive": true,
 		"enemyDropLevel": 7,
@@ -4266,7 +4492,7 @@
 		},
 		"reactorInc": 0.20000000298023224,
 		"fuelType": 1,
-		"gridIndex": 1708,
+		"gridIndex": 1808,
 		"unlockKey": -2,
 		"productive": true,
 		"enemyDropLevel": 1,
@@ -4370,10 +4596,13 @@
 		},
 		"_typeString": "物流运输",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "3 hp"
+			},
 			{
 				"key": "运载速度",
-				"value": "6.00/s"
+				"value": "6/s"
 			},
 			{
 				"key": "制造于",
@@ -4441,10 +4670,13 @@
 		},
 		"_typeString": "物流运输",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "3 hp"
+			},
 			{
 				"key": "运载速度",
-				"value": "12.00/s"
+				"value": "12/s"
 			},
 			{
 				"key": "制造于",
@@ -4512,10 +4744,13 @@
 		},
 		"_typeString": "物流运输",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "3 hp"
+			},
 			{
 				"key": "运载速度",
-				"value": "30.00/s"
+				"value": "30/s"
 			},
 			{
 				"key": "制造于",
@@ -4537,7 +4772,8 @@
 		"upgrades": [
 			2011,
 			2012,
-			2013
+			2013,
+			2014
 		],
 		"isEntity": true,
 		"canBuild": true,
@@ -4633,11 +4869,14 @@
 		},
 		"_typeString": "物流运输",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "3 hp"
+			},
 			{
 				"key": "运送速度",
 				"value": [
-					"2",
+					2,
 					"往返每秒每格"
 				]
 			},
@@ -4673,7 +4912,8 @@
 		"upgrades": [
 			2011,
 			2012,
-			2013
+			2013,
+			2014
 		],
 		"isEntity": true,
 		"canBuild": true,
@@ -4769,11 +5009,14 @@
 		},
 		"_typeString": "物流运输",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "3 hp"
+			},
 			{
 				"key": "运送速度",
 				"value": [
-					"3",
+					3,
 					"往返每秒每格"
 				]
 			},
@@ -4809,7 +5052,8 @@
 		"upgrades": [
 			2011,
 			2012,
-			2013
+			2013,
+			2014
 		],
 		"isEntity": true,
 		"canBuild": true,
@@ -4905,11 +5149,14 @@
 		},
 		"_typeString": "物流运输",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "3 hp"
+			},
 			{
 				"key": "运送速度",
 				"value": [
-					"6",
+					6,
 					"往返每秒每格"
 				]
 			},
@@ -4936,6 +5183,145 @@
 		]
 	},
 	{
+		"name": "集装分拣器",
+		"id": 2014,
+		"type": "LOGISTICS",
+		"subId": 4,
+		"stackSize": 200,
+		"grade": 4,
+		"upgrades": [
+			2011,
+			2012,
+			2013,
+			2014
+		],
+		"isEntity": true,
+		"canBuild": true,
+		"iconPath": "Icons/ItemRecipe/inserter-4",
+		"modelIndex": 483,
+		"modelCount": 1,
+		"hpMax": 300,
+		"buildIndex": 307,
+		"buildMode": 3,
+		"gridIndex": 2304,
+		"descFields": [
+			53,
+			20,
+			72,
+			73,
+			11,
+			12,
+			1,
+			40
+		],
+		"description": "I集装分拣器",
+		"_BuildConditionConfig": {
+			"landPoints": [],
+			"landOffset": 0,
+			"allowBuildInWater": false,
+			"needBuildInWaterTech": false,
+			"waterPoints": [],
+			"waterTypes": [],
+			"multiLevel": false,
+			"multiLevelAllowInserter": false,
+			"multiLevelAllowRotate": false,
+			"multiLevelAlternativeIds": [],
+			"multiLevelAlternativeYawTransposes": [],
+			"addonType": "NONE",
+			"lapJoint": [
+				0,
+				0,
+				0
+			],
+			"veinMiner": false,
+			"oilMiner": false,
+			"dragBuild": false,
+			"dragBuildDistOverride": [
+				0,
+				0
+			],
+			"blueprintBoxSizeOverride": [
+				0,
+				0
+			]
+		},
+		"_InserterDesc": {
+			"stt": 30000,
+			"delay": 0,
+			"canStack": true,
+			"stackSize": 2
+		},
+		"_SlotConfig": {
+			"selectCenter": [
+				0,
+				0.5,
+				0
+			],
+			"selectSize": [
+				1,
+				1,
+				1
+			],
+			"selectDistance": 34,
+			"selectAlpha": 0.6000000238418579,
+			"signHeight": 0.8999999761581421,
+			"signSize": 0.8999999761581421,
+			"overrideBarWidth": 1,
+			"overrideBarHeight": 0.699999988079071,
+			"slotPoses": [],
+			"insertPoses": [],
+			"addonAreaCol": [],
+			"addonAreaCenter": []
+		},
+		"_MinimapConfig": {
+			"type": 0
+		},
+		"_PowerDesc": {
+			"consumer": true,
+			"charger": false,
+			"workEnergyPerTick": {
+				":type": "BigInt",
+				"value": "2400"
+			},
+			"idleEnergyPerTick": {
+				":type": "BigInt",
+				"value": "150"
+			}
+		},
+		"_typeString": "物流运输",
+		"_descFields": [
+			{
+				"key": "最大耐久度",
+				"value": "3 hp"
+			},
+			{
+				"key": "运送速度",
+				"value": [
+					10,
+					"往返每秒每格"
+				]
+			},
+			null,
+			null,
+			{
+				"key": "工作功率",
+				"value": "144 KW"
+			},
+			{
+				"key": "待机功率",
+				"value": "9000W"
+			},
+			{
+				"key": "制造于",
+				"value": "制造台"
+			},
+			{
+				"key": "增产剂效果",
+				"value": "加速生产"
+			}
+		]
+	},
+	{
 		"name": "四向分流器",
 		"id": 2020,
 		"type": "LOGISTICS",
@@ -4946,7 +5332,7 @@
 		"modelIndex": 38,
 		"modelCount": 3,
 		"hpMax": 500,
-		"buildIndex": 307,
+		"buildIndex": 308,
 		"buildMode": 1,
 		"gridIndex": 2204,
 		"descFields": [
@@ -5039,7 +5425,10 @@
 		},
 		"_typeString": "物流运输",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "5 hp"
+			},
 			{
 				"key": "接口数量",
 				"value": 4
@@ -5065,7 +5454,7 @@
 		"modelIndex": 257,
 		"modelCount": 1,
 		"hpMax": 500,
-		"buildIndex": 308,
+		"buildIndex": 602,
 		"buildMode": 1,
 		"gridIndex": 2205,
 		"descFields": [
@@ -5169,7 +5558,10 @@
 		},
 		"_typeString": "物流运输",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "5 hp"
+			},
 			{
 				"key": "工作功率",
 				"value": "144 KW"
@@ -5293,7 +5685,10 @@
 		},
 		"_typeString": "物流运输",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "3 hp"
+			},
 			{
 				"key": "工作功率",
 				"value": "36 KW"
@@ -5446,7 +5841,10 @@
 		},
 		"_typeString": "生产设备",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "8 hp"
+			},
 			{
 				"key": "工作功率",
 				"value": "90 KW"
@@ -5566,7 +5964,10 @@
 		},
 		"_typeString": "物流运输",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "12 hp"
+			},
 			{
 				"key": "最大充能功率",
 				"value": "9 MW"
@@ -5713,7 +6114,10 @@
 		},
 		"_typeString": "物流运输",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "8 hp"
+			},
 			{
 				"key": "仓储空间",
 				"value": [
@@ -5853,7 +6257,10 @@
 		},
 		"_typeString": "物流运输",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "16 hp"
+			},
 			{
 				"key": "仓储空间",
 				"value": [
@@ -5978,7 +6385,10 @@
 		},
 		"_typeString": "物流运输",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "12 hp"
+			},
 			{
 				"key": "流体容量",
 				"value": 10000
@@ -6130,10 +6540,13 @@
 		},
 		"_typeString": "生产设备",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "10 hp"
+			},
 			{
 				"key": "制造速度",
-				"value": "0.750x"
+				"value": "0.75x"
 			},
 			{
 				"key": "工作功率",
@@ -6290,10 +6703,13 @@
 		},
 		"_typeString": "生产设备",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "10 hp"
+			},
 			{
 				"key": "制造速度",
-				"value": "1.000x"
+				"value": "1x"
 			},
 			{
 				"key": "工作功率",
@@ -6450,10 +6866,13 @@
 		},
 		"_typeString": "生产设备",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "10 hp"
+			},
 			{
 				"key": "制造速度",
-				"value": "1.500x"
+				"value": "1.5x"
 			},
 			{
 				"key": "工作功率",
@@ -6610,10 +7029,13 @@
 		},
 		"_typeString": "生产设备",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "30 hp"
+			},
 			{
 				"key": "制造速度",
-				"value": "3.000x"
+				"value": "3x"
 			},
 			{
 				"key": "工作功率",
@@ -6726,14 +7148,17 @@
 		},
 		"_typeString": "电力运输",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "5 hp"
+			},
 			{
 				"key": "连接长度",
-				"value": "22.00 m"
+				"value": "22 m"
 			},
 			{
 				"key": "覆盖范围",
-				"value": "10.00 m"
+				"value": "10 m"
 			},
 			{
 				"key": "制造于",
@@ -6843,14 +7268,17 @@
 		},
 		"_typeString": "电力运输",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "6 hp"
+			},
 			{
 				"key": "连接长度",
-				"value": "45.00 m"
+				"value": "45 m"
 			},
 			{
 				"key": "覆盖范围",
-				"value": "6.00 m"
+				"value": "6 m"
 			},
 			{
 				"key": "工作功率",
@@ -6979,14 +7407,17 @@
 		},
 		"_typeString": "电力运输",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "8 hp"
+			},
 			{
 				"key": "连接长度",
-				"value": "53.00 m"
+				"value": "53 m"
 			},
 			{
 				"key": "覆盖范围",
-				"value": "26.00 m"
+				"value": "26 m"
 			},
 			{
 				"key": "待机功率",
@@ -7147,7 +7578,10 @@
 		},
 		"_typeString": "电力设备",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "8 hp"
+			},
 			{
 				"key": "发电类型",
 				"value": "离子流"
@@ -7158,11 +7592,11 @@
 			},
 			{
 				"key": "连接长度",
-				"value": "16.00 m"
+				"value": "16 m"
 			},
 			{
 				"key": "覆盖范围",
-				"value": "7.20 m"
+				"value": "7.2 m"
 			},
 			{
 				"key": "制造于",
@@ -7322,7 +7756,10 @@
 		},
 		"_typeString": "电力设备",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "20 hp"
+			},
 			{
 				"key": "发电类型",
 				"value": "离子流"
@@ -7492,7 +7929,10 @@
 		},
 		"_typeString": "电力设备",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "20 hp"
+			},
 			{
 				"key": "发电类型",
 				"value": "离子流"
@@ -7639,7 +8079,10 @@
 		},
 		"_typeString": "电力设备",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "20 hp"
+			},
 			{
 				"key": "发电类型",
 				"value": "地热"
@@ -7672,7 +8115,7 @@
 		"hpMax": 1200,
 		"buildIndex": 201,
 		"buildMode": 1,
-		"gridIndex": 2304,
+		"gridIndex": 2305,
 		"descFields": [
 			53,
 			18,
@@ -7794,7 +8237,10 @@
 		},
 		"_typeString": "采矿设备",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "12 hp"
+			},
 			{
 				"key": "开采对象",
 				"value": "-"
@@ -7835,7 +8281,7 @@
 		"hpMax": 2000,
 		"buildIndex": 202,
 		"buildMode": 1,
-		"gridIndex": 2305,
+		"gridIndex": 2306,
 		"descFields": [
 			53,
 			18,
@@ -7974,7 +8420,10 @@
 		},
 		"_typeString": "采矿设备",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "20 hp"
+			},
 			{
 				"key": "开采对象",
 				"value": "-"
@@ -8014,7 +8463,7 @@
 		"hpMax": 1000,
 		"buildIndex": 203,
 		"buildMode": 1,
-		"gridIndex": 2306,
+		"gridIndex": 2307,
 		"descFields": [
 			53,
 			18,
@@ -8145,7 +8594,10 @@
 		},
 		"_typeString": "抽水设备",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "10 hp"
+			},
 			{
 				"key": "开采对象",
 				"value": "-"
@@ -8308,10 +8760,13 @@
 		},
 		"_typeString": "生产设备",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "10 hp"
+			},
 			{
 				"key": "制造速度",
-				"value": "1.000x"
+				"value": "1x"
 			},
 			{
 				"key": "工作功率",
@@ -8467,10 +8922,13 @@
 		},
 		"_typeString": "生产设备",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "15 hp"
+			},
 			{
 				"key": "制造速度",
-				"value": "2.000x"
+				"value": "2x"
 			},
 			{
 				"key": "工作功率",
@@ -8626,10 +9084,13 @@
 		},
 		"_typeString": "生产设备",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "30 hp"
+			},
 			{
 				"key": "制造速度",
-				"value": "3.000x"
+				"value": "3x"
 			},
 			{
 				"key": "工作功率",
@@ -8662,7 +9123,7 @@
 		"hpMax": 2000,
 		"buildIndex": 204,
 		"buildMode": 1,
-		"gridIndex": 2307,
+		"gridIndex": 2308,
 		"descFields": [
 			53,
 			18,
@@ -8789,7 +9250,10 @@
 		},
 		"_typeString": "抽油设备",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "20 hp"
+			},
 			{
 				"key": "开采对象",
 				"value": "-"
@@ -8829,7 +9293,7 @@
 		"hpMax": 1800,
 		"buildIndex": 506,
 		"buildMode": 1,
-		"gridIndex": 2308,
+		"gridIndex": 2309,
 		"descFields": [
 			53,
 			22,
@@ -8958,10 +9422,13 @@
 		},
 		"_typeString": "生产设备",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "18 hp"
+			},
 			{
 				"key": "制造速度",
-				"value": "1.000x"
+				"value": "1x"
 			},
 			{
 				"key": "工作功率",
@@ -8999,7 +9466,7 @@
 		"hpMax": 1200,
 		"buildIndex": 508,
 		"buildMode": 1,
-		"gridIndex": 2310,
+		"gridIndex": 2311,
 		"descFields": [
 			53,
 			22,
@@ -9122,10 +9589,13 @@
 		},
 		"_typeString": "生产设备",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "12 hp"
+			},
 			{
 				"key": "制造速度",
-				"value": "1.000x"
+				"value": "1x"
 			},
 			{
 				"key": "工作功率",
@@ -9163,7 +9633,7 @@
 		"hpMax": 1200,
 		"buildIndex": 509,
 		"buildMode": 1,
-		"gridIndex": 2311,
+		"gridIndex": 2312,
 		"descFields": [
 			53,
 			22,
@@ -9286,10 +9756,13 @@
 		},
 		"_typeString": "生产设备",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "12 hp"
+			},
 			{
 				"key": "制造速度",
-				"value": "2.000x"
+				"value": "2x"
 			},
 			{
 				"key": "工作功率",
@@ -9322,7 +9795,7 @@
 		"hpMax": 1200,
 		"buildIndex": 507,
 		"buildMode": 1,
-		"gridIndex": 2309,
+		"gridIndex": 2310,
 		"descFields": [
 			53,
 			11,
@@ -9431,7 +9904,10 @@
 		},
 		"_typeString": "生产设备",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "12 hp"
+			},
 			{
 				"key": "工作功率",
 				"value": "720 KW"
@@ -9601,7 +10077,10 @@
 		},
 		"_typeString": "电力设备",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "10 hp"
+			},
 			{
 				"key": "发电类型",
 				"value": "离子流"
@@ -9755,7 +10234,10 @@
 		},
 		"_typeString": "电力储存",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "12 hp"
+			},
 			{
 				"key": "输入功率",
 				"value": "1 MW"
@@ -9925,7 +10407,10 @@
 		"_typeString": "电力储存",
 		"_fuelTypeString": "储存",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "12 hp"
+			},
 			{
 				"key": "燃料类型",
 				"value": "储存"
@@ -10085,10 +10570,13 @@
 		},
 		"_typeString": "生产设备",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "20 hp"
+			},
 			{
 				"key": "弹射速度",
-				"value": "20.00/min"
+				"value": "20/min"
 			},
 			{
 				"key": "工作功率",
@@ -10242,7 +10730,10 @@
 		},
 		"_typeString": "电力设备",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "30 hp"
+			},
 			{
 				"key": "发电类型",
 				"value": "离子流"
@@ -10403,10 +10894,13 @@
 		},
 		"_typeString": "生产设备",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "80 hp"
+			},
 			{
 				"key": "发射速度",
-				"value": "5.00/min"
+				"value": "5/min"
 			},
 			{
 				"key": "工作功率",
@@ -10438,7 +10932,7 @@
 		"modelIndex": 45,
 		"modelCount": 1,
 		"hpMax": 3000,
-		"buildIndex": 605,
+		"buildIndex": 606,
 		"buildMode": 1,
 		"gridIndex": 2109,
 		"descFields": [
@@ -10554,7 +11048,10 @@
 		},
 		"_typeString": "电力运输",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "30 hp"
+			},
 			{
 				"key": "输入功率",
 				"value": "54 MW"
@@ -10590,7 +11087,7 @@
 		"hpMax": 3000,
 		"buildIndex": 510,
 		"buildMode": 1,
-		"gridIndex": 2312,
+		"gridIndex": 2313,
 		"descFields": [
 			53,
 			22,
@@ -10719,10 +11216,13 @@
 		},
 		"_typeString": "生产设备",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "30 hp"
+			},
 			{
 				"key": "制造速度",
-				"value": "1.000x"
+				"value": "1x"
 			},
 			{
 				"key": "工作功率",
@@ -10879,7 +11379,10 @@
 		},
 		"_typeString": "电力设备",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "20 hp"
+			},
 			{
 				"key": "发电类型",
 				"value": "离子流"
@@ -10913,7 +11416,7 @@
 		"modelIndex": 49,
 		"modelCount": 1,
 		"hpMax": 5000,
-		"buildIndex": 602,
+		"buildIndex": 603,
 		"buildMode": 1,
 		"gridIndex": 2212,
 		"dropRate": 0.5,
@@ -11074,7 +11577,10 @@
 		},
 		"_typeString": "物流运输",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "50 hp"
+			},
 			{
 				"key": "仓储物品",
 				"value": [
@@ -11115,7 +11621,7 @@
 		"modelIndex": 50,
 		"modelCount": 1,
 		"hpMax": 8000,
-		"buildIndex": 603,
+		"buildIndex": 604,
 		"buildMode": 1,
 		"gridIndex": 2213,
 		"dropRate": 0.5,
@@ -11276,7 +11782,10 @@
 		},
 		"_typeString": "物流运输",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "80 hp"
+			},
 			{
 				"key": "仓储物品",
 				"value": [
@@ -11318,7 +11827,7 @@
 		"modelIndex": 117,
 		"modelCount": 1,
 		"hpMax": 8000,
-		"buildIndex": 604,
+		"buildIndex": 605,
 		"buildMode": 1,
 		"gridIndex": 2214,
 		"descFields": [
@@ -11453,7 +11962,10 @@
 		"_PowerDesc": {},
 		"_typeString": "物流运输",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "80 hp"
+			},
 			{
 				"key": "开采对象",
 				"value": "气态行星"
@@ -11617,7 +12129,10 @@
 		},
 		"_typeString": "科研设备",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "12 hp"
+			},
 			{
 				"key": "制造速度",
 				"value": "NaNx"
@@ -11785,7 +12300,10 @@
 		},
 		"_typeString": "科研设备",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "30 hp"
+			},
 			{
 				"key": "制造速度",
 				"value": "NaNx"
@@ -11955,7 +12473,7 @@
 			"maxAttackRange": 44,
 			"spaceAttackRange": 0,
 			"pitchUpMax": 70,
-			"pitchDownMax": 70,
+			"pitchDownMax": 90,
 			"damageScale": 1,
 			"muzzleY": 3.700000047683716,
 			"aimSpeed": 1.2000000476837158,
@@ -11970,7 +12488,10 @@
 		},
 		"_typeString": "武器",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "30 hp"
+			},
 			{
 				"key": "防御塔类型",
 				"value": "动能武器"
@@ -11990,7 +12511,7 @@
 			{
 				"key": "射击速度",
 				"value": [
-					"6.00",
+					6,
 					"发每秒"
 				]
 			},
@@ -12143,7 +12664,7 @@
 			"maxAttackRange": 40,
 			"spaceAttackRange": 0,
 			"pitchUpMax": 70,
-			"pitchDownMax": 70,
+			"pitchDownMax": 90,
 			"damageScale": 2,
 			"muzzleY": 4.5,
 			"aimSpeed": 1.399999976158142,
@@ -12158,7 +12679,10 @@
 		},
 		"_typeString": "武器",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "30 hp"
+			},
 			{
 				"key": "防御塔类型",
 				"value": "能量武器"
@@ -12173,7 +12697,7 @@
 			},
 			{
 				"key": "每秒伤害",
-				"value": "120.00 hp"
+				"value": "120 hp"
 			},
 			{
 				"key": "工作功率",
@@ -12348,7 +12872,10 @@
 		},
 		"_typeString": "武器",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "30 hp"
+			},
 			{
 				"key": "防御塔类型",
 				"value": "动能加爆破武器"
@@ -12368,7 +12895,7 @@
 			{
 				"key": "射击速度",
 				"value": [
-					"1.00",
+					1,
 					"发每秒"
 				]
 			},
@@ -12545,7 +13072,10 @@
 		},
 		"_typeString": "武器",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "30 hp"
+			},
 			{
 				"key": "防御塔类型",
 				"value": "能量武器"
@@ -12565,7 +13095,7 @@
 			{
 				"key": "射击速度",
 				"value": [
-					"1.00",
+					1,
 					"发每秒"
 				]
 			},
@@ -12743,7 +13273,10 @@
 		},
 		"_typeString": "武器",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "30 hp"
+			},
 			{
 				"key": "防御塔类型",
 				"value": "爆破武器"
@@ -12767,7 +13300,7 @@
 			{
 				"key": "射击速度",
 				"value": [
-					"2.50",
+					2.5,
 					"发每秒"
 				]
 			},
@@ -12790,6 +13323,204 @@
 		]
 	},
 	{
+		"name": "干扰塔",
+		"id": 3006,
+		"type": "TURRET",
+		"stackSize": 50,
+		"isEntity": true,
+		"canBuild": true,
+		"iconPath": "Icons/ItemRecipe/turret-disturb",
+		"modelIndex": 422,
+		"modelCount": 1,
+		"hpMax": 3000,
+		"buildIndex": 708,
+		"buildMode": 5,
+		"gridIndex": 2508,
+		"descFields": [
+			53,
+			51,
+			56,
+			57,
+			52,
+			49,
+			11,
+			12,
+			1,
+			40
+		],
+		"description": "I干扰塔",
+		"_BuildConditionConfig": {
+			"landPoints": [
+				[
+					2.5,
+					0.30000001192092896,
+					2.5
+				],
+				[
+					-2.5,
+					0.30000001192092896,
+					2.5
+				],
+				[
+					2.5,
+					0.30000001192092896,
+					-2.5
+				],
+				[
+					-2.5,
+					0.30000001192092896,
+					-2.5
+				]
+			],
+			"landOffset": 0,
+			"allowBuildInWater": false,
+			"needBuildInWaterTech": false,
+			"waterPoints": [],
+			"waterTypes": [],
+			"multiLevel": false,
+			"multiLevelAllowInserter": false,
+			"multiLevelAllowRotate": false,
+			"multiLevelAlternativeIds": [],
+			"multiLevelAlternativeYawTransposes": [],
+			"addonType": "BELT",
+			"lapJoint": [
+				0,
+				0,
+				0
+			],
+			"veinMiner": false,
+			"oilMiner": false,
+			"dragBuild": true,
+			"dragBuildDistOverride": [
+				6.5,
+				6.5
+			],
+			"blueprintBoxSizeOverride": [
+				0,
+				0
+			]
+		},
+		"_SlotConfig": {
+			"selectCenter": [
+				0,
+				3.5,
+				0
+			],
+			"selectSize": [
+				6,
+				7,
+				6
+			],
+			"selectDistance": 34,
+			"selectAlpha": 0.6000000238418579,
+			"signHeight": 3,
+			"signSize": 2,
+			"overrideBarWidth": 0,
+			"overrideBarHeight": 0,
+			"slotPoses": [],
+			"insertPoses": [],
+			"addonAreaCol": [
+				null
+			],
+			"addonAreaCenter": [
+				[
+					0,
+					0,
+					0
+				]
+			]
+		},
+		"_PowerDesc": {
+			"consumer": true,
+			"charger": false,
+			"workEnergyPerTick": {
+				":type": "BigInt",
+				"value": "20000"
+			},
+			"idleEnergyPerTick": {
+				":type": "BigInt",
+				"value": "1500"
+			}
+		},
+		"_MinimapConfig": {
+			"type": 3
+		},
+		"_TurretDesc": {
+			"vsCaps": 15,
+			"defaultDir": [
+				0,
+				0,
+				1
+			],
+			"ROF": 2000,
+			"roundInterval": 600000,
+			"muzzleInterval": 0,
+			"muzzleCount": 1,
+			"minAttackRange": 0,
+			"maxAttackRange": 40,
+			"spaceAttackRange": 0,
+			"pitchUpMax": 90,
+			"pitchDownMax": 90,
+			"damageScale": 1,
+			"muzzleY": 0,
+			"aimSpeed": 0,
+			"uniformAngleSpeed": 0,
+			"angleAcc": 0,
+			"addEnemyExpBase": 0,
+			"addEnemyThreatBase": 0,
+			"addEnemyHatredBase": 0,
+			"addEnemyExpCoef": 0,
+			"addEnemyThreatCoef": 0,
+			"addEnemyHatredCoef": 0
+		},
+		"_typeString": "武器",
+		"_descFields": [
+			{
+				"key": "最大耐久度",
+				"value": "30 hp"
+			},
+			{
+				"key": "防御塔类型",
+				"value": "-"
+			},
+			{
+				"key": "目标类型",
+				"value": "对地"
+			},
+			{
+				"key": "对地防御范围",
+				"value": "40 m"
+			},
+			{
+				"key": "弹药类型",
+				"value": "-"
+			},
+			{
+				"key": "射击速度",
+				"value": [
+					0.2,
+					"发每秒"
+				]
+			},
+			{
+				"key": "工作功率",
+				"value": "1 MW"
+			},
+			{
+				"key": "待机功率",
+				"value": "90 KW"
+			},
+			{
+				"key": "制造于",
+				"value": "制造台"
+			},
+			{
+				"key": "增产剂效果",
+				"value": "加速生产"
+			}
+		]
+	},
+	{
 		"name": "信标",
 		"id": 3007,
 		"type": "DEFENSE",
@@ -12800,9 +13531,9 @@
 		"modelIndex": 403,
 		"modelCount": 1,
 		"hpMax": 3000,
-		"buildIndex": 707,
+		"buildIndex": 709,
 		"buildMode": 1,
-		"gridIndex": 2507,
+		"gridIndex": 2509,
 		"descFields": [
 			53,
 			13,
@@ -12908,18 +13639,21 @@
 		},
 		"_typeString": "防御设施",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "30 hp"
+			},
 			{
 				"key": "连接长度",
-				"value": "60.00 m"
+				"value": "60 m"
 			},
 			{
 				"key": "覆盖范围",
 				"value": [
 					"电力",
-					"14.00 m / ",
+					"14 m / ",
 					"信号",
-					"64.00 m"
+					"64 m"
 				]
 			},
 			{
@@ -12951,9 +13685,9 @@
 		"modelIndex": 402,
 		"modelCount": 1,
 		"hpMax": 3000,
-		"buildIndex": 708,
+		"buildIndex": 710,
 		"buildMode": 1,
-		"gridIndex": 2508,
+		"gridIndex": 2510,
 		"descFields": [
 			53,
 			11,
@@ -13066,7 +13800,10 @@
 		},
 		"_typeString": "防御设施",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "30 hp"
+			},
 			{
 				"key": "工作功率",
 				"value": "24 MW"
@@ -13096,9 +13833,9 @@
 		"modelIndex": 453,
 		"modelCount": 1,
 		"hpMax": 3000,
-		"buildIndex": 706,
+		"buildIndex": 707,
 		"buildMode": 1,
-		"gridIndex": 2506,
+		"gridIndex": 2507,
 		"dropRate": 0.5,
 		"descFields": [
 			53,
@@ -13229,7 +13966,10 @@
 		},
 		"_typeString": "防御设施",
 		"_descFields": [
-			null,
+			{
+				"key": "最大耐久度",
+				"value": "30 hp"
+			},
 			{
 				"key": "工作功率",
 				"value": "2 MW"
@@ -13242,10 +13982,209 @@
 				"key": "覆盖范围",
 				"value": [
 					"建造",
-					"60.00 m / ",
+					"60 m / ",
 					"拾取",
-					"90.00 m"
+					"90 m"
 				]
+			},
+			{
+				"key": "制造于",
+				"value": "制造台"
+			},
+			{
+				"key": "增产剂效果",
+				"value": "加速生产"
+			}
+		]
+	},
+	{
+		"name": "地面电浆炮",
+		"id": 3010,
+		"type": "TURRET",
+		"stackSize": 20,
+		"isEntity": true,
+		"canBuild": true,
+		"iconPath": "Icons/ItemRecipe/turret-plasma-ground",
+		"modelIndex": 482,
+		"modelCount": 1,
+		"hpMax": 3000,
+		"buildIndex": 706,
+		"buildMode": 5,
+		"gridIndex": 2506,
+		"descFields": [
+			53,
+			51,
+			56,
+			57,
+			52,
+			49,
+			11,
+			12,
+			1,
+			40
+		],
+		"description": "I地面电浆炮",
+		"_BuildConditionConfig": {
+			"landPoints": [
+				[
+					2,
+					0.30000001192092896,
+					2
+				],
+				[
+					-2,
+					0.30000001192092896,
+					2
+				],
+				[
+					2,
+					0.30000001192092896,
+					-2
+				],
+				[
+					-2,
+					0.30000001192092896,
+					-2
+				]
+			],
+			"landOffset": 0,
+			"allowBuildInWater": false,
+			"needBuildInWaterTech": false,
+			"waterPoints": [],
+			"waterTypes": [],
+			"multiLevel": false,
+			"multiLevelAllowInserter": false,
+			"multiLevelAllowRotate": false,
+			"multiLevelAlternativeIds": [],
+			"multiLevelAlternativeYawTransposes": [],
+			"addonType": "BELT",
+			"lapJoint": [
+				0,
+				0,
+				0
+			],
+			"veinMiner": false,
+			"oilMiner": false,
+			"dragBuild": true,
+			"dragBuildDistOverride": [
+				10.5,
+				10.5
+			],
+			"blueprintBoxSizeOverride": [
+				0,
+				0
+			]
+		},
+		"_SlotConfig": {
+			"selectCenter": [
+				0,
+				7.5,
+				0
+			],
+			"selectSize": [
+				2.5,
+				15,
+				2.5
+			],
+			"selectDistance": 34,
+			"selectAlpha": 0.6000000238418579,
+			"signHeight": 3,
+			"signSize": 2,
+			"overrideBarWidth": 0,
+			"overrideBarHeight": 0,
+			"slotPoses": [],
+			"insertPoses": [],
+			"addonAreaCol": [
+				null
+			],
+			"addonAreaCenter": [
+				[
+					0,
+					0,
+					0
+				]
+			]
+		},
+		"_PowerDesc": {
+			"consumer": true,
+			"charger": false,
+			"workEnergyPerTick": {
+				":type": "BigInt",
+				"value": "70000"
+			},
+			"idleEnergyPerTick": {
+				":type": "BigInt",
+				"value": "35000"
+			}
+		},
+		"_MinimapConfig": {
+			"type": 3
+		},
+		"_TurretDesc": {
+			"ammoType": "PLASMA",
+			"vsCaps": 15,
+			"defaultDir": [
+				0,
+				0,
+				1
+			],
+			"ROF": 5000,
+			"roundInterval": 600000,
+			"muzzleInterval": 0,
+			"muzzleCount": 1,
+			"minAttackRange": 8,
+			"maxAttackRange": 55,
+			"spaceAttackRange": 0,
+			"pitchUpMax": 90,
+			"pitchDownMax": 90,
+			"damageScale": 1,
+			"muzzleY": 11,
+			"aimSpeed": 0,
+			"uniformAngleSpeed": 0,
+			"angleAcc": 0,
+			"addEnemyExpBase": 1200,
+			"addEnemyThreatBase": 3,
+			"addEnemyHatredBase": 80,
+			"addEnemyExpCoef": 0.20000000298023224,
+			"addEnemyThreatCoef": 0.0010000000474974513,
+			"addEnemyHatredCoef": 0.004999999888241291
+		},
+		"_typeString": "武器",
+		"_descFields": [
+			{
+				"key": "最大耐久度",
+				"value": "30 hp"
+			},
+			{
+				"key": "防御塔类型",
+				"value": "-"
+			},
+			{
+				"key": "目标类型",
+				"value": "对地"
+			},
+			{
+				"key": "对地防御范围",
+				"value": "8 ~ 55 m"
+			},
+			{
+				"key": "弹药类型",
+				"value": "能量胶囊"
+			},
+			{
+				"key": "射击速度",
+				"value": [
+					0.5,
+					"发每秒"
+				]
+			},
+			{
+				"key": "工作功率",
+				"value": "4 MW"
+			},
+			{
+				"key": "待机功率",
+				"value": "2 MW"
 			},
 			{
 				"key": "制造于",

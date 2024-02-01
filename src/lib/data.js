@@ -6,7 +6,11 @@ import items from '../data/items.json';
 import locale from '../data/locale.json';
 
 
-function JSONRecurse(key, value, depth = 0) {
+function JSONRecurse(keyOrJSON, value, depth = 0) {
+	let key;
+	if(typeof keyOrJSON === 'object') value = keyOrJSON;
+	else key = keyOrJSON;
+	
 	if(Array.isArray(value))
 		value = value.map((item, index) => JSONRecurse(index, item, depth + 1));
 	
@@ -18,8 +22,8 @@ function JSONRecurse(key, value, depth = 0) {
 }
 
 
-export const Meta = JSONRecurse(undefined, meta);
-export const Locales = JSONRecurse(undefined, locale);
+export const Meta = JSONRecurse(meta);
+export const Locales = JSONRecurse(locale);
 
 export const Locale = (() => {
 	// TODO: I'd prefer a proper 'best fit' or 'lookup' algorithm here, but also how do we prioritise navigator.languages?
@@ -43,9 +47,18 @@ export const Locale = (() => {
 	return Locales.find(language => language.lcid === 1033) || Locales[0];
 })();
 
-const translateableKeys = ['name', 'description', 'conclusion', 'miningFrom', 'produceFrom'];
+const translateableKeys = [
+	'name',
+	'description',
+	'conclusion',
+	'miningFrom',
+	'produceFrom',
+	'_descFields',
+	'_fuelTypeString',
+	'_typeString',
+];
 function translate(input) {
-	if(typeof input === 'string') return Locale.strings[input];
+	if(typeof input === 'string') return Locale.strings[input] || input;
 	else if(Array.isArray(input)) return input.map(translate);
 	else if(typeof input === 'object')
 	{
@@ -53,19 +66,41 @@ function translate(input) {
 		for(let key in input)
 		{
 			if(!translateableKeys.includes(key)) continue;
-			input[key] = translate(input[key]);
+			else if(key === '_descFields')
+			{
+				for(let field of input[key])
+				{
+					if(!field) continue;
+					field.key = translate(field.key);
+					field.value = translate(field.value);
+				}
+				
+				// input[key] = input[key].map(({ key, value }) =>)
+				
+				// console.log(key, input[key]);
+				// input[key] = input[key].reduce((fields, d) => {
+				// 	if(d) fields[translate(d.key)] = translate(d.value);
+				// 	return fields;
+				// }, {});
+			}
+			
+			else
+			{
+				input[key] = translate(input[key]);
+			}
 		}
 		return input;
 	}
-	else throw new Error('Undefined behaviour for translate');
+	else if(typeof input === 'number') return input;
+	else throw new Error(`Undefined behaviour for translate (${typeof input})`);
 }
 
 export function t(key) { return Locale.strings[key] }
 
 // TODO: Preferred language can potentially change, see 'languagechange' event
-export const Techs = translate(JSONRecurse(undefined, techs));
-export const Recipes = translate(JSONRecurse(undefined, recipes));
-export const Items = translate(JSONRecurse(undefined, items));
+export const Techs = translate(JSONRecurse(techs));
+export const Recipes = translate(JSONRecurse(recipes));
+export const Items = translate(JSONRecurse(items));
 
 // Quick lookups
 export const TechsByID = new Map(Techs.map(tech => [tech.id, tech]));
@@ -488,3 +523,90 @@ Proliferator.Mix = {
 		};
 	})(),
 };
+
+
+
+
+export function getItemTips(item) {
+	const name = item.name;
+	const category = [item._typeString];
+	const description = item.description;
+	if(item.heatValue) category.push(t('顿号燃料'));
+	if(item.ammoType) category.push(t('顿号弹药'));
+	const props = [];
+	for(let index = 0; index < item.descFields)
+	{
+		let id = item.descFields[index];
+		if(id === 40) continue;
+		
+		let field = item._descFields[index];
+		if(!field) continue;
+		
+		props.push(field);
+	}
+	
+	let maincraft, handcraft;
+	for(let recipe of Recipes)
+	{
+		let resultIndex = 100;
+		for(let index = 0; index < recipe.results.length; ++index)
+		{
+			if(recipe.results[index] !== item.id) continue;
+			if(!handcraft && recipe.handcraft) handcraft = recipe;
+			
+			if(index < resultIndex)
+			{
+				resultIndex = index;
+				maincraft = recipe;
+				if(recipe.handcraft) handcraft = recipe;
+			}
+		}
+	}
+	
+	if(maincraft && item.produceFrom)
+	{
+		props.push({
+			key: t('制造于'),
+			value: item.produceFrom,
+		});
+	}
+	
+	if(handcraft)
+	{
+		props.push({
+			key: t('手动制造'),
+			value: t('合成面板'),
+		});
+	}
+	
+	else
+	{
+		props.push({
+			key: '',
+			value: t('不能手动制造'),
+		})
+	}
+	
+	if(state.itemsUnlockedSet.value.has(item.id))
+	{
+		
+	}
+	
+	
+	return {
+		name,
+		description,
+		category,
+		props,
+	};
+}
+
+// export function RecipeTooltip(recipe) {
+// 	const name = t('括号公式') + recipe.name;
+// 	const category = [recipe._madeFromString];
+// 	const description = recipe.description;
+// 	const props = [];
+	
+	
+// }
+

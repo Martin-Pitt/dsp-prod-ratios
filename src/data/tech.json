@@ -2401,7 +2401,8 @@
 			"value": "180000"
 		},
 		"unlockRecipes": [
-			120
+			120,
+			160
 		],
 		"position": [
 			33,
@@ -2980,6 +2981,41 @@
 		]
 	},
 	{
+		"name": "T干扰塔",
+		"id": 1810,
+		"description": "干扰塔描述",
+		"conclusion": "干扰塔结果",
+		"published": true,
+		"iconPath": "Icons/Tech/1810",
+		"isLabTech": true,
+		"preTechs": [
+			1806
+		],
+		"preTechsImplicit": [
+			1302
+		],
+		"items": [
+			6001,
+			6002
+		],
+		"itemPoints": [
+			10,
+			20
+		],
+		"hashNeeded": {
+			":type": "BigInt",
+			"value": "144000"
+		},
+		"unlockRecipes": [
+			130,
+			158
+		],
+		"position": [
+			25,
+			-51
+		]
+	},
+	{
 		"name": "T磁化电浆炮",
 		"id": 1811,
 		"description": "磁化电浆炮描述",
@@ -3011,7 +3047,8 @@
 		},
 		"unlockRecipes": [
 			128,
-			142
+			142,
+			157
 		],
 		"position": [
 			41,
@@ -3049,7 +3086,7 @@
 		],
 		"position": [
 			29,
-			-51
+			-55
 		]
 	},
 	{
@@ -3085,7 +3122,7 @@
 		],
 		"position": [
 			33,
-			-51
+			-55
 		]
 	},
 	{
@@ -3311,7 +3348,7 @@
 		],
 		"position": [
 			21,
-			-55
+			-59
 		]
 	},
 	{
@@ -3345,7 +3382,7 @@
 		],
 		"position": [
 			25,
-			-55
+			-59
 		]
 	},
 	{
@@ -3381,7 +3418,7 @@
 		],
 		"position": [
 			33,
-			-59
+			-63
 		]
 	},
 	{
@@ -3425,7 +3462,7 @@
 		],
 		"position": [
 			41,
-			-55
+			-59
 		]
 	},
 	{
@@ -3463,7 +3500,40 @@
 		],
 		"position": [
 			49,
-			-59
+			-63
+		]
+	},
+	{
+		"name": "T电磁胶囊II",
+		"id": 1824,
+		"description": "电磁胶囊II描述",
+		"conclusion": "电磁胶囊II结果",
+		"published": true,
+		"iconPath": "Icons/Tech/1824",
+		"isLabTech": true,
+		"preTechs": [
+			1810
+		],
+		"items": [
+			6001,
+			6002,
+			6003
+		],
+		"itemPoints": [
+			10,
+			10,
+			10
+		],
+		"hashNeeded": {
+			":type": "BigInt",
+			"value": "216000"
+		},
+		"unlockRecipes": [
+			159
+		],
+		"position": [
+			41,
+			-51
 		]
 	},
 	{
@@ -3493,7 +3563,7 @@
 		],
 		"position": [
 			17,
-			-55
+			-59
 		]
 	},
 	{
@@ -4471,6 +4541,42 @@
 		],
 		"position": [
 			29,
+			21
+		]
+	},
+	{
+		"name": "T机舱容量",
+		"id": 2307,
+		"description": "机舱容量描述2",
+		"conclusion": "机舱容量结果",
+		"published": true,
+		"level": 7,
+		"maxLevel": 7,
+		"iconPath": "Icons/Tech/2307",
+		"isLabTech": true,
+		"preTechs": [
+			2306
+		],
+		"items": [
+			6006
+		],
+		"itemPoints": [
+			6
+		],
+		"hashNeeded": {
+			":type": "BigInt",
+			"value": "900000"
+		},
+		"unlockFunctions": [
+			38,
+			32
+		],
+		"unlockValues": [
+			2,
+			1
+		],
+		"position": [
+			33,
 			21
 		]
 	},
@@ -5524,8 +5630,8 @@
 	{
 		"name": "T能量护盾",
 		"id": 2803,
-		"description": "能量护盾描述",
-		"conclusion": "能量护盾结果",
+		"description": "能量护盾描述3",
+		"conclusion": "能量护盾结果3",
 		"published": true,
 		"level": 3,
 		"maxLevel": 3,
@@ -5553,11 +5659,13 @@
 		},
 		"unlockFunctions": [
 			65,
-			66
+			66,
+			86
 		],
 		"unlockValues": [
 			0.5,
-			200000000
+			200000000,
+			1
 		],
 		"position": [
 			17,
@@ -6742,12 +6850,13 @@
 		"description": "分拣器货物叠加描述",
 		"conclusion": "分拣器货物叠加结果",
 		"published": true,
+		"isObsolete": true,
 		"level": 1,
 		"maxLevel": 1,
 		"iconPath": "Icons/Tech/3301",
 		"isLabTech": true,
 		"preTechsImplicit": [
-			1603
+			1607
 		],
 		"items": [
 			6001,
@@ -6767,7 +6876,7 @@
 			14
 		],
 		"unlockValues": [
-			2
+			4
 		],
 		"position": [
 			9,
@@ -6780,6 +6889,7 @@
 		"description": "分拣器货物叠加描述",
 		"conclusion": "分拣器货物叠加结果",
 		"published": true,
+		"isObsolete": true,
 		"level": 2,
 		"maxLevel": 2,
 		"iconPath": "Icons/Tech/3302",
@@ -6805,7 +6915,7 @@
 			14
 		],
 		"unlockValues": [
-			3
+			5
 		],
 		"position": [
 			13,
@@ -6818,6 +6928,7 @@
 		"description": "分拣器货物叠加描述",
 		"conclusion": "分拣器货物叠加结果",
 		"published": true,
+		"isObsolete": true,
 		"level": 3,
 		"maxLevel": 3,
 		"iconPath": "Icons/Tech/3303",
@@ -6843,7 +6954,7 @@
 			14
 		],
 		"unlockValues": [
-			4
+			6
 		],
 		"position": [
 			17,
@@ -6856,6 +6967,7 @@
 		"description": "分拣器货物叠加描述",
 		"conclusion": "分拣器货物叠加结果",
 		"published": true,
+		"isObsolete": true,
 		"level": 4,
 		"maxLevel": 4,
 		"iconPath": "Icons/Tech/3304",
@@ -6881,7 +6993,7 @@
 			14
 		],
 		"unlockValues": [
-			5
+			7
 		],
 		"position": [
 			21,
@@ -6894,6 +7006,7 @@
 		"description": "分拣器货物叠加描述",
 		"conclusion": "分拣器货物叠加结果",
 		"published": true,
+		"isObsolete": true,
 		"level": 5,
 		"maxLevel": 5,
 		"iconPath": "Icons/Tech/3305",
@@ -6919,10 +7032,287 @@
 			14
 		],
 		"unlockValues": [
-			6
+			8
 		],
 		"position": [
 			25,
+			-27
+		]
+	},
+	{
+		"name": "T分拣器货物集装",
+		"id": 3306,
+		"description": "分拣器货物叠加描述2",
+		"conclusion": "分拣器货物叠加结果2",
+		"published": true,
+		"isObsolete": true,
+		"level": 1,
+		"maxLevel": 1,
+		"iconPath": "Icons/Tech/3306",
+		"isLabTech": true,
+		"preTechs": [
+			3305
+		],
+		"preTechsImplicit": [
+			1607
+		],
+		"items": [
+			6001,
+			6002,
+			6003
+		],
+		"itemPoints": [
+			6,
+			6,
+			6
+		],
+		"hashNeeded": {
+			":type": "BigInt",
+			"value": "1080000"
+		},
+		"unlockFunctions": [
+			39,
+			40
+		],
+		"unlockValues": [
+			1,
+			1
+		],
+		"position": [
+			29,
+			-27
+		]
+	},
+	{
+		"name": "T集装分拣器叠加",
+		"id": 3311,
+		"description": "集装分拣器货物叠加描述",
+		"conclusion": "集装分拣器货物叠加结果",
+		"published": true,
+		"level": 1,
+		"maxLevel": 1,
+		"iconPath": "Icons/Tech/3311",
+		"isLabTech": true,
+		"preTechsImplicit": [
+			1607
+		],
+		"items": [
+			6001,
+			6002,
+			6003
+		],
+		"itemPoints": [
+			30,
+			30,
+			30
+		],
+		"hashNeeded": {
+			":type": "BigInt",
+			"value": "60000"
+		},
+		"unlockFunctions": [
+			39
+		],
+		"unlockValues": [
+			2
+		],
+		"position": [
+			9,
+			-27
+		]
+	},
+	{
+		"name": "T集装分拣器叠加",
+		"id": 3312,
+		"description": "集装分拣器货物叠加描述2",
+		"conclusion": "集装分拣器货物叠加结果2",
+		"published": true,
+		"level": 2,
+		"maxLevel": 2,
+		"iconPath": "Icons/Tech/3312",
+		"isLabTech": true,
+		"preTechs": [
+			3311
+		],
+		"items": [
+			6001,
+			6002,
+			6003
+		],
+		"itemPoints": [
+			30,
+			30,
+			30
+		],
+		"hashNeeded": {
+			":type": "BigInt",
+			"value": "96000"
+		},
+		"unlockFunctions": [
+			41
+		],
+		"unlockValues": [
+			3
+		],
+		"position": [
+			13,
+			-27
+		]
+	},
+	{
+		"name": "T集装分拣器叠加",
+		"id": 3313,
+		"description": "集装分拣器货物叠加描述4",
+		"conclusion": "集装分拣器货物叠加结果3",
+		"published": true,
+		"level": 3,
+		"maxLevel": 3,
+		"iconPath": "Icons/Tech/3313",
+		"isLabTech": true,
+		"preTechs": [
+			3312
+		],
+		"items": [
+			6001,
+			6002,
+			6003
+		],
+		"itemPoints": [
+			30,
+			30,
+			30
+		],
+		"hashNeeded": {
+			":type": "BigInt",
+			"value": "120000"
+		},
+		"unlockFunctions": [
+			39
+		],
+		"unlockValues": [
+			3
+		],
+		"position": [
+			17,
+			-27
+		]
+	},
+	{
+		"name": "T集装分拣器叠加",
+		"id": 3314,
+		"description": "集装分拣器货物叠加描述2",
+		"conclusion": "集装分拣器货物叠加结果4",
+		"published": true,
+		"level": 4,
+		"maxLevel": 4,
+		"iconPath": "Icons/Tech/3314",
+		"isLabTech": true,
+		"preTechs": [
+			3313
+		],
+		"items": [
+			6001,
+			6002,
+			6003
+		],
+		"itemPoints": [
+			15,
+			15,
+			15
+		],
+		"hashNeeded": {
+			":type": "BigInt",
+			"value": "288000"
+		},
+		"unlockFunctions": [
+			41
+		],
+		"unlockValues": [
+			4
+		],
+		"position": [
+			21,
+			-27
+		]
+	},
+	{
+		"name": "T集装分拣器叠加",
+		"id": 3315,
+		"description": "集装分拣器货物叠加描述5",
+		"conclusion": "集装分拣器货物叠加结果5",
+		"published": true,
+		"level": 5,
+		"maxLevel": 5,
+		"iconPath": "Icons/Tech/3315",
+		"isLabTech": true,
+		"preTechs": [
+			3314
+		],
+		"items": [
+			6001,
+			6002,
+			6003
+		],
+		"itemPoints": [
+			15,
+			15,
+			15
+		],
+		"hashNeeded": {
+			":type": "BigInt",
+			"value": "360000"
+		},
+		"unlockFunctions": [
+			39
+		],
+		"unlockValues": [
+			4
+		],
+		"position": [
+			25,
+			-27
+		]
+	},
+	{
+		"name": "T集装分拣器叠加",
+		"id": 3316,
+		"description": "集装分拣器货物叠加描述3",
+		"conclusion": "集装分拣器货物叠加结果6",
+		"published": true,
+		"level": 6,
+		"maxLevel": 6,
+		"iconPath": "Icons/Tech/3316",
+		"isLabTech": true,
+		"preTechs": [
+			3315
+		],
+		"preTechsImplicit": [
+			1607
+		],
+		"items": [
+			6001,
+			6002,
+			6003,
+			6005
+		],
+		"itemPoints": [
+			6,
+			6,
+			6,
+			6
+		],
+		"hashNeeded": {
+			":type": "BigInt",
+			"value": "1200000"
+		},
+		"unlockFunctions": [
+			40
+		],
+		"unlockValues": [
+			1
+		],
+		"position": [
+			29,
 			-27
 		]
 	},
@@ -9444,7 +9834,7 @@
 		],
 		"position": [
 			9,
-			-67
+			-71
 		]
 	},
 	{
@@ -9482,7 +9872,7 @@
 		],
 		"position": [
 			13,
-			-67
+			-71
 		]
 	},
 	{
@@ -9524,7 +9914,7 @@
 		],
 		"position": [
 			17,
-			-67
+			-71
 		]
 	},
 	{
@@ -9568,7 +9958,7 @@
 		],
 		"position": [
 			21,
-			-67
+			-71
 		]
 	},
 	{
@@ -9606,7 +9996,7 @@
 		],
 		"position": [
 			25,
-			-67
+			-71
 		]
 	},
 	{
@@ -9642,7 +10032,7 @@
 		],
 		"position": [
 			9,
-			-71
+			-75
 		]
 	},
 	{
@@ -9680,7 +10070,7 @@
 		],
 		"position": [
 			13,
-			-71
+			-75
 		]
 	},
 	{
@@ -9722,7 +10112,7 @@
 		],
 		"position": [
 			17,
-			-71
+			-75
 		]
 	},
 	{
@@ -9766,7 +10156,7 @@
 		],
 		"position": [
 			21,
-			-71
+			-75
 		]
 	},
 	{
@@ -9802,7 +10192,7 @@
 		],
 		"position": [
 			25,
-			-71
+			-75
 		]
 	},
 	{
@@ -9838,7 +10228,7 @@
 		],
 		"position": [
 			9,
-			-75
+			-79
 		]
 	},
 	{
@@ -9876,7 +10266,7 @@
 		],
 		"position": [
 			13,
-			-75
+			-79
 		]
 	},
 	{
@@ -9918,7 +10308,7 @@
 		],
 		"position": [
 			17,
-			-75
+			-79
 		]
 	},
 	{
@@ -9962,7 +10352,7 @@
 		],
 		"position": [
 			21,
-			-75
+			-79
 		]
 	},
 	{
@@ -9998,7 +10388,7 @@
 		],
 		"position": [
 			25,
-			-75
+			-79
 		]
 	},
 	{
@@ -10036,7 +10426,7 @@
 		],
 		"position": [
 			9,
-			-91
+			-95
 		]
 	},
 	{
@@ -10074,7 +10464,7 @@
 		],
 		"position": [
 			13,
-			-91
+			-95
 		]
 	},
 	{
@@ -10114,7 +10504,7 @@
 		],
 		"position": [
 			17,
-			-91
+			-95
 		]
 	},
 	{
@@ -10156,7 +10546,7 @@
 		],
 		"position": [
 			21,
-			-91
+			-95
 		]
 	},
 	{
@@ -10190,7 +10580,7 @@
 		],
 		"position": [
 			25,
-			-91
+			-95
 		]
 	},
 	{
@@ -10226,7 +10616,7 @@
 		],
 		"position": [
 			9,
-			-79
+			-83
 		]
 	},
 	{
@@ -10264,7 +10654,7 @@
 		],
 		"position": [
 			13,
-			-79
+			-83
 		]
 	},
 	{
@@ -10304,7 +10694,7 @@
 		],
 		"position": [
 			17,
-			-79
+			-83
 		]
 	},
 	{
@@ -10344,7 +10734,7 @@
 		],
 		"position": [
 			21,
-			-79
+			-83
 		]
 	},
 	{
@@ -10386,7 +10776,7 @@
 		],
 		"position": [
 			25,
-			-79
+			-83
 		]
 	},
 	{
@@ -10420,7 +10810,7 @@
 		],
 		"position": [
 			29,
-			-79
+			-83
 		]
 	},
 	{
@@ -10454,7 +10844,7 @@
 		],
 		"position": [
 			33,
-			-79
+			-83
 		]
 	},
 	{
@@ -10494,7 +10884,7 @@
 		],
 		"position": [
 			9,
-			-83
+			-87
 		]
 	},
 	{
@@ -10534,7 +10924,7 @@
 		],
 		"position": [
 			13,
-			-83
+			-87
 		]
 	},
 	{
@@ -10574,7 +10964,7 @@
 		],
 		"position": [
 			17,
-			-83
+			-87
 		]
 	},
 	{
@@ -10616,7 +11006,7 @@
 		],
 		"position": [
 			21,
-			-83
+			-87
 		]
 	},
 	{
@@ -10658,7 +11048,7 @@
 		],
 		"position": [
 			25,
-			-83
+			-87
 		]
 	},
 	{
@@ -10692,7 +11082,7 @@
 		],
 		"position": [
 			29,
-			-83
+			-87
 		]
 	},
 	{
@@ -10726,7 +11116,7 @@
 		],
 		"position": [
 			33,
-			-83
+			-87
 		]
 	},
 	{
@@ -10760,7 +11150,7 @@
 		],
 		"position": [
 			9,
-			-87
+			-91
 		]
 	},
 	{
@@ -10796,7 +11186,7 @@
 		],
 		"position": [
 			13,
-			-87
+			-91
 		]
 	},
 	{
@@ -10834,7 +11224,7 @@
 		],
 		"position": [
 			17,
-			-87
+			-91
 		]
 	},
 	{
@@ -10874,7 +11264,7 @@
 		],
 		"position": [
 			21,
-			-87
+			-91
 		]
 	},
 	{
@@ -10916,7 +11306,7 @@
 		],
 		"position": [
 			25,
-			-87
+			-91
 		]
 	},
 	{
@@ -10952,7 +11342,233 @@
 		],
 		"position": [
 			29,
-			-87
+			-91
+		]
+	},
+	{
+		"name": "T干扰塔效果",
+		"id": 6101,
+		"description": "干扰塔效果描述",
+		"conclusion": "干扰塔效果结果",
+		"published": true,
+		"level": 1,
+		"maxLevel": 1,
+		"iconPath": "Icons/Tech/6101",
+		"isLabTech": true,
+		"preTechsImplicit": [
+			1810
+		],
+		"items": [
+			6001,
+			6002
+		],
+		"itemPoints": [
+			10,
+			10
+		],
+		"hashNeeded": {
+			":type": "BigInt",
+			"value": "36000"
+		},
+		"unlockFunctions": [
+			64
+		],
+		"unlockValues": [
+			0.05
+		],
+		"position": [
+			9,
+			-67
+		]
+	},
+	{
+		"name": "T干扰塔效果",
+		"id": 6102,
+		"description": "干扰塔效果描述",
+		"conclusion": "干扰塔效果结果",
+		"published": true,
+		"level": 2,
+		"maxLevel": 2,
+		"iconPath": "Icons/Tech/6102",
+		"isLabTech": true,
+		"preTechs": [
+			6101
+		],
+		"items": [
+			6001,
+			6002
+		],
+		"itemPoints": [
+			10,
+			10
+		],
+		"hashNeeded": {
+			":type": "BigInt",
+			"value": "72000"
+		},
+		"unlockFunctions": [
+			64
+		],
+		"unlockValues": [
+			0.05
+		],
+		"position": [
+			13,
+			-67
+		]
+	},
+	{
+		"name": "T干扰塔效果",
+		"id": 6103,
+		"description": "干扰塔效果描述",
+		"conclusion": "干扰塔效果结果",
+		"published": true,
+		"level": 3,
+		"maxLevel": 3,
+		"iconPath": "Icons/Tech/6103",
+		"isLabTech": true,
+		"preTechs": [
+			6102
+		],
+		"items": [
+			6001,
+			6002,
+			6003
+		],
+		"itemPoints": [
+			10,
+			10,
+			10
+		],
+		"hashNeeded": {
+			":type": "BigInt",
+			"value": "144000"
+		},
+		"unlockFunctions": [
+			64
+		],
+		"unlockValues": [
+			0.1
+		],
+		"position": [
+			17,
+			-67
+		]
+	},
+	{
+		"name": "T干扰塔效果",
+		"id": 6104,
+		"description": "干扰塔效果描述",
+		"conclusion": "干扰塔效果结果",
+		"published": true,
+		"level": 4,
+		"maxLevel": 4,
+		"iconPath": "Icons/Tech/6104",
+		"isLabTech": true,
+		"preTechs": [
+			6103
+		],
+		"items": [
+			6001,
+			6002,
+			6003,
+			6004
+		],
+		"itemPoints": [
+			6,
+			6,
+			6,
+			6
+		],
+		"hashNeeded": {
+			":type": "BigInt",
+			"value": "360000"
+		},
+		"unlockFunctions": [
+			64
+		],
+		"unlockValues": [
+			0.1
+		],
+		"position": [
+			21,
+			-67
+		]
+	},
+	{
+		"name": "T干扰塔效果",
+		"id": 6105,
+		"description": "干扰塔效果描述",
+		"conclusion": "干扰塔效果结果",
+		"published": true,
+		"level": 5,
+		"maxLevel": 5,
+		"iconPath": "Icons/Tech/6105",
+		"isLabTech": true,
+		"preTechs": [
+			6104
+		],
+		"items": [
+			6001,
+			6002,
+			6003,
+			6004,
+			6005
+		],
+		"itemPoints": [
+			5,
+			5,
+			5,
+			5,
+			5
+		],
+		"hashNeeded": {
+			":type": "BigInt",
+			"value": "720000"
+		},
+		"unlockFunctions": [
+			64
+		],
+		"unlockValues": [
+			0.1
+		],
+		"position": [
+			25,
+			-67
+		]
+	},
+	{
+		"name": "T干扰塔效果",
+		"id": 6106,
+		"description": "干扰塔效果描述",
+		"conclusion": "干扰塔效果结果",
+		"published": true,
+		"level": 6,
+		"maxLevel": 6,
+		"iconPath": "Icons/Tech/6106",
+		"isLabTech": true,
+		"preTechs": [
+			6105
+		],
+		"items": [
+			6006
+		],
+		"itemPoints": [
+			4
+		],
+		"hashNeeded": {
+			":type": "BigInt",
+			"value": "3600000"
+		},
+		"unlockFunctions": [
+			64
+		],
+		"unlockValues": [
+			0.1
+		],
+		"position": [
+			29,
+			-67
 		]
 	}
 ]

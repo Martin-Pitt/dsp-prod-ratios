@@ -111,6 +111,7 @@ export default function Community(props) {
 						{
 							name: 'Dyson Sphere Vertical Conveyor Blueprint Tool',
 							href: 'https://dsp.rika.link/',
+							// TODO: Add a warning about tampered blueprints per https://steamcommunity.com/games/1366540/announcements/detail/3864716013089779752?snr=2___
 						},
 					].map(link => <Link {...link}/>)}
 				</ul>

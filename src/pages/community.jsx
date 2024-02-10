@@ -1,5 +1,5 @@
 
-function Link({ name, href }) {
+function Link({ name, href, warningTamperedBlueprints }) {
 	let url = new URL(href);
 	return (
 		<li class="links__item">
@@ -9,6 +9,11 @@ function Link({ name, href }) {
 					<span class="hostname">{url.hostname}</span><span class="pathname">{url.pathname.replace(/\/$/, '')}</span>
 				</div>
 			</a>
+			{warningTamperedBlueprints? (
+				<a class="links__warning" target="_blank" rel="noreferrer" href="https://store.steampowered.com/news/app/1366540/view/3864716013089779751">
+					[!] Just like with modding, use generated blueprints at your own caution
+				</a>
+			) : null}
 		</li>
 	);
 }
@@ -103,15 +108,15 @@ export default function Community(props) {
 							name: 'DSP Mall Analyzer (Beta)',
 							href: 'https://dsp-mall-analyzer-beta.netlify.app/',
 						},
-						
 						{
 							name: 'DSP Blueprint Editor',
 							href: 'https://huww98.github.io/dsp_blueprint_editor/',
+							warningTamperedBlueprints: true,
 						},
 						{
 							name: 'Dyson Sphere Vertical Conveyor Blueprint Tool',
 							href: 'https://dsp.rika.link/',
-							// TODO: Add a warning about tampered blueprints per https://steamcommunity.com/games/1366540/announcements/detail/3864716013089779752?snr=2___
+							warningTamperedBlueprints: true,
 						},
 					].map(link => <Link {...link}/>)}
 				</ul>
